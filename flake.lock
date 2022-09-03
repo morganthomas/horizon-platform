@@ -1,0 +1,388 @@
+{
+  "nodes": {
+    "cborg": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661203454,
+        "narHash": "sha256-El+o3mioBcjNTnERNBEMRWU9bs9bJ0agxw4YHQKPV44=",
+        "owner": "parsonsmatt",
+        "repo": "cborg",
+        "rev": "05ca2063ff631667699bffbeee3a4a076943b905",
+        "type": "github"
+      },
+      "original": {
+        "owner": "parsonsmatt",
+        "repo": "cborg",
+        "rev": "05ca2063ff631667699bffbeee3a4a076943b905",
+        "type": "github"
+      }
+    },
+    "cereal": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660071359,
+        "narHash": "sha256-1CEEynJBeSz+zeNSy8uJ4qdOYz93jvIJJB7MBQRA99I=",
+        "owner": "GaloisInc",
+        "repo": "cereal",
+        "rev": "c188f3d45ab4245c962975ac237e13c85aeb7136",
+        "type": "github"
+      },
+      "original": {
+        "owner": "GaloisInc",
+        "repo": "cereal",
+        "type": "github"
+      }
+    },
+    "composite-dhall": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662127799,
+        "narHash": "sha256-kfrR4pUnlHy58qIQkVo8TKr0qvySrTXXrl3JELOjCCo=",
+        "ref": "refs/heads/master",
+        "rev": "d9858c59e6ba8fcfa85ab0a30f662e25f9400d41",
+        "revCount": 46,
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/haskell/composite-dhall"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/haskell/composite-dhall"
+      }
+    },
+    "composite-lens-extra": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662139407,
+        "narHash": "sha256-klAhsEDQiFJYarYaGmGI9HLndqz6ddOgHalCoIwcJN8=",
+        "ref": "refs/heads/master",
+        "rev": "ee6d665429e0e0a2c9273d95ee60108490bf9d03",
+        "revCount": 14,
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/haskell/composite-lens-extra"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/haskell/composite-lens-extra"
+      }
+    },
+    "double-conversion": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661030012,
+        "narHash": "sha256-K+UJK5ek5ufplqY7to9lfVnSKoa+rZUjNL95b0P7R3w=",
+        "owner": "haskell",
+        "repo": "double-conversion",
+        "rev": "5d092e0664442eaac8ae1d101dba57ce9b1c9b03",
+        "type": "github"
+      },
+      "original": {
+        "owner": "haskell",
+        "repo": "double-conversion",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1661009076,
+        "narHash": "sha256-phAE40gctVygRq3G3B6LhvD7u2qdQT21xsz8DdRDYFo=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "850d8a76026127ef02f040fb0dcfdb8b749dd9d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-utils",
+        "type": "indirect"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1644229661,
+        "narHash": "sha256-1YdnJAsNy69bpcjuoKdOYQX0YxZBiCYZo4Twxerqv7k=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "3cecb5b042f7f209c56ffd8371b2711a290ec797",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "foundation": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653349151,
+        "narHash": "sha256-W19+xRxbJ3weRuayuXhkwWX6R6cil2dKZSkMmwH+ox8=",
+        "owner": "parsonsmatt",
+        "repo": "foundation",
+        "rev": "8166c31a115521f2ce5fabfba8247982979eeebf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "parsonsmatt",
+        "repo": "foundation",
+        "type": "github"
+      }
+    },
+    "ghc-tcplugins-extra": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657981318,
+        "narHash": "sha256-PRHBLEWy93hsxh805w5spq1+EZ2h6LQq+fyrF9GF6jg=",
+        "owner": "clash-lang",
+        "repo": "ghc-tcplugins-extra",
+        "rev": "8852d8ad94effa39e3400a243b21ae444df6c69e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "clash-lang",
+        "repo": "ghc-tcplugins-extra",
+        "rev": "8852d8ad94effa39e3400a243b21ae444df6c69e",
+        "type": "github"
+      }
+    },
+    "hashable": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660124057,
+        "narHash": "sha256-ixWGWClYvVZJwpExYrUWiejVMZniape5q0Gd3uV6mfY=",
+        "owner": "haskell-unordered-containers",
+        "repo": "hashable",
+        "rev": "18138a173a7659e390ba4c026f9ceb1cd850b80e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "haskell-unordered-containers",
+        "repo": "hashable",
+        "type": "github"
+      }
+    },
+    "haskell-flake": {
+      "locked": {
+        "lastModified": 1661726764,
+        "narHash": "sha256-YzzOoff6m3W4g4B0E8xd3omvOhEVuRu/Rdvnmy2H6Jc=",
+        "owner": "srid",
+        "repo": "haskell-flake",
+        "rev": "3c27b5ba2eafc52f4bed232a8ff74cf0a5a99375",
+        "type": "github"
+      },
+      "original": {
+        "owner": "srid",
+        "repo": "haskell-flake",
+        "type": "github"
+      }
+    },
+    "hedgehog": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661722659,
+        "narHash": "sha256-M8b3+VYLsSIg6jOeHGPL5ctDKzp9LHhykeZ+5j8ESqE=",
+        "owner": "hedgehogqa",
+        "repo": "haskell-hedgehog",
+        "rev": "70cf9fd0719e2d0ace1093cbe75673d7b9b4cf65",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hedgehogqa",
+        "repo": "haskell-hedgehog",
+        "type": "github"
+      }
+    },
+    "integer-logarithms": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660123968,
+        "narHash": "sha256-2kekA7iAFDjgOV1ixhNBkuCUVEF3wZW5UGoQyb8jZUw=",
+        "owner": "haskellari",
+        "repo": "integer-logarithms",
+        "rev": "28a78aa2cafe12cf0b1f63c684be4fdf552afc61",
+        "type": "github"
+      },
+      "original": {
+        "owner": "haskellari",
+        "repo": "integer-logarithms",
+        "type": "github"
+      }
+    },
+    "lint-utils": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1655192403,
+        "narHash": "sha256-XyKDvRGDh8VXA6zN8DUTnDaTMrk0MxMKg70MaAX1A2Y=",
+        "ref": "refs/heads/master",
+        "rev": "a7ae54afdc4c05a5aabf202d5a76d02705eb6147",
+        "revCount": 28,
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/nix/lint-utils"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/nix/lint-utils"
+      }
+    },
+    "memory": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653425739,
+        "narHash": "sha256-X4XcCEouvpX19d1dr3eg3L6s/aaRccuAsl980/FrRmE=",
+        "owner": "parsonsmatt",
+        "repo": "hs-memory",
+        "rev": "0f760c8ba0b7d5aacf04a7294e87e5e4fff53f40",
+        "type": "github"
+      },
+      "original": {
+        "owner": "parsonsmatt",
+        "repo": "hs-memory",
+        "rev": "0f760c8ba0b7d5aacf04a7294e87e5e4fff53f40",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1644525281,
+        "narHash": "sha256-D3VuWLdnLmAXIkooWAtbTGSQI9Fc1lkvAr94wTxhnTU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "48d63e924a2666baf37f4f14a18f19347fbd54a2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1661704917,
+        "narHash": "sha256-h1deRhxLw9iaYzIovHT9mLFuZq/9hoge+pXSbX98B78=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "adf66cc31390f920854340679d7505ac577a5a8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "polysemy-time": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660942587,
+        "narHash": "sha256-tQQO43HgOkgxMqa1R+HC3DipJpcoM/9fK0MJf5Q3MP0=",
+        "owner": "tek",
+        "repo": "polysemy-time",
+        "rev": "34d406f5c270fc2cd52c80612077433e8013791f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tek",
+        "repo": "polysemy-time",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cborg": "cborg",
+        "cereal": "cereal",
+        "composite-dhall": "composite-dhall",
+        "composite-lens-extra": "composite-lens-extra",
+        "double-conversion": "double-conversion",
+        "flake-parts": "flake-parts",
+        "flake-utils": "flake-utils",
+        "foundation": "foundation",
+        "ghc-tcplugins-extra": "ghc-tcplugins-extra",
+        "hashable": "hashable",
+        "haskell-flake": "haskell-flake",
+        "hedgehog": "hedgehog",
+        "integer-logarithms": "integer-logarithms",
+        "lint-utils": "lint-utils",
+        "memory": "memory",
+        "nixpkgs": "nixpkgs_2",
+        "polysemy-time": "polysemy-time",
+        "tasty": "tasty",
+        "tasty-hedgehog": "tasty-hedgehog",
+        "th-lift-instances": "th-lift-instances"
+      }
+    },
+    "tasty": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660335396,
+        "narHash": "sha256-kZjFyOWW2WLs4+MerJi5xgpBorO8lkfEOeNS1bJhygs=",
+        "owner": "UnkindPartition",
+        "repo": "tasty",
+        "rev": "df7ccab50d361c7d1a3c00960faac883d98c2530",
+        "type": "github"
+      },
+      "original": {
+        "owner": "UnkindPartition",
+        "repo": "tasty",
+        "type": "github"
+      }
+    },
+    "tasty-hedgehog": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662119872,
+        "narHash": "sha256-BS4h27omxUGduez6ag0bLOG1nqMDvql+bOJ/ApXmhOI=",
+        "owner": "locallycompact",
+        "repo": "tasty-hedgehog",
+        "rev": "4a3477578ed21aa82e5b74f387d08e5d750635d6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "locallycompact",
+        "repo": "tasty-hedgehog",
+        "type": "github"
+      }
+    },
+    "th-lift-instances": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661248001,
+        "narHash": "sha256-eGBEfCCoqqY2C31MQWbm2T5d6nvgmdbIXct91z9Tk0k=",
+        "owner": "bennofs",
+        "repo": "th-lift-instances",
+        "rev": "232d7ea04d6fd6dd5a5db48b0279d2f6b3bacd0f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bennofs",
+        "repo": "th-lift-instances",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
