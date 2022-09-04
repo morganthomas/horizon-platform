@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "all-cabal-hashes": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662285362,
+        "narHash": "sha256-g/IZZ7AT1ARv3o3mnnVKBHHRsI55bNMmd+Ax8kZ8fQg=",
+        "owner": "commercialhaskell",
+        "repo": "all-cabal-hashes",
+        "rev": "fc7a6bfbfb1b33192e82e6cdfaa2e7b39e34961d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "commercialhaskell",
+        "ref": "hackage",
+        "repo": "all-cabal-hashes",
+        "type": "github"
+      }
+    },
     "cborg": {
       "flake": false,
       "locked": {
@@ -33,22 +50,6 @@
         "type": "github"
       }
     },
-    "composite-dhall": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1662127799,
-        "narHash": "sha256-kfrR4pUnlHy58qIQkVo8TKr0qvySrTXXrl3JELOjCCo=",
-        "ref": "refs/heads/master",
-        "rev": "d9858c59e6ba8fcfa85ab0a30f662e25f9400d41",
-        "revCount": 46,
-        "type": "git",
-        "url": "https://gitlab.homotopic.tech/haskell/composite-dhall"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://gitlab.homotopic.tech/haskell/composite-dhall"
-      }
-    },
     "composite-lens-extra": {
       "flake": false,
       "locked": {
@@ -63,6 +64,23 @@
       "original": {
         "type": "git",
         "url": "https://gitlab.homotopic.tech/haskell/composite-lens-extra"
+      }
+    },
+    "doctest": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652986762,
+        "narHash": "sha256-Ehlq1U6EUscYndVnH7IVe2MdjzHQTgqRQDEWR9wGVzk=",
+        "owner": "parsonsmatt",
+        "repo": "doctest",
+        "rev": "a5f696b80bb8220d284e34d90f0b94291b859e77",
+        "type": "github"
+      },
+      "original": {
+        "owner": "parsonsmatt",
+        "repo": "doctest",
+        "rev": "a5f696b80bb8220d284e34d90f0b94291b859e77",
+        "type": "github"
       }
     },
     "double-conversion": {
@@ -197,11 +215,11 @@
     "hedgehog": {
       "flake": false,
       "locked": {
-        "lastModified": 1661722659,
-        "narHash": "sha256-M8b3+VYLsSIg6jOeHGPL5ctDKzp9LHhykeZ+5j8ESqE=",
+        "lastModified": 1662195978,
+        "narHash": "sha256-aZ+yA9yN80ftM2C1bpjV8SRprY6a1HsdaTDnaoM0zog=",
         "owner": "hedgehogqa",
         "repo": "haskell-hedgehog",
-        "rev": "70cf9fd0719e2d0ace1093cbe75673d7b9b4cf65",
+        "rev": "648c148a62105e09f4d76ce01bae96e56a98b7c6",
         "type": "github"
       },
       "original": {
@@ -280,11 +298,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1661704917,
-        "narHash": "sha256-h1deRhxLw9iaYzIovHT9mLFuZq/9hoge+pXSbX98B78=",
+        "lastModified": 1662096612,
+        "narHash": "sha256-R+Q8l5JuyJryRPdiIaYpO5O3A55rT+/pItBrKcy7LM4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "adf66cc31390f920854340679d7505ac577a5a8b",
+        "rev": "21de2b973f9fee595a7a1ac4693efff791245c34",
         "type": "github"
       },
       "original": {
@@ -294,28 +312,13 @@
         "type": "github"
       }
     },
-    "polysemy-time": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1660942587,
-        "narHash": "sha256-tQQO43HgOkgxMqa1R+HC3DipJpcoM/9fK0MJf5Q3MP0=",
-        "owner": "tek",
-        "repo": "polysemy-time",
-        "rev": "34d406f5c270fc2cd52c80612077433e8013791f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tek",
-        "repo": "polysemy-time",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
+        "all-cabal-hashes": "all-cabal-hashes",
         "cborg": "cborg",
         "cereal": "cereal",
-        "composite-dhall": "composite-dhall",
         "composite-lens-extra": "composite-lens-extra",
+        "doctest": "doctest",
         "double-conversion": "double-conversion",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
@@ -328,7 +331,6 @@
         "lint-utils": "lint-utils",
         "memory": "memory",
         "nixpkgs": "nixpkgs_2",
-        "polysemy-time": "polysemy-time",
         "tasty": "tasty",
         "tasty-hedgehog": "tasty-hedgehog",
         "th-lift-instances": "th-lift-instances"

@@ -8,12 +8,12 @@
       url = "github:GaloisInc/cereal";
       flake = false;
     };
-    composite-dhall = {
-      url = "git+https://gitlab.homotopic.tech/haskell/composite-dhall";
-      flake = false;
-    };
     composite-lens-extra = {
       url = "git+https://gitlab.homotopic.tech/haskell/composite-lens-extra";
+      flake = false;
+    };
+    doctest = {
+      url = "github:parsonsmatt/doctest/a5f696b80bb8220d284e34d90f0b94291b859e77";
       flake = false;
     };
     double-conversion = {
@@ -61,20 +61,29 @@
       url = "github:bennofs/th-lift-instances";
       flake = false;
     };
-    polysemy-time = {
-      url = "github:tek/polysemy-time";
+    all-cabal-hashes = {
+      url = "github:commercialhaskell/all-cabal-hashes?ref=hackage";
       flake = false;
     };
   };
   outputs = inputs@{ self, nixpkgs, flake-utils, lint-utils, ... }:
-    flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
-        pkgs = import nixpkgs { inherit system; };
+        overlay-ach = final: prev: { all-cabal-hashes = inputs.all-cabal-hashes; };
+        pkgs = import nixpkgs { system = "x86_64-linux"; overlays = [overlay-ach]; };
+        overrides-hp = import ./overlay.nix { inherit inputs pkgs; };
+        hp = pkgs.haskell.packages.ghc942.override {
+          overrides = overrides-hp;
+        };
+        hp' = pkgs.lib.filterAttrs (n: v: v != null
+                                       && builtins.typeOf v == "set"
+                                       && pkgs.lib.hasAttr "type" v
+                                       && v.type == "derivation"
+                                       && v.meta.broken == false) hp;
       in
       {
-        checks = {
-          nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt ./.;
+        checks.x86_64-linux = {
+          nixpkgs-fmt = lint-utils.outputs.linters.x86_64-linux.nixpkgs-fmt ./.;
         };
-        overlays = import ./overlay.nix { inherit inputs pkgs; };
-      });
+        packages.x86_64-linux = hp';
+      };
 }
