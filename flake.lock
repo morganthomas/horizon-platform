@@ -211,8 +211,26 @@
         "lint-utils": "lint-utils",
         "memory": "memory",
         "nixpkgs": "nixpkgs_2",
+        "servant": "servant",
         "tasty": "tasty",
         "tasty-hedgehog": "tasty-hedgehog"
+      }
+    },
+    "servant": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661296516,
+        "narHash": "sha256-molPpcquyLIAK2FlPOLgsQhhAPuitGYCEYKY12ZcRBo=",
+        "owner": "TeofilC",
+        "repo": "servant",
+        "rev": "e9a799ecb5cef047909b4c22071a8fa68ba30a8a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "TeofilC",
+        "ref": "ghc-9.4",
+        "repo": "servant",
+        "type": "github"
       }
     },
     "tasty": {

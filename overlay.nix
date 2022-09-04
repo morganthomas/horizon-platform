@@ -199,6 +199,14 @@ final: prev: with pkgs.haskell.lib; {
 
   semialign = doJailbreak prev.semialign;
 
+  servant = prev.callCabal2nix "servant" (inputs.servant + /servant) { };
+
+  servant-server = prev.callCabal2nix "servant-server" (inputs.servant + /servant-server) { };
+
+  servant-client-core = prev.callCabal2nix "servant-client-core" (inputs.servant + /servant-client-core) { };
+
+  servant-client = prev.callCabal2nix "servant-client" (inputs.servant + /servant-client) { };
+
   serialise = doJailbreak (prev.callCabal2nix "serialise" (inputs.cborg + /serialise) { });
 
   singleton-bool = doJailbreak prev.singleton-bool;

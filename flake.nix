@@ -25,6 +25,10 @@
       flake = false;
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    servant = {
+      url = "github:TeofilC/servant?ref=ghc-9.4";
+      flake = false;
+    };
     tasty = {
       url = "github:UnkindPartition/tasty";
       flake = false;
