@@ -165,22 +165,6 @@
         "type": "github"
       }
     },
-    "hashable": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1660124057,
-        "narHash": "sha256-ixWGWClYvVZJwpExYrUWiejVMZniape5q0Gd3uV6mfY=",
-        "owner": "haskell-unordered-containers",
-        "repo": "hashable",
-        "rev": "18138a173a7659e390ba4c026f9ceb1cd850b80e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "haskell-unordered-containers",
-        "repo": "hashable",
-        "type": "github"
-      }
-    },
     "haskell-flake": {
       "locked": {
         "lastModified": 1661726764,
@@ -193,22 +177,6 @@
       "original": {
         "owner": "srid",
         "repo": "haskell-flake",
-        "type": "github"
-      }
-    },
-    "hedgehog": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1662195978,
-        "narHash": "sha256-aZ+yA9yN80ftM2C1bpjV8SRprY6a1HsdaTDnaoM0zog=",
-        "owner": "hedgehogqa",
-        "repo": "haskell-hedgehog",
-        "rev": "648c148a62105e09f4d76ce01bae96e56a98b7c6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hedgehogqa",
-        "repo": "haskell-hedgehog",
         "type": "github"
       }
     },
@@ -307,9 +275,7 @@
         "flake-utils": "flake-utils",
         "foundation": "foundation",
         "ghc-tcplugins-extra": "ghc-tcplugins-extra",
-        "hashable": "hashable",
         "haskell-flake": "haskell-flake",
-        "hedgehog": "hedgehog",
         "integer-logarithms": "integer-logarithms",
         "lint-utils": "lint-utils",
         "memory": "memory",

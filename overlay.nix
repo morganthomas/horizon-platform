@@ -97,7 +97,7 @@ final: prev: with pkgs.haskell.lib; {
 
   hashtables = prev.callHackage "hashtables" "1.3" { };
 
-  hedgehog = dontHaddock (prev.callCabal2nix "hedgehog" (inputs.hedgehog + /hedgehog) { });
+  hedgehog = dontHaddock (prev.callHackage "hedgehog" "1.2" { });
 
   hourglass = dontCheck prev.hourglass;
 

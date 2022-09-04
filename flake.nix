@@ -1,5 +1,9 @@
 {
   inputs = {
+    all-cabal-hashes = {
+      url = "github:commercialhaskell/all-cabal-hashes?ref=hackage";
+      flake = false;
+    };
     cborg = {
       url = "github:parsonsmatt/cborg/05ca2063ff631667699bffbeee3a4a076943b905";
       flake = false;
@@ -20,10 +24,6 @@
     flake-parts.inputs.nixpkgs.follows = "nixpkgs";
     foundation = {
       url = "github:parsonsmatt/foundation";
-      flake = false;
-    };
-    hedgehog = {
-      url = "github:hedgehogqa/haskell-hedgehog";
       flake = false;
     };
     ghc-tcplugins-extra = {
@@ -51,10 +51,6 @@
     };
     th-lift-instances = {
       url = "github:bennofs/th-lift-instances";
-      flake = false;
-    };
-    all-cabal-hashes = {
-      url = "github:commercialhaskell/all-cabal-hashes?ref=hackage";
       flake = false;
     };
   };
