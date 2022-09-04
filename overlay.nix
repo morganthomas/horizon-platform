@@ -182,7 +182,7 @@ final: prev: with pkgs.haskell.lib; {
 
   polysemy-time = dontCheck (prev.callHackage "polysemy-time" "0.5.1.0" { });
 
-  polysemy-vinyl = dontCheck (prev.callHackage "polysemy-vinyl" "0.1.5.0" { });
+  polysemy-vinyl = doJailbreak (prev.callHackage "polysemy-vinyl" "0.1.5.0" { });
 
   polysemy-zoo = doJailbreak (dontCheck (prev.callHackage "polysemy-zoo" "0.8.0.0" { }));
 
