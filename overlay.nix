@@ -55,6 +55,8 @@ final: prev: with pkgs.haskell.lib; {
 
   conduit = dontCheck prev.conduit;
 
+  conduit-extra = dontCheck prev.conduit-extra;
+
   constraints = doJailbreak prev.constraints;
 
   cryptohash-sha1 = doJailbreak prev.cryptohash-sha1;
