@@ -22,10 +22,6 @@
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-parts.inputs.nixpkgs.follows = "nixpkgs";
-    foundation = {
-      url = "github:parsonsmatt/foundation";
-      flake = false;
-    };
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     haskell-flake.url = "github:srid/haskell-flake";
     integer-logarithms = {

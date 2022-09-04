@@ -81,7 +81,7 @@ final: prev: with pkgs.haskell.lib; {
 
   foldl = dontCheck (prev.foldl);
 
-  foundation = doJailbreak (prev.callCabal2nix "foundation" (inputs.foundation + /foundation) { });
+  foundation = prev.callHackage "foundation" "0.0.29" { };
 
   generic-lens-lite = doJailbreak prev.generic-lens-lite;
 

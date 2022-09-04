@@ -132,39 +132,6 @@
         "type": "github"
       }
     },
-    "foundation": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1653349151,
-        "narHash": "sha256-W19+xRxbJ3weRuayuXhkwWX6R6cil2dKZSkMmwH+ox8=",
-        "owner": "parsonsmatt",
-        "repo": "foundation",
-        "rev": "8166c31a115521f2ce5fabfba8247982979eeebf",
-        "type": "github"
-      },
-      "original": {
-        "owner": "parsonsmatt",
-        "repo": "foundation",
-        "type": "github"
-      }
-    },
-    "ghc-tcplugins-extra": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1657981318,
-        "narHash": "sha256-PRHBLEWy93hsxh805w5spq1+EZ2h6LQq+fyrF9GF6jg=",
-        "owner": "clash-lang",
-        "repo": "ghc-tcplugins-extra",
-        "rev": "8852d8ad94effa39e3400a243b21ae444df6c69e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "clash-lang",
-        "repo": "ghc-tcplugins-extra",
-        "rev": "8852d8ad94effa39e3400a243b21ae444df6c69e",
-        "type": "github"
-      }
-    },
     "haskell-flake": {
       "locked": {
         "lastModified": 1661726764,
@@ -273,8 +240,6 @@
         "double-conversion": "double-conversion",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
-        "foundation": "foundation",
-        "ghc-tcplugins-extra": "ghc-tcplugins-extra",
         "haskell-flake": "haskell-flake",
         "integer-logarithms": "integer-logarithms",
         "lint-utils": "lint-utils",
