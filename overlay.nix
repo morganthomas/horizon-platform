@@ -199,6 +199,8 @@ final: prev: with pkgs.haskell.lib; {
 
   singleton-bool = doJailbreak prev.singleton-bool;
 
+  singletons = prev.callHackage "singletons" "3.0.2" { };
+
   some = doJailbreak prev.some;
 
   sop-core = doJailbreak prev.sop-core;
