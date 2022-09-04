@@ -165,6 +165,12 @@ final: prev: with pkgs.haskell.lib; {
 
   polysemy = dontCheck (prev.callHackage "polysemy" "1.7.1.0" { });
 
+  polysemy-extra = prev.callHackage "polysemy-extra" "0.2.1.0" { };
+
+  polysemy-kvstore = prev.callHackage "polysemy-kvstore" "0.1.3.0" { };
+
+  polysemy-several = prev.callHackage "polysemy-several" "0.1.1.0" { };
+
   polysemy-time = dontCheck (prev.callHackage "polysemy-time" "0.5.1.0" { });
 
   polysemy-zoo = doJailbreak (dontCheck (prev.callHackage "polysemy-zoo" "0.8.0.0" { }));
