@@ -1,7 +1,7 @@
 { inputs, pkgs }:
 final: prev: with pkgs.haskell.lib; {
 
-  Cabal = prev.callHackage "Cabal" "3.8.1.0" {};
+  Cabal = prev.callHackage "Cabal" "3.8.1.0" { };
 
   ChasingBottoms = prev.callHackage "ChasingBottoms" "1.3.1.12" { };
 
@@ -47,7 +47,7 @@ final: prev: with pkgs.haskell.lib; {
 
   composite-base = doJailbreak (prev.callHackage "composite-base" "0.8.1.0" { });
 
-  composite-dhall = prev.callHackage "composite-dhall" "0.1.0.1" {};
+  composite-dhall = prev.callHackage "composite-dhall" "0.1.0.1" { };
 
   composite-lens-extra = prev.callCabal2nix "composite-lens-extra" inputs.composite-lens-extra { };
 
@@ -91,9 +91,9 @@ final: prev: with pkgs.haskell.lib; {
 
   ghc-tcplugins-extra = final.callCabal2nix "ghc-tcplugins-extra" inputs.ghc-tcplugins-extra { };
 
-  hashable = prev.callHackage "hashable" "1.4.1.0" {};
+  hashable = prev.callHackage "hashable" "1.4.1.0" { };
 
-  hashtables = prev.callHackage "hashtables" "1.3" {};
+  hashtables = prev.callHackage "hashtables" "1.3" { };
 
   hedgehog = dontHaddock (prev.callCabal2nix "hedgehog" (inputs.hedgehog + /hedgehog) { });
 
@@ -147,9 +147,9 @@ final: prev: with pkgs.haskell.lib; {
 
   parallel = doJailbreak (final.callHackage "parallel" "3.2.2.0" { });
 
-  polysemy = dontCheck (prev.callHackage "polysemy" "1.7.1.0" {});
+  polysemy = dontCheck (prev.callHackage "polysemy" "1.7.1.0" { });
 
-  polysemy-time = dontCheck (prev.callHackage "polysemy-time" "0.5.1.0" {});
+  polysemy-time = dontCheck (prev.callHackage "polysemy-time" "0.5.1.0" { });
 
   postgresql-libpq = doJailbreak prev.postgresql-libpq;
 

@@ -67,23 +67,27 @@
     };
   };
   outputs = inputs@{ self, nixpkgs, flake-utils, lint-utils, ... }:
+    flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
         overlay-ach = final: prev: { all-cabal-hashes = inputs.all-cabal-hashes; };
-        pkgs = import nixpkgs { system = "x86_64-linux"; overlays = [overlay-ach]; };
+        pkgs = import nixpkgs { inherit system; overlays = [ overlay-ach ]; };
         overrides-hp = import ./overlay.nix { inherit inputs pkgs; };
         hp = pkgs.haskell.packages.ghc942.override {
           overrides = overrides-hp;
         };
-        hp' = pkgs.lib.filterAttrs (n: v: v != null
-                                       && builtins.typeOf v == "set"
-                                       && pkgs.lib.hasAttr "type" v
-                                       && v.type == "derivation"
-                                       && v.meta.broken == false) hp;
+        hp' = pkgs.lib.filterAttrs
+          (n: v: v != null
+            && builtins.typeOf v == "set"
+            && pkgs.lib.hasAttr "type" v
+            && v.type == "derivation"
+            && v.meta.broken == false)
+          hp;
       in
       {
-        checks.x86_64-linux = {
+        checks = {
           nixpkgs-fmt = lint-utils.outputs.linters.x86_64-linux.nixpkgs-fmt ./.;
         };
-        packages.x86_64-linux = hp';
-      };
+        overrides = overrides-hp;
+        packages = hp';
+      });
 }
