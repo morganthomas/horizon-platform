@@ -37,10 +37,6 @@
       url = "github:locallycompact/tasty-hedgehog";
       flake = false;
     };
-    th-lift-instances = {
-      url = "github:bennofs/th-lift-instances";
-      flake = false;
-    };
   };
   outputs = inputs@{ self, nixpkgs, flake-utils, lint-utils, ... }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:

@@ -221,7 +221,7 @@ final: prev: with pkgs.haskell.lib; {
 
   these = doJailbreak prev.these;
 
-  th-lift-instances = prev.callCabal2nix "th-lift-instances" inputs.th-lift-instances { };
+  th-lift-instances = prev.callHackage "th-lift-instances" "0.1.20" { };
 
   time-compat = doJailbreak prev.time-compat;
 

@@ -229,8 +229,7 @@
         "memory": "memory",
         "nixpkgs": "nixpkgs_2",
         "tasty": "tasty",
-        "tasty-hedgehog": "tasty-hedgehog",
-        "th-lift-instances": "th-lift-instances"
+        "tasty-hedgehog": "tasty-hedgehog"
       }
     },
     "tasty": {
@@ -262,22 +261,6 @@
       "original": {
         "owner": "locallycompact",
         "repo": "tasty-hedgehog",
-        "type": "github"
-      }
-    },
-    "th-lift-instances": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1661248001,
-        "narHash": "sha256-eGBEfCCoqqY2C31MQWbm2T5d6nvgmdbIXct91z9Tk0k=",
-        "owner": "bennofs",
-        "repo": "th-lift-instances",
-        "rev": "232d7ea04d6fd6dd5a5db48b0279d2f6b3bacd0f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "bennofs",
-        "repo": "th-lift-instances",
         "type": "github"
       }
     }
