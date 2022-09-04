@@ -87,7 +87,7 @@
         checks = {
           nixpkgs-fmt = lint-utils.outputs.linters.x86_64-linux.nixpkgs-fmt ./.;
         };
-        overrides = overrides-hp;
+        overrides.ghc941 = overrides-hp;
         packages = hp';
       });
 }
