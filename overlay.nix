@@ -269,6 +269,8 @@ final: prev: with pkgs.haskell.lib; {
 
   warp = dontCheck (prev.callHackage "warp" "3.3.22" { });
 
+  warp-tls = dontCheck (prev.callHackage "warp-tls" "3.3.3" { });
+
   witherable = dontCheck (prev.callHackage "witherable" "0.4.2" { });
 
 }
