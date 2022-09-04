@@ -235,6 +235,8 @@ final: prev: with pkgs.haskell.lib; {
 
   vector = dontCheck (prev.callHackage "vector" "0.13.0.0" { });
 
+  vector-algorithms = prev.callHackage "vector-algorithms" "0.9.0.1" { };
+
   vinyl = final.callHackage "vinyl" "0.14.3" { };
 
   warp = dontCheck (prev.warp);
