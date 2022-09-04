@@ -29,7 +29,7 @@ final: prev: with pkgs.haskell.lib; {
 
   blaze-markup = prev.callHackage "blaze-markup" "0.8.2.8" { };
 
-  boring = prev.callHackage "boring" "0.2" { };
+  boring = doJailbreak (prev.callHackage "boring" "0.2" { });
 
   bsb-http-chunked = prev.callHackage "bsb-http-chunked" "0.0.0.4" { };
 
