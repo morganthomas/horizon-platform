@@ -149,7 +149,7 @@ final: prev: with pkgs.haskell.lib; {
 
   optics-core = prev.callHackage "optics-core" "0.4.1" { };
 
-  optics-extra = prev.callHackage "optics-extra" "0.4.2.1" { };
+  optics-extra = doJailbreak (prev.callHackage "optics-extra" "0.4.2.1" { });
 
   optics-th = prev.callHackage "optics-th" "0.4.1" { };
 
