@@ -77,6 +77,8 @@ final: prev: with pkgs.haskell.lib; {
 
   fcf-containers = dontCheck prev.fcf-containers;
 
+  finite-field = dontCheck (prev.callHackage "finite-field" "0.10.0" { });
+
   first-class-families = doJailbreak prev.first-class-families;
 
   foldl = dontCheck (prev.foldl);
