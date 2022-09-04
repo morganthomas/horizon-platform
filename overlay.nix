@@ -217,6 +217,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-hunit = doJailbreak (prev.callCabal2nix "tasty" (inputs.tasty + /hunit) { });
 
+  tasty-wai = doJailbreak (prev.callHackage "tasty-wai" "0.1.2.0" { });
+
   these = doJailbreak prev.these;
 
   th-lift-instances = prev.callCabal2nix "th-lift-instances" inputs.th-lift-instances { };
