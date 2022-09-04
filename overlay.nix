@@ -31,7 +31,7 @@ final: prev: with pkgs.haskell.lib; {
 
   boring = doJailbreak (prev.callHackage "boring" "0.2" { });
 
-  bsb-http-chunked = prev.callHackage "bsb-http-chunked" "0.0.0.4" { };
+  bsb-http-chunked = dontCheck (prev.callHackage "bsb-http-chunked" "0.0.0.4" { });
 
   bytes = prev.callHackage "bytes" "0.17.2" { };
 
