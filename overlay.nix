@@ -91,7 +91,7 @@ final: prev: with pkgs.haskell.lib; {
 
   ghc-paths = prev.callHackage "ghc-paths" "0.1.0.12" { };
 
-  ghc-tcplugins-extra = final.callCabal2nix "ghc-tcplugins-extra" inputs.ghc-tcplugins-extra { };
+  ghc-tcplugins-extra = prev.callHackage "ghc-tcplugins-extra" "0.4.3" { };
 
   hashable = prev.callHackage "hashable" "1.4.1.0" { };
 

@@ -26,10 +26,6 @@
       url = "github:parsonsmatt/foundation";
       flake = false;
     };
-    ghc-tcplugins-extra = {
-      url = "github:clash-lang/ghc-tcplugins-extra/8852d8ad94effa39e3400a243b21ae444df6c69e";
-      flake = false;
-    };
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     haskell-flake.url = "github:srid/haskell-flake";
     integer-logarithms = {
