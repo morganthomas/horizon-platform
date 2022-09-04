@@ -209,6 +209,8 @@ final: prev: with pkgs.haskell.lib; {
 
   servant-foreign = prev.callCabal2nix "servant-foreign" (inputs.servant + /servant-foreign) { };
 
+  servant-lucid = doJailbreak prev.servant-lucid;
+
   serialise = doJailbreak (prev.callCabal2nix "serialise" (inputs.cborg + /serialise) { });
 
   singleton-bool = doJailbreak prev.singleton-bool;
