@@ -131,22 +131,6 @@
         "type": "github"
       }
     },
-    "integer-logarithms": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1660123968,
-        "narHash": "sha256-2kekA7iAFDjgOV1ixhNBkuCUVEF3wZW5UGoQyb8jZUw=",
-        "owner": "haskellari",
-        "repo": "integer-logarithms",
-        "rev": "28a78aa2cafe12cf0b1f63c684be4fdf552afc61",
-        "type": "github"
-      },
-      "original": {
-        "owner": "haskellari",
-        "repo": "integer-logarithms",
-        "type": "github"
-      }
-    },
     "lint-utils": {
       "inputs": {
         "flake-utils": "flake-utils_2",
@@ -224,7 +208,6 @@
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
         "haskell-flake": "haskell-flake",
-        "integer-logarithms": "integer-logarithms",
         "lint-utils": "lint-utils",
         "memory": "memory",
         "nixpkgs": "nixpkgs_2",

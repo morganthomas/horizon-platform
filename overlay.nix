@@ -125,7 +125,7 @@ final: prev: with pkgs.haskell.lib; {
 
   indexed-traversable-instances = doJailbreak (dontCheck prev.indexed-traversable-instances);
 
-  integer-logarithms = final.callCabal2nix "integer-logarithms" inputs.integer-logarithms { };
+  integer-logarithms = final.callHackage "integer-logarithms" "1.0.3.1" { };
 
   invariant = doJailbreak prev.invariant;
 
