@@ -53,19 +53,19 @@ final: prev: with pkgs.haskell.lib; {
 
   composite-lens-extra = prev.callHackage "composite-lens-extra" "0.1.0.0" { };
 
-  conduit = dontCheck prev.conduit;
+  conduit = dontCheck (prev.callHackage "conduit" "1.3.4.2" { });
 
-  conduit-extra = dontCheck prev.conduit-extra;
+  conduit-extra = dontCheck (prev.callHackage "conduit-extra" "1.3.6" { });
 
-  constraints = doJailbreak prev.constraints;
+  constraints = doJailbreak (prev.callHackage "constraints" "0.13.4" { });
 
-  cryptohash-sha1 = doJailbreak prev.cryptohash-sha1;
+  cryptohash-sha1 = doJailbreak (prev.callHackage "cryptohash-sha1" "0.11.100.1" { });
 
   cryptonite = prev.callHackage "cryptonite" "0.30" { };
 
-  data-fix = doJailbreak prev.data-fix;
+  data-fix = doJailbreak (prev.callHackage "data-fix" "0.3.2" { });
 
-  dec = doJailbreak prev.dec;
+  dec = doJailbreak (prev.callHackage "dec" "0.0.5" { });
 
   dhall = doJailbreak (prev.callHackage "dhall" "1.41.2" { });
 
@@ -75,25 +75,25 @@ final: prev: with pkgs.haskell.lib; {
 
   double-conversion = prev.callCabal2nix "double-conversion" inputs.double-conversion { };
 
-  email-validate = dontCheck prev.email-validate;
+  email-validate = dontCheck (prev.callHackage "email-validate" "2.3.2.16" { });
 
-  extra = dontCheck prev.extra;
+  extra = dontCheck (prev.callHackage "extra" "1.7.12" { });
 
-  fcf-containers = dontCheck prev.fcf-containers;
+  fcf-containers = dontCheck (prev.callHackage "fcf-containers" "0.7.1" { });
 
   finite-field = dontCheck (prev.callHackage "finite-field" "0.10.0" { });
 
-  first-class-families = doJailbreak prev.first-class-families;
+  first-class-families = doJailbreak (dontCheck (prev.callHackage "first-class-families" "0.8.0.1" { }));
 
-  foldl = dontCheck (prev.foldl);
+  foldl = dontCheck (prev.callHackage "foldl" "1.4.12" { });
 
   foundation = prev.callHackage "foundation" "0.0.29" { };
 
-  generic-lens-lite = doJailbreak prev.generic-lens-lite;
+  generic-lens-lite = doJailbreak (prev.callHackage "generic-lens-lite" "0.1" { });
 
-  generic-optics-lite = doJailbreak prev.generic-optics-lite;
+  generic-optics-lite = doJailbreak (prev.callHackage "generic-optics-lite" "0.1" { });
 
-  ghc-byteorder = doJailbreak prev.ghc-byteorder;
+  ghc-byteorder = doJailbreak (prev.callHackage "ghc-byteorder" "4.11.0.0.10" { });
 
   ghc-paths = prev.callHackage "ghc-paths" "0.1.0.12" { };
 
@@ -105,9 +105,9 @@ final: prev: with pkgs.haskell.lib; {
 
   hedgehog = dontHaddock (prev.callHackage "hedgehog" "1.2" { });
 
-  hourglass = dontCheck prev.hourglass;
+  hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
 
-  hspec = doJailbreak prev.hspec;
+  hspec = doJailbreak (prev.callHackage "hspec" "2.10.2" { });
 
   hspec-core = dontCheck (prev.callHackage "hspec-core" "2.10.0.1" { });
 
@@ -115,43 +115,43 @@ final: prev: with pkgs.haskell.lib; {
 
   hspec-meta = dontCheck (prev.callHackage "hspec-meta" "2.9.3" { });
 
-  http-client = dontCheck (prev.http-client);
+  http-client = dontCheck (prev.callHackage "http-client" "0.7.13.1" { });
 
-  http-date = dontCheck (prev.http-date);
+  http-date = dontCheck (prev.callHackage "http-date" "0.0.11" {});
 
-  http-types = dontCheck (prev.http-types);
+  http-types = dontCheck (prev.callHackage "http-types" "0.12.3" { });
 
-  http2 = dontCheck prev.http2;
+  http2 = dontCheck (prev.callHackage "http2" "3.0.3" { });
 
-  incipit-base = doJailbreak prev.incipit-base;
+  incipit-base = doJailbreak (prev.callHackage "incipit-base" "0.3.0.0" { });
 
-  incipit-core = doJailbreak prev.incipit-core;
+  incipit-core = doJailbreak (prev.callHackage "incipit-core" "0.3.0.0" { });
 
   indexed-traversable = doJailbreak (final.callHackage "indexed-traversable" "0.1.2" { });
 
-  indexed-traversable-instances = doJailbreak (dontCheck prev.indexed-traversable-instances);
+  indexed-traversable-instances = doJailbreak (dontCheck (prev.callHackage "indexed-traversable-instances" "0.1.1.1" { }));
 
   integer-logarithms = final.callHackage "integer-logarithms" "1.0.3.1" { };
 
-  invariant = doJailbreak prev.invariant;
+  invariant = doJailbreak (prev.callHackage "invariant" "0.6" { });
 
-  iproute = dontCheck (prev.iproute);
+  iproute = dontCheck (prev.callHackage "iproute" "1.7.12" { });
 
   lens = doJailbreak (prev.callHackage "lens" "5.2" { });
 
   lens-aeson = prev.callHackage "lens-aeson" "1.2.1" { };
 
-  lifted-async = doJailbreak prev.lifted-async;
+  lifted-async = doJailbreak (prev.callHackage "lifted-async" "0.10.2.1" { });
 
-  linear = doJailbreak prev.linear;
+  linear = doJailbreak (prev.callHackage "linear" "1.21.10" { });
 
-  lucid = doJailbreak prev.lucid;
+  lucid = doJailbreak (prev.callHackage "lucid" "2.11.1" { });
 
   memory = prev.callCabal2nix "memory" inputs.memory { };
 
-  network-byte-order = dontCheck (prev.network-byte-order);
+  network-byte-order = dontCheck (prev.callHackage "network-byte-order" "0.1.6" { });
 
-  nothunks = dontCheck prev.nothunks;
+  nothunks = dontCheck (prev.callHackage "nothunks" "0.1.3" { });
 
   optics-core = prev.callHackage "optics-core" "0.4.1" { };
 
@@ -169,25 +169,23 @@ final: prev: with pkgs.haskell.lib; {
 
   polysemy-zoo = doJailbreak (dontCheck (prev.callHackage "polysemy-zoo" "0.8.0.0" { }));
 
-  postgresql-libpq = doJailbreak prev.postgresql-libpq;
+  postgresql-libpq = doJailbreak (prev.callHackage "postgresql-libpq" "0.9.4.3" { });
 
-  postgresql-simple = doJailbreak prev.postgresql-simple;
+  postgresql-simple = doJailbreak (prev.callHackage "postgresql-simple" "0.6.4" { });
 
-  pretty-simple = dontCheck prev.pretty-simple;
+  pretty-simple = dontCheck (prev.callHackage "pretty-simple" "4.1.1.0" { });
 
-  prettyprinter-ansi-terminal = dontCheck prev.prettyprinter-ansi-terminal;
+  prettyprinter-ansi-terminal = dontCheck (prev.callHackage "prettyprinter-ansi-terminal" "1.1.3" { });
 
   primitive = dontCheck (prev.callHackage "primitive" "0.7.4.0" { });
 
-  proteaaudio = doJailbreak prev.proteaaudio;
-
-  proteaaudio-sdl = doJailbreak prev.proteaaudio-sdl;
+  proteaaudio-sdl = doJailbreak (prev.callHackage "proteaaudio-sdl" "0.9.2" { });
 
   quickcheck-dynamic = prev.callHackage "quickcheck-dynamic" "1.1.0" { };
 
-  quickcheck-instances = doJailbreak prev.quickcheck-instances;
+  quickcheck-instances = doJailbreak (prev.callHackage "quickcheck-instances" "0.3.28" { });
 
-  retry = dontCheck prev.retry;
+  retry = dontCheck (prev.callHackage "retry" "0.9.3.0" { });
 
   scientific = prev.callHackage "scientific" "0.3.7.0" { };
 
@@ -201,7 +199,7 @@ final: prev: with pkgs.haskell.lib; {
 
   sdl2-ttf = prev.callHackage "sdl2-ttf" "2.1.3" { };
 
-  semialign = doJailbreak prev.semialign;
+  semialign = doJailbreak (prev.callHackage "semialign" "1.2.0.1" { });
 
   servant = prev.callCabal2nix "servant" (inputs.servant + /servant) { };
 
@@ -213,25 +211,25 @@ final: prev: with pkgs.haskell.lib; {
 
   servant-foreign = prev.callCabal2nix "servant-foreign" (inputs.servant + /servant-foreign) { };
 
-  servant-lucid = doJailbreak prev.servant-lucid;
+  servant-lucid = doJailbreak (prev.callHackage "servant-lucid" "0.9.0.5" { });
 
   serialise = doJailbreak (prev.callCabal2nix "serialise" (inputs.cborg + /serialise) { });
 
-  singleton-bool = doJailbreak prev.singleton-bool;
+  singleton-bool = doJailbreak (prev.callHackage "singleton-bool" "0.1.6" { });
 
   singletons = prev.callHackage "singletons" "3.0.2" { };
 
-  some = doJailbreak prev.some;
+  some = doJailbreak (prev.callHackage "some" "1.0.4" { });
 
-  sop-core = doJailbreak prev.sop-core;
+  sop-core = doJailbreak (prev.callHackage "sop-core" "0.5.0.1" { });
 
-  split = doJailbreak prev.split;
+  split = doJailbreak (prev.callHackage "split" "0.2.3.3" { });
 
-  splitmix = doJailbreak (prev.splitmix);
+  splitmix = doJailbreak (dontCheck (prev.splitmix));
 
-  streaming-commons = dontCheck prev.streaming-commons;
+  streaming-commons = dontCheck (prev.callHackage "streaming-commons" "0.2.2.4" { });
 
-  syb = dontCheck prev.syb;
+  syb = dontCheck (prev.callHackage "syb" "0.7.2.1" { });
 
   tasty = doJailbreak (prev.callCabal2nix "tasty" (inputs.tasty + /core) { });
 
@@ -241,21 +239,21 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-wai = doJailbreak (prev.callHackage "tasty-wai" "0.1.2.0" { });
 
-  these = doJailbreak prev.these;
+  these = doJailbreak (prev.callHackage "these" "1.1.1.1" { });
 
   th-lift-instances = prev.callHackage "th-lift-instances" "0.1.20" { };
 
-  time-compat = doJailbreak prev.time-compat;
+  time-compat = doJailbreak (prev.callHackage "time-compat" "1.9.6.1" { });
 
-  type-errors-pretty = dontCheck (doJailbreak prev.type-errors-pretty);
+  type-errors-pretty = dontCheck (doJailbreak (prev.callHackage "type-errors-pretty" "0.0.1.2" { }));
 
-  type-errors = dontCheck (doJailbreak prev.type-errors);
+  type-errors = dontCheck (doJailbreak (prev.callHackage "type-errors" "0.2.0.0" { }));
 
-  type-equality = doJailbreak prev.type-equality;
+  type-equality = doJailbreak (prev.callHackage "type-equality" "1" { });
 
   unordered-containers = doJailbreak (prev.callHackage "unordered-containers" "0.2.19.1" { });
 
-  vault = doJailbreak prev.vault;
+  vault = doJailbreak (prev.callHackage "vault" "0.3.1.5" { });
 
   vector = dontCheck (prev.callHackage "vector" "0.13.0.0" { });
 
@@ -263,8 +261,8 @@ final: prev: with pkgs.haskell.lib; {
 
   vinyl = final.callHackage "vinyl" "0.14.3" { };
 
-  warp = dontCheck (prev.warp);
+  warp = dontCheck (prev.callHackage "warp" "3.3.22" { });
 
-  witherable = dontCheck prev.witherable;
+  witherable = dontCheck (prev.callHackage "witherable" "0.4.2" { });
 
 }
