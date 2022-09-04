@@ -153,7 +153,7 @@ final: prev: with pkgs.haskell.lib; {
 
   optics-th = prev.callHackage "optics-th" "0.4.1" { };
 
-  optics = dontCheck (prev.callHackage "optics" "0.4.2" { });
+  optics = doJailbreak (dontCheck (prev.callHackage "optics" "0.4.2" { }));
 
   parallel = doJailbreak (final.callHackage "parallel" "3.2.2.0" { });
 
