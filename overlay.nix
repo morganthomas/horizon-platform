@@ -45,13 +45,18 @@ final: prev: with pkgs.haskell.lib; {
 
   compact = doJailbreak (prev.callHackage "compact" "0.2.0.0" { });
 
+
   comonad = prev.callHackage "comonad" "5.0.8" { };
+
+  composite-cassava = doJailbreak (prev.callHackage "composite-cassava" "0.0.3.1" { });
 
   composite-base = doJailbreak (prev.callHackage "composite-base" "0.8.1.0" { });
 
   composite-dhall = prev.callHackage "composite-dhall" "0.1.0.1" { };
 
   composite-lens-extra = prev.callHackage "composite-lens-extra" "0.1.0.0" { };
+
+  composite-tuple = prev.callHackage "composite-tuple" "0.1.2.0" { };
 
   conduit = dontCheck (prev.callHackage "conduit" "1.3.4.2" { });
 
