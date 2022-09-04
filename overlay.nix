@@ -51,7 +51,7 @@ final: prev: with pkgs.haskell.lib; {
 
   composite-dhall = prev.callHackage "composite-dhall" "0.1.0.1" { };
 
-  composite-lens-extra = prev.callCabal2nix "composite-lens-extra" inputs.composite-lens-extra { };
+  composite-lens-extra = prev.callHackage "composite-lens-extra" "0.1.0.0" { };
 
   conduit = dontCheck prev.conduit;
 

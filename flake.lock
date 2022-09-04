@@ -50,22 +50,6 @@
         "type": "github"
       }
     },
-    "composite-lens-extra": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1662139407,
-        "narHash": "sha256-klAhsEDQiFJYarYaGmGI9HLndqz6ddOgHalCoIwcJN8=",
-        "ref": "refs/heads/master",
-        "rev": "ee6d665429e0e0a2c9273d95ee60108490bf9d03",
-        "revCount": 14,
-        "type": "git",
-        "url": "https://gitlab.homotopic.tech/haskell/composite-lens-extra"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://gitlab.homotopic.tech/haskell/composite-lens-extra"
-      }
-    },
     "doctest": {
       "flake": false,
       "locked": {
@@ -317,7 +301,6 @@
         "all-cabal-hashes": "all-cabal-hashes",
         "cborg": "cborg",
         "cereal": "cereal",
-        "composite-lens-extra": "composite-lens-extra",
         "doctest": "doctest",
         "double-conversion": "double-conversion",
         "flake-parts": "flake-parts",

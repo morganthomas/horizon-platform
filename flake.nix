@@ -8,10 +8,6 @@
       url = "github:GaloisInc/cereal";
       flake = false;
     };
-    composite-lens-extra = {
-      url = "git+https://gitlab.homotopic.tech/haskell/composite-lens-extra";
-      flake = false;
-    };
     doctest = {
       url = "github:parsonsmatt/doctest/a5f696b80bb8220d284e34d90f0b94291b859e77";
       flake = false;
