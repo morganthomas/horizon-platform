@@ -67,6 +67,8 @@ final: prev: with pkgs.haskell.lib; {
 
   dhall = doJailbreak (prev.callHackage "dhall" "1.41.2" { });
 
+  dimensional = dontCheck (prev.callHackage "dimensional" "1.5" { });
+
   doctest = dontCheck (prev.callCabal2nix "doctest" inputs.doctest { });
 
   double-conversion = prev.callCabal2nix "double-conversion" inputs.double-conversion { };
