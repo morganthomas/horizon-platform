@@ -31,10 +31,6 @@
       flake = false;
     };
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
-    hashable = {
-      url = "github:haskell-unordered-containers/hashable";
-      flake = false;
-    };
     haskell-flake.url = "github:srid/haskell-flake";
     integer-logarithms = {
       url = "github:haskellari/integer-logarithms";
