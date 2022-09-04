@@ -145,6 +145,14 @@ final: prev: with pkgs.haskell.lib; {
 
   nothunks = dontCheck prev.nothunks;
 
+  optics-core = prev.callHackage "optics-core" "0.4.1" { };
+
+  optics-extra = prev.callHackage "optics-extra" "0.4.2.1" { };
+
+  optics-th = prev.callHackage "optics-th" "0.4.1" { };
+
+  optics = dontCheck (prev.callHackage "optics" "0.4.2" { });
+
   parallel = doJailbreak (final.callHackage "parallel" "3.2.2.0" { });
 
   polysemy = dontCheck (prev.callHackage "polysemy" "1.7.1.0" { });
@@ -171,7 +179,15 @@ final: prev: with pkgs.haskell.lib; {
 
   scientific = prev.callHackage "scientific" "0.3.7.0" { };
 
-  sdl2 = dontCheck (final.callHackage "sdl2" "2.5.3.3" { });
+  sdl2 = doJailbreak (dontCheck (final.callHackage "sdl2" "2.5.3.3" { }));
+
+  sdl2-gfx = prev.callHackage "sdl2-gfx" "0.3.0.0" { };
+
+  sdl2-image = prev.callHackage "sdl2-image" "2.1.0.0" { };
+
+  sdl2-mixer = prev.callHackage "sdl2-mixer" "1.2.0.0" { };
+
+  sdl2-ttf = prev.callHackage "sdl2-ttf" "2.1.3" { };
 
   semialign = doJailbreak prev.semialign;
 
