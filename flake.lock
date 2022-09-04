@@ -34,22 +34,6 @@
         "type": "github"
       }
     },
-    "cereal": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1660071359,
-        "narHash": "sha256-1CEEynJBeSz+zeNSy8uJ4qdOYz93jvIJJB7MBQRA99I=",
-        "owner": "GaloisInc",
-        "repo": "cereal",
-        "rev": "c188f3d45ab4245c962975ac237e13c85aeb7136",
-        "type": "github"
-      },
-      "original": {
-        "owner": "GaloisInc",
-        "repo": "cereal",
-        "type": "github"
-      }
-    },
     "doctest": {
       "flake": false,
       "locked": {
@@ -235,7 +219,6 @@
       "inputs": {
         "all-cabal-hashes": "all-cabal-hashes",
         "cborg": "cborg",
-        "cereal": "cereal",
         "doctest": "doctest",
         "double-conversion": "double-conversion",
         "flake-parts": "flake-parts",

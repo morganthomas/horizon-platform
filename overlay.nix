@@ -41,7 +41,7 @@ final: prev: with pkgs.haskell.lib; {
 
   cborg-json = doJailbreak (prev.callCabal2nix "cborg-json" (inputs.cborg + /cborg-json) { });
 
-  cereal = prev.callCabal2nix "cereal" inputs.cereal { };
+  cereal = prev.callHackage "cereal" "0.5.8.3" { };
 
   compact = doJailbreak (prev.callHackage "compact" "0.2.0.0" { });
 
