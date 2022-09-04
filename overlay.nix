@@ -43,6 +43,8 @@ final: prev: with pkgs.haskell.lib; {
 
   cereal = prev.callCabal2nix "cereal" inputs.cereal { };
 
+  compact = doJailbreak (prev.callHackage "compact" "0.2.0.0" { });
+
   comonad = prev.callHackage "comonad" "5.0.8" { };
 
   composite-base = doJailbreak (prev.callHackage "composite-base" "0.8.1.0" { });
@@ -158,6 +160,8 @@ final: prev: with pkgs.haskell.lib; {
   polysemy = dontCheck (prev.callHackage "polysemy" "1.7.1.0" { });
 
   polysemy-time = dontCheck (prev.callHackage "polysemy-time" "0.5.1.0" { });
+
+  polysemy-zoo = doJailbreak (dontCheck (prev.callHackage "polysemy-zoo" "0.8.0.0" { }));
 
   postgresql-libpq = doJailbreak prev.postgresql-libpq;
 
