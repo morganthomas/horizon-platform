@@ -25,6 +25,10 @@
       flake = false;
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    polysemy = {
+      url = "github:locallycompact/polysemy?ref=ghc-942";
+      flake = false;
+    };
     servant = {
       url = "github:TeofilC/servant?ref=ghc-9.4";
       flake = false;

@@ -184,6 +184,8 @@ final: prev: with pkgs.haskell.lib; {
 
   polysemy-path = doJailbreak (prev.callHackage "polysemy-path" "0.2.1.0" { });
 
+  polysemy-plugin = dontCheck (doJailbreak (prev.callCabal2nix "polysemy-plugin" (inputs.polysemy + /polysemy-plugin) { }));
+
   polysemy-several = prev.callHackage "polysemy-several" "0.1.1.0" { };
 
   polysemy-time = dontCheck (prev.callHackage "polysemy-time" "0.5.1.0" { });

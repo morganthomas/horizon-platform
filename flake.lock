@@ -199,6 +199,23 @@
         "type": "github"
       }
     },
+    "polysemy": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662391458,
+        "narHash": "sha256-ny1RDNdNbCehHEpBfEGBtsM+oWxmRJmNIlylx3iVwus=",
+        "owner": "locallycompact",
+        "repo": "polysemy",
+        "rev": "bd944ca000c1ca69602d4723e3859af431b9d0c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "locallycompact",
+        "ref": "ghc-942",
+        "repo": "polysemy",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "all-cabal-hashes": "all-cabal-hashes",
@@ -211,6 +228,7 @@
         "lint-utils": "lint-utils",
         "memory": "memory",
         "nixpkgs": "nixpkgs_2",
+        "polysemy": "polysemy",
         "servant": "servant",
         "tasty": "tasty",
         "tasty-hedgehog": "tasty-hedgehog"
