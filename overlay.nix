@@ -80,7 +80,7 @@ final: prev: with pkgs.haskell.lib; {
 
   double-conversion = prev.callCabal2nix "double-conversion" inputs.double-conversion { };
 
-  email-validate = dontCheck (prev.callHackage "email-validate" "2.3.2.16" { });
+  email-validate = doJailbreak (dontCheck (prev.callHackage "email-validate" "2.3.2.16" { }));
 
   effectful-core = prev.callHackage "effectful-core" "2.1.0.0" { };
 
