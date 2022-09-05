@@ -82,6 +82,12 @@ final: prev: with pkgs.haskell.lib; {
 
   email-validate = dontCheck (prev.callHackage "email-validate" "2.3.2.16" { });
 
+  effectful-core = prev.callHackage "effectful-core" "2.1.0.0" { };
+
+  effectful-th = prev.callHackage "effectful-th" "1.0.0.0" { };
+
+  effectful = prev.callHackage "effectful" "2.1.0.0" { };
+
   extra = dontCheck (prev.callHackage "extra" "1.7.12" { });
 
   fcf-containers = dontCheck (prev.callHackage "fcf-containers" "0.7.1" { });
