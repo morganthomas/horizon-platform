@@ -118,7 +118,7 @@ final: prev: with pkgs.haskell.lib; {
 
   hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
 
-  hspec = doJailbreak (prev.callHackage "hspec" "2.10.2" { });
+  hspec = doJailbreak (prev.callHackage "hspec" "2.10.3" { });
 
   hspec-core = dontCheck (prev.callHackage "hspec-core" "2.10.0.1" { });
 
@@ -224,15 +224,15 @@ final: prev: with pkgs.haskell.lib; {
 
   semialign = doJailbreak (prev.callHackage "semialign" "1.2.0.1" { });
 
-  servant = prev.callCabal2nix "servant" (inputs.servant + /servant) { };
+  servant = doJailbreak (prev.callCabal2nix "servant" (inputs.servant + /servant) { });
 
-  servant-server = prev.callCabal2nix "servant-server" (inputs.servant + /servant-server) { };
+  servant-server = doJailbreak (prev.callCabal2nix "servant-server" (inputs.servant + /servant-server) { });
 
-  servant-client-core = prev.callCabal2nix "servant-client-core" (inputs.servant + /servant-client-core) { };
+  servant-client-core = doJailbreak (prev.callCabal2nix "servant-client-core" (inputs.servant + /servant-client-core) { });
 
-  servant-client = prev.callCabal2nix "servant-client" (inputs.servant + /servant-client) { };
+  servant-client = doJailbreak (prev.callCabal2nix "servant-client" (inputs.servant + /servant-client) { });
 
-  servant-foreign = prev.callCabal2nix "servant-foreign" (inputs.servant + /servant-foreign) { };
+  servant-foreign = doJailbreak (prev.callCabal2nix "servant-foreign" (inputs.servant + /servant-foreign) { });
 
   servant-lucid = doJailbreak (prev.callHackage "servant-lucid" "0.9.0.5" { });
 
