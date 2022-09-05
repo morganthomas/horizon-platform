@@ -256,6 +256,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty = doJailbreak (prev.callCabal2nix "tasty" (inputs.tasty + /core) { });
 
+  tasty-discover = doJailbreak (prev.callHackage "tasty-discover" "5.0.0" { });
+
   tasty-hedgehog = doJailbreak (prev.callCabal2nix "tasty-hedgehog" inputs.tasty-hedgehog { });
 
   tasty-hunit = doJailbreak (prev.callCabal2nix "tasty" (inputs.tasty + /hunit) { });
