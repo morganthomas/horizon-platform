@@ -270,6 +270,8 @@ final: prev: with pkgs.haskell.lib; {
 
   th-lift-instances = prev.callHackage "th-lift-instances" "0.1.20" { };
 
+  tidal = doJailbreak (prev.callHackage "tidal" "1.8.1" { });
+
   time-compat = doJailbreak (prev.callHackage "time-compat" "1.9.6.1" { });
 
   type-errors-pretty = dontCheck (doJailbreak (prev.callHackage "type-errors-pretty" "0.0.1.2" { }));
