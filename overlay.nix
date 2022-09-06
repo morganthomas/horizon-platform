@@ -5,6 +5,8 @@ final: prev: with pkgs.haskell.lib; {
 
   ChasingBottoms = prev.callHackage "ChasingBottoms" "1.3.1.12" { };
 
+  JuicyPixels = prev.callHackage "JuicyPixels" "3.3.8" { };
+
   OneTuple = prev.callHackage "OneTuple" "0.3.1" { };
 
   OpenGLRaw = prev.callHackage "OpenGLRaw" "3.3.4.1" { };
@@ -18,6 +20,8 @@ final: prev: with pkgs.haskell.lib; {
   async = prev.callHackage "async" "2.2.4" { };
 
   basement = prev.callHackage "basement" "0.0.15" { };
+
+  base64 = doJailbreak (prev.callHackage "base64" "0.4.2.4" { });
 
   base-compat = prev.callHackage "base-compat" "0.12.2" { };
 
@@ -118,6 +122,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
 
+  hslua-aeson = doJailbreak (prev.callHackage "hslua-aeson" "2.2.1" { });
+
   hspec = doJailbreak (prev.callHackage "hspec" "2.10.3" { });
 
   hspec-core = dontCheck (prev.callHackage "hspec-core" "2.10.0.1" { });
@@ -171,6 +177,8 @@ final: prev: with pkgs.haskell.lib; {
   optics-th = prev.callHackage "optics-th" "0.4.1" { };
 
   optics = doJailbreak (dontCheck (prev.callHackage "optics" "0.4.2" { }));
+
+  pandoc = prev.callHackage "pandoc" "2.19.2" { };
 
   parallel = doJailbreak (final.callHackage "parallel" "3.2.2.0" { });
 
@@ -255,6 +263,8 @@ final: prev: with pkgs.haskell.lib; {
   splitmix = doJailbreak (dontCheck (prev.splitmix));
 
   streaming-commons = dontCheck (prev.callHackage "streaming-commons" "0.2.2.4" { });
+
+  string-qq = doJailbreak (prev.callHackage "string-qq" "0.0.4" { });
 
   syb = dontCheck (prev.callHackage "syb" "0.7.2.1" { });
 
