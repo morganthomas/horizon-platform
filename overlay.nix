@@ -240,6 +240,8 @@ final: prev: with pkgs.haskell.lib; {
 
   serialise = doJailbreak (prev.callCabal2nix "serialise" (inputs.cborg + /serialise) { });
 
+  shake = dontCheck (prev.callHackage "shake" "0.19.6" { });
+
   singleton-bool = doJailbreak (prev.callHackage "singleton-bool" "0.1.6" { });
 
   singletons = prev.callHackage "singletons" "3.0.2" { };
