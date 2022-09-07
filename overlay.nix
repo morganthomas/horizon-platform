@@ -3,7 +3,17 @@ final: prev: with pkgs.haskell.lib; {
 
   Cabal = prev.callHackage "Cabal" "3.8.1.0" { };
 
+  Cabal-QuickCheck = prev.callCabal2nix "Cabal-QuickCheck" (inputs.Cabal + /Cabal-QuickCheck) { };
+
+  Cabal-described = prev.callCabal2nix "Cabal-described" (inputs.Cabal + /Cabal-described) { };
+
+  Cabal-syntax = prev.callHackage "Cabal-syntax" "3.8.1.0" { };
+
+  Cabal-tree-diff = prev.callCabal2nix "Cabal-tree-diff" (inputs.Cabal + /Cabal-tree-diff) { };
+
   ChasingBottoms = prev.callHackage "ChasingBottoms" "1.3.1.12" { };
+
+  HTTP = dontCheck (prev.callHackage "HTTP" "4000.4.1" { });
 
   JuicyPixels = prev.callHackage "JuicyPixels" "3.3.8" { };
 
@@ -40,6 +50,10 @@ final: prev: with pkgs.haskell.lib; {
   bytes = prev.callHackage "bytes" "0.17.2" { };
 
   cabal-doctest = prev.callHackage "cabal-doctest" "1.0.9" { };
+
+  cabal-install = doJailbreak (dontCheck (prev.callHackage "cabal-install" "3.8.1.0" { }));
+
+  cabal-install-solver = doJailbreak (prev.callHackage "cabal-install-solver" "3.8.1.0" { });
 
   cborg = doJailbreak (prev.callCabal2nix "cborg" (inputs.cborg + /cborg) { });
 
@@ -84,6 +98,8 @@ final: prev: with pkgs.haskell.lib; {
 
   double-conversion = prev.callCabal2nix "double-conversion" inputs.double-conversion { };
 
+  ed25519 = dontCheck (prev.callCabal2nix "ed25519" inputs.ed25519 { });
+
   email-validate = doJailbreak (dontCheck (prev.callHackage "email-validate" "2.3.2.16" { }));
 
   effectful-core = prev.callHackage "effectful-core" "2.1.0.0" { };
@@ -110,9 +126,15 @@ final: prev: with pkgs.haskell.lib; {
 
   ghc-byteorder = doJailbreak (prev.callHackage "ghc-byteorder" "4.11.0.0.10" { });
 
+  ghc-lib-parser = doJailbreak (prev.callHackage "ghc-lib-parser" "9.4.2.20220822" { });
+
+  ghc-lib-parser-ex = doJailbreak (prev.callHackage "ghc-lib-parser-ex" "9.4.0.0" { });
+
   ghc-paths = prev.callHackage "ghc-paths" "0.1.0.12" { };
 
   ghc-tcplugins-extra = prev.callHackage "ghc-tcplugins-extra" "0.4.3" { };
+
+  hackage-security = doJailbreak (prev.callHackage "hackage-security" "0.6.2.2" { });
 
   hashable = prev.callHackage "hashable" "1.4.1.0" { };
 

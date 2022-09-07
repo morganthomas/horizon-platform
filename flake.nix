@@ -1,5 +1,9 @@
 {
   inputs = {
+    Cabal = {
+      url = "git+https://gitlab.haskell.org/ghc/packages/Cabal";
+      flake = false;
+    };
     all-cabal-hashes = {
       url = "github:commercialhaskell/all-cabal-hashes?ref=hackage";
       flake = false;
@@ -14,6 +18,10 @@
     };
     double-conversion = {
       url = "github:haskell/double-conversion";
+      flake = false;
+    };
+    ed25519 = {
+      url = "git+https://gitlab.homotopic.tech/horizon/adopted/ed25519";
       flake = false;
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
