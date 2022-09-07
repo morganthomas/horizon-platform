@@ -280,6 +280,22 @@
         "type": "github"
       }
     },
+    "quickcheck-dynamic": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662454862,
+        "narHash": "sha256-sMAO+Vkocf/ejwg2sx58rXlmoE6tTPQV/ECVVOnWPHo=",
+        "owner": "input-output-hk",
+        "repo": "quickcheck-dynamic",
+        "rev": "81310df2de73094d5daff1b675a4318cff5fc8b5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "input-output-hk",
+        "repo": "quickcheck-dynamic",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "Cabal": "Cabal",
@@ -297,6 +313,7 @@
         "memory": "memory",
         "nixpkgs": "nixpkgs_2",
         "polysemy": "polysemy",
+        "quickcheck-dynamic": "quickcheck-dynamic",
         "servant": "servant",
         "tasty": "tasty",
         "tasty-hedgehog": "tasty-hedgehog"

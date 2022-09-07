@@ -244,7 +244,7 @@ final: prev: with pkgs.haskell.lib; {
 
   proteaaudio-sdl = doJailbreak (prev.callHackage "proteaaudio-sdl" "0.9.2" { });
 
-  quickcheck-dynamic = prev.callHackage "quickcheck-dynamic" "1.1.0" { };
+  quickcheck-dynamic = prev.callCabal2nix "quickcheck-dynamic" (inputs.quickcheck-dynamic + /quickcheck-dynamic) { };
 
   quickcheck-instances = doJailbreak (prev.callHackage "quickcheck-instances" "0.3.28" { });
 

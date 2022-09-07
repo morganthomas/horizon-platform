@@ -45,6 +45,10 @@
       url = "github:locallycompact/polysemy?ref=ghc-942";
       flake = false;
     };
+    quickcheck-dynamic = {
+      url = "github:input-output-hk/quickcheck-dynamic";
+      flake = false;
+    };
     servant = {
       url = "github:TeofilC/servant?ref=ghc-9.4";
       flake = false;
