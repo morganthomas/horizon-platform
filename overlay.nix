@@ -25,6 +25,8 @@ final: prev: with pkgs.haskell.lib; {
 
   ansi-terminal = prev.callHackage "ansi-terminal" "0.11.3" { };
 
+  apecs = prev.callHackage "apecs" "0.9.4" { };
+
   assoc = prev.callHackage "assoc" "1.0.2" { };
 
   async = prev.callHackage "async" "2.2.4" { };
