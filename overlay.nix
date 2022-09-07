@@ -148,6 +148,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hedgehog-golden = dontHaddock (prev.callCabal2nix "hedgehog-golden" inputs.hedgehog-golden { });
 
+  hedgehog-quickcheck = doJailbreak (prev.callHackage "hedgehog-quickcheck" "0.1.1" { });
+
   hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
 
   hslua-aeson = doJailbreak (prev.callHackage "hslua-aeson" "2.2.1" { });
