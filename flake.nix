@@ -8,6 +8,10 @@
       url = "github:commercialhaskell/all-cabal-hashes?ref=hackage";
       flake = false;
     };
+    cache-effectful = {
+      url = "github:haskell-effectful/cache-effectful";
+      flake = false;
+    };
     cborg = {
       url = "github:parsonsmatt/cborg/05ca2063ff631667699bffbeee3a4a076943b905";
       flake = false;
