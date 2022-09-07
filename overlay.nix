@@ -33,7 +33,7 @@ final: prev: with pkgs.haskell.lib; {
 
   basement = prev.callHackage "basement" "0.0.15" { };
 
-  base64 = doJailbreak (prev.callHackage "base64" "0.4.2.4" { });
+  base64 = dontCheck (doJailbreak (prev.callHackage "base64" "0.4.2.4" { }));
 
   base-compat = prev.callHackage "base-compat" "0.12.2" { };
 
