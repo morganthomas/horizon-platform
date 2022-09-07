@@ -146,6 +146,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hedgehog = dontHaddock (prev.callHackage "hedgehog" "1.2" { });
 
+  hedgehog-golden = dontHaddock (prev.callCabal2nix "hedgehog-golden" inputs.hedgehog-golden { });
+
   hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
 
   hslua-aeson = doJailbreak (prev.callHackage "hslua-aeson" "2.2.1" { });
@@ -333,5 +335,7 @@ final: prev: with pkgs.haskell.lib; {
   warp-tls = dontCheck (prev.callHackage "warp-tls" "3.3.3" { });
 
   witherable = dontCheck (prev.callHackage "witherable" "0.4.2" { });
+  
+  with-utf8 = doJailbreak (prev.callHackage "with-utf8" "1.0.2.3" { });
 
 }

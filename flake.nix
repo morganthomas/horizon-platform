@@ -32,6 +32,10 @@
     flake-parts.inputs.nixpkgs.follows = "nixpkgs";
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     haskell-flake.url = "github:srid/haskell-flake";
+    hedgehog-golden = {
+      url = "github:maybe-hedgehog-later/hedgehog-golden";
+      flake = false;
+    };
     memory = {
       url = "github:parsonsmatt/hs-memory/0f760c8ba0b7d5aacf04a7294e87e5e4fff53f40";
       flake = false;

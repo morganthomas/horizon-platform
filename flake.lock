@@ -179,6 +179,22 @@
         "type": "github"
       }
     },
+    "hedgehog-golden": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661504720,
+        "narHash": "sha256-bsQhvyY22Rgg8fEsVlQMAXN7Kps3QWntnAucuP8F16Y=",
+        "owner": "maybe-hedgehog-later",
+        "repo": "hedgehog-golden",
+        "rev": "4ab2906b3f0be5e31ee5a8585e45d43392694246",
+        "type": "github"
+      },
+      "original": {
+        "owner": "maybe-hedgehog-later",
+        "repo": "hedgehog-golden",
+        "type": "github"
+      }
+    },
     "lint-utils": {
       "inputs": {
         "flake-utils": "flake-utils_2",
@@ -276,6 +292,7 @@
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
         "haskell-flake": "haskell-flake",
+        "hedgehog-golden": "hedgehog-golden",
         "lint-utils": "lint-utils",
         "memory": "memory",
         "nixpkgs": "nixpkgs_2",
