@@ -63,8 +63,9 @@ final: prev: with pkgs.haskell.lib; {
 
   cereal = prev.callHackage "cereal" "0.5.8.3" { };
 
-  compact = doJailbreak (prev.callHackage "compact" "0.2.0.0" { });
+  citeproc = prev.callHackage "citeproc" "0.8.0.1" { };
 
+  compact = doJailbreak (prev.callHackage "compact" "0.2.0.0" { });
 
   comonad = prev.callHackage "comonad" "5.0.8" { };
 
@@ -210,9 +211,11 @@ final: prev: with pkgs.haskell.lib; {
 
   optics = doJailbreak (dontCheck (prev.callHackage "optics" "0.4.2" { }));
 
-  pandoc = prev.callHackage "pandoc" "2.19.2" { };
+  pandoc = doJailbreak (prev.callHackage "pandoc" "2.19.2" { });
 
   parallel = doJailbreak (final.callHackage "parallel" "3.2.2.0" { });
+
+  pcg-random = dontCheck (prev.callHackage "pcg-random" "0.1.3.7" { });
 
   polysemy = dontCheck (prev.callHackage "polysemy" "1.7.1.0" { });
 
@@ -324,6 +327,12 @@ final: prev: with pkgs.haskell.lib; {
 
   type-equality = doJailbreak (prev.callHackage "type-equality" "1" { });
 
+  unicode-data = dontCheck (prev.callCabal2nix "unicode-data" (inputs.unicode-data + /unicode-data) { });
+
+  unicode-collation = doJailbreak (prev.callHackage "unicode-collation" "0.1.3.2" { });
+
+  unicode-transforms = doJailbreak (dontCheck (prev.callHackage "unicode-transforms" "0.4.0.1" { }));
+
   unordered-containers = doJailbreak (prev.callHackage "unordered-containers" "0.2.19.1" { });
 
   vault = doJailbreak (prev.callHackage "vault" "0.3.1.5" { });
@@ -341,5 +350,7 @@ final: prev: with pkgs.haskell.lib; {
   witherable = dontCheck (prev.callHackage "witherable" "0.4.2" { });
   
   with-utf8 = doJailbreak (prev.callHackage "with-utf8" "1.0.2.3" { });
+
+  xml-conduit = dontCheck (prev.callHackage "xml-conduit" "1.9.1.1" { });
 
 }
