@@ -299,6 +299,8 @@ final: prev: with pkgs.haskell.lib; {
 
   unicode-collation = doJailbreak (prev.callHackage "unicode-collation" "0.1.3.2" { });
 
+  unicode-transforms = doJailbreak (dontCheck (prev.callHackage "unicode-transforms" "0.4.0.1" { }));
+
   unordered-containers = doJailbreak (prev.callHackage "unordered-containers" "0.2.19.1" { });
 
   vault = doJailbreak (prev.callHackage "vault" "0.3.1.5" { });
