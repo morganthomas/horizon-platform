@@ -47,7 +47,7 @@ final: prev: with pkgs.haskell.lib; {
 
   cereal = prev.callHackage "cereal" "0.5.8.3" { };
 
-  compact = doJailbreak (prev.callHackage "compact" "0.2.0.0" { });
+  citeproc = prev.callHackage "citeproc" "0.8.0.1" { };
 
 
   comonad = prev.callHackage "comonad" "5.0.8" { };
