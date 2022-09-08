@@ -321,6 +321,8 @@ final: prev: with pkgs.haskell.lib; {
 
   these = doJailbreak (prev.callHackage "these" "1.1.1.1" { });
 
+  th-extras = doJailbreak (prev.callHackage "th-extras" "0.0.0.6" { });
+
   th-lift-instances = prev.callHackage "th-lift-instances" "0.1.20" { };
 
   tidal = doJailbreak (prev.callHackage "tidal" "1.8.1" { });
