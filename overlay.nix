@@ -265,7 +265,7 @@ final: prev: with pkgs.haskell.lib; {
 
   retry = dontCheck (prev.callHackage "retry" "0.9.3.0" { });
 
-  scotty = prev.callHackage "scotty" "0.12" { };
+  scotty = doJailbreak (prev.callHackage "scotty" "0.12" { });
 
   scientific = prev.callHackage "scientific" "0.3.7.0" { };
 
