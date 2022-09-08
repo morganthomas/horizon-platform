@@ -183,6 +183,8 @@ final: prev: with pkgs.haskell.lib; {
 
   parallel = doJailbreak (final.callHackage "parallel" "3.2.2.0" { });
 
+  pcg-random = dontCheck (prev.callHackage "pcg-random" "0.1.3.7" { });
+
   polysemy = dontCheck (prev.callHackage "polysemy" "1.7.1.0" { });
 
   polysemy-extra = prev.callHackage "polysemy-extra" "0.2.1.0" { };
