@@ -49,6 +49,7 @@ final: prev: with pkgs.haskell.lib; {
 
   citeproc = prev.callHackage "citeproc" "0.8.0.1" { };
 
+  compact = doJailbreak (prev.callHackage "compact" "0.2.0.0" { });
 
   comonad = prev.callHackage "comonad" "5.0.8" { };
 
