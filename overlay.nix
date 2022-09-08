@@ -129,6 +129,8 @@ final: prev: with pkgs.haskell.lib; {
 
   generic-optics-lite = doJailbreak (prev.callHackage "generic-optics-lite" "0.1" { });
 
+  generics-sop = prev.callHackage "generics-sop" "0.5.1.2" { };
+
   ghc-byteorder = doJailbreak (prev.callHackage "ghc-byteorder" "4.11.0.0.10" { });
 
   ghc-lib-parser = doJailbreak (prev.callHackage "ghc-lib-parser" "9.4.2.20220822" { });
