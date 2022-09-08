@@ -255,6 +255,8 @@ final: prev: with pkgs.haskell.lib; {
 
   quickcheck-instances = doJailbreak (prev.callHackage "quickcheck-instances" "0.3.28" { });
 
+  rebase = doJailbreak (prev.callHackage "rebase" "1.16" { });
+
   retry = dontCheck (prev.callHackage "retry" "0.9.3.0" { });
 
   scientific = prev.callHackage "scientific" "0.3.7.0" { };
