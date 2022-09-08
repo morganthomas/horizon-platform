@@ -131,6 +131,22 @@
         "url": "https://gitlab.homotopic.tech/horizon/adopted/ed25519"
       }
     },
+    "ema": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661699475,
+        "narHash": "sha256-2324LDzNNZGItJ4hI8SGUyZ8PZK0xHtRWnAFXlCX8UQ=",
+        "owner": "EmaApps",
+        "repo": "ema",
+        "rev": "be89ffe306a15ab4a16494c8593d989fabcc4486",
+        "type": "github"
+      },
+      "original": {
+        "owner": "EmaApps",
+        "repo": "ema",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs": [
@@ -338,6 +354,7 @@
         "doctest": "doctest",
         "double-conversion": "double-conversion",
         "ed25519": "ed25519",
+        "ema": "ema",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
         "haskell-flake": "haskell-flake",
