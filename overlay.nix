@@ -359,6 +359,8 @@ final: prev: with pkgs.haskell.lib; {
 
   vinyl = final.callHackage "vinyl" "0.14.3" { };
 
+  wai-middleware-static = prev.callHackage "wai-middleware-static" "0.9.2" { };
+
   warp = dontCheck (prev.callHackage "warp" "3.3.22" { });
 
   warp-tls = dontCheck (prev.callHackage "warp-tls" "3.3.3" { });
