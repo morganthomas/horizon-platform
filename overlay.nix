@@ -297,6 +297,8 @@ final: prev: with pkgs.haskell.lib; {
 
   shake = dontCheck (prev.callHackage "shake" "0.19.6" { });
 
+  shelly = dontCheck (prev.callHackage "shelly" "1.10.0" { });
+
   singleton-bool = doJailbreak (prev.callHackage "singleton-bool" "0.1.6" { });
 
   singletons = prev.callHackage "singletons" "3.0.2" { };
