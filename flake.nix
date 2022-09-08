@@ -16,6 +16,10 @@
       url = "github:parsonsmatt/cborg/05ca2063ff631667699bffbeee3a4a076943b905";
       flake = false;
     };
+    cryptohash-sha1 = {
+      url = "github:haskell-hvr/cryptohash-sha1";
+      flake = false;
+    };
     doctest = {
       url = "github:parsonsmatt/doctest/a5f696b80bb8220d284e34d90f0b94291b859e77";
       flake = false;

@@ -66,6 +66,22 @@
         "type": "github"
       }
     },
+    "cryptohash-sha1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660587782,
+        "narHash": "sha256-7narJN/P+e3G7A9KtMe3uoMPi8DO9FPwQu7KG6NaixQ=",
+        "owner": "haskell-hvr",
+        "repo": "cryptohash-sha1",
+        "rev": "f82ceae0d2ad23cc5d4e7f69367b4b4796b852b8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "haskell-hvr",
+        "repo": "cryptohash-sha1",
+        "type": "github"
+      }
+    },
     "doctest": {
       "flake": false,
       "locked": {
@@ -318,6 +334,7 @@
         "all-cabal-hashes": "all-cabal-hashes",
         "cache-effectful": "cache-effectful",
         "cborg": "cborg",
+        "cryptohash-sha1": "cryptohash-sha1",
         "doctest": "doctest",
         "double-conversion": "double-conversion",
         "ed25519": "ed25519",

@@ -85,7 +85,7 @@ final: prev: with pkgs.haskell.lib; {
 
   constraints = doJailbreak (prev.callHackage "constraints" "0.13.4" { });
 
-  cryptohash-sha1 = doJailbreak (prev.callHackage "cryptohash-sha1" "0.11.100.1" { });
+  cryptohash-sha1 = prev.callCabal2nix "cryptohash-sha1" inputs.cryptohash-sha1 { };
 
   cryptonite = prev.callHackage "cryptonite" "0.30" { };
 
