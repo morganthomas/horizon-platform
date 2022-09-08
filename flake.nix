@@ -41,6 +41,10 @@
       url = "github:locallycompact/tasty-hedgehog";
       flake = false;
     };
+    unicode-data = {
+      url = "github:composewell/unicode-data";
+      flake = false;
+    };
   };
   outputs = inputs@{ self, nixpkgs, flake-utils, lint-utils, ... }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:

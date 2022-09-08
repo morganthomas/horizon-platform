@@ -292,6 +292,8 @@ final: prev: with pkgs.haskell.lib; {
 
   type-equality = doJailbreak (prev.callHackage "type-equality" "1" { });
 
+  unicode-data = dontCheck (prev.callCabal2nix "unicode-data" (inputs.unicode-data + /unicode-data) { });
+
   unordered-containers = doJailbreak (prev.callHackage "unordered-containers" "0.2.19.1" { });
 
   vault = doJailbreak (prev.callHackage "vault" "0.3.1.5" { });

@@ -231,7 +231,8 @@
         "polysemy": "polysemy",
         "servant": "servant",
         "tasty": "tasty",
-        "tasty-hedgehog": "tasty-hedgehog"
+        "tasty-hedgehog": "tasty-hedgehog",
+        "unicode-data": "unicode-data"
       }
     },
     "servant": {
@@ -280,6 +281,22 @@
       "original": {
         "owner": "locallycompact",
         "repo": "tasty-hedgehog",
+        "type": "github"
+      }
+    },
+    "unicode-data": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662029860,
+        "narHash": "sha256-2tD5Zp8Isn6rF/LCoFooywro4dckjPihoSw/x2Er/98=",
+        "owner": "composewell",
+        "repo": "unicode-data",
+        "rev": "a0b321e039a4049a4636f356ac11051b2d4feaae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "composewell",
+        "repo": "unicode-data",
         "type": "github"
       }
     }
