@@ -179,7 +179,7 @@ final: prev: with pkgs.haskell.lib; {
 
   optics = doJailbreak (dontCheck (prev.callHackage "optics" "0.4.2" { }));
 
-  pandoc = prev.callHackage "pandoc" "2.19.2" { };
+  pandoc = doJailbreak (prev.callHackage "pandoc" "2.19.2" { });
 
   parallel = doJailbreak (final.callHackage "parallel" "3.2.2.0" { });
 
@@ -316,5 +316,7 @@ final: prev: with pkgs.haskell.lib; {
   warp-tls = dontCheck (prev.callHackage "warp-tls" "3.3.3" { });
 
   witherable = dontCheck (prev.callHackage "witherable" "0.4.2" { });
+
+  xml-conduit = dontCheck (prev.callHackage "xml-conduit" "1.9.1.1" { });
 
 }
