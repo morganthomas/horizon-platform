@@ -28,6 +28,10 @@
       url = "git+https://gitlab.homotopic.tech/horizon/adopted/ed25519";
       flake = false;
     };
+    ema = {
+      url = "github:EmaApps/ema";
+      flake = false;
+    };
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-parts.inputs.nixpkgs.follows = "nixpkgs";
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";

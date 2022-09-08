@@ -105,6 +105,8 @@ final: prev: with pkgs.haskell.lib; {
 
   email-validate = doJailbreak (dontCheck (prev.callHackage "email-validate" "2.3.2.16" { }));
 
+  ema = prev.callCabal2nix "ema" inputs.ema { };
+
   effectful-cache = doJailbreak (prev.callCabal2nix "effectful-cache" inputs.cache-effectful { });
 
   effectful-core = prev.callHackage "effectful-core" "2.1.0.0" { };
