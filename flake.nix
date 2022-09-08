@@ -36,6 +36,10 @@
       url = "github:maybe-hedgehog-later/hedgehog-golden";
       flake = false;
     };
+    hlint = {
+      url = "github:ndmitchell/hlint";
+      flake = false;
+    };
     memory = {
       url = "github:parsonsmatt/hs-memory/0f760c8ba0b7d5aacf04a7294e87e5e4fff53f40";
       flake = false;

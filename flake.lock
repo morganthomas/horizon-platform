@@ -195,6 +195,22 @@
         "type": "github"
       }
     },
+    "hlint": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662124777,
+        "narHash": "sha256-5xLQVRmpTELwR28CbT9Ja2rsFddurs1mtfLr67NI0BA=",
+        "owner": "ndmitchell",
+        "repo": "hlint",
+        "rev": "68f9139403838b442110d5ab60da446768e8a26f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ndmitchell",
+        "repo": "hlint",
+        "type": "github"
+      }
+    },
     "lint-utils": {
       "inputs": {
         "flake-utils": "flake-utils_2",
@@ -309,6 +325,7 @@
         "flake-utils": "flake-utils",
         "haskell-flake": "haskell-flake",
         "hedgehog-golden": "hedgehog-golden",
+        "hlint": "hlint",
         "lint-utils": "lint-utils",
         "memory": "memory",
         "nixpkgs": "nixpkgs_2",
