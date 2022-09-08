@@ -297,6 +297,8 @@ final: prev: with pkgs.haskell.lib; {
 
   unicode-data = dontCheck (prev.callCabal2nix "unicode-data" (inputs.unicode-data + /unicode-data) { });
 
+  unicode-collation = doJailbreak (prev.callHackage "unicode-collation" "0.1.3.2" { });
+
   unordered-containers = doJailbreak (prev.callHackage "unordered-containers" "0.2.19.1" { });
 
   vault = doJailbreak (prev.callHackage "vault" "0.3.1.5" { });
