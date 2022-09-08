@@ -259,6 +259,8 @@ final: prev: with pkgs.haskell.lib; {
 
   rebase = doJailbreak (prev.callHackage "rebase" "1.16" { });
 
+  rerebase = doJailbreak (prev.callHackage "rerebase" "1.15.0.3" { });
+
   retry = dontCheck (prev.callHackage "retry" "0.9.3.0" { });
 
   scotty = prev.callHackage "scotty" "0.12" { };
