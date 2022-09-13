@@ -125,6 +125,8 @@ final: prev: with pkgs.haskell.lib; {
 
   foldl = dontCheck (prev.callHackage "foldl" "1.4.12" { });
 
+  fourmolu = doJailbreak (prev.callHackage "fourmolu" "0.8.2.0" { });
+
   foundation = prev.callHackage "foundation" "0.0.29" { };
 
   generic-lens-lite = doJailbreak (prev.callHackage "generic-lens-lite" "0.1" { });
