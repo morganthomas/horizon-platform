@@ -207,6 +207,8 @@ final: prev: with pkgs.haskell.lib; {
 
   network-byte-order = dontCheck (prev.callHackage "network-byte-order" "0.1.6" { });
 
+  newtype-generics = doJailbreak (prev.callHackage "newtype-generics" "0.6.2" { });
+
   nothunks = dontCheck (prev.callHackage "nothunks" "0.1.3" { });
 
   optics-core = prev.callHackage "optics-core" "0.4.1" { };
