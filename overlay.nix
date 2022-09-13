@@ -203,6 +203,8 @@ final: prev: with pkgs.haskell.lib; {
 
   memory = prev.callCabal2nix "memory" inputs.memory { };
 
+  net-mqtt = doJailbreak (prev.callHackage "net-mqtt" "0.8.2.2" { });
+
   network-byte-order = dontCheck (prev.callHackage "network-byte-order" "0.1.6" { });
 
   nothunks = dontCheck (prev.callHackage "nothunks" "0.1.3" { });
