@@ -301,6 +301,8 @@ final: prev: with pkgs.haskell.lib; {
 
   servant-lucid = doJailbreak (prev.callHackage "servant-lucid" "0.9.0.5" { });
 
+  servant-multipart = doJailbreak (prev.callHackage "servant-multipart" "0.12.1" { });
+
   serialise = doJailbreak (prev.callCabal2nix "serialise" (inputs.cborg + /serialise) { });
 
   shake = dontCheck (prev.callHackage "shake" "0.19.6" { });
