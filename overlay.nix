@@ -139,6 +139,8 @@ final: prev: with pkgs.haskell.lib; {
 
   generics-sop = prev.callHackage "generics-sop" "0.5.1.2" { };
 
+  ghc-check = dontHaddock (prev.callHackage "ghc-check" "0.5.0.8" { });
+
   ghc-byteorder = doJailbreak (prev.callHackage "ghc-byteorder" "4.11.0.0.10" { });
 
   ghc-lib-parser = doJailbreak (prev.callHackage "ghc-lib-parser" "9.4.2.20220822" { });
