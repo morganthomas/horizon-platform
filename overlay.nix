@@ -165,6 +165,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hie-compat = prev.callHackage "hie-compat" "0.3.0.0" { };
 
+  hiedb = dontCheck (doJailbreak (prev.callHackage "hiedb" "0.4.2.0" { }));
+
   hlint = prev.callCabal2nix "hlint" inputs.hlint { };
 
   hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
