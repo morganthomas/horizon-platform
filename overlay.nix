@@ -163,6 +163,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hedgehog-quickcheck = doJailbreak (prev.callHackage "hedgehog-quickcheck" "0.1.1" { });
 
+  hie-compat = prev.callHackage "hie-compat" "0.3.0.0" { };
+
   hlint = prev.callCabal2nix "hlint" inputs.hlint { };
 
   hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
