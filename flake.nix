@@ -54,6 +54,10 @@
       url = "github:ndmitchell/hlint";
       flake = false;
     };
+    hnix = {
+      url = "github:milloni/hnix?ref=milloni/horizon";
+      flake = false;
+    };
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     memory = {
       url = "github:parsonsmatt/hs-memory/0f760c8ba0b7d5aacf04a7294e87e5e4fff53f40";

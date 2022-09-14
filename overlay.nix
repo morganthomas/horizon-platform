@@ -177,6 +177,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hlint = prev.callCabal2nix "hlint" inputs.hlint { };
 
+  hnix = doJailbreak (dontCheck (prev.callCabal2nix "hnix" inputs.hnix { }));
+
   hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
 
   hslua-aeson = doJailbreak (prev.callHackage "hslua-aeson" "2.2.1" { });
