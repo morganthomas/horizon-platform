@@ -287,6 +287,8 @@ final: prev: with pkgs.haskell.lib; {
 
   retry = dontCheck (prev.callHackage "retry" "0.9.3.0" { });
 
+  rope-utf16-splay = prev.callHackage "rope-utf16-splay" "0.4.0.0" { };
+
   scotty = doJailbreak (prev.callHackage "scotty" "0.12" { });
 
   scientific = prev.callHackage "scientific" "0.3.7.0" { };
