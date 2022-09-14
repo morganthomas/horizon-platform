@@ -69,6 +69,8 @@ final: prev: with pkgs.haskell.lib; {
 
   comonad = prev.callHackage "comonad" "5.0.8" { };
 
+  compactable = doJailbreak (dontCheck (prev.callCabal2nix "compactable" inputs.compactable { }));
+
   compact = doJailbreak (prev.callHackage "compact" "0.2.0.0" { });
 
   composite-cassava = doJailbreak (prev.callHackage "composite-cassava" "0.0.3.1" { });

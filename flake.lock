@@ -66,6 +66,23 @@
         "type": "github"
       }
     },
+    "compactable": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657645300,
+        "narHash": "sha256-WUICNDQYyzf3fnuRokltSbPBUjHP4gODtKt0JNVv2KY=",
+        "owner": "fresheyeball",
+        "repo": "Compactable",
+        "rev": "f63927b1e438c267f0d12f36e5b3735cfaebeeb4",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "fresheyeball",
+        "ref": "master",
+        "repo": "Compactable",
+        "type": "gitlab"
+      }
+    },
     "cryptohash-sha1": {
       "flake": false,
       "locked": {
@@ -335,6 +352,7 @@
         "all-cabal-hashes": "all-cabal-hashes",
         "cache-effectful": "cache-effectful",
         "cborg": "cborg",
+        "compactable": "compactable",
         "cryptohash-sha1": "cryptohash-sha1",
         "doctest": "doctest",
         "double-conversion": "double-conversion",
