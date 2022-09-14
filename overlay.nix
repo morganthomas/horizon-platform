@@ -211,6 +211,8 @@ final: prev: with pkgs.haskell.lib; {
 
   linear = doJailbreak (prev.callHackage "linear" "1.21.10" { });
 
+  lsp-types = prev.callHackage "lsp-types" "1.6.0.0" { };
+
   lucid = doJailbreak (prev.callHackage "lucid" "2.11.1" { });
 
   memory = prev.callCabal2nix "memory" inputs.memory { };
