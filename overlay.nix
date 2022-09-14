@@ -155,7 +155,7 @@ final: prev: with pkgs.haskell.lib; {
 
   hashable = prev.callHackage "hashable" "1.4.1.0" { };
 
-  hashtables = prev.callHackage "hashtables" "1.3" { };
+  hashtables = doJailbreak (prev.callHackage "hashtables" "1.3" { });
 
   hedgehog = dontHaddock (prev.callHackage "hedgehog" "1.2" { });
 
