@@ -331,6 +331,8 @@ final: prev: with pkgs.haskell.lib; {
 
   string-qq = doJailbreak (prev.callHackage "string-qq" "0.0.4" { });
 
+  stylish-haskell = doJailbreak (prev.callHackage "stylish-haskell" "0.14.2.0" { });
+
   syb = dontCheck (prev.callHackage "syb" "0.7.2.1" { });
 
   tasty = doJailbreak (prev.callCabal2nix "tasty" (inputs.tasty + /core) { });
