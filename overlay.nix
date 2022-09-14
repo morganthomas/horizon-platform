@@ -131,6 +131,8 @@ final: prev: with pkgs.haskell.lib; {
 
   foundation = prev.callHackage "foundation" "0.0.29" { };
 
+  generic-lens-core = prev.callHackage "generic-lens-core" "2.2.1.0" { };
+
   generic-lens-lite = doJailbreak (prev.callHackage "generic-lens-lite" "0.1" { });
 
   generic-optics-lite = doJailbreak (prev.callHackage "generic-optics-lite" "0.1" { });
