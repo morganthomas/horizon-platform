@@ -213,6 +213,8 @@ final: prev: with pkgs.haskell.lib; {
 
   net-mqtt = doJailbreak (prev.callHackage "net-mqtt" "0.8.2.2" { });
 
+  monoid-subclasses = doJailbreak (prev.callHackage "monoid-subclasses" "1.1.3" { });
+
   network-byte-order = dontCheck (prev.callHackage "network-byte-order" "0.1.6" { });
 
   newtype-generics = doJailbreak (prev.callHackage "newtype-generics" "0.6.2" { });
