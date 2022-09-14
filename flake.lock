@@ -213,6 +213,23 @@
         "type": "github"
       }
     },
+    "haskell-src-meta": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661274178,
+        "narHash": "sha256-6otO/j8wplg65J0ZOKZH/2VAGKsPhHZV94AJezuyI3w=",
+        "owner": "parsonsmatt",
+        "repo": "haskell-src-meta",
+        "rev": "ec8cc43b6084abe2d5d1b496dd1c0f42f5da0671",
+        "type": "github"
+      },
+      "original": {
+        "owner": "parsonsmatt",
+        "ref": "matt/support-new-th",
+        "repo": "haskell-src-meta",
+        "type": "github"
+      }
+    },
     "hedgehog-golden": {
       "flake": false,
       "locked": {
@@ -360,6 +377,7 @@
         "ema": "ema",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
+        "haskell-src-meta": "haskell-src-meta",
         "hedgehog-golden": "hedgehog-golden",
         "hlint": "hlint",
         "lint-utils": "lint-utils",

@@ -42,6 +42,10 @@
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-parts.inputs.nixpkgs.follows = "nixpkgs";
+    haskell-src-meta = {
+      url = "github:parsonsmatt/haskell-src-meta?ref=matt/support-new-th";
+      flake = false;
+    };
     hedgehog-golden = {
       url = "github:maybe-hedgehog-later/hedgehog-golden";
       flake = false;
