@@ -161,6 +161,8 @@ final: prev: with pkgs.haskell.lib; {
 
   haskell-src-meta = prev.callCabal2nix "haskell-src-meta" (inputs.haskell-src-meta + /haskell-src-meta) { };
 
+  hashing = doJailbreak (prev.callHackage "hashing" "0.1.0.1" { });
+
   hashtables = doJailbreak (prev.callHackage "hashtables" "1.3" { });
 
   hedgehog = dontHaddock (prev.callHackage "hedgehog" "1.2" { });
