@@ -196,21 +196,6 @@
         "type": "github"
       }
     },
-    "haskell-flake": {
-      "locked": {
-        "lastModified": 1661726764,
-        "narHash": "sha256-YzzOoff6m3W4g4B0E8xd3omvOhEVuRu/Rdvnmy2H6Jc=",
-        "owner": "srid",
-        "repo": "haskell-flake",
-        "rev": "3c27b5ba2eafc52f4bed232a8ff74cf0a5a99375",
-        "type": "github"
-      },
-      "original": {
-        "owner": "srid",
-        "repo": "haskell-flake",
-        "type": "github"
-      }
-    },
     "hedgehog-golden": {
       "flake": false,
       "locked": {
@@ -357,7 +342,6 @@
         "ema": "ema",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
-        "haskell-flake": "haskell-flake",
         "hedgehog-golden": "hedgehog-golden",
         "hlint": "hlint",
         "lint-utils": "lint-utils",
