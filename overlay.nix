@@ -65,6 +65,7 @@ final: prev: with pkgs.haskell.lib; {
 
   citeproc = prev.callHackage "citeproc" "0.8.0.1" { };
 
+  co-log-core = doJailbreak (dontCheck (prev.callHackage "co-log-core" "0.3.1.0" { }));
 
   comonad = prev.callHackage "comonad" "5.0.8" { };
 
