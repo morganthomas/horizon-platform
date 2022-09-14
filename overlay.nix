@@ -345,6 +345,8 @@ final: prev: with pkgs.haskell.lib; {
 
   streaming-commons = dontCheck (prev.callHackage "streaming-commons" "0.2.2.4" { });
 
+  string-interpolate = prev.callHackage "string-interpolate" "0.3.1.2" { };
+
   string-qq = doJailbreak (prev.callHackage "string-qq" "0.0.4" { });
 
   stylish-haskell = doJailbreak (prev.callHackage "stylish-haskell" "0.14.2.0" { });
