@@ -215,6 +215,8 @@ final: prev: with pkgs.haskell.lib; {
 
   lens-aeson = prev.callHackage "lens-aeson" "1.2.1" { };
 
+  lens-family-th = doJailbreak (prev.callHackage "lens-family-th" "0.5.2.1" { });
+
   lifted-async = doJailbreak (prev.callHackage "lifted-async" "0.10.2.1" { });
 
   linear = doJailbreak (prev.callHackage "linear" "1.21.10" { });
