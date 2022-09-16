@@ -161,6 +161,8 @@ final: prev: with pkgs.haskell.lib; {
 
   haskell-src-meta = prev.callCabal2nix "haskell-src-meta" (inputs.haskell-src-meta + /haskell-src-meta) { };
 
+  hashing = doJailbreak (prev.callHackage "hashing" "0.1.0.1" { });
+
   hashtables = doJailbreak (prev.callHackage "hashtables" "1.3" { });
 
   hedgehog = dontHaddock (prev.callHackage "hedgehog" "1.2" { });
@@ -174,6 +176,8 @@ final: prev: with pkgs.haskell.lib; {
   hiedb = dontCheck (doJailbreak (prev.callHackage "hiedb" "0.4.2.0" { }));
 
   hlint = prev.callCabal2nix "hlint" inputs.hlint { };
+
+  hnix = doJailbreak (dontCheck (prev.callCabal2nix "hnix" inputs.hnix { }));
 
   hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
 
@@ -212,6 +216,8 @@ final: prev: with pkgs.haskell.lib; {
   lens = doJailbreak (prev.callHackage "lens" "5.2" { });
 
   lens-aeson = prev.callHackage "lens-aeson" "1.2.1" { };
+
+  lens-family-th = doJailbreak (prev.callHackage "lens-family-th" "0.5.2.1" { });
 
   lifted-async = doJailbreak (prev.callHackage "lifted-async" "0.10.2.1" { });
 
@@ -294,6 +300,8 @@ final: prev: with pkgs.haskell.lib; {
   retry = dontCheck (prev.callHackage "retry" "0.9.3.0" { });
 
   rope-utf16-splay = prev.callHackage "rope-utf16-splay" "0.4.0.0" { };
+
+  saltine = addPkgconfigDepend (doJailbreak (prev.callHackage "saltine" "0.1.1.1" { })) pkgs.libsodium;
 
   scotty = doJailbreak (prev.callHackage "scotty" "0.12" { });
 
