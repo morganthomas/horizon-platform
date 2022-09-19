@@ -31,6 +31,8 @@ final: prev: with pkgs.haskell.lib; {
 
   async = prev.callHackage "async" "2.2.4" { };
 
+  autodocodec-yaml = prev.callHackage "autodocodec-yaml" "0.2.0.2" { };
+
   basement = prev.callHackage "basement" "0.0.15" { };
 
   base64 = dontCheck (doJailbreak (prev.callHackage "base64" "0.4.2.4" { }));
