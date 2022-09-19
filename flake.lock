@@ -3,11 +3,11 @@
     "Cabal": {
       "flake": false,
       "locked": {
-        "lastModified": 1663002059,
-        "narHash": "sha256-3GWQx7KL1y6aE129bPrKDhaNev/Fas55zwcMp533SFg=",
+        "lastModified": 1663468572,
+        "narHash": "sha256-mhl5d/3DTGI+tHnIJ4AEBXSCtbP+PTlxMBa2SMOY+sY=",
         "ref": "master",
-        "rev": "55b4ed9f6626613cfd965887bd16f3ffdca1aba6",
-        "revCount": 13161,
+        "rev": "182e2c15191cd96a477a7fda41f9f89192b665ff",
+        "revCount": 13167,
         "type": "git",
         "url": "https://gitlab.haskell.org/ghc/packages/Cabal"
       },
@@ -19,11 +19,11 @@
     "all-cabal-hashes": {
       "flake": false,
       "locked": {
-        "lastModified": 1663324354,
-        "narHash": "sha256-4YT7ZGwXweYFtc25v76Ug2FnCwtiYXparYa8Vqqz2MA=",
+        "lastModified": 1663590767,
+        "narHash": "sha256-1hDRgWXpj60PEeh5DH0km5CN/vXYmMZiNqLJnJbmfN0=",
         "owner": "commercialhaskell",
         "repo": "all-cabal-hashes",
-        "rev": "1b3ac7155ad16d61354e5e62ba9c02d0098950b2",
+        "rev": "e456824564bb5457549a70dc03c7ae00b3dfaec3",
         "type": "github"
       },
       "original": {
@@ -249,11 +249,11 @@
     "hlint": {
       "flake": false,
       "locked": {
-        "lastModified": 1662124777,
-        "narHash": "sha256-5xLQVRmpTELwR28CbT9Ja2rsFddurs1mtfLr67NI0BA=",
+        "lastModified": 1663597420,
+        "narHash": "sha256-CUNiq0bwTEz8YmcmDgaU/z299cYxT9mNvKBHx14jpaU=",
         "owner": "ndmitchell",
         "repo": "hlint",
-        "rev": "68f9139403838b442110d5ab60da446768e8a26f",
+        "rev": "08a25c6b7915e5f22aad7ee68da95d576225d55d",
         "type": "github"
       },
       "original": {
@@ -333,11 +333,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1663235518,
-        "narHash": "sha256-q8zLK6rK/CLXEguaPgm9yQJcY0VQtOBhAT9EV2UFK/A=",
+        "lastModified": 1663551060,
+        "narHash": "sha256-e2SR4cVx9p7aW/XnVsGsWZBplApA9ZJUjc0fejJhnYo=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "2277e4c9010b0f27585eb0bed0a86d7cbc079354",
+        "rev": "8a5b9ee7b7a2b38267c9481f5c629c015108ab0d",
         "type": "github"
       },
       "original": {
@@ -404,6 +404,7 @@
         "polysemy": "polysemy",
         "quickcheck-dynamic": "quickcheck-dynamic",
         "servant": "servant",
+        "sydtest": "sydtest",
         "tasty": "tasty",
         "tasty-hedgehog": "tasty-hedgehog",
         "unicode-data": "unicode-data"
@@ -423,6 +424,22 @@
         "owner": "TeofilC",
         "ref": "ghc-9.4",
         "repo": "servant",
+        "type": "github"
+      }
+    },
+    "sydtest": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662748704,
+        "narHash": "sha256-SpSYPSdVHKAeW2h7P1GdMhxuE6htWNdUJNN3N8vE57I=",
+        "owner": "NorfairKing",
+        "repo": "sydtest",
+        "rev": "7e1686bc0ff98c56afb1bf20b3b29f7a634feedd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NorfairKing",
+        "repo": "sydtest",
         "type": "github"
       }
     },
@@ -461,11 +478,11 @@
     "unicode-data": {
       "flake": false,
       "locked": {
-        "lastModified": 1663145083,
-        "narHash": "sha256-S2kAEojs5d+3d04lapTCwfpKx+z6i9QMHOKMxLPGmIo=",
+        "lastModified": 1663575864,
+        "narHash": "sha256-HWxlqziq3j2ev9wpON6NDUcCn9cjH72S/ddxSkvGLDY=",
         "owner": "composewell",
         "repo": "unicode-data",
-        "rev": "05cadb0c034f30ae179d5af66288c138338ee9a4",
+        "rev": "e924329f0e5e853426ec7453da23b11dceb53136",
         "type": "github"
       },
       "original": {
