@@ -301,6 +301,8 @@ final: prev: with pkgs.haskell.lib; {
 
   rope-utf16-splay = prev.callHackage "rope-utf16-splay" "0.4.0.0" { };
 
+  safe-coloured-text = prev.callHackage "safe-coloured-text" "0.2.0.1" { };
+
   saltine = addPkgconfigDepend (doJailbreak (prev.callHackage "saltine" "0.1.1.1" { })) pkgs.libsodium;
 
   scotty = doJailbreak (prev.callHackage "scotty" "0.12" { });
