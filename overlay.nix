@@ -31,6 +31,8 @@ final: prev: with pkgs.haskell.lib; {
 
   async = prev.callHackage "async" "2.2.4" { };
 
+  autodocodec-yaml = prev.callHackage "autodocodec-yaml" "0.2.0.2" { };
+
   basement = prev.callHackage "basement" "0.0.15" { };
 
   base64 = dontCheck (doJailbreak (prev.callHackage "base64" "0.4.2.4" { }));
@@ -301,6 +303,8 @@ final: prev: with pkgs.haskell.lib; {
 
   rope-utf16-splay = prev.callHackage "rope-utf16-splay" "0.4.0.0" { };
 
+  safe-coloured-text = prev.callHackage "safe-coloured-text" "0.2.0.1" { };
+
   saltine = addPkgconfigDepend (doJailbreak (prev.callHackage "saltine" "0.1.1.1" { })) pkgs.libsodium;
 
   scotty = doJailbreak (prev.callHackage "scotty" "0.12" { });
@@ -362,6 +366,10 @@ final: prev: with pkgs.haskell.lib; {
   stylish-haskell = doJailbreak (prev.callHackage "stylish-haskell" "0.14.2.0" { });
 
   syb = dontCheck (prev.callHackage "syb" "0.7.2.1" { });
+
+  sydtest = dontCheck (prev.callCabal2nix "sydtest" (inputs.sydtest + /sydtest) { });
+
+  sydtest-discover = prev.callCabal2nix "sydtest-discover" (inputs.sydtest + /sydtest-discover) { };
 
   tasty = doJailbreak (prev.callCabal2nix "tasty" (inputs.tasty + /core) { });
 

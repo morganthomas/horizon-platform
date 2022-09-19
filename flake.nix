@@ -76,6 +76,10 @@
       url = "github:TeofilC/servant?ref=ghc-9.4";
       flake = false;
     };
+    sydtest = {
+      url = "github:NorfairKing/sydtest";
+      flake = false;
+    };
     tasty = {
       url = "github:UnkindPartition/tasty";
       flake = false;
