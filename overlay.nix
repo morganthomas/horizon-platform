@@ -367,6 +367,10 @@ final: prev: with pkgs.haskell.lib; {
 
   syb = dontCheck (prev.callHackage "syb" "0.7.2.1" { });
 
+  sydtest = dontCheck (prev.callCabal2nix "sydtest" (inputs.sydtest + /sydtest) { });
+
+  sydtest-discover = prev.callCabal2nix "sydtest-discover" (inputs.sydtest + /sydtest-discover) { };
+
   tasty = doJailbreak (prev.callCabal2nix "tasty" (inputs.tasty + /core) { });
 
   tasty-discover = doJailbreak (prev.callHackage "tasty-discover" "5.0.0" { });
