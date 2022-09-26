@@ -149,6 +149,8 @@ final: prev: with pkgs.haskell.lib; {
 
   ghc-byteorder = doJailbreak (prev.callHackage "ghc-byteorder" "4.11.0.0.10" { });
 
+  ghc-exactprint = prev.callCabal2nix "ghc-exactprint" inputs.ghc-exactprint { };
+
   ghc-lib-parser = doJailbreak (prev.callHackage "ghc-lib-parser" "9.4.2.20220822" { });
 
   ghc-lib-parser-ex = doJailbreak (prev.callHackage "ghc-lib-parser-ex" "9.4.0.0" { });
