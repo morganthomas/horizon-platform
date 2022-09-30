@@ -42,6 +42,10 @@
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-parts.inputs.nixpkgs.follows = "nixpkgs";
+    ghc-exactprint = {
+      url = "github:alanz/ghc-exactprint?ref=ghc-9.4";
+      flake = false;
+    };
     haskell-src-meta = {
       url = "github:parsonsmatt/haskell-src-meta?ref=matt/support-new-th";
       flake = false;
