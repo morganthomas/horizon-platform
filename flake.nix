@@ -25,7 +25,7 @@
       flake = false;
     };
     doctest = {
-      url = "github:parsonsmatt/doctest/a5f696b80bb8220d284e34d90f0b94291b859e77";
+      url = "github:sol/doctest/4eb97c213acf7abe965a3a1b67397199ed155f3c";
       flake = false;
     };
     double-conversion = {
