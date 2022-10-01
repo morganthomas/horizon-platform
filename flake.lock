@@ -3,11 +3,11 @@
     "Cabal": {
       "flake": false,
       "locked": {
-        "lastModified": 1664555218,
-        "narHash": "sha256-xXmRfc6vCb9sRJoz1K8zufTZv9CE+TOwZLpnzV8mvN8=",
+        "lastModified": 1664636112,
+        "narHash": "sha256-AFNvWKvO/psPq5OPCFqvl/AejNmVC2l4OQkKLEyNT0A=",
         "ref": "master",
-        "rev": "9f7dc559d682331515692dd7b42f9abd3a087898",
-        "revCount": 13190,
+        "rev": "a5106bed5a197e9f670a0949f803e714ad4ef403",
+        "revCount": 13196,
         "type": "git",
         "url": "https://gitlab.haskell.org/ghc/packages/Cabal"
       },
@@ -19,11 +19,11 @@
     "all-cabal-hashes": {
       "flake": false,
       "locked": {
-        "lastModified": 1664556068,
-        "narHash": "sha256-8pL0rTSkBDlLXK/cq2qUab049kXrhHOb6XxS4Ekw2Fo=",
+        "lastModified": 1664652215,
+        "narHash": "sha256-srogTegrD+241OSa1IVFnEzIRcdOi6rkQQ0z0v9S13E=",
         "owner": "commercialhaskell",
         "repo": "all-cabal-hashes",
-        "rev": "f434075fee305701e9ab3fed967003e7bda6a594",
+        "rev": "21f7dfd6196d284ace4cfa5a6e1aa73072312e84",
         "type": "github"
       },
       "original": {
@@ -102,17 +102,17 @@
     "doctest": {
       "flake": false,
       "locked": {
-        "lastModified": 1652986762,
-        "narHash": "sha256-Ehlq1U6EUscYndVnH7IVe2MdjzHQTgqRQDEWR9wGVzk=",
-        "owner": "parsonsmatt",
+        "lastModified": 1664345633,
+        "narHash": "sha256-58Re5dTwbQHpj/IwNgMwazu65Gs4aPLY+XKuh0/8ScQ=",
+        "owner": "sol",
         "repo": "doctest",
-        "rev": "a5f696b80bb8220d284e34d90f0b94291b859e77",
+        "rev": "4eb97c213acf7abe965a3a1b67397199ed155f3c",
         "type": "github"
       },
       "original": {
-        "owner": "parsonsmatt",
+        "owner": "sol",
         "repo": "doctest",
-        "rev": "a5f696b80bb8220d284e34d90f0b94291b859e77",
+        "rev": "4eb97c213acf7abe965a3a1b67397199ed155f3c",
         "type": "github"
       }
     },
@@ -350,11 +350,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1664435807,
-        "narHash": "sha256-sYOAzHDloPQH48Nmp2hFf7mvVRv+AOlfQXNaCeBTykE=",
+        "lastModified": 1664556388,
+        "narHash": "sha256-04xEtpc0AqLhgDtJ/kT+aZGPrXOI+1a3obf6iWrJQXs=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "8ba120420fbdd9bd35b3a5366fa0206d8c99ade3",
+        "rev": "511213e0ece88be30a4bd73488f7d1cd85879654",
         "type": "github"
       },
       "original": {
