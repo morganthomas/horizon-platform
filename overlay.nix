@@ -43,6 +43,8 @@ final: prev: with pkgs.haskell.lib; {
 
   base-orphans = prev.callHackage "base-orphans" "0.8.7" { };
 
+  bimap = prev.callHackage "bimap" "0.5.0" { };
+
   binary-orphans = prev.callHackage "binary-orphans" "1.0.3" { };
 
   blaze-markup = prev.callHackage "blaze-markup" "0.8.2.8" { };
@@ -50,6 +52,8 @@ final: prev: with pkgs.haskell.lib; {
   boring = doJailbreak (prev.callHackage "boring" "0.2" { });
 
   bsb-http-chunked = dontCheck (prev.callHackage "bsb-http-chunked" "0.0.0.4" { });
+
+  brick = prev.callHackage "brick" "1.3" { };
 
   bytes = prev.callHackage "bytes" "0.17.2" { };
 
@@ -88,6 +92,8 @@ final: prev: with pkgs.haskell.lib; {
   conduit = dontCheck (prev.callHackage "conduit" "1.3.4.2" { });
 
   conduit-extra = dontCheck (prev.callHackage "conduit-extra" "1.3.6" { });
+
+  config-ini = prev.callHackage "config-ini" "0.2.5.0" { };
 
   constraints = doJailbreak (prev.callHackage "constraints" "0.13.4" { });
 
@@ -383,6 +389,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-wai = doJailbreak (prev.callHackage "tasty-wai" "0.1.2.0" { });
 
+  text-zipper = prev.callHackage "text-zipper" "0.12" { };
+
   these = doJailbreak (prev.callHackage "these" "1.1.1.1" { });
 
   th-extras = doJailbreak (prev.callHackage "th-extras" "0.0.0.6" { });
@@ -414,6 +422,8 @@ final: prev: with pkgs.haskell.lib; {
   vector-algorithms = prev.callHackage "vector-algorithms" "0.9.0.1" { };
 
   vinyl = final.callHackage "vinyl" "0.14.3" { };
+
+  vty = prev.callHackage "vty" "5.37" { };
 
   wai-middleware-static = prev.callHackage "wai-middleware-static" "0.9.2" { };
 
