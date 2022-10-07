@@ -53,6 +53,8 @@ final: prev: with pkgs.haskell.lib; {
 
   bsb-http-chunked = dontCheck (prev.callHackage "bsb-http-chunked" "0.0.0.4" { });
 
+  brick = prev.callHackage "brick" "1.3" { };
+
   bytes = prev.callHackage "bytes" "0.17.2" { };
 
   cabal-doctest = prev.callHackage "cabal-doctest" "1.0.9" { };
