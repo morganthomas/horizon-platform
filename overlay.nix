@@ -43,6 +43,8 @@ final: prev: with pkgs.haskell.lib; {
 
   base-orphans = prev.callHackage "base-orphans" "0.8.7" { };
 
+  bimap = prev.callHackage "bimap" "0.5.0" { };
+
   binary-orphans = prev.callHackage "binary-orphans" "1.0.3" { };
 
   blaze-markup = prev.callHackage "blaze-markup" "0.8.2.8" { };
