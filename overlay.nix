@@ -387,6 +387,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-wai = doJailbreak (prev.callHackage "tasty-wai" "0.1.2.0" { });
 
+  text-zipper = prev.callHackage "text-zipper" "0.12" { };
+
   these = doJailbreak (prev.callHackage "these" "1.1.1.1" { });
 
   th-extras = doJailbreak (prev.callHackage "th-extras" "0.0.0.6" { });
