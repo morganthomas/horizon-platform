@@ -89,6 +89,8 @@ final: prev: with pkgs.haskell.lib; {
 
   conduit-extra = dontCheck (prev.callHackage "conduit-extra" "1.3.6" { });
 
+  config-ini = prev.callHackage "config-ini" "0.2.5.0" { };
+
   constraints = doJailbreak (prev.callHackage "constraints" "0.13.4" { });
 
   cryptohash-sha1 = prev.callCabal2nix "cryptohash-sha1" inputs.cryptohash-sha1 { };
