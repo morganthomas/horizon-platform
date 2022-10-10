@@ -159,6 +159,8 @@ final: prev: with pkgs.haskell.lib; {
 
   genvalidity-scientific = prev.callHackage "genvalidity-scientific" "1.0.0.0" { };
 
+  genvalidity-sydtest-aeson = prev.callHackage "genvalidity-sydtest-aeson" "1.0.0.0" { };
+
   genvalidity-text = prev.callHackage "genvalidity-text" "1.0.0.1" { };
 
   genvalidity-unordered-containers = prev.callHackage "genvalidity-unordered-containers" "1.0.0.0" { };
