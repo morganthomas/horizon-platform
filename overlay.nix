@@ -1,456 +1,448 @@
-{ inputs, pkgs }:
+{pkgs, ...}:
+
 final: prev: with pkgs.haskell.lib; {
+    Cabal = prev.callPackage (./pkgs/Cabal.nix) { };
 
-  Cabal = prev.callHackage "Cabal" "3.8.1.0" { };
+    Cabal-QuickCheck = prev.callPackage (./pkgs/Cabal-QuickCheck.nix) { };
 
-  Cabal-QuickCheck = prev.callCabal2nix "Cabal-QuickCheck" (inputs.Cabal + /Cabal-QuickCheck) { };
+    Cabal-described = prev.callPackage (./pkgs/Cabal-described.nix) { };
 
-  Cabal-described = prev.callCabal2nix "Cabal-described" (inputs.Cabal + /Cabal-described) { };
+    Cabal-syntax = prev.callPackage (./pkgs/Cabal-syntax.nix) { };
 
-  Cabal-syntax = prev.callHackage "Cabal-syntax" "3.8.1.0" { };
+    Cabal-tree-diff = prev.callPackage (./pkgs/Cabal-tree-diff.nix) { };
 
-  Cabal-tree-diff = prev.callCabal2nix "Cabal-tree-diff" (inputs.Cabal + /Cabal-tree-diff) { };
+    ChasingBottoms = prev.callPackage (./pkgs/ChasingBottoms.nix) { };
 
-  ChasingBottoms = prev.callHackage "ChasingBottoms" "1.3.1.12" { };
+    HTTP = prev.callPackage (./pkgs/HTTP.nix) { };
 
-  HTTP = dontCheck (prev.callHackage "HTTP" "4000.4.1" { });
+    JuicyPixels = prev.callPackage (./pkgs/JuicyPixels.nix) { };
 
-  JuicyPixels = prev.callHackage "JuicyPixels" "3.3.8" { };
+    OneTuple = prev.callPackage (./pkgs/OneTuple.nix) { };
 
-  OneTuple = prev.callHackage "OneTuple" "0.3.1" { };
+    OpenGLRaw = prev.callPackage (./pkgs/OpenGLRaw.nix) { };
 
-  OpenGLRaw = prev.callHackage "OpenGLRaw" "3.3.4.1" { };
+    aeson = prev.callPackage (./pkgs/aeson.nix) { };
 
-  aeson = prev.callHackage "aeson" "2.1.0.0" { };
+    ansi-terminal = prev.callPackage (./pkgs/ansi-terminal.nix) { };
 
-  ansi-terminal = prev.callHackage "ansi-terminal" "0.11.3" { };
+    apecs = prev.callPackage (./pkgs/apecs.nix) { };
 
-  apecs = prev.callHackage "apecs" "0.9.4" { };
+    assoc = prev.callPackage (./pkgs/assoc.nix) { };
 
-  assoc = prev.callHackage "assoc" "1.0.2" { };
+    async = prev.callPackage (./pkgs/async.nix) { };
 
-  async = prev.callHackage "async" "2.2.4" { };
+    autodocodec-yaml = prev.callPackage (./pkgs/autodocodec-yaml.nix) { };
 
-  autodocodec-yaml = prev.callHackage "autodocodec-yaml" "0.2.0.2" { };
+    base-compat = prev.callPackage (./pkgs/base-compat.nix) { };
 
-  basement = prev.callHackage "basement" "0.0.15" { };
+    base-compat-batteries = prev.callPackage (./pkgs/base-compat-batteries.nix) { };
 
-  base64 = dontCheck (doJailbreak (prev.callHackage "base64" "0.4.2.4" { }));
+    base64 = prev.callPackage (./pkgs/base64.nix) { };
 
-  base-compat = prev.callHackage "base-compat" "0.12.2" { };
+    basement = prev.callPackage (./pkgs/basement.nix) { };
 
-  base-compat-batteries = prev.callHackage "base-compat-batteries" "0.12.2" { };
+    bimap = prev.callPackage (./pkgs/bimap.nix) { };
 
-  base-orphans = prev.callHackage "base-orphans" "0.8.7" { };
+    binary-orphans = prev.callPackage (./pkgs/binary-orphans.nix) { };
 
-  bimap = prev.callHackage "bimap" "0.5.0" { };
+    blaze-markup = prev.callPackage (./pkgs/blaze-markup.nix) { };
 
-  binary-orphans = prev.callHackage "binary-orphans" "1.0.3" { };
+    boring = prev.callPackage (./pkgs/boring.nix) { };
 
-  blaze-markup = prev.callHackage "blaze-markup" "0.8.2.8" { };
+    brick = prev.callPackage (./pkgs/brick.nix) { };
 
-  boring = doJailbreak (prev.callHackage "boring" "0.2" { });
+    bsb-http-chunked = prev.callPackage (./pkgs/bsb-http-chunked.nix) { };
 
-  bsb-http-chunked = dontCheck (prev.callHackage "bsb-http-chunked" "0.0.0.4" { });
+    bytes = prev.callPackage (./pkgs/bytes.nix) { };
 
-  brick = prev.callHackage "brick" "1.3" { };
+    cabal-doctest = prev.callPackage (./pkgs/cabal-doctest.nix) { };
 
-  bytes = prev.callHackage "bytes" "0.17.2" { };
+    cabal-install = prev.callPackage (./pkgs/cabal-install.nix) { };
 
-  cabal-doctest = prev.callHackage "cabal-doctest" "1.0.9" { };
+    cabal-install-solver = prev.callPackage (./pkgs/cabal-install-solver.nix) { };
 
-  cabal-install = doJailbreak (dontCheck (prev.callHackage "cabal-install" "3.8.1.0" { }));
+    cborg = prev.callPackage (./pkgs/cborg.nix) { };
 
-  cabal-install-solver = doJailbreak (prev.callHackage "cabal-install-solver" "3.8.1.0" { });
+    cborg-json = prev.callPackage (./pkgs/cborg-json.nix) { };
 
-  cborg = doJailbreak (prev.callCabal2nix "cborg" (inputs.cborg + /cborg) { });
+    cereal = prev.callPackage (./pkgs/cereal.nix) { };
 
-  cborg-json = doJailbreak (prev.callCabal2nix "cborg-json" (inputs.cborg + /cborg-json) { });
+    citeproc = prev.callPackage (./pkgs/citeproc.nix) { };
 
-  cereal = prev.callHackage "cereal" "0.5.8.3" { };
+    co-log-core = prev.callPackage (./pkgs/co-log-core.nix) { };
 
-  citeproc = prev.callHackage "citeproc" "0.8.0.1" { };
+    comonad = prev.callPackage (./pkgs/comonad.nix) { };
 
-  co-log-core = doJailbreak (dontCheck (prev.callHackage "co-log-core" "0.3.1.0" { }));
+    compact = prev.callPackage (./pkgs/compact.nix) { };
 
-  comonad = prev.callHackage "comonad" "5.0.8" { };
+    compactable = prev.callPackage (./pkgs/compactable.nix) { };
 
-  compactable = doJailbreak (dontCheck (prev.callCabal2nix "compactable" inputs.compactable { }));
+    composite-base = prev.callPackage (./pkgs/composite-base.nix) { };
 
-  compact = doJailbreak (prev.callHackage "compact" "0.2.0.0" { });
+    composite-cassava = prev.callPackage (./pkgs/composite-cassava.nix) { };
 
-  composite-cassava = doJailbreak (prev.callHackage "composite-cassava" "0.0.3.1" { });
+    composite-dhall = prev.callPackage (./pkgs/composite-dhall.nix) { };
 
-  composite-base = doJailbreak (prev.callHackage "composite-base" "0.8.1.0" { });
+    composite-lens-extra = prev.callPackage (./pkgs/composite-lens-extra.nix) { };
 
-  composite-dhall = prev.callHackage "composite-dhall" "0.1.0.1" { };
+    composite-tuple = prev.callPackage (./pkgs/composite-tuple.nix) { };
 
-  composite-lens-extra = prev.callHackage "composite-lens-extra" "0.1.0.0" { };
+    conduit = prev.callPackage (./pkgs/conduit.nix) { };
 
-  composite-tuple = prev.callHackage "composite-tuple" "0.1.2.0" { };
+    conduit-extra = prev.callPackage (./pkgs/conduit-extra.nix) { };
 
-  conduit = dontCheck (prev.callHackage "conduit" "1.3.4.2" { });
+    config-ini = prev.callPackage (./pkgs/config-ini.nix) { };
 
-  conduit-extra = dontCheck (prev.callHackage "conduit-extra" "1.3.6" { });
+    constraints = prev.callPackage (./pkgs/constraints.nix) { };
 
-  config-ini = prev.callHackage "config-ini" "0.2.5.0" { };
+    cryptohash-sha1 = prev.callPackage (./pkgs/cryptohash-sha1.nix) { };
 
-  constraints = doJailbreak (prev.callHackage "constraints" "0.13.4" { });
+    cryptonite = prev.callPackage (./pkgs/cryptonite.nix) { };
 
-  cryptohash-sha1 = prev.callCabal2nix "cryptohash-sha1" inputs.cryptohash-sha1 { };
+    data-fix = prev.callPackage (./pkgs/data-fix.nix) { };
 
-  cryptonite = prev.callHackage "cryptonite" "0.30" { };
+    dec = prev.callPackage (./pkgs/dec.nix) { };
 
-  data-fix = doJailbreak (prev.callHackage "data-fix" "0.3.2" { });
+    dhall = prev.callPackage (./pkgs/dhall.nix) { };
 
-  dec = doJailbreak (prev.callHackage "dec" "0.0.5" { });
+    dimensional = prev.callPackage (./pkgs/dimensional.nix) { };
 
-  dhall = doJailbreak (prev.callHackage "dhall" "1.41.2" { });
+    doctest = prev.callPackage (./pkgs/doctest.nix) { };
 
-  dimensional = dontCheck (prev.callHackage "dimensional" "1.5" { });
+    double-conversion = prev.callPackage (./pkgs/double-conversion.nix) { };
 
-  doctest = dontCheck (prev.callCabal2nix "doctest" inputs.doctest { });
+    ed25519 = prev.callPackage (./pkgs/ed25519.nix) { };
 
-  double-conversion = prev.callCabal2nix "double-conversion" inputs.double-conversion { };
+    effectful = prev.callPackage (./pkgs/effectful.nix) { };
 
-  ed25519 = dontCheck (prev.callCabal2nix "ed25519" inputs.ed25519 { });
+    effectful-cache = prev.callPackage (./pkgs/effectful-cache.nix) { };
 
-  email-validate = doJailbreak (dontCheck (prev.callHackage "email-validate" "2.3.2.16" { }));
+    effectful-core = prev.callPackage (./pkgs/effectful-core.nix) { };
 
-  ema = prev.callCabal2nix "ema" inputs.ema { };
+    effectful-th = prev.callPackage (./pkgs/effectful-th.nix) { };
 
-  effectful-cache = doJailbreak (prev.callCabal2nix "effectful-cache" inputs.cache-effectful { });
+    ema = prev.callPackage (./pkgs/ema.nix) { };
 
-  effectful-core = prev.callHackage "effectful-core" "2.1.0.0" { };
+    email-validate = prev.callPackage (./pkgs/email-validate.nix) { };
 
-  effectful-th = prev.callHackage "effectful-th" "1.0.0.0" { };
+    extra = prev.callPackage (./pkgs/extra.nix) { };
 
-  effectful = prev.callHackage "effectful" "2.1.0.0" { };
+    fcf-containers = prev.callPackage (./pkgs/fcf-containers.nix) { };
 
-  extra = dontCheck (prev.callHackage "extra" "1.7.12" { });
+    finite-field = prev.callPackage (./pkgs/finite-field.nix) { };
 
-  fcf-containers = dontCheck (prev.callHackage "fcf-containers" "0.7.1" { });
+    first-class-families = prev.callPackage (./pkgs/first-class-families.nix) { };
 
-  finite-field = dontCheck (prev.callHackage "finite-field" "0.10.0" { });
+    foldl = prev.callPackage (./pkgs/foldl.nix) { };
 
-  first-class-families = doJailbreak (dontCheck (prev.callHackage "first-class-families" "0.8.0.1" { }));
+    foundation = prev.callPackage (./pkgs/foundation.nix) { };
 
-  foldl = dontCheck (prev.callHackage "foldl" "1.4.12" { });
+    fourmolu = prev.callPackage (./pkgs/fourmolu.nix) { };
 
-  fourmolu = doJailbreak (prev.callHackage "fourmolu" "0.8.2.0" { });
+    generic-lens-core = prev.callPackage (./pkgs/generic-lens-core.nix) { };
 
-  foundation = prev.callHackage "foundation" "0.0.29" { };
+    generic-lens-lite = prev.callPackage (./pkgs/generic-lens-lite.nix) { };
 
-  generic-lens-core = prev.callHackage "generic-lens-core" "2.2.1.0" { };
+    generic-optics = prev.callPackage (./pkgs/generic-optics.nix) { };
 
-  generic-lens-lite = doJailbreak (prev.callHackage "generic-lens-lite" "0.1" { });
+    generic-optics-lite = prev.callPackage (./pkgs/generic-optics-lite.nix) { };
 
-  generic-optics-lite = doJailbreak (prev.callHackage "generic-optics-lite" "0.1" { });
+    generics-sop = prev.callPackage (./pkgs/generics-sop.nix) { };
 
-  generic-optics = dontCheck (doJailbreak (prev.callHackage "generic-optics" "2.2.1.0" { }));
+    genvalidity-aeson = prev.callPackage (./pkgs/genvalidity-aeson.nix) { };
 
-  generics-sop = prev.callHackage "generics-sop" "0.5.1.2" { };
+    genvalidity-bytestring = prev.callPackage (./pkgs/genvalidity-bytestring.nix) { };
 
-  genvalidity-aeson = prev.callHackage "genvalidity-aeson" "1.0.0.1" { };
+    genvalidity-hspec = prev.callPackage (./pkgs/genvalidity-hspec.nix) { };
 
-  genvalidity-bytestring = prev.callHackage "genvalidity-bytestring" "1.0.0.1" { };
+    genvalidity-scientific = prev.callPackage (./pkgs/genvalidity-scientific.nix) { };
 
-  genvalidity-hspec = prev.callHackage "genvalidity-hspec" "1.0.0.2" { };
+    genvalidity-sydtest-aeson = prev.callPackage (./pkgs/genvalidity-sydtest-aeson.nix) { };
 
-  genvalidity-scientific = prev.callHackage "genvalidity-scientific" "1.0.0.0" { };
+    genvalidity-text = prev.callPackage (./pkgs/genvalidity-text.nix) { };
 
-  genvalidity-sydtest-aeson = prev.callHackage "genvalidity-sydtest-aeson" "1.0.0.0" { };
+    genvalidity-unordered-containers = prev.callPackage (./pkgs/genvalidity-unordered-containers.nix) { };
 
-  genvalidity-text = prev.callHackage "genvalidity-text" "1.0.0.1" { };
+    genvalidity-vector = prev.callPackage (./pkgs/genvalidity-vector.nix) { };
 
-  genvalidity-unordered-containers = prev.callHackage "genvalidity-unordered-containers" "1.0.0.0" { };
+    ghc-byteorder = prev.callPackage (./pkgs/ghc-byteorder.nix) { };
 
-  genvalidity-vector = prev.callHackage "genvalidity-vector" "1.0.0.0" { };
+    ghc-check = prev.callPackage (./pkgs/ghc-check.nix) { };
 
-  ghc-check = dontHaddock (prev.callHackage "ghc-check" "0.5.0.8" { });
+    ghc-exactprint = prev.callPackage (./pkgs/ghc-exactprint.nix) { };
 
-  ghc-byteorder = doJailbreak (prev.callHackage "ghc-byteorder" "4.11.0.0.10" { });
+    ghc-lib-parser = prev.callPackage (./pkgs/ghc-lib-parser.nix) { };
 
-  ghc-exactprint = prev.callCabal2nix "ghc-exactprint" inputs.ghc-exactprint { };
+    ghc-lib-parser-ex = prev.callPackage (./pkgs/ghc-lib-parser-ex.nix) { };
 
-  ghc-lib-parser = doJailbreak (prev.callHackage "ghc-lib-parser" "9.4.2.20220822" { });
+    ghc-paths = prev.callPackage (./pkgs/ghc-paths.nix) { };
 
-  ghc-lib-parser-ex = doJailbreak (prev.callHackage "ghc-lib-parser-ex" "9.4.0.0" { });
+    ghc-tcplugins-extra = prev.callPackage (./pkgs/ghc-tcplugins-extra.nix) { };
 
-  ghc-paths = prev.callHackage "ghc-paths" "0.1.0.12" { };
+    hackage-security = prev.callPackage (./pkgs/hackage-security.nix) { };
 
-  ghc-tcplugins-extra = prev.callHackage "ghc-tcplugins-extra" "0.4.3" { };
+    hashable = prev.callPackage (./pkgs/hashable.nix) { };
 
-  hackage-security = doJailbreak (prev.callHackage "hackage-security" "0.6.2.2" { });
+    hashing = prev.callPackage (./pkgs/hashing.nix) { };
 
-  hashable = prev.callHackage "hashable" "1.4.1.0" { };
+    hashtables = prev.callPackage (./pkgs/hashtables.nix) { };
 
-  haskell-src-meta = prev.callCabal2nix "haskell-src-meta" (inputs.haskell-src-meta + /haskell-src-meta) { };
+    haskell-src-meta = prev.callPackage (./pkgs/haskell-src-meta.nix) { };
 
-  hashing = doJailbreak (prev.callHackage "hashing" "0.1.0.1" { });
+    hedgehog = prev.callPackage (./pkgs/hedgehog.nix) { };
 
-  hashtables = doJailbreak (prev.callHackage "hashtables" "1.3" { });
+    hedgehog-golden = prev.callPackage (./pkgs/hedgehog-golden.nix) { };
 
-  hedgehog = dontHaddock (prev.callHackage "hedgehog" "1.2" { });
+    hie-compat = prev.callPackage (./pkgs/hie-compat.nix) { };
 
-  hedgehog-golden = dontHaddock (prev.callCabal2nix "hedgehog-golden" inputs.hedgehog-golden { });
+    hiedb = prev.callPackage (./pkgs/hiedb.nix) { };
 
-  hedgehog-quickcheck = doJailbreak (prev.callHackage "hedgehog-quickcheck" "0.1.1" { });
+    hlint = prev.callPackage (./pkgs/hlint.nix) { };
 
-  hie-compat = prev.callHackage "hie-compat" "0.3.0.0" { };
+    hnix = prev.callPackage (./pkgs/hnix.nix) { };
 
-  hiedb = dontCheck (doJailbreak (prev.callHackage "hiedb" "0.4.2.0" { }));
+    hourglass = prev.callPackage (./pkgs/hourglass.nix) { };
 
-  hlint = prev.callCabal2nix "hlint" inputs.hlint { };
+    hslua-aeson = prev.callPackage (./pkgs/hslua-aeson.nix) { };
 
-  hnix = doJailbreak (dontCheck (prev.callCabal2nix "hnix" inputs.hnix { }));
+    hspec = prev.callPackage (./pkgs/hspec.nix) { };
 
-  hourglass = dontCheck (prev.callHackage "hourglass" "0.2.12" { });
+    hspec-core = prev.callPackage (./pkgs/hspec-core.nix) { };
 
-  hslua-aeson = doJailbreak (prev.callHackage "hslua-aeson" "2.2.1" { });
+    hspec-discover = prev.callPackage (./pkgs/hspec-discover.nix) { };
 
-  hspec = doJailbreak (prev.callHackage "hspec" "2.10.3" { });
+    hspec-meta = prev.callPackage (./pkgs/hspec-meta.nix) { };
 
-  hspec-core = dontCheck (prev.callHackage "hspec-core" "2.10.0.1" { });
+    http-client = prev.callPackage (./pkgs/http-client.nix) { };
 
-  hspec-discover = dontCheck (prev.callHackage "hspec-discover" "2.10.0.1" { });
+    http-date = prev.callPackage (./pkgs/http-date.nix) { };
 
-  hspec-meta = dontCheck (prev.callHackage "hspec-meta" "2.9.3" { });
+    http-types = prev.callPackage (./pkgs/http-types.nix) { };
 
-  http-client = dontCheck (prev.callHackage "http-client" "0.7.13.1" { });
+    http2 = prev.callPackage (./pkgs/http2.nix) { };
 
-  http-date = dontCheck (prev.callHackage "http-date" "0.0.11" {});
+    incipit-base = prev.callPackage (./pkgs/incipit-base.nix) { };
 
-  http-types = dontCheck (prev.callHackage "http-types" "0.12.3" { });
+    incipit-core = prev.callPackage (./pkgs/incipit-core.nix) { };
 
-  http2 = dontCheck (prev.callHackage "http2" "3.0.3" { });
+    indexed-traversable = prev.callPackage (./pkgs/indexed-traversable.nix) { };
 
-  incipit-base = doJailbreak (prev.callHackage "incipit-base" "0.3.0.0" { });
+    indexed-traversable-instances = prev.callPackage (./pkgs/indexed-traversable-instances.nix) { };
 
-  incipit-core = doJailbreak (prev.callHackage "incipit-core" "0.3.0.0" { });
+    integer-logarithms = prev.callPackage (./pkgs/integer-logarithms.nix) { };
 
-  indexed-traversable = doJailbreak (final.callHackage "indexed-traversable" "0.1.2" { });
+    invariant = prev.callPackage (./pkgs/invariant.nix) { };
 
-  indexed-traversable-instances = doJailbreak (dontCheck (prev.callHackage "indexed-traversable-instances" "0.1.1.1" { }));
+    iproute = prev.callPackage (./pkgs/iproute.nix) { };
 
-  integer-logarithms = final.callHackage "integer-logarithms" "1.0.3.1" { };
+    lens = prev.callPackage (./pkgs/lens.nix) { };
 
-  invariant = doJailbreak (prev.callHackage "invariant" "0.6" { });
+    lens-aeson = prev.callPackage (./pkgs/lens-aeson.nix) { };
 
-  iproute = dontCheck (prev.callHackage "iproute" "1.7.12" { });
+    lens-family-th = prev.callPackage (./pkgs/lens-family-th.nix) { };
 
-  lens = doJailbreak (prev.callHackage "lens" "5.2" { });
+    lifted-async = prev.callPackage (./pkgs/lifted-async.nix) { };
 
-  lens-aeson = prev.callHackage "lens-aeson" "1.2.1" { };
+    linear = prev.callPackage (./pkgs/linear.nix) { };
 
-  lens-family-th = doJailbreak (prev.callHackage "lens-family-th" "0.5.2.1" { });
+    lsp = prev.callPackage (./pkgs/lsp.nix) { };
 
-  lifted-async = doJailbreak (prev.callHackage "lifted-async" "0.10.2.1" { });
+    lsp-types = prev.callPackage (./pkgs/lsp-types.nix) { };
 
-  linear = doJailbreak (prev.callHackage "linear" "1.21.10" { });
+    lucid = prev.callPackage (./pkgs/lucid.nix) { };
 
-  lsp-types = prev.callHackage "lsp-types" "1.6.0.0" { };
+    memory = prev.callPackage (./pkgs/memory.nix) { };
 
-  lsp = prev.callHackage "lsp" "1.6.0.0" { };
+    monoid-subclasses = prev.callPackage (./pkgs/monoid-subclasses.nix) { };
 
-  lucid = doJailbreak (prev.callHackage "lucid" "2.11.1" { });
+    net-mqtt = prev.callPackage (./pkgs/net-mqtt.nix) { };
 
-  memory = prev.callCabal2nix "memory" inputs.memory { };
+    network-byte-order = prev.callPackage (./pkgs/network-byte-order.nix) { };
 
-  net-mqtt = doJailbreak (prev.callHackage "net-mqtt" "0.8.2.2" { });
+    newtype-generics = prev.callPackage (./pkgs/newtype-generics.nix) { };
 
-  monoid-subclasses = doJailbreak (prev.callHackage "monoid-subclasses" "1.1.3" { });
+    nothunks = prev.callPackage (./pkgs/nothunks.nix) { };
 
-  network-byte-order = dontCheck (prev.callHackage "network-byte-order" "0.1.6" { });
+    optics = prev.callPackage (./pkgs/optics.nix) { };
 
-  newtype-generics = doJailbreak (prev.callHackage "newtype-generics" "0.6.2" { });
+    optics-core = prev.callPackage (./pkgs/optics-core.nix) { };
 
-  nothunks = dontCheck (prev.callHackage "nothunks" "0.1.3" { });
+    optics-extra = prev.callPackage (./pkgs/optics-extra.nix) { };
 
-  optics-core = prev.callHackage "optics-core" "0.4.1" { };
+    optics-th = prev.callPackage (./pkgs/optics-th.nix) { };
 
-  optics-extra = doJailbreak (prev.callHackage "optics-extra" "0.4.2.1" { });
+    pandoc = prev.callPackage (./pkgs/pandoc.nix) { };
 
-  optics-th = prev.callHackage "optics-th" "0.4.1" { };
+    parallel = prev.callPackage (./pkgs/parallel.nix) { };
 
-  optics = doJailbreak (dontCheck (prev.callHackage "optics" "0.4.2" { }));
+    pcg-random = prev.callPackage (./pkgs/pcg-random.nix) { };
 
-  pandoc = doJailbreak (prev.callHackage "pandoc" "2.19.2" { });
+    polysemy = prev.callPackage (./pkgs/polysemy.nix) { };
 
-  parallel = doJailbreak (final.callHackage "parallel" "3.2.2.0" { });
+    polysemy-extra = prev.callPackage (./pkgs/polysemy-extra.nix) { };
 
-  pcg-random = dontCheck (prev.callHackage "pcg-random" "0.1.3.7" { });
+    polysemy-kvstore = prev.callPackage (./pkgs/polysemy-kvstore.nix) { };
 
-  polysemy = dontCheck (prev.callHackage "polysemy" "1.7.1.0" { });
+    polysemy-methodology = prev.callPackage (./pkgs/polysemy-methodology.nix) { };
 
-  polysemy-extra = prev.callHackage "polysemy-extra" "0.2.1.0" { };
+    polysemy-path = prev.callPackage (./pkgs/polysemy-path.nix) { };
 
-  polysemy-kvstore = prev.callHackage "polysemy-kvstore" "0.1.3.0" { };
+    polysemy-plugin = prev.callPackage (./pkgs/polysemy-plugin.nix) { };
 
-  polysemy-methodology = doJailbreak (prev.callHackage "polysemy-methodology" "0.2.1.0" { });
+    polysemy-several = prev.callPackage (./pkgs/polysemy-several.nix) { };
 
-  polysemy-path = doJailbreak (prev.callHackage "polysemy-path" "0.2.1.0" { });
+    polysemy-time = prev.callPackage (./pkgs/polysemy-time.nix) { };
 
-  polysemy-plugin = dontCheck (doJailbreak (prev.callCabal2nix "polysemy-plugin" (inputs.polysemy + /polysemy-plugin) { }));
+    polysemy-vinyl = prev.callPackage (./pkgs/polysemy-vinyl.nix) { };
 
-  polysemy-several = prev.callHackage "polysemy-several" "0.1.1.0" { };
+    polysemy-zoo = prev.callPackage (./pkgs/polysemy-zoo.nix) { };
 
-  polysemy-time = dontCheck (prev.callHackage "polysemy-time" "0.5.1.0" { });
+    postgresql-libpq = prev.callPackage (./pkgs/postgresql-libpq.nix) { };
 
-  polysemy-vinyl = doJailbreak (prev.callHackage "polysemy-vinyl" "0.1.5.0" { });
+    postgresql-simple = prev.callPackage (./pkgs/postgresql-simple.nix) { };
 
-  polysemy-zoo = doJailbreak (dontCheck (prev.callHackage "polysemy-zoo" "0.8.0.0" { }));
+    pretty-simple = prev.callPackage (./pkgs/pretty-simple.nix) { };
 
-  postgresql-libpq = doJailbreak (prev.callHackage "postgresql-libpq" "0.9.4.3" { });
+    prettyprinter-ansi-terminal = prev.callPackage (./pkgs/prettyprinter-ansi-terminal.nix) { };
 
-  postgresql-simple = doJailbreak (prev.callHackage "postgresql-simple" "0.6.4" { });
+    primitive = prev.callPackage (./pkgs/primitive.nix) { };
 
-  pretty-simple = dontCheck (prev.callHackage "pretty-simple" "4.1.1.0" { });
+    proteaaudio-sdl = prev.callPackage (./pkgs/proteaaudio-sdl.nix) { };
 
-  prettyprinter-ansi-terminal = dontCheck (prev.callHackage "prettyprinter-ansi-terminal" "1.1.3" { });
+    quickcheck-dynamic = prev.callPackage (./pkgs/quickcheck-dynamic.nix) { };
 
-  primitive = dontCheck (prev.callHackage "primitive" "0.7.4.0" { });
+    quickcheck-instances = prev.callPackage (./pkgs/quickcheck-instances.nix) { };
 
-  proteaaudio-sdl = doJailbreak (prev.callHackage "proteaaudio-sdl" "0.9.2" { });
+    rebase = prev.callPackage (./pkgs/rebase.nix) { };
 
-  quickcheck-dynamic = prev.callCabal2nix "quickcheck-dynamic" (inputs.quickcheck-dynamic + /quickcheck-dynamic) { };
+    relude = prev.callPackage (./pkgs/relude.nix) { };
 
-  quickcheck-instances = doJailbreak (prev.callHackage "quickcheck-instances" "0.3.28" { });
+    rerebase = prev.callPackage (./pkgs/rerebase.nix) { };
 
-  rebase = doJailbreak (prev.callHackage "rebase" "1.16" { });
+    retry = prev.callPackage (./pkgs/retry.nix) { };
 
-  rerebase = doJailbreak (prev.callHackage "rerebase" "1.15.0.3" { });
+    rope-utf16-splay = prev.callPackage (./pkgs/rope-utf16-splay.nix) { };
 
-  relude = doJailbreak (dontCheck (prev.callHackage "relude" "1.1.0.0" { }));
+    safe-coloured-text = prev.callPackage (./pkgs/safe-coloured-text.nix) { };
 
-  retry = dontCheck (prev.callHackage "retry" "0.9.3.0" { });
+    saltine = prev.callPackage (./pkgs/saltine.nix) { };
 
-  rope-utf16-splay = prev.callHackage "rope-utf16-splay" "0.4.0.0" { };
+    scientific = prev.callPackage (./pkgs/scientific.nix) { };
 
-  safe-coloured-text = prev.callHackage "safe-coloured-text" "0.2.0.1" { };
+    scotty = prev.callPackage (./pkgs/scotty.nix) { };
 
-  saltine = addPkgconfigDepend (doJailbreak (prev.callHackage "saltine" "0.1.1.1" { })) pkgs.libsodium;
+    sdl2 = prev.callPackage (./pkgs/sdl2.nix) { };
 
-  scotty = doJailbreak (prev.callHackage "scotty" "0.12" { });
+    sdl2-gfx = prev.callPackage (./pkgs/sdl2-gfx.nix) { };
 
-  scientific = prev.callHackage "scientific" "0.3.7.0" { };
+    sdl2-image = prev.callPackage (./pkgs/sdl2-image.nix) { };
 
-  sdl2 = doJailbreak (dontCheck (final.callHackage "sdl2" "2.5.3.3" { }));
+    sdl2-mixer = prev.callPackage (./pkgs/sdl2-mixer.nix) { };
 
-  sdl2-gfx = prev.callHackage "sdl2-gfx" "0.3.0.0" { };
+    sdl2-ttf = prev.callPackage (./pkgs/sdl2-ttf.nix) { };
 
-  sdl2-image = prev.callHackage "sdl2-image" "2.1.0.0" { };
+    semialign = prev.callPackage (./pkgs/semialign.nix) { };
 
-  sdl2-mixer = prev.callHackage "sdl2-mixer" "1.2.0.0" { };
+    serialise = prev.callPackage (./pkgs/serialise.nix) { };
 
-  sdl2-ttf = prev.callHackage "sdl2-ttf" "2.1.3" { };
+    servant = prev.callPackage (./pkgs/servant.nix) { };
 
-  semialign = doJailbreak (prev.callHackage "semialign" "1.2.0.1" { });
+    servant-client = prev.callPackage (./pkgs/servant-client.nix) { };
 
-  servant = doJailbreak (prev.callCabal2nix "servant" (inputs.servant + /servant) { });
+    servant-client-core = prev.callPackage (./pkgs/servant-client-core.nix) { };
 
-  servant-server = doJailbreak (prev.callCabal2nix "servant-server" (inputs.servant + /servant-server) { });
+    servant-foreign = prev.callPackage (./pkgs/servant-foreign.nix) { };
 
-  servant-client-core = doJailbreak (prev.callCabal2nix "servant-client-core" (inputs.servant + /servant-client-core) { });
+    servant-lucid = prev.callPackage (./pkgs/servant-lucid.nix) { };
 
-  servant-client = doJailbreak (prev.callCabal2nix "servant-client" (inputs.servant + /servant-client) { });
+    servant-multipart = prev.callPackage (./pkgs/servant-multipart.nix) { };
 
-  servant-foreign = doJailbreak (prev.callCabal2nix "servant-foreign" (inputs.servant + /servant-foreign) { });
+    servant-multipart-api = prev.callPackage (./pkgs/servant-multipart-api.nix) { };
 
-  servant-lucid = doJailbreak (prev.callHackage "servant-lucid" "0.9.0.5" { });
+    shake = prev.callPackage (./pkgs/shake.nix) { };
 
-  servant-multipart = doJailbreak (prev.callHackage "servant-multipart" "0.12.1" { });
+    shelly = prev.callPackage (./pkgs/shelly.nix) { };
 
-  servant-multipart-api = doJailbreak (prev.callHackage "servant-multipart-api" "0.12.1" { });
+    singleton-bool = prev.callPackage (./pkgs/singleton-bool.nix) { };
 
-  serialise = doJailbreak (prev.callCabal2nix "serialise" (inputs.cborg + /serialise) { });
+    singletons = prev.callPackage (./pkgs/singletons.nix) { };
 
-  shake = dontCheck (prev.callHackage "shake" "0.19.6" { });
+    some = prev.callPackage (./pkgs/some.nix) { };
 
-  shelly = dontCheck (prev.callHackage "shelly" "1.10.0" { });
+    sop-core = prev.callPackage (./pkgs/sop-core.nix) { };
 
-  singleton-bool = doJailbreak (prev.callHackage "singleton-bool" "0.1.6" { });
+    split = prev.callPackage (./pkgs/split.nix) { };
 
-  singletons = prev.callHackage "singletons" "3.0.2" { };
+    streaming-commons = prev.callPackage (./pkgs/streaming-commons.nix) { };
 
-  some = doJailbreak (prev.callHackage "some" "1.0.4" { });
+    string-interpolate = prev.callPackage (./pkgs/string-interpolate.nix) { };
 
-  sop-core = doJailbreak (prev.callHackage "sop-core" "0.5.0.1" { });
+    string-qq = prev.callPackage (./pkgs/string-qq.nix) { };
 
-  split = doJailbreak (prev.callHackage "split" "0.2.3.3" { });
+    stylish-haskell = prev.callPackage (./pkgs/stylish-haskell.nix) { };
 
-  splitmix = doJailbreak (dontCheck (prev.splitmix));
+    syb = prev.callPackage (./pkgs/syb.nix) { };
 
-  streaming-commons = dontCheck (prev.callHackage "streaming-commons" "0.2.2.4" { });
+    sydtest = prev.callPackage (./pkgs/sydtest.nix) { };
 
-  string-interpolate = prev.callHackage "string-interpolate" "0.3.1.2" { };
+    sydtest-discover = prev.callPackage (./pkgs/sydtest-discover.nix) { };
 
-  string-qq = doJailbreak (prev.callHackage "string-qq" "0.0.4" { });
+    tasty = prev.callPackage (./pkgs/tasty.nix) { };
 
-  stylish-haskell = doJailbreak (prev.callHackage "stylish-haskell" "0.14.2.0" { });
+    tasty-discover = prev.callPackage (./pkgs/tasty-discover.nix) { };
 
-  syb = dontCheck (prev.callHackage "syb" "0.7.2.1" { });
+    tasty-hedgehog = prev.callPackage (./pkgs/tasty-hedgehog.nix) { };
 
-  sydtest = dontCheck (prev.callCabal2nix "sydtest" (inputs.sydtest + /sydtest) { });
+    tasty-hunit = prev.callPackage (./pkgs/tasty-hunit.nix) { };
 
-  sydtest-discover = prev.callCabal2nix "sydtest-discover" (inputs.sydtest + /sydtest-discover) { };
+    tasty-wai = prev.callPackage (./pkgs/tasty-wai.nix) { };
 
-  tasty = doJailbreak (prev.callCabal2nix "tasty" (inputs.tasty + /core) { });
+    text-zipper = prev.callPackage (./pkgs/text-zipper.nix) { };
 
-  tasty-discover = doJailbreak (prev.callHackage "tasty-discover" "5.0.0" { });
+    th-extras = prev.callPackage (./pkgs/th-extras.nix) { };
 
-  tasty-hedgehog = doJailbreak (prev.callCabal2nix "tasty-hedgehog" inputs.tasty-hedgehog { });
+    th-lift-instances = prev.callPackage (./pkgs/th-lift-instances.nix) { };
 
-  tasty-hunit = doJailbreak (prev.callCabal2nix "tasty" (inputs.tasty + /hunit) { });
+    these = prev.callPackage (./pkgs/these.nix) { };
 
-  tasty-wai = doJailbreak (prev.callHackage "tasty-wai" "0.1.2.0" { });
+    tidal = prev.callPackage (./pkgs/tidal.nix) { };
 
-  text-zipper = prev.callHackage "text-zipper" "0.12" { };
+    time-compat = prev.callPackage (./pkgs/time-compat.nix) { };
 
-  these = doJailbreak (prev.callHackage "these" "1.1.1.1" { });
+    type-equality = prev.callPackage (./pkgs/type-equality.nix) { };
 
-  th-extras = doJailbreak (prev.callHackage "th-extras" "0.0.0.6" { });
+    type-errors = prev.callPackage (./pkgs/type-errors.nix) { };
 
-  th-lift-instances = prev.callHackage "th-lift-instances" "0.1.20" { };
+    type-errors-pretty = prev.callPackage (./pkgs/type-errors-pretty.nix) { };
 
-  tidal = doJailbreak (prev.callHackage "tidal" "1.8.1" { });
+    unicode-collation = prev.callPackage (./pkgs/unicode-collation.nix) { };
 
-  time-compat = doJailbreak (prev.callHackage "time-compat" "1.9.6.1" { });
+    unicode-data = prev.callPackage (./pkgs/unicode-data.nix) { };
 
-  type-errors-pretty = dontCheck (doJailbreak (prev.callHackage "type-errors-pretty" "0.0.1.2" { }));
+    unicode-transforms = prev.callPackage (./pkgs/unicode-transforms.nix) { };
 
-  type-errors = dontCheck (doJailbreak (prev.callHackage "type-errors" "0.2.0.0" { }));
+    unordered-containers = prev.callPackage (./pkgs/unordered-containers.nix) { };
 
-  type-equality = doJailbreak (prev.callHackage "type-equality" "1" { });
+    vault = prev.callPackage (./pkgs/vault.nix) { };
 
-  unicode-data = dontCheck (prev.callCabal2nix "unicode-data" (inputs.unicode-data + /unicode-data) { });
+    vector = prev.callPackage (./pkgs/vector.nix) { };
 
-  unicode-collation = doJailbreak (prev.callHackage "unicode-collation" "0.1.3.2" { });
+    vector-algorithms = prev.callPackage (./pkgs/vector-algorithms.nix) { };
 
-  unicode-transforms = doJailbreak (dontCheck (prev.callHackage "unicode-transforms" "0.4.0.1" { }));
+    vinyl = prev.callPackage (./pkgs/vinyl.nix) { };
 
-  unordered-containers = doJailbreak (prev.callHackage "unordered-containers" "0.2.19.1" { });
+    vty = prev.callPackage (./pkgs/vty.nix) { };
 
-  vault = doJailbreak (prev.callHackage "vault" "0.3.1.5" { });
+    wai-middleware-static = prev.callPackage (./pkgs/wai-middleware-static.nix) { };
 
-  vector = dontCheck (prev.callHackage "vector" "0.13.0.0" { });
+    warp = prev.callPackage (./pkgs/warp.nix) { };
 
-  vector-algorithms = prev.callHackage "vector-algorithms" "0.9.0.1" { };
+    warp-tls = prev.callPackage (./pkgs/warp-tls.nix) { };
 
-  vinyl = final.callHackage "vinyl" "0.14.3" { };
+    with-utf8 = prev.callPackage (./pkgs/with-utf8.nix) { };
 
-  vty = prev.callHackage "vty" "5.37" { };
+    witherable = prev.callPackage (./pkgs/witherable.nix) { };
 
-  wai-middleware-static = prev.callHackage "wai-middleware-static" "0.9.2" { };
-
-  warp = dontCheck (prev.callHackage "warp" "3.3.22" { });
-
-  warp-tls = dontCheck (prev.callHackage "warp-tls" "3.3.3" { });
-
-  witherable = dontCheck (prev.callHackage "witherable" "0.4.2" { });
-  
-  with-utf8 = doJailbreak (prev.callHackage "with-utf8" "1.0.2.3" { });
-
-  xml-conduit = dontCheck (prev.callHackage "xml-conduit" "1.9.1.1" { });
+    xml-conduit = prev.callPackage (./pkgs/xml-conduit.nix) { };
 
 }
