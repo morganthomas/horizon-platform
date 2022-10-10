@@ -157,6 +157,8 @@ final: prev: with pkgs.haskell.lib; {
 
   genvalidity-text = prev.callHackage "genvalidity-text" "1.0.0.1" { };
 
+  genvalidity-vector = prev.callHackage "genvalidity-vector" "1.0.0.0" { };
+
   ghc-check = dontHaddock (prev.callHackage "ghc-check" "0.5.0.8" { });
 
   ghc-byteorder = doJailbreak (prev.callHackage "ghc-byteorder" "4.11.0.0.10" { });
