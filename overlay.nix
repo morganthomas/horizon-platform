@@ -157,6 +157,8 @@ final: prev: with pkgs.haskell.lib; {
 
   genvalidity-text = prev.callHackage "genvalidity-text" "1.0.0.1" { };
 
+  genvalidity-unordered-containers = prev.callHackage "genvalidity-unordered-containers" "1.0.0.0" { };
+
   genvalidity-vector = prev.callHackage "genvalidity-vector" "1.0.0.0" { };
 
   ghc-check = dontHaddock (prev.callHackage "ghc-check" "0.5.0.8" { });
