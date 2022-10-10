@@ -151,6 +151,8 @@ final: prev: with pkgs.haskell.lib; {
 
   generics-sop = prev.callHackage "generics-sop" "0.5.1.2" { };
 
+  genvalidity-bytestring = prev.callHackage "genvalidity-bytestring" "1.0.0.1" { };
+
   genvalidity-hspec = prev.callHackage "genvalidity-hspec" "1.0.0.2" { };
 
   genvalidity-scientific = prev.callHackage "genvalidity-scientific" "1.0.0.0" { };
