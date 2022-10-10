@@ -153,6 +153,8 @@ final: prev: with pkgs.haskell.lib; {
 
   genvalidity-hspec = prev.callHackage "genvalidity-hspec" "1.0.0.2" { };
 
+  genvalidity-scientific = prev.callHackage "genvalidity-scientific" "1.0.0.0" { };
+
   genvalidity-text = prev.callHackage "genvalidity-text" "1.0.0.1" { };
 
   ghc-check = dontHaddock (prev.callHackage "ghc-check" "0.5.0.8" { });
