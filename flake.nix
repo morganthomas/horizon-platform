@@ -1,110 +1,17 @@
 {
   inputs = {
-    Cabal = {
-      url = "git+https://gitlab.haskell.org/ghc/packages/Cabal";
-      flake = false;
-    };
-    all-cabal-hashes = {
-      url = "github:commercialhaskell/all-cabal-hashes?ref=hackage";
-      flake = false;
-    };
-    cache-effectful = {
-      url = "github:haskell-effectful/cache-effectful";
-      flake = false;
-    };
-    cborg = {
-      url = "github:parsonsmatt/cborg/05ca2063ff631667699bffbeee3a4a076943b905";
-      flake = false;
-    };
-    compactable = {
-      url = "gitlab:fresheyeball/Compactable/master";
-      flake = false;
-    };
-    cryptohash-sha1 = {
-      url = "github:haskell-hvr/cryptohash-sha1";
-      flake = false;
-    };
-    doctest = {
-      url = "github:sol/doctest/4eb97c213acf7abe965a3a1b67397199ed155f3c";
-      flake = false;
-    };
-    double-conversion = {
-      url = "github:haskell/double-conversion";
-      flake = false;
-    };
-    ed25519 = {
-      url = "git+https://gitlab.homotopic.tech/horizon/adopted/ed25519";
-      flake = false;
-    };
-    ema = {
-      url = "github:EmaApps/ema";
-      flake = false;
-    };
-    flake-parts.url = "github:hercules-ci/flake-parts";
-    flake-parts.inputs.nixpkgs.follows = "nixpkgs";
-    ghc-exactprint = {
-      url = "github:alanz/ghc-exactprint?ref=ghc-9.4";
-      flake = false;
-    };
-    haskell-src-meta = {
-      url = "github:parsonsmatt/haskell-src-meta?ref=matt/support-new-th";
-      flake = false;
-    };
-    hedgehog-golden = {
-      url = "github:maybe-hedgehog-later/hedgehog-golden";
-      flake = false;
-    };
-    hlint = {
-      url = "github:ndmitchell/hlint";
-      flake = false;
-    };
-    hnix = {
-      url = "github:milloni/hnix?ref=milloni/horizon";
-      flake = false;
-    };
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
-    memory = {
-      url = "github:parsonsmatt/hs-memory/0f760c8ba0b7d5aacf04a7294e87e5e4fff53f40";
-      flake = false;
-    };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    polysemy = {
-      url = "github:locallycompact/polysemy?ref=ghc-942";
-      flake = false;
-    };
-    quickcheck-dynamic = {
-      url = "github:input-output-hk/quickcheck-dynamic";
-      flake = false;
-    };
-    servant = {
-      url = "github:TeofilC/servant?ref=ghc-9.4";
-      flake = false;
-    };
-    sydtest = {
-      url = "github:NorfairKing/sydtest";
-      flake = false;
-    };
-    tasty = {
-      url = "github:UnkindPartition/tasty";
-      flake = false;
-    };
-    tasty-hedgehog = {
-      url = "github:locallycompact/tasty-hedgehog";
-      flake = false;
-    };
-    unicode-data = {
-      url = "github:composewell/unicode-data";
-      flake = false;
-    };
+    horizon-gen-nix.url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix";
   };
-  outputs = inputs@{ self, nixpkgs, flake-utils, lint-utils, ... }:
+  outputs = inputs@{ self, nixpkgs, flake-utils, horizon-gen-nix, lint-utils, ... }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
-        overlay-ach = final: prev: { all-cabal-hashes = inputs.all-cabal-hashes; };
-        pkgs = import nixpkgs { inherit system; overlays = [ overlay-ach ]; };
+        pkgs = import nixpkgs { inherit system; };
         overrides-hp = import ./overlay.nix { inherit inputs pkgs; };
+        configuration = import ./configuration.nix { inherit inputs pkgs; };
         hp = pkgs.haskell.packages.ghc942.override {
-          overrides = overrides-hp;
+          overrides = pkgs.lib.composeManyExtensions [ overrides-hp configuration ];
         };
         hp' = pkgs.lib.filterAttrs
           (n: v: v != null
@@ -115,7 +22,14 @@
           hp;
       in
       {
+        apps = {
+          horizon-gen-nix = {
+            type = "app";
+            program = "${horizon-gen-nix.outputs.packages.x86_64-linux.default}/bin/horizon-gen-nix";
+          };
+        };
         checks = {
+          dhall-format = lint-utils.outputs.linters.x86_64-linux.dhall-format ./.;
           nixpkgs-fmt = lint-utils.outputs.linters.x86_64-linux.nixpkgs-fmt ./.;
         };
         overrides.ghc942 = overrides-hp;
