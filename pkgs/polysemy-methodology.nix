@@ -1,4 +1,8 @@
-{ mkDerivation, base, lib, polysemy, polysemy-kvstore
+{ mkDerivation
+, base
+, lib
+, polysemy
+, polysemy-kvstore
 , polysemy-several
 }:
 mkDerivation {
@@ -8,7 +12,10 @@ mkDerivation {
   revision = "2";
   editedCabalFile = "0dpancn85f8j3pxhk43lik6fbznp502cc68rkhqkan791kh1bbc7";
   libraryHaskellDepends = [
-    base polysemy polysemy-kvstore polysemy-several
+    base
+    polysemy
+    polysemy-kvstore
+    polysemy-several
   ];
   doHaddock = false;
   jailbreak = true;

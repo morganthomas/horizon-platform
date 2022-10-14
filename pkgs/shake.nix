@@ -1,7 +1,27 @@
-{ mkDerivation, base, binary, bytestring, deepseq, directory, extra
-, filepath, filepattern, hashable, heaps, js-dgtable, js-flot
-, js-jquery, lib, primitive, process, QuickCheck, random, time
-, transformers, unix, unordered-containers, utf8-string
+{ mkDerivation
+, base
+, binary
+, bytestring
+, deepseq
+, directory
+, extra
+, filepath
+, filepattern
+, hashable
+, heaps
+, js-dgtable
+, js-flot
+, js-jquery
+, lib
+, primitive
+, process
+, QuickCheck
+, random
+, time
+, transformers
+, unix
+, unordered-containers
+, utf8-string
 }:
 mkDerivation {
   pname = "shake";
@@ -11,19 +31,73 @@ mkDerivation {
   isExecutable = true;
   enableSeparateDataOutput = true;
   libraryHaskellDepends = [
-    base binary bytestring deepseq directory extra filepath filepattern
-    hashable heaps js-dgtable js-flot js-jquery primitive process
-    random time transformers unix unordered-containers utf8-string
+    base
+    binary
+    bytestring
+    deepseq
+    directory
+    extra
+    filepath
+    filepattern
+    hashable
+    heaps
+    js-dgtable
+    js-flot
+    js-jquery
+    primitive
+    process
+    random
+    time
+    transformers
+    unix
+    unordered-containers
+    utf8-string
   ];
   executableHaskellDepends = [
-    base binary bytestring deepseq directory extra filepath filepattern
-    hashable heaps js-dgtable js-flot js-jquery primitive process
-    random time transformers unix unordered-containers utf8-string
+    base
+    binary
+    bytestring
+    deepseq
+    directory
+    extra
+    filepath
+    filepattern
+    hashable
+    heaps
+    js-dgtable
+    js-flot
+    js-jquery
+    primitive
+    process
+    random
+    time
+    transformers
+    unix
+    unordered-containers
+    utf8-string
   ];
   testHaskellDepends = [
-    base binary bytestring deepseq directory extra filepath filepattern
-    hashable heaps js-dgtable js-flot js-jquery primitive process
-    QuickCheck random time transformers unix unordered-containers
+    base
+    binary
+    bytestring
+    deepseq
+    directory
+    extra
+    filepath
+    filepattern
+    hashable
+    heaps
+    js-dgtable
+    js-flot
+    js-jquery
+    primitive
+    process
+    QuickCheck
+    random
+    time
+    transformers
+    unix
+    unordered-containers
     utf8-string
   ];
   doHaddock = false;

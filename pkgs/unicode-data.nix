@@ -1,4 +1,10 @@
-{ mkDerivation, base, deepseq, hspec, hspec-discover, lib, tasty
+{ mkDerivation
+, base
+, deepseq
+, hspec
+, hspec-discover
+, lib
+, tasty
 , tasty-bench
 }:
 mkDerivation {

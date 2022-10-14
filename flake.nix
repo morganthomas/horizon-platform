@@ -11,7 +11,7 @@
         overrides-hp = import ./overlay.nix { inherit inputs pkgs; };
         configuration = import ./configuration.nix { inherit inputs pkgs; };
         hp = pkgs.haskell.packages.ghc942.override {
-          overrides = pkgs.lib.composeManyExtensions [overrides-hp configuration];
+          overrides = pkgs.lib.composeManyExtensions [ overrides-hp configuration ];
         };
         hp' = pkgs.lib.filterAttrs
           (n: v: v != null

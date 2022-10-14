@@ -1,5 +1,17 @@
-{ mkDerivation, base, bytestring, deepseq, filepath, ghc-prim
-, hspec, lib, path, path-io, QuickCheck, split, tasty-bench, text
+{ mkDerivation
+, base
+, bytestring
+, deepseq
+, filepath
+, ghc-prim
+, hspec
+, lib
+, path
+, path-io
+, QuickCheck
+, split
+, tasty-bench
+, text
 , unicode-data
 }:
 mkDerivation {
@@ -11,13 +23,30 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base bytestring ghc-prim text unicode-data
+    base
+    bytestring
+    ghc-prim
+    text
+    unicode-data
   ];
   testHaskellDepends = [
-    base bytestring deepseq hspec QuickCheck split text unicode-data
+    base
+    bytestring
+    deepseq
+    hspec
+    QuickCheck
+    split
+    text
+    unicode-data
   ];
   benchmarkHaskellDepends = [
-    base deepseq filepath path path-io tasty-bench text
+    base
+    deepseq
+    filepath
+    path
+    path-io
+    tasty-bench
+    text
   ];
   doHaddock = false;
   jailbreak = true;

@@ -1,5 +1,14 @@
-{ mkDerivation, base, base-compat, fetchgit, hspec, hspec-discover
-, http-types, lens, lib, servant, text
+{ mkDerivation
+, base
+, base-compat
+, fetchgit
+, hspec
+, hspec-discover
+, http-types
+, lens
+, lib
+, servant
+, text
 }:
 mkDerivation {
   pname = "servant-foreign";
@@ -12,7 +21,12 @@ mkDerivation {
   };
   postUnpack = "sourceRoot+=/servant-foreign/; echo source root reset to $sourceRoot";
   libraryHaskellDepends = [
-    base base-compat http-types lens servant text
+    base
+    base-compat
+    http-types
+    lens
+    servant
+    text
   ];
   testHaskellDepends = [ base hspec servant ];
   testToolDepends = [ hspec-discover ];

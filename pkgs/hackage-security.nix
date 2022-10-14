@@ -1,9 +1,37 @@
-{ mkDerivation, aeson, base, base16-bytestring, base64-bytestring
-, bytestring, Cabal, Cabal-syntax, containers, cryptohash-sha256
-, directory, ed25519, filepath, ghc-prim, lib, lukko, mtl, network
-, network-uri, parsec, pretty, QuickCheck, tar, tasty, tasty-hunit
-, tasty-quickcheck, template-haskell, temporary, text, time
-, transformers, unordered-containers, vector, zlib
+{ mkDerivation
+, aeson
+, base
+, base16-bytestring
+, base64-bytestring
+, bytestring
+, Cabal
+, Cabal-syntax
+, containers
+, cryptohash-sha256
+, directory
+, ed25519
+, filepath
+, ghc-prim
+, lib
+, lukko
+, mtl
+, network
+, network-uri
+, parsec
+, pretty
+, QuickCheck
+, tar
+, tasty
+, tasty-hunit
+, tasty-quickcheck
+, template-haskell
+, temporary
+, text
+, time
+, transformers
+, unordered-containers
+, vector
+, zlib
 }:
 mkDerivation {
   pname = "hackage-security";
@@ -12,15 +40,49 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "01fhp3kzc1wfvixzgnz4y52bzm4sickk1cj7pksrwmbi90dghv0s";
   libraryHaskellDepends = [
-    base base16-bytestring base64-bytestring bytestring Cabal
-    Cabal-syntax containers cryptohash-sha256 directory ed25519
-    filepath ghc-prim lukko mtl network network-uri parsec pretty tar
-    template-haskell time transformers zlib
+    base
+    base16-bytestring
+    base64-bytestring
+    bytestring
+    Cabal
+    Cabal-syntax
+    containers
+    cryptohash-sha256
+    directory
+    ed25519
+    filepath
+    ghc-prim
+    lukko
+    mtl
+    network
+    network-uri
+    parsec
+    pretty
+    tar
+    template-haskell
+    time
+    transformers
+    zlib
   ];
   testHaskellDepends = [
-    aeson base bytestring Cabal Cabal-syntax containers network-uri
-    QuickCheck tar tasty tasty-hunit tasty-quickcheck temporary text
-    time unordered-containers vector zlib
+    aeson
+    base
+    bytestring
+    Cabal
+    Cabal-syntax
+    containers
+    network-uri
+    QuickCheck
+    tar
+    tasty
+    tasty-hunit
+    tasty-quickcheck
+    temporary
+    text
+    time
+    unordered-containers
+    vector
+    zlib
   ];
   doHaddock = false;
   jailbreak = true;

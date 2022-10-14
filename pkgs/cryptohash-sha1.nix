@@ -1,5 +1,13 @@
-{ mkDerivation, base, base16-bytestring, bytestring, criterion, lib
-, SHA, tasty, tasty-hunit, tasty-quickcheck
+{ mkDerivation
+, base
+, base16-bytestring
+, bytestring
+, criterion
+, lib
+, SHA
+, tasty
+, tasty-hunit
+, tasty-quickcheck
 }:
 mkDerivation {
   pname = "cryptohash-sha1";
@@ -9,7 +17,12 @@ mkDerivation {
   editedCabalFile = "0bz9rfl7b2iwn45m0lxcmsyi5rrv3xdgzx2lzr79bds91dw6i25b";
   libraryHaskellDepends = [ base bytestring ];
   testHaskellDepends = [
-    base base16-bytestring bytestring SHA tasty tasty-hunit
+    base
+    base16-bytestring
+    bytestring
+    SHA
+    tasty
+    tasty-hunit
     tasty-quickcheck
   ];
   benchmarkHaskellDepends = [ base bytestring criterion ];

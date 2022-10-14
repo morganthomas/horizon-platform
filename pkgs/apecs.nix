@@ -1,5 +1,15 @@
-{ mkDerivation, array, base, containers, criterion, exceptions, lib
-, linear, mtl, QuickCheck, template-haskell, vector
+{ mkDerivation
+, array
+, base
+, containers
+, criterion
+, exceptions
+, lib
+, linear
+, mtl
+, QuickCheck
+, template-haskell
+, vector
 }:
 mkDerivation {
   pname = "apecs";
@@ -8,7 +18,13 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "1n0sz1230fp65dv462ss15yma6g1dxxlamj7idgl3kg9gdwv70sn";
   libraryHaskellDepends = [
-    array base containers exceptions mtl template-haskell vector
+    array
+    base
+    containers
+    exceptions
+    mtl
+    template-haskell
+    vector
   ];
   testHaskellDepends = [ base containers linear QuickCheck vector ];
   benchmarkHaskellDepends = [ base criterion linear ];

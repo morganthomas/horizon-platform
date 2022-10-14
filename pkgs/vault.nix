@@ -1,4 +1,8 @@
-{ mkDerivation, base, containers, hashable, lib
+{ mkDerivation
+, base
+, containers
+, hashable
+, lib
 , unordered-containers
 }:
 mkDerivation {
@@ -8,7 +12,10 @@ mkDerivation {
   revision = "2";
   editedCabalFile = "1bjwv3nv8jfhrdxa5kn3gvgxmyalpq7592bvyl7bpvcc7bbkfkf3";
   libraryHaskellDepends = [
-    base containers hashable unordered-containers
+    base
+    containers
+    hashable
+    unordered-containers
   ];
   doHaddock = false;
   jailbreak = true;

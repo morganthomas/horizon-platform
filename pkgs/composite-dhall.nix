@@ -1,5 +1,12 @@
-{ mkDerivation, base, composite-base, dhall, lib, tasty
-, tasty-hunit, text, vinyl
+{ mkDerivation
+, base
+, composite-base
+, dhall
+, lib
+, tasty
+, tasty-hunit
+, text
+, vinyl
 }:
 mkDerivation {
   pname = "composite-dhall";
@@ -7,7 +14,13 @@ mkDerivation {
   sha256 = "aa6c8a8a05c5aa5cc7c76440f57f9459f7f3aa07b1f4b290549a17c196c2eb34";
   libraryHaskellDepends = [ base composite-base dhall text vinyl ];
   testHaskellDepends = [
-    base composite-base dhall tasty tasty-hunit text vinyl
+    base
+    composite-base
+    dhall
+    tasty
+    tasty-hunit
+    text
+    vinyl
   ];
   doHaddock = false;
   jailbreak = true;

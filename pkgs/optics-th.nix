@@ -1,5 +1,13 @@
-{ mkDerivation, base, containers, lib, mtl, optics-core, tagged
-, template-haskell, th-abstraction, transformers
+{ mkDerivation
+, base
+, containers
+, lib
+, mtl
+, optics-core
+, tagged
+, template-haskell
+, th-abstraction
+, transformers
 }:
 mkDerivation {
   pname = "optics-th";
@@ -8,7 +16,12 @@ mkDerivation {
   revision = "2";
   editedCabalFile = "1fl217q7s0g8a46p2smanhhdj0jqvc9n3lagcnpphkv3fzfgrcbz";
   libraryHaskellDepends = [
-    base containers mtl optics-core template-haskell th-abstraction
+    base
+    containers
+    mtl
+    optics-core
+    template-haskell
+    th-abstraction
     transformers
   ];
   testHaskellDepends = [ base optics-core tagged ];

@@ -1,8 +1,26 @@
-{ mkDerivation, algebraic-graphs, ansi-terminal, array, base
-, bytestring, containers, directory, extra, filepath, ghc
-, ghc-paths, hie-compat, hspec, lib, lucid, mtl
-, optparse-applicative, process, sqlite-simple, temporary
-, terminal-size, text
+{ mkDerivation
+, algebraic-graphs
+, ansi-terminal
+, array
+, base
+, bytestring
+, containers
+, directory
+, extra
+, filepath
+, ghc
+, ghc-paths
+, hie-compat
+, hspec
+, lib
+, lucid
+, mtl
+, optparse-applicative
+, process
+, sqlite-simple
+, temporary
+, terminal-size
+, text
 }:
 mkDerivation {
   pname = "hiedb";
@@ -11,13 +29,34 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    algebraic-graphs ansi-terminal array base bytestring containers
-    directory extra filepath ghc hie-compat lucid mtl
-    optparse-applicative sqlite-simple terminal-size text
+    algebraic-graphs
+    ansi-terminal
+    array
+    base
+    bytestring
+    containers
+    directory
+    extra
+    filepath
+    ghc
+    hie-compat
+    lucid
+    mtl
+    optparse-applicative
+    sqlite-simple
+    terminal-size
+    text
   ];
   executableHaskellDepends = [ base ghc-paths ];
   testHaskellDepends = [
-    base directory filepath ghc ghc-paths hspec process temporary
+    base
+    directory
+    filepath
+    ghc
+    ghc-paths
+    hspec
+    process
+    temporary
   ];
   doHaddock = false;
   jailbreak = true;

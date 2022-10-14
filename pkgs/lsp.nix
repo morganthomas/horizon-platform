@@ -1,8 +1,32 @@
-{ mkDerivation, aeson, async, attoparsec, base, bytestring
-, co-log-core, containers, data-default, directory, exceptions
-, filepath, hashable, hspec, hspec-discover, lens, lib, lsp-types
-, mtl, prettyprinter, random, sorted-list, stm, temporary, text
-, text-rope, transformers, unliftio-core, unordered-containers
+{ mkDerivation
+, aeson
+, async
+, attoparsec
+, base
+, bytestring
+, co-log-core
+, containers
+, data-default
+, directory
+, exceptions
+, filepath
+, hashable
+, hspec
+, hspec-discover
+, lens
+, lib
+, lsp-types
+, mtl
+, prettyprinter
+, random
+, sorted-list
+, stm
+, temporary
+, text
+, text-rope
+, transformers
+, unliftio-core
+, unordered-containers
 , uuid
 }:
 mkDerivation {
@@ -12,13 +36,40 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    aeson async attoparsec base bytestring co-log-core containers
-    data-default directory exceptions filepath hashable lens lsp-types
-    mtl prettyprinter random sorted-list stm temporary text text-rope
-    transformers unliftio-core unordered-containers uuid
+    aeson
+    async
+    attoparsec
+    base
+    bytestring
+    co-log-core
+    containers
+    data-default
+    directory
+    exceptions
+    filepath
+    hashable
+    lens
+    lsp-types
+    mtl
+    prettyprinter
+    random
+    sorted-list
+    stm
+    temporary
+    text
+    text-rope
+    transformers
+    unliftio-core
+    unordered-containers
+    uuid
   ];
   testHaskellDepends = [
-    base containers hspec sorted-list text text-rope
+    base
+    containers
+    hspec
+    sorted-list
+    text
+    text-rope
     unordered-containers
   ];
   testToolDepends = [ hspec-discover ];

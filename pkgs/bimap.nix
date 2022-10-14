@@ -1,5 +1,11 @@
-{ mkDerivation, base, containers, deepseq, exceptions, lib
-, QuickCheck, template-haskell
+{ mkDerivation
+, base
+, containers
+, deepseq
+, exceptions
+, lib
+, QuickCheck
+, template-haskell
 }:
 mkDerivation {
   pname = "bimap";
@@ -7,7 +13,12 @@ mkDerivation {
   sha256 = "b0b44b0f2eaceb83f46dfa3d1747e080c45204c64d18bb9e63747299266f0c95";
   libraryHaskellDepends = [ base containers deepseq exceptions ];
   testHaskellDepends = [
-    base containers deepseq exceptions QuickCheck template-haskell
+    base
+    containers
+    deepseq
+    exceptions
+    QuickCheck
+    template-haskell
   ];
   doHaddock = false;
   jailbreak = true;

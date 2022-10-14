@@ -1,7 +1,22 @@
-{ mkDerivation, base, bytestring, directory, http-types, lens, lib
-, resourcet, servant, servant-docs, servant-foreign
-, servant-multipart-api, servant-server, string-conversions, tasty
-, tasty-wai, text, wai, wai-extra
+{ mkDerivation
+, base
+, bytestring
+, directory
+, http-types
+, lens
+, lib
+, resourcet
+, servant
+, servant-docs
+, servant-foreign
+, servant-multipart-api
+, servant-server
+, string-conversions
+, tasty
+, tasty-wai
+, text
+, wai
+, wai-extra
 }:
 mkDerivation {
   pname = "servant-multipart";
@@ -10,13 +25,30 @@ mkDerivation {
   revision = "3";
   editedCabalFile = "1wkbwd6gypmv7aziaag3gzwgvvqx4bw8i4qp2vpmc7ip2ydm10ml";
   libraryHaskellDepends = [
-    base bytestring directory lens resourcet servant servant-docs
-    servant-foreign servant-multipart-api servant-server
-    string-conversions text wai wai-extra
+    base
+    bytestring
+    directory
+    lens
+    resourcet
+    servant
+    servant-docs
+    servant-foreign
+    servant-multipart-api
+    servant-server
+    string-conversions
+    text
+    wai
+    wai-extra
   ];
   testHaskellDepends = [
-    base bytestring http-types servant-server string-conversions tasty
-    tasty-wai text
+    base
+    bytestring
+    http-types
+    servant-server
+    string-conversions
+    tasty
+    tasty-wai
+    text
   ];
   doHaddock = false;
   jailbreak = true;

@@ -1,5 +1,13 @@
-{ mkDerivation, base, binary, lib, OneTuple, QuickCheck
-, quickcheck-instances, tagged, tasty, tasty-quickcheck
+{ mkDerivation
+, base
+, binary
+, lib
+, OneTuple
+, QuickCheck
+, quickcheck-instances
+, tagged
+, tasty
+, tasty-quickcheck
 , transformers
 }:
 mkDerivation {
@@ -8,7 +16,13 @@ mkDerivation {
   sha256 = "e2e554823ce6758cbbfb64acb8b5905d3c226eab18b5fcaf5d7c79252114602c";
   libraryHaskellDepends = [ base binary transformers ];
   testHaskellDepends = [
-    base binary OneTuple QuickCheck quickcheck-instances tagged tasty
+    base
+    binary
+    OneTuple
+    QuickCheck
+    quickcheck-instances
+    tagged
+    tasty
     tasty-quickcheck
   ];
   doHaddock = false;

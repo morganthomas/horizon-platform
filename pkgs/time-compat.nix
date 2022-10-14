@@ -1,6 +1,17 @@
-{ mkDerivation, base, base-compat, base-orphans, deepseq, hashable
-, HUnit, lib, QuickCheck, tagged, tasty, tasty-hunit
-, tasty-quickcheck, time
+{ mkDerivation
+, base
+, base-compat
+, base-orphans
+, deepseq
+, hashable
+, HUnit
+, lib
+, QuickCheck
+, tagged
+, tasty
+, tasty-hunit
+, tasty-quickcheck
+, time
 }:
 mkDerivation {
   pname = "time-compat";
@@ -9,11 +20,24 @@ mkDerivation {
   revision = "4";
   editedCabalFile = "1n39yfk21xz8y1xvkh01651yysk2zp5qac22l5pq2hi7scczmxaw";
   libraryHaskellDepends = [
-    base base-orphans deepseq hashable time
+    base
+    base-orphans
+    deepseq
+    hashable
+    time
   ];
   testHaskellDepends = [
-    base base-compat deepseq hashable HUnit QuickCheck tagged tasty
-    tasty-hunit tasty-quickcheck time
+    base
+    base-compat
+    deepseq
+    hashable
+    HUnit
+    QuickCheck
+    tagged
+    tasty
+    tasty-hunit
+    tasty-quickcheck
+    time
   ];
   doHaddock = false;
   jailbreak = true;

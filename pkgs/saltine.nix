@@ -1,5 +1,13 @@
-{ mkDerivation, base, bytestring, hashable, lib, libsodium
-, profunctors, QuickCheck, semigroups, test-framework
+{ mkDerivation
+, base
+, bytestring
+, hashable
+, lib
+, libsodium
+, profunctors
+, QuickCheck
+, semigroups
+, test-framework
 , test-framework-quickcheck2
 }:
 mkDerivation {
@@ -9,7 +17,11 @@ mkDerivation {
   libraryHaskellDepends = [ base bytestring hashable profunctors ];
   libraryPkgconfigDepends = [ libsodium ];
   testHaskellDepends = [
-    base bytestring QuickCheck semigroups test-framework
+    base
+    bytestring
+    QuickCheck
+    semigroups
+    test-framework
     test-framework-quickcheck2
   ];
   doHaddock = false;

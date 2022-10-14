@@ -1,8 +1,28 @@
-{ mkDerivation, aeson, base, bytestring, Cabal, containers
-, directory, file-embed, filepath, ghc, ghc-boot, ghc-boot-th
-, ghc-lib-parser-ex, HsYAML, HsYAML-aeson, HUnit, lib, mtl
-, optparse-applicative, random, strict, syb, test-framework
-, test-framework-hunit, text
+{ mkDerivation
+, aeson
+, base
+, bytestring
+, Cabal
+, containers
+, directory
+, file-embed
+, filepath
+, ghc
+, ghc-boot
+, ghc-boot-th
+, ghc-lib-parser-ex
+, HsYAML
+, HsYAML-aeson
+, HUnit
+, lib
+, mtl
+, optparse-applicative
+, random
+, strict
+, syb
+, test-framework
+, test-framework-hunit
+, text
 }:
 mkDerivation {
   pname = "stylish-haskell";
@@ -11,20 +31,67 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    aeson base bytestring Cabal containers directory file-embed
-    filepath ghc ghc-boot ghc-boot-th ghc-lib-parser-ex HsYAML
-    HsYAML-aeson mtl syb text
+    aeson
+    base
+    bytestring
+    Cabal
+    containers
+    directory
+    file-embed
+    filepath
+    ghc
+    ghc-boot
+    ghc-boot-th
+    ghc-lib-parser-ex
+    HsYAML
+    HsYAML-aeson
+    mtl
+    syb
+    text
   ];
   executableHaskellDepends = [
-    aeson base bytestring Cabal containers directory file-embed
-    filepath ghc ghc-boot ghc-boot-th ghc-lib-parser-ex HsYAML
-    HsYAML-aeson mtl optparse-applicative strict syb text
+    aeson
+    base
+    bytestring
+    Cabal
+    containers
+    directory
+    file-embed
+    filepath
+    ghc
+    ghc-boot
+    ghc-boot-th
+    ghc-lib-parser-ex
+    HsYAML
+    HsYAML-aeson
+    mtl
+    optparse-applicative
+    strict
+    syb
+    text
   ];
   testHaskellDepends = [
-    aeson base bytestring Cabal containers directory file-embed
-    filepath ghc ghc-boot ghc-boot-th ghc-lib-parser-ex HsYAML
-    HsYAML-aeson HUnit mtl random syb test-framework
-    test-framework-hunit text
+    aeson
+    base
+    bytestring
+    Cabal
+    containers
+    directory
+    file-embed
+    filepath
+    ghc
+    ghc-boot
+    ghc-boot-th
+    ghc-lib-parser-ex
+    HsYAML
+    HsYAML-aeson
+    HUnit
+    mtl
+    random
+    syb
+    test-framework
+    test-framework-hunit
+    text
   ];
   doHaddock = false;
   jailbreak = true;

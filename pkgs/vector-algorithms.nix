@@ -1,5 +1,13 @@
-{ mkDerivation, base, bitvec, bytestring, containers, lib
-, mwc-random, primitive, QuickCheck, vector
+{ mkDerivation
+, base
+, bitvec
+, bytestring
+, containers
+, lib
+, mwc-random
+, primitive
+, QuickCheck
+, vector
 }:
 mkDerivation {
   pname = "vector-algorithms";
@@ -8,10 +16,18 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "1bma0m4g7770y4xnqsinspqkgf4swpdwddfbcby81szjxd8mik1l";
   libraryHaskellDepends = [
-    base bitvec bytestring primitive vector
+    base
+    bitvec
+    bytestring
+    primitive
+    vector
   ];
   testHaskellDepends = [
-    base bytestring containers QuickCheck vector
+    base
+    bytestring
+    containers
+    QuickCheck
+    vector
   ];
   benchmarkHaskellDepends = [ base mwc-random vector ];
   doHaddock = false;

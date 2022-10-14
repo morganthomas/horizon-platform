@@ -1,7 +1,22 @@
-{ mkDerivation, base, binary, bytestring, containers, criterion
-, deepseq, hashable, integer-logarithms, lib, primitive, QuickCheck
-, smallcheck, tasty, tasty-hunit, tasty-quickcheck
-, tasty-smallcheck, template-haskell, text
+{ mkDerivation
+, base
+, binary
+, bytestring
+, containers
+, criterion
+, deepseq
+, hashable
+, integer-logarithms
+, lib
+, primitive
+, QuickCheck
+, smallcheck
+, tasty
+, tasty-hunit
+, tasty-quickcheck
+, tasty-smallcheck
+, template-haskell
+, text
 }:
 mkDerivation {
   pname = "scientific";
@@ -10,12 +25,28 @@ mkDerivation {
   revision = "3";
   editedCabalFile = "1n67w1b64q59nn4845z3kr8rm0x0p7bi3cyp6n1dpnfs8k4l8x2i";
   libraryHaskellDepends = [
-    base binary bytestring containers deepseq hashable
-    integer-logarithms primitive template-haskell text
+    base
+    binary
+    bytestring
+    containers
+    deepseq
+    hashable
+    integer-logarithms
+    primitive
+    template-haskell
+    text
   ];
   testHaskellDepends = [
-    base binary bytestring QuickCheck smallcheck tasty tasty-hunit
-    tasty-quickcheck tasty-smallcheck text
+    base
+    binary
+    bytestring
+    QuickCheck
+    smallcheck
+    tasty
+    tasty-hunit
+    tasty-quickcheck
+    tasty-smallcheck
+    text
   ];
   benchmarkHaskellDepends = [ base criterion ];
   doHaddock = false;

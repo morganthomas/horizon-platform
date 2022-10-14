@@ -1,5 +1,11 @@
-{ mkDerivation, base, lib, QuickCheck, tasty, tasty-hunit
-, tasty-quickcheck, text
+{ mkDerivation
+, base
+, lib
+, QuickCheck
+, tasty
+, tasty-hunit
+, tasty-quickcheck
+, text
 }:
 mkDerivation {
   pname = "rope-utf16-splay";
@@ -7,7 +13,12 @@ mkDerivation {
   sha256 = "c189f1ccac3a2bf92dd2b7f85b194364983813d350870011ac71165f5b2f5fee";
   libraryHaskellDepends = [ base text ];
   testHaskellDepends = [
-    base QuickCheck tasty tasty-hunit tasty-quickcheck text
+    base
+    QuickCheck
+    tasty
+    tasty-hunit
+    tasty-quickcheck
+    text
   ];
   doHaddock = false;
   jailbreak = true;

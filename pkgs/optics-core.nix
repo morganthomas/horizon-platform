@@ -1,5 +1,11 @@
-{ mkDerivation, array, base, containers, indexed-profunctors
-, indexed-traversable, lib, transformers
+{ mkDerivation
+, array
+, base
+, containers
+, indexed-profunctors
+, indexed-traversable
+, lib
+, transformers
 }:
 mkDerivation {
   pname = "optics-core";
@@ -8,7 +14,11 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "0sqwlbl6x0197bpkq7jvn9j5iwyr54z8qwmxbij6qlwjyfld2qxi";
   libraryHaskellDepends = [
-    array base containers indexed-profunctors indexed-traversable
+    array
+    base
+    containers
+    indexed-profunctors
+    indexed-traversable
     transformers
   ];
   doHaddock = false;

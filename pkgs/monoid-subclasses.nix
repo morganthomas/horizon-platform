@@ -1,5 +1,14 @@
-{ mkDerivation, base, bytestring, containers, lib, primes
-, QuickCheck, quickcheck-instances, tasty, tasty-quickcheck, text
+{ mkDerivation
+, base
+, bytestring
+, containers
+, lib
+, primes
+, QuickCheck
+, quickcheck-instances
+, tasty
+, tasty-quickcheck
+, text
 , vector
 }:
 mkDerivation {
@@ -9,11 +18,24 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "0y8sw3zsmz5ssn2gl2fsqg44n7xf3xsf6vhrzwnkbaa97hj76nh2";
   libraryHaskellDepends = [
-    base bytestring containers primes text vector
+    base
+    bytestring
+    containers
+    primes
+    text
+    vector
   ];
   testHaskellDepends = [
-    base bytestring containers primes QuickCheck quickcheck-instances
-    tasty tasty-quickcheck text vector
+    base
+    bytestring
+    containers
+    primes
+    QuickCheck
+    quickcheck-instances
+    tasty
+    tasty-quickcheck
+    text
+    vector
   ];
   doHaddock = false;
   jailbreak = true;

@@ -1,5 +1,14 @@
-{ mkDerivation, ansi-terminal, base, containers, fetchgit, lib
-, optparse-applicative, stm, tagged, transformers, unix
+{ mkDerivation
+, ansi-terminal
+, base
+, containers
+, fetchgit
+, lib
+, optparse-applicative
+, stm
+, tagged
+, transformers
+, unix
 }:
 mkDerivation {
   pname = "tasty";
@@ -12,8 +21,14 @@ mkDerivation {
   };
   postUnpack = "sourceRoot+=/core/; echo source root reset to $sourceRoot";
   libraryHaskellDepends = [
-    ansi-terminal base containers optparse-applicative stm tagged
-    transformers unix
+    ansi-terminal
+    base
+    containers
+    optparse-applicative
+    stm
+    tagged
+    transformers
+    unix
   ];
   doHaddock = false;
   jailbreak = true;

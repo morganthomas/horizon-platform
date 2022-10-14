@@ -1,4 +1,9 @@
-{ mkDerivation, base, binary, bytestring, directory, ghc-compact
+{ mkDerivation
+, base
+, binary
+, bytestring
+, directory
+, ghc-compact
 , lib
 }:
 mkDerivation {

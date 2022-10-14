@@ -1,7 +1,26 @@
-{ mkDerivation, async, base, bytestring, containers, directory
-, enclosed-exceptions, exceptions, filepath, hspec, hspec-contrib
-, HUnit, lib, lifted-async, lifted-base, monad-control, mtl
-, process, text, time, transformers, transformers-base, unix-compat
+{ mkDerivation
+, async
+, base
+, bytestring
+, containers
+, directory
+, enclosed-exceptions
+, exceptions
+, filepath
+, hspec
+, hspec-contrib
+, HUnit
+, lib
+, lifted-async
+, lifted-base
+, monad-control
+, mtl
+, process
+, text
+, time
+, transformers
+, transformers-base
+, unix-compat
 }:
 mkDerivation {
   pname = "shelly";
@@ -12,13 +31,38 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    async base bytestring containers directory enclosed-exceptions
-    exceptions filepath lifted-async lifted-base monad-control mtl
-    process text time transformers transformers-base unix-compat
+    async
+    base
+    bytestring
+    containers
+    directory
+    enclosed-exceptions
+    exceptions
+    filepath
+    lifted-async
+    lifted-base
+    monad-control
+    mtl
+    process
+    text
+    time
+    transformers
+    transformers-base
+    unix-compat
   ];
   testHaskellDepends = [
-    base bytestring directory filepath hspec hspec-contrib HUnit
-    lifted-async mtl text transformers unix-compat
+    base
+    bytestring
+    directory
+    filepath
+    hspec
+    hspec-contrib
+    HUnit
+    lifted-async
+    mtl
+    text
+    transformers
+    unix-compat
   ];
   doHaddock = false;
   jailbreak = true;

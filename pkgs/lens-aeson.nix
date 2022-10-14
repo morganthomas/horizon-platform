@@ -1,5 +1,15 @@
-{ mkDerivation, aeson, attoparsec, base, bytestring, lens, lib
-, scientific, text, text-short, unordered-containers, vector
+{ mkDerivation
+, aeson
+, attoparsec
+, base
+, bytestring
+, lens
+, lib
+, scientific
+, text
+, text-short
+, unordered-containers
+, vector
 }:
 mkDerivation {
   pname = "lens-aeson";
@@ -8,8 +18,16 @@ mkDerivation {
   revision = "3";
   editedCabalFile = "0lqpl5fhl94fm3xcwf8ssz7yg9nyfxp9bw2z959x7hg6bcqmv9p1";
   libraryHaskellDepends = [
-    aeson attoparsec base bytestring lens scientific text text-short
-    unordered-containers vector
+    aeson
+    attoparsec
+    base
+    bytestring
+    lens
+    scientific
+    text
+    text-short
+    unordered-containers
+    vector
   ];
   doHaddock = false;
   jailbreak = true;

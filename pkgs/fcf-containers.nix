@@ -1,4 +1,9 @@
-{ mkDerivation, base, doctest, first-class-families, ghc-prim, lib
+{ mkDerivation
+, base
+, doctest
+, first-class-families
+, ghc-prim
+, lib
 , mtl
 }:
 mkDerivation {
@@ -10,7 +15,10 @@ mkDerivation {
   libraryHaskellDepends = [ base first-class-families ghc-prim mtl ];
   executableHaskellDepends = [ base first-class-families ];
   testHaskellDepends = [
-    base doctest first-class-families ghc-prim
+    base
+    doctest
+    first-class-families
+    ghc-prim
   ];
   doHaddock = false;
   jailbreak = true;

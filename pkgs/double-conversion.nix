@@ -1,6 +1,15 @@
-{ mkDerivation, base, bytestring, fetchgit, ghc-prim, HUnit, lib
-, system-cxx-std-lib, test-framework, test-framework-hunit
-, test-framework-quickcheck2, text
+{ mkDerivation
+, base
+, bytestring
+, fetchgit
+, ghc-prim
+, HUnit
+, lib
+, system-cxx-std-lib
+, test-framework
+, test-framework-hunit
+, test-framework-quickcheck2
+, text
 }:
 mkDerivation {
   pname = "double-conversion";
@@ -12,11 +21,20 @@ mkDerivation {
     fetchSubmodules = true;
   };
   libraryHaskellDepends = [
-    base bytestring ghc-prim system-cxx-std-lib text
+    base
+    bytestring
+    ghc-prim
+    system-cxx-std-lib
+    text
   ];
   testHaskellDepends = [
-    base bytestring HUnit test-framework test-framework-hunit
-    test-framework-quickcheck2 text
+    base
+    bytestring
+    HUnit
+    test-framework
+    test-framework-hunit
+    test-framework-quickcheck2
+    text
   ];
   doHaddock = false;
   jailbreak = true;

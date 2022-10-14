@@ -1,5 +1,15 @@
-{ mkDerivation, base, blaze-builder, bytestring, containers, HUnit
-, lib, QuickCheck, tasty, tasty-hunit, tasty-quickcheck, text
+{ mkDerivation
+, base
+, blaze-builder
+, bytestring
+, containers
+, HUnit
+, lib
+, QuickCheck
+, tasty
+, tasty-hunit
+, tasty-quickcheck
+, text
 }:
 mkDerivation {
   pname = "blaze-markup";
@@ -9,8 +19,16 @@ mkDerivation {
   editedCabalFile = "1hn694kk615prqdn7bfzl0wvbw8bksxk4cxwmx8yhwpl0cq3fiwa";
   libraryHaskellDepends = [ base blaze-builder bytestring text ];
   testHaskellDepends = [
-    base blaze-builder bytestring containers HUnit QuickCheck tasty
-    tasty-hunit tasty-quickcheck text
+    base
+    blaze-builder
+    bytestring
+    containers
+    HUnit
+    QuickCheck
+    tasty
+    tasty-hunit
+    tasty-quickcheck
+    text
   ];
   doHaddock = false;
   jailbreak = true;

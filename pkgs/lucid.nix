@@ -1,6 +1,20 @@
-{ mkDerivation, base, bifunctors, blaze-builder, bytestring
-, containers, criterion, deepseq, hashable, hspec, HUnit, lib
-, mmorph, mtl, parsec, text, transformers
+{ mkDerivation
+, base
+, bifunctors
+, blaze-builder
+, bytestring
+, containers
+, criterion
+, deepseq
+, hashable
+, hspec
+, HUnit
+, lib
+, mmorph
+, mtl
+, parsec
+, text
+, transformers
 }:
 mkDerivation {
   pname = "lucid";
@@ -9,14 +23,33 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "0wipmh3xcs00x8lbq5j780rdc2klfj67nzni21qc1pdbhr2whn9d";
   libraryHaskellDepends = [
-    base blaze-builder bytestring containers hashable mmorph mtl text
+    base
+    blaze-builder
+    bytestring
+    containers
+    hashable
+    mmorph
+    mtl
+    text
     transformers
   ];
   testHaskellDepends = [
-    base bifunctors hspec HUnit mtl parsec text
+    base
+    bifunctors
+    hspec
+    HUnit
+    mtl
+    parsec
+    text
   ];
   benchmarkHaskellDepends = [
-    base blaze-builder bytestring criterion deepseq text transformers
+    base
+    blaze-builder
+    bytestring
+    criterion
+    deepseq
+    text
+    transformers
   ];
   doHaddock = false;
   jailbreak = true;

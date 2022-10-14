@@ -1,4 +1,10 @@
-{ mkDerivation, base, fetchgit, hedgehog, lib, tagged, tasty
+{ mkDerivation
+, base
+, fetchgit
+, hedgehog
+, lib
+, tagged
+, tasty
 , tasty-expected-failure
 }:
 mkDerivation {
@@ -12,7 +18,10 @@ mkDerivation {
   };
   libraryHaskellDepends = [ base hedgehog tagged tasty ];
   testHaskellDepends = [
-    base hedgehog tasty tasty-expected-failure
+    base
+    hedgehog
+    tasty
+    tasty-expected-failure
   ];
   doHaddock = false;
   jailbreak = true;

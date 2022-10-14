@@ -1,5 +1,10 @@
-{ mkDerivation, base, lib, polysemy, polysemy-extra
-, polysemy-several, vinyl
+{ mkDerivation
+, base
+, lib
+, polysemy
+, polysemy-extra
+, polysemy-several
+, vinyl
 }:
 mkDerivation {
   pname = "polysemy-vinyl";
@@ -8,7 +13,11 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "13f289dxr03habyggn3vl7lzrl2r3a9r0y0bisrfmq48qaiv08n1";
   libraryHaskellDepends = [
-    base polysemy polysemy-extra polysemy-several vinyl
+    base
+    polysemy
+    polysemy-extra
+    polysemy-several
+    vinyl
   ];
   doHaddock = false;
   jailbreak = true;

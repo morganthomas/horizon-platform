@@ -1,4 +1,11 @@
-{ mkDerivation, base, deepseq, hspec, lib, QuickCheck, text, vector
+{ mkDerivation
+, base
+, deepseq
+, hspec
+, lib
+, QuickCheck
+, text
+, vector
 }:
 mkDerivation {
   pname = "text-zipper";

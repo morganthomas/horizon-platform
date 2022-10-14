@@ -1,5 +1,13 @@
-{ mkDerivation, base, http-media, lib, lucid, servant
-, servant-server, text, wai, warp
+{ mkDerivation
+, base
+, http-media
+, lib
+, lucid
+, servant
+, servant-server
+, text
+, wai
+, warp
 }:
 mkDerivation {
   pname = "servant-lucid";

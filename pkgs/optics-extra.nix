@@ -1,6 +1,18 @@
-{ mkDerivation, array, base, bytestring, containers, hashable
-, indexed-profunctors, indexed-traversable-instances, lib, mtl
-, optics-core, text, transformers, unordered-containers, vector
+{ mkDerivation
+, array
+, base
+, bytestring
+, containers
+, hashable
+, indexed-profunctors
+, indexed-traversable-instances
+, lib
+, mtl
+, optics-core
+, text
+, transformers
+, unordered-containers
+, vector
 }:
 mkDerivation {
   pname = "optics-extra";
@@ -9,9 +21,19 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "0bpr1bkb7mmww028n8ikwa0qhdl7ybxpb9s887dlp3dvxr5iq8nq";
   libraryHaskellDepends = [
-    array base bytestring containers hashable indexed-profunctors
-    indexed-traversable-instances mtl optics-core text transformers
-    unordered-containers vector
+    array
+    base
+    bytestring
+    containers
+    hashable
+    indexed-profunctors
+    indexed-traversable-instances
+    mtl
+    optics-core
+    text
+    transformers
+    unordered-containers
+    vector
   ];
   doHaddock = false;
   jailbreak = true;

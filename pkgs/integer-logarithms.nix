@@ -1,5 +1,14 @@
-{ mkDerivation, array, base, ghc-bignum, ghc-prim, lib, QuickCheck
-, smallcheck, tasty, tasty-hunit, tasty-quickcheck
+{ mkDerivation
+, array
+, base
+, ghc-bignum
+, ghc-prim
+, lib
+, QuickCheck
+, smallcheck
+, tasty
+, tasty-hunit
+, tasty-quickcheck
 , tasty-smallcheck
 }:
 mkDerivation {
@@ -10,7 +19,12 @@ mkDerivation {
   editedCabalFile = "0z81yksgx20d0rva41blsjcp3jsp1qy9sy385fpig0l074fzv6ym";
   libraryHaskellDepends = [ array base ghc-bignum ghc-prim ];
   testHaskellDepends = [
-    base QuickCheck smallcheck tasty tasty-hunit tasty-quickcheck
+    base
+    QuickCheck
+    smallcheck
+    tasty
+    tasty-hunit
+    tasty-quickcheck
     tasty-smallcheck
   ];
   doHaddock = false;

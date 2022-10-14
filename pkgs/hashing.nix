@@ -1,5 +1,12 @@
-{ mkDerivation, array, base, bytestring, cryptonite, lib, mtl
-, QuickCheck, template-haskell
+{ mkDerivation
+, array
+, base
+, bytestring
+, cryptonite
+, lib
+, mtl
+, QuickCheck
+, template-haskell
 }:
 mkDerivation {
   pname = "hashing";
@@ -11,10 +18,20 @@ mkDerivation {
   isExecutable = true;
   libraryHaskellDepends = [ array base bytestring ];
   executableHaskellDepends = [
-    array base bytestring mtl QuickCheck
+    array
+    base
+    bytestring
+    mtl
+    QuickCheck
   ];
   testHaskellDepends = [
-    array base bytestring cryptonite mtl QuickCheck template-haskell
+    array
+    base
+    bytestring
+    cryptonite
+    mtl
+    QuickCheck
+    template-haskell
   ];
   doHaddock = false;
   jailbreak = true;

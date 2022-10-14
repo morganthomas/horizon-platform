@@ -1,5 +1,15 @@
-{ mkDerivation, base, Cabal, Cabal-syntax, containers, fetchgit
-, lib, pretty, QuickCheck, rere, tasty, tasty-quickcheck
+{ mkDerivation
+, base
+, Cabal
+, Cabal-syntax
+, containers
+, fetchgit
+, lib
+, pretty
+, QuickCheck
+, rere
+, tasty
+, tasty-quickcheck
 , transformers
 }:
 mkDerivation {
@@ -13,8 +23,16 @@ mkDerivation {
   };
   postUnpack = "sourceRoot+=/Cabal-described/; echo source root reset to $sourceRoot";
   libraryHaskellDepends = [
-    base Cabal Cabal-syntax containers pretty QuickCheck rere tasty
-    tasty-quickcheck transformers
+    base
+    Cabal
+    Cabal-syntax
+    containers
+    pretty
+    QuickCheck
+    rere
+    tasty
+    tasty-quickcheck
+    transformers
   ];
   doHaddock = false;
   jailbreak = true;

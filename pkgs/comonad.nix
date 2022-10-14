@@ -1,5 +1,12 @@
-{ mkDerivation, base, containers, distributive, indexed-traversable
-, lib, tagged, transformers, transformers-compat
+{ mkDerivation
+, base
+, containers
+, distributive
+, indexed-traversable
+, lib
+, tagged
+, transformers
+, transformers-compat
 }:
 mkDerivation {
   pname = "comonad";
@@ -8,8 +15,13 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "0zlgkcd61cwsdbgjz03pfbjxhj6dc25792h7rwh0zy677vbsn6hz";
   libraryHaskellDepends = [
-    base containers distributive indexed-traversable tagged
-    transformers transformers-compat
+    base
+    containers
+    distributive
+    indexed-traversable
+    tagged
+    transformers
+    transformers-compat
   ];
   doHaddock = false;
   jailbreak = true;

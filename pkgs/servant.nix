@@ -1,9 +1,32 @@
-{ mkDerivation, aeson, attoparsec, base, base-compat, bifunctors
-, bytestring, case-insensitive, constraints, deepseq, fetchgit
-, hspec, hspec-discover, http-api-data, http-media, http-types, lib
-, mmorph, mtl, network-uri, QuickCheck, quickcheck-instances
-, singleton-bool, sop-core, string-conversions, tagged, text
-, transformers, vault
+{ mkDerivation
+, aeson
+, attoparsec
+, base
+, base-compat
+, bifunctors
+, bytestring
+, case-insensitive
+, constraints
+, deepseq
+, fetchgit
+, hspec
+, hspec-discover
+, http-api-data
+, http-media
+, http-types
+, lib
+, mmorph
+, mtl
+, network-uri
+, QuickCheck
+, quickcheck-instances
+, singleton-bool
+, sop-core
+, string-conversions
+, tagged
+, text
+, transformers
+, vault
 }:
 mkDerivation {
   pname = "servant";
@@ -16,14 +39,43 @@ mkDerivation {
   };
   postUnpack = "sourceRoot+=/servant/; echo source root reset to $sourceRoot";
   libraryHaskellDepends = [
-    aeson attoparsec base base-compat bifunctors bytestring
-    case-insensitive constraints deepseq http-api-data http-media
-    http-types mmorph mtl network-uri QuickCheck singleton-bool
-    sop-core string-conversions tagged text transformers vault
+    aeson
+    attoparsec
+    base
+    base-compat
+    bifunctors
+    bytestring
+    case-insensitive
+    constraints
+    deepseq
+    http-api-data
+    http-media
+    http-types
+    mmorph
+    mtl
+    network-uri
+    QuickCheck
+    singleton-bool
+    sop-core
+    string-conversions
+    tagged
+    text
+    transformers
+    vault
   ];
   testHaskellDepends = [
-    aeson base base-compat bytestring hspec http-media mtl QuickCheck
-    quickcheck-instances string-conversions text transformers
+    aeson
+    base
+    base-compat
+    bytestring
+    hspec
+    http-media
+    mtl
+    QuickCheck
+    quickcheck-instances
+    string-conversions
+    text
+    transformers
   ];
   testToolDepends = [ hspec-discover ];
   doHaddock = false;

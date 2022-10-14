@@ -1,6 +1,17 @@
-{ mkDerivation, attoparsec, base, blaze-builder, bytestring
-, deepseq, doctest, gauge, hedgehog, lib, semigroups, tasty
-, tasty-hedgehog, tasty-hunit
+{ mkDerivation
+, attoparsec
+, base
+, blaze-builder
+, bytestring
+, deepseq
+, doctest
+, gauge
+, hedgehog
+, lib
+, semigroups
+, tasty
+, tasty-hedgehog
+, tasty-hunit
 }:
 mkDerivation {
   pname = "bsb-http-chunked";
@@ -10,11 +21,23 @@ mkDerivation {
   editedCabalFile = "15hg352id2f4x0dnvv47bdiz6gv5hp5a2mki9yzmhc7ajpk31mdd";
   libraryHaskellDepends = [ base bytestring ];
   testHaskellDepends = [
-    attoparsec base blaze-builder bytestring doctest hedgehog tasty
-    tasty-hedgehog tasty-hunit
+    attoparsec
+    base
+    blaze-builder
+    bytestring
+    doctest
+    hedgehog
+    tasty
+    tasty-hedgehog
+    tasty-hunit
   ];
   benchmarkHaskellDepends = [
-    base blaze-builder bytestring deepseq gauge semigroups
+    base
+    blaze-builder
+    bytestring
+    deepseq
+    gauge
+    semigroups
   ];
   doHaddock = false;
   jailbreak = true;

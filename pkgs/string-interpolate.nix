@@ -1,8 +1,25 @@
-{ mkDerivation, base, bytestring, criterion, deepseq, formatting
-, haskell-src-exts, haskell-src-meta, hspec, hspec-core
-, interpolate, lib, neat-interpolation, QuickCheck
-, quickcheck-instances, quickcheck-text, quickcheck-unicode, split
-, template-haskell, text, text-conversions, unordered-containers
+{ mkDerivation
+, base
+, bytestring
+, criterion
+, deepseq
+, formatting
+, haskell-src-exts
+, haskell-src-meta
+, hspec
+, hspec-core
+, interpolate
+, lib
+, neat-interpolation
+, QuickCheck
+, quickcheck-instances
+, quickcheck-text
+, quickcheck-unicode
+, split
+, template-haskell
+, text
+, text-conversions
+, unordered-containers
 , utf8-string
 }:
 mkDerivation {
@@ -12,17 +29,39 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "1nrpng7r59a25z4qns8vy26rvp1wgn5f4bs8ism40q66ags8f2ad";
   libraryHaskellDepends = [
-    base bytestring haskell-src-exts haskell-src-meta split
-    template-haskell text text-conversions utf8-string
+    base
+    bytestring
+    haskell-src-exts
+    haskell-src-meta
+    split
+    template-haskell
+    text
+    text-conversions
+    utf8-string
   ];
   testHaskellDepends = [
-    base bytestring hspec hspec-core QuickCheck quickcheck-instances
-    quickcheck-text quickcheck-unicode template-haskell text
+    base
+    bytestring
+    hspec
+    hspec-core
+    QuickCheck
+    quickcheck-instances
+    quickcheck-text
+    quickcheck-unicode
+    template-haskell
+    text
     unordered-containers
   ];
   benchmarkHaskellDepends = [
-    base bytestring criterion deepseq formatting interpolate
-    neat-interpolation QuickCheck text
+    base
+    bytestring
+    criterion
+    deepseq
+    formatting
+    interpolate
+    neat-interpolation
+    QuickCheck
+    text
   ];
   doHaddock = false;
   jailbreak = true;

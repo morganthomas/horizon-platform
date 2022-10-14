@@ -1,4 +1,10 @@
-{ mkDerivation, base, gauge, hspec, hspec-discover, lib, semigroups
+{ mkDerivation
+, base
+, gauge
+, hspec
+, hspec-discover
+, lib
+, semigroups
 }:
 mkDerivation {
   pname = "newtype-generics";

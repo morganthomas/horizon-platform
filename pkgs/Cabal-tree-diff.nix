@@ -1,4 +1,10 @@
-{ mkDerivation, base, Cabal, Cabal-syntax, fetchgit, lib, tree-diff
+{ mkDerivation
+, base
+, Cabal
+, Cabal-syntax
+, fetchgit
+, lib
+, tree-diff
 }:
 mkDerivation {
   pname = "Cabal-tree-diff";

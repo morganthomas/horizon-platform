@@ -1,6 +1,21 @@
-{ mkDerivation, array, base, bytestring, deepseq, httpd-shed, HUnit
-, lib, mtl, network, network-uri, parsec, pureMD5, split
-, test-framework, test-framework-hunit, time, transformers
+{ mkDerivation
+, array
+, base
+, bytestring
+, deepseq
+, httpd-shed
+, HUnit
+, lib
+, mtl
+, network
+, network-uri
+, parsec
+, pureMD5
+, split
+, test-framework
+, test-framework-hunit
+, time
+, transformers
 }:
 mkDerivation {
   pname = "HTTP";
@@ -9,12 +24,29 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "04y04vbxbnblpmqqmpl8km4bkcjaj96nbxkssdr1zgbhqisxay5q";
   libraryHaskellDepends = [
-    array base bytestring mtl network network-uri parsec time
+    array
+    base
+    bytestring
+    mtl
+    network
+    network-uri
+    parsec
+    time
     transformers
   ];
   testHaskellDepends = [
-    base bytestring deepseq httpd-shed HUnit mtl network network-uri
-    pureMD5 split test-framework test-framework-hunit
+    base
+    bytestring
+    deepseq
+    httpd-shed
+    HUnit
+    mtl
+    network
+    network-uri
+    pureMD5
+    split
+    test-framework
+    test-framework-hunit
   ];
   doHaddock = false;
   jailbreak = true;

@@ -1,8 +1,29 @@
-{ mkDerivation, base, bimap, bytestring, config-ini, containers
-, contravariant, data-clist, deepseq, directory, exceptions
-, filepath, lib, microlens, microlens-mtl, microlens-th, mtl
-, QuickCheck, stm, template-haskell, text, text-zipper, unix
-, vector, vty, word-wrap
+{ mkDerivation
+, base
+, bimap
+, bytestring
+, config-ini
+, containers
+, contravariant
+, data-clist
+, deepseq
+, directory
+, exceptions
+, filepath
+, lib
+, microlens
+, microlens-mtl
+, microlens-th
+, mtl
+, QuickCheck
+, stm
+, template-haskell
+, text
+, text-zipper
+, unix
+, vector
+, vty
+, word-wrap
 }:
 mkDerivation {
   pname = "brick";
@@ -11,13 +32,37 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base bimap bytestring config-ini containers contravariant
-    data-clist deepseq directory exceptions filepath microlens
-    microlens-mtl microlens-th mtl stm template-haskell text
-    text-zipper unix vector vty word-wrap
+    base
+    bimap
+    bytestring
+    config-ini
+    containers
+    contravariant
+    data-clist
+    deepseq
+    directory
+    exceptions
+    filepath
+    microlens
+    microlens-mtl
+    microlens-th
+    mtl
+    stm
+    template-haskell
+    text
+    text-zipper
+    unix
+    vector
+    vty
+    word-wrap
   ];
   testHaskellDepends = [
-    base containers microlens QuickCheck vector vty
+    base
+    containers
+    microlens
+    QuickCheck
+    vector
+    vty
   ];
   doHaddock = false;
   jailbreak = true;

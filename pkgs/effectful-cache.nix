@@ -1,5 +1,12 @@
-{ mkDerivation, base, cache, effectful-core, fetchgit, hashable
-, lib, tasty, tasty-hunit
+{ mkDerivation
+, base
+, cache
+, effectful-core
+, fetchgit
+, hashable
+, lib
+, tasty
+, tasty-hunit
 }:
 mkDerivation {
   pname = "effectful-cache";
@@ -12,7 +19,12 @@ mkDerivation {
   };
   libraryHaskellDepends = [ base cache effectful-core hashable ];
   testHaskellDepends = [
-    base cache effectful-core hashable tasty tasty-hunit
+    base
+    cache
+    effectful-core
+    hashable
+    tasty
+    tasty-hunit
   ];
   doHaddock = false;
   jailbreak = true;

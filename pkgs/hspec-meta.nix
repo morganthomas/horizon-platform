@@ -1,6 +1,22 @@
-{ mkDerivation, ansi-terminal, array, base, call-stack, clock
-, deepseq, directory, filepath, ghc, ghc-boot-th, lib, QuickCheck
-, quickcheck-io, random, setenv, stm, time, transformers
+{ mkDerivation
+, ansi-terminal
+, array
+, base
+, call-stack
+, clock
+, deepseq
+, directory
+, filepath
+, ghc
+, ghc-boot-th
+, lib
+, QuickCheck
+, quickcheck-io
+, random
+, setenv
+, stm
+, time
+, transformers
 }:
 mkDerivation {
   pname = "hspec-meta";
@@ -9,14 +25,41 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    ansi-terminal array base call-stack clock deepseq directory
-    filepath ghc ghc-boot-th QuickCheck quickcheck-io random setenv stm
-    time transformers
+    ansi-terminal
+    array
+    base
+    call-stack
+    clock
+    deepseq
+    directory
+    filepath
+    ghc
+    ghc-boot-th
+    QuickCheck
+    quickcheck-io
+    random
+    setenv
+    stm
+    time
+    transformers
   ];
   executableHaskellDepends = [
-    ansi-terminal array base call-stack clock deepseq directory
-    filepath ghc ghc-boot-th QuickCheck quickcheck-io random setenv
-    time transformers
+    ansi-terminal
+    array
+    base
+    call-stack
+    clock
+    deepseq
+    directory
+    filepath
+    ghc
+    ghc-boot-th
+    QuickCheck
+    quickcheck-io
+    random
+    setenv
+    time
+    transformers
   ];
   doHaddock = false;
   jailbreak = true;

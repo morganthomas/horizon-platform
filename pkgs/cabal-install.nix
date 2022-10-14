@@ -1,12 +1,53 @@
-{ mkDerivation, array, async, base, base16-bytestring, binary
-, bytestring, Cabal, Cabal-described, cabal-install-solver
-, Cabal-QuickCheck, Cabal-syntax, Cabal-tree-diff, containers
-, cryptohash-sha256, directory, echo, edit-distance, exceptions
-, filepath, hackage-security, hashable, HTTP, lib, lukko, mtl
-, network-uri, parsec, pretty, pretty-show, process, QuickCheck
-, random, regex-base, regex-posix, resolv, safe-exceptions, stm
-, tagged, tar, tasty, tasty-expected-failure, tasty-golden
-, tasty-hunit, tasty-quickcheck, text, time, tree-diff, unix, zlib
+{ mkDerivation
+, array
+, async
+, base
+, base16-bytestring
+, binary
+, bytestring
+, Cabal
+, Cabal-described
+, cabal-install-solver
+, Cabal-QuickCheck
+, Cabal-syntax
+, Cabal-tree-diff
+, containers
+, cryptohash-sha256
+, directory
+, echo
+, edit-distance
+, exceptions
+, filepath
+, hackage-security
+, hashable
+, HTTP
+, lib
+, lukko
+, mtl
+, network-uri
+, parsec
+, pretty
+, pretty-show
+, process
+, QuickCheck
+, random
+, regex-base
+, regex-posix
+, resolv
+, safe-exceptions
+, stm
+, tagged
+, tar
+, tasty
+, tasty-expected-failure
+, tasty-golden
+, tasty-hunit
+, tasty-quickcheck
+, text
+, time
+, tree-diff
+, unix
+, zlib
 }:
 mkDerivation {
   pname = "cabal-install";
@@ -17,22 +58,79 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    array async base base16-bytestring binary bytestring Cabal
-    cabal-install-solver Cabal-syntax containers cryptohash-sha256
-    directory echo edit-distance exceptions filepath hackage-security
-    hashable HTTP lukko mtl network-uri parsec pretty process random
-    regex-base regex-posix resolv safe-exceptions stm tar text time
-    unix zlib
+    array
+    async
+    base
+    base16-bytestring
+    binary
+    bytestring
+    Cabal
+    cabal-install-solver
+    Cabal-syntax
+    containers
+    cryptohash-sha256
+    directory
+    echo
+    edit-distance
+    exceptions
+    filepath
+    hackage-security
+    hashable
+    HTTP
+    lukko
+    mtl
+    network-uri
+    parsec
+    pretty
+    process
+    random
+    regex-base
+    regex-posix
+    resolv
+    safe-exceptions
+    stm
+    tar
+    text
+    time
+    unix
+    zlib
   ];
   executableHaskellDepends = [
-    base Cabal Cabal-syntax directory filepath
+    base
+    Cabal
+    Cabal-syntax
+    directory
+    filepath
   ];
   testHaskellDepends = [
-    array base bytestring Cabal Cabal-described cabal-install-solver
-    Cabal-QuickCheck Cabal-syntax Cabal-tree-diff containers directory
-    filepath hashable mtl network-uri pretty-show QuickCheck random
-    tagged tar tasty tasty-expected-failure tasty-golden tasty-hunit
-    tasty-quickcheck time tree-diff zlib
+    array
+    base
+    bytestring
+    Cabal
+    Cabal-described
+    cabal-install-solver
+    Cabal-QuickCheck
+    Cabal-syntax
+    Cabal-tree-diff
+    containers
+    directory
+    filepath
+    hashable
+    mtl
+    network-uri
+    pretty-show
+    QuickCheck
+    random
+    tagged
+    tar
+    tasty
+    tasty-expected-failure
+    tasty-golden
+    tasty-hunit
+    tasty-quickcheck
+    time
+    tree-diff
+    zlib
   ];
   doHaddock = false;
   jailbreak = true;

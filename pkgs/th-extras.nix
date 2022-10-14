@@ -1,4 +1,9 @@
-{ mkDerivation, base, containers, lib, syb, template-haskell
+{ mkDerivation
+, base
+, containers
+, lib
+, syb
+, template-haskell
 , th-abstraction
 }:
 mkDerivation {
@@ -6,7 +11,11 @@ mkDerivation {
   version = "0.0.0.6";
   sha256 = "02bf23940c0233a6ef6f61868e827ebd4554afe8d71cef2a1eb8e286a7f07c4a";
   libraryHaskellDepends = [
-    base containers syb template-haskell th-abstraction
+    base
+    containers
+    syb
+    template-haskell
+    th-abstraction
   ];
   doHaddock = false;
   jailbreak = true;

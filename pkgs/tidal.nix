@@ -1,6 +1,23 @@
-{ mkDerivation, base, bifunctors, bytestring, clock, colour
-, containers, criterion, deepseq, exceptions, hosc, lib, microspec
-, mtl, network, parsec, primitive, random, text, transformers
+{ mkDerivation
+, base
+, bifunctors
+, bytestring
+, clock
+, colour
+, containers
+, criterion
+, deepseq
+, exceptions
+, hosc
+, lib
+, microspec
+, mtl
+, network
+, parsec
+, primitive
+, random
+, text
+, transformers
 , weigh
 }:
 mkDerivation {
@@ -11,12 +28,30 @@ mkDerivation {
   editedCabalFile = "0mnxl1ynxf2cgqlrbkshw8qngiw7b6lf0lsjkd6hjhkh2xbxgxzx";
   enableSeparateDataOutput = true;
   libraryHaskellDepends = [
-    base bifunctors bytestring clock colour containers deepseq
-    exceptions hosc mtl network parsec primitive random text
+    base
+    bifunctors
+    bytestring
+    clock
+    colour
+    containers
+    deepseq
+    exceptions
+    hosc
+    mtl
+    network
+    parsec
+    primitive
+    random
+    text
     transformers
   ];
   testHaskellDepends = [
-    base containers deepseq hosc microspec parsec
+    base
+    containers
+    deepseq
+    hosc
+    microspec
+    parsec
   ];
   benchmarkHaskellDepends = [ base criterion weigh ];
   doHaddock = false;

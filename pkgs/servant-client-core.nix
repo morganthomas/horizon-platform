@@ -1,8 +1,28 @@
-{ mkDerivation, aeson, base, base-compat, base64-bytestring
-, bytestring, constraints, containers, deepseq, exceptions
-, fetchgit, free, hspec, hspec-discover, http-media, http-types
-, lib, network-uri, QuickCheck, safe, servant, sop-core
-, template-haskell, text, transformers
+{ mkDerivation
+, aeson
+, base
+, base-compat
+, base64-bytestring
+, bytestring
+, constraints
+, containers
+, deepseq
+, exceptions
+, fetchgit
+, free
+, hspec
+, hspec-discover
+, http-media
+, http-types
+, lib
+, network-uri
+, QuickCheck
+, safe
+, servant
+, sop-core
+, template-haskell
+, text
+, transformers
 }:
 mkDerivation {
   pname = "servant-client-core";
@@ -15,9 +35,24 @@ mkDerivation {
   };
   postUnpack = "sourceRoot+=/servant-client-core/; echo source root reset to $sourceRoot";
   libraryHaskellDepends = [
-    aeson base base-compat base64-bytestring bytestring constraints
-    containers deepseq exceptions free http-media http-types
-    network-uri safe servant sop-core template-haskell text
+    aeson
+    base
+    base-compat
+    base64-bytestring
+    bytestring
+    constraints
+    containers
+    deepseq
+    exceptions
+    free
+    http-media
+    http-types
+    network-uri
+    safe
+    servant
+    sop-core
+    template-haskell
+    text
     transformers
   ];
   testHaskellDepends = [ base base-compat deepseq hspec QuickCheck ];

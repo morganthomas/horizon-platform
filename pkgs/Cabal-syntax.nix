@@ -1,6 +1,21 @@
-{ mkDerivation, array, base, binary, bytestring, containers
-, deepseq, directory, fetchgit, filepath, lib, mtl, parsec, pretty
-, text, time, transformers, unix
+{ mkDerivation
+, array
+, base
+, binary
+, bytestring
+, containers
+, deepseq
+, directory
+, fetchgit
+, filepath
+, lib
+, mtl
+, parsec
+, pretty
+, text
+, time
+, transformers
+, unix
 }:
 mkDerivation {
   pname = "Cabal-syntax";
@@ -13,8 +28,21 @@ mkDerivation {
   };
   postUnpack = "sourceRoot+=/Cabal-syntax/; echo source root reset to $sourceRoot";
   libraryHaskellDepends = [
-    array base binary bytestring containers deepseq directory filepath
-    mtl parsec pretty text time transformers unix
+    array
+    base
+    binary
+    bytestring
+    containers
+    deepseq
+    directory
+    filepath
+    mtl
+    parsec
+    pretty
+    text
+    time
+    transformers
+    unix
   ];
   doHaddock = false;
   jailbreak = true;

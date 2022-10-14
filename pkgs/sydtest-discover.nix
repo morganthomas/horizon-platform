@@ -1,4 +1,9 @@
-{ mkDerivation, base, filepath, lib, optparse-applicative, path
+{ mkDerivation
+, base
+, filepath
+, lib
+, optparse-applicative
+, path
 , path-io
 }:
 mkDerivation {
@@ -8,7 +13,11 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base filepath optparse-applicative path path-io
+    base
+    filepath
+    optparse-applicative
+    path
+    path-io
   ];
   executableHaskellDepends = [ base ];
   doHaddock = false;

@@ -1,5 +1,12 @@
-{ mkDerivation, base, doctest, generic-lens-core, HUnit
-, inspection-testing, lib, optics-core, text
+{ mkDerivation
+, base
+, doctest
+, generic-lens-core
+, HUnit
+, inspection-testing
+, lib
+, optics-core
+, text
 }:
 mkDerivation {
   pname = "generic-optics";
@@ -8,10 +15,17 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "13wkbs8x0clkqzi4xqin89qywpky8jkpz9cxgwsglbpcyw11jvgq";
   libraryHaskellDepends = [
-    base generic-lens-core optics-core text
+    base
+    generic-lens-core
+    optics-core
+    text
   ];
   testHaskellDepends = [
-    base doctest HUnit inspection-testing optics-core
+    base
+    doctest
+    HUnit
+    inspection-testing
+    optics-core
   ];
   doHaddock = false;
   jailbreak = true;

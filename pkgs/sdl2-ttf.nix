@@ -1,5 +1,14 @@
-{ mkDerivation, base, bytestring, lib, SDL2, sdl2, SDL2_ttf
-, template-haskell, text, th-abstraction, transformers
+{ mkDerivation
+, base
+, bytestring
+, lib
+, SDL2
+, sdl2
+, SDL2_ttf
+, template-haskell
+, text
+, th-abstraction
+, transformers
 }:
 mkDerivation {
   pname = "sdl2-ttf";
@@ -8,7 +17,12 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base bytestring sdl2 template-haskell text th-abstraction
+    base
+    bytestring
+    sdl2
+    template-haskell
+    text
+    th-abstraction
     transformers
   ];
   libraryPkgconfigDepends = [ SDL2 SDL2_ttf ];

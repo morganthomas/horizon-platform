@@ -1,4 +1,10 @@
-{ mkDerivation, base, hashable, HUnit, lib, stm, test-framework
+{ mkDerivation
+, base
+, hashable
+, HUnit
+, lib
+, stm
+, test-framework
 , test-framework-hunit
 }:
 mkDerivation {
@@ -11,7 +17,11 @@ mkDerivation {
   isExecutable = true;
   libraryHaskellDepends = [ base hashable stm ];
   testHaskellDepends = [
-    base HUnit stm test-framework test-framework-hunit
+    base
+    HUnit
+    stm
+    test-framework
+    test-framework-hunit
   ];
   doHaddock = false;
   jailbreak = true;

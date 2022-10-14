@@ -1,5 +1,13 @@
-{ mkDerivation, base, bytestring, Cabal, cabal-doctest, doctest
-, entropy, lib, primitive, random
+{ mkDerivation
+, base
+, bytestring
+, Cabal
+, cabal-doctest
+, doctest
+, entropy
+, lib
+, primitive
+, random
 }:
 mkDerivation {
   pname = "pcg-random";
@@ -7,7 +15,11 @@ mkDerivation {
   sha256 = "e6c8c26841b5d0d6d9e2816e952e397062730fd1a0bc13cf7c3ebcba6dc1d2d0";
   setupHaskellDepends = [ base Cabal cabal-doctest ];
   libraryHaskellDepends = [
-    base bytestring entropy primitive random
+    base
+    bytestring
+    entropy
+    primitive
+    random
   ];
   testHaskellDepends = [ base doctest ];
   doHaddock = false;

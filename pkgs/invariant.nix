@@ -1,7 +1,23 @@
-{ mkDerivation, array, base, bifunctors, comonad, containers
-, contravariant, ghc-prim, hspec, hspec-discover, lib, profunctors
-, QuickCheck, StateVar, stm, tagged, template-haskell
-, th-abstraction, transformers, transformers-compat
+{ mkDerivation
+, array
+, base
+, bifunctors
+, comonad
+, containers
+, contravariant
+, ghc-prim
+, hspec
+, hspec-discover
+, lib
+, profunctors
+, QuickCheck
+, StateVar
+, stm
+, tagged
+, template-haskell
+, th-abstraction
+, transformers
+, transformers-compat
 , unordered-containers
 }:
 mkDerivation {
@@ -11,9 +27,22 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "0551ll1swnrmq09j89jqnxl4qnirbbpdpsdym23adaf36qdd7v37";
   libraryHaskellDepends = [
-    array base bifunctors comonad containers contravariant ghc-prim
-    profunctors StateVar stm tagged template-haskell th-abstraction
-    transformers transformers-compat unordered-containers
+    array
+    base
+    bifunctors
+    comonad
+    containers
+    contravariant
+    ghc-prim
+    profunctors
+    StateVar
+    stm
+    tagged
+    template-haskell
+    th-abstraction
+    transformers
+    transformers-compat
+    unordered-containers
   ];
   testHaskellDepends = [ base hspec QuickCheck template-haskell ];
   testToolDepends = [ hspec-discover ];

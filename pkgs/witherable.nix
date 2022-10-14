@@ -1,7 +1,18 @@
-{ mkDerivation, base, base-orphans, containers, hashable
-, indexed-traversable, indexed-traversable-instances, lib
-, QuickCheck, quickcheck-instances, tasty, tasty-quickcheck
-, transformers, unordered-containers, vector
+{ mkDerivation
+, base
+, base-orphans
+, containers
+, hashable
+, indexed-traversable
+, indexed-traversable-instances
+, lib
+, QuickCheck
+, quickcheck-instances
+, tasty
+, tasty-quickcheck
+, transformers
+, unordered-containers
+, vector
 }:
 mkDerivation {
   pname = "witherable";
@@ -10,13 +21,27 @@ mkDerivation {
   revision = "3";
   editedCabalFile = "1f2bvl41by904lnr0dk6qgasqwadq2w48l7fj51bp2h8bqbkdjyc";
   libraryHaskellDepends = [
-    base base-orphans containers hashable indexed-traversable
-    indexed-traversable-instances transformers unordered-containers
+    base
+    base-orphans
+    containers
+    hashable
+    indexed-traversable
+    indexed-traversable-instances
+    transformers
+    unordered-containers
     vector
   ];
   testHaskellDepends = [
-    base containers hashable QuickCheck quickcheck-instances tasty
-    tasty-quickcheck transformers unordered-containers vector
+    base
+    containers
+    hashable
+    QuickCheck
+    quickcheck-instances
+    tasty
+    tasty-quickcheck
+    transformers
+    unordered-containers
+    vector
   ];
   doHaddock = false;
   jailbreak = true;

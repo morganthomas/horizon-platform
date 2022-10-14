@@ -1,4 +1,10 @@
-{ mkDerivation, base, directory, filepath, hspec-meta, lib, mockery
+{ mkDerivation
+, base
+, directory
+, filepath
+, hspec-meta
+, lib
+, mockery
 , QuickCheck
 }:
 mkDerivation {
@@ -10,7 +16,12 @@ mkDerivation {
   libraryHaskellDepends = [ base directory filepath ];
   executableHaskellDepends = [ base directory filepath ];
   testHaskellDepends = [
-    base directory filepath hspec-meta mockery QuickCheck
+    base
+    directory
+    filepath
+    hspec-meta
+    mockery
+    QuickCheck
   ];
   testToolDepends = [ hspec-meta ];
   doHaddock = false;

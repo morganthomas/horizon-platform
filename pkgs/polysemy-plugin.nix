@@ -1,6 +1,19 @@
-{ mkDerivation, base, Cabal, cabal-doctest, containers, doctest
-, fetchgit, ghc, ghc-tcplugins-extra, hspec, hspec-discover
-, inspection-testing, lib, polysemy, should-not-typecheck, syb
+{ mkDerivation
+, base
+, Cabal
+, cabal-doctest
+, containers
+, doctest
+, fetchgit
+, ghc
+, ghc-tcplugins-extra
+, hspec
+, hspec-discover
+, inspection-testing
+, lib
+, polysemy
+, should-not-typecheck
+, syb
 , transformers
 }:
 mkDerivation {
@@ -15,11 +28,26 @@ mkDerivation {
   postUnpack = "sourceRoot+=/polysemy-plugin/; echo source root reset to $sourceRoot";
   setupHaskellDepends = [ base Cabal cabal-doctest ];
   libraryHaskellDepends = [
-    base containers ghc ghc-tcplugins-extra polysemy syb transformers
+    base
+    containers
+    ghc
+    ghc-tcplugins-extra
+    polysemy
+    syb
+    transformers
   ];
   testHaskellDepends = [
-    base containers doctest ghc ghc-tcplugins-extra hspec
-    inspection-testing polysemy should-not-typecheck syb transformers
+    base
+    containers
+    doctest
+    ghc
+    ghc-tcplugins-extra
+    hspec
+    inspection-testing
+    polysemy
+    should-not-typecheck
+    syb
+    transformers
   ];
   testToolDepends = [ hspec-discover ];
   doHaddock = false;

@@ -1,8 +1,32 @@
-{ mkDerivation, base, bifunctors, bytestring, comonad, containers
-, contravariant, deepseq, dlist, either, groups, hashable
-, invariant, lib, mtl, profunctors, scientific, selective
-, semigroupoids, stm, text, time, time-compat, transformers
-, unordered-containers, uuid-types, vector, vector-instances, void
+{ mkDerivation
+, base
+, bifunctors
+, bytestring
+, comonad
+, containers
+, contravariant
+, deepseq
+, dlist
+, either
+, groups
+, hashable
+, invariant
+, lib
+, mtl
+, profunctors
+, scientific
+, selective
+, semigroupoids
+, stm
+, text
+, time
+, time-compat
+, transformers
+, unordered-containers
+, uuid-types
+, vector
+, vector-instances
+, void
 }:
 mkDerivation {
   pname = "rebase";
@@ -11,10 +35,33 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "048h2ir37j09s0z7fb364p7smyhzq6h4705qklhvylak9242gz2n";
   libraryHaskellDepends = [
-    base bifunctors bytestring comonad containers contravariant deepseq
-    dlist either groups hashable invariant mtl profunctors scientific
-    selective semigroupoids stm text time time-compat transformers
-    unordered-containers uuid-types vector vector-instances void
+    base
+    bifunctors
+    bytestring
+    comonad
+    containers
+    contravariant
+    deepseq
+    dlist
+    either
+    groups
+    hashable
+    invariant
+    mtl
+    profunctors
+    scientific
+    selective
+    semigroupoids
+    stm
+    text
+    time
+    time-compat
+    transformers
+    unordered-containers
+    uuid-types
+    vector
+    vector-instances
+    void
   ];
   doHaddock = false;
   jailbreak = true;

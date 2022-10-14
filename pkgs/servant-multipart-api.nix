@@ -1,4 +1,10 @@
-{ mkDerivation, base, bytestring, lib, servant, text, transformers
+{ mkDerivation
+, base
+, bytestring
+, lib
+, servant
+, text
+, transformers
 }:
 mkDerivation {
   pname = "servant-multipart-api";
@@ -7,7 +13,11 @@ mkDerivation {
   revision = "3";
   editedCabalFile = "1zhiszjg8n37g25sh2cnw509n0v4b89fd93j466f2gzwkxfaaw0m";
   libraryHaskellDepends = [
-    base bytestring servant text transformers
+    base
+    bytestring
+    servant
+    text
+    transformers
   ];
   doHaddock = false;
   jailbreak = true;

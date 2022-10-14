@@ -1,7 +1,21 @@
-{ mkDerivation, base, base-orphans, deepseq, doctest, HUnit, lib
-, primitive, QuickCheck, random, tasty, tasty-bench, tasty-hunit
-, tasty-inspection-testing, tasty-quickcheck, template-haskell
-, transformers, vector-stream
+{ mkDerivation
+, base
+, base-orphans
+, deepseq
+, doctest
+, HUnit
+, lib
+, primitive
+, QuickCheck
+, random
+, tasty
+, tasty-bench
+, tasty-hunit
+, tasty-inspection-testing
+, tasty-quickcheck
+, template-haskell
+, transformers
+, vector-stream
 }:
 mkDerivation {
   pname = "vector";
@@ -11,9 +25,19 @@ mkDerivation {
   editedCabalFile = "12cwdaqsy9dv7j7cwq6r6kdyfxqiya8khm6ccaabjhhpa2aqwljl";
   libraryHaskellDepends = [ base deepseq primitive vector-stream ];
   testHaskellDepends = [
-    base base-orphans doctest HUnit primitive QuickCheck random tasty
-    tasty-hunit tasty-inspection-testing tasty-quickcheck
-    template-haskell transformers
+    base
+    base-orphans
+    doctest
+    HUnit
+    primitive
+    QuickCheck
+    random
+    tasty
+    tasty-hunit
+    tasty-inspection-testing
+    tasty-quickcheck
+    template-haskell
+    transformers
   ];
   benchmarkHaskellDepends = [ base random tasty tasty-bench ];
   doHaddock = false;

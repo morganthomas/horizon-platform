@@ -1,6 +1,16 @@
-{ mkDerivation, base, containers, hashable, indexed-traversable
-, indexed-traversable-instances, lib, semigroupoids, tagged, these
-, transformers, unordered-containers, vector
+{ mkDerivation
+, base
+, containers
+, hashable
+, indexed-traversable
+, indexed-traversable-instances
+, lib
+, semigroupoids
+, tagged
+, these
+, transformers
+, unordered-containers
+, vector
 }:
 mkDerivation {
   pname = "semialign";
@@ -9,9 +19,17 @@ mkDerivation {
   revision = "3";
   editedCabalFile = "0dbcdnksik508i12arh3s6bis6779lx5f1df0jkc0bp797inhd7f";
   libraryHaskellDepends = [
-    base containers hashable indexed-traversable
-    indexed-traversable-instances semigroupoids tagged these
-    transformers unordered-containers vector
+    base
+    containers
+    hashable
+    indexed-traversable
+    indexed-traversable-instances
+    semigroupoids
+    tagged
+    these
+    transformers
+    unordered-containers
+    vector
   ];
   doHaddock = false;
   jailbreak = true;

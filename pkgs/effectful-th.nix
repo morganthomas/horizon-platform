@@ -1,5 +1,11 @@
-{ mkDerivation, base, containers, effectful, exceptions, lib
-, template-haskell, th-abstraction
+{ mkDerivation
+, base
+, containers
+, effectful
+, exceptions
+, lib
+, template-haskell
+, th-abstraction
 }:
 mkDerivation {
   pname = "effectful-th";
@@ -8,7 +14,11 @@ mkDerivation {
   revision = "3";
   editedCabalFile = "1nqwvgdvqgh4dvkidyaga7jd95p3hn54hy5gwadsvyf9lll4vjck";
   libraryHaskellDepends = [
-    base containers effectful exceptions template-haskell
+    base
+    containers
+    effectful
+    exceptions
+    template-haskell
     th-abstraction
   ];
   testHaskellDepends = [ base effectful ];

@@ -1,6 +1,20 @@
-{ mkDerivation, base, binary, binary-orphans, bytestring, cereal
-, containers, hashable, lib, mtl, scientific, text, time
-, transformers, transformers-compat, unordered-containers, void
+{ mkDerivation
+, base
+, binary
+, binary-orphans
+, bytestring
+, cereal
+, containers
+, hashable
+, lib
+, mtl
+, scientific
+, text
+, time
+, transformers
+, transformers-compat
+, unordered-containers
+, void
 }:
 mkDerivation {
   pname = "bytes";
@@ -9,9 +23,21 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "0frs6ag93kmg2fw3vd686czx8g7h9qmdn1ip6wdk96d94ap0fz9i";
   libraryHaskellDepends = [
-    base binary binary-orphans bytestring cereal containers hashable
-    mtl scientific text time transformers transformers-compat
-    unordered-containers void
+    base
+    binary
+    binary-orphans
+    bytestring
+    cereal
+    containers
+    hashable
+    mtl
+    scientific
+    text
+    time
+    transformers
+    transformers-compat
+    unordered-containers
+    void
   ];
   doHaddock = false;
   jailbreak = true;

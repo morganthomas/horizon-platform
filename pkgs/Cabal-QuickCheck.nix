@@ -1,5 +1,11 @@
-{ mkDerivation, base, bytestring, Cabal, Cabal-syntax, fetchgit
-, lib, QuickCheck
+{ mkDerivation
+, base
+, bytestring
+, Cabal
+, Cabal-syntax
+, fetchgit
+, lib
+, QuickCheck
 }:
 mkDerivation {
   pname = "Cabal-QuickCheck";
@@ -12,7 +18,11 @@ mkDerivation {
   };
   postUnpack = "sourceRoot+=/Cabal-QuickCheck/; echo source root reset to $sourceRoot";
   libraryHaskellDepends = [
-    base bytestring Cabal Cabal-syntax QuickCheck
+    base
+    bytestring
+    Cabal
+    Cabal-syntax
+    QuickCheck
   ];
   doHaddock = false;
   jailbreak = true;

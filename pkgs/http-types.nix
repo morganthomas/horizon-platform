@@ -1,15 +1,34 @@
-{ mkDerivation, array, base, bytestring, case-insensitive, doctest
-, hspec, lib, QuickCheck, quickcheck-instances, text
+{ mkDerivation
+, array
+, base
+, bytestring
+, case-insensitive
+, doctest
+, hspec
+, lib
+, QuickCheck
+, quickcheck-instances
+, text
 }:
 mkDerivation {
   pname = "http-types";
   version = "0.12.3";
   sha256 = "4e8a4a66477459fa436a331c75e46857ec8026283df984d54f90576cd3024016";
   libraryHaskellDepends = [
-    array base bytestring case-insensitive text
+    array
+    base
+    bytestring
+    case-insensitive
+    text
   ];
   testHaskellDepends = [
-    base bytestring doctest hspec QuickCheck quickcheck-instances text
+    base
+    bytestring
+    doctest
+    hspec
+    QuickCheck
+    quickcheck-instances
+    text
   ];
   doHaddock = false;
   jailbreak = true;

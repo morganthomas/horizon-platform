@@ -1,5 +1,13 @@
-{ mkDerivation, base, bytestring, data-default-class, lib
-, lifted-base, monad-control, sdl2, SDL2_mixer, template-haskell
+{ mkDerivation
+, base
+, bytestring
+, data-default-class
+, lib
+, lifted-base
+, monad-control
+, sdl2
+, SDL2_mixer
+, template-haskell
 , vector
 }:
 mkDerivation {
@@ -9,8 +17,14 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base bytestring data-default-class lifted-base monad-control sdl2
-    template-haskell vector
+    base
+    bytestring
+    data-default-class
+    lifted-base
+    monad-control
+    sdl2
+    template-haskell
+    vector
   ];
   librarySystemDepends = [ SDL2_mixer ];
   libraryPkgconfigDepends = [ SDL2_mixer ];

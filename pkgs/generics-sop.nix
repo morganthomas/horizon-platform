@@ -1,5 +1,12 @@
-{ mkDerivation, base, criterion, deepseq, ghc-prim, lib, sop-core
-, template-haskell, th-abstraction
+{ mkDerivation
+, base
+, criterion
+, deepseq
+, ghc-prim
+, lib
+, sop-core
+, template-haskell
+, th-abstraction
 }:
 mkDerivation {
   pname = "generics-sop";
@@ -8,11 +15,18 @@ mkDerivation {
   revision = "1";
   editedCabalFile = "1s8bx25yrjqy1cj9y1s1m8a8qlby9dxjzin16yymz7g39fqcqxz8";
   libraryHaskellDepends = [
-    base ghc-prim sop-core template-haskell th-abstraction
+    base
+    ghc-prim
+    sop-core
+    template-haskell
+    th-abstraction
   ];
   testHaskellDepends = [ base ];
   benchmarkHaskellDepends = [
-    base criterion deepseq template-haskell
+    base
+    criterion
+    deepseq
+    template-haskell
   ];
   doHaddock = false;
   jailbreak = true;

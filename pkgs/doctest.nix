@@ -1,7 +1,27 @@
-{ mkDerivation, base, base-compat, code-page, deepseq, directory
-, exceptions, fetchgit, filepath, ghc, ghc-paths, hspec, hspec-core
-, hspec-discover, HUnit, lib, mockery, process, QuickCheck, setenv
-, silently, stringbuilder, syb, transformers
+{ mkDerivation
+, base
+, base-compat
+, code-page
+, deepseq
+, directory
+, exceptions
+, fetchgit
+, filepath
+, ghc
+, ghc-paths
+, hspec
+, hspec-core
+, hspec-discover
+, HUnit
+, lib
+, mockery
+, process
+, QuickCheck
+, setenv
+, silently
+, stringbuilder
+, syb
+, transformers
 }:
 mkDerivation {
   pname = "doctest";
@@ -15,17 +35,54 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base base-compat code-page deepseq directory exceptions filepath
-    ghc ghc-paths process syb transformers
+    base
+    base-compat
+    code-page
+    deepseq
+    directory
+    exceptions
+    filepath
+    ghc
+    ghc-paths
+    process
+    syb
+    transformers
   ];
   executableHaskellDepends = [
-    base base-compat code-page deepseq directory exceptions filepath
-    ghc ghc-paths process syb transformers
+    base
+    base-compat
+    code-page
+    deepseq
+    directory
+    exceptions
+    filepath
+    ghc
+    ghc-paths
+    process
+    syb
+    transformers
   ];
   testHaskellDepends = [
-    base base-compat code-page deepseq directory exceptions filepath
-    ghc ghc-paths hspec hspec-core HUnit mockery process QuickCheck
-    setenv silently stringbuilder syb transformers
+    base
+    base-compat
+    code-page
+    deepseq
+    directory
+    exceptions
+    filepath
+    ghc
+    ghc-paths
+    hspec
+    hspec-core
+    HUnit
+    mockery
+    process
+    QuickCheck
+    setenv
+    silently
+    stringbuilder
+    syb
+    transformers
   ];
   testToolDepends = [ hspec-discover ];
   doHaddock = false;

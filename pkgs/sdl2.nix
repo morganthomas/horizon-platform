@@ -1,5 +1,16 @@
-{ mkDerivation, base, bytestring, deepseq, exceptions, lib, linear
-, SDL2, StateVar, text, transformers, vector, weigh
+{ mkDerivation
+, base
+, bytestring
+, deepseq
+, exceptions
+, lib
+, linear
+, SDL2
+, StateVar
+, text
+, transformers
+, vector
+, weigh
 }:
 mkDerivation {
   pname = "sdl2";
@@ -9,7 +20,14 @@ mkDerivation {
   isExecutable = true;
   enableSeparateDataOutput = true;
   libraryHaskellDepends = [
-    base bytestring exceptions linear StateVar text transformers vector
+    base
+    bytestring
+    exceptions
+    linear
+    StateVar
+    text
+    transformers
+    vector
   ];
   librarySystemDepends = [ SDL2 ];
   libraryPkgconfigDepends = [ SDL2 ];

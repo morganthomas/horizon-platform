@@ -1,7 +1,21 @@
-{ mkDerivation, base, binary, bytestring, containers, lib, parsec
-, QuickCheck, quickcheck-instances, tasty, tasty-bench, tasty-hunit
-, tasty-quickcheck, template-haskell, text, text-icu
-, th-lift-instances, unicode-transforms
+{ mkDerivation
+, base
+, binary
+, bytestring
+, containers
+, lib
+, parsec
+, QuickCheck
+, quickcheck-instances
+, tasty
+, tasty-bench
+, tasty-hunit
+, tasty-quickcheck
+, template-haskell
+, text
+, text-icu
+, th-lift-instances
+, unicode-transforms
 }:
 mkDerivation {
   pname = "unicode-collation";
@@ -10,15 +24,31 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base binary bytestring containers parsec template-haskell text
+    base
+    binary
+    bytestring
+    containers
+    parsec
+    template-haskell
+    text
     th-lift-instances
   ];
   testHaskellDepends = [
-    base bytestring tasty tasty-hunit tasty-quickcheck text
+    base
+    bytestring
+    tasty
+    tasty-hunit
+    tasty-quickcheck
+    text
     unicode-transforms
   ];
   benchmarkHaskellDepends = [
-    base QuickCheck quickcheck-instances tasty-bench text text-icu
+    base
+    QuickCheck
+    quickcheck-instances
+    tasty-bench
+    text
+    text-icu
   ];
   doHaddock = false;
   jailbreak = true;
