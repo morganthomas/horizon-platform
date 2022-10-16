@@ -19,13 +19,12 @@
             && v.type == "derivation"
             && v.meta.broken == false)
           hp;
-        horizon-gen-nix = pkgs.writers.writeBashBin "horizon-gen-nix" "nix run git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix";
       in
       {
         apps = {
           horizon-gen-nix = {
             type = "app";
-            program = "${horizon-gen-nix}/bin/horizon-gen-nix";
+            program = "${hp.horizon-gen-nix}/bin/horizon-gen-nix";
           };
         };
         checks = {
