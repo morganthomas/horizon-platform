@@ -61,6 +61,8 @@ final: prev: with pkgs.haskell.lib; {
 
     cabal-install-solver = prev.callPackage (./pkgs/cabal-install-solver.nix) { };
 
+    cabal2nix = prev.callPackage (./pkgs/cabal2nix.nix) { };
+
     cborg = prev.callPackage (./pkgs/cborg.nix) { };
 
     cborg-json = prev.callPackage (./pkgs/cborg-json.nix) { };

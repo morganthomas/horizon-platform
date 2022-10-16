@@ -89,6 +89,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "cabal-doctest" "1.0.9"
     , callHackage "cabal-install" "3.8.1.0"
     , callHackage "cabal-install-solver" "3.8.1.0"
+    , callCabal2nix
+        "cabal2nix"
+        "https://github.com/NixOS/cabal2nix"
+        (None Text)
+        (Some "cabal2nix")
     , callHackage "cereal" "0.5.8.3"
     , callHackage "cborg" "0.2.8.0"
     , callHackage "cborg-json" "0.2.5.0"
