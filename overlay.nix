@@ -255,6 +255,8 @@ final: prev: with pkgs.haskell.lib; {
 
     memory = prev.callPackage (./pkgs/memory.nix) { };
 
+    monad-par = prev.callPackage (./pkgs/monad-par.nix) { };
+
     monoid-subclasses = prev.callPackage (./pkgs/monoid-subclasses.nix) { };
 
     net-mqtt = prev.callPackage (./pkgs/net-mqtt.nix) { };
