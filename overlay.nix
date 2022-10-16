@@ -205,6 +205,8 @@ final: prev: with pkgs.haskell.lib; {
 
     hourglass = prev.callPackage (./pkgs/hourglass.nix) { };
 
+    hpack = prev.callPackage (./pkgs/hpack.nix) { };
+
     hslua-aeson = prev.callPackage (./pkgs/hslua-aeson.nix) { };
 
     hspec = prev.callPackage (./pkgs/hspec.nix) { };

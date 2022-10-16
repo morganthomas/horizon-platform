@@ -189,6 +189,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/milloni/hnix"
         (Some "005568ee024eabee129d9cf4ca331c6da260610b")
         (None Text)
+    , callHackage "hpack" "0.35.0"
     , callHackage "hslua-aeson" "2.2.1"
     , callHackage "hspec" "2.10.3"
     , callHackage "hspec-core" "2.10.0.1"
