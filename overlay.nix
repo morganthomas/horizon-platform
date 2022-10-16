@@ -399,6 +399,8 @@ final: prev: with pkgs.haskell.lib; {
 
     tasty-wai = prev.callPackage (./pkgs/tasty-wai.nix) { };
 
+    text-metrics = prev.callPackage (./pkgs/text-metrics.nix) { };
+
     text-zipper = prev.callPackage (./pkgs/text-zipper.nix) { };
 
     th-extras = prev.callPackage (./pkgs/th-extras.nix) { };

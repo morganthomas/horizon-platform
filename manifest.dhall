@@ -318,6 +318,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (None Text)
         (Some "hunit")
     , callHackage "tasty-wai" "0.1.2.0"
+    , callHackage "text-metrics" "0.3.2"
     , callHackage "text-zipper" "0.12"
     , callHackage "these" "1.1.1.1"
     , callHackage "th-extras" "0.0.0.6"
