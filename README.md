@@ -9,7 +9,7 @@ Horizon is a haskell package set targetting new builds of GHC.
 The package set is generated from the `manifest.dhall` using the following command:
 
 ```
-nix run .#horizon-gen-nix
+nix run git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix
 ```
 
 This will generate both the `pkgs` folder and the `overlay.nix`. If you want to
