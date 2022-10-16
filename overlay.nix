@@ -231,6 +231,8 @@ final: prev: with pkgs.haskell.lib; {
 
     indexed-traversable-instances = prev.callPackage (./pkgs/indexed-traversable-instances.nix) { };
 
+    infer-license = prev.callPackage (./pkgs/infer-license.nix) { };
+
     integer-logarithms = prev.callPackage (./pkgs/integer-logarithms.nix) { };
 
     invariant = prev.callPackage (./pkgs/invariant.nix) { };
