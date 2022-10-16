@@ -112,6 +112,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "dec" "0.0.5"
     , callHackage "dhall" "1.41.2"
     , callHackage "dimensional" "1.5"
+    , callHackage "distribution-nixpkgs" "1.7.0"
     , callCabal2nix
         "doctest"
         "https://github.com/sol/doctest"

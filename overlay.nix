@@ -107,6 +107,8 @@ final: prev: with pkgs.haskell.lib; {
 
     dimensional = prev.callPackage (./pkgs/dimensional.nix) { };
 
+    distribution-nixpkgs = prev.callPackage (./pkgs/distribution-nixpkgs.nix) { };
+
     doctest = prev.callPackage (./pkgs/doctest.nix) { };
 
     double-conversion = prev.callPackage (./pkgs/double-conversion.nix) { };
