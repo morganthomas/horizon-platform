@@ -183,6 +183,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/maybe-hedgehog-later/hedgehog-golden"
         (None Text)
         (None Text)
+    , callHackage "hie-bios" "0.11.0"
     , callHackage "hie-compat" "0.3.0.0"
     , callHackage "hiedb" "0.4.2.0"
     , callHackage "hlint" "3.5"

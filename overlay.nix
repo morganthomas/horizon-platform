@@ -193,6 +193,8 @@ final: prev: with pkgs.haskell.lib; {
 
     hedgehog-golden = prev.callPackage (./pkgs/hedgehog-golden.nix) { };
 
+    hie-bios = prev.callPackage (./pkgs/hie-bios.nix) { };
+
     hie-compat = prev.callPackage (./pkgs/hie-compat.nix) { };
 
     hiedb = prev.callPackage (./pkgs/hiedb.nix) { };
