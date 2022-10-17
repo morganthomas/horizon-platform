@@ -101,7 +101,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "co-log-core" "0.3.1.0"
     , callHackage "comonad" "5.0.8"
     , callHackage "compact" "0.2.0.0"
-    , callHackage "compactable" "0.2.0.0"
+    , callCabal2nix
+        "compactable"
+        "https://gitlab.com/fresheyeball/Compactable"
+        (Some "f63927b1e438c267f0d12f36e5b3735cfaebeeb4")
+        (None Text)
     , callHackage "composite-base" "0.8.1.0"
     , callHackage "composite-cassava" "0.0.3.1"
     , callHackage "composite-dhall" "0.1.0.1"
@@ -247,7 +251,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callCabal2nix
         "polysemy-plugin"
         "https://github.com/locallycompact/polysemy"
-        (Some "5942a398ef02bbbe94bedd68f8628390ed223107")
+        (Some "bd944ca000c1ca69602d4723e3859af431b9d0c4")
         (Some "polysemy-plugin")
     , callHackage "polysemy-several" "0.1.1.0"
     , callHackage "polysemy-time" "0.5.1.0"
@@ -297,9 +301,15 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/TeofilC/servant"
         (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
         (Some "servant-foreign")
+
     , callHackage "servant-lucid" "0.9.0.5"
     , callHackage "servant-multipart" "0.12.1"
     , callHackage "servant-multipart-api" "0.12.1"
+    , callCabal2nix
+        "servant-server"
+        "https://github.com/TeofilC/servant"
+        (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
+        (Some "servant-server")
     , callHackage "shake" "0.19.6"
     , callHackage "shelly" "1.10.0"
     , callHackage "singleton-bool" "0.1.6"
