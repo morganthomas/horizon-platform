@@ -101,7 +101,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "co-log-core" "0.3.1.0"
     , callHackage "comonad" "5.0.8"
     , callHackage "compact" "0.2.0.0"
-    , callHackage "compactable" "0.2.0.0"
+    , callCabal2nix
+        "compactable"
+        "https://gitlab.com/fresheyeball/Compactable"
+        (Some "f63927b1e438c267f0d12f36e5b3735cfaebeeb4")
+        (None Text)
     , callHackage "composite-base" "0.8.1.0"
     , callHackage "composite-cassava" "0.0.3.1"
     , callHackage "composite-dhall" "0.1.0.1"
