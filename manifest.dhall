@@ -251,7 +251,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callCabal2nix
         "polysemy-plugin"
         "https://github.com/locallycompact/polysemy"
-        (Some "5942a398ef02bbbe94bedd68f8628390ed223107")
+        (Some "bd944ca000c1ca69602d4723e3859af431b9d0c4")
         (Some "polysemy-plugin")
     , callHackage "polysemy-several" "0.1.1.0"
     , callHackage "polysemy-time" "0.5.1.0"
