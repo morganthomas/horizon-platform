@@ -371,6 +371,8 @@ final: prev: with pkgs.haskell.lib; {
 
     servant-multipart-api = prev.callPackage (./pkgs/servant-multipart-api.nix) { };
 
+    servant-server = prev.callPackage (./pkgs/servant-server.nix) { };
+
     shake = prev.callPackage (./pkgs/shake.nix) { };
 
     shelly = prev.callPackage (./pkgs/shelly.nix) { };
