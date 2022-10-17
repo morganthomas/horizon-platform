@@ -139,11 +139,6 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (None Text)
     , callHackage "email-validate" "2.3.2.16"
     , callCabal2nix
-        "ema"
-        "https://github.com/EmaApps/ema"
-        (None Text)
-        (None Text)
-    , callCabal2nix
         "effectful-cache"
         "https://github.com/haskell-effectful/cache-effectful"
         (None Text)

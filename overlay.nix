@@ -125,8 +125,6 @@ final: prev: with pkgs.haskell.lib; {
 
     effectful-th = prev.callPackage (./pkgs/effectful-th.nix) { };
 
-    ema = prev.callPackage (./pkgs/ema.nix) { };
-
     email-validate = prev.callPackage (./pkgs/email-validate.nix) { };
 
     extra = prev.callPackage (./pkgs/extra.nix) { };
