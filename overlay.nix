@@ -139,8 +139,6 @@ final: prev: with pkgs.haskell.lib; {
 
     foundation = prev.callPackage (./pkgs/foundation.nix) { };
 
-    fourmolu = prev.callPackage (./pkgs/fourmolu.nix) { };
-
     generic-lens-core = prev.callPackage (./pkgs/generic-lens-core.nix) { };
 
     generic-lens-lite = prev.callPackage (./pkgs/generic-lens-lite.nix) { };

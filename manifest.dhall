@@ -151,11 +151,6 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "finite-field" "0.10.0"
     , callHackage "first-class-families" "0.8.0.1"
     , callHackage "foldl" "1.4.12"
-    , callCabal2nix
-        "fourmolu"
-        "https://github.com/fourmolu/fourmolu"
-        (Some "c6d7156b5f3e8287960a76e777c40b62ebfdbcb3")
-        (None Text)
     , callHackage "foundation" "0.0.29"
     , callHackage "generic-lens-core" "2.2.1.0"
     , callHackage "generic-lens-lite" "0.1"
