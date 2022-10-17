@@ -323,6 +323,8 @@ final: prev: with pkgs.haskell.lib; {
 
     rebase = prev.callPackage (./pkgs/rebase.nix) { };
 
+    refined = prev.callPackage (./pkgs/refined.nix) { };
+
     relude = prev.callPackage (./pkgs/relude.nix) { };
 
     rerebase = prev.callPackage (./pkgs/rerebase.nix) { };
