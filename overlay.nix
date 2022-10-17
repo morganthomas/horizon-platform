@@ -417,6 +417,8 @@ final: prev: with pkgs.haskell.lib; {
 
     these = prev.callPackage (./pkgs/these.nix) { };
 
+    these-skinny = prev.callPackage (./pkgs/these-skinny.nix) { };
+
     tidal = prev.callPackage (./pkgs/tidal.nix) { };
 
     time-compat = prev.callPackage (./pkgs/time-compat.nix) { };
