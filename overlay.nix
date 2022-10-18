@@ -181,6 +181,8 @@ final: prev: with pkgs.haskell.lib; {
 
     ghc-tcplugins-extra = prev.callPackage (./pkgs/ghc-tcplugins-extra.nix) { };
 
+    ghcid = prev.callPackage (./pkgs/ghcid.nix) { };
+
     hackage-security = prev.callPackage (./pkgs/hackage-security.nix) { };
 
     hashable = prev.callPackage (./pkgs/hashable.nix) { };
