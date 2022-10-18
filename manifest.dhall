@@ -201,6 +201,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (None Text)
     , callHackage "hslua-aeson" "2.2.1"
     , callHackage "hspec" "2.10.3"
+    , callHackage "hspec-contrib" "0.5.1.1"
     , callHackage "hspec-core" "2.10.0.1"
     , callHackage "hspec-discover" "2.10.0.1"
     , callHackage "hspec-meta" "2.9.3"

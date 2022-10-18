@@ -213,6 +213,8 @@ final: prev: with pkgs.haskell.lib; {
 
     hspec = prev.callPackage (./pkgs/hspec.nix) { };
 
+    hspec-contrib = prev.callPackage (./pkgs/hspec-contrib.nix) { };
+
     hspec-core = prev.callPackage (./pkgs/hspec-core.nix) { };
 
     hspec-discover = prev.callPackage (./pkgs/hspec-discover.nix) { };
