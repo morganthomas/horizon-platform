@@ -139,6 +139,8 @@ final: prev: with pkgs.haskell.lib; {
 
     foundation = prev.callPackage (./pkgs/foundation.nix) { };
 
+    fsnotify = prev.callPackage (./pkgs/fsnotify.nix) { };
+
     generic-lens-core = prev.callPackage (./pkgs/generic-lens-core.nix) { };
 
     generic-lens-lite = prev.callPackage (./pkgs/generic-lens-lite.nix) { };
