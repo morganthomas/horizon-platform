@@ -501,6 +501,8 @@ final: prev: with pkgs.haskell.lib; {
 
     validity-unordered-containers = prev.callPackage (./pkgs/validity-unordered-containers.nix) { };
 
+    validity-uuid = prev.callPackage (./pkgs/validity-uuid.nix) { };
+
     vault = prev.callPackage (./pkgs/vault.nix) { };
 
     vector = prev.callPackage (./pkgs/vector.nix) { };
