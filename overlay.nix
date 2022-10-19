@@ -165,6 +165,8 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-hspec = prev.callPackage (./pkgs/genvalidity-hspec.nix) { };
 
+    genvalidity-path = prev.callPackage (./pkgs/genvalidity-path.nix) { };
+
     genvalidity-scientific = prev.callPackage (./pkgs/genvalidity-scientific.nix) { };
 
     genvalidity-sydtest-aeson = prev.callPackage (./pkgs/genvalidity-sydtest-aeson.nix) { };
