@@ -491,6 +491,8 @@ final: prev: with pkgs.haskell.lib; {
 
     validity-persistent = prev.callPackage (./pkgs/validity-persistent.nix) { };
 
+    validity-primitive = prev.callPackage (./pkgs/validity-primitive.nix) { };
+
     vault = prev.callPackage (./pkgs/vault.nix) { };
 
     vector = prev.callPackage (./pkgs/vector.nix) { };
