@@ -107,6 +107,8 @@ final: prev: with pkgs.haskell.lib; {
 
     cryptonite = prev.callPackage (./pkgs/cryptonite.nix) { };
 
+    cursor = prev.callPackage (./pkgs/cursor.nix) { };
+
     data-fix = prev.callPackage (./pkgs/data-fix.nix) { };
 
     dec = prev.callPackage (./pkgs/dec.nix) { };
