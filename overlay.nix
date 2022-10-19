@@ -31,6 +31,12 @@ final: prev: with pkgs.haskell.lib; {
 
     async = prev.callPackage (./pkgs/async.nix) { };
 
+    autodocodec = prev.callPackage (./pkgs/autodocodec.nix) { };
+
+    autodocodec-schema = prev.callPackage (./pkgs/autodocodec-schema.nix) { };
+
+    autodocodec-servant-multipart = prev.callPackage (./pkgs/autodocodec-servant-multipart.nix) { };
+
     autodocodec-yaml = prev.callPackage (./pkgs/autodocodec-yaml.nix) { };
 
     base-compat = prev.callPackage (./pkgs/base-compat.nix) { };
@@ -407,7 +413,15 @@ final: prev: with pkgs.haskell.lib; {
 
     servant-multipart-api = prev.callPackage (./pkgs/servant-multipart-api.nix) { };
 
+    servant-polysemy = prev.callPackage (./pkgs/servant-polysemy.nix) { };
+
     servant-server = prev.callPackage (./pkgs/servant-server.nix) { };
+
+    servant-swagger = prev.callPackage (./pkgs/servant-swagger.nix) { };
+
+    servant-swagger-ui = prev.callPackage (./pkgs/servant-swagger-ui.nix) { };
+
+    servant-swagger-ui-core = prev.callPackage (./pkgs/servant-swagger-ui-core.nix) { };
 
     shake = prev.callPackage (./pkgs/shake.nix) { };
 
@@ -430,6 +444,8 @@ final: prev: with pkgs.haskell.lib; {
     string-qq = prev.callPackage (./pkgs/string-qq.nix) { };
 
     stylish-haskell = prev.callPackage (./pkgs/stylish-haskell.nix) { };
+
+    swagger2 = prev.callPackage (./pkgs/swagger2.nix) { };
 
     syb = prev.callPackage (./pkgs/syb.nix) { };
 
@@ -474,6 +490,8 @@ final: prev: with pkgs.haskell.lib; {
     unicode-data = prev.callPackage (./pkgs/unicode-data.nix) { };
 
     unicode-transforms = prev.callPackage (./pkgs/unicode-transforms.nix) { };
+
+    universe-base = prev.callPackage (./pkgs/universe-base.nix) { };
 
     unordered-containers = prev.callPackage (./pkgs/unordered-containers.nix) { };
 

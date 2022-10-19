@@ -1,75 +1,23 @@
-{ mkDerivation
-, async
-, autodocodec
-, autodocodec-yaml
-, base
-, bytestring
-, containers
-, Diff
-, dlist
-, envparse
-, filepath
-, lib
-, MonadRandom
-, mtl
-, optparse-applicative
-, path
-, path-io
-, pretty-show
-, QuickCheck
-, quickcheck-io
-, random
-, random-shuffle
-, safe
-, safe-coloured-text
-, safe-coloured-text-terminfo
-, split
-, stm
-, sydtest-discover
-, text
+{ mkDerivation, async, autodocodec, autodocodec-yaml, base
+, bytestring, containers, Diff, dlist, envparse, filepath, lib
+, MonadRandom, mtl, optparse-applicative, path, path-io
+, pretty-show, QuickCheck, quickcheck-io, random, random-shuffle
+, safe, safe-coloured-text, safe-coloured-text-terminfo, split, stm
+, sydtest-discover, text
 }:
 mkDerivation {
   pname = "sydtest";
-  version = "0.12.0.1";
-  sha256 = "1c7186d0e41145aefcb6eae9727938d757e07ebd8f8287feb19a447567d8565f";
+  version = "0.13.0.0";
+  sha256 = "856583d832d8b9e52a4d0ba6290b70e984ad1663cb300464961800ea8c2f4a57";
   libraryHaskellDepends = [
-    async
-    autodocodec
-    autodocodec-yaml
-    base
-    bytestring
-    containers
-    Diff
-    dlist
-    envparse
-    filepath
-    MonadRandom
-    mtl
-    optparse-applicative
-    path
-    path-io
-    pretty-show
-    QuickCheck
-    quickcheck-io
-    random
-    random-shuffle
-    safe
-    safe-coloured-text
-    safe-coloured-text-terminfo
-    split
-    stm
-    text
+    async autodocodec autodocodec-yaml base bytestring containers Diff
+    dlist envparse filepath MonadRandom mtl optparse-applicative path
+    path-io pretty-show QuickCheck quickcheck-io random random-shuffle
+    safe safe-coloured-text safe-coloured-text-terminfo split stm text
   ];
   testHaskellDepends = [
-    base
-    bytestring
-    path
-    path-io
-    QuickCheck
-    random
-    safe-coloured-text
-    stm
-    text
+    base bytestring path path-io QuickCheck random safe-coloured-text
+    stm text
   ];
   testToolDepends = [ sydtest-discover ];
   doHaddock = false;
