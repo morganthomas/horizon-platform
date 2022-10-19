@@ -477,6 +477,8 @@ final: prev: with pkgs.haskell.lib; {
 
     unordered-containers = prev.callPackage (./pkgs/unordered-containers.nix) { };
 
+    validity = prev.callPackage (./pkgs/validity.nix) { };
+
     vault = prev.callPackage (./pkgs/vault.nix) { };
 
     vector = prev.callPackage (./pkgs/vector.nix) { };
