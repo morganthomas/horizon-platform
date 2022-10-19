@@ -189,6 +189,8 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-unordered-containers = prev.callPackage (./pkgs/genvalidity-unordered-containers.nix) { };
 
+    genvalidity-uuid = prev.callPackage (./pkgs/genvalidity-uuid.nix) { };
+
     genvalidity-vector = prev.callPackage (./pkgs/genvalidity-vector.nix) { };
 
     ghc-byteorder = prev.callPackage (./pkgs/ghc-byteorder.nix) { };
