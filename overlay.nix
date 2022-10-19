@@ -481,6 +481,8 @@ final: prev: with pkgs.haskell.lib; {
 
     validity-aeson = prev.callPackage (./pkgs/validity-aeson.nix) { };
 
+    validity-bytestring = prev.callPackage (./pkgs/validity-bytestring.nix) { };
+
     vault = prev.callPackage (./pkgs/vault.nix) { };
 
     vector = prev.callPackage (./pkgs/vector.nix) { };
