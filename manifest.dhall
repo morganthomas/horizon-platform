@@ -124,6 +124,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/NorfairKing/cursor-dirforest"
         (Some "6ad5b168e26eb4e647df9f007d812aaf59338d40")
         (Some "cursor-dirforest")
+    , callCabal2nix
+        "cursor-dirforest-brick"
+        "https://github.com/NorfairKing/cursor-dirforest"
+        (Some "6ad5b168e26eb4e647df9f007d812aaf59338d40")
+        (Some "cursor-dirforest-brick")
     , callHackage "cryptonite" "0.30"
     , callHackage "cryptohash-sha1" "0.11.101.0"
     , callHackage "data-fix" "0.3.2"
