@@ -181,6 +181,8 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-sydtest-lens = prev.callPackage (./pkgs/genvalidity-sydtest-lens.nix) { };
 
+    genvalidity-sydtest-persistent = prev.callPackage (./pkgs/genvalidity-sydtest-persistent.nix) { };
+
     genvalidity-text = prev.callPackage (./pkgs/genvalidity-text.nix) { };
 
     genvalidity-unordered-containers = prev.callPackage (./pkgs/genvalidity-unordered-containers.nix) { };
