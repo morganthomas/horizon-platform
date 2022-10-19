@@ -151,6 +151,8 @@ final: prev: with pkgs.haskell.lib; {
 
     generics-sop = prev.callPackage (./pkgs/generics-sop.nix) { };
 
+    genvalidity = prev.callPackage (./pkgs/genvalidity.nix) { };
+
     genvalidity-aeson = prev.callPackage (./pkgs/genvalidity-aeson.nix) { };
 
     genvalidity-bytestring = prev.callPackage (./pkgs/genvalidity-bytestring.nix) { };
