@@ -185,6 +185,8 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-text = prev.callPackage (./pkgs/genvalidity-text.nix) { };
 
+    genvalidity-time = prev.callPackage (./pkgs/genvalidity-time.nix) { };
+
     genvalidity-unordered-containers = prev.callPackage (./pkgs/genvalidity-unordered-containers.nix) { };
 
     genvalidity-vector = prev.callPackage (./pkgs/genvalidity-vector.nix) { };
