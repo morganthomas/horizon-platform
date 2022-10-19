@@ -415,6 +415,8 @@ final: prev: with pkgs.haskell.lib; {
 
     servant-server = prev.callPackage (./pkgs/servant-server.nix) { };
 
+    servant-swagger = prev.callPackage (./pkgs/servant-swagger.nix) { };
+
     servant-swagger-ui-core = prev.callPackage (./pkgs/servant-swagger-ui-core.nix) { };
 
     shake = prev.callPackage (./pkgs/shake.nix) { };

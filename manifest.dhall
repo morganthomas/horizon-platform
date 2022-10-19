@@ -327,6 +327,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/TeofilC/servant"
         (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
         (Some "servant-server")
+    , callHackage "servant-swagger" "1.1.11"    
     , callHackage "servant-swagger-ui-core" "0.3.5"
     , callHackage "shake" "0.19.6"
     , callHackage "shelly" "1.10.0"
