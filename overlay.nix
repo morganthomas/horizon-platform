@@ -445,6 +445,8 @@ final: prev: with pkgs.haskell.lib; {
 
     stylish-haskell = prev.callPackage (./pkgs/stylish-haskell.nix) { };
 
+    swagger2 = prev.callPackage (./pkgs/swagger2.nix) { };
+
     syb = prev.callPackage (./pkgs/syb.nix) { };
 
     sydtest = prev.callPackage (./pkgs/sydtest.nix) { };
