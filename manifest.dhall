@@ -336,7 +336,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "string-qq" "0.0.4"
     , callHackage "stylish-haskell" "0.14.2.0"
     , callHackage "syb" "0.7.2.1"
-    , callHackage "sydtest" "0.12.0.1"
+    , callHackage "sydtest" "0.13.0.0"
     , callHackage "sydtest-discover" "0.0.0.2"
     , callCabal2nix
         "tasty"
