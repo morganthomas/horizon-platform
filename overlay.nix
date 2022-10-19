@@ -173,6 +173,8 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-scientific = prev.callPackage (./pkgs/genvalidity-scientific.nix) { };
 
+    genvalidity-sydtest = prev.callPackage (./pkgs/genvalidity-sydtest.nix) { };
+
     genvalidity-sydtest-aeson = prev.callPackage (./pkgs/genvalidity-sydtest-aeson.nix) { };
 
     genvalidity-text = prev.callPackage (./pkgs/genvalidity-text.nix) { };
