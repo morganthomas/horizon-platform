@@ -273,6 +273,8 @@ final: prev: with pkgs.haskell.lib; {
 
     memory = prev.callPackage (./pkgs/memory.nix) { };
 
+    microstache = prev.callPackage (./pkgs/microstache.nix) { };
+
     monad-par = prev.callPackage (./pkgs/monad-par.nix) { };
 
     monoid-subclasses = prev.callPackage (./pkgs/monoid-subclasses.nix) { };
