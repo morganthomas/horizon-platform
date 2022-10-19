@@ -495,6 +495,8 @@ final: prev: with pkgs.haskell.lib; {
 
     validity-scientific = prev.callPackage (./pkgs/validity-scientific.nix) { };
 
+    validity-text = prev.callPackage (./pkgs/validity-text.nix) { };
+
     vault = prev.callPackage (./pkgs/vault.nix) { };
 
     vector = prev.callPackage (./pkgs/vector.nix) { };
