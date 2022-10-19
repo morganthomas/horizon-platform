@@ -161,6 +161,8 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-containers = prev.callPackage (./pkgs/genvalidity-containers.nix) { };
 
+    genvalidity-criterion = prev.callPackage (./pkgs/genvalidity-criterion.nix) { };
+
     genvalidity-hspec = prev.callPackage (./pkgs/genvalidity-hspec.nix) { };
 
     genvalidity-scientific = prev.callPackage (./pkgs/genvalidity-scientific.nix) { };
