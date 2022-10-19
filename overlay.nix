@@ -485,6 +485,8 @@ final: prev: with pkgs.haskell.lib; {
 
     validity-case-insensitive = prev.callPackage (./pkgs/validity-case-insensitive.nix) { };
 
+    validity-containers = prev.callPackage (./pkgs/validity-containers.nix) { };
+
     vault = prev.callPackage (./pkgs/vault.nix) { };
 
     vector = prev.callPackage (./pkgs/vector.nix) { };
