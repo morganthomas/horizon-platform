@@ -109,6 +109,8 @@ final: prev: with pkgs.haskell.lib; {
 
     cursor = prev.callPackage (./pkgs/cursor.nix) { };
 
+    cursor-dirforest = prev.callPackage (./pkgs/cursor-dirforest.nix) { };
+
     data-fix = prev.callPackage (./pkgs/data-fix.nix) { };
 
     dec = prev.callPackage (./pkgs/dec.nix) { };

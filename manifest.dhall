@@ -119,6 +119,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "config-ini" "0.2.5.0"
     , callHackage "constraints" "0.13.4"
     , callHackage "cursor" "0.3.2.0"
+    , callCabal2nix
+        "cursor-dirforest"
+        "https://github.com/NorfairKing/cursor-dirforest"
+        (Some "6ad5b168e26eb4e647df9f007d812aaf59338d40")
+        (Some "cursor-dirforest")
     , callHackage "cryptonite" "0.30"
     , callHackage "cryptohash-sha1" "0.11.101.0"
     , callHackage "data-fix" "0.3.2"
