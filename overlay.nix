@@ -31,6 +31,8 @@ final: prev: with pkgs.haskell.lib; {
 
     async = prev.callPackage (./pkgs/async.nix) { };
 
+    autodocodec = prev.callPackage (./pkgs/autodocodec.nix) { };
+
     autodocodec-yaml = prev.callPackage (./pkgs/autodocodec-yaml.nix) { };
 
     base-compat = prev.callPackage (./pkgs/base-compat.nix) { };
