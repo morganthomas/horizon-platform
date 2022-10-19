@@ -305,6 +305,8 @@ final: prev: with pkgs.haskell.lib; {
 
     pcg-random = prev.callPackage (./pkgs/pcg-random.nix) { };
 
+    persistent = prev.callPackage (./pkgs/persistent.nix) { };
+
     polysemy = prev.callPackage (./pkgs/polysemy.nix) { };
 
     polysemy-extra = prev.callPackage (./pkgs/polysemy-extra.nix) { };
