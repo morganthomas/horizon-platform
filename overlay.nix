@@ -481,6 +481,8 @@ final: prev: with pkgs.haskell.lib; {
 
     unicode-transforms = prev.callPackage (./pkgs/unicode-transforms.nix) { };
 
+    universe-base = prev.callPackage (./pkgs/universe-base.nix) { };
+
     unordered-containers = prev.callPackage (./pkgs/unordered-containers.nix) { };
 
     validity = prev.callPackage (./pkgs/validity.nix) { };
