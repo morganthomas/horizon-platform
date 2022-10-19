@@ -322,6 +322,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "servant-lucid" "0.9.0.5"
     , callHackage "servant-multipart" "0.12.1"
     , callHackage "servant-multipart-api" "0.12.1"
+    , callHackage "servant-polysemy" "0.1.3"
     , callCabal2nix
         "servant-server"
         "https://github.com/TeofilC/servant"

@@ -413,6 +413,8 @@ final: prev: with pkgs.haskell.lib; {
 
     servant-multipart-api = prev.callPackage (./pkgs/servant-multipart-api.nix) { };
 
+    servant-polysemy = prev.callPackage (./pkgs/servant-polysemy.nix) { };
+
     servant-server = prev.callPackage (./pkgs/servant-server.nix) { };
 
     servant-swagger = prev.callPackage (./pkgs/servant-swagger.nix) { };
