@@ -159,6 +159,8 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-case-insensitive = prev.callPackage (./pkgs/genvalidity-case-insensitive.nix) { };
 
+    genvalidity-containers = prev.callPackage (./pkgs/genvalidity-containers.nix) { };
+
     genvalidity-hspec = prev.callPackage (./pkgs/genvalidity-hspec.nix) { };
 
     genvalidity-scientific = prev.callPackage (./pkgs/genvalidity-scientific.nix) { };
