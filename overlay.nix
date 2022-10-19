@@ -33,6 +33,8 @@ final: prev: with pkgs.haskell.lib; {
 
     autodocodec = prev.callPackage (./pkgs/autodocodec.nix) { };
 
+    autodocodec-schema = prev.callPackage (./pkgs/autodocodec-schema.nix) { };
+
     autodocodec-yaml = prev.callPackage (./pkgs/autodocodec-yaml.nix) { };
 
     base-compat = prev.callPackage (./pkgs/base-compat.nix) { };
