@@ -503,6 +503,8 @@ final: prev: with pkgs.haskell.lib; {
 
     validity-uuid = prev.callPackage (./pkgs/validity-uuid.nix) { };
 
+    validity-vector = prev.callPackage (./pkgs/validity-vector.nix) { };
+
     vault = prev.callPackage (./pkgs/vault.nix) { };
 
     vector = prev.callPackage (./pkgs/vector.nix) { };
