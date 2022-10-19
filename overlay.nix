@@ -177,6 +177,8 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-sydtest-aeson = prev.callPackage (./pkgs/genvalidity-sydtest-aeson.nix) { };
 
+    genvalidity-sydtest-hashable = prev.callPackage (./pkgs/genvalidity-sydtest-hashable.nix) { };
+
     genvalidity-text = prev.callPackage (./pkgs/genvalidity-text.nix) { };
 
     genvalidity-unordered-containers = prev.callPackage (./pkgs/genvalidity-unordered-containers.nix) { };
