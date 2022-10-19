@@ -151,19 +151,45 @@ final: prev: with pkgs.haskell.lib; {
 
     generics-sop = prev.callPackage (./pkgs/generics-sop.nix) { };
 
+    genvalidity = prev.callPackage (./pkgs/genvalidity.nix) { };
+
     genvalidity-aeson = prev.callPackage (./pkgs/genvalidity-aeson.nix) { };
 
     genvalidity-bytestring = prev.callPackage (./pkgs/genvalidity-bytestring.nix) { };
 
+    genvalidity-case-insensitive = prev.callPackage (./pkgs/genvalidity-case-insensitive.nix) { };
+
+    genvalidity-containers = prev.callPackage (./pkgs/genvalidity-containers.nix) { };
+
+    genvalidity-criterion = prev.callPackage (./pkgs/genvalidity-criterion.nix) { };
+
     genvalidity-hspec = prev.callPackage (./pkgs/genvalidity-hspec.nix) { };
+
+    genvalidity-path = prev.callPackage (./pkgs/genvalidity-path.nix) { };
+
+    genvalidity-persistent = prev.callPackage (./pkgs/genvalidity-persistent.nix) { };
+
+    genvalidity-property = prev.callPackage (./pkgs/genvalidity-property.nix) { };
 
     genvalidity-scientific = prev.callPackage (./pkgs/genvalidity-scientific.nix) { };
 
+    genvalidity-sydtest = prev.callPackage (./pkgs/genvalidity-sydtest.nix) { };
+
     genvalidity-sydtest-aeson = prev.callPackage (./pkgs/genvalidity-sydtest-aeson.nix) { };
+
+    genvalidity-sydtest-hashable = prev.callPackage (./pkgs/genvalidity-sydtest-hashable.nix) { };
+
+    genvalidity-sydtest-lens = prev.callPackage (./pkgs/genvalidity-sydtest-lens.nix) { };
+
+    genvalidity-sydtest-persistent = prev.callPackage (./pkgs/genvalidity-sydtest-persistent.nix) { };
 
     genvalidity-text = prev.callPackage (./pkgs/genvalidity-text.nix) { };
 
+    genvalidity-time = prev.callPackage (./pkgs/genvalidity-time.nix) { };
+
     genvalidity-unordered-containers = prev.callPackage (./pkgs/genvalidity-unordered-containers.nix) { };
+
+    genvalidity-uuid = prev.callPackage (./pkgs/genvalidity-uuid.nix) { };
 
     genvalidity-vector = prev.callPackage (./pkgs/genvalidity-vector.nix) { };
 
@@ -267,6 +293,8 @@ final: prev: with pkgs.haskell.lib; {
 
     memory = prev.callPackage (./pkgs/memory.nix) { };
 
+    microstache = prev.callPackage (./pkgs/microstache.nix) { };
+
     monad-par = prev.callPackage (./pkgs/monad-par.nix) { };
 
     monoid-subclasses = prev.callPackage (./pkgs/monoid-subclasses.nix) { };
@@ -292,6 +320,8 @@ final: prev: with pkgs.haskell.lib; {
     parallel = prev.callPackage (./pkgs/parallel.nix) { };
 
     pcg-random = prev.callPackage (./pkgs/pcg-random.nix) { };
+
+    persistent = prev.callPackage (./pkgs/persistent.nix) { };
 
     polysemy = prev.callPackage (./pkgs/polysemy.nix) { };
 
@@ -446,6 +476,34 @@ final: prev: with pkgs.haskell.lib; {
     unicode-transforms = prev.callPackage (./pkgs/unicode-transforms.nix) { };
 
     unordered-containers = prev.callPackage (./pkgs/unordered-containers.nix) { };
+
+    validity = prev.callPackage (./pkgs/validity.nix) { };
+
+    validity-aeson = prev.callPackage (./pkgs/validity-aeson.nix) { };
+
+    validity-bytestring = prev.callPackage (./pkgs/validity-bytestring.nix) { };
+
+    validity-case-insensitive = prev.callPackage (./pkgs/validity-case-insensitive.nix) { };
+
+    validity-containers = prev.callPackage (./pkgs/validity-containers.nix) { };
+
+    validity-path = prev.callPackage (./pkgs/validity-path.nix) { };
+
+    validity-persistent = prev.callPackage (./pkgs/validity-persistent.nix) { };
+
+    validity-primitive = prev.callPackage (./pkgs/validity-primitive.nix) { };
+
+    validity-scientific = prev.callPackage (./pkgs/validity-scientific.nix) { };
+
+    validity-text = prev.callPackage (./pkgs/validity-text.nix) { };
+
+    validity-time = prev.callPackage (./pkgs/validity-time.nix) { };
+
+    validity-unordered-containers = prev.callPackage (./pkgs/validity-unordered-containers.nix) { };
+
+    validity-uuid = prev.callPackage (./pkgs/validity-uuid.nix) { };
+
+    validity-vector = prev.callPackage (./pkgs/validity-vector.nix) { };
 
     vault = prev.callPackage (./pkgs/vault.nix) { };
 
