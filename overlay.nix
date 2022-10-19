@@ -157,6 +157,8 @@ final: prev: with pkgs.haskell.lib; {
 
     fsnotify = prev.callPackage (./pkgs/fsnotify.nix) { };
 
+    fuzzy-time = prev.callPackage (./pkgs/fuzzy-time.nix) { };
+
     generic-lens-core = prev.callPackage (./pkgs/generic-lens-core.nix) { };
 
     generic-lens-lite = prev.callPackage (./pkgs/generic-lens-lite.nix) { };
