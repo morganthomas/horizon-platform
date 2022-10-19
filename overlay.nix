@@ -113,6 +113,8 @@ final: prev: with pkgs.haskell.lib; {
 
     cursor-dirforest-brick = prev.callPackage (./pkgs/cursor-dirforest-brick.nix) { };
 
+    cursor-dirforest-gen = prev.callPackage (./pkgs/cursor-dirforest-gen.nix) { };
+
     data-fix = prev.callPackage (./pkgs/data-fix.nix) { };
 
     dec = prev.callPackage (./pkgs/dec.nix) { };
