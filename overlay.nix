@@ -177,6 +177,8 @@ final: prev: with pkgs.haskell.lib; {
 
     genvalidity-criterion = prev.callPackage (./pkgs/genvalidity-criterion.nix) { };
 
+    genvalidity-dirforest = prev.callPackage (./pkgs/genvalidity-dirforest.nix) { };
+
     genvalidity-hspec = prev.callPackage (./pkgs/genvalidity-hspec.nix) { };
 
     genvalidity-path = prev.callPackage (./pkgs/genvalidity-path.nix) { };

@@ -183,6 +183,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "genvalidity-case-insensitive" "0.0.0.1"
     , callHackage "genvalidity-containers" "1.0.0.1"
     , callHackage "genvalidity-criterion" "1.1.0.0"
+    , callCabal2nix
+        "genvalidity-dirforest"
+        "https://github.com/NorfairKing/dirforest"
+        (Some "69e8ae036b047fae105c1fe990e175a7572a3eba")
+        (Some "genvalidity-dirforest")
     , callHackage "genvalidity-hspec" "1.0.0.2"
     , callHackage "genvalidity-path" "1.0.0.1"
     , callHackage "genvalidity-persistent" "1.0.0.1"
