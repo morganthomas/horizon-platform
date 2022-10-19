@@ -117,6 +117,8 @@ final: prev: with pkgs.haskell.lib; {
 
     dimensional = prev.callPackage (./pkgs/dimensional.nix) { };
 
+    dirforest = prev.callPackage (./pkgs/dirforest.nix) { };
+
     distribution-nixpkgs = prev.callPackage (./pkgs/distribution-nixpkgs.nix) { };
 
     doctest = prev.callPackage (./pkgs/doctest.nix) { };

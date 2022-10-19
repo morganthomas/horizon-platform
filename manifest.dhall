@@ -125,6 +125,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "dec" "0.0.5"
     , callHackage "dhall" "1.41.2"
     , callHackage "dimensional" "1.5"
+    , callCabal2nix
+        "dirforest"
+        "https://github.com/NorfairKing/dirforest"
+        (Some "69e8ae036b047fae105c1fe990e175a7572a3eba")
+        (Some "dirforest")
     , callHackage "distribution-nixpkgs" "1.7.0"
     , callCabal2nix
         "doctest"
