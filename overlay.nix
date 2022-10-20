@@ -79,6 +79,8 @@ final: prev: with pkgs.haskell.lib; {
 
     co-log-core = prev.callPackage (./pkgs/co-log-core.nix) { };
 
+    co-log-polysemy = prev.callPackage (./pkgs/co-log-polysemy.nix) { };
+
     comonad = prev.callPackage (./pkgs/comonad.nix) { };
 
     compact = prev.callPackage (./pkgs/compact.nix) { };

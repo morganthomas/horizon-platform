@@ -1,0 +1,18 @@
+{ mkDerivation, base, co-log-core, lib, polysemy }:
+mkDerivation {
+  pname = "co-log-polysemy";
+  version = "0.0.1.3";
+  sha256 = "775989212f33126b035e1f26e836fc197c042d08811dca7ddf25b56fbdf3d7b0";
+  isLibrary = true;
+  isExecutable = true;
+  libraryHaskellDepends = [ base co-log-core polysemy ];
+  executableHaskellDepends = [ base co-log-core polysemy ];
+  doHaddock = false;
+  jailbreak = true;
+  doCheck = false;
+  hyperlinkSource = false;
+  homepage = "https://github.com/co-log/co-log-polysemy";
+  description = "Composable Contravariant Comonadic Logging Library";
+  license = lib.licenses.mpl20;
+  mainProgram = "play-colog-poly";
+}
