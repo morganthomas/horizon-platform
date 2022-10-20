@@ -404,6 +404,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "type-errors-pretty" "0.0.1.2"
     , callHackage "type-errors" "0.2.0.0"
     , callHackage "type-equality" "1"
+    , callCabal2nix
+        "typerep-map"
+        "https://github.com/parsonsmatt/typerep-map"
+        (Some "75b7cd5d45986be07420a6821d352ad2adc0b697")
+        (None Text)
     , callHackage "unicode-collation" "0.1.3.2"
     , callHackage "unicode-data" "0.4.0"
     , callHackage "unicode-transforms" "0.4.0.1"
