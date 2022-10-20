@@ -229,6 +229,8 @@ final: prev: with pkgs.haskell.lib; {
 
     ghc-tcplugins-extra = prev.callPackage (./pkgs/ghc-tcplugins-extra.nix) { };
 
+    ghc-typelits-knownnat = prev.callPackage (./pkgs/ghc-typelits-knownnat.nix) { };
+
     ghc-typelits-natnormalise = prev.callPackage (./pkgs/ghc-typelits-natnormalise.nix) { };
 
     ghcid = prev.callPackage (./pkgs/ghcid.nix) { };
