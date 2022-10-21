@@ -454,6 +454,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "vector-algorithms" "0.9.0.1"
     , callHackage "vinyl" "0.14.3"
     , callHackage "vty" "5.37"
+    , callCabal2nix
+        "wai-middleware-heartbeat"
+        "https://github.com/flora-pm/wai-middleware-heartbeat"
+        (Some "bd7dbbe83d25c00fcd2cf5c77736af904910c596")
+        (None Text)
     , callHackage "wai-middleware-static" "0.9.2"
     , callHackage "warp" "3.3.22"
     , callHackage "warp-tls" "3.3.3"
