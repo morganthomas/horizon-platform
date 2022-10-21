@@ -467,6 +467,8 @@ final: prev: with pkgs.haskell.lib; {
 
     sop-core = prev.callPackage (./pkgs/sop-core.nix) { };
 
+    souffle-haskell = prev.callPackage (./pkgs/souffle-haskell.nix) { };
+
     split = prev.callPackage (./pkgs/split.nix) { };
 
     streaming-commons = prev.callPackage (./pkgs/streaming-commons.nix) { };
