@@ -287,6 +287,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "network-byte-order" "0.1.6"
     , callHackage "newtype-generics" "0.6.2"
     , callHackage "nothunks" "0.1.3"
+    , callCabal2nix
+        "odd-jobs"
+        "https://github.com/saurabhnanda/odd-jobs"
+        (Some "f6c7bbbcdb383d2eb487ad7fe427ec05a747c14f")
+        (None Text)
     , callHackage "optics-core" "0.4.1"
     , callHackage "optics-extra" "0.4.2.1"
     , callHackage "optics-th" "0.4.1"

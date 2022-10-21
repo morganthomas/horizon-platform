@@ -337,6 +337,8 @@ final: prev: with pkgs.haskell.lib; {
 
     nothunks = prev.callPackage (./pkgs/nothunks.nix) { };
 
+    odd-jobs = prev.callPackage (./pkgs/odd-jobs.nix) { };
+
     optics = prev.callPackage (./pkgs/optics.nix) { };
 
     optics-core = prev.callPackage (./pkgs/optics-core.nix) { };
