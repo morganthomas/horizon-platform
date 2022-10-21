@@ -21,6 +21,8 @@ final: prev: with pkgs.haskell.lib; {
 
     OpenGLRaw = prev.callPackage (./pkgs/OpenGLRaw.nix) { };
 
+    PyF = prev.callPackage (./pkgs/PyF.nix) { };
+
     aeson = prev.callPackage (./pkgs/aeson.nix) { };
 
     ansi-terminal = prev.callPackage (./pkgs/ansi-terminal.nix) { };
