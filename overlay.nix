@@ -431,6 +431,8 @@ final: prev: with pkgs.haskell.lib; {
 
     servant-client-core = prev.callPackage (./pkgs/servant-client-core.nix) { };
 
+    servant-effectful = prev.callPackage (./pkgs/servant-effectful.nix) { };
+
     servant-foreign = prev.callPackage (./pkgs/servant-foreign.nix) { };
 
     servant-lucid = prev.callPackage (./pkgs/servant-lucid.nix) { };

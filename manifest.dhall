@@ -355,6 +355,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
         (Some "servant-client")
     , callCabal2nix
+        "servant-effectful"
+        "https://github.com/kleidukos/servant-effectful"
+        (Some "65e3041c6cfbc315b20ad22ca18f61dda104eec8")
+        (None Text)
+    , callCabal2nix
         "servant-foreign"
         "https://github.com/TeofilC/servant"
         (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
