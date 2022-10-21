@@ -270,6 +270,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "lens-family-th" "0.5.2.1"
     , callHackage "lifted-async" "0.10.2.1"
     , callHackage "linear" "1.21.10"
+    , callCabal2nix
+        "log-effectful"
+        "https://github.com/haskell-effectful/log-effectful/"
+        (Some "910c79e10d5ac3353f2a1551103a2b63229c3f57")
+        (None Text)
     , callHackage "lsp-types" "1.6.0.0"
     , callHackage "lsp" "1.6.0.0"
     , callHackage "lucid" "2.11.1"
