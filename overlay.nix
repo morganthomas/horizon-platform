@@ -507,6 +507,8 @@ final: prev: with pkgs.haskell.lib; {
 
     time-compat = prev.callPackage (./pkgs/time-compat.nix) { };
 
+    time-effectful = prev.callPackage (./pkgs/time-effectful.nix) { };
+
     type-equality = prev.callPackage (./pkgs/type-equality.nix) { };
 
     type-errors = prev.callPackage (./pkgs/type-errors.nix) { };
