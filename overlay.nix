@@ -351,6 +351,8 @@ final: prev: with pkgs.haskell.lib; {
 
     persistent = prev.callPackage (./pkgs/persistent.nix) { };
 
+    pg-transact = prev.callPackage (./pkgs/pg-transact.nix) { };
+
     polysemy = prev.callPackage (./pkgs/polysemy.nix) { };
 
     polysemy-extra = prev.callPackage (./pkgs/polysemy-extra.nix) { };
