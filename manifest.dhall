@@ -293,6 +293,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "pandoc" "2.19.2"
     , callHackage "parallel" "3.2.2.0"
     , callHackage "pcg-random" "0.1.3.7"
+    , callHackage "pcre2" "2.2.1"
     , callHackage "persistent" "2.14.3.0"
     , callHackage "pg-transact" "0.3.2.0"
     , callCabal2nix

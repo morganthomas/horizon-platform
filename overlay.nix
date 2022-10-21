@@ -349,6 +349,8 @@ final: prev: with pkgs.haskell.lib; {
 
     pcg-random = prev.callPackage (./pkgs/pcg-random.nix) { };
 
+    pcre2 = prev.callPackage (./pkgs/pcre2.nix) { };
+
     persistent = prev.callPackage (./pkgs/persistent.nix) { };
 
     pg-transact = prev.callPackage (./pkgs/pg-transact.nix) { };
