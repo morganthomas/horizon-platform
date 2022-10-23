@@ -371,6 +371,8 @@ final: prev: with pkgs.haskell.lib; {
 
     persistent = prev.callPackage (./pkgs/persistent.nix) { };
 
+    pg-entity = prev.callPackage (./pkgs/pg-entity.nix) { };
+
     pg-transact = prev.callPackage (./pkgs/pg-transact.nix) { };
 
     pg-transact-effectful = prev.callPackage (./pkgs/pg-transact-effectful.nix) { };
