@@ -241,6 +241,8 @@ final: prev: with pkgs.haskell.lib; {
 
     hackage-security = prev.callPackage (./pkgs/hackage-security.nix) { };
 
+    haddock-library = prev.callPackage (./pkgs/haddock-library.nix) { };
+
     hashable = prev.callPackage (./pkgs/hashable.nix) { };
 
     hashing = prev.callPackage (./pkgs/hashing.nix) { };
