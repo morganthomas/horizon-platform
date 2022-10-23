@@ -395,6 +395,8 @@ final: prev: with pkgs.haskell.lib; {
 
     primitive = prev.callPackage (./pkgs/primitive.nix) { };
 
+    prometheus-proc = prev.callPackage (./pkgs/prometheus-proc.nix) { };
+
     proteaaudio-sdl = prev.callPackage (./pkgs/proteaaudio-sdl.nix) { };
 
     quickcheck-dynamic = prev.callPackage (./pkgs/quickcheck-dynamic.nix) { };
