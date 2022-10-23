@@ -395,6 +395,8 @@ final: prev: with pkgs.haskell.lib; {
 
     postgresql-simple = prev.callPackage (./pkgs/postgresql-simple.nix) { };
 
+    postgresql-simple-migration = prev.callPackage (./pkgs/postgresql-simple-migration.nix) { };
+
     pretty-simple = prev.callPackage (./pkgs/pretty-simple.nix) { };
 
     prettyprinter-ansi-terminal = prev.callPackage (./pkgs/prettyprinter-ansi-terminal.nix) { };
