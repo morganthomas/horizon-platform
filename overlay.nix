@@ -333,6 +333,8 @@ final: prev: with pkgs.haskell.lib; {
 
     microstache = prev.callPackage (./pkgs/microstache.nix) { };
 
+    monad-control = prev.callPackage (./pkgs/monad-control.nix) { };
+
     monad-par = prev.callPackage (./pkgs/monad-par.nix) { };
 
     monoid-subclasses = prev.callPackage (./pkgs/monoid-subclasses.nix) { };
