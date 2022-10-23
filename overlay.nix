@@ -469,6 +469,8 @@ final: prev: with pkgs.haskell.lib; {
 
     singletons = prev.callPackage (./pkgs/singletons.nix) { };
 
+    slugify = prev.callPackage (./pkgs/slugify.nix) { };
+
     some = prev.callPackage (./pkgs/some.nix) { };
 
     sop-core = prev.callPackage (./pkgs/sop-core.nix) { };
