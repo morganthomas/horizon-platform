@@ -425,6 +425,8 @@ final: prev: with pkgs.haskell.lib; {
 
     rerebase = prev.callPackage (./pkgs/rerebase.nix) { };
 
+    resource-pool = prev.callPackage (./pkgs/resource-pool.nix) { };
+
     retry = prev.callPackage (./pkgs/retry.nix) { };
 
     rope-utf16-splay = prev.callPackage (./pkgs/rope-utf16-splay.nix) { };
