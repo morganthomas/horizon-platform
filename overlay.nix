@@ -323,6 +323,8 @@ final: prev: with pkgs.haskell.lib; {
 
     lucid-alpine = prev.callPackage (./pkgs/lucid-alpine.nix) { };
 
+    lucid-svg = prev.callPackage (./pkgs/lucid-svg.nix) { };
+
     memory = prev.callPackage (./pkgs/memory.nix) { };
 
     microstache = prev.callPackage (./pkgs/microstache.nix) { };
