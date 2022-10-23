@@ -393,6 +393,8 @@ final: prev: with pkgs.haskell.lib; {
 
     postgresql-libpq = prev.callPackage (./pkgs/postgresql-libpq.nix) { };
 
+    postgresql-migration = prev.callPackage (./pkgs/postgresql-migration.nix) { };
+
     postgresql-simple = prev.callPackage (./pkgs/postgresql-simple.nix) { };
 
     postgresql-simple-migration = prev.callPackage (./pkgs/postgresql-simple-migration.nix) { };
