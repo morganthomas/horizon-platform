@@ -167,6 +167,8 @@ final: prev: with pkgs.haskell.lib; {
 
     generic-lens-lite = prev.callPackage (./pkgs/generic-lens-lite.nix) { };
 
+    generic-monoid = prev.callPackage (./pkgs/generic-monoid.nix) { };
+
     generic-optics = prev.callPackage (./pkgs/generic-optics.nix) { };
 
     generic-optics-lite = prev.callPackage (./pkgs/generic-optics-lite.nix) { };
