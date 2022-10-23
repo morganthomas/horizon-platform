@@ -359,6 +359,8 @@ final: prev: with pkgs.haskell.lib; {
 
     parallel = prev.callPackage (./pkgs/parallel.nix) { };
 
+    password = prev.callPackage (./pkgs/password.nix) { };
+
     password-types = prev.callPackage (./pkgs/password-types.nix) { };
 
     pcg-random = prev.callPackage (./pkgs/pcg-random.nix) { };
