@@ -142,6 +142,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "data-fix" "0.3.2"
     , callHackage "dec" "0.0.5"
     , callHackage "dhall" "1.41.2"
+    , callHackage "dhall-json" "1.7.11"
     , callHackage "dimensional" "1.5"
     , callCabal2nix
         "dirforest"

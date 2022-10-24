@@ -127,6 +127,8 @@ final: prev: with pkgs.haskell.lib; {
 
     dhall = prev.callPackage (./pkgs/dhall.nix) { };
 
+    dhall-json = prev.callPackage (./pkgs/dhall-json.nix) { };
+
     dimensional = prev.callPackage (./pkgs/dimensional.nix) { };
 
     dirforest = prev.callPackage (./pkgs/dirforest.nix) { };
