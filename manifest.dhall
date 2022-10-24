@@ -247,6 +247,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "005568ee024eabee129d9cf4ca331c6da260610b")
         (None Text)
     , callHackage "hpack" "0.35.0"
+    , callHackage "hpack-dhall" "0.5.7"
     , callCabal2nix
         "horizon-gen-nix"
         "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"

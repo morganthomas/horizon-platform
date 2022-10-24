@@ -275,6 +275,8 @@ final: prev: with pkgs.haskell.lib; {
 
     hpack = prev.callPackage (./pkgs/hpack.nix) { };
 
+    hpack-dhall = prev.callPackage (./pkgs/hpack-dhall.nix) { };
+
     hslua-aeson = prev.callPackage (./pkgs/hslua-aeson.nix) { };
 
     hspec = prev.callPackage (./pkgs/hspec.nix) { };
