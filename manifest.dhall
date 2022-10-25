@@ -277,6 +277,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "3502825423aea3a1af9384e9d751feea4599c60b")
         (Some "kvstore-effectful")
     , callCabal2nix
+        "kvstore-effectful-cache"
+        "https://github.com/haskell-effectful/kvstore-effectful"
+        (Some "3502825423aea3a1af9384e9d751feea4599c60b")
+        (Some "kvstore-effectful-cache")
+    , callCabal2nix
         "kvstore-effectful-spec"
         "https://github.com/haskell-effectful/kvstore-effectful"
         (Some "3502825423aea3a1af9384e9d751feea4599c60b")

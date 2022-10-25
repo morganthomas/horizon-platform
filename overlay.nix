@@ -315,6 +315,8 @@ final: prev: with pkgs.haskell.lib; {
 
     kvstore-effectful = prev.callPackage (./pkgs/kvstore-effectful.nix) { };
 
+    kvstore-effectful-cache = prev.callPackage (./pkgs/kvstore-effectful-cache.nix) { };
+
     kvstore-effectful-spec = prev.callPackage (./pkgs/kvstore-effectful-spec.nix) { };
 
     kvstore-effectful-statemap = prev.callPackage (./pkgs/kvstore-effectful-statemap.nix) { };
