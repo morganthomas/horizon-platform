@@ -317,6 +317,8 @@ final: prev: with pkgs.haskell.lib; {
 
     kvstore-effectful-spec = prev.callPackage (./pkgs/kvstore-effectful-spec.nix) { };
 
+    kvstore-effectful-statemap = prev.callPackage (./pkgs/kvstore-effectful-statemap.nix) { };
+
     lens = prev.callPackage (./pkgs/lens.nix) { };
 
     lens-aeson = prev.callPackage (./pkgs/lens-aeson.nix) { };
