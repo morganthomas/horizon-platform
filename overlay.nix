@@ -313,6 +313,8 @@ final: prev: with pkgs.haskell.lib; {
 
     iproute = prev.callPackage (./pkgs/iproute.nix) { };
 
+    kvstore-effectful = prev.callPackage (./pkgs/kvstore-effectful.nix) { };
+
     lens = prev.callPackage (./pkgs/lens.nix) { };
 
     lens-aeson = prev.callPackage (./pkgs/lens-aeson.nix) { };
