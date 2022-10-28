@@ -29,10 +29,7 @@
       in
       {
         apps = {
-          horizon-gen-nix = {
-            type = "app";
-            program = "${horizon-gen-nix-app.outputs.packages.${system}.default}/bin/horizon-gen-nix";
-          };
+          horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.default;
           horizon-gen-gitlab-ci = {
             type = "app";
             program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
