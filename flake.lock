@@ -104,6 +104,21 @@
         "type": "github"
       }
     },
+    "get-flake": {
+      "locked": {
+        "lastModified": 1644686428,
+        "narHash": "sha256-zkhYsURWFrvEZLkIoBeqFBzSu+cA2u5mo6M8vq9LN7M=",
+        "owner": "ursi",
+        "repo": "get-flake",
+        "rev": "703f15558daa56dfae19d1858bb3046afe68831a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ursi",
+        "repo": "get-flake",
+        "type": "github"
+      }
+    },
     "horizon-gen-nix": {
       "inputs": {
         "cabal2nix": "cabal2nix",
@@ -289,6 +304,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "get-flake": "get-flake",
         "horizon-gen-nix": "horizon-gen-nix",
         "lint-utils": "lint-utils_3",
         "nixpkgs": "nixpkgs_5"
