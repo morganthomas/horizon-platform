@@ -1,9 +1,10 @@
 {
   inputs = {
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
+    horizon-gen-nix.url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
-  outputs = inputs@{ self, nixpkgs, flake-utils, lint-utils, ... }:
+  outputs = inputs@{ self, nixpkgs, flake-utils, horizon-gen-nix, lint-utils, ... }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
         pkgs = import nixpkgs { inherit system; };
@@ -25,7 +26,7 @@
         apps = {
           horizon-gen-nix = {
             type = "app";
-            program = "${hp.horizon-gen-nix}/bin/horizon-gen-nix";
+            program = "${horizon-gen-nix.outputs.packages.x86_64-linux.default}/bin/horizon-gen-nix";
           };
           horizon-gen-gitlab-ci = {
             type = "app";
