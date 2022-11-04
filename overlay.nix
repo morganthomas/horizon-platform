@@ -25,6 +25,8 @@ final: prev: with pkgs.haskell.lib; {
 
     aeson = prev.callPackage (./pkgs/aeson.nix) { };
 
+    aeson-pretty = prev.callPackage (./pkgs/aeson-pretty.nix) { };
+
     aeson-yaml = prev.callPackage (./pkgs/aeson-yaml.nix) { };
 
     ansi-terminal = prev.callPackage (./pkgs/ansi-terminal.nix) { };
