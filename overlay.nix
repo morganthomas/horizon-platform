@@ -563,6 +563,8 @@ final: prev: with pkgs.haskell.lib; {
 
   text-zipper = prev.callPackage (./pkgs/text-zipper.nix) { };
 
+  tf-random = prev.callPackage (./pkgs/tf-random.nix) { };
+
   th-extras = prev.callPackage (./pkgs/th-extras.nix) { };
 
   th-lift-instances = prev.callPackage (./pkgs/th-lift-instances.nix) { };
