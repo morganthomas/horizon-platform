@@ -525,8 +525,6 @@ final: prev: with pkgs.haskell.lib; {
 
     string-qq = prev.callPackage (./pkgs/string-qq.nix) { };
 
-    stylish-haskell = prev.callPackage (./pkgs/stylish-haskell.nix) { };
-
     swagger2 = prev.callPackage (./pkgs/swagger2.nix) { };
 
     syb = prev.callPackage (./pkgs/syb.nix) { };
