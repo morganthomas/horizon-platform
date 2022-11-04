@@ -73,6 +73,8 @@ final: prev: with pkgs.haskell.lib; {
 
     cabal2nix = prev.callPackage (./pkgs/cabal2nix.nix) { };
 
+    cassava = prev.callPackage (./pkgs/cassava.nix) { };
+
     cborg = prev.callPackage (./pkgs/cborg.nix) { };
 
     cborg-json = prev.callPackage (./pkgs/cborg-json.nix) { };

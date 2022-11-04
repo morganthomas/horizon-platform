@@ -99,6 +99,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/NixOS/cabal2nix"
         (None Text)
         (Some "cabal2nix")
+    , callHackage "cassava" "0.5.3.0"
     , callHackage "cereal" "0.5.8.3"
     , callHackage "cborg" "0.2.8.0"
     , callHackage "cborg-json" "0.2.5.0"
