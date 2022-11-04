@@ -75,6 +75,8 @@ final: prev: with pkgs.haskell.lib; {
 
     cassava = prev.callPackage (./pkgs/cassava.nix) { };
 
+    cassava-megaparsec = prev.callPackage (./pkgs/cassava-megaparsec.nix) { };
+
     cborg = prev.callPackage (./pkgs/cborg.nix) { };
 
     cborg-json = prev.callPackage (./pkgs/cborg-json.nix) { };
