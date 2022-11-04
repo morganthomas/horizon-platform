@@ -59,6 +59,8 @@ final: prev: with pkgs.haskell.lib; {
 
     boring = prev.callPackage (./pkgs/boring.nix) { };
 
+    breakpoint = prev.callPackage (./pkgs/breakpoint.nix) { };
+
     brick = prev.callPackage (./pkgs/brick.nix) { };
 
     bsb-http-chunked = prev.callPackage (./pkgs/bsb-http-chunked.nix) { };
