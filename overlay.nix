@@ -273,6 +273,8 @@ final: prev: with pkgs.haskell.lib; {
 
     hiedb = prev.callPackage (./pkgs/hiedb.nix) { };
 
+    hledger-lib = prev.callPackage (./pkgs/hledger-lib.nix) { };
+
     hlint = prev.callPackage (./pkgs/hlint.nix) { };
 
     hnix = prev.callPackage (./pkgs/hnix.nix) { };
