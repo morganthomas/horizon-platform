@@ -25,6 +25,8 @@ final: prev: with pkgs.haskell.lib; {
 
     aeson = prev.callPackage (./pkgs/aeson.nix) { };
 
+    aeson-pretty = prev.callPackage (./pkgs/aeson-pretty.nix) { };
+
     aeson-yaml = prev.callPackage (./pkgs/aeson-yaml.nix) { };
 
     ansi-terminal = prev.callPackage (./pkgs/ansi-terminal.nix) { };
@@ -59,6 +61,8 @@ final: prev: with pkgs.haskell.lib; {
 
     boring = prev.callPackage (./pkgs/boring.nix) { };
 
+    breakpoint = prev.callPackage (./pkgs/breakpoint.nix) { };
+
     brick = prev.callPackage (./pkgs/brick.nix) { };
 
     bsb-http-chunked = prev.callPackage (./pkgs/bsb-http-chunked.nix) { };
@@ -72,6 +76,10 @@ final: prev: with pkgs.haskell.lib; {
     cabal-install-solver = prev.callPackage (./pkgs/cabal-install-solver.nix) { };
 
     cabal2nix = prev.callPackage (./pkgs/cabal2nix.nix) { };
+
+    cassava = prev.callPackage (./pkgs/cassava.nix) { };
+
+    cassava-megaparsec = prev.callPackage (./pkgs/cassava-megaparsec.nix) { };
 
     cborg = prev.callPackage (./pkgs/cborg.nix) { };
 
@@ -264,6 +272,10 @@ final: prev: with pkgs.haskell.lib; {
     hie-compat = prev.callPackage (./pkgs/hie-compat.nix) { };
 
     hiedb = prev.callPackage (./pkgs/hiedb.nix) { };
+
+    hledger = prev.callPackage (./pkgs/hledger.nix) { };
+
+    hledger-lib = prev.callPackage (./pkgs/hledger-lib.nix) { };
 
     hlint = prev.callPackage (./pkgs/hlint.nix) { };
 
