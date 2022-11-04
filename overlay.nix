@@ -467,6 +467,8 @@ final: prev: with pkgs.haskell.lib; {
 
   safe-coloured-text = prev.callPackage (./pkgs/safe-coloured-text.nix) { };
 
+  safe-exceptions = prev.callPackage (./pkgs/safe-exceptions.nix) { };
+
   saltine = prev.callPackage (./pkgs/saltine.nix) { };
 
   scientific = prev.callPackage (./pkgs/scientific.nix) { };
