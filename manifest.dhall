@@ -244,6 +244,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "hie-compat" "0.3.0.0"
     , callHackage "hiedb" "0.4.2.0"
     , callHackage "hledger-lib" "1.27.1"
+    , callHackage "hledger" "1.27.1"
     , callHackage "hlint" "3.5"
     , callHackage "hourglass" "0.2.12"
     , callCabal2nix
