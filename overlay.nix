@@ -31,6 +31,8 @@ final: prev: with pkgs.haskell.lib; {
 
   ansi-terminal = prev.callPackage (./pkgs/ansi-terminal.nix) { };
 
+  ansi-wl-pprint = prev.callPackage (./pkgs/ansi-wl-pprint.nix) { };
+
   apecs = prev.callPackage (./pkgs/apecs.nix) { };
 
   assoc = prev.callPackage (./pkgs/assoc.nix) { };
