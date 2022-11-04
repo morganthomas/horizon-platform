@@ -28,6 +28,9 @@ mkDerivation {
   pname = "conduit-extra";
   version = "1.3.6";
   sha256 = "8950c38049d892c38590d389bed49ecf880671f58ec63dd4709d9fe3d4b8f153";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     async
     attoparsec
@@ -74,11 +77,15 @@ mkDerivation {
     gauge
     transformers
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/snoyberg/conduit";
   description = "Batteries included conduit: adapters for common libraries";
   license = lib.licenses.mit;
+  broken = false;
 }

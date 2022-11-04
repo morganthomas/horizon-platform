@@ -25,6 +25,7 @@ mkDerivation {
   editedCabalFile = "1a44ak08ja1j78lrqm46szihy9nzx2vrvvdb8bwf6961fymd5697";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     containers
@@ -58,12 +59,16 @@ mkDerivation {
     tasty-quickcheck
     tasty-smallcheck
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell-works/tasty-discover";
   description = "Test discovery for the tasty framework";
   license = lib.licenses.mit;
   mainProgram = "tasty-discover";
+  broken = false;
 }

@@ -15,6 +15,9 @@ mkDerivation {
   pname = "JuicyPixels";
   version = "3.3.8";
   sha256 = "d3a0f6ca3515a1b3d526cbf79f2e0b0aab57f208ab216f9c26437bbcd86fb63e";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     binary
@@ -27,11 +30,15 @@ mkDerivation {
     vector
     zlib
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/Twinside/Juicy.Pixels";
   description = "Picture loading/serialization (in png, jpeg, bitmap, gif, tga, tiff and radiance)";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -34,6 +34,9 @@ mkDerivation {
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/servant-client-core/; echo source root reset to $sourceRoot";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     aeson
     base
@@ -57,11 +60,15 @@ mkDerivation {
   ];
   testHaskellDepends = [ base base-compat deepseq hspec QuickCheck ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://docs.servant.dev/";
   description = "Core functionality and class for client function generation for servant APIs";
   license = lib.licenses.bsd3;
+  broken = false;
 }

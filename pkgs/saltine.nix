@@ -14,6 +14,9 @@ mkDerivation {
   pname = "saltine";
   version = "0.1.1.1";
   sha256 = "a75b1aae629bef09c1b14364abbf8998420e0737bf2f3515ca18055ef336f9ad";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base bytestring hashable profunctors ];
   libraryPkgconfigDepends = [ libsodium ];
   testHaskellDepends = [
@@ -24,10 +27,14 @@ mkDerivation {
     test-framework
     test-framework-quickcheck2
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Cryptography that's easy to digest (NaCl/libsodium bindings)";
   license = lib.licenses.mit;
+  broken = false;
 }

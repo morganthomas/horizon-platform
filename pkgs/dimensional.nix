@@ -18,6 +18,9 @@ mkDerivation {
   pname = "dimensional";
   version = "1.5";
   sha256 = "da9ad59b8feebbc038f824bc960a099fc5ccc8cb1d234f12c230044be906a599";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     deepseq
@@ -36,11 +39,15 @@ mkDerivation {
   ];
   testToolDepends = [ hspec-discover ];
   benchmarkHaskellDepends = [ base criterion deepseq ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/bjornbm/dimensional/";
   description = "Statically checked physical dimensions";
   license = lib.licenses.bsd3;
+  broken = false;
 }

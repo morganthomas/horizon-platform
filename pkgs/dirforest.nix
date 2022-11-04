@@ -1,5 +1,15 @@
-{ mkDerivation, aeson, base, containers, deepseq, fetchgit
-, filepath, lib, path, path-io, validity, validity-containers
+{ mkDerivation
+, aeson
+, base
+, containers
+, deepseq
+, fetchgit
+, filepath
+, lib
+, path
+, path-io
+, validity
+, validity-containers
 , validity-path
 }:
 mkDerivation {
@@ -12,14 +22,29 @@ mkDerivation {
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/dirforest/; echo source root reset to $sourceRoot";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    aeson base containers deepseq filepath path path-io validity
-    validity-containers validity-path
+    aeson
+    base
+    containers
+    deepseq
+    filepath
+    path
+    path-io
+    validity
+    validity-containers
+    validity-path
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/NorfairKing/dirforest#readme";
   license = "unknown";
+  broken = false;
 }

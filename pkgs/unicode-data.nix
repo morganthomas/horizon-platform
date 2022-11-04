@@ -13,15 +13,20 @@ mkDerivation {
   sha256 = "4890d5a26cae879ea573dc07408e833ad49937a9a551a3bbdc4fa77718644127";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base ];
   testHaskellDepends = [ base hspec ];
   testToolDepends = [ hspec-discover ];
   benchmarkHaskellDepends = [ base deepseq tasty tasty-bench ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/composewell/unicode-data";
   description = "Access Unicode Character Database (UCD)";
   license = lib.licenses.asl20;
+  broken = false;
 }

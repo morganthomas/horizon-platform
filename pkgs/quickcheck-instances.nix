@@ -31,6 +31,9 @@ mkDerivation {
   pname = "quickcheck-instances";
   version = "0.3.28";
   sha256 = "c4111b7b49d5814120cb6055705d04eda7dd32a536057167c646aa77b68ccccb";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     base
@@ -68,11 +71,15 @@ mkDerivation {
     uuid-types
   ];
   benchmarkHaskellDepends = [ base bytestring QuickCheck ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskellari/qc-instances";
   description = "Common quickcheck instances";
   license = lib.licenses.bsd3;
+  broken = false;
 }

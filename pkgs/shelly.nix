@@ -30,6 +30,7 @@ mkDerivation {
   editedCabalFile = "07c1rjwvg2ldam6yaksvrr9f703b7d1rcw0482ns5yi2f7y1kczp";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     async
     base
@@ -64,11 +65,15 @@ mkDerivation {
     transformers
     unix-compat
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/yesodweb/Shelly.hs";
   description = "shell-like (systems) programming in Haskell";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -20,6 +20,9 @@ mkDerivation {
   pname = "composite-base";
   version = "0.8.1.0";
   sha256 = "a8de050a65b8d3febfd48ea0d7b9bb215c8473b7dda7760d7c2df279a92258a3";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     deepseq
@@ -52,11 +55,15 @@ mkDerivation {
     unliftio-core
     vinyl
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/composite-hs/composite-base#readme";
   description = "Shared utilities for composite-* packages";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -23,6 +23,7 @@ mkDerivation {
   sha256 = "0707ce5868c96379ed4f8486e1791a798cf2a254fda9801a7fb65944aeb5b035";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base safe-exceptions text ];
   executableHaskellDepends = [
     base
@@ -47,12 +48,16 @@ mkDerivation {
     unix
   ];
   testToolDepends = [ tasty-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/serokell/haskell-with-utf8#readme";
   description = "Get your IO right on the first try";
   license = lib.licenses.mpl20;
   mainProgram = "utf8-troubleshoot";
+  broken = false;
 }

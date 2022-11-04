@@ -34,6 +34,9 @@ mkDerivation {
   sha256 = "0d76253ba464eee3363ff0ef4f0f470ca1711cd7acc907089b6eac15f8acad64";
   revision = "1";
   editedCabalFile = "048h2ir37j09s0z7fb364p7smyhzq6h4705qklhvylak9242gz2n";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bifunctors
@@ -63,11 +66,15 @@ mkDerivation {
     vector-instances
     void
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/nikita-volkov/rebase";
   description = "A more progressive alternative to the \"base\" package";
   license = lib.licenses.mit;
+  broken = false;
 }

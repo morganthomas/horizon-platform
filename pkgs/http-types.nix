@@ -14,6 +14,9 @@ mkDerivation {
   pname = "http-types";
   version = "0.12.3";
   sha256 = "4e8a4a66477459fa436a331c75e46857ec8026283df984d54f90576cd3024016";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     base
@@ -30,11 +33,15 @@ mkDerivation {
     quickcheck-instances
     text
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/aristidb/http-types";
   description = "Generic HTTP types for Haskell (for both client and server code)";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -23,6 +23,7 @@ mkDerivation {
   sha256 = "ec54952221a8bb79d5dbd9abd4501ffcce4be07fbe500928394c108ea010cb66";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     binary
@@ -50,11 +51,15 @@ mkDerivation {
     text
     text-icu
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/jgm/unicode-collation";
   description = "Haskell implementation of the Unicode Collation Algorithm";
   license = lib.licenses.bsd2;
+  broken = false;
 }

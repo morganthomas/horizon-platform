@@ -100,12 +100,16 @@ mkDerivation {
     unordered-containers
     utf8-string
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://shakebuild.com";
   description = "Build system library, like Make, but more accurate dependencies";
   license = lib.licenses.bsd3;
   mainProgram = "shake";
+  broken = false;
 }

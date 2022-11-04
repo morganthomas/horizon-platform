@@ -26,6 +26,9 @@ mkDerivation {
   pname = "optics";
   version = "0.4.2";
   sha256 = "ebe7553704d3491f02777dc6f02a2cf170d4b87ce5265139ce759314460533c7";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     base
@@ -60,10 +63,14 @@ mkDerivation {
     unordered-containers
     vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Optics as an abstract interface";
   license = lib.licenses.bsd3;
+  broken = false;
 }

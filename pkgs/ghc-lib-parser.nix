@@ -23,6 +23,8 @@ mkDerivation {
   pname = "ghc-lib-parser";
   version = "9.4.2.20220822";
   sha256 = "3eb1fd79734728fffb39c98a4a42747d0db2d35380fec8ab24bbea5d76b93847";
+  isLibrary = true;
+  isExecutable = false;
   enableSeparateDataOutput = true;
   libraryHaskellDepends = [
     array
@@ -43,11 +45,15 @@ mkDerivation {
     unix
   ];
   libraryToolDepends = [ alex happy ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/digital-asset/ghc-lib";
   description = "The GHC API, decoupled from GHC versions";
   license = lib.licenses.bsd3;
+  broken = false;
 }

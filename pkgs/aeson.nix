@@ -50,6 +50,9 @@ mkDerivation {
   sha256 = "0a763ef5fa16da678e5a1ee8c394825b6723182a9a755709170edc08b8f73c94";
   revision = "2";
   editedCabalFile = "0yp12cmkj5sz25kxzn6g1fz2d6acbq5rvff5dg2wg5zkjwfkhzqj";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     attoparsec
     base
@@ -122,11 +125,15 @@ mkDerivation {
     uuid-types
     vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell/aeson";
   description = "Fast JSON parsing and encoding";
   license = lib.licenses.bsd3;
+  broken = false;
 }

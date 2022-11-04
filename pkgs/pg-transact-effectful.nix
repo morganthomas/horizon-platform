@@ -1,5 +1,12 @@
-{ mkDerivation, base, effectful-core, fetchgit, lib, mtl
-, pg-transact, postgresql-simple, resource-pool
+{ mkDerivation
+, base
+, effectful-core
+, fetchgit
+, lib
+, mtl
+, pg-transact
+, postgresql-simple
+, resource-pool
 }:
 mkDerivation {
   pname = "pg-transact-effectful";
@@ -10,13 +17,25 @@ mkDerivation {
     rev = "45730b124c7c21f1dcfd85667fda1c19b8ec9723";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    base effectful-core mtl pg-transact postgresql-simple resource-pool
+    base
+    effectful-core
+    mtl
+    pg-transact
+    postgresql-simple
+    resource-pool
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/kleidukos/pg-transact-effectful/";
   license = lib.licenses.mit;
+  broken = false;
 }

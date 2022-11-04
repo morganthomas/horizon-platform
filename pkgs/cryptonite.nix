@@ -18,6 +18,9 @@ mkDerivation {
   pname = "cryptonite";
   version = "0.30";
   sha256 = "56099c8a8aa01d2ee914b670c97c1f818186dbb886e2025b73d9c2afe3496b1d";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     basement
@@ -44,11 +47,15 @@ mkDerivation {
     memory
     random
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell-crypto/cryptonite";
   description = "Cryptography Primitives sink";
   license = lib.licenses.bsd3;
+  broken = false;
 }

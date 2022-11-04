@@ -32,6 +32,9 @@ mkDerivation {
   sha256 = "6d90394203ea3aa27cae4492569ab14bf175cd2d30112e565ffb92dbe95ce267";
   revision = "8";
   editedCabalFile = "1qavb3qs1g307pc19k9y3yvqp0c1srwsplijvayn9ldp0bxdy6q8";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     aeson
     attoparsec
@@ -71,10 +74,14 @@ mkDerivation {
     vector
   ];
   benchmarkHaskellDepends = [ base vector ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Mid-Level PostgreSQL client library";
   license = lib.licenses.bsd3;
+  broken = false;
 }

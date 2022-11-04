@@ -1,5 +1,14 @@
-{ mkDerivation, base, brick, containers, cursor, cursor-brick
-, cursor-dirforest, dirforest, fetchgit, lib, vty
+{ mkDerivation
+, base
+, brick
+, containers
+, cursor
+, cursor-brick
+, cursor-dirforest
+, dirforest
+, fetchgit
+, lib
+, vty
 }:
 mkDerivation {
   pname = "cursor-dirforest-brick";
@@ -11,14 +20,27 @@ mkDerivation {
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/cursor-dirforest-brick/; echo source root reset to $sourceRoot";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    base brick containers cursor cursor-brick cursor-dirforest
-    dirforest vty
+    base
+    brick
+    containers
+    cursor
+    cursor-brick
+    cursor-dirforest
+    dirforest
+    vty
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/NorfairKing/cursor-dirforest#readme";
   license = lib.licenses.mit;
+  broken = false;
 }

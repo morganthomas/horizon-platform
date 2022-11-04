@@ -8,11 +8,18 @@ mkDerivation {
     rev = "bd7dbbe83d25c00fcd2cf5c77736af904910c596";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base http-types wai ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Heartbeat middleware for the WAI ecosystem";
   license = lib.licenses.mit;
+  broken = false;
 }

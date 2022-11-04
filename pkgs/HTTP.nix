@@ -23,6 +23,9 @@ mkDerivation {
   sha256 = "df31d8efec775124dab856d7177ddcba31be9f9e0836ebdab03d94392f2dd453";
   revision = "1";
   editedCabalFile = "04y04vbxbnblpmqqmpl8km4bkcjaj96nbxkssdr1zgbhqisxay5q";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     base
@@ -48,11 +51,15 @@ mkDerivation {
     test-framework
     test-framework-hunit
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell/HTTP";
   description = "A library for client-side HTTP";
   license = lib.licenses.bsd3;
+  broken = false;
 }

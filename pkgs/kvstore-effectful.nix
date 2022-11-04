@@ -9,10 +9,17 @@ mkDerivation {
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/kvstore-effectful/; echo source root reset to $sourceRoot";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base containers effectful ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   license = lib.licenses.bsd3;
+  broken = false;
 }

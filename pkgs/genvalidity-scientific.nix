@@ -13,6 +13,9 @@ mkDerivation {
   pname = "genvalidity-scientific";
   version = "1.0.0.0";
   sha256 = "b85e13c3f54ed955f6d568503d9cda49162f3a4af7560acac62df8a565502176";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     genvalidity
@@ -29,11 +32,15 @@ mkDerivation {
     QuickCheck
     scientific
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/NorfairKing/validity#readme";
   description = "GenValidity support for Scientific";
   license = lib.licenses.mit;
+  broken = false;
 }

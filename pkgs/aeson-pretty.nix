@@ -1,5 +1,15 @@
-{ mkDerivation, aeson, attoparsec, base, base-compat, bytestring
-, cmdargs, lib, scientific, text, unordered-containers, vector
+{ mkDerivation
+, aeson
+, attoparsec
+, base
+, base-compat
+, bytestring
+, cmdargs
+, lib
+, scientific
+, text
+, unordered-containers
+, vector
 }:
 mkDerivation {
   pname = "aeson-pretty";
@@ -9,19 +19,34 @@ mkDerivation {
   editedCabalFile = "1895w56jl4c06wfhv5zf8ayqpzkxgva2rz5xxz8fvfdiza781cgp";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    aeson base base-compat bytestring scientific text
-    unordered-containers vector
+    aeson
+    base
+    base-compat
+    bytestring
+    scientific
+    text
+    unordered-containers
+    vector
   ];
   executableHaskellDepends = [
-    aeson attoparsec base bytestring cmdargs
+    aeson
+    attoparsec
+    base
+    bytestring
+    cmdargs
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/informatikr/aeson-pretty";
   description = "JSON pretty-printing library and command-line tool";
   license = lib.licenses.bsd3;
   mainProgram = "aeson-pretty";
+  broken = false;
 }

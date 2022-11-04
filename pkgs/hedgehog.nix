@@ -31,6 +31,9 @@ mkDerivation {
   pname = "hedgehog";
   version = "1.2";
   sha256 = "2859c7daa665250bb249614da7b55507c6315d9b80e456f1a74f33abfeaf8e7e";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     ansi-terminal
     async
@@ -68,11 +71,15 @@ mkDerivation {
     text
     transformers
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://hedgehog.qa";
   description = "Release with confidence";
   license = lib.licenses.bsd3;
+  broken = false;
 }

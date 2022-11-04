@@ -37,6 +37,7 @@ mkDerivation {
   sha256 = "1bae426d9b9c7266b89ae13b8ad7dfb548d16efe4c4dda6c0fa35b7b474c69cf";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     async
@@ -87,11 +88,15 @@ mkDerivation {
     psqueues
     stm
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/kazu-yamamoto/http2";
   description = "HTTP/2 library";
   license = lib.licenses.bsd3;
+  broken = false;
 }

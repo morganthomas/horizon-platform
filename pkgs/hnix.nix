@@ -82,6 +82,7 @@ mkDerivation {
   };
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     aeson
     array
@@ -203,12 +204,16 @@ mkDerivation {
     template-haskell
     time
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell-nix/hnix#readme";
   description = "Haskell implementation of the Nix language";
   license = lib.licenses.bsd3;
   mainProgram = "hnix";
+  broken = false;
 }

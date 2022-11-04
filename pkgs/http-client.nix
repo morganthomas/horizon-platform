@@ -34,6 +34,9 @@ mkDerivation {
   pname = "http-client";
   version = "0.7.13.1";
   sha256 = "c98e86a0382fa877e320d83dbbd173c41c966a60a32c9bc597058929a7aa0e27";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     async
@@ -82,11 +85,15 @@ mkDerivation {
     zlib
   ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/snoyberg/http-client";
   description = "An HTTP client engine";
   license = lib.licenses.mit;
+  broken = false;
 }

@@ -23,6 +23,9 @@ mkDerivation {
   sha256 = "4f59360d96fb9ff10861944dd8a89b2448ea2b7dedc376546f4de80125f5c47d";
   revision = "5";
   editedCabalFile = "1b97k85zryid7x2ygi92ilv480ahfjn5yf1f4blllwyxn7zgvjv4";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -41,10 +44,14 @@ mkDerivation {
   ];
   testHaskellDepends = [ base doctest ];
   benchmarkHaskellDepends = [ base criterion ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Composable, streaming, and efficient left folds";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -30,6 +30,9 @@ mkDerivation {
   pname = "conduit";
   version = "1.3.4.2";
   sha256 = "2cb9832f27c7cd50daed1309f688afc4da1bd49697cbeda8ec3f81ab0bcf2197";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -77,11 +80,15 @@ mkDerivation {
     transformers
     vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/snoyberg/conduit";
   description = "Streaming data processing library";
   license = lib.licenses.mit;
+  broken = false;
 }

@@ -13,6 +13,9 @@ mkDerivation {
   sha256 = "174d509c30ec806117a244add923fee578ba5f3505b0156f4e03a32023892eb4";
   revision = "3";
   editedCabalFile = "0ig8qd2g8rd5n78039xhbq7n8r514f8kvbh0mgajav2a5lp549s1";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     first-class-families
@@ -28,11 +31,15 @@ mkDerivation {
     template-haskell
     th-abstraction
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/isovector/type-errors#readme";
   description = "Tools for writing better type errors";
   license = lib.licenses.bsd3;
+  broken = false;
 }

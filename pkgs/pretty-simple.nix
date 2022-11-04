@@ -22,6 +22,7 @@ mkDerivation {
   sha256 = "dae179b1a967e1d443f135e5b3f5abdf378e515fb8ea86e091bc487dc1a25d4a";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   setupHaskellDepends = [ base Cabal cabal-doctest ];
   libraryHaskellDepends = [
     base
@@ -41,12 +42,16 @@ mkDerivation {
     template-haskell
   ];
   benchmarkHaskellDepends = [ base criterion text ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/cdepillabout/pretty-simple";
   description = "pretty printer for data types with a 'Show' instance";
   license = lib.licenses.bsd3;
   mainProgram = "pretty-simple";
+  broken = false;
 }

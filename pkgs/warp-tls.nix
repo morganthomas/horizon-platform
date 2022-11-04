@@ -16,6 +16,9 @@ mkDerivation {
   pname = "warp-tls";
   version = "3.3.3";
   sha256 = "5c44be7a903b863b330d1b9c152100ed7d1709f972e25401018bab407d3f69a0";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -29,11 +32,15 @@ mkDerivation {
     wai
     warp
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/yesodweb/wai";
   description = "HTTP over TLS support for Warp via the TLS package";
   license = lib.licenses.mit;
+  broken = false;
 }

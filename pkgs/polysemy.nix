@@ -27,6 +27,9 @@ mkDerivation {
   pname = "polysemy";
   version = "1.7.1.0";
   sha256 = "4c9556c0c3f38f5fa655567106ecb53cd357e6ffaf8289753ba6dc26fd4bc224";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   setupHaskellDepends = [ base Cabal cabal-doctest ];
   libraryHaskellDepends = [
     async
@@ -80,11 +83,15 @@ mkDerivation {
     type-errors
     unagi-chan
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/polysemy-research/polysemy#readme";
   description = "Higher-order, low-boilerplate free monads";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -21,6 +21,9 @@ mkDerivation {
     rev = "faf8fe90aa1cd2492ea1e64c55f5c59fc0322210";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base bytestring ghc-prim ];
   testHaskellDepends = [
     base
@@ -32,11 +35,15 @@ mkDerivation {
     QuickCheck
   ];
   benchmarkHaskellDepends = [ base bytestring criterion deepseq ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://thoughtpolice.github.com/hs-ed25519";
   description = "Ed25519 cryptographic signatures";
   license = lib.licenses.mit;
+  broken = false;
 }

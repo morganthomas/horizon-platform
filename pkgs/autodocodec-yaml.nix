@@ -18,6 +18,9 @@ mkDerivation {
   pname = "autodocodec-yaml";
   version = "0.2.0.2";
   sha256 = "3d5f811541866f95f44842227bc5d643e7dfa316f1b3075c22d9f3dc6fcd9698";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     autodocodec
     autodocodec-schema
@@ -33,11 +36,15 @@ mkDerivation {
     vector
     yaml
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/NorfairKing/autodocodec#readme";
   description = "Autodocodec interpreters for yaml";
   license = lib.licenses.mit;
+  broken = false;
 }

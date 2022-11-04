@@ -22,6 +22,8 @@ mkDerivation {
     rev = "4ab2906b3f0be5e31ee5a8585e45d43392694246";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
   enableSeparateDataOutput = true;
   libraryHaskellDepends = [
     aeson
@@ -36,11 +38,15 @@ mkDerivation {
     text
   ];
   testHaskellDepends = [ aeson base hedgehog with-utf8 ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/felixmulder/hedgehog-golden";
   description = "Golden testing capabilities for hedgehog using Aeson";
   license = lib.licenses.bsd3;
+  broken = false;
 }

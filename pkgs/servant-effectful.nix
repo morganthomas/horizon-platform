@@ -1,5 +1,16 @@
-{ mkDerivation, base, effectful-core, fetchgit, hashable, lib, mtl
-, servant, servant-server, tasty, tasty-hunit, wai, warp
+{ mkDerivation
+, base
+, effectful-core
+, fetchgit
+, hashable
+, lib
+, mtl
+, servant
+, servant-server
+, tasty
+, tasty-hunit
+, wai
+, warp
 }:
 mkDerivation {
   pname = "servant-effectful";
@@ -10,17 +21,36 @@ mkDerivation {
     rev = "65e3041c6cfbc315b20ad22ca18f61dda104eec8";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    base effectful-core hashable mtl servant servant-server wai warp
+    base
+    effectful-core
+    hashable
+    mtl
+    servant
+    servant-server
+    wai
+    warp
   ];
   testHaskellDepends = [
-    base effectful-core hashable servant servant-server tasty
+    base
+    effectful-core
+    hashable
+    servant
+    servant-server
+    tasty
     tasty-hunit
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell-effectful/servant-effectful/tree/main/servant-effectful#readme";
   license = lib.licenses.mit;
+  broken = false;
 }

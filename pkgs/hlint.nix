@@ -63,12 +63,16 @@ mkDerivation {
     yaml
   ];
   executableHaskellDepends = [ base ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/ndmitchell/hlint#readme";
   description = "Source code suggestions";
   license = lib.licenses.bsd3;
   mainProgram = "hlint";
+  broken = false;
 }

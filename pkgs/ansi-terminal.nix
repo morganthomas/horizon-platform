@@ -5,12 +5,17 @@ mkDerivation {
   sha256 = "f4d563ecf71fb1d304bcdcad478d97efd9f61f6d9d4797a5d56e7722a92a9e6b";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base colour ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/UnkindPartition/ansi-terminal";
   description = "Simple ANSI terminal support, with Windows compatibility";
   license = lib.licenses.bsd3;
+  broken = false;
 }

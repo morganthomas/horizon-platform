@@ -1,40 +1,110 @@
-{ mkDerivation, aeson, ansi-wl-pprint, base, bytestring, Cabal
-, containers, deepseq, directory, distribution-nixpkgs, fetchgit
-, filepath, hackage-db, hopenssl, hpack, language-nix, lens, lib
-, monad-par, monad-par-extras, mtl, optparse-applicative, pretty
-, process, split, tasty, tasty-golden, text, time, transformers
+{ mkDerivation
+, aeson
+, ansi-wl-pprint
+, base
+, bytestring
+, Cabal
+, containers
+, deepseq
+, directory
+, distribution-nixpkgs
+, fetchgit
+, filepath
+, hackage-db
+, hopenssl
+, hpack
+, language-nix
+, lens
+, lib
+, monad-par
+, monad-par-extras
+, mtl
+, optparse-applicative
+, pretty
+, process
+, split
+, tasty
+, tasty-golden
+, text
+, time
+, transformers
 , yaml
 }:
 mkDerivation {
   pname = "cabal2nix";
-  version = "2.19.0";
+  version = "2.19.1";
   src = fetchgit {
     url = "https://github.com/NixOS/cabal2nix";
-    sha256 = "0ym6lyp4br57442b6a9cg9bczbjqz8nz984rxwiacldqzndk8jbr";
-    rev = "b3ae6f9240d07ba103f1eb7ab22f6055e9cdb7dc";
+    sha256 = "1n4jy4xsrzywqvzicsca6kaw4bp0xdz5qfkvj7bkh4np9p3hnj08";
+    rev = "8e97f51e4bd4e5b9ff79391aa599ed8547771954";
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/cabal2nix/; echo source root reset to $sourceRoot";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    aeson ansi-wl-pprint base bytestring Cabal containers deepseq
-    directory distribution-nixpkgs filepath hackage-db hopenssl hpack
-    language-nix lens optparse-applicative pretty process split text
-    time transformers yaml
+    aeson
+    ansi-wl-pprint
+    base
+    bytestring
+    Cabal
+    containers
+    deepseq
+    directory
+    distribution-nixpkgs
+    filepath
+    hackage-db
+    hopenssl
+    hpack
+    language-nix
+    lens
+    optparse-applicative
+    pretty
+    process
+    split
+    text
+    time
+    transformers
+    yaml
   ];
   executableHaskellDepends = [
-    aeson base bytestring Cabal containers directory
-    distribution-nixpkgs filepath hopenssl language-nix lens monad-par
-    monad-par-extras mtl optparse-applicative pretty
+    aeson
+    base
+    bytestring
+    Cabal
+    containers
+    directory
+    distribution-nixpkgs
+    filepath
+    hopenssl
+    language-nix
+    lens
+    monad-par
+    monad-par-extras
+    mtl
+    optparse-applicative
+    pretty
   ];
   testHaskellDepends = [
-    base Cabal containers directory filepath language-nix lens pretty
-    process tasty tasty-golden
+    base
+    Cabal
+    containers
+    directory
+    filepath
+    language-nix
+    lens
+    pretty
+    process
+    tasty
+    tasty-golden
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   preCheck = ''
     export PATH="$PWD/dist/build/cabal2nix:$PATH"
@@ -43,4 +113,5 @@ mkDerivation {
   homepage = "https://github.com/nixos/cabal2nix#readme";
   description = "Convert Cabal files into Nix build instructions";
   license = lib.licenses.bsd3;
+  broken = false;
 }

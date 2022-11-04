@@ -53,10 +53,11 @@ mkDerivation {
   pname = "cabal-install";
   version = "3.8.1.0";
   sha256 = "61ce436f2e14e12bf07ea1c81402362f46275014cd841a76566f0766d0ea67e6";
-  revision = "1";
-  editedCabalFile = "0d6g8q9g8xv69dk51d2jjnc2bv9ah59vn1p5xg1hn42filh35sa1";
+  revision = "2";
+  editedCabalFile = "1l2lvljkr1ibnr3py7xfp2csxyb3rzlhy7jlpx8gkamq9cjmi6p2";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     async
@@ -132,9 +133,12 @@ mkDerivation {
     tree-diff
     zlib
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   postInstall = ''
     mkdir -p $out/share/bash-completion
@@ -144,4 +148,5 @@ mkDerivation {
   description = "The command-line interface for Cabal and Hackage";
   license = lib.licenses.bsd3;
   mainProgram = "cabal";
+  broken = false;
 }

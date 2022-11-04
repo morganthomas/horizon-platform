@@ -18,10 +18,11 @@ mkDerivation {
   pname = "unicode-transforms";
   version = "0.4.0.1";
   sha256 = "3278e1e1d648da4bcd7368658ae091a89080e88a2f44db9df5136711e99649fc";
-  revision = "1";
-  editedCabalFile = "0ml5j3j3dan7fgbyd3vgmlrij7bgszgfh244b1sppciis1v4m94p";
+  revision = "2";
+  editedCabalFile = "1imm3svpz2shilj2kmmmcyy5yd4c1mpmz5v1gvjrr98hrab2i9x7";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -48,11 +49,15 @@ mkDerivation {
     tasty-bench
     text
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/composewell/unicode-transforms";
   description = "Unicode normalization";
   license = lib.licenses.bsd3;
+  broken = false;
 }

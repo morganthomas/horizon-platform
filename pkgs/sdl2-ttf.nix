@@ -16,6 +16,7 @@ mkDerivation {
   sha256 = "b60219fe8144c5d61b140b4607432b24fb93e947c504a8e2f89517175ba6a56a";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -26,10 +27,14 @@ mkDerivation {
     transformers
   ];
   libraryPkgconfigDepends = [ SDL2 SDL2_ttf ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Bindings to SDL2_ttf";
   license = lib.licenses.bsd3;
+  broken = false;
 }

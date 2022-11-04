@@ -30,6 +30,7 @@ mkDerivation {
   sha256 = "67a852a7a9e0fa00713996e546045c11360ad9374e450cfe35154e69a0bfbfb7";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     aeson
     attoparsec
@@ -64,10 +65,14 @@ mkDerivation {
     timeit
     transformers
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Generates citations and bibliography from CSL styles";
   license = lib.licenses.bsd2;
+  broken = false;
 }

@@ -38,6 +38,9 @@ mkDerivation {
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/servant/; echo source root reset to $sourceRoot";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     aeson
     attoparsec
@@ -78,11 +81,15 @@ mkDerivation {
     transformers
   ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://docs.servant.dev/";
   description = "A family of combinators for defining webservices APIs";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -26,6 +26,7 @@ mkDerivation {
   sha256 = "8eb59736bbf052a380d5c72277abad05802730b37629ea67a4517b2d88dd40fa";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -61,10 +62,14 @@ mkDerivation {
     silently
     syb
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "ExactPrint for GHC";
   license = lib.licenses.bsd3;
+  broken = false;
 }

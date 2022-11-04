@@ -28,6 +28,7 @@ mkDerivation {
   sha256 = "9cca518eaa6a5d747c32ca7f50c7ba3c7454fb96239796bbbd6d2cc7cb61b908";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     algebraic-graphs
     ansi-terminal
@@ -58,11 +59,15 @@ mkDerivation {
     process
     temporary
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Generates a references DB from .hie files";
   license = lib.licenses.bsd3;
   mainProgram = "hiedb";
+  broken = false;
 }

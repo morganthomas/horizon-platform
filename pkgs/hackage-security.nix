@@ -39,6 +39,9 @@ mkDerivation {
   sha256 = "a833a31610220506557e96fb6e3e8b05a2e1db8e7ebc06e91bbb699ddde0b276";
   revision = "1";
   editedCabalFile = "01fhp3kzc1wfvixzgnz4y52bzm4sickk1cj7pksrwmbi90dghv0s";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     base16-bytestring
@@ -84,11 +87,15 @@ mkDerivation {
     vector
     zlib
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell/hackage-security";
   description = "Hackage security library";
   license = lib.licenses.bsd3;
+  broken = false;
 }

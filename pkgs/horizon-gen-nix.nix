@@ -1,6 +1,20 @@
-{ mkDerivation, base, Cabal-syntax, cabal2nix, containers, data-fix
-, dhall, directory, fetchgit, language-nix, lens, lib, megaparsec
-, path, path-dhall-instance, pretty, text
+{ mkDerivation
+, base
+, Cabal-syntax
+, cabal2nix
+, containers
+, data-fix
+, dhall
+, directory
+, fetchgit
+, language-nix
+, lens
+, lib
+, megaparsec
+, path
+, path-dhall-instance
+, pretty
+, text
 }:
 mkDerivation {
   pname = "horizon-gen-nix";
@@ -13,16 +27,33 @@ mkDerivation {
   };
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    base Cabal-syntax cabal2nix containers data-fix dhall directory
-    language-nix lens megaparsec path path-dhall-instance pretty text
+    base
+    Cabal-syntax
+    cabal2nix
+    containers
+    data-fix
+    dhall
+    directory
+    language-nix
+    lens
+    megaparsec
+    path
+    path-dhall-instance
+    pretty
+    text
   ];
   executableHaskellDepends = [ base ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Short description of your package";
   license = lib.licenses.bsd3;
   mainProgram = "horizon-gen-nix";
+  broken = false;
 }

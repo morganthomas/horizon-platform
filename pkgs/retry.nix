@@ -20,6 +20,9 @@ mkDerivation {
   pname = "retry";
   version = "0.9.3.0";
   sha256 = "c11e5dcb6fc9b7a327ebdf9188edcbe39fce64e728294e41a61e9ad94fa84ecd";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     exceptions
@@ -47,11 +50,15 @@ mkDerivation {
     transformers
     unliftio-core
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/Soostone/retry";
   description = "Retry combinators for monadic actions that may fail";
   license = lib.licenses.bsd3;
+  broken = false;
 }

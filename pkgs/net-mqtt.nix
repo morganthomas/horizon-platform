@@ -30,6 +30,7 @@ mkDerivation {
   sha256 = "c3e30f445a7aef4374b015ceb4239d659bab81dfb879f1675a17b458f4f44da9";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     async
     attoparsec
@@ -93,11 +94,15 @@ mkDerivation {
     text
     websockets
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/dustin/mqtt-hs#readme";
   description = "An MQTT Protocol Implementation";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -37,6 +37,9 @@ mkDerivation {
   sha256 = "e1d77ee05eaa4b1871566b33683da9ab15dda8f7c42875701d62caf7db7defd2";
   revision = "9";
   editedCabalFile = "0d61dgx6wq682mz8ryq2a10v1z4yi0dik8b5psi0ragl2qip191j";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     aeson
     base
@@ -86,11 +89,15 @@ mkDerivation {
     transformers
     weigh
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/scotty-web/scotty";
   description = "Haskell web framework inspired by Ruby's Sinatra, using WAI and Warp";
   license = lib.licenses.bsd3;
+  broken = false;
 }

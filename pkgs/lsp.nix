@@ -35,6 +35,7 @@ mkDerivation {
   sha256 = "896803766e8ceabeacc72743f4b92cf7766b2a1f09be270b29d0a39692b00470";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     aeson
     async
@@ -73,11 +74,15 @@ mkDerivation {
     unordered-containers
   ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell/lsp";
   description = "Haskell library for the Microsoft Language Server Protocol";
   license = lib.licenses.mit;
+  broken = false;
 }

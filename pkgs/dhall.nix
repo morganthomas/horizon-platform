@@ -75,8 +75,8 @@ mkDerivation {
   pname = "dhall";
   version = "1.41.2";
   sha256 = "6a9a026e698e5c1a1e103fcb376e8494615b03ef2450f0b6c5e6b43877cea592";
-  revision = "1";
-  editedCabalFile = "1gi2j6d3mh0wqx6756cp04c676843wdibfwv3i2wypvsk74dlvjm";
+  revision = "2";
+  editedCabalFile = "18jh1c2zinwglih5gc8av2szicyywq5q0kl2h5200sm67nxmask9";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = true;
@@ -307,11 +307,15 @@ mkDerivation {
     uri-encode
     vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "A configuration language guaranteed to terminate";
   license = lib.licenses.bsd3;
   mainProgram = "dhall";
+  broken = false;
 }

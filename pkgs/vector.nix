@@ -23,6 +23,9 @@ mkDerivation {
   sha256 = "c5d3167d15e12f52e00879ddf304a591672a74e369cc47bc5c7fa1d5a8d15b4f";
   revision = "1";
   editedCabalFile = "12cwdaqsy9dv7j7cwq6r6kdyfxqiya8khm6ccaabjhhpa2aqwljl";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base deepseq primitive vector-stream ];
   testHaskellDepends = [
     base
@@ -40,11 +43,15 @@ mkDerivation {
     transformers
   ];
   benchmarkHaskellDepends = [ base random tasty tasty-bench ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell/vector";
   description = "Efficient Arrays";
   license = lib.licenses.bsd3;
+  broken = false;
 }

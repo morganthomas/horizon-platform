@@ -19,6 +19,9 @@ mkDerivation {
   sha256 = "ad07bb00eb9678c2136d3680752b00acc4cbc522654bb3199bf31c61ef1e6b80";
   revision = "4";
   editedCabalFile = "1n39yfk21xz8y1xvkh01651yysk2zp5qac22l5pq2hi7scczmxaw";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     base-orphans
@@ -39,11 +42,15 @@ mkDerivation {
     tasty-quickcheck
     time
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskellari/time-compat";
   description = "Compatibility package for time";
   license = lib.licenses.bsd3;
+  broken = false;
 }
