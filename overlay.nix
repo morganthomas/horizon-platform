@@ -311,6 +311,8 @@ final: prev: with pkgs.haskell.lib; {
 
   http-date = prev.callPackage (./pkgs/http-date.nix) { };
 
+  http-media = prev.callPackage (./pkgs/http-media.nix) { };
+
   http-types = prev.callPackage (./pkgs/http-types.nix) { };
 
   http2 = prev.callPackage (./pkgs/http2.nix) { };
