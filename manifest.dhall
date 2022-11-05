@@ -342,6 +342,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/haskell-effectful/kvstore-effectful"
         (Some "3502825423aea3a1af9384e9d751feea4599c60b")
         (Some "kvstore-effectful-statemap")
+    , callHackage "language-nix" "2.2.0"
     , callHackage "lens" "5.2"
     , callHackage "lens-aeson" "1.2.1"
     , callHackage "lens-family-th" "0.5.2.1"
