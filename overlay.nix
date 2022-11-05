@@ -389,6 +389,8 @@ final: prev: with pkgs.haskell.lib; {
 
   lens-family-th = prev.callPackage (./pkgs/lens-family-th.nix) { };
 
+  libyaml = prev.callPackage (./pkgs/libyaml.nix) { };
+
   lifted-async = prev.callPackage (./pkgs/lifted-async.nix) { };
 
   linear = prev.callPackage (./pkgs/linear.nix) { };
