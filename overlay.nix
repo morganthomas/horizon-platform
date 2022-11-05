@@ -309,6 +309,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hslua-aeson = prev.callPackage (./pkgs/hslua-aeson.nix) { };
 
+  hslua-classes = prev.callPackage (./pkgs/hslua-classes.nix) { };
+
   hspec = prev.callPackage (./pkgs/hspec.nix) { };
 
   hspec-contrib = prev.callPackage (./pkgs/hspec-contrib.nix) { };
