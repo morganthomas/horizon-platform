@@ -603,6 +603,8 @@ final: prev: with pkgs.haskell.lib; {
 
   type-errors-pretty = prev.callPackage (./pkgs/type-errors-pretty.nix) { };
 
+  typed-process = prev.callPackage (./pkgs/typed-process.nix) { };
+
   typerep-map = prev.callPackage (./pkgs/typerep-map.nix) { };
 
   unicode-collation = prev.callPackage (./pkgs/unicode-collation.nix) { };
