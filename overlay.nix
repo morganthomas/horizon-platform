@@ -813,6 +813,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-quickcheck = prev.callPackage (./pkgs/tasty-quickcheck.nix) { };
 
+  tasty-smallcheck = prev.callPackage (./pkgs/tasty-smallcheck.nix) { };
+
   tasty-wai = prev.callPackage (./pkgs/tasty-wai.nix) { };
 
   test-framework = prev.callPackage (./pkgs/test-framework.nix) { };
