@@ -563,6 +563,8 @@ final: prev: with pkgs.haskell.lib; {
 
   path = prev.callPackage (./pkgs/path.nix) { };
 
+  path-dhall-instance = prev.callPackage (./pkgs/path-dhall-instance.nix) { };
+
   path-io = prev.callPackage (./pkgs/path-io.nix) { };
 
   pcg-random = prev.callPackage (./pkgs/pcg-random.nix) { };
