@@ -347,6 +347,8 @@ final: prev: with pkgs.haskell.lib; {
 
   http-client = prev.callPackage (./pkgs/http-client.nix) { };
 
+  http-client-tls = prev.callPackage (./pkgs/http-client-tls.nix) { };
+
   http-date = prev.callPackage (./pkgs/http-date.nix) { };
 
   http-media = prev.callPackage (./pkgs/http-media.nix) { };
