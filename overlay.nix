@@ -625,6 +625,8 @@ final: prev: with pkgs.haskell.lib; {
 
   universe-base = prev.callPackage (./pkgs/universe-base.nix) { };
 
+  unliftio = prev.callPackage (./pkgs/unliftio.nix) { };
+
   unliftio-core = prev.callPackage (./pkgs/unliftio-core.nix) { };
 
   unordered-containers = prev.callPackage (./pkgs/unordered-containers.nix) { };
