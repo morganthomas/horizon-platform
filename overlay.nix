@@ -495,6 +495,8 @@ final: prev: with pkgs.haskell.lib; {
 
   path = prev.callPackage (./pkgs/path.nix) { };
 
+  path-io = prev.callPackage (./pkgs/path-io.nix) { };
+
   pcg-random = prev.callPackage (./pkgs/pcg-random.nix) { };
 
   pcre2 = prev.callPackage (./pkgs/pcre2.nix) { };
