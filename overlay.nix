@@ -257,6 +257,8 @@ final: prev: with pkgs.haskell.lib; {
 
   genvalidity-hspec = prev.callPackage (./pkgs/genvalidity-hspec.nix) { };
 
+  genvalidity-hspec-optics = prev.callPackage (./pkgs/genvalidity-hspec-optics.nix) { };
+
   genvalidity-path = prev.callPackage (./pkgs/genvalidity-path.nix) { };
 
   genvalidity-persistent = prev.callPackage (./pkgs/genvalidity-persistent.nix) { };

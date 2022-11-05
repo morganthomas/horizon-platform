@@ -231,6 +231,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "69e8ae036b047fae105c1fe990e175a7572a3eba")
         (Some "genvalidity-dirforest")
     , callHackage "genvalidity-hspec" "1.0.0.2"
+    , callHackage "genvalidity-hspec-optics" "1.0.0.0"
     , callHackage "genvalidity-path" "1.0.0.1"
     , callHackage "genvalidity-persistent" "1.0.0.1"
     , callHackage "genvalidity-property" "1.0.0.0"
