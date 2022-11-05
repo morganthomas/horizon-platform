@@ -185,6 +185,8 @@ final: prev: with pkgs.haskell.lib; {
 
   cursor-gen = prev.callPackage (./pkgs/cursor-gen.nix) { };
 
+  daemons = prev.callPackage (./pkgs/daemons.nix) { };
+
   data-fix = prev.callPackage (./pkgs/data-fix.nix) { };
 
   dec = prev.callPackage (./pkgs/dec.nix) { };
