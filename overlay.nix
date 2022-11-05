@@ -587,6 +587,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-discover = prev.callPackage (./pkgs/tasty-discover.nix) { };
 
+  tasty-golden = prev.callPackage (./pkgs/tasty-golden.nix) { };
+
   tasty-hedgehog = prev.callPackage (./pkgs/tasty-hedgehog.nix) { };
 
   tasty-hunit = prev.callPackage (./pkgs/tasty-hunit.nix) { };
