@@ -45,6 +45,8 @@ final: prev: with pkgs.haskell.lib; {
 
   async = prev.callPackage (./pkgs/async.nix) { };
 
+  attoparsec = prev.callPackage (./pkgs/attoparsec.nix) { };
+
   autodocodec = prev.callPackage (./pkgs/autodocodec.nix) { };
 
   autodocodec-schema = prev.callPackage (./pkgs/autodocodec-schema.nix) { };
