@@ -411,6 +411,8 @@ final: prev: with pkgs.haskell.lib; {
 
   infer-license = prev.callPackage (./pkgs/infer-license.nix) { };
 
+  insert-ordered-containers = prev.callPackage (./pkgs/insert-ordered-containers.nix) { };
+
   inspection-testing = prev.callPackage (./pkgs/inspection-testing.nix) { };
 
   integer-logarithms = prev.callPackage (./pkgs/integer-logarithms.nix) { };
