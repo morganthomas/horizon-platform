@@ -495,6 +495,8 @@ final: prev: with pkgs.haskell.lib; {
 
   mockery = prev.callPackage (./pkgs/mockery.nix) { };
 
+  mod = prev.callPackage (./pkgs/mod.nix) { };
+
   monad-control = prev.callPackage (./pkgs/monad-control.nix) { };
 
   monad-logger = prev.callPackage (./pkgs/monad-logger.nix) { };
