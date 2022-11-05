@@ -793,6 +793,8 @@ final: prev: with pkgs.haskell.lib; {
 
   vault = prev.callPackage (./pkgs/vault.nix) { };
 
+  vec = prev.callPackage (./pkgs/vec.nix) { };
+
   vector = prev.callPackage (./pkgs/vector.nix) { };
 
   vector-algorithms = prev.callPackage (./pkgs/vector-algorithms.nix) { };
