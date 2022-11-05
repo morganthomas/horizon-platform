@@ -375,6 +375,8 @@ final: prev: with pkgs.haskell.lib; {
 
   microstache = prev.callPackage (./pkgs/microstache.nix) { };
 
+  mockery = prev.callPackage (./pkgs/mockery.nix) { };
+
   monad-control = prev.callPackage (./pkgs/monad-control.nix) { };
 
   monad-par = prev.callPackage (./pkgs/monad-par.nix) { };
