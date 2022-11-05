@@ -573,6 +573,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/parsonsmatt/typerep-map"
         (Some "75b7cd5d45986be07420a6821d352ad2adc0b697")
         (None Text)
+    , callHackage "unagi-chan" "0.4.1.4"
     , callHackage "unicode-collation" "0.1.3.2"
     , callHackage "unicode-data" "0.4.0"
     , callHackage "unicode-transforms" "0.4.0.1"

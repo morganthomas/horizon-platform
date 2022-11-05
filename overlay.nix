@@ -761,6 +761,8 @@ final: prev: with pkgs.haskell.lib; {
 
   typerep-map = prev.callPackage (./pkgs/typerep-map.nix) { };
 
+  unagi-chan = prev.callPackage (./pkgs/unagi-chan.nix) { };
+
   unicode-collation = prev.callPackage (./pkgs/unicode-collation.nix) { };
 
   unicode-data = prev.callPackage (./pkgs/unicode-data.nix) { };
