@@ -623,6 +623,8 @@ final: prev: with pkgs.haskell.lib; {
 
   unicode-transforms = prev.callPackage (./pkgs/unicode-transforms.nix) { };
 
+  uniplate = prev.callPackage (./pkgs/uniplate.nix) { };
+
   universe-base = prev.callPackage (./pkgs/universe-base.nix) { };
 
   unliftio = prev.callPackage (./pkgs/unliftio.nix) { };
