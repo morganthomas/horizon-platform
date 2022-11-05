@@ -715,6 +715,8 @@ final: prev: with pkgs.haskell.lib; {
 
   split = prev.callPackage (./pkgs/split.nix) { };
 
+  statistics = prev.callPackage (./pkgs/statistics.nix) { };
+
   streaming-commons = prev.callPackage (./pkgs/streaming-commons.nix) { };
 
   strict = prev.callPackage (./pkgs/strict.nix) { };
