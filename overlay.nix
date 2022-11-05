@@ -167,6 +167,8 @@ final: prev: with pkgs.haskell.lib; {
 
   dec = prev.callPackage (./pkgs/dec.nix) { };
 
+  deriving-aeson = prev.callPackage (./pkgs/deriving-aeson.nix) { };
+
   dhall = prev.callPackage (./pkgs/dhall.nix) { };
 
   dhall-json = prev.callPackage (./pkgs/dhall-json.nix) { };
