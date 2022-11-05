@@ -237,6 +237,8 @@ final: prev: with pkgs.haskell.lib; {
 
   enclosed-exceptions = prev.callPackage (./pkgs/enclosed-exceptions.nix) { };
 
+  expiring-cache-map = prev.callPackage (./pkgs/expiring-cache-map.nix) { };
+
   extra = prev.callPackage (./pkgs/extra.nix) { };
 
   fcf-containers = prev.callPackage (./pkgs/fcf-containers.nix) { };
