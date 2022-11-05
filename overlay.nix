@@ -603,6 +603,8 @@ final: prev: with pkgs.haskell.lib; {
 
   text-metrics = prev.callPackage (./pkgs/text-metrics.nix) { };
 
+  text-short = prev.callPackage (./pkgs/text-short.nix) { };
+
   text-zipper = prev.callPackage (./pkgs/text-zipper.nix) { };
 
   tf-random = prev.callPackage (./pkgs/tf-random.nix) { };
