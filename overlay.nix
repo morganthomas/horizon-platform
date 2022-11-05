@@ -375,6 +375,8 @@ final: prev: with pkgs.haskell.lib; {
 
   lsp-types = prev.callPackage (./pkgs/lsp-types.nix) { };
 
+  lua = prev.callPackage (./pkgs/lua.nix) { };
+
   lucid = prev.callPackage (./pkgs/lucid.nix) { };
 
   lucid-alpine = prev.callPackage (./pkgs/lucid-alpine.nix) { };
