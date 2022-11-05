@@ -645,6 +645,8 @@ final: prev: with pkgs.haskell.lib; {
 
   unordered-containers = prev.callPackage (./pkgs/unordered-containers.nix) { };
 
+  uuid-types = prev.callPackage (./pkgs/uuid-types.nix) { };
+
   validity = prev.callPackage (./pkgs/validity.nix) { };
 
   validity-aeson = prev.callPackage (./pkgs/validity-aeson.nix) { };
