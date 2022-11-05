@@ -167,6 +167,8 @@ final: prev: with pkgs.haskell.lib; {
 
   distribution-nixpkgs = prev.callPackage (./pkgs/distribution-nixpkgs.nix) { };
 
+  doctemplates = prev.callPackage (./pkgs/doctemplates.nix) { };
+
   doctest = prev.callPackage (./pkgs/doctest.nix) { };
 
   double-conversion = prev.callPackage (./pkgs/double-conversion.nix) { };

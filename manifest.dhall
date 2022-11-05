@@ -171,6 +171,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/sol/doctest"
         (Some "4eb97c213acf7abe965a3a1b67397199ed155f3c")
         (None Text)
+    , callHackage "doctemplates" "0.10.0.2"
     , callCabal2nix
         "double-conversion"
         "https://github.com/haskell/double-conversion"
