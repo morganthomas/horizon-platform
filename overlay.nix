@@ -565,6 +565,8 @@ final: prev: with pkgs.haskell.lib; {
 
   relude = prev.callPackage (./pkgs/relude.nix) { };
 
+  rere = prev.callPackage (./pkgs/rere.nix) { };
+
   rerebase = prev.callPackage (./pkgs/rerebase.nix) { };
 
   resource-pool = prev.callPackage (./pkgs/resource-pool.nix) { };
