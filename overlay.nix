@@ -151,6 +151,8 @@ final: prev: with pkgs.haskell.lib; {
 
   composite-tuple = prev.callPackage (./pkgs/composite-tuple.nix) { };
 
+  concurrent-output = prev.callPackage (./pkgs/concurrent-output.nix) { };
+
   conduit = prev.callPackage (./pkgs/conduit.nix) { };
 
   conduit-extra = prev.callPackage (./pkgs/conduit-extra.nix) { };
