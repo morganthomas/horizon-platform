@@ -503,6 +503,8 @@ final: prev: with pkgs.haskell.lib; {
 
   monad-par = prev.callPackage (./pkgs/monad-par.nix) { };
 
+  monad-par-extras = prev.callPackage (./pkgs/monad-par-extras.nix) { };
+
   monad-time = prev.callPackage (./pkgs/monad-time.nix) { };
 
   mono-traversable = prev.callPackage (./pkgs/mono-traversable.nix) { };
