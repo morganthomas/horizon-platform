@@ -576,6 +576,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "th-expand-syns" "0.4.10.0"
     , callHackage "th-extras" "0.0.0.6"
     , callHackage "th-lift-instances" "0.1.20"
+    , callHackage "th-reify-many" "0.1.10"
     , callHackage "tidal" "1.8.1"
     , callHackage "time-compat" "1.9.6.1"
     , callCabal2nix

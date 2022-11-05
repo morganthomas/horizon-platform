@@ -779,6 +779,8 @@ final: prev: with pkgs.haskell.lib; {
 
   th-lift-instances = prev.callPackage (./pkgs/th-lift-instances.nix) { };
 
+  th-reify-many = prev.callPackage (./pkgs/th-reify-many.nix) { };
+
   these = prev.callPackage (./pkgs/these.nix) { };
 
   these-skinny = prev.callPackage (./pkgs/these-skinny.nix) { };
