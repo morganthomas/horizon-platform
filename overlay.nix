@@ -325,6 +325,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hslua-marshalling = prev.callPackage (./pkgs/hslua-marshalling.nix) { };
 
+  hslua-module-doclayout = prev.callPackage (./pkgs/hslua-module-doclayout.nix) { };
+
   hslua-module-path = prev.callPackage (./pkgs/hslua-module-path.nix) { };
 
   hslua-module-system = prev.callPackage (./pkgs/hslua-module-system.nix) { };
