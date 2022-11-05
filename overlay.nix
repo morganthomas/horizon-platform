@@ -805,4 +805,6 @@ final: prev: with pkgs.haskell.lib; {
 
   xml-conduit = prev.callPackage (./pkgs/xml-conduit.nix) { };
 
+  yaml = prev.callPackage (./pkgs/yaml.nix) { };
+
 }
