@@ -148,6 +148,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "constraints" "0.13.4"
     , callHackage "criterion" "1.5.13.0"
     , callHackage "cursor" "0.3.2.0"
+    , callHackage "cursor-brick" "0.1.0.1"
     , callCabal2nix
         "cursor-dirforest"
         "https://github.com/NorfairKing/cursor-dirforest"

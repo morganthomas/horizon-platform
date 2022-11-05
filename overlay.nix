@@ -169,6 +169,8 @@ final: prev: with pkgs.haskell.lib; {
 
   cursor = prev.callPackage (./pkgs/cursor.nix) { };
 
+  cursor-brick = prev.callPackage (./pkgs/cursor-brick.nix) { };
+
   cursor-dirforest = prev.callPackage (./pkgs/cursor-dirforest.nix) { };
 
   cursor-dirforest-brick = prev.callPackage (./pkgs/cursor-dirforest-brick.nix) { };
