@@ -433,6 +433,8 @@ final: prev: with pkgs.haskell.lib; {
 
   lifted-async = prev.callPackage (./pkgs/lifted-async.nix) { };
 
+  lifted-base = prev.callPackage (./pkgs/lifted-base.nix) { };
+
   linear = prev.callPackage (./pkgs/linear.nix) { };
 
   log-effectful = prev.callPackage (./pkgs/log-effectful.nix) { };
