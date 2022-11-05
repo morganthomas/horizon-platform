@@ -520,6 +520,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/haskell-effectful/time-effectful"
         (Some "e212239b685e1ecf7ee95dd1e944cc563351907f")
         (None Text)
+    , callHackage "tls" "1.6.0"
     , callHackage "typed-process" "0.2.10.1"
     , callHackage "type-errors-pretty" "0.0.1.2"
     , callHackage "type-errors" "0.2.0.0"

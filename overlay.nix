@@ -665,6 +665,8 @@ final: prev: with pkgs.haskell.lib; {
 
   time-effectful = prev.callPackage (./pkgs/time-effectful.nix) { };
 
+  tls = prev.callPackage (./pkgs/tls.nix) { };
+
   type-equality = prev.callPackage (./pkgs/type-equality.nix) { };
 
   type-errors = prev.callPackage (./pkgs/type-errors.nix) { };
