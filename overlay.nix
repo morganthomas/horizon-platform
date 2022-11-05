@@ -659,6 +659,8 @@ final: prev: with pkgs.haskell.lib; {
 
   reflection = prev.callPackage (./pkgs/reflection.nix) { };
 
+  regex-applicative = prev.callPackage (./pkgs/regex-applicative.nix) { };
+
   regex-tdfa = prev.callPackage (./pkgs/regex-tdfa.nix) { };
 
   relude = prev.callPackage (./pkgs/relude.nix) { };
