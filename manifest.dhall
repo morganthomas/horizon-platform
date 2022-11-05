@@ -320,6 +320,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/haskell-effectful/log-effectful/"
         (Some "910c79e10d5ac3353f2a1551103a2b63229c3f57")
         (None Text)
+    , callHackage "lpeg" "1.0.3"
     , callHackage "lsp-types" "1.6.0.0"
     , callHackage "lsp" "1.6.0.0"
     , callHackage "lua-arbitrary" "1.0.1"

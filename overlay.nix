@@ -371,6 +371,8 @@ final: prev: with pkgs.haskell.lib; {
 
   log-effectful = prev.callPackage (./pkgs/log-effectful.nix) { };
 
+  lpeg = prev.callPackage (./pkgs/lpeg.nix) { };
+
   lsp = prev.callPackage (./pkgs/lsp.nix) { };
 
   lsp-types = prev.callPackage (./pkgs/lsp-types.nix) { };
