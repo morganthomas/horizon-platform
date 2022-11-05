@@ -354,6 +354,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "lifted-async" "0.10.2.1"
     , callHackage "lifted-base" "0.2.3.12"
     , callHackage "linear" "1.21.10"
+    , callHackage "log-base" "0.12.0.0"
     , callCabal2nix
         "log-effectful"
         "https://github.com/haskell-effectful/log-effectful/"

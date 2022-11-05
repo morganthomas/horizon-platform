@@ -445,6 +445,8 @@ final: prev: with pkgs.haskell.lib; {
 
   linear = prev.callPackage (./pkgs/linear.nix) { };
 
+  log-base = prev.callPackage (./pkgs/log-base.nix) { };
+
   log-effectful = prev.callPackage (./pkgs/log-effectful.nix) { };
 
   lpeg = prev.callPackage (./pkgs/lpeg.nix) { };
