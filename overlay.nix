@@ -199,6 +199,8 @@ final: prev: with pkgs.haskell.lib; {
 
   fcf-containers = prev.callPackage (./pkgs/fcf-containers.nix) { };
 
+  fin = prev.callPackage (./pkgs/fin.nix) { };
+
   finite-field = prev.callPackage (./pkgs/finite-field.nix) { };
 
   first-class-families = prev.callPackage (./pkgs/first-class-families.nix) { };
