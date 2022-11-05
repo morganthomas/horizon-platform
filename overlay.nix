@@ -395,6 +395,8 @@ final: prev: with pkgs.haskell.lib; {
 
   optics-th = prev.callPackage (./pkgs/optics-th.nix) { };
 
+  optparse-applicative = prev.callPackage (./pkgs/optparse-applicative.nix) { };
+
   pandoc = prev.callPackage (./pkgs/pandoc.nix) { };
 
   parallel = prev.callPackage (./pkgs/parallel.nix) { };
