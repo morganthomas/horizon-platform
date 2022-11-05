@@ -869,6 +869,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tls = prev.callPackage (./pkgs/tls.nix) { };
 
+  tls-session-manager = prev.callPackage (./pkgs/tls-session-manager.nix) { };
+
   tree-diff = prev.callPackage (./pkgs/tree-diff.nix) { };
 
   trifecta = prev.callPackage (./pkgs/trifecta.nix) { };
