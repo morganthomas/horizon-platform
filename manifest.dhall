@@ -181,6 +181,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "4eb97c213acf7abe965a3a1b67397199ed155f3c")
         (None Text)
     , callHackage "doctemplates" "0.10.0.2"
+    , callHackage "doctest-parallel" "0.2.5"
     , callCabal2nix
         "double-conversion"
         "https://github.com/haskell/double-conversion"

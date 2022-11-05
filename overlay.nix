@@ -189,6 +189,8 @@ final: prev: with pkgs.haskell.lib; {
 
   doctest = prev.callPackage (./pkgs/doctest.nix) { };
 
+  doctest-parallel = prev.callPackage (./pkgs/doctest-parallel.nix) { };
+
   double-conversion = prev.callPackage (./pkgs/double-conversion.nix) { };
 
   ed25519 = prev.callPackage (./pkgs/ed25519.nix) { };
