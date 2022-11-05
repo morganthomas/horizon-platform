@@ -379,6 +379,8 @@ final: prev: with pkgs.haskell.lib; {
 
   iproute = prev.callPackage (./pkgs/iproute.nix) { };
 
+  ipynb = prev.callPackage (./pkgs/ipynb.nix) { };
+
   kvstore-effectful = prev.callPackage (./pkgs/kvstore-effectful.nix) { };
 
   kvstore-effectful-cache = prev.callPackage (./pkgs/kvstore-effectful-cache.nix) { };

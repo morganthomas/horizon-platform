@@ -303,6 +303,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "infer-license" "0.2.0"
     , callHackage "integer-logarithms" "1.0.3.1"
     , callHackage "invariant" "0.6"
+    , callHackage "ipynb" "0.2"
     , callHackage "iproute" "1.7.12"
     , callCabal2nix
         "kvstore-effectful"
