@@ -397,6 +397,8 @@ final: prev: with pkgs.haskell.lib; {
 
   ipynb = prev.callPackage (./pkgs/ipynb.nix) { };
 
+  kan-extensions = prev.callPackage (./pkgs/kan-extensions.nix) { };
+
   kvstore-effectful = prev.callPackage (./pkgs/kvstore-effectful.nix) { };
 
   kvstore-effectful-cache = prev.callPackage (./pkgs/kvstore-effectful-cache.nix) { };
