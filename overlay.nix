@@ -727,6 +727,8 @@ final: prev: with pkgs.haskell.lib; {
 
   shake = prev.callPackage (./pkgs/shake.nix) { };
 
+  shakespeare = prev.callPackage (./pkgs/shakespeare.nix) { };
+
   shelly = prev.callPackage (./pkgs/shelly.nix) { };
 
   simple-sendfile = prev.callPackage (./pkgs/simple-sendfile.nix) { };
