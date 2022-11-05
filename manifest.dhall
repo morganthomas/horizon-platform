@@ -466,6 +466,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "hunit")
     , callHackage "tasty-wai" "0.1.2.0"
     , callHackage "test-framework" "0.8.2.0"
+    , callHackage "test-framework-hunit" "0.3.0.2"
     , callHackage "text-display" "0.0.3.0"
     , callHackage "text-metrics" "0.3.2"
     , callHackage "text-zipper" "0.12"
