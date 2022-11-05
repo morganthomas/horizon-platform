@@ -47,6 +47,8 @@ final: prev: with pkgs.haskell.lib; {
 
   async = prev.callPackage (./pkgs/async.nix) { };
 
+  atomic-primops = prev.callPackage (./pkgs/atomic-primops.nix) { };
+
   attoparsec = prev.callPackage (./pkgs/attoparsec.nix) { };
 
   attoparsec-iso8601 = prev.callPackage (./pkgs/attoparsec-iso8601.nix) { };
