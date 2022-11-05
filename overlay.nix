@@ -779,6 +779,8 @@ final: prev: with pkgs.haskell.lib; {
 
   wai = prev.callPackage (./pkgs/wai.nix) { };
 
+  wai-app-static = prev.callPackage (./pkgs/wai-app-static.nix) { };
+
   wai-extra = prev.callPackage (./pkgs/wai-extra.nix) { };
 
   wai-logger = prev.callPackage (./pkgs/wai-logger.nix) { };
