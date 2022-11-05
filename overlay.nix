@@ -971,6 +971,8 @@ final: prev: with pkgs.haskell.lib; {
 
   warp-tls = prev.callPackage (./pkgs/warp-tls.nix) { };
 
+  websockets = prev.callPackage (./pkgs/websockets.nix) { };
+
   with-utf8 = prev.callPackage (./pkgs/with-utf8.nix) { };
 
   witherable = prev.callPackage (./pkgs/witherable.nix) { };
