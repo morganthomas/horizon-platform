@@ -671,6 +671,8 @@ final: prev: with pkgs.haskell.lib; {
 
   servant = prev.callPackage (./pkgs/servant.nix) { };
 
+  servant-blaze = prev.callPackage (./pkgs/servant-blaze.nix) { };
+
   servant-client = prev.callPackage (./pkgs/servant-client.nix) { };
 
   servant-client-core = prev.callPackage (./pkgs/servant-client-core.nix) { };

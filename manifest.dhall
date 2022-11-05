@@ -487,6 +487,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/TeofilC/servant"
         (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
         (Some "servant")
+    , callHackage "servant-blaze" "0.9.1"
     , callCabal2nix
         "servant-client-core"
         "https://github.com/TeofilC/servant"
