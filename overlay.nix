@@ -567,6 +567,8 @@ final: prev: with pkgs.haskell.lib; {
 
   profunctors = prev.callPackage (./pkgs/profunctors.nix) { };
 
+  prometheus-client = prev.callPackage (./pkgs/prometheus-client.nix) { };
+
   prometheus-proc = prev.callPackage (./pkgs/prometheus-proc.nix) { };
 
   proteaaudio-sdl = prev.callPackage (./pkgs/proteaaudio-sdl.nix) { };
