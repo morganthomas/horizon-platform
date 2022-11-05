@@ -170,6 +170,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "69e8ae036b047fae105c1fe990e175a7572a3eba")
         (Some "dirforest")
     , callHackage "distribution-nixpkgs" "1.7.0"
+    , callHackage "distributive" "0.6.2.1"
     , callCabal2nix
         "doctest"
         "https://github.com/sol/doctest"
