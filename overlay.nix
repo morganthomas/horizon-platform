@@ -687,8 +687,6 @@ final: prev: with pkgs.haskell.lib; {
 
   safe-exceptions = prev.callPackage (./pkgs/safe-exceptions.nix) { };
 
-  saltine = prev.callPackage (./pkgs/saltine.nix) { };
-
   scientific = prev.callPackage (./pkgs/scientific.nix) { };
 
   scotty = prev.callPackage (./pkgs/scotty.nix) { };
