@@ -385,6 +385,8 @@ final: prev: with pkgs.haskell.lib; {
 
   infer-license = prev.callPackage (./pkgs/infer-license.nix) { };
 
+  inspection-testing = prev.callPackage (./pkgs/inspection-testing.nix) { };
+
   integer-logarithms = prev.callPackage (./pkgs/integer-logarithms.nix) { };
 
   invariant = prev.callPackage (./pkgs/invariant.nix) { };
