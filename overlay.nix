@@ -115,6 +115,8 @@ final: prev: with pkgs.haskell.lib; {
 
   co-log-polysemy = prev.callPackage (./pkgs/co-log-polysemy.nix) { };
 
+  commonmark = prev.callPackage (./pkgs/commonmark.nix) { };
+
   comonad = prev.callPackage (./pkgs/comonad.nix) { };
 
   compact = prev.callPackage (./pkgs/compact.nix) { };

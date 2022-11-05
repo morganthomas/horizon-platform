@@ -120,6 +120,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "citeproc" "0.8.0.1"
     , callHackage "co-log-core" "0.3.1.0"
     , callHackage "co-log-polysemy" "0.0.1.3"
+    , callHackage "commonmark" "0.2.2"
     , callHackage "comonad" "5.0.8"
     , callHackage "compact" "0.2.0.0"
     , callCabal2nix
