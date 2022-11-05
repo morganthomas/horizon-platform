@@ -767,6 +767,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tls = prev.callPackage (./pkgs/tls.nix) { };
 
+  tree-diff = prev.callPackage (./pkgs/tree-diff.nix) { };
+
   trifecta = prev.callPackage (./pkgs/trifecta.nix) { };
 
   type-equality = prev.callPackage (./pkgs/type-equality.nix) { };
