@@ -633,6 +633,8 @@ final: prev: with pkgs.haskell.lib; {
 
   skylighting-format-ansi = prev.callPackage (./pkgs/skylighting-format-ansi.nix) { };
 
+  skylighting-format-blaze-html = prev.callPackage (./pkgs/skylighting-format-blaze-html.nix) { };
+
   skylighting-format-latex = prev.callPackage (./pkgs/skylighting-format-latex.nix) { };
 
   slugify = prev.callPackage (./pkgs/slugify.nix) { };
