@@ -554,6 +554,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "warp-tls" "3.3.3"
     , callHackage "witherable" "0.4.2"
     , callHackage "with-utf8" "1.0.2.3"
+    , callHackage "x509-store" "1.6.9"
     , callHackage "x509" "1.7.7"
     , callHackage "xml-conduit" "1.9.1.1"
     ]
