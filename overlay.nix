@@ -471,8 +471,6 @@ final: prev: with pkgs.haskell.lib; {
 
   lens-family-th = prev.callPackage (./pkgs/lens-family-th.nix) { };
 
-  libsodium = prev.callPackage (./pkgs/libsodium.nix) { };
-
   libyaml = prev.callPackage (./pkgs/libyaml.nix) { };
 
   lifted-async = prev.callPackage (./pkgs/lifted-async.nix) { };
