@@ -743,6 +743,8 @@ final: prev: with pkgs.haskell.lib; {
 
   wai = prev.callPackage (./pkgs/wai.nix) { };
 
+  wai-extra = prev.callPackage (./pkgs/wai-extra.nix) { };
+
   wai-logger = prev.callPackage (./pkgs/wai-logger.nix) { };
 
   wai-middleware-heartbeat = prev.callPackage (./pkgs/wai-middleware-heartbeat.nix) { };

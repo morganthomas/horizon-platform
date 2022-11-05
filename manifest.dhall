@@ -562,6 +562,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "vinyl" "0.14.3"
     , callHackage "void" "0.7.3"
     , callHackage "vty" "5.37"
+    , callHackage "wai-extra" "3.1.13.0"
     , callCabal2nix
         "wai-middleware-heartbeat"
         "https://github.com/flora-pm/wai-middleware-heartbeat"
