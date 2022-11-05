@@ -353,6 +353,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hspec-meta = prev.callPackage (./pkgs/hspec-meta.nix) { };
 
+  http-api-data = prev.callPackage (./pkgs/http-api-data.nix) { };
+
   http-client = prev.callPackage (./pkgs/http-client.nix) { };
 
   http-client-tls = prev.callPackage (./pkgs/http-client-tls.nix) { };
