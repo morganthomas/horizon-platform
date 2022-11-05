@@ -129,6 +129,8 @@ final: prev: with pkgs.haskell.lib; {
 
   co-log-polysemy = prev.callPackage (./pkgs/co-log-polysemy.nix) { };
 
+  colourista = prev.callPackage (./pkgs/colourista.nix) { };
+
   commonmark = prev.callPackage (./pkgs/commonmark.nix) { };
 
   commonmark-extensions = prev.callPackage (./pkgs/commonmark-extensions.nix) { };
