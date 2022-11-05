@@ -561,6 +561,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-wai = prev.callPackage (./pkgs/tasty-wai.nix) { };
 
+  test-framework = prev.callPackage (./pkgs/test-framework.nix) { };
+
   text-display = prev.callPackage (./pkgs/text-display.nix) { };
 
   text-metrics = prev.callPackage (./pkgs/text-metrics.nix) { };
