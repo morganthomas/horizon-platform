@@ -569,6 +569,8 @@ final: prev: with pkgs.haskell.lib; {
 
   test-framework-hunit = prev.callPackage (./pkgs/test-framework-hunit.nix) { };
 
+  test-framework-quickcheck2 = prev.callPackage (./pkgs/test-framework-quickcheck2.nix) { };
+
   text-display = prev.callPackage (./pkgs/text-display.nix) { };
 
   text-metrics = prev.callPackage (./pkgs/text-metrics.nix) { };
