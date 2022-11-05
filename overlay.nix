@@ -461,6 +461,8 @@ final: prev: with pkgs.haskell.lib; {
 
   lukko = prev.callPackage (./pkgs/lukko.nix) { };
 
+  math-functions = prev.callPackage (./pkgs/math-functions.nix) { };
+
   megaparsec = prev.callPackage (./pkgs/megaparsec.nix) { };
 
   memory = prev.callPackage (./pkgs/memory.nix) { };
