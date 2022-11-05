@@ -317,6 +317,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hslua-objectorientation = prev.callPackage (./pkgs/hslua-objectorientation.nix) { };
 
+  hslua-packaging = prev.callPackage (./pkgs/hslua-packaging.nix) { };
+
   hspec = prev.callPackage (./pkgs/hspec.nix) { };
 
   hspec-contrib = prev.callPackage (./pkgs/hspec-contrib.nix) { };
