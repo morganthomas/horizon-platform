@@ -529,6 +529,8 @@ final: prev: with pkgs.haskell.lib; {
 
   net-mqtt = prev.callPackage (./pkgs/net-mqtt.nix) { };
 
+  network = prev.callPackage (./pkgs/network.nix) { };
+
   network-byte-order = prev.callPackage (./pkgs/network-byte-order.nix) { };
 
   network-uri = prev.callPackage (./pkgs/network-uri.nix) { };

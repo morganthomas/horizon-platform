@@ -402,6 +402,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "mwc-random" "0.15.0.2"
     , callHackage "network-byte-order" "0.1.6"
     , callHackage "network-uri" "2.6.4.1"
+    , callHackage "network" "3.1.2.7"
     , callHackage "newtype-generics" "0.6.2"
     , callHackage "nothunks" "0.1.3"
     , callCabal2nix
