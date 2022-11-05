@@ -107,6 +107,8 @@ final: prev: with pkgs.haskell.lib; {
 
   cereal = prev.callPackage (./pkgs/cereal.nix) { };
 
+  charset = prev.callPackage (./pkgs/charset.nix) { };
+
   citeproc = prev.callPackage (./pkgs/citeproc.nix) { };
 
   co-log-core = prev.callPackage (./pkgs/co-log-core.nix) { };
