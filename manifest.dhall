@@ -165,6 +165,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/NorfairKing/cursor-dirforest"
         (Some "6ad5b168e26eb4e647df9f007d812aaf59338d40")
         (Some "cursor-dirforest-gen")
+    , callHackage "cursor-gen" "0.4.0.0"
     , callHackage "cryptonite" "0.30"
     , callHackage "cryptohash-sha1" "0.11.101.0"
     , callHackage "cryptohash" "0.11.9"
