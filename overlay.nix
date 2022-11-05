@@ -421,6 +421,8 @@ final: prev: with pkgs.haskell.lib; {
 
   memory = prev.callPackage (./pkgs/memory.nix) { };
 
+  microlens-aeson = prev.callPackage (./pkgs/microlens-aeson.nix) { };
+
   microstache = prev.callPackage (./pkgs/microstache.nix) { };
 
   mockery = prev.callPackage (./pkgs/mockery.nix) { };
