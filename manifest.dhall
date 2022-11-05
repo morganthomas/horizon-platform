@@ -180,6 +180,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://gitlab.homotopic.tech/horizon/adopted/ed25519"
         (None Text)
         (None Text)
+    , callHackage "either" "5.0.2"
     , callHackage "email-validate" "2.3.2.16"
     , callCabal2nix
         "effectful-cache"
