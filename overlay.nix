@@ -723,6 +723,8 @@ final: prev: with pkgs.haskell.lib; {
 
   x509-system = prev.callPackage (./pkgs/x509-system.nix) { };
 
+  x509-validation = prev.callPackage (./pkgs/x509-validation.nix) { };
+
   xml-conduit = prev.callPackage (./pkgs/xml-conduit.nix) { };
 
 }
