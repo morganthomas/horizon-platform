@@ -535,6 +535,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (None Text)
         (Some "core")
     , callHackage "tasty-discover" "5.0.0"
+    , callHackage "tasty-expected-failure" "0.12.3"
     , callCabal2nix
         "tasty-hedgehog"
         "https://github.com/locallycompact/tasty-hedgehog"
