@@ -163,6 +163,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "cursor-dirforest-gen")
     , callHackage "cryptonite" "0.30"
     , callHackage "cryptohash-sha1" "0.11.101.0"
+    , callHackage "cryptohash" "0.11.9"
     , callHackage "data-fix" "0.3.2"
     , callHackage "dec" "0.0.5"
     , callHackage "deriving-aeson" "0.2.8"
