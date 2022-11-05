@@ -493,6 +493,8 @@ final: prev: with pkgs.haskell.lib; {
 
   password-types = prev.callPackage (./pkgs/password-types.nix) { };
 
+  path = prev.callPackage (./pkgs/path.nix) { };
+
   pcg-random = prev.callPackage (./pkgs/pcg-random.nix) { };
 
   pcre2 = prev.callPackage (./pkgs/pcre2.nix) { };
