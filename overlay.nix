@@ -413,6 +413,8 @@ final: prev: with pkgs.haskell.lib; {
 
   lucid-svg = prev.callPackage (./pkgs/lucid-svg.nix) { };
 
+  megaparsec = prev.callPackage (./pkgs/megaparsec.nix) { };
+
   memory = prev.callPackage (./pkgs/memory.nix) { };
 
   microstache = prev.callPackage (./pkgs/microstache.nix) { };
