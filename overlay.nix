@@ -319,6 +319,8 @@ final: prev: with pkgs.haskell.lib; {
 
   gitrev = prev.callPackage (./pkgs/gitrev.nix) { };
 
+  hackage-db = prev.callPackage (./pkgs/hackage-db.nix) { };
+
   hackage-security = prev.callPackage (./pkgs/hackage-security.nix) { };
 
   haddock-library = prev.callPackage (./pkgs/haddock-library.nix) { };
