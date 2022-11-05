@@ -711,6 +711,8 @@ final: prev: with pkgs.haskell.lib; {
 
   witherable = prev.callPackage (./pkgs/witherable.nix) { };
 
+  x509 = prev.callPackage (./pkgs/x509.nix) { };
+
   xml-conduit = prev.callPackage (./pkgs/xml-conduit.nix) { };
 
 }
