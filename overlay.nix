@@ -631,6 +631,8 @@ final: prev: with pkgs.haskell.lib; {
 
   singletons = prev.callPackage (./pkgs/singletons.nix) { };
 
+  skylighting = prev.callPackage (./pkgs/skylighting.nix) { };
+
   skylighting-core = prev.callPackage (./pkgs/skylighting-core.nix) { };
 
   skylighting-format-ansi = prev.callPackage (./pkgs/skylighting-format-ansi.nix) { };
