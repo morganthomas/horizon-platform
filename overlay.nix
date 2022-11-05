@@ -721,6 +721,8 @@ final: prev: with pkgs.haskell.lib; {
 
   x509-store = prev.callPackage (./pkgs/x509-store.nix) { };
 
+  x509-system = prev.callPackage (./pkgs/x509-system.nix) { };
+
   xml-conduit = prev.callPackage (./pkgs/xml-conduit.nix) { };
 
 }
