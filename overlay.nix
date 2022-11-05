@@ -51,6 +51,8 @@ final: prev: with pkgs.haskell.lib; {
 
   attoparsec = prev.callPackage (./pkgs/attoparsec.nix) { };
 
+  attoparsec-binary = prev.callPackage (./pkgs/attoparsec-binary.nix) { };
+
   attoparsec-iso8601 = prev.callPackage (./pkgs/attoparsec-iso8601.nix) { };
 
   autodocodec = prev.callPackage (./pkgs/autodocodec.nix) { };
