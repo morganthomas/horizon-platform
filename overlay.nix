@@ -543,6 +543,8 @@ final: prev: with pkgs.haskell.lib; {
 
   slugify = prev.callPackage (./pkgs/slugify.nix) { };
 
+  socks = prev.callPackage (./pkgs/socks.nix) { };
+
   some = prev.callPackage (./pkgs/some.nix) { };
 
   sop-core = prev.callPackage (./pkgs/sop-core.nix) { };
