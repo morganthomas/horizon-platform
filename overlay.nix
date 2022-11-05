@@ -377,6 +377,8 @@ final: prev: with pkgs.haskell.lib; {
 
   horizon-gen-nix = prev.callPackage (./pkgs/horizon-gen-nix.nix) { };
 
+  hosc = prev.callPackage (./pkgs/hosc.nix) { };
+
   hourglass = prev.callPackage (./pkgs/hourglass.nix) { };
 
   hpack = prev.callPackage (./pkgs/hpack.nix) { };
