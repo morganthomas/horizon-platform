@@ -205,6 +205,8 @@ final: prev: with pkgs.haskell.lib; {
 
   foundation = prev.callPackage (./pkgs/foundation.nix) { };
 
+  free = prev.callPackage (./pkgs/free.nix) { };
+
   fsnotify = prev.callPackage (./pkgs/fsnotify.nix) { };
 
   fuzzy-time = prev.callPackage (./pkgs/fuzzy-time.nix) { };
