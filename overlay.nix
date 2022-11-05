@@ -131,6 +131,8 @@ final: prev: with pkgs.haskell.lib; {
 
   config-ini = prev.callPackage (./pkgs/config-ini.nix) { };
 
+  connection = prev.callPackage (./pkgs/connection.nix) { };
+
   constraints = prev.callPackage (./pkgs/constraints.nix) { };
 
   cryptohash-sha1 = prev.callPackage (./pkgs/cryptohash-sha1.nix) { };

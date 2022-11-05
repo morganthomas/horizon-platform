@@ -132,6 +132,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "conduit" "1.3.4.2"
     , callHackage "conduit-extra" "1.3.6"
     , callHackage "config-ini" "0.2.5.0"
+    , callHackage "connection" "0.3.1"
     , callHackage "constraints" "0.13.4"
     , callHackage "cursor" "0.3.2.0"
     , callCabal2nix
