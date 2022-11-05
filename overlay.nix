@@ -35,6 +35,8 @@ final: prev: with pkgs.haskell.lib; {
 
   apecs = prev.callPackage (./pkgs/apecs.nix) { };
 
+  asn1-encoding = prev.callPackage (./pkgs/asn1-encoding.nix) { };
+
   asn1-types = prev.callPackage (./pkgs/asn1-types.nix) { };
 
   assoc = prev.callPackage (./pkgs/assoc.nix) { };
