@@ -301,6 +301,8 @@ final: prev: with pkgs.haskell.lib; {
 
   ghcid = prev.callPackage (./pkgs/ghcid.nix) { };
 
+  gitrev = prev.callPackage (./pkgs/gitrev.nix) { };
+
   hackage-security = prev.callPackage (./pkgs/hackage-security.nix) { };
 
   haddock-library = prev.callPackage (./pkgs/haddock-library.nix) { };
