@@ -85,6 +85,8 @@ final: prev: with pkgs.haskell.lib; {
 
   blaze-markup = prev.callPackage (./pkgs/blaze-markup.nix) { };
 
+  blaze-textual = prev.callPackage (./pkgs/blaze-textual.nix) { };
+
   boring = prev.callPackage (./pkgs/boring.nix) { };
 
   breakpoint = prev.callPackage (./pkgs/breakpoint.nix) { };
