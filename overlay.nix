@@ -63,6 +63,8 @@ final: prev: with pkgs.haskell.lib; {
 
   autodocodec-yaml = prev.callPackage (./pkgs/autodocodec-yaml.nix) { };
 
+  barbies = prev.callPackage (./pkgs/barbies.nix) { };
+
   base-compat = prev.callPackage (./pkgs/base-compat.nix) { };
 
   base-compat-batteries = prev.callPackage (./pkgs/base-compat-batteries.nix) { };
