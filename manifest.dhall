@@ -112,6 +112,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/NixOS/cabal2nix"
         (None Text)
         (Some "cabal2nix")
+    , callHackage "cache" "0.1.3.0"
     , callHackage "case-insensitive" "1.2.1.0"
     , callHackage "cassava" "0.5.3.0"
     , callHackage "cassava-megaparsec" "2.0.4"

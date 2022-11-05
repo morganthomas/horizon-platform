@@ -99,6 +99,8 @@ final: prev: with pkgs.haskell.lib; {
 
   cabal2nix = prev.callPackage (./pkgs/cabal2nix.nix) { };
 
+  cache = prev.callPackage (./pkgs/cache.nix) { };
+
   case-insensitive = prev.callPackage (./pkgs/case-insensitive.nix) { };
 
   cassava = prev.callPackage (./pkgs/cassava.nix) { };
