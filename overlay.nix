@@ -509,6 +509,8 @@ final: prev: with pkgs.haskell.lib; {
 
   psqueues = prev.callPackage (./pkgs/psqueues.nix) { };
 
+  quickcheck-classes = prev.callPackage (./pkgs/quickcheck-classes.nix) { };
+
   quickcheck-dynamic = prev.callPackage (./pkgs/quickcheck-dynamic.nix) { };
 
   quickcheck-instances = prev.callPackage (./pkgs/quickcheck-instances.nix) { };
