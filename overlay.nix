@@ -695,6 +695,8 @@ final: prev: with pkgs.haskell.lib; {
 
   test-framework-quickcheck2 = prev.callPackage (./pkgs/test-framework-quickcheck2.nix) { };
 
+  texmath = prev.callPackage (./pkgs/texmath.nix) { };
+
   text-display = prev.callPackage (./pkgs/text-display.nix) { };
 
   text-manipulate = prev.callPackage (./pkgs/text-manipulate.nix) { };
