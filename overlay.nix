@@ -475,6 +475,8 @@ final: prev: with pkgs.haskell.lib; {
 
   proteaaudio-sdl = prev.callPackage (./pkgs/proteaaudio-sdl.nix) { };
 
+  psqueues = prev.callPackage (./pkgs/psqueues.nix) { };
+
   quickcheck-dynamic = prev.callPackage (./pkgs/quickcheck-dynamic.nix) { };
 
   quickcheck-instances = prev.callPackage (./pkgs/quickcheck-instances.nix) { };
