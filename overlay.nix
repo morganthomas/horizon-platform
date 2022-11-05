@@ -597,6 +597,8 @@ final: prev: with pkgs.haskell.lib; {
 
   shelly = prev.callPackage (./pkgs/shelly.nix) { };
 
+  simple-sendfile = prev.callPackage (./pkgs/simple-sendfile.nix) { };
+
   singleton-bool = prev.callPackage (./pkgs/singleton-bool.nix) { };
 
   singletons = prev.callPackage (./pkgs/singletons.nix) { };
