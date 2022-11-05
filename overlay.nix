@@ -403,6 +403,8 @@ final: prev: with pkgs.haskell.lib; {
 
   kan-extensions = prev.callPackage (./pkgs/kan-extensions.nix) { };
 
+  keys = prev.callPackage (./pkgs/keys.nix) { };
+
   kvstore-effectful = prev.callPackage (./pkgs/kvstore-effectful.nix) { };
 
   kvstore-effectful-cache = prev.callPackage (./pkgs/kvstore-effectful-cache.nix) { };

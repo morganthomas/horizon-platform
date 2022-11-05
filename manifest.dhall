@@ -317,6 +317,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "ipynb" "0.2"
     , callHackage "iproute" "1.7.12"
     , callHackage "kan-extensions" "5.2.5"
+    , callHackage "keys" "3.12.3"
     , callCabal2nix
         "kvstore-effectful"
         "https://github.com/haskell-effectful/kvstore-effectful"
