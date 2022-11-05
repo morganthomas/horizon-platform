@@ -707,6 +707,8 @@ final: prev: with pkgs.haskell.lib; {
 
   unordered-containers = prev.callPackage (./pkgs/unordered-containers.nix) { };
 
+  uri-encode = prev.callPackage (./pkgs/uri-encode.nix) { };
+
   uuid-types = prev.callPackage (./pkgs/uuid-types.nix) { };
 
   validity = prev.callPackage (./pkgs/validity.nix) { };
