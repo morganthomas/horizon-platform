@@ -817,6 +817,8 @@ final: prev: with pkgs.haskell.lib; {
 
   text-metrics = prev.callPackage (./pkgs/text-metrics.nix) { };
 
+  text-rope = prev.callPackage (./pkgs/text-rope.nix) { };
+
   text-short = prev.callPackage (./pkgs/text-short.nix) { };
 
   text-zipper = prev.callPackage (./pkgs/text-zipper.nix) { };
