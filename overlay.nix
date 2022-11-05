@@ -119,6 +119,8 @@ final: prev: with pkgs.haskell.lib; {
 
   commonmark-extensions = prev.callPackage (./pkgs/commonmark-extensions.nix) { };
 
+  commonmark-pandoc = prev.callPackage (./pkgs/commonmark-pandoc.nix) { };
+
   comonad = prev.callPackage (./pkgs/comonad.nix) { };
 
   compact = prev.callPackage (./pkgs/compact.nix) { };
