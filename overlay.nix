@@ -601,6 +601,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-hedgehog = prev.callPackage (./pkgs/tasty-hedgehog.nix) { };
 
+  tasty-hslua = prev.callPackage (./pkgs/tasty-hslua.nix) { };
+
   tasty-hunit = prev.callPackage (./pkgs/tasty-hunit.nix) { };
 
   tasty-quickcheck = prev.callPackage (./pkgs/tasty-quickcheck.nix) { };
