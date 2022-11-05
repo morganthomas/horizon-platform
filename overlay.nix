@@ -419,6 +419,8 @@ final: prev: with pkgs.haskell.lib; {
 
   monad-time = prev.callPackage (./pkgs/monad-time.nix) { };
 
+  mono-traversable = prev.callPackage (./pkgs/mono-traversable.nix) { };
+
   monoid-subclasses = prev.callPackage (./pkgs/monoid-subclasses.nix) { };
 
   net-mqtt = prev.callPackage (./pkgs/net-mqtt.nix) { };
