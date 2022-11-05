@@ -317,6 +317,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hiedb = prev.callPackage (./pkgs/hiedb.nix) { };
 
+  hinotify = prev.callPackage (./pkgs/hinotify.nix) { };
+
   hledger = prev.callPackage (./pkgs/hledger.nix) { };
 
   hledger-lib = prev.callPackage (./pkgs/hledger-lib.nix) { };
