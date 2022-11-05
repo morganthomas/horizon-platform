@@ -525,6 +525,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/flora-pm/wai-middleware-heartbeat"
         (Some "bd7dbbe83d25c00fcd2cf5c77736af904910c596")
         (None Text)
+    , callHackage "wai-logger" "2.4.0"
     , callHackage "wai-middleware-static" "0.9.2"
     , callHackage "wai" "3.2.3"
     , callHackage "warp" "3.3.22"
