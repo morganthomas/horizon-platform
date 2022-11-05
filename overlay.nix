@@ -607,6 +607,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-hunit = prev.callPackage (./pkgs/tasty-hunit.nix) { };
 
+  tasty-lua = prev.callPackage (./pkgs/tasty-lua.nix) { };
+
   tasty-quickcheck = prev.callPackage (./pkgs/tasty-quickcheck.nix) { };
 
   tasty-wai = prev.callPackage (./pkgs/tasty-wai.nix) { };
