@@ -57,6 +57,8 @@ final: prev: with pkgs.haskell.lib; {
 
   basement = prev.callPackage (./pkgs/basement.nix) { };
 
+  bifunctors = prev.callPackage (./pkgs/bifunctors.nix) { };
+
   bimap = prev.callPackage (./pkgs/bimap.nix) { };
 
   binary-orphans = prev.callPackage (./pkgs/binary-orphans.nix) { };
