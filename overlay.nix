@@ -161,6 +161,8 @@ final: prev: with pkgs.haskell.lib; {
 
   criterion = prev.callPackage (./pkgs/criterion.nix) { };
 
+  criterion-measurement = prev.callPackage (./pkgs/criterion-measurement.nix) { };
+
   cryptohash = prev.callPackage (./pkgs/cryptohash.nix) { };
 
   cryptohash-sha1 = prev.callPackage (./pkgs/cryptohash-sha1.nix) { };
