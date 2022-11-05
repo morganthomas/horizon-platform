@@ -467,6 +467,8 @@ final: prev: with pkgs.haskell.lib; {
 
   pandoc = prev.callPackage (./pkgs/pandoc.nix) { };
 
+  pandoc-lua-marshal = prev.callPackage (./pkgs/pandoc-lua-marshal.nix) { };
+
   pandoc-types = prev.callPackage (./pkgs/pandoc-types.nix) { };
 
   parallel = prev.callPackage (./pkgs/parallel.nix) { };
