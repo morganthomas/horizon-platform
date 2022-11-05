@@ -311,6 +311,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hslua-classes = prev.callPackage (./pkgs/hslua-classes.nix) { };
 
+  hslua-core = prev.callPackage (./pkgs/hslua-core.nix) { };
+
   hslua-marshalling = prev.callPackage (./pkgs/hslua-marshalling.nix) { };
 
   hspec = prev.callPackage (./pkgs/hspec.nix) { };

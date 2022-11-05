@@ -268,6 +268,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "918df757ce5c9244232c1e3a1e05e9d9e3ab4f09")
         (None Text)
     , callHackage "hslua-aeson" "2.2.1"
+    , callHackage "hslua-core" "2.2.1"
     , callHackage "hslua-classes" "2.2.0"
     , callHackage "hslua-marshalling" "2.2.1"
     , callHackage "hslua" "2.2.1"
