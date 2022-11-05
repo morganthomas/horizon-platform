@@ -689,6 +689,8 @@ final: prev: with pkgs.haskell.lib; {
 
   sydtest-discover = prev.callPackage (./pkgs/sydtest-discover.nix) { };
 
+  tagged = prev.callPackage (./pkgs/tagged.nix) { };
+
   tasty = prev.callPackage (./pkgs/tasty.nix) { };
 
   tasty-discover = prev.callPackage (./pkgs/tasty-discover.nix) { };
