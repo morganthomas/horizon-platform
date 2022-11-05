@@ -443,6 +443,8 @@ final: prev: with pkgs.haskell.lib; {
 
   pandoc = prev.callPackage (./pkgs/pandoc.nix) { };
 
+  pandoc-types = prev.callPackage (./pkgs/pandoc-types.nix) { };
+
   parallel = prev.callPackage (./pkgs/parallel.nix) { };
 
   password = prev.callPackage (./pkgs/password.nix) { };
