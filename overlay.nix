@@ -377,6 +377,8 @@ final: prev: with pkgs.haskell.lib; {
 
   lua = prev.callPackage (./pkgs/lua.nix) { };
 
+  lua-arbitrary = prev.callPackage (./pkgs/lua-arbitrary.nix) { };
+
   lucid = prev.callPackage (./pkgs/lucid.nix) { };
 
   lucid-alpine = prev.callPackage (./pkgs/lucid-alpine.nix) { };

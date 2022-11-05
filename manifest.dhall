@@ -322,6 +322,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (None Text)
     , callHackage "lsp-types" "1.6.0.0"
     , callHackage "lsp" "1.6.0.0"
+    , callHackage "lua-arbitrary" "1.0.1"
     , callHackage "lua" "2.2.1"
     , callHackage "lucid-alpine" "0.1.0.7"
     , callHackage "lucid-aria" "0.1.0.1"
