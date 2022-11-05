@@ -563,6 +563,8 @@ final: prev: with pkgs.haskell.lib; {
 
   streaming-commons = prev.callPackage (./pkgs/streaming-commons.nix) { };
 
+  strict = prev.callPackage (./pkgs/strict.nix) { };
+
   string-interpolate = prev.callPackage (./pkgs/string-interpolate.nix) { };
 
   string-qq = prev.callPackage (./pkgs/string-qq.nix) { };
