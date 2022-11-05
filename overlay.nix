@@ -505,6 +505,8 @@ final: prev: with pkgs.haskell.lib; {
 
   semigroups = prev.callPackage (./pkgs/semigroups.nix) { };
 
+  semirings = prev.callPackage (./pkgs/semirings.nix) { };
+
   serialise = prev.callPackage (./pkgs/serialise.nix) { };
 
   servant = prev.callPackage (./pkgs/servant.nix) { };
