@@ -219,6 +219,8 @@ final: prev: with pkgs.haskell.lib; {
 
   fcf-containers = prev.callPackage (./pkgs/fcf-containers.nix) { };
 
+  filepattern = prev.callPackage (./pkgs/filepattern.nix) { };
+
   fin = prev.callPackage (./pkgs/fin.nix) { };
 
   finite-field = prev.callPackage (./pkgs/finite-field.nix) { };
