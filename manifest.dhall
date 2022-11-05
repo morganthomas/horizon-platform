@@ -269,6 +269,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (None Text)
     , callHackage "hslua-aeson" "2.2.1"
     , callHackage "hslua-classes" "2.2.0"
+    , callHackage "hslua-marshalling" "2.2.1"
     , callHackage "hslua" "2.2.1"
     , callHackage "hspec" "2.10.3"
     , callHackage "hspec-contrib" "0.5.1.1"
