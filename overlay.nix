@@ -453,6 +453,8 @@ final: prev: with pkgs.haskell.lib; {
 
   lucid-svg = prev.callPackage (./pkgs/lucid-svg.nix) { };
 
+  lukko = prev.callPackage (./pkgs/lukko.nix) { };
+
   megaparsec = prev.callPackage (./pkgs/megaparsec.nix) { };
 
   memory = prev.callPackage (./pkgs/memory.nix) { };
