@@ -637,6 +637,8 @@ final: prev: with pkgs.haskell.lib; {
 
   vinyl = prev.callPackage (./pkgs/vinyl.nix) { };
 
+  void = prev.callPackage (./pkgs/void.nix) { };
+
   vty = prev.callPackage (./pkgs/vty.nix) { };
 
   wai-middleware-heartbeat = prev.callPackage (./pkgs/wai-middleware-heartbeat.nix) { };

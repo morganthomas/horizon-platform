@@ -510,6 +510,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "vector" "0.13.0.0"
     , callHackage "vector-algorithms" "0.9.0.1"
     , callHackage "vinyl" "0.14.3"
+    , callHackage "void" "0.7.3"
     , callHackage "vty" "5.37"
     , callCabal2nix
         "wai-middleware-heartbeat"
