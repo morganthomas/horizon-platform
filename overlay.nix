@@ -17,6 +17,8 @@ final: prev: with pkgs.haskell.lib; {
 
   JuicyPixels = prev.callPackage (./pkgs/JuicyPixels.nix) { };
 
+  MonadRandom = prev.callPackage (./pkgs/MonadRandom.nix) { };
+
   OneTuple = prev.callPackage (./pkgs/OneTuple.nix) { };
 
   OpenGLRaw = prev.callPackage (./pkgs/OpenGLRaw.nix) { };
