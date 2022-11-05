@@ -487,6 +487,8 @@ final: prev: with pkgs.haskell.lib; {
 
   semialign = prev.callPackage (./pkgs/semialign.nix) { };
 
+  semigroups = prev.callPackage (./pkgs/semigroups.nix) { };
+
   serialise = prev.callPackage (./pkgs/serialise.nix) { };
 
   servant = prev.callPackage (./pkgs/servant.nix) { };

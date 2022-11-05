@@ -390,6 +390,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "sdl2-mixer" "1.2.0.0"
     , callHackage "sdl2-ttf" "2.1.3"
     , callHackage "semialign" "1.2.0.1"
+    , callHackage "semigroups" "0.20"
     , callHackage "serialise" "0.2.6.0"
     , callCabal2nix
         "servant"
