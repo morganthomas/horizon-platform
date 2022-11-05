@@ -735,6 +735,8 @@ final: prev: with pkgs.haskell.lib; {
 
   split = prev.callPackage (./pkgs/split.nix) { };
 
+  sqlite-simple = prev.callPackage (./pkgs/sqlite-simple.nix) { };
+
   statistics = prev.callPackage (./pkgs/statistics.nix) { };
 
   streaming-commons = prev.callPackage (./pkgs/streaming-commons.nix) { };
