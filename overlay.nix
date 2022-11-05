@@ -875,6 +875,8 @@ final: prev: with pkgs.haskell.lib; {
 
   vector-algorithms = prev.callPackage (./pkgs/vector-algorithms.nix) { };
 
+  vector-instances = prev.callPackage (./pkgs/vector-instances.nix) { };
+
   vector-th-unbox = prev.callPackage (./pkgs/vector-th-unbox.nix) { };
 
   vinyl = prev.callPackage (./pkgs/vinyl.nix) { };
