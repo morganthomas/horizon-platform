@@ -191,6 +191,8 @@ final: prev: with pkgs.haskell.lib; {
 
   data-fix = prev.callPackage (./pkgs/data-fix.nix) { };
 
+  data-sketches-core = prev.callPackage (./pkgs/data-sketches-core.nix) { };
+
   dec = prev.callPackage (./pkgs/dec.nix) { };
 
   dense-linear-algebra = prev.callPackage (./pkgs/dense-linear-algebra.nix) { };
