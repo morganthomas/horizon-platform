@@ -459,6 +459,8 @@ final: prev: with pkgs.haskell.lib; {
 
   primitive-addr = prev.callPackage (./pkgs/primitive-addr.nix) { };
 
+  profunctors = prev.callPackage (./pkgs/profunctors.nix) { };
+
   prometheus-proc = prev.callPackage (./pkgs/prometheus-proc.nix) { };
 
   proteaaudio-sdl = prev.callPackage (./pkgs/proteaaudio-sdl.nix) { };
