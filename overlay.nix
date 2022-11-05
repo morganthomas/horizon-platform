@@ -403,6 +403,8 @@ final: prev: with pkgs.haskell.lib; {
 
   pcre2 = prev.callPackage (./pkgs/pcre2.nix) { };
 
+  pem = prev.callPackage (./pkgs/pem.nix) { };
+
   persistent = prev.callPackage (./pkgs/persistent.nix) { };
 
   pg-entity = prev.callPackage (./pkgs/pg-entity.nix) { };
