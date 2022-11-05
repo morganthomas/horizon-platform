@@ -155,6 +155,8 @@ final: prev: with pkgs.haskell.lib; {
 
   constraints = prev.callPackage (./pkgs/constraints.nix) { };
 
+  criterion = prev.callPackage (./pkgs/criterion.nix) { };
+
   cryptohash-sha1 = prev.callPackage (./pkgs/cryptohash-sha1.nix) { };
 
   cryptonite = prev.callPackage (./pkgs/cryptonite.nix) { };
