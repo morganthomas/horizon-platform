@@ -569,6 +569,8 @@ final: prev: with pkgs.haskell.lib; {
 
   refined = prev.callPackage (./pkgs/refined.nix) { };
 
+  reflection = prev.callPackage (./pkgs/reflection.nix) { };
+
   relude = prev.callPackage (./pkgs/relude.nix) { };
 
   rere = prev.callPackage (./pkgs/rere.nix) { };
