@@ -406,6 +406,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "sdl2-ttf" "2.1.3"
     , callHackage "semialign" "1.2.0.1"
     , callHackage "semigroups" "0.20"
+    , callHackage "semigroupoids" "5.3.7"
     , callHackage "semirings" "0.6"
     , callHackage "serialise" "0.2.6.0"
     , callCabal2nix

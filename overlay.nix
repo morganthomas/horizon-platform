@@ -517,6 +517,8 @@ final: prev: with pkgs.haskell.lib; {
 
   semialign = prev.callPackage (./pkgs/semialign.nix) { };
 
+  semigroupoids = prev.callPackage (./pkgs/semigroupoids.nix) { };
+
   semigroups = prev.callPackage (./pkgs/semigroups.nix) { };
 
   semirings = prev.callPackage (./pkgs/semirings.nix) { };
