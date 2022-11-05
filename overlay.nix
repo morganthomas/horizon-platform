@@ -665,6 +665,8 @@ final: prev: with pkgs.haskell.lib; {
 
   text-display = prev.callPackage (./pkgs/text-display.nix) { };
 
+  text-manipulate = prev.callPackage (./pkgs/text-manipulate.nix) { };
+
   text-metrics = prev.callPackage (./pkgs/text-metrics.nix) { };
 
   text-short = prev.callPackage (./pkgs/text-short.nix) { };
