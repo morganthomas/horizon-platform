@@ -545,6 +545,8 @@ final: prev: with pkgs.haskell.lib; {
 
   pg-transact-effectful = prev.callPackage (./pkgs/pg-transact-effectful.nix) { };
 
+  pointed = prev.callPackage (./pkgs/pointed.nix) { };
+
   polysemy = prev.callPackage (./pkgs/polysemy.nix) { };
 
   polysemy-extra = prev.callPackage (./pkgs/polysemy-extra.nix) { };
