@@ -583,6 +583,8 @@ final: prev: with pkgs.haskell.lib; {
 
   rebase = prev.callPackage (./pkgs/rebase.nix) { };
 
+  reducers = prev.callPackage (./pkgs/reducers.nix) { };
+
   refined = prev.callPackage (./pkgs/refined.nix) { };
 
   reflection = prev.callPackage (./pkgs/reflection.nix) { };
