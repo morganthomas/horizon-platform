@@ -773,6 +773,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tf-random = prev.callPackage (./pkgs/tf-random.nix) { };
 
+  th-expand-syns = prev.callPackage (./pkgs/th-expand-syns.nix) { };
+
   th-extras = prev.callPackage (./pkgs/th-extras.nix) { };
 
   th-lift-instances = prev.callPackage (./pkgs/th-lift-instances.nix) { };
