@@ -23,6 +23,8 @@ final: prev: with pkgs.haskell.lib; {
 
   PyF = prev.callPackage (./pkgs/PyF.nix) { };
 
+  adjunctions = prev.callPackage (./pkgs/adjunctions.nix) { };
+
   aeson = prev.callPackage (./pkgs/aeson.nix) { };
 
   aeson-pretty = prev.callPackage (./pkgs/aeson-pretty.nix) { };
