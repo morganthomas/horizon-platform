@@ -583,6 +583,8 @@ final: prev: with pkgs.haskell.lib; {
 
   tasty-hunit = prev.callPackage (./pkgs/tasty-hunit.nix) { };
 
+  tasty-quickcheck = prev.callPackage (./pkgs/tasty-quickcheck.nix) { };
+
   tasty-wai = prev.callPackage (./pkgs/tasty-wai.nix) { };
 
   test-framework = prev.callPackage (./pkgs/test-framework.nix) { };

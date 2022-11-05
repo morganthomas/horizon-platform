@@ -475,6 +475,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/UnkindPartition/tasty"
         (None Text)
         (Some "hunit")
+    , callHackage "tasty-quickcheck" "0.10.2"
     , callHackage "tasty-wai" "0.1.2.0"
     , callHackage "test-framework" "0.8.2.0"
     , callHackage "test-framework-hunit" "0.3.0.2"
