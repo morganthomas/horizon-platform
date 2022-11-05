@@ -471,6 +471,8 @@ final: prev: with pkgs.haskell.lib; {
 
   resource-pool = prev.callPackage (./pkgs/resource-pool.nix) { };
 
+  resourcet = prev.callPackage (./pkgs/resourcet.nix) { };
+
   retry = prev.callPackage (./pkgs/retry.nix) { };
 
   rope-utf16-splay = prev.callPackage (./pkgs/rope-utf16-splay.nix) { };
