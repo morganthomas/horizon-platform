@@ -635,6 +635,8 @@ final: prev: with pkgs.haskell.lib; {
 
   quickcheck-instances = prev.callPackage (./pkgs/quickcheck-instances.nix) { };
 
+  random-shuffle = prev.callPackage (./pkgs/random-shuffle.nix) { };
+
   rebase = prev.callPackage (./pkgs/rebase.nix) { };
 
   reducers = prev.callPackage (./pkgs/reducers.nix) { };
