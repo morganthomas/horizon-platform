@@ -485,6 +485,8 @@ final: prev: with pkgs.haskell.lib; {
 
   monoid-subclasses = prev.callPackage (./pkgs/monoid-subclasses.nix) { };
 
+  mwc-random = prev.callPackage (./pkgs/mwc-random.nix) { };
+
   net-mqtt = prev.callPackage (./pkgs/net-mqtt.nix) { };
 
   network-byte-order = prev.callPackage (./pkgs/network-byte-order.nix) { };
