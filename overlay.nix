@@ -629,6 +629,8 @@ final: prev: with pkgs.haskell.lib; {
 
   skylighting-core = prev.callPackage (./pkgs/skylighting-core.nix) { };
 
+  skylighting-format-ansi = prev.callPackage (./pkgs/skylighting-format-ansi.nix) { };
+
   slugify = prev.callPackage (./pkgs/slugify.nix) { };
 
   socks = prev.callPackage (./pkgs/socks.nix) { };
