@@ -505,6 +505,8 @@ final: prev: with pkgs.haskell.lib; {
 
   lukko = prev.callPackage (./pkgs/lukko.nix) { };
 
+  markdown-unlit = prev.callPackage (./pkgs/markdown-unlit.nix) { };
+
   math-functions = prev.callPackage (./pkgs/math-functions.nix) { };
 
   megaparsec = prev.callPackage (./pkgs/megaparsec.nix) { };
