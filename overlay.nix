@@ -71,6 +71,8 @@ final: prev: with pkgs.haskell.lib; {
 
   binary-orphans = prev.callPackage (./pkgs/binary-orphans.nix) { };
 
+  bitvec = prev.callPackage (./pkgs/bitvec.nix) { };
+
   blaze-html = prev.callPackage (./pkgs/blaze-html.nix) { };
 
   blaze-markup = prev.callPackage (./pkgs/blaze-markup.nix) { };
