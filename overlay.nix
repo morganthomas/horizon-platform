@@ -155,6 +155,8 @@ self: with pkgs.haskell.lib; {
 
   co-log-polysemy = self.callPackage (./pkgs/co-log-polysemy.nix) { };
 
+  code-page = self.callPackage (./pkgs/code-page.nix) { };
+
   colour = self.callPackage (./pkgs/colour.nix) { };
 
   colourista = self.callPackage (./pkgs/colourista.nix) { };
