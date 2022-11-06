@@ -171,6 +171,8 @@ self: with pkgs.haskell.lib; {
 
   constraints = self.callPackage (./pkgs/constraints.nix) { };
 
+  contravariant = self.callPackage (./pkgs/contravariant.nix) { };
+
   criterion = self.callPackage (./pkgs/criterion.nix) { };
 
   criterion-measurement = self.callPackage (./pkgs/criterion-measurement.nix) { };
