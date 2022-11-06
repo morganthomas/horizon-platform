@@ -13,6 +13,8 @@ self: with pkgs.haskell.lib; {
 
   ChasingBottoms = self.callPackage (./pkgs/ChasingBottoms.nix) { };
 
+  Diff = self.callPackage (./pkgs/Diff.nix) { };
+
   HTTP = self.callPackage (./pkgs/HTTP.nix) { };
 
   HUnit = self.callPackage (./pkgs/HUnit.nix) { };
