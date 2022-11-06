@@ -25,6 +25,7 @@
           ghc = pkgs.haskell.compiler.ghc942;
           haskellLib = pkgs.haskell.lib.compose;
           initialPackages = import ./overlay.nix;
+          nonHackagePackages = self: super: { };
           compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { haskellLib = haskellLib; };
         };
         hp' = pkgs.lib.filterAttrs
