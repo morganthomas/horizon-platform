@@ -737,6 +737,8 @@ self: with pkgs.haskell.lib; {
 
   rerebase = self.callPackage (./pkgs/rerebase.nix) { };
 
+  resolv = self.callPackage (./pkgs/resolv.nix) { };
+
   resource-pool = self.callPackage (./pkgs/resource-pool.nix) { };
 
   resourcet = self.callPackage (./pkgs/resourcet.nix) { };
