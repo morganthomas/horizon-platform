@@ -8,7 +8,7 @@
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     horizon-gen-nix = {
       flake = false;
-      url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix";
+      url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix?ref=make-package-set";
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
@@ -37,7 +37,7 @@
       in
       {
         apps = {
-          horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.default;
+          horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.horizon-gen-nix;
           horizon-gen-gitlab-ci = {
             type = "app";
             program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
