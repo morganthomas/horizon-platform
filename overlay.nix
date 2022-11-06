@@ -505,6 +505,8 @@ self: with pkgs.haskell.lib; {
 
   infer-license = self.callPackage (./pkgs/infer-license.nix) { };
 
+  ini = self.callPackage (./pkgs/ini.nix) { };
+
   insert-ordered-containers = self.callPackage (./pkgs/insert-ordered-containers.nix) { };
 
   inspection-testing = self.callPackage (./pkgs/inspection-testing.nix) { };
