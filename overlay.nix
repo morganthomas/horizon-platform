@@ -587,6 +587,8 @@ self: with pkgs.haskell.lib; {
 
   odd-jobs = self.callPackage (./pkgs/odd-jobs.nix) { };
 
+  old-locale = self.callPackage (./pkgs/old-locale.nix) { };
+
   optics = self.callPackage (./pkgs/optics.nix) { };
 
   optics-core = self.callPackage (./pkgs/optics-core.nix) { };
