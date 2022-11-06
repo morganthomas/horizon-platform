@@ -117,6 +117,8 @@ self: with pkgs.haskell.lib; {
 
   bsb-http-chunked = self.callPackage (./pkgs/bsb-http-chunked.nix) { };
 
+  byteable = self.callPackage (./pkgs/byteable.nix) { };
+
   bytes = self.callPackage (./pkgs/bytes.nix) { };
 
   cabal-doctest = self.callPackage (./pkgs/cabal-doctest.nix) { };
