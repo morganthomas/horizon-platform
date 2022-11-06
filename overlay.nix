@@ -839,6 +839,8 @@ self: with pkgs.haskell.lib; {
 
   tasty-wai = self.callPackage (./pkgs/tasty-wai.nix) { };
 
+  temporary = self.callPackage (./pkgs/temporary.nix) { };
+
   test-framework = self.callPackage (./pkgs/test-framework.nix) { };
 
   test-framework-hunit = self.callPackage (./pkgs/test-framework-hunit.nix) { };
