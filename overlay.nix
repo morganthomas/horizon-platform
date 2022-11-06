@@ -721,6 +721,8 @@ self: with pkgs.haskell.lib; {
 
   regex-applicative = self.callPackage (./pkgs/regex-applicative.nix) { };
 
+  regex-base = self.callPackage (./pkgs/regex-base.nix) { };
+
   regex-posix = self.callPackage (./pkgs/regex-posix.nix) { };
 
   regex-tdfa = self.callPackage (./pkgs/regex-tdfa.nix) { };
