@@ -685,6 +685,8 @@ self: with pkgs.haskell.lib; {
 
   quickcheck-instances = self.callPackage (./pkgs/quickcheck-instances.nix) { };
 
+  quickcheck-unicode = self.callPackage (./pkgs/quickcheck-unicode.nix) { };
+
   random = self.callPackage (./pkgs/random.nix) { };
 
   random-shuffle = self.callPackage (./pkgs/random-shuffle.nix) { };
