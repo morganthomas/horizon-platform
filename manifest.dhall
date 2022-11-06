@@ -66,6 +66,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "Cabal-tree-diff")
     , callHackage "ChasingBottoms" "1.3.1.12"
     , callHackage "Diff" "0.4.1"
+    , callHackage "Glob" "0.10.2"
     , callHackage "HTTP" "4000.4.1"
     , callHackage "HUnit" "1.6.2.0"
     , callHackage "JuicyPixels" "3.3.8"

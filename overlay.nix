@@ -15,6 +15,8 @@ self: with pkgs.haskell.lib; {
 
   Diff = self.callPackage (./pkgs/Diff.nix) { };
 
+  Glob = self.callPackage (./pkgs/Glob.nix) { };
+
   HTTP = self.callPackage (./pkgs/HTTP.nix) { };
 
   HUnit = self.callPackage (./pkgs/HUnit.nix) { };
