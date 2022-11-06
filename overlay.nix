@@ -25,6 +25,8 @@ self: with pkgs.haskell.lib; {
 
   PyF = self.callPackage (./pkgs/PyF.nix) { };
 
+  QuickCheck = self.callPackage (./pkgs/QuickCheck.nix) { };
+
   adjunctions = self.callPackage (./pkgs/adjunctions.nix) { };
 
   aeson = self.callPackage (./pkgs/aeson.nix) { };
