@@ -15,6 +15,8 @@ self: with pkgs.haskell.lib; {
 
   HTTP = self.callPackage (./pkgs/HTTP.nix) { };
 
+  HUnit = self.callPackage (./pkgs/HUnit.nix) { };
+
   JuicyPixels = self.callPackage (./pkgs/JuicyPixels.nix) { };
 
   MonadRandom = self.callPackage (./pkgs/MonadRandom.nix) { };
