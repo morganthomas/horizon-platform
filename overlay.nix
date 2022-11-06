@@ -283,6 +283,8 @@ self: with pkgs.haskell.lib; {
 
   email-validate = self.callPackage (./pkgs/email-validate.nix) { };
 
+  emojis = self.callPackage (./pkgs/emojis.nix) { };
+
   enclosed-exceptions = self.callPackage (./pkgs/enclosed-exceptions.nix) { };
 
   expiring-cache-map = self.callPackage (./pkgs/expiring-cache-map.nix) { };
