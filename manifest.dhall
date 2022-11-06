@@ -215,6 +215,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/haskell/double-conversion"
         (None Text)
         (None Text)
+    , callHackage "echo" "0.1.4"
     , callCabal2nix
         "ed25519"
         "https://gitlab.homotopic.tech/horizon/adopted/ed25519"

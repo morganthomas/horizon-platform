@@ -249,6 +249,8 @@ self: with pkgs.haskell.lib; {
 
   double-conversion = self.callPackage (./pkgs/double-conversion.nix) { };
 
+  echo = self.callPackage (./pkgs/echo.nix) { };
+
   ed25519 = self.callPackage (./pkgs/ed25519.nix) { };
 
   edit-distance = self.callPackage (./pkgs/edit-distance.nix) { };
