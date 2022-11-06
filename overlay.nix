@@ -271,6 +271,8 @@ self: with pkgs.haskell.lib; {
 
   fuzzy-time = self.callPackage (./pkgs/fuzzy-time.nix) { };
 
+  generic-deriving = self.callPackage (./pkgs/generic-deriving.nix) { };
+
   generic-lens-core = self.callPackage (./pkgs/generic-lens-core.nix) { };
 
   generic-lens-lite = self.callPackage (./pkgs/generic-lens-lite.nix) { };
