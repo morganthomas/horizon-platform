@@ -923,6 +923,8 @@ self: with pkgs.haskell.lib; {
 
   temporary = self.callPackage (./pkgs/temporary.nix) { };
 
+  terminal-size = self.callPackage (./pkgs/terminal-size.nix) { };
+
   test-framework = self.callPackage (./pkgs/test-framework.nix) { };
 
   test-framework-hunit = self.callPackage (./pkgs/test-framework-hunit.nix) { };
