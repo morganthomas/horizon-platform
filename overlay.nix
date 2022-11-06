@@ -83,6 +83,8 @@ self: with pkgs.haskell.lib; {
 
   base64 = self.callPackage (./pkgs/base64.nix) { };
 
+  base64-bytestring = self.callPackage (./pkgs/base64-bytestring.nix) { };
+
   basement = self.callPackage (./pkgs/basement.nix) { };
 
   bifunctors = self.callPackage (./pkgs/bifunctors.nix) { };
