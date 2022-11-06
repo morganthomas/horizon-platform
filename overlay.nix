@@ -219,6 +219,8 @@ self: with pkgs.haskell.lib; {
 
   data-clist = self.callPackage (./pkgs/data-clist.nix) { };
 
+  data-default-class = self.callPackage (./pkgs/data-default-class.nix) { };
+
   data-fix = self.callPackage (./pkgs/data-fix.nix) { };
 
   data-sketches = self.callPackage (./pkgs/data-sketches.nix) { };
