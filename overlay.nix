@@ -249,6 +249,8 @@ self: with pkgs.haskell.lib; {
 
   ed25519 = self.callPackage (./pkgs/ed25519.nix) { };
 
+  edit-distance = self.callPackage (./pkgs/edit-distance.nix) { };
+
   effectful = self.callPackage (./pkgs/effectful.nix) { };
 
   effectful-cache = self.callPackage (./pkgs/effectful-cache.nix) { };
