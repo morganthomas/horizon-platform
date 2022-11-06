@@ -18,13 +18,14 @@
         pkgs = import nixpkgs { inherit system; };
         horizon-gen-nix-app = get-flake horizon-gen-nix;
         configuration = import ./configuration.nix { inherit inputs pkgs; };
+        haskellLib = pkgs.haskell.lib.compose;
         hsPkgs = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
           buildHaskellPackages = pkgs.haskell.packages.ghc942;
-          configurationCommon = { pkgs, haskellLib }: self: super: { };
+          configurationCommon = {pkgs, haskellLib}: self: super: { };
           ghc = pkgs.haskell.compiler.ghc942;
           haskellLib = pkgs.haskell.lib.compose;
           initialPackages = import ./overlay.nix;
-          compilerConfig = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules/configuration-ghc-9.4.x.nix) { haskellLib = pkgs.haskell.lib.compose; };
+          compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { haskellLib = haskellLib; };
         };
         hp' = pkgs.lib.filterAttrs
           (n: v: v != null
