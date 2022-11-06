@@ -137,6 +137,8 @@ self: with pkgs.haskell.lib; {
 
   citeproc = self.callPackage (./pkgs/citeproc.nix) { };
 
+  cmdargs = self.callPackage (./pkgs/cmdargs.nix) { };
+
   co-log-core = self.callPackage (./pkgs/co-log-core.nix) { };
 
   co-log-polysemy = self.callPackage (./pkgs/co-log-polysemy.nix) { };
