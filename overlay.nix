@@ -195,6 +195,8 @@ self: with pkgs.haskell.lib; {
 
   cryptohash-sha1 = self.callPackage (./pkgs/cryptohash-sha1.nix) { };
 
+  cryptohash-sha256 = self.callPackage (./pkgs/cryptohash-sha256.nix) { };
+
   cryptonite = self.callPackage (./pkgs/cryptonite.nix) { };
 
   cursor = self.callPackage (./pkgs/cursor.nix) { };
