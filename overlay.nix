@@ -219,6 +219,8 @@ self: with pkgs.haskell.lib; {
 
   data-clist = self.callPackage (./pkgs/data-clist.nix) { };
 
+  data-default = self.callPackage (./pkgs/data-default.nix) { };
+
   data-default-class = self.callPackage (./pkgs/data-default-class.nix) { };
 
   data-default-instances-containers = self.callPackage (./pkgs/data-default-instances-containers.nix) { };
