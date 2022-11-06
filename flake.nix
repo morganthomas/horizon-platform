@@ -22,9 +22,9 @@
           buildHaskellPackages = pkgs.haskell.packages.ghc942;
           configurationCommon = { pkgs, haskellLib }: self: super: { };
           ghc = pkgs.haskell.compiler.ghc942;
-          haskellLib = pkgs.haskell.lib;
+          haskellLib = pkgs.haskell.lib.compose;
           initialPackages = import ./overlay.nix;
-          compilerConfig = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules/configuration-ghc-9.4.x.nix) { haskellLib = pkgs.haskell.lib; };
+          compilerConfig = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules/configuration-ghc-9.4.x.nix) { haskellLib = pkgs.haskell.lib.compose; };
         };
         hp' = pkgs.lib.filterAttrs
           (n: v: v != null
