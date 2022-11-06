@@ -141,6 +141,8 @@ self: with pkgs.haskell.lib; {
 
   citeproc = self.callPackage (./pkgs/citeproc.nix) { };
 
+  clock = self.callPackage (./pkgs/clock.nix) { };
+
   cmdargs = self.callPackage (./pkgs/cmdargs.nix) { };
 
   co-log-core = self.callPackage (./pkgs/co-log-core.nix) { };
