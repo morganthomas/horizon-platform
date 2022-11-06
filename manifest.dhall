@@ -593,6 +593,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/UnkindPartition/tasty"
         (None Text)
         (Some "core")
+    , callHackage "tasty-bench" "0.3.2"
     , callHackage "tasty-discover" "5.0.0"
     , callHackage "tasty-expected-failure" "0.12.3"
     , callCabal2nix

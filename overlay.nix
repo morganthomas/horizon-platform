@@ -841,6 +841,8 @@ self: with pkgs.haskell.lib; {
 
   tasty = self.callPackage (./pkgs/tasty.nix) { };
 
+  tasty-bench = self.callPackage (./pkgs/tasty-bench.nix) { };
+
   tasty-discover = self.callPackage (./pkgs/tasty-discover.nix) { };
 
   tasty-expected-failure = self.callPackage (./pkgs/tasty-expected-failure.nix) { };
