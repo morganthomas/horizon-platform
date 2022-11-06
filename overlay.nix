@@ -655,6 +655,8 @@ self: with pkgs.haskell.lib; {
 
   psqueues = self.callPackage (./pkgs/psqueues.nix) { };
 
+  pureMD5 = self.callPackage (./pkgs/pureMD5.nix) { };
+
   quickcheck-classes = self.callPackage (./pkgs/quickcheck-classes.nix) { };
 
   quickcheck-dynamic = self.callPackage (./pkgs/quickcheck-dynamic.nix) { };
