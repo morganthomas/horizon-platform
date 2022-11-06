@@ -433,6 +433,8 @@ self: with pkgs.haskell.lib; {
 
   http2 = self.callPackage (./pkgs/http2.nix) { };
 
+  httpd-shed = self.callPackage (./pkgs/httpd-shed.nix) { };
+
   incipit-base = self.callPackage (./pkgs/incipit-base.nix) { };
 
   incipit-core = self.callPackage (./pkgs/incipit-core.nix) { };
