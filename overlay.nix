@@ -113,6 +113,8 @@ self: with pkgs.haskell.lib; {
 
   cache = self.callPackage (./pkgs/cache.nix) { };
 
+  call-stack = self.callPackage (./pkgs/call-stack.nix) { };
+
   case-insensitive = self.callPackage (./pkgs/case-insensitive.nix) { };
 
   cassava = self.callPackage (./pkgs/cassava.nix) { };
