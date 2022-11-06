@@ -221,6 +221,8 @@ self: with pkgs.haskell.lib; {
 
   data-default-class = self.callPackage (./pkgs/data-default-class.nix) { };
 
+  data-default-instances-containers = self.callPackage (./pkgs/data-default-instances-containers.nix) { };
+
   data-default-instances-old-locale = self.callPackage (./pkgs/data-default-instances-old-locale.nix) { };
 
   data-fix = self.callPackage (./pkgs/data-fix.nix) { };
