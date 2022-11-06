@@ -411,6 +411,8 @@ self: with pkgs.haskell.lib; {
 
   hlint = self.callPackage (./pkgs/hlint.nix) { };
 
+  hopenssl = self.callPackage (./pkgs/hopenssl.nix) { };
+
   horizon-gen-nix = self.callPackage (./pkgs/horizon-gen-nix.nix) { };
 
   hosc = self.callPackage (./pkgs/hosc.nix) { };
