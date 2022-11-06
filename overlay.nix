@@ -589,6 +589,8 @@ self: with pkgs.haskell.lib; {
 
   mwc-random = self.callPackage (./pkgs/mwc-random.nix) { };
 
+  nanospec = self.callPackage (./pkgs/nanospec.nix) { };
+
   net-mqtt = self.callPackage (./pkgs/net-mqtt.nix) { };
 
   network = self.callPackage (./pkgs/network.nix) { };
