@@ -661,6 +661,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "th-orphans" "0.13.14"
     , callHackage "th-reify-many" "0.1.10"
     , callHackage "tidal" "1.8.1"
+    , callHackage "timeit" "2.0"
     , callHackage "time-compat" "1.9.6.1"
     , callCabal2nix
         "time-effectful"
