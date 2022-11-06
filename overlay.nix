@@ -95,6 +95,8 @@ self: with pkgs.haskell.lib; {
 
   bitvec = self.callPackage (./pkgs/bitvec.nix) { };
 
+  blaze-builder = self.callPackage (./pkgs/blaze-builder.nix) { };
+
   blaze-html = self.callPackage (./pkgs/blaze-html.nix) { };
 
   blaze-markup = self.callPackage (./pkgs/blaze-markup.nix) { };
