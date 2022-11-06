@@ -959,6 +959,8 @@ self: with pkgs.haskell.lib; {
 
   uri-encode = self.callPackage (./pkgs/uri-encode.nix) { };
 
+  utf8-string = self.callPackage (./pkgs/utf8-string.nix) { };
+
   uuid = self.callPackage (./pkgs/uuid.nix) { };
 
   uuid-types = self.callPackage (./pkgs/uuid-types.nix) { };
