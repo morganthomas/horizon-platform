@@ -691,6 +691,8 @@ self: with pkgs.haskell.lib; {
 
   random = self.callPackage (./pkgs/random.nix) { };
 
+  random-bytestring = self.callPackage (./pkgs/random-bytestring.nix) { };
+
   random-shuffle = self.callPackage (./pkgs/random-shuffle.nix) { };
 
   rebase = self.callPackage (./pkgs/rebase.nix) { };
