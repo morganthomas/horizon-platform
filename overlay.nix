@@ -555,6 +555,8 @@ self: with pkgs.haskell.lib; {
 
   microlens-mtl = self.callPackage (./pkgs/microlens-mtl.nix) { };
 
+  microlens-th = self.callPackage (./pkgs/microlens-th.nix) { };
+
   microstache = self.callPackage (./pkgs/microstache.nix) { };
 
   mockery = self.callPackage (./pkgs/mockery.nix) { };
