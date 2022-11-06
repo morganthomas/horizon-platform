@@ -75,6 +75,8 @@ self: with pkgs.haskell.lib; {
 
   base-compat-batteries = self.callPackage (./pkgs/base-compat-batteries.nix) { };
 
+  base16-bytestring = self.callPackage (./pkgs/base16-bytestring.nix) { };
+
   base64 = self.callPackage (./pkgs/base64.nix) { };
 
   basement = self.callPackage (./pkgs/basement.nix) { };
