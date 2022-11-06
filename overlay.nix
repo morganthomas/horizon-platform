@@ -1045,6 +1045,8 @@ self: with pkgs.haskell.lib; {
 
   witherable = self.callPackage (./pkgs/witherable.nix) { };
 
+  word-wrap = self.callPackage (./pkgs/word-wrap.nix) { };
+
   x509 = self.callPackage (./pkgs/x509.nix) { };
 
   x509-store = self.callPackage (./pkgs/x509-store.nix) { };
