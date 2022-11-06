@@ -257,6 +257,8 @@ self: with pkgs.haskell.lib; {
 
   first-class-families = self.callPackage (./pkgs/first-class-families.nix) { };
 
+  fixed = self.callPackage (./pkgs/fixed.nix) { };
+
   foldl = self.callPackage (./pkgs/foldl.nix) { };
 
   foundation = self.callPackage (./pkgs/foundation.nix) { };
