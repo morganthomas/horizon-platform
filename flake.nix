@@ -1,5 +1,9 @@
 {
   inputs = {
+    all-cabal-hashes = {
+      url = "github:commercialhaskell/all-cabal-hashes/hackage";
+      flake = false;
+    };
     get-flake.url = "github:ursi/get-flake";
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     horizon-gen-nix = {
@@ -8,15 +12,19 @@
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
-  outputs = inputs@{ self, nixpkgs, flake-utils, get-flake, horizon-gen-nix, lint-utils, ... }:
+  outputs = inputs@{ self, all-cabal-hashes, nixpkgs, flake-utils, get-flake, horizon-gen-nix, lint-utils, ... }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
         pkgs = import nixpkgs { inherit system; };
         horizon-gen-nix-app = get-flake horizon-gen-nix;
-        overrides-hp = import ./overlay.nix { inherit inputs pkgs; };
         configuration = import ./configuration.nix { inherit inputs pkgs; };
-        hp = pkgs.haskell.packages.ghc942.override {
-          overrides = pkgs.lib.composeManyExtensions [ overrides-hp configuration ];
+        hsPkgs = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
+          buildHaskellPackages = pkgs.haskell.packages.ghc942;
+          configurationCommon = { pkgs, haskellLib }: self: super: { };
+          ghc = pkgs.haskell.compiler.ghc942;
+          haskellLib = pkgs.haskell.lib;
+          initialPackages = import ./overlay.nix;
+          compilerConfig = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules/configuration-ghc-9.4.x.nix) { haskellLib = pkgs.haskell.lib; };
         };
         hp' = pkgs.lib.filterAttrs
           (n: v: v != null
@@ -24,7 +32,7 @@
             && pkgs.lib.hasAttr "type" v
             && v.type == "derivation"
             && v.meta.broken == false)
-          hp;
+          hsPkgs;
         horizon-gen-gitlab-ci = pkgs.writers.writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
       in
       {
@@ -39,7 +47,6 @@
           dhall-format = lint-utils.outputs.linters.x86_64-linux.dhall-format ./.;
           nixpkgs-fmt = lint-utils.outputs.linters.x86_64-linux.nixpkgs-fmt ./.;
         };
-        overrides.ghc942 = overrides-hp;
         packages = hp';
       });
 }
