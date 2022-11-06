@@ -35,6 +35,8 @@ self: with pkgs.haskell.lib; {
 
   QuickCheck = self.callPackage (./pkgs/QuickCheck.nix) { };
 
+  StateVar = self.callPackage (./pkgs/StateVar.nix) { };
+
   adjunctions = self.callPackage (./pkgs/adjunctions.nix) { };
 
   aeson = self.callPackage (./pkgs/aeson.nix) { };
