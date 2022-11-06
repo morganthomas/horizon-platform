@@ -211,6 +211,8 @@ self: with pkgs.haskell.lib; {
 
   daemons = self.callPackage (./pkgs/daemons.nix) { };
 
+  data-clist = self.callPackage (./pkgs/data-clist.nix) { };
+
   data-fix = self.callPackage (./pkgs/data-fix.nix) { };
 
   data-sketches = self.callPackage (./pkgs/data-sketches.nix) { };
