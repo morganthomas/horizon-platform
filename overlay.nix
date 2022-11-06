@@ -549,6 +549,8 @@ self: with pkgs.haskell.lib; {
 
   memory = self.callPackage (./pkgs/memory.nix) { };
 
+  microlens = self.callPackage (./pkgs/microlens.nix) { };
+
   microlens-aeson = self.callPackage (./pkgs/microlens-aeson.nix) { };
 
   microstache = self.callPackage (./pkgs/microstache.nix) { };
