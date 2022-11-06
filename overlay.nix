@@ -459,6 +459,8 @@ self: with pkgs.haskell.lib; {
 
   hspec-discover = self.callPackage (./pkgs/hspec-discover.nix) { };
 
+  hspec-megaparsec = self.callPackage (./pkgs/hspec-megaparsec.nix) { };
+
   hspec-meta = self.callPackage (./pkgs/hspec-meta.nix) { };
 
   http-api-data = self.callPackage (./pkgs/http-api-data.nix) { };
