@@ -289,6 +289,8 @@ self: with pkgs.haskell.lib; {
 
   fcf-containers = self.callPackage (./pkgs/fcf-containers.nix) { };
 
+  file-embed = self.callPackage (./pkgs/file-embed.nix) { };
+
   filepattern = self.callPackage (./pkgs/filepattern.nix) { };
 
   fin = self.callPackage (./pkgs/fin.nix) { };
