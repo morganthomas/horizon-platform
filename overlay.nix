@@ -683,6 +683,8 @@ self: with pkgs.haskell.lib; {
 
   quickcheck-classes = self.callPackage (./pkgs/quickcheck-classes.nix) { };
 
+  quickcheck-classes-base = self.callPackage (./pkgs/quickcheck-classes-base.nix) { };
+
   quickcheck-dynamic = self.callPackage (./pkgs/quickcheck-dynamic.nix) { };
 
   quickcheck-instances = self.callPackage (./pkgs/quickcheck-instances.nix) { };
