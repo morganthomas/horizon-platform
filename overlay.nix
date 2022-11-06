@@ -843,6 +843,8 @@ self: with pkgs.haskell.lib; {
 
   shelly = self.callPackage (./pkgs/shelly.nix) { };
 
+  silently = self.callPackage (./pkgs/silently.nix) { };
+
   simple-sendfile = self.callPackage (./pkgs/simple-sendfile.nix) { };
 
   singleton-bool = self.callPackage (./pkgs/singleton-bool.nix) { };
