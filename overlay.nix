@@ -227,6 +227,8 @@ self: with pkgs.haskell.lib; {
 
   distributive = self.callPackage (./pkgs/distributive.nix) { };
 
+  dlist = self.callPackage (./pkgs/dlist.nix) { };
+
   doctemplates = self.callPackage (./pkgs/doctemplates.nix) { };
 
   doctest = self.callPackage (./pkgs/doctest.nix) { };
