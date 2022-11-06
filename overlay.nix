@@ -523,6 +523,8 @@ self: with pkgs.haskell.lib; {
 
   ipynb = self.callPackage (./pkgs/ipynb.nix) { };
 
+  js-chart = self.callPackage (./pkgs/js-chart.nix) { };
+
   kan-extensions = self.callPackage (./pkgs/kan-extensions.nix) { };
 
   keys = self.callPackage (./pkgs/keys.nix) { };
