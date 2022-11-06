@@ -25,6 +25,8 @@ self: with pkgs.haskell.lib; {
 
   OneTuple = self.callPackage (./pkgs/OneTuple.nix) { };
 
+  Only = self.callPackage (./pkgs/Only.nix) { };
+
   OpenGLRaw = self.callPackage (./pkgs/OpenGLRaw.nix) { };
 
   PyF = self.callPackage (./pkgs/PyF.nix) { };
