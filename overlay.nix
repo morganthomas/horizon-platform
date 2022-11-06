@@ -885,6 +885,8 @@ self: with pkgs.haskell.lib; {
 
   tls-session-manager = self.callPackage (./pkgs/tls-session-manager.nix) { };
 
+  transformers-compat = self.callPackage (./pkgs/transformers-compat.nix) { };
+
   tree-diff = self.callPackage (./pkgs/tree-diff.nix) { };
 
   trifecta = self.callPackage (./pkgs/trifecta.nix) { };
