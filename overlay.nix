@@ -879,6 +879,8 @@ self: with pkgs.haskell.lib; {
 
   tf-random = self.callPackage (./pkgs/tf-random.nix) { };
 
+  th-abstraction = self.callPackage (./pkgs/th-abstraction.nix) { };
+
   th-env = self.callPackage (./pkgs/th-env.nix) { };
 
   th-expand-syns = self.callPackage (./pkgs/th-expand-syns.nix) { };
