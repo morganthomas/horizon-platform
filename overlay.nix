@@ -1011,6 +1011,8 @@ self: with pkgs.haskell.lib; {
 
   random-shuffle = self.callPackage (./pkgs/random-shuffle.nix) { };
 
+  raw-strings-qq = self.callPackage (./pkgs/raw-strings-qq.nix) { };
+
   rdtsc = self.callPackage (./pkgs/rdtsc.nix) { };
 
   rebase = self.callPackage (./pkgs/rebase.nix) { };
