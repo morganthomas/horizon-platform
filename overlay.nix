@@ -791,6 +791,8 @@ self: with pkgs.haskell.lib; {
 
   microstache = self.callPackage (./pkgs/microstache.nix) { };
 
+  mime-types = self.callPackage (./pkgs/mime-types.nix) { };
+
   mmorph = self.callPackage (./pkgs/mmorph.nix) { };
 
   mockery = self.callPackage (./pkgs/mockery.nix) { };
