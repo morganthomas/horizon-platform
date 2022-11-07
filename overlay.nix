@@ -805,6 +805,8 @@ self: with pkgs.haskell.lib; {
 
   parsers = self.callPackage (./pkgs/parsers.nix) { };
 
+  parsers-megaparsec = self.callPackage (./pkgs/parsers-megaparsec.nix) { };
+
   password = self.callPackage (./pkgs/password.nix) { };
 
   password-types = self.callPackage (./pkgs/password-types.nix) { };
