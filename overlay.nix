@@ -973,6 +973,8 @@ self: with pkgs.haskell.lib; {
 
   tasty-smallcheck = self.callPackage (./pkgs/tasty-smallcheck.nix) { };
 
+  tasty-th = self.callPackage (./pkgs/tasty-th.nix) { };
+
   tasty-wai = self.callPackage (./pkgs/tasty-wai.nix) { };
 
   temporary = self.callPackage (./pkgs/temporary.nix) { };
