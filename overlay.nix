@@ -619,6 +619,8 @@ self: with pkgs.haskell.lib; {
 
   log-effectful = self.callPackage (./pkgs/log-effectful.nix) { };
 
+  logging-facade = self.callPackage (./pkgs/logging-facade.nix) { };
+
   lpeg = self.callPackage (./pkgs/lpeg.nix) { };
 
   lsp = self.callPackage (./pkgs/lsp.nix) { };
