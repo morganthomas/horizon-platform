@@ -533,6 +533,8 @@ self: with pkgs.haskell.lib; {
 
   hashing = self.callPackage (./pkgs/hashing.nix) { };
 
+  hashmap = self.callPackage (./pkgs/hashmap.nix) { };
+
   hashtables = self.callPackage (./pkgs/hashtables.nix) { };
 
   haskell-lexer = self.callPackage (./pkgs/haskell-lexer.nix) { };
