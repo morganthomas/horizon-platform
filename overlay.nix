@@ -319,6 +319,8 @@ self: with pkgs.haskell.lib; {
 
   dhall-json = self.callPackage (./pkgs/dhall-json.nix) { };
 
+  digest = self.callPackage (./pkgs/digest.nix) { };
+
   dimensional = self.callPackage (./pkgs/dimensional.nix) { };
 
   direct-sqlite = self.callPackage (./pkgs/direct-sqlite.nix) { };

@@ -233,6 +233,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "deriving-aeson" "0.2.8"
     , callHackage "dhall" "1.41.2"
     , callHackage "dhall-json" "1.7.11"
+    , callHackage "digest" "0.0.1.3"
     , callHackage "dimensional" "1.5"
     , callHackage "direct-sqlite" "2.3.27"
     , callCabal2nix
