@@ -671,6 +671,8 @@ self: with pkgs.haskell.lib; {
 
   monad-par-extras = self.callPackage (./pkgs/monad-par-extras.nix) { };
 
+  monad-peel = self.callPackage (./pkgs/monad-peel.nix) { };
+
   monad-time = self.callPackage (./pkgs/monad-time.nix) { };
 
   mono-traversable = self.callPackage (./pkgs/mono-traversable.nix) { };
