@@ -145,6 +145,8 @@ self: with pkgs.haskell.lib; {
 
   bytestring-builder = self.callPackage (./pkgs/bytestring-builder.nix) { };
 
+  c2hs = self.callPackage (./pkgs/c2hs.nix) { };
+
   cabal-doctest = self.callPackage (./pkgs/cabal-doctest.nix) { };
 
   cabal-install = self.callPackage (./pkgs/cabal-install.nix) { };
