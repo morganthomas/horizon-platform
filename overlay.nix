@@ -923,6 +923,8 @@ self: with pkgs.haskell.lib; {
 
   polysemy-zoo = self.callPackage (./pkgs/polysemy-zoo.nix) { };
 
+  port-utils = self.callPackage (./pkgs/port-utils.nix) { };
+
   postgresql-libpq = self.callPackage (./pkgs/postgresql-libpq.nix) { };
 
   postgresql-migration = self.callPackage (./pkgs/postgresql-migration.nix) { };
