@@ -239,6 +239,8 @@ self: with pkgs.haskell.lib; {
 
   crypto-api = self.callPackage (./pkgs/crypto-api.nix) { };
 
+  crypto-api-tests = self.callPackage (./pkgs/crypto-api-tests.nix) { };
+
   cryptohash = self.callPackage (./pkgs/cryptohash.nix) { };
 
   cryptohash-md5 = self.callPackage (./pkgs/cryptohash-md5.nix) { };
