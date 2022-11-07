@@ -327,6 +327,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "hashtables" "1.3"
     , callHackage "haskell-src-exts" "1.23.1"
     , callHackage "haskell-src-meta" "0.8.11"
+    , callHackage "heaps" "0.4"
     , callCabal2nix
         "hedgehog-golden"
         "https://github.com/maybe-hedgehog-later/hedgehog-golden"

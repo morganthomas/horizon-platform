@@ -459,6 +459,8 @@ self: with pkgs.haskell.lib; {
 
   haskell-src-meta = self.callPackage (./pkgs/haskell-src-meta.nix) { };
 
+  heaps = self.callPackage (./pkgs/heaps.nix) { };
+
   hedgehog = self.callPackage (./pkgs/hedgehog.nix) { };
 
   hedgehog-golden = self.callPackage (./pkgs/hedgehog-golden.nix) { };
