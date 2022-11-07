@@ -11,4 +11,6 @@ final: prev: {
   splitmix = prev.callPackage ./pkgs/splitmix.nix { inherit (pkgs) testu01; };
 
   text-icu = prev.callPackage ./pkgs/text-icu.nix { inherit (pkgs) icu-i18n; };
+
+  zlib = prev.callPackage ./pkgs/zlib.nix { inherit (pkgs) zlib; };
 }

@@ -1501,4 +1501,6 @@ self: with pkgs.haskell.lib; {
 
   zip-archive = self.callPackage (./pkgs/zip-archive.nix) { };
 
+  zlib = self.callPackage (./pkgs/zlib.nix) { };
+
 }

@@ -937,4 +937,5 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "xml" "1.3.14"
     , callHackage "yaml" "0.11.8.0"
     , callHackage "zip-archive" "0.4.2.2"
+    , callHackage "zlib" "0.6.3.0"
     ]
