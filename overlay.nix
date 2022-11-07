@@ -699,6 +699,8 @@ self: with pkgs.haskell.lib; {
 
   libsodium = self.callPackage (./pkgs/libsodium.nix) { };
 
+  libxml = self.callPackage (./pkgs/libxml.nix) { };
+
   libyaml = self.callPackage (./pkgs/libyaml.nix) { };
 
   lift-type = self.callPackage (./pkgs/lift-type.nix) { };
