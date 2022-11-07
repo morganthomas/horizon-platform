@@ -987,6 +987,8 @@ self: with pkgs.haskell.lib; {
 
   pureMD5 = self.callPackage (./pkgs/pureMD5.nix) { };
 
+  quickcheck-assertions = self.callPackage (./pkgs/quickcheck-assertions.nix) { };
+
   quickcheck-classes = self.callPackage (./pkgs/quickcheck-classes.nix) { };
 
   quickcheck-classes-base = self.callPackage (./pkgs/quickcheck-classes-base.nix) { };
