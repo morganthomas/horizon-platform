@@ -975,6 +975,8 @@ self: with pkgs.haskell.lib; {
 
   system-filepath = self.callPackage (./pkgs/system-filepath.nix) { };
 
+  tabular = self.callPackage (./pkgs/tabular.nix) { };
+
   tagged = self.callPackage (./pkgs/tagged.nix) { };
 
   tar = self.callPackage (./pkgs/tar.nix) { };
