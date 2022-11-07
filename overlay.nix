@@ -1139,6 +1139,8 @@ self: with pkgs.haskell.lib; {
 
   timeit = self.callPackage (./pkgs/timeit.nix) { };
 
+  timing-convenience = self.callPackage (./pkgs/timing-convenience.nix) { };
+
   tls = self.callPackage (./pkgs/tls.nix) { };
 
   tls-session-manager = self.callPackage (./pkgs/tls-session-manager.nix) { };
