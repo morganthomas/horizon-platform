@@ -235,6 +235,8 @@ self: with pkgs.haskell.lib; {
 
   cryptohash = self.callPackage (./pkgs/cryptohash.nix) { };
 
+  cryptohash-md5 = self.callPackage (./pkgs/cryptohash-md5.nix) { };
+
   cryptohash-sha1 = self.callPackage (./pkgs/cryptohash-sha1.nix) { };
 
   cryptohash-sha256 = self.callPackage (./pkgs/cryptohash-sha256.nix) { };
