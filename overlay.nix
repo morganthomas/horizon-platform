@@ -817,6 +817,8 @@ self: with pkgs.haskell.lib; {
 
   pg-transact-effectful = self.callPackage (./pkgs/pg-transact-effectful.nix) { };
 
+  pgp-wordlist = self.callPackage (./pkgs/pgp-wordlist.nix) { };
+
   pointed = self.callPackage (./pkgs/pointed.nix) { };
 
   polyparse = self.callPackage (./pkgs/polyparse.nix) { };

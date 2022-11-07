@@ -542,6 +542,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/Kleidukos/pg-transact-effectful"
         (Some "45730b124c7c21f1dcfd85667fda1c19b8ec9723")
         (None Text)
+    , callHackage "pgp-wordlist" "0.1.0.3"
     , callHackage "pointed" "5.0.4"
     , callHackage "polyparse" "1.13"
     , callHackage "polysemy-extra" "0.2.1.0"
