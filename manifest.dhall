@@ -744,6 +744,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (None Text)
         (None Text)
     , callHackage "tasty-hslua" "1.0.2"
+    , callHackage "tasty-hspec" "1.2.0.1"
     , callCabal2nix
         "tasty-hunit"
         "https://github.com/UnkindPartition/tasty"

@@ -1147,6 +1147,8 @@ self: with pkgs.haskell.lib; {
 
   tasty-hslua = self.callPackage (./pkgs/tasty-hslua.nix) { };
 
+  tasty-hspec = self.callPackage (./pkgs/tasty-hspec.nix) { };
+
   tasty-hunit = self.callPackage (./pkgs/tasty-hunit.nix) { };
 
   tasty-inspection-testing = self.callPackage (./pkgs/tasty-inspection-testing.nix) { };
