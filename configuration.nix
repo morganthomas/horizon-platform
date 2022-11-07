@@ -4,6 +4,8 @@ with pkgs.haskell.lib;
 
 final: prev: {
 
+  digest = addExtraLibrary prev.digest pkgs.zlib;
+
   libsodium = prev.callPackage ./pkgs/libsodium.nix { inherit (pkgs) libsodium; };
 
   saltine = addPkgconfigDepend prev.saltine pkgs.libsodium;
