@@ -367,6 +367,8 @@ self: with pkgs.haskell.lib; {
 
   genvalidity-hspec = self.callPackage (./pkgs/genvalidity-hspec.nix) { };
 
+  genvalidity-hspec-aeson = self.callPackage (./pkgs/genvalidity-hspec-aeson.nix) { };
+
   genvalidity-hspec-optics = self.callPackage (./pkgs/genvalidity-hspec-optics.nix) { };
 
   genvalidity-path = self.callPackage (./pkgs/genvalidity-path.nix) { };
