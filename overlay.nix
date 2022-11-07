@@ -909,6 +909,8 @@ self: with pkgs.haskell.lib; {
 
   sydtest-discover = self.callPackage (./pkgs/sydtest-discover.nix) { };
 
+  system-filepath = self.callPackage (./pkgs/system-filepath.nix) { };
+
   tagged = self.callPackage (./pkgs/tagged.nix) { };
 
   tar = self.callPackage (./pkgs/tar.nix) { };

@@ -617,6 +617,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "syb" "0.7.2.1"
     , callHackage "sydtest" "0.13.0.0"
     , callHackage "sydtest-discover" "0.0.0.2"
+    , callHackage "system-filepath" "0.4.14"
     , callHackage "tagged" "0.8.6.1"
     , callHackage "tar" "0.5.1.1"
     , callCabal2nix
