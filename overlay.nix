@@ -1071,6 +1071,8 @@ self: with pkgs.haskell.lib; {
 
   test-framework-quickcheck2 = self.callPackage (./pkgs/test-framework-quickcheck2.nix) { };
 
+  test-framework-th = self.callPackage (./pkgs/test-framework-th.nix) { };
+
   texmath = self.callPackage (./pkgs/texmath.nix) { };
 
   text-conversions = self.callPackage (./pkgs/text-conversions.nix) { };
