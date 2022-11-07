@@ -299,6 +299,8 @@ self: with pkgs.haskell.lib; {
 
   double-conversion = self.callPackage (./pkgs/double-conversion.nix) { };
 
+  easy-file = self.callPackage (./pkgs/easy-file.nix) { };
+
   echo = self.callPackage (./pkgs/echo.nix) { };
 
   ed25519 = self.callPackage (./pkgs/ed25519.nix) { };
