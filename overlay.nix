@@ -367,6 +367,8 @@ self: with pkgs.haskell.lib; {
 
   filepattern = self.callPackage (./pkgs/filepattern.nix) { };
 
+  filtrable = self.callPackage (./pkgs/filtrable.nix) { };
+
   fin = self.callPackage (./pkgs/fin.nix) { };
 
   fingertree = self.callPackage (./pkgs/fingertree.nix) { };
