@@ -49,6 +49,8 @@ self: with pkgs.haskell.lib; {
 
   aeson-yaml = self.callPackage (./pkgs/aeson-yaml.nix) { };
 
+  alex = self.callPackage (./pkgs/alex.nix) { };
+
   ansi-terminal = self.callPackage (./pkgs/ansi-terminal.nix) { };
 
   ansi-wl-pprint = self.callPackage (./pkgs/ansi-wl-pprint.nix) { };
