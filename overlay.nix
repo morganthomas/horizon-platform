@@ -1119,6 +1119,8 @@ self: with pkgs.haskell.lib; {
 
   trifecta = self.callPackage (./pkgs/trifecta.nix) { };
 
+  tuple = self.callPackage (./pkgs/tuple.nix) { };
+
   turtle = self.callPackage (./pkgs/turtle.nix) { };
 
   type-equality = self.callPackage (./pkgs/type-equality.nix) { };
