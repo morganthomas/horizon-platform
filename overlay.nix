@@ -679,6 +679,8 @@ self: with pkgs.haskell.lib; {
 
   optparse-applicative = self.callPackage (./pkgs/optparse-applicative.nix) { };
 
+  ordered-containers = self.callPackage (./pkgs/ordered-containers.nix) { };
+
   pandoc = self.callPackage (./pkgs/pandoc.nix) { };
 
   pandoc-lua-marshal = self.callPackage (./pkgs/pandoc-lua-marshal.nix) { };
