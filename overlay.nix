@@ -337,6 +337,8 @@ self: with pkgs.haskell.lib; {
 
   generic-optics-lite = self.callPackage (./pkgs/generic-optics-lite.nix) { };
 
+  generic-random = self.callPackage (./pkgs/generic-random.nix) { };
+
   generically = self.callPackage (./pkgs/generically.nix) { };
 
   generics-sop = self.callPackage (./pkgs/generics-sop.nix) { };
