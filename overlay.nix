@@ -821,6 +821,8 @@ self: with pkgs.haskell.lib; {
 
   saltine = self.callPackage (./pkgs/saltine.nix) { };
 
+  sandwich = self.callPackage (./pkgs/sandwich.nix) { };
+
   scientific = self.callPackage (./pkgs/scientific.nix) { };
 
   scotty = self.callPackage (./pkgs/scotty.nix) { };
