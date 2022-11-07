@@ -181,6 +181,8 @@ self: with pkgs.haskell.lib; {
 
   chell = self.callPackage (./pkgs/chell.nix) { };
 
+  chell-quickcheck = self.callPackage (./pkgs/chell-quickcheck.nix) { };
+
   citeproc = self.callPackage (./pkgs/citeproc.nix) { };
 
   clock = self.callPackage (./pkgs/clock.nix) { };
