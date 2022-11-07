@@ -633,6 +633,8 @@ self: with pkgs.haskell.lib; {
 
   kvstore-effectful-statemap = self.callPackage (./pkgs/kvstore-effectful-statemap.nix) { };
 
+  language-c = self.callPackage (./pkgs/language-c.nix) { };
+
   language-nix = self.callPackage (./pkgs/language-nix.nix) { };
 
   lens = self.callPackage (./pkgs/lens.nix) { };
