@@ -273,6 +273,8 @@ self: with pkgs.haskell.lib; {
 
   doctest-parallel = self.callPackage (./pkgs/doctest-parallel.nix) { };
 
+  dotgen = self.callPackage (./pkgs/dotgen.nix) { };
+
   double-conversion = self.callPackage (./pkgs/double-conversion.nix) { };
 
   echo = self.callPackage (./pkgs/echo.nix) { };
