@@ -1091,6 +1091,8 @@ self: with pkgs.haskell.lib; {
 
   typerep-map = self.callPackage (./pkgs/typerep-map.nix) { };
 
+  uglymemo = self.callPackage (./pkgs/uglymemo.nix) { };
+
   unagi-chan = self.callPackage (./pkgs/unagi-chan.nix) { };
 
   unicode-collation = self.callPackage (./pkgs/unicode-collation.nix) { };
