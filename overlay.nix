@@ -939,6 +939,8 @@ self: with pkgs.haskell.lib; {
 
   quickcheck-io = self.callPackage (./pkgs/quickcheck-io.nix) { };
 
+  quickcheck-text = self.callPackage (./pkgs/quickcheck-text.nix) { };
+
   quickcheck-unicode = self.callPackage (./pkgs/quickcheck-unicode.nix) { };
 
   random = self.callPackage (./pkgs/random.nix) { };
