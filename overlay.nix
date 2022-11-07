@@ -21,6 +21,8 @@ self: with pkgs.haskell.lib; {
 
   HUnit = self.callPackage (./pkgs/HUnit.nix) { };
 
+  HsYAML = self.callPackage (./pkgs/HsYAML.nix) { };
+
   JuicyPixels = self.callPackage (./pkgs/JuicyPixels.nix) { };
 
   MonadRandom = self.callPackage (./pkgs/MonadRandom.nix) { };
