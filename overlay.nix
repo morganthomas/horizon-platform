@@ -1087,6 +1087,8 @@ self: with pkgs.haskell.lib; {
 
   time-effectful = self.callPackage (./pkgs/time-effectful.nix) { };
 
+  time-manager = self.callPackage (./pkgs/time-manager.nix) { };
+
   timeit = self.callPackage (./pkgs/timeit.nix) { };
 
   tls = self.callPackage (./pkgs/tls.nix) { };

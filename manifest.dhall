@@ -723,6 +723,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/haskell-effectful/time-effectful"
         (Some "e212239b685e1ecf7ee95dd1e944cc563351907f")
         (None Text)
+    , callHackage "time-manager" "0.0.0"
     , callHackage "tls-session-manager" "0.0.4"
     , callHackage "tls" "1.6.0"
     , callHackage "transformers-base" "0.4.6"
