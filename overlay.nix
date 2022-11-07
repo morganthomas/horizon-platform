@@ -35,6 +35,8 @@ self: with pkgs.haskell.lib; {
 
   OpenGLRaw = self.callPackage (./pkgs/OpenGLRaw.nix) { };
 
+  PSQueue = self.callPackage (./pkgs/PSQueue.nix) { };
+
   PyF = self.callPackage (./pkgs/PyF.nix) { };
 
   QuickCheck = self.callPackage (./pkgs/QuickCheck.nix) { };
