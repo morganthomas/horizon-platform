@@ -1125,6 +1125,8 @@ self: with pkgs.haskell.lib; {
 
   tasty-hunit = self.callPackage (./pkgs/tasty-hunit.nix) { };
 
+  tasty-inspection-testing = self.callPackage (./pkgs/tasty-inspection-testing.nix) { };
+
   tasty-kat = self.callPackage (./pkgs/tasty-kat.nix) { };
 
   tasty-lua = self.callPackage (./pkgs/tasty-lua.nix) { };

@@ -737,6 +737,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/UnkindPartition/tasty"
         (None Text)
         (Some "hunit")
+    , callHackage "tasty-inspection-testing" "0.2"
     , callHackage "tasty-kat" "0.0.3"
     , callHackage "tasty-lua" "1.0.2"
     , callHackage "tasty-silver" "3.3.1.1"
