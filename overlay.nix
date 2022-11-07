@@ -1351,6 +1351,8 @@ self: with pkgs.haskell.lib; {
 
   unordered-containers = self.callPackage (./pkgs/unordered-containers.nix) { };
 
+  uri-bytestring = self.callPackage (./pkgs/uri-bytestring.nix) { };
+
   uri-encode = self.callPackage (./pkgs/uri-encode.nix) { };
 
   utf8-string = self.callPackage (./pkgs/utf8-string.nix) { };
