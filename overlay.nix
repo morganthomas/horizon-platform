@@ -463,6 +463,8 @@ self: with pkgs.haskell.lib; {
 
   gitrev = self.callPackage (./pkgs/gitrev.nix) { };
 
+  gridtables = self.callPackage (./pkgs/gridtables.nix) { };
+
   hackage-db = self.callPackage (./pkgs/hackage-db.nix) { };
 
   hackage-security = self.callPackage (./pkgs/hackage-security.nix) { };
