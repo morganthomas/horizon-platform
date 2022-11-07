@@ -509,6 +509,8 @@ self: with pkgs.haskell.lib; {
 
   httpd-shed = self.callPackage (./pkgs/httpd-shed.nix) { };
 
+  ieee754 = self.callPackage (./pkgs/ieee754.nix) { };
+
   incipit-base = self.callPackage (./pkgs/incipit-base.nix) { };
 
   incipit-core = self.callPackage (./pkgs/incipit-core.nix) { };
