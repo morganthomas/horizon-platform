@@ -13,6 +13,8 @@ self: with pkgs.haskell.lib; {
 
   ChasingBottoms = self.callPackage (./pkgs/ChasingBottoms.nix) { };
 
+  Decimal = self.callPackage (./pkgs/Decimal.nix) { };
+
   Diff = self.callPackage (./pkgs/Diff.nix) { };
 
   Glob = self.callPackage (./pkgs/Glob.nix) { };

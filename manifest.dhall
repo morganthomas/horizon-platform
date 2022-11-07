@@ -60,6 +60,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (None Text)
         (Some "Cabal-tree-diff")
     , callHackage "ChasingBottoms" "1.3.1.12"
+    , callHackage "Decimal" "0.5.2"
     , callHackage "Diff" "0.4.1"
     , callHackage "Glob" "0.10.2"
     , callHackage "HTTP" "4000.4.1"
