@@ -61,6 +61,8 @@ self: with pkgs.haskell.lib; {
 
   apecs = self.callPackage (./pkgs/apecs.nix) { };
 
+  appar = self.callPackage (./pkgs/appar.nix) { };
+
   asn1-encoding = self.callPackage (./pkgs/asn1-encoding.nix) { };
 
   asn1-parse = self.callPackage (./pkgs/asn1-parse.nix) { };
@@ -680,6 +682,8 @@ self: with pkgs.haskell.lib; {
   net-mqtt = self.callPackage (./pkgs/net-mqtt.nix) { };
 
   network = self.callPackage (./pkgs/network.nix) { };
+
+  network-bsd = self.callPackage (./pkgs/network-bsd.nix) { };
 
   network-byte-order = self.callPackage (./pkgs/network-byte-order.nix) { };
 
