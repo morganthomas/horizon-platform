@@ -1111,6 +1111,8 @@ self: with pkgs.haskell.lib; {
 
   utf8-string = self.callPackage (./pkgs/utf8-string.nix) { };
 
+  utility-ht = self.callPackage (./pkgs/utility-ht.nix) { };
+
   uuid = self.callPackage (./pkgs/uuid.nix) { };
 
   uuid-types = self.callPackage (./pkgs/uuid-types.nix) { };
