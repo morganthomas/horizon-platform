@@ -1233,6 +1233,8 @@ self: with pkgs.haskell.lib; {
 
   websockets = self.callPackage (./pkgs/websockets.nix) { };
 
+  weigh = self.callPackage (./pkgs/weigh.nix) { };
+
   with-utf8 = self.callPackage (./pkgs/with-utf8.nix) { };
 
   witherable = self.callPackage (./pkgs/witherable.nix) { };
