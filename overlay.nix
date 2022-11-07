@@ -333,6 +333,8 @@ self: with pkgs.haskell.lib; {
 
   expiring-cache-map = self.callPackage (./pkgs/expiring-cache-map.nix) { };
 
+  extensible-exceptions = self.callPackage (./pkgs/extensible-exceptions.nix) { };
+
   extra = self.callPackage (./pkgs/extra.nix) { };
 
   fail = self.callPackage (./pkgs/fail.nix) { };
