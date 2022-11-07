@@ -641,6 +641,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "hunit")
     , callHackage "tasty-kat" "0.0.3"
     , callHackage "tasty-lua" "1.0.2"
+    , callHackage "tasty-silver" "3.3.1.1"
     , callHackage "tasty-smallcheck" "0.8.2"
     , callHackage "tasty-quickcheck" "0.10.2"
     , callHackage "tasty-wai" "0.1.2.0"
