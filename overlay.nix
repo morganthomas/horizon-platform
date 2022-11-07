@@ -643,6 +643,8 @@ self: with pkgs.haskell.lib; {
 
   js-chart = self.callPackage (./pkgs/js-chart.nix) { };
 
+  js-jquery = self.callPackage (./pkgs/js-jquery.nix) { };
+
   kan-extensions = self.callPackage (./pkgs/kan-extensions.nix) { };
 
   keys = self.callPackage (./pkgs/keys.nix) { };

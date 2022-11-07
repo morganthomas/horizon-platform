@@ -427,6 +427,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "iproute" "1.7.12"
     , callHackage "jira-wiki-markup" "1.4.0"
     , callHackage "js-chart" "2.9.4.1"
+    , callHackage "js-jquery" "3.3.1"
     , callHackage "kan-extensions" "5.2.5"
     , callHackage "keys" "3.12.3"
     , callCabal2nix
