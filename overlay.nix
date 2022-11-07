@@ -841,6 +841,8 @@ self: with pkgs.haskell.lib; {
 
   optics-th = self.callPackage (./pkgs/optics-th.nix) { };
 
+  optional-args = self.callPackage (./pkgs/optional-args.nix) { };
+
   options = self.callPackage (./pkgs/options.nix) { };
 
   optparse-applicative = self.callPackage (./pkgs/optparse-applicative.nix) { };
