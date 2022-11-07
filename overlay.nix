@@ -999,6 +999,8 @@ self: with pkgs.haskell.lib; {
 
   shelly = self.callPackage (./pkgs/shelly.nix) { };
 
+  should-not-typecheck = self.callPackage (./pkgs/should-not-typecheck.nix) { };
+
   silently = self.callPackage (./pkgs/silently.nix) { };
 
   simple-reflect = self.callPackage (./pkgs/simple-reflect.nix) { };
