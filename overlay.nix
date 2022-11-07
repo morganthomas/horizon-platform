@@ -549,6 +549,8 @@ self: with pkgs.haskell.lib; {
 
   lens-aeson = self.callPackage (./pkgs/lens-aeson.nix) { };
 
+  lens-family-core = self.callPackage (./pkgs/lens-family-core.nix) { };
+
   lens-family-th = self.callPackage (./pkgs/lens-family-th.nix) { };
 
   libsodium = self.callPackage (./pkgs/libsodium.nix) { };

@@ -395,6 +395,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "kvstore-effectful-statemap")
     , callHackage "language-nix" "2.2.0"
     , callHackage "lens-aeson" "1.2.1"
+    , callHackage "lens-family-core" "2.1.2"
     , callHackage "lens-family-th" "0.5.2.1"
     , callHackage "lens" "5.2"
     , callHackage "libsodium" "1.0.18.2"
