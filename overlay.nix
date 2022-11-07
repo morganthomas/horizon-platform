@@ -563,6 +563,8 @@ self: with pkgs.haskell.lib; {
 
   integer-logarithms = self.callPackage (./pkgs/integer-logarithms.nix) { };
 
+  interpolate = self.callPackage (./pkgs/interpolate.nix) { };
+
   invariant = self.callPackage (./pkgs/invariant.nix) { };
 
   iproute = self.callPackage (./pkgs/iproute.nix) { };
