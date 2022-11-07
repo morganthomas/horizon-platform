@@ -925,6 +925,8 @@ self: with pkgs.haskell.lib; {
 
   pgp-wordlist = self.callPackage (./pkgs/pgp-wordlist.nix) { };
 
+  pipes = self.callPackage (./pkgs/pipes.nix) { };
+
   pointed = self.callPackage (./pkgs/pointed.nix) { };
 
   polyparse = self.callPackage (./pkgs/polyparse.nix) { };

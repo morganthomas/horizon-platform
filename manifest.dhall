@@ -588,6 +588,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "pem" "0.2.4"
     , callHackage "persistent-template" "2.12.0.0"
     , callHackage "persistent" "2.14.3.0"
+    , callHackage "pipes" "4.3.16"
     , callHackage "pg-entity" "0.0.2.0"
     , callHackage "pg-transact" "0.3.2.0"
     , callCabal2nix
