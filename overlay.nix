@@ -521,6 +521,8 @@ self: with pkgs.haskell.lib; {
 
   incipit-core = self.callPackage (./pkgs/incipit-core.nix) { };
 
+  indexed-profunctors = self.callPackage (./pkgs/indexed-profunctors.nix) { };
+
   indexed-traversable = self.callPackage (./pkgs/indexed-traversable.nix) { };
 
   indexed-traversable-instances = self.callPackage (./pkgs/indexed-traversable-instances.nix) { };
