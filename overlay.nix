@@ -931,6 +931,8 @@ self: with pkgs.haskell.lib; {
 
   string-qq = self.callPackage (./pkgs/string-qq.nix) { };
 
+  stringbuilder = self.callPackage (./pkgs/stringbuilder.nix) { };
+
   swagger2 = self.callPackage (./pkgs/swagger2.nix) { };
 
   syb = self.callPackage (./pkgs/syb.nix) { };
