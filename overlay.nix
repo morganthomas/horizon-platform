@@ -309,6 +309,8 @@ self: with pkgs.haskell.lib; {
 
   extra = self.callPackage (./pkgs/extra.nix) { };
 
+  fail = self.callPackage (./pkgs/fail.nix) { };
+
   fcf-containers = self.callPackage (./pkgs/fcf-containers.nix) { };
 
   file-embed = self.callPackage (./pkgs/file-embed.nix) { };
