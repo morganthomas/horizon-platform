@@ -13,8 +13,6 @@ self: super: {
   base = null;
   binary = null;
   bytestring = null;
-  Cabal = null;
-  Cabal-syntax = null;
   containers = null;
   deepseq = null;
   directory = null;
