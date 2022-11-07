@@ -365,6 +365,8 @@ self: with pkgs.haskell.lib; {
 
   fin = self.callPackage (./pkgs/fin.nix) { };
 
+  fingertree = self.callPackage (./pkgs/fingertree.nix) { };
+
   finite-field = self.callPackage (./pkgs/finite-field.nix) { };
 
   first-class-families = self.callPackage (./pkgs/first-class-families.nix) { };
