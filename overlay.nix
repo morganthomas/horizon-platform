@@ -785,6 +785,8 @@ self: with pkgs.haskell.lib; {
 
   relude = self.callPackage (./pkgs/relude.nix) { };
 
+  repline = self.callPackage (./pkgs/repline.nix) { };
+
   rere = self.callPackage (./pkgs/rere.nix) { };
 
   rerebase = self.callPackage (./pkgs/rerebase.nix) { };
