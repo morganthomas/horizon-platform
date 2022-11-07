@@ -1061,6 +1061,8 @@ self: with pkgs.haskell.lib; {
 
   rope-utf16-splay = self.callPackage (./pkgs/rope-utf16-splay.nix) { };
 
+  safe = self.callPackage (./pkgs/safe.nix) { };
+
   safe-coloured-text = self.callPackage (./pkgs/safe-coloured-text.nix) { };
 
   safe-coloured-text-terminfo = self.callPackage (./pkgs/safe-coloured-text-terminfo.nix) { };
