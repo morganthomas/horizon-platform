@@ -393,6 +393,8 @@ self: with pkgs.haskell.lib; {
 
   foreign-store = self.callPackage (./pkgs/foreign-store.nix) { };
 
+  formatting = self.callPackage (./pkgs/formatting.nix) { };
+
   foundation = self.callPackage (./pkgs/foundation.nix) { };
 
   free = self.callPackage (./pkgs/free.nix) { };
