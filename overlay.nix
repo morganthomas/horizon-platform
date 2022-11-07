@@ -1217,6 +1217,8 @@ self: with pkgs.haskell.lib; {
 
   th-extras = self.callPackage (./pkgs/th-extras.nix) { };
 
+  th-lift = self.callPackage (./pkgs/th-lift.nix) { };
+
   th-lift-instances = self.callPackage (./pkgs/th-lift-instances.nix) { };
 
   th-orphans = self.callPackage (./pkgs/th-orphans.nix) { };
