@@ -981,6 +981,8 @@ self: with pkgs.haskell.lib; {
 
   texmath = self.callPackage (./pkgs/texmath.nix) { };
 
+  text-conversions = self.callPackage (./pkgs/text-conversions.nix) { };
+
   text-display = self.callPackage (./pkgs/text-display.nix) { };
 
   text-manipulate = self.callPackage (./pkgs/text-manipulate.nix) { };
