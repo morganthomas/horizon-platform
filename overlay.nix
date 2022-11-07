@@ -661,6 +661,8 @@ self: with pkgs.haskell.lib; {
 
   memory = self.callPackage (./pkgs/memory.nix) { };
 
+  mersenne-random = self.callPackage (./pkgs/mersenne-random.nix) { };
+
   microlens = self.callPackage (./pkgs/microlens.nix) { };
 
   microlens-aeson = self.callPackage (./pkgs/microlens-aeson.nix) { };
