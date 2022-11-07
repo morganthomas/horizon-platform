@@ -937,6 +937,8 @@ self: with pkgs.haskell.lib; {
 
   primitive-addr = self.callPackage (./pkgs/primitive-addr.nix) { };
 
+  process-extras = self.callPackage (./pkgs/process-extras.nix) { };
+
   profunctors = self.callPackage (./pkgs/profunctors.nix) { };
 
   prometheus-client = self.callPackage (./pkgs/prometheus-client.nix) { };
