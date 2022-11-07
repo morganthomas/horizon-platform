@@ -679,6 +679,8 @@ self: with pkgs.haskell.lib; {
 
   microlens-aeson = self.callPackage (./pkgs/microlens-aeson.nix) { };
 
+  microlens-ghc = self.callPackage (./pkgs/microlens-ghc.nix) { };
+
   microlens-mtl = self.callPackage (./pkgs/microlens-mtl.nix) { };
 
   microlens-platform = self.callPackage (./pkgs/microlens-platform.nix) { };
