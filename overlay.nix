@@ -367,6 +367,8 @@ self: with pkgs.haskell.lib; {
 
   file-embed = self.callPackage (./pkgs/file-embed.nix) { };
 
+  file-embed-lzma = self.callPackage (./pkgs/file-embed-lzma.nix) { };
+
   filemanip = self.callPackage (./pkgs/filemanip.nix) { };
 
   filepattern = self.callPackage (./pkgs/filepattern.nix) { };
