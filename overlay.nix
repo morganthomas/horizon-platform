@@ -441,6 +441,8 @@ self: with pkgs.haskell.lib; {
 
   hashtables = self.callPackage (./pkgs/hashtables.nix) { };
 
+  haskell-src-exts = self.callPackage (./pkgs/haskell-src-exts.nix) { };
+
   haskell-src-meta = self.callPackage (./pkgs/haskell-src-meta.nix) { };
 
   hedgehog = self.callPackage (./pkgs/hedgehog.nix) { };
