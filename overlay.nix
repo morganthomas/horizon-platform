@@ -783,6 +783,8 @@ self: with pkgs.haskell.lib; {
 
   pcg-random = self.callPackage (./pkgs/pcg-random.nix) { };
 
+  pcre-light = self.callPackage (./pkgs/pcre-light.nix) { };
+
   pcre2 = self.callPackage (./pkgs/pcre2.nix) { };
 
   pem = self.callPackage (./pkgs/pem.nix) { };
