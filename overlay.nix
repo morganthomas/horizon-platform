@@ -763,6 +763,8 @@ self: with pkgs.haskell.lib; {
 
   microlens-th = self.callPackage (./pkgs/microlens-th.nix) { };
 
+  microspec = self.callPackage (./pkgs/microspec.nix) { };
+
   microstache = self.callPackage (./pkgs/microstache.nix) { };
 
   mmorph = self.callPackage (./pkgs/mmorph.nix) { };
