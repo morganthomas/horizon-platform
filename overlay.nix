@@ -691,6 +691,8 @@ self: with pkgs.haskell.lib; {
 
   logging-facade = self.callPackage (./pkgs/logging-facade.nix) { };
 
+  logict = self.callPackage (./pkgs/logict.nix) { };
+
   lpeg = self.callPackage (./pkgs/lpeg.nix) { };
 
   lsp = self.callPackage (./pkgs/lsp.nix) { };

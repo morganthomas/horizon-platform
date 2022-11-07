@@ -465,6 +465,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "lifted-base" "0.2.3.12"
     , callHackage "linear" "1.21.10"
     , callHackage "logging-facade" "0.3.1"
+    , callHackage "logict" "0.8.0.0"
     , callHackage "log-base" "0.12.0.0"
     , callCabal2nix
         "log-effectful"
