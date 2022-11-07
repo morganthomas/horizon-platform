@@ -451,6 +451,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "network" "3.1.2.7"
     , callHackage "newtype-generics" "0.6.2"
     , callHackage "nothunks" "0.1.3"
+    , callHackage "numtype-dk" "0.5.0.3"
     , callCabal2nix
         "odd-jobs"
         "https://github.com/saurabhnanda/odd-jobs"
