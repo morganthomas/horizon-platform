@@ -595,6 +595,8 @@ self: with pkgs.haskell.lib; {
 
   hspec-meta = self.callPackage (./pkgs/hspec-meta.nix) { };
 
+  hspec-smallcheck = self.callPackage (./pkgs/hspec-smallcheck.nix) { };
+
   hspec-wai = self.callPackage (./pkgs/hspec-wai.nix) { };
 
   http-api-data = self.callPackage (./pkgs/http-api-data.nix) { };
