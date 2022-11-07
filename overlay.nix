@@ -1255,6 +1255,8 @@ self: with pkgs.haskell.lib; {
 
   text-display = self.callPackage (./pkgs/text-display.nix) { };
 
+  text-icu = self.callPackage (./pkgs/text-icu.nix) { };
+
   text-manipulate = self.callPackage (./pkgs/text-manipulate.nix) { };
 
   text-metrics = self.callPackage (./pkgs/text-metrics.nix) { };
