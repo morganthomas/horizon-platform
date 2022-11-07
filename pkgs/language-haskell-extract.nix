@@ -1,0 +1,23 @@
+{ mkDerivation, base, lib, regex-posix, template-haskell }:
+mkDerivation {
+  pname = "language-haskell-extract";
+  version = "0.2.4";
+  sha256 = "14da16e56665bf971723e0c5fd06dbb7cc30b4918cf8fb5748570785ded1acdb";
+  revision = "1";
+  editedCabalFile = "1chx4g8ngb1hpyh3r9rbl8rkjkm67klms4wmw3p1g2llg47vvqip";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
+  libraryHaskellDepends = [ base regex-posix template-haskell ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
+  doHaddock = false;
+  jailbreak = true;
+  doCheck = false;
+  doBenchmark = false;
+  hyperlinkSource = false;
+  homepage = "http://github.com/finnsson/template-helper";
+  description = "Module to automatically extract functions from the local code";
+  license = lib.licenses.bsd3;
+  broken = false;
+}

@@ -687,6 +687,8 @@ self: with pkgs.haskell.lib; {
 
   language-c = self.callPackage (./pkgs/language-c.nix) { };
 
+  language-haskell-extract = self.callPackage (./pkgs/language-haskell-extract.nix) { };
+
   language-nix = self.callPackage (./pkgs/language-nix.nix) { };
 
   lens = self.callPackage (./pkgs/lens.nix) { };
