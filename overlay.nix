@@ -365,6 +365,8 @@ self: with pkgs.haskell.lib; {
 
   free = self.callPackage (./pkgs/free.nix) { };
 
+  friendly-time = self.callPackage (./pkgs/friendly-time.nix) { };
+
   fsnotify = self.callPackage (./pkgs/fsnotify.nix) { };
 
   fuzzy-time = self.callPackage (./pkgs/fuzzy-time.nix) { };
