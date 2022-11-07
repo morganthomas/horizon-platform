@@ -675,6 +675,8 @@ self: with pkgs.haskell.lib; {
 
   monad-logger = self.callPackage (./pkgs/monad-logger.nix) { };
 
+  monad-loops = self.callPackage (./pkgs/monad-loops.nix) { };
+
   monad-par = self.callPackage (./pkgs/monad-par.nix) { };
 
   monad-par-extras = self.callPackage (./pkgs/monad-par-extras.nix) { };
