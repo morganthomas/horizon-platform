@@ -1165,6 +1165,8 @@ self: with pkgs.haskell.lib; {
 
   tasty-wai = self.callPackage (./pkgs/tasty-wai.nix) { };
 
+  tdigest = self.callPackage (./pkgs/tdigest.nix) { };
+
   temporary = self.callPackage (./pkgs/temporary.nix) { };
 
   terminal-size = self.callPackage (./pkgs/terminal-size.nix) { };
