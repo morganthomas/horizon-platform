@@ -607,6 +607,8 @@ self: with pkgs.haskell.lib; {
 
   hspec-wai = self.callPackage (./pkgs/hspec-wai.nix) { };
 
+  html = self.callPackage (./pkgs/html.nix) { };
+
   http-api-data = self.callPackage (./pkgs/http-api-data.nix) { };
 
   http-client = self.callPackage (./pkgs/http-client.nix) { };
