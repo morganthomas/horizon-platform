@@ -779,6 +779,8 @@ self: with pkgs.haskell.lib; {
 
   natural-transformation = self.callPackage (./pkgs/natural-transformation.nix) { };
 
+  neat-interpolation = self.callPackage (./pkgs/neat-interpolation.nix) { };
+
   net-mqtt = self.callPackage (./pkgs/net-mqtt.nix) { };
 
   network = self.callPackage (./pkgs/network.nix) { };
