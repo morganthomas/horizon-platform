@@ -551,6 +551,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "bd944ca000c1ca69602d4723e3859af431b9d0c4")
         (Some "polysemy-plugin")
     , callHackage "polysemy-several" "0.1.1.0"
+    , callHackage "polysemy-test" "0.6.0.0"
     , callHackage "polysemy-time" "0.5.1.0"
     , callHackage "polysemy-vinyl" "0.1.5.0"
     , callHackage "polysemy-zoo" "0.8.0.0"

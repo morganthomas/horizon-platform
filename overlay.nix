@@ -829,6 +829,8 @@ self: with pkgs.haskell.lib; {
 
   polysemy-several = self.callPackage (./pkgs/polysemy-several.nix) { };
 
+  polysemy-test = self.callPackage (./pkgs/polysemy-test.nix) { };
+
   polysemy-time = self.callPackage (./pkgs/polysemy-time.nix) { };
 
   polysemy-vinyl = self.callPackage (./pkgs/polysemy-vinyl.nix) { };
