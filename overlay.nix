@@ -367,6 +367,8 @@ self: with pkgs.haskell.lib; {
 
   fingertree = self.callPackage (./pkgs/fingertree.nix) { };
 
+  fingertree-psqueue = self.callPackage (./pkgs/fingertree-psqueue.nix) { };
+
   finite-field = self.callPackage (./pkgs/finite-field.nix) { };
 
   first-class-families = self.callPackage (./pkgs/first-class-families.nix) { };
