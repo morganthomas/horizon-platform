@@ -899,6 +899,8 @@ self: with pkgs.haskell.lib; {
 
   souffle-haskell = self.callPackage (./pkgs/souffle-haskell.nix) { };
 
+  special-values = self.callPackage (./pkgs/special-values.nix) { };
+
   split = self.callPackage (./pkgs/split.nix) { };
 
   splitmix = self.callPackage (./pkgs/splitmix.nix) { };
