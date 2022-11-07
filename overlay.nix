@@ -1293,6 +1293,8 @@ self: with pkgs.haskell.lib; {
 
   xml-conduit = self.callPackage (./pkgs/xml-conduit.nix) { };
 
+  xml-types = self.callPackage (./pkgs/xml-types.nix) { };
+
   yaml = self.callPackage (./pkgs/yaml.nix) { };
 
   zip-archive = self.callPackage (./pkgs/zip-archive.nix) { };
