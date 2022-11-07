@@ -727,6 +727,8 @@ self: with pkgs.haskell.lib; {
 
   parsec = self.callPackage (./pkgs/parsec.nix) { };
 
+  parsec-class = self.callPackage (./pkgs/parsec-class.nix) { };
+
   parser-combinators = self.callPackage (./pkgs/parser-combinators.nix) { };
 
   parsers = self.callPackage (./pkgs/parsers.nix) { };
