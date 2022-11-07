@@ -337,6 +337,8 @@ self: with pkgs.haskell.lib; {
 
   doctest-exitcode-stdio = self.callPackage (./pkgs/doctest-exitcode-stdio.nix) { };
 
+  doctest-lib = self.callPackage (./pkgs/doctest-lib.nix) { };
+
   doctest-parallel = self.callPackage (./pkgs/doctest-parallel.nix) { };
 
   dotgen = self.callPackage (./pkgs/dotgen.nix) { };

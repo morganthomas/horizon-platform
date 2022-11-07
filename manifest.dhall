@@ -244,6 +244,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "dlist" "1.0"
     , callHackage "doclayout" "0.4"
     , callHackage "doctest-exitcode-stdio" "0.0"
+    , callHackage "doctest-lib" "0.1"
     , callCabal2nix
         "doctest"
         "https://github.com/sol/doctest"
