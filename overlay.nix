@@ -303,6 +303,8 @@ self: with pkgs.haskell.lib; {
 
   dense-linear-algebra = self.callPackage (./pkgs/dense-linear-algebra.nix) { };
 
+  dependent-map = self.callPackage (./pkgs/dependent-map.nix) { };
+
   dependent-sum = self.callPackage (./pkgs/dependent-sum.nix) { };
 
   deriving-aeson = self.callPackage (./pkgs/deriving-aeson.nix) { };
