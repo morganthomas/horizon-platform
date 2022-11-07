@@ -1311,6 +1311,8 @@ self: with pkgs.haskell.lib; {
 
   unagi-chan = self.callPackage (./pkgs/unagi-chan.nix) { };
 
+  unbounded-delays = self.callPackage (./pkgs/unbounded-delays.nix) { };
+
   unicode-collation = self.callPackage (./pkgs/unicode-collation.nix) { };
 
   unicode-data = self.callPackage (./pkgs/unicode-data.nix) { };

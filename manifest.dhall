@@ -838,6 +838,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (None Text)
     , callHackage "uglymemo" "0.1.0.1"
     , callHackage "unagi-chan" "0.4.1.4"
+    , callHackage "unbounded-delays" "0.1.1.1"
     , callHackage "unicode-collation" "0.1.3.2"
     , callHackage "unicode-data" "0.4.0"
     , callHackage "unicode-transforms" "0.4.0.1"
