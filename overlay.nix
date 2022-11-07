@@ -329,6 +329,8 @@ self: with pkgs.haskell.lib; {
 
   fail = self.callPackage (./pkgs/fail.nix) { };
 
+  fast-logger = self.callPackage (./pkgs/fast-logger.nix) { };
+
   fcf-containers = self.callPackage (./pkgs/fcf-containers.nix) { };
 
   file-embed = self.callPackage (./pkgs/file-embed.nix) { };
