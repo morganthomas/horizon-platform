@@ -21,7 +21,7 @@
         haskellLib = pkgs.haskell.lib.compose;
         hsPkgs = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
           buildHaskellPackages = pkgs.haskell.packages.ghc942;
-          configurationCommon = {pkgs, haskellLib}: self: super: { };
+          configurationCommon = import ./configuration.nix;
           configurationNix = {pkgs, haskellLib}: self: super: { };
           ghc = pkgs.haskell.compiler.ghc942;
           haskellLib = pkgs.haskell.lib.compose;
