@@ -947,6 +947,8 @@ self: with pkgs.haskell.lib; {
 
   silently = self.callPackage (./pkgs/silently.nix) { };
 
+  simple-reflect = self.callPackage (./pkgs/simple-reflect.nix) { };
+
   simple-sendfile = self.callPackage (./pkgs/simple-sendfile.nix) { };
 
   singleton-bool = self.callPackage (./pkgs/singleton-bool.nix) { };
