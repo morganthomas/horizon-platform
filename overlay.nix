@@ -133,6 +133,8 @@ self: with pkgs.haskell.lib; {
 
   byteable = self.callPackage (./pkgs/byteable.nix) { };
 
+  byteorder = self.callPackage (./pkgs/byteorder.nix) { };
+
   bytes = self.callPackage (./pkgs/bytes.nix) { };
 
   cabal-doctest = self.callPackage (./pkgs/cabal-doctest.nix) { };
