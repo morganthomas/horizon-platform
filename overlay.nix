@@ -1001,6 +1001,8 @@ self: with pkgs.haskell.lib; {
 
   statistics = self.callPackage (./pkgs/statistics.nix) { };
 
+  stm-chans = self.callPackage (./pkgs/stm-chans.nix) { };
+
   streaming-commons = self.callPackage (./pkgs/streaming-commons.nix) { };
 
   strict = self.callPackage (./pkgs/strict.nix) { };
