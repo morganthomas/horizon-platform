@@ -601,6 +601,8 @@ self: with pkgs.haskell.lib; {
 
   microstache = self.callPackage (./pkgs/microstache.nix) { };
 
+  mmorph = self.callPackage (./pkgs/mmorph.nix) { };
+
   mockery = self.callPackage (./pkgs/mockery.nix) { };
 
   mod = self.callPackage (./pkgs/mod.nix) { };
