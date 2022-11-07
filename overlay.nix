@@ -361,6 +361,8 @@ self: with pkgs.haskell.lib; {
 
   foldl = self.callPackage (./pkgs/foldl.nix) { };
 
+  foreign-store = self.callPackage (./pkgs/foreign-store.nix) { };
+
   foundation = self.callPackage (./pkgs/foundation.nix) { };
 
   free = self.callPackage (./pkgs/free.nix) { };
