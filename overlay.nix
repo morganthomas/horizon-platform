@@ -401,6 +401,8 @@ self: with pkgs.haskell.lib; {
 
   fixed = self.callPackage (./pkgs/fixed.nix) { };
 
+  fmlist = self.callPackage (./pkgs/fmlist.nix) { };
+
   foldl = self.callPackage (./pkgs/foldl.nix) { };
 
   foreign-store = self.callPackage (./pkgs/foreign-store.nix) { };
