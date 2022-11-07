@@ -1023,6 +1023,8 @@ self: with pkgs.haskell.lib; {
 
   strict = self.callPackage (./pkgs/strict.nix) { };
 
+  string-conv = self.callPackage (./pkgs/string-conv.nix) { };
+
   string-interpolate = self.callPackage (./pkgs/string-interpolate.nix) { };
 
   string-qq = self.callPackage (./pkgs/string-qq.nix) { };
