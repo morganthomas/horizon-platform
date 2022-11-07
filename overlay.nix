@@ -301,6 +301,8 @@ self: with pkgs.haskell.lib; {
 
   dimensional = self.callPackage (./pkgs/dimensional.nix) { };
 
+  direct-sqlite = self.callPackage (./pkgs/direct-sqlite.nix) { };
+
   dirforest = self.callPackage (./pkgs/dirforest.nix) { };
 
   distribution-nixpkgs = self.callPackage (./pkgs/distribution-nixpkgs.nix) { };

@@ -224,6 +224,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "dhall" "1.41.2"
     , callHackage "dhall-json" "1.7.11"
     , callHackage "dimensional" "1.5"
+    , callHackage "direct-sqlite" "2.3.27"
     , callCabal2nix
         "dirforest"
         "https://github.com/NorfairKing/dirforest"
