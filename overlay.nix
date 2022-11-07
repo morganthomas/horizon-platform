@@ -1293,4 +1293,6 @@ self: with pkgs.haskell.lib; {
 
   yaml = self.callPackage (./pkgs/yaml.nix) { };
 
+  zip-archive = self.callPackage (./pkgs/zip-archive.nix) { };
+
 }
