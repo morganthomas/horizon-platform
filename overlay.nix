@@ -241,6 +241,8 @@ self: with pkgs.haskell.lib; {
 
   contravariant = self.callPackage (./pkgs/contravariant.nix) { };
 
+  control-monad-free = self.callPackage (./pkgs/control-monad-free.nix) { };
+
   cookie = self.callPackage (./pkgs/cookie.nix) { };
 
   cpphs = self.callPackage (./pkgs/cpphs.nix) { };
