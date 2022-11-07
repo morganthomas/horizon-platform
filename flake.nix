@@ -22,7 +22,7 @@
         hsPkgs = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
           buildHaskellPackages = pkgs.haskell.packages.ghc942;
           configurationCommon = import ./configuration.nix;
-          configurationNix = {pkgs, haskellLib}: self: super: { };
+          configurationNix = { pkgs, haskellLib }: self: super: { };
           ghc = pkgs.haskell.compiler.ghc942;
           haskellLib = pkgs.haskell.lib.compose;
           initialPackages = import ./overlay.nix;
