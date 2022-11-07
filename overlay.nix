@@ -925,6 +925,8 @@ self: with pkgs.haskell.lib; {
 
   slugify = self.callPackage (./pkgs/slugify.nix) { };
 
+  smallcheck = self.callPackage (./pkgs/smallcheck.nix) { };
+
   socks = self.callPackage (./pkgs/socks.nix) { };
 
   some = self.callPackage (./pkgs/some.nix) { };
