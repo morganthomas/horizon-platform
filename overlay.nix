@@ -429,6 +429,8 @@ self: with pkgs.haskell.lib; {
 
   ghcid = self.callPackage (./pkgs/ghcid.nix) { };
 
+  githash = self.callPackage (./pkgs/githash.nix) { };
+
   gitrev = self.callPackage (./pkgs/gitrev.nix) { };
 
   hackage-db = self.callPackage (./pkgs/hackage-db.nix) { };
