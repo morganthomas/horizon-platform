@@ -173,6 +173,8 @@ self: with pkgs.haskell.lib; {
 
   cereal = self.callPackage (./pkgs/cereal.nix) { };
 
+  cereal-vector = self.callPackage (./pkgs/cereal-vector.nix) { };
+
   charset = self.callPackage (./pkgs/charset.nix) { };
 
   checkers = self.callPackage (./pkgs/checkers.nix) { };
