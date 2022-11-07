@@ -1287,6 +1287,8 @@ self: with pkgs.haskell.lib; {
 
   x509-validation = self.callPackage (./pkgs/x509-validation.nix) { };
 
+  xml = self.callPackage (./pkgs/xml.nix) { };
+
   xml-conduit = self.callPackage (./pkgs/xml-conduit.nix) { };
 
   yaml = self.callPackage (./pkgs/yaml.nix) { };

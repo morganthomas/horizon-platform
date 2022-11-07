@@ -831,5 +831,6 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "x509-validation" "1.6.12"
     , callHackage "x509" "1.7.7"
     , callHackage "xml-conduit" "1.9.1.1"
+    , callHackage "xml" "1.3.14"
     , callHackage "yaml" "0.11.8.0"
     ]
