@@ -65,6 +65,8 @@ self: with pkgs.haskell.lib; {
 
   atomic-primops = self.callPackage (./pkgs/atomic-primops.nix) { };
 
+  atomic-write = self.callPackage (./pkgs/atomic-write.nix) { };
+
   attoparsec = self.callPackage (./pkgs/attoparsec.nix) { };
 
   attoparsec-binary = self.callPackage (./pkgs/attoparsec-binary.nix) { };
