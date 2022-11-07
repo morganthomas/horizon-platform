@@ -1229,6 +1229,8 @@ self: with pkgs.haskell.lib; {
 
   unix-compat = self.callPackage (./pkgs/unix-compat.nix) { };
 
+  unix-memory = self.callPackage (./pkgs/unix-memory.nix) { };
+
   unix-time = self.callPackage (./pkgs/unix-time.nix) { };
 
   unliftio = self.callPackage (./pkgs/unliftio.nix) { };
