@@ -1035,6 +1035,8 @@ self: with pkgs.haskell.lib; {
 
   universe-base = self.callPackage (./pkgs/universe-base.nix) { };
 
+  unix-compat = self.callPackage (./pkgs/unix-compat.nix) { };
+
   unliftio = self.callPackage (./pkgs/unliftio.nix) { };
 
   unliftio-core = self.callPackage (./pkgs/unliftio-core.nix) { };
