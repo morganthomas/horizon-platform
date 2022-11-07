@@ -349,6 +349,8 @@ self: with pkgs.haskell.lib; {
 
   entropy = self.callPackage (./pkgs/entropy.nix) { };
 
+  envparse = self.callPackage (./pkgs/envparse.nix) { };
+
   erf = self.callPackage (./pkgs/erf.nix) { };
 
   exact-pi = self.callPackage (./pkgs/exact-pi.nix) { };
