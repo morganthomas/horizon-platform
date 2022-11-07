@@ -1191,6 +1191,8 @@ self: with pkgs.haskell.lib; {
 
   witherable = self.callPackage (./pkgs/witherable.nix) { };
 
+  wizards = self.callPackage (./pkgs/wizards.nix) { };
+
   wl-pprint-annotated = self.callPackage (./pkgs/wl-pprint-annotated.nix) { };
 
   word-wrap = self.callPackage (./pkgs/word-wrap.nix) { };
