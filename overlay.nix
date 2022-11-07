@@ -1115,6 +1115,8 @@ self: with pkgs.haskell.lib; {
 
   store = self.callPackage (./pkgs/store.nix) { };
 
+  store-core = self.callPackage (./pkgs/store-core.nix) { };
+
   streaming = self.callPackage (./pkgs/streaming.nix) { };
 
   streaming-commons = self.callPackage (./pkgs/streaming-commons.nix) { };
