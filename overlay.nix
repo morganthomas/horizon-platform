@@ -43,6 +43,8 @@ self: with pkgs.haskell.lib; {
 
   StateVar = self.callPackage (./pkgs/StateVar.nix) { };
 
+  abstract-deque = self.callPackage (./pkgs/abstract-deque.nix) { };
+
   abstract-par = self.callPackage (./pkgs/abstract-par.nix) { };
 
   adjunctions = self.callPackage (./pkgs/adjunctions.nix) { };
