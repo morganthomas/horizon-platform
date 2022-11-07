@@ -211,6 +211,8 @@ self: with pkgs.haskell.lib; {
 
   contravariant = self.callPackage (./pkgs/contravariant.nix) { };
 
+  cpphs = self.callPackage (./pkgs/cpphs.nix) { };
+
   criterion = self.callPackage (./pkgs/criterion.nix) { };
 
   criterion-measurement = self.callPackage (./pkgs/criterion-measurement.nix) { };
