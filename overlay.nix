@@ -705,6 +705,8 @@ self: with pkgs.haskell.lib; {
 
   persistent = self.callPackage (./pkgs/persistent.nix) { };
 
+  persistent-template = self.callPackage (./pkgs/persistent-template.nix) { };
+
   pg-entity = self.callPackage (./pkgs/pg-entity.nix) { };
 
   pg-transact = self.callPackage (./pkgs/pg-transact.nix) { };
