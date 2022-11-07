@@ -237,6 +237,8 @@ self: with pkgs.haskell.lib; {
 
   criterion-measurement = self.callPackage (./pkgs/criterion-measurement.nix) { };
 
+  crypto-api = self.callPackage (./pkgs/crypto-api.nix) { };
+
   cryptohash = self.callPackage (./pkgs/cryptohash.nix) { };
 
   cryptohash-md5 = self.callPackage (./pkgs/cryptohash-md5.nix) { };
