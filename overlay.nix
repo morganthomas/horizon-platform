@@ -663,6 +663,8 @@ self: with pkgs.haskell.lib; {
 
   parallel = self.callPackage (./pkgs/parallel.nix) { };
 
+  parser-combinators = self.callPackage (./pkgs/parser-combinators.nix) { };
+
   parsers = self.callPackage (./pkgs/parsers.nix) { };
 
   password = self.callPackage (./pkgs/password.nix) { };
