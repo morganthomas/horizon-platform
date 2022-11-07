@@ -745,6 +745,8 @@ self: with pkgs.haskell.lib; {
 
   prettyprinter-ansi-terminal = self.callPackage (./pkgs/prettyprinter-ansi-terminal.nix) { };
 
+  primes = self.callPackage (./pkgs/primes.nix) { };
+
   primitive = self.callPackage (./pkgs/primitive.nix) { };
 
   primitive-addr = self.callPackage (./pkgs/primitive-addr.nix) { };
