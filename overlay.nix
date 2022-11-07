@@ -581,6 +581,8 @@ self: with pkgs.haskell.lib; {
 
   hosc = self.callPackage (./pkgs/hosc.nix) { };
 
+  hostname = self.callPackage (./pkgs/hostname.nix) { };
+
   hourglass = self.callPackage (./pkgs/hourglass.nix) { };
 
   hpack = self.callPackage (./pkgs/hpack.nix) { };
