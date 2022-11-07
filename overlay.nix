@@ -299,6 +299,8 @@ self: with pkgs.haskell.lib; {
 
   enclosed-exceptions = self.callPackage (./pkgs/enclosed-exceptions.nix) { };
 
+  exact-pi = self.callPackage (./pkgs/exact-pi.nix) { };
+
   expiring-cache-map = self.callPackage (./pkgs/expiring-cache-map.nix) { };
 
   extra = self.callPackage (./pkgs/extra.nix) { };
