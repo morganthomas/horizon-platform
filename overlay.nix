@@ -211,6 +211,8 @@ self: with pkgs.haskell.lib; {
 
   contravariant = self.callPackage (./pkgs/contravariant.nix) { };
 
+  cookie = self.callPackage (./pkgs/cookie.nix) { };
+
   cpphs = self.callPackage (./pkgs/cpphs.nix) { };
 
   criterion = self.callPackage (./pkgs/criterion.nix) { };
