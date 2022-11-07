@@ -741,6 +741,8 @@ self: with pkgs.haskell.lib; {
 
   lukko = self.callPackage (./pkgs/lukko.nix) { };
 
+  managed = self.callPackage (./pkgs/managed.nix) { };
+
   markdown-unlit = self.callPackage (./pkgs/markdown-unlit.nix) { };
 
   math-functions = self.callPackage (./pkgs/math-functions.nix) { };
