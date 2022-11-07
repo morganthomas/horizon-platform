@@ -179,6 +179,8 @@ self: with pkgs.haskell.lib; {
 
   checkers = self.callPackage (./pkgs/checkers.nix) { };
 
+  chell = self.callPackage (./pkgs/chell.nix) { };
+
   citeproc = self.callPackage (./pkgs/citeproc.nix) { };
 
   clock = self.callPackage (./pkgs/clock.nix) { };
@@ -854,6 +856,8 @@ self: with pkgs.haskell.lib; {
   path-io = self.callPackage (./pkgs/path-io.nix) { };
 
   path-pieces = self.callPackage (./pkgs/path-pieces.nix) { };
+
+  patience = self.callPackage (./pkgs/patience.nix) { };
 
   pcg-random = self.callPackage (./pkgs/pcg-random.nix) { };
 
