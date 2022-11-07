@@ -1373,6 +1373,8 @@ self: with pkgs.haskell.lib; {
 
   word-wrap = self.callPackage (./pkgs/word-wrap.nix) { };
 
+  word8 = self.callPackage (./pkgs/word8.nix) { };
+
   x509 = self.callPackage (./pkgs/x509.nix) { };
 
   x509-store = self.callPackage (./pkgs/x509-store.nix) { };
