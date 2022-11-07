@@ -1231,6 +1231,8 @@ self: with pkgs.haskell.lib; {
 
   th-reify-many = self.callPackage (./pkgs/th-reify-many.nix) { };
 
+  th-utilities = self.callPackage (./pkgs/th-utilities.nix) { };
+
   these = self.callPackage (./pkgs/these.nix) { };
 
   these-skinny = self.callPackage (./pkgs/these-skinny.nix) { };
