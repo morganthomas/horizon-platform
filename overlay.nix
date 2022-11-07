@@ -487,6 +487,8 @@ self: with pkgs.haskell.lib; {
 
   gridtables = self.callPackage (./pkgs/gridtables.nix) { };
 
+  groups = self.callPackage (./pkgs/groups.nix) { };
+
   hackage-db = self.callPackage (./pkgs/hackage-db.nix) { };
 
   hackage-security = self.callPackage (./pkgs/hackage-security.nix) { };
