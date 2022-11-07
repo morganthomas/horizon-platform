@@ -925,6 +925,8 @@ self: with pkgs.haskell.lib; {
 
   port-utils = self.callPackage (./pkgs/port-utils.nix) { };
 
+  postgres-options = self.callPackage (./pkgs/postgres-options.nix) { };
+
   postgresql-libpq = self.callPackage (./pkgs/postgresql-libpq.nix) { };
 
   postgresql-migration = self.callPackage (./pkgs/postgresql-migration.nix) { };
