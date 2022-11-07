@@ -1,5 +1,15 @@
-{ mkDerivation, aeson, base, bytestring, lib, string-qq, tasty
-, tasty-discover, tasty-hunit, text, unordered-containers, vector
+{ mkDerivation
+, aeson
+, base
+, bytestring
+, lib
+, string-qq
+, tasty
+, tasty-discover
+, tasty-hunit
+, text
+, unordered-containers
+, vector
 , yaml
 }:
 mkDerivation {
@@ -10,19 +20,35 @@ mkDerivation {
   editedCabalFile = "11srm7kkslnicqvbk728kzpy58am8rz680f7l6axn2nfh5ykx8n6";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    aeson base bytestring text unordered-containers vector
+    aeson
+    base
+    bytestring
+    text
+    unordered-containers
+    vector
   ];
   testHaskellDepends = [
-    aeson base bytestring string-qq tasty tasty-hunit
-    unordered-containers yaml
+    aeson
+    base
+    bytestring
+    string-qq
+    tasty
+    tasty-hunit
+    unordered-containers
+    yaml
   ];
   testToolDepends = [ tasty-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/clovyr/aeson-yaml";
   description = "Output any Aeson value as YAML (pure Haskell library)";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -39,6 +39,11 @@ mkDerivation {
   pname = "serialise";
   version = "0.2.6.0";
   sha256 = "93ff1888e1972999f14663072b38efcfd0c1481b4ec8e30ddc9c5ce97681a516";
+  revision = "1";
+  editedCabalFile = "0rlsi4jq2d1dak2fps5flcn27lywjlhvsi0x2k2lvnjqawnfb3f9";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     base
@@ -100,11 +105,15 @@ mkDerivation {
     vector
     zlib
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/well-typed/cborg";
   description = "A binary serialisation library for Haskell values";
   license = lib.licenses.bsd3;
+  broken = false;
 }

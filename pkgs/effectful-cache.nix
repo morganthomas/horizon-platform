@@ -17,6 +17,9 @@ mkDerivation {
     rev = "0a5581da7c21a05a9ab1762a6da6997090fe311d";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base cache effectful-core hashable ];
   testHaskellDepends = [
     base
@@ -26,10 +29,14 @@ mkDerivation {
     tasty
     tasty-hunit
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell-effectful/effectful-cache/tree/main/effectful-cache#readme";
   license = lib.licenses.mit;
+  broken = false;
 }

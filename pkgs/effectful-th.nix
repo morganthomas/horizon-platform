@@ -13,6 +13,9 @@ mkDerivation {
   sha256 = "302605bbc2bb8a1b97308d9611faf5e121958b846cbeb9421e2657a902ef7a63";
   revision = "3";
   editedCabalFile = "1nqwvgdvqgh4dvkidyaga7jd95p3hn54hy5gwadsvyf9lll4vjck";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     containers
@@ -22,10 +25,14 @@ mkDerivation {
     th-abstraction
   ];
   testHaskellDepends = [ base effectful ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Template Haskell utilities for the effectful library";
   license = lib.licenses.bsd3;
+  broken = false;
 }

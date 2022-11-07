@@ -1,5 +1,11 @@
-{ mkDerivation, base, effectful-core, fetchgit, lib, tasty
-, tasty-hunit, time
+{ mkDerivation
+, base
+, effectful-core
+, fetchgit
+, lib
+, tasty
+, tasty-hunit
+, time
 }:
 mkDerivation {
   pname = "time-effectful";
@@ -10,14 +16,25 @@ mkDerivation {
     rev = "e212239b685e1ecf7ee95dd1e944cc563351907f";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base effectful-core time ];
   testHaskellDepends = [
-    base effectful-core tasty tasty-hunit time
+    base
+    effectful-core
+    tasty
+    tasty-hunit
+    time
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell-effectful/time-effectful#readme";
   license = lib.licenses.mit;
+  broken = false;
 }

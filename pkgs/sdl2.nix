@@ -32,10 +32,14 @@ mkDerivation {
   librarySystemDepends = [ SDL2 ];
   libraryPkgconfigDepends = [ SDL2 ];
   testHaskellDepends = [ base deepseq linear vector weigh ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Both high- and low-level bindings to the SDL library (version 2.0.6+).";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -47,6 +47,9 @@ mkDerivation {
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/servant-client/; echo source root reset to $sourceRoot";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     base-compat
@@ -99,11 +102,15 @@ mkDerivation {
     warp
   ];
   testToolDepends = [ hspec-discover markdown-unlit ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://docs.servant.dev/";
   description = "Automatic derivation of querying functions for servant";
   license = lib.licenses.bsd3;
+  broken = false;
 }

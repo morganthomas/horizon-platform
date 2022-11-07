@@ -15,6 +15,7 @@ mkDerivation {
   editedCabalFile = "1j93w1krkadqijn59yjiws1366yhcn2mad1irqrk50in6l10k51b";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base hashable stm ];
   testHaskellDepends = [
     base
@@ -23,11 +24,15 @@ mkDerivation {
     test-framework
     test-framework-hunit
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/simonmar/async";
   description = "Run IO operations asynchronously and wait for their results";
   license = lib.licenses.bsd3;
+  broken = false;
 }

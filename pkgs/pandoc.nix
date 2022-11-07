@@ -207,9 +207,12 @@ mkDerivation {
     tasty-bench
     text
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   postInstall = ''
     mkdir -p $out/share/man/man1
@@ -219,4 +222,5 @@ mkDerivation {
   description = "Conversion between markup formats";
   license = lib.licenses.gpl2Plus;
   mainProgram = "pandoc";
+  broken = false;
 }

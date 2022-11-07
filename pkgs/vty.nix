@@ -40,6 +40,7 @@ mkDerivation {
   sha256 = "67e1376b735232c3a5e7fa3c3eff00fdc457bdd5ba7dcf3a758aee6b8b60cdf0";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     ansi-terminal
     base
@@ -100,11 +101,15 @@ mkDerivation {
     utf8-string
     vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/jtdaugherty/vty";
   description = "A simple terminal UI library";
   license = lib.licenses.bsd3;
+  broken = false;
 }

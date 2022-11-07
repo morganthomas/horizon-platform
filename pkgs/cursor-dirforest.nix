@@ -1,5 +1,16 @@
-{ mkDerivation, base, containers, cursor, deepseq, dirforest
-, fetchgit, filepath, lib, microlens, path, text, validity
+{ mkDerivation
+, base
+, containers
+, cursor
+, deepseq
+, dirforest
+, fetchgit
+, filepath
+, lib
+, microlens
+, path
+, text
+, validity
 , validity-path
 }:
 mkDerivation {
@@ -12,14 +23,30 @@ mkDerivation {
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/cursor-dirforest/; echo source root reset to $sourceRoot";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    base containers cursor deepseq dirforest filepath microlens path
-    text validity validity-path
+    base
+    containers
+    cursor
+    deepseq
+    dirforest
+    filepath
+    microlens
+    path
+    text
+    validity
+    validity-path
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/NorfairKing/cursor-dirforest#readme";
   license = lib.licenses.mit;
+  broken = false;
 }

@@ -20,6 +20,9 @@ mkDerivation {
   pname = "relude";
   version = "1.1.0.0";
   sha256 = "b51df08a93ef1331dd56389e158e67ac7b68c62cc1561c2890d3572c764ab609";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -47,11 +50,15 @@ mkDerivation {
     tasty-bench
     unordered-containers
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/kowainik/relude";
   description = "Safe, performant, user-friendly and lightweight Haskell Standard Library";
   license = lib.licenses.mit;
+  broken = false;
 }

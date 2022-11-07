@@ -14,6 +14,9 @@ mkDerivation {
   sha256 = "639d4140520d608a73a81186aca6db40fcb03ec8a818dbce79fcb0b39aa70b25";
   revision = "1";
   editedCabalFile = "1s8bx25yrjqy1cj9y1s1m8a8qlby9dxjzin16yymz7g39fqcqxz8";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     ghc-prim
@@ -28,10 +31,14 @@ mkDerivation {
     deepseq
     template-haskell
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Generic Programming using True Sums of Products";
   license = lib.licenses.bsd3;
+  broken = false;
 }

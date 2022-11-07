@@ -23,6 +23,9 @@ mkDerivation {
   pname = "polysemy-zoo";
   version = "0.8.0.0";
   sha256 = "8c46937c61c980ac3024c4eeb1bf32a686eb2c5bcc2a65fad25d102512c89afa";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     async
     base
@@ -60,11 +63,15 @@ mkDerivation {
     transformers
   ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/isovector/polysemy-zoo#readme";
   description = "Experimental, user-contributed effects and interpreters for polysemy";
   license = lib.licenses.bsd3;
+  broken = false;
 }

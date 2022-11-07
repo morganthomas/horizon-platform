@@ -1,9 +1,35 @@
-{ mkDerivation, aeson, base, bifunctors, bytestring, Cabal
-, containers, cryptonite, deepseq, directory, filepath, Glob, hspec
-, hspec-discover, http-client, http-client-tls, http-types, HUnit
-, infer-license, interpolate, lib, mockery, pretty, QuickCheck
-, scientific, template-haskell, temporary, text, transformers
-, unordered-containers, vector, yaml
+{ mkDerivation
+, aeson
+, base
+, bifunctors
+, bytestring
+, Cabal
+, containers
+, cryptonite
+, deepseq
+, directory
+, filepath
+, Glob
+, hspec
+, hspec-discover
+, http-client
+, http-client-tls
+, http-types
+, HUnit
+, infer-license
+, interpolate
+, lib
+, mockery
+, pretty
+, QuickCheck
+, scientific
+, template-haskell
+, temporary
+, text
+, transformers
+, unordered-containers
+, vector
+, yaml
 }:
 mkDerivation {
   pname = "hpack";
@@ -13,32 +39,97 @@ mkDerivation {
   editedCabalFile = "1x0rmra2fpfzmhhw090iila2drfdmb1y28ybypmgbi0asa1zl751";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    aeson base bifunctors bytestring Cabal containers cryptonite
-    deepseq directory filepath Glob http-client http-client-tls
-    http-types infer-license pretty scientific text transformers
-    unordered-containers vector yaml
+    aeson
+    base
+    bifunctors
+    bytestring
+    Cabal
+    containers
+    cryptonite
+    deepseq
+    directory
+    filepath
+    Glob
+    http-client
+    http-client-tls
+    http-types
+    infer-license
+    pretty
+    scientific
+    text
+    transformers
+    unordered-containers
+    vector
+    yaml
   ];
   executableHaskellDepends = [
-    aeson base bifunctors bytestring Cabal containers cryptonite
-    deepseq directory filepath Glob http-client http-client-tls
-    http-types infer-license pretty scientific text transformers
-    unordered-containers vector yaml
+    aeson
+    base
+    bifunctors
+    bytestring
+    Cabal
+    containers
+    cryptonite
+    deepseq
+    directory
+    filepath
+    Glob
+    http-client
+    http-client-tls
+    http-types
+    infer-license
+    pretty
+    scientific
+    text
+    transformers
+    unordered-containers
+    vector
+    yaml
   ];
   testHaskellDepends = [
-    aeson base bifunctors bytestring Cabal containers cryptonite
-    deepseq directory filepath Glob hspec http-client http-client-tls
-    http-types HUnit infer-license interpolate mockery pretty
-    QuickCheck scientific template-haskell temporary text transformers
-    unordered-containers vector yaml
+    aeson
+    base
+    bifunctors
+    bytestring
+    Cabal
+    containers
+    cryptonite
+    deepseq
+    directory
+    filepath
+    Glob
+    hspec
+    http-client
+    http-client-tls
+    http-types
+    HUnit
+    infer-license
+    interpolate
+    mockery
+    pretty
+    QuickCheck
+    scientific
+    template-haskell
+    temporary
+    text
+    transformers
+    unordered-containers
+    vector
+    yaml
   ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/sol/hpack#readme";
   description = "A modern format for Haskell packages";
   license = lib.licenses.mit;
   mainProgram = "hpack";
+  broken = false;
 }

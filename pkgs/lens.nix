@@ -49,6 +49,9 @@ mkDerivation {
   pname = "lens";
   version = "5.2";
   sha256 = "b33e2ebede468d9e8acb79d20bb5a5947fc3bec13cc39b122aa131c5e6dcd188";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     assoc
@@ -111,11 +114,15 @@ mkDerivation {
     unordered-containers
     vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/ekmett/lens/";
   description = "Lenses, Folds and Traversals";
   license = lib.licenses.bsd2;
+  broken = false;
 }

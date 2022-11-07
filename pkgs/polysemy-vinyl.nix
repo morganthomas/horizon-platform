@@ -12,6 +12,9 @@ mkDerivation {
   sha256 = "84cdb95360548060eeb586e9948b8a751a55e8a5b06cfc50013a3227b60dc91b";
   revision = "1";
   editedCabalFile = "13f289dxr03habyggn3vl7lzrl2r3a9r0y0bisrfmq48qaiv08n1";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     polysemy
@@ -19,10 +22,14 @@ mkDerivation {
     polysemy-several
     vinyl
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Functions for mapping vinyl records in polysemy";
   license = lib.licenses.mit;
+  broken = false;
 }

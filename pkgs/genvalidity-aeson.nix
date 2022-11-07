@@ -20,6 +20,9 @@ mkDerivation {
   pname = "genvalidity-aeson";
   version = "1.0.0.1";
   sha256 = "6101f09c02b925209673d6aed691e64e60a127f41aff1750b27dc7e18caeba48";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     aeson
     base
@@ -46,11 +49,15 @@ mkDerivation {
     criterion
     genvalidity-criterion
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/NorfairKing/validity#readme";
   description = "GenValidity support for aeson";
   license = lib.licenses.mit;
+  broken = false;
 }

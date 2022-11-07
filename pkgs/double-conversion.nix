@@ -20,6 +20,9 @@ mkDerivation {
     rev = "5d092e0664442eaac8ae1d101dba57ce9b1c9b03";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -36,11 +39,15 @@ mkDerivation {
     test-framework-quickcheck2
     text
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/haskell/double-conversion";
   description = "Fast conversion between single and double precision floating point and text";
   license = lib.licenses.bsd3;
+  broken = false;
 }

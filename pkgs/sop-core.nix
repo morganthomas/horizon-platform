@@ -5,11 +5,18 @@ mkDerivation {
   sha256 = "dac367f1608c9bd6c5dd1697e2a30e1b760617023b96e1df7d44c6c017999db0";
   revision = "1";
   editedCabalFile = "1d4sagrlhmvai3f4hvb9rn8aqsjbvi00z0mzv1gds9nblshk83xd";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base deepseq ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "True Sums of Products";
   license = lib.licenses.bsd3;
+  broken = false;
 }

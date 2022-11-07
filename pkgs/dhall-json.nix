@@ -1,8 +1,26 @@
-{ mkDerivation, aeson, aeson-pretty, aeson-yaml, ansi-terminal
-, base, bytestring, containers, dhall, exceptions, filepath
-, lens-family-core, lib, optparse-applicative, prettyprinter
-, prettyprinter-ansi-terminal, scientific, tasty, tasty-hunit
-, tasty-silver, text, unordered-containers, vector
+{ mkDerivation
+, aeson
+, aeson-pretty
+, aeson-yaml
+, ansi-terminal
+, base
+, bytestring
+, containers
+, dhall
+, exceptions
+, filepath
+, lens-family-core
+, lib
+, optparse-applicative
+, prettyprinter
+, prettyprinter-ansi-terminal
+, scientific
+, tasty
+, tasty-hunit
+, tasty-silver
+, text
+, unordered-containers
+, vector
 }:
 mkDerivation {
   pname = "dhall-json";
@@ -12,22 +30,56 @@ mkDerivation {
   editedCabalFile = "0m5sngc1j7jagn95qmjz7gpw2jgqnnafgr6nwd506q8z2jg2a3my";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    aeson aeson-pretty aeson-yaml base bytestring containers dhall
-    exceptions filepath lens-family-core optparse-applicative
-    prettyprinter scientific text unordered-containers vector
+    aeson
+    aeson-pretty
+    aeson-yaml
+    base
+    bytestring
+    containers
+    dhall
+    exceptions
+    filepath
+    lens-family-core
+    optparse-applicative
+    prettyprinter
+    scientific
+    text
+    unordered-containers
+    vector
   ];
   executableHaskellDepends = [
-    aeson aeson-pretty ansi-terminal base bytestring dhall exceptions
-    optparse-applicative prettyprinter prettyprinter-ansi-terminal text
+    aeson
+    aeson-pretty
+    ansi-terminal
+    base
+    bytestring
+    dhall
+    exceptions
+    optparse-applicative
+    prettyprinter
+    prettyprinter-ansi-terminal
+    text
   ];
   testHaskellDepends = [
-    aeson base bytestring dhall tasty tasty-hunit tasty-silver text
+    aeson
+    base
+    bytestring
+    dhall
+    tasty
+    tasty-hunit
+    tasty-silver
+    text
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Convert between Dhall and JSON or YAML";
   license = lib.licenses.bsd3;
+  broken = false;
 }

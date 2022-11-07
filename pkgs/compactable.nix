@@ -1,8 +1,27 @@
-{ mkDerivation, aeson, base, base-compat, bifunctors, containers
-, contravariant, data-default-class, deepseq, fetchgit, hashable
-, keys, lens, lib, QuickCheck, semigroupoids, sydtest
-, sydtest-discover, these, transformers, transformers-compat
-, unordered-containers, vector, vector-instances
+{ mkDerivation
+, aeson
+, base
+, base-compat
+, bifunctors
+, containers
+, contravariant
+, data-default-class
+, deepseq
+, fetchgit
+, hashable
+, keys
+, lens
+, lib
+, QuickCheck
+, semigroupoids
+, sydtest
+, sydtest-discover
+, these
+, transformers
+, transformers-compat
+, unordered-containers
+, vector
+, vector-instances
 }:
 mkDerivation {
   pname = "compactable";
@@ -13,19 +32,47 @@ mkDerivation {
     rev = "f63927b1e438c267f0d12f36e5b3735cfaebeeb4";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    aeson base base-compat bifunctors containers contravariant
-    data-default-class deepseq hashable keys lens QuickCheck
-    semigroupoids these transformers transformers-compat
-    unordered-containers vector vector-instances
+    aeson
+    base
+    base-compat
+    bifunctors
+    containers
+    contravariant
+    data-default-class
+    deepseq
+    hashable
+    keys
+    lens
+    QuickCheck
+    semigroupoids
+    these
+    transformers
+    transformers-compat
+    unordered-containers
+    vector
+    vector-instances
   ];
   testHaskellDepends = [
-    base containers QuickCheck sydtest sydtest-discover these vector
+    base
+    containers
+    QuickCheck
+    sydtest
+    sydtest-discover
+    these
+    vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "A typeclass for structures which can be catMaybed, filtered, and partitioned";
   license = lib.licenses.bsd3;
+  broken = false;
 }

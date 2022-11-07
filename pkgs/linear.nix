@@ -34,6 +34,9 @@ mkDerivation {
   pname = "linear";
   version = "1.21.10";
   sha256 = "b90733227c9d4047e087a0083785e8293dc623169161c6dab12ece1ac90d7ab4";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     adjunctions
     base
@@ -72,11 +75,15 @@ mkDerivation {
     test-framework-hunit
     vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/ekmett/linear/";
   description = "Linear Algebra";
   license = lib.licenses.bsd3;
+  broken = false;
 }

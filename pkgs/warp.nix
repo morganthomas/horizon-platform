@@ -41,6 +41,9 @@ mkDerivation {
   pname = "warp";
   version = "3.3.22";
   sha256 = "ea26386fa12f86bc8d04446cc551ccc5c918debe4ad947f6c6bf514da3f04f3e";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     auto-update
@@ -122,11 +125,15 @@ mkDerivation {
     unliftio
     x509
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://github.com/yesodweb/wai";
   description = "A fast, light-weight web server for WAI applications";
   license = lib.licenses.mit;
+  broken = false;
 }

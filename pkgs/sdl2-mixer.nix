@@ -16,6 +16,7 @@ mkDerivation {
   sha256 = "58141826af5d491794a74484fda770859e2271b0ede44cc75f2e562b70b7cf99";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -31,10 +32,14 @@ mkDerivation {
   executableHaskellDepends = [ base data-default-class sdl2 vector ];
   executableSystemDepends = [ SDL2_mixer ];
   executablePkgconfigDepends = [ SDL2_mixer ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Haskell bindings to SDL2_mixer";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -16,6 +16,7 @@ mkDerivation {
   editedCabalFile = "1rwl68jiivw7f2f5cg73sr3dawlbmklnwyiwivrcsihrg4b1z1lq";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ array base bytestring ];
   executableHaskellDepends = [
     array
@@ -33,12 +34,16 @@ mkDerivation {
     QuickCheck
     template-haskell
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/wangbj/hashing";
   description = "A pure haskell library implements several hash algorithms";
   license = lib.licenses.mit;
   mainProgram = "hashing-exe";
+  broken = false;
 }

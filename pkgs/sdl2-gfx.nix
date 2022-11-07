@@ -15,6 +15,7 @@ mkDerivation {
   sha256 = "bcab7e1f8f7a60dec2db07c6680eb3f16e88511829a6ef9cd82ddce91c293565";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     lifted-base
@@ -28,11 +29,15 @@ mkDerivation {
   executableHaskellDepends = [ base sdl2 vector ];
   executableSystemDepends = [ SDL2_gfx ];
   executablePkgconfigDepends = [ SDL2 SDL2_gfx ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Haskell bindings to SDL2_gfx";
   license = lib.licenses.mit;
   mainProgram = "sdl2-gfx-example";
+  broken = false;
 }

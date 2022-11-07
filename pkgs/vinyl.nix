@@ -24,6 +24,9 @@ mkDerivation {
   pname = "vinyl";
   version = "0.14.3";
   sha256 = "e6789cbf9d3db493065cc85251e1a4596e4ab561c857d2757ae2593dd53ce6d2";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ array base deepseq ghc-prim ];
   testHaskellDepends = [
     aeson
@@ -48,10 +51,14 @@ mkDerivation {
     tagged
     vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Extensible Records";
   license = lib.licenses.mit;
+  broken = false;
 }

@@ -20,6 +20,9 @@ mkDerivation {
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/servant-foreign/; echo source root reset to $sourceRoot";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     base-compat
@@ -30,11 +33,15 @@ mkDerivation {
   ];
   testHaskellDepends = [ base hspec servant ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "http://docs.servant.dev/";
   description = "Helpers for generating clients for servant APIs in any programming language";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -31,6 +31,7 @@ mkDerivation {
   sha256 = "4b4320ff8e6161dfe7034c7deb911f4187551c389c1d6b14501b285f9031ed52";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bimap
@@ -64,11 +65,15 @@ mkDerivation {
     vector
     vty
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/jtdaugherty/brick/";
   description = "A declarative terminal user interface library";
   license = lib.licenses.bsd3;
+  broken = false;
 }

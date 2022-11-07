@@ -1,5 +1,14 @@
-{ mkDerivation, base, base64-bytestring, bytestring, cryptohash
-, directory, hspec, lib, postgresql-simple, text, time
+{ mkDerivation
+, base
+, base64-bytestring
+, bytestring
+, cryptohash
+, directory
+, hspec
+, lib
+, postgresql-simple
+, text
+, time
 }:
 mkDerivation {
   pname = "postgresql-simple-migration";
@@ -9,21 +18,37 @@ mkDerivation {
   editedCabalFile = "1a0a5295j207x0pzbhy5inv8qimrh76dmmp26zgaw073n1i8yg8j";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    base base64-bytestring bytestring cryptohash directory
-    postgresql-simple time
+    base
+    base64-bytestring
+    bytestring
+    cryptohash
+    directory
+    postgresql-simple
+    time
   ];
   executableHaskellDepends = [
-    base base64-bytestring bytestring cryptohash directory
-    postgresql-simple text time
+    base
+    base64-bytestring
+    bytestring
+    cryptohash
+    directory
+    postgresql-simple
+    text
+    time
   ];
   testHaskellDepends = [ base bytestring hspec postgresql-simple ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/ameingast/postgresql-simple-migration";
   description = "PostgreSQL Schema Migrations";
   license = lib.licenses.bsd3;
   mainProgram = "migrate";
+  broken = false;
 }

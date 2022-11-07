@@ -20,6 +20,9 @@ mkDerivation {
   sha256 = "790d2bb274283419173bd89104439860675a9410f70f21912973ecd9098b4104";
   revision = "3";
   editedCabalFile = "1f2bvl41by904lnr0dk6qgasqwadq2w48l7fj51bp2h8bqbkdjyc";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     base-orphans
@@ -43,11 +46,15 @@ mkDerivation {
     unordered-containers
     vector
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/fumieval/witherable";
   description = "filterable traversable";
   license = lib.licenses.bsd3;
+  broken = false;
 }

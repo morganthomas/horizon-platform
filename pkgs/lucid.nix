@@ -22,6 +22,9 @@ mkDerivation {
   sha256 = "dcf57142ca1ad5e6dcecfaf4dba703031886c286f8b07ba8cd4470b077e6798e";
   revision = "1";
   editedCabalFile = "0wipmh3xcs00x8lbq5j780rdc2klfj67nzni21qc1pdbhr2whn9d";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     blaze-builder
@@ -51,11 +54,15 @@ mkDerivation {
     text
     transformers
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/chrisdone/lucid";
   description = "Clear to write, read and edit DSL for HTML";
   license = lib.licenses.bsd3;
+  broken = false;
 }

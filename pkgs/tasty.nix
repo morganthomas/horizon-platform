@@ -20,6 +20,9 @@ mkDerivation {
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/core/; echo source root reset to $sourceRoot";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     ansi-terminal
     base
@@ -30,11 +33,15 @@ mkDerivation {
     transformers
     unix
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/UnkindPartition/tasty";
   description = "Modern and extensible testing framework";
   license = lib.licenses.mit;
+  broken = false;
 }

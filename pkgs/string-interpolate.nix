@@ -28,6 +28,9 @@ mkDerivation {
   sha256 = "17c214e2a644c433d79e3d6b9e5dab9077d79be9de4b9e208308e3196b82b73e";
   revision = "1";
   editedCabalFile = "1nrpng7r59a25z4qns8vy26rvp1wgn5f4bs8ism40q66ags8f2ad";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     bytestring
@@ -63,11 +66,15 @@ mkDerivation {
     QuickCheck
     text
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://gitlab.com/williamyaoh/string-interpolate/blob/master/README.md";
   description = "Haskell string/text/bytestring interpolation that just works";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -5,14 +5,19 @@ mkDerivation {
   sha256 = "8c65a869e7f9af19fc9f7a596b5f12f1551b9008a76b5b85460f304eb6cdc662";
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base bytestring ];
   librarySystemDepends = [ SDL2 ];
   libraryPkgconfigDepends = [ SDL2 ];
   libraryToolDepends = [ c2hs ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "Simple audio library for SDL";
   license = lib.licenses.bsd3;
+  broken = false;
 }

@@ -22,6 +22,9 @@ mkDerivation {
   pname = "effectful";
   version = "2.1.0.0";
   sha256 = "76147d4d761d3267607a5f71c5925cbb2e8ae538aacaf6c6ddd9574eabec739b";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     async
     base
@@ -51,10 +54,14 @@ mkDerivation {
     unix
     unliftio
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   description = "An easy to use, performant extensible effects library";
   license = lib.licenses.bsd3;
+  broken = false;
 }

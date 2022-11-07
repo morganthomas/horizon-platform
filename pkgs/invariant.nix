@@ -26,6 +26,9 @@ mkDerivation {
   sha256 = "b52b2a798c514e2f3bb37d9d629078f433745fa8a25756198c4d33751d7bce1d";
   revision = "1";
   editedCabalFile = "0551ll1swnrmq09j89jqnxl4qnirbbpdpsdym23adaf36qdd7v37";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     array
     base
@@ -46,11 +49,15 @@ mkDerivation {
   ];
   testHaskellDepends = [ base hspec QuickCheck template-haskell ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/nfrisby/invariant-functors";
   description = "Haskell98 invariant functors";
   license = lib.licenses.bsd2;
+  broken = false;
 }

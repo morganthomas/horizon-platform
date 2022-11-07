@@ -29,6 +29,9 @@ mkDerivation {
   sha256 = "6c0c87558f04807896377535f7801a16b4ddfd9de1a203ef5a45de915907d5fa";
   revision = "1";
   editedCabalFile = "1zran8wpwizrwdw23a5qckmiplyk6xf2z8x4his0ipfy2zzl5ql6";
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     base16-bytestring
@@ -57,11 +60,15 @@ mkDerivation {
     wai-extra
   ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/scotty-web/wai-middleware-static";
   description = "WAI middleware that serves requests to static files";
   license = lib.licenses.bsd3;
+  broken = false;
 }

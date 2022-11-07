@@ -1,6 +1,19 @@
-{ mkDerivation, base, containers, criterion, deepseq, dependent-map
-, dependent-sum, fetchgit, ghc-prim, ghc-typelits-knownnat
-, hedgehog, hspec, hspec-hedgehog, lib, primitive, vector
+{ mkDerivation
+, base
+, containers
+, criterion
+, deepseq
+, dependent-map
+, dependent-sum
+, fetchgit
+, ghc-prim
+, ghc-typelits-knownnat
+, hedgehog
+, hspec
+, hspec-hedgehog
+, lib
+, primitive
+, vector
 }:
 mkDerivation {
   pname = "typerep-map";
@@ -11,21 +24,41 @@ mkDerivation {
     rev = "75b7cd5d45986be07420a6821d352ad2adc0b697";
     fetchSubmodules = true;
   };
+  isLibrary = true;
+  isExecutable = false;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    base containers deepseq ghc-prim primitive vector
+    base
+    containers
+    deepseq
+    ghc-prim
+    primitive
+    vector
   ];
   testHaskellDepends = [
-    base ghc-typelits-knownnat hedgehog hspec hspec-hedgehog
+    base
+    ghc-typelits-knownnat
+    hedgehog
+    hspec
+    hspec-hedgehog
   ];
   benchmarkHaskellDepends = [
-    base criterion deepseq dependent-map dependent-sum
+    base
+    criterion
+    deepseq
+    dependent-map
+    dependent-sum
     ghc-typelits-knownnat
   ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/kowainik/typerep-map";
   description = "Efficient implementation of a dependent map with types as keys";
   license = lib.licenses.mpl20;
+  broken = false;
 }

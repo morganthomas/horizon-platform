@@ -34,6 +34,7 @@ mkDerivation {
   };
   isLibrary = true;
   isExecutable = true;
+  enableSeparateDataOutput = false;
   libraryHaskellDepends = [
     base
     base-compat
@@ -85,12 +86,16 @@ mkDerivation {
     transformers
   ];
   testToolDepends = [ hspec-discover ];
+  enableLibraryProfiling = false;
+  enableExecutableProfiling = false;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
+  doBenchmark = false;
   hyperlinkSource = false;
   homepage = "https://github.com/sol/doctest#readme";
   description = "Test interactive Haskell examples";
   license = lib.licenses.mit;
   mainProgram = "doctest";
+  broken = false;
 }
