@@ -979,6 +979,8 @@ self: with pkgs.haskell.lib; {
 
   sdl2-ttf = self.callPackage (./pkgs/sdl2-ttf.nix) { };
 
+  selective = self.callPackage (./pkgs/selective.nix) { };
+
   semialign = self.callPackage (./pkgs/semialign.nix) { };
 
   semigroupoids = self.callPackage (./pkgs/semigroupoids.nix) { };
