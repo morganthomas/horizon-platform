@@ -27,6 +27,8 @@ self: with pkgs.haskell.lib; {
 
   JuicyPixels = self.callPackage (./pkgs/JuicyPixels.nix) { };
 
+  ListLike = self.callPackage (./pkgs/ListLike.nix) { };
+
   MonadRandom = self.callPackage (./pkgs/MonadRandom.nix) { };
 
   OneTuple = self.callPackage (./pkgs/OneTuple.nix) { };
