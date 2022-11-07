@@ -51,6 +51,8 @@ self: with pkgs.haskell.lib; {
 
   alex = self.callPackage (./pkgs/alex.nix) { };
 
+  algebraic-graphs = self.callPackage (./pkgs/algebraic-graphs.nix) { };
+
   ansi-terminal = self.callPackage (./pkgs/ansi-terminal.nix) { };
 
   ansi-wl-pprint = self.callPackage (./pkgs/ansi-wl-pprint.nix) { };
