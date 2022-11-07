@@ -815,6 +815,8 @@ self: with pkgs.haskell.lib; {
 
   reducers = self.callPackage (./pkgs/reducers.nix) { };
 
+  refact = self.callPackage (./pkgs/refact.nix) { };
+
   refined = self.callPackage (./pkgs/refined.nix) { };
 
   reflection = self.callPackage (./pkgs/reflection.nix) { };
