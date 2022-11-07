@@ -781,6 +781,8 @@ self: with pkgs.haskell.lib; {
 
   path-io = self.callPackage (./pkgs/path-io.nix) { };
 
+  path-pieces = self.callPackage (./pkgs/path-pieces.nix) { };
+
   pcg-random = self.callPackage (./pkgs/pcg-random.nix) { };
 
   pcre-light = self.callPackage (./pkgs/pcre-light.nix) { };
