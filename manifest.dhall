@@ -492,6 +492,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "f6c7bbbcdb383d2eb487ad7fe427ec05a747c14f")
         (None Text)
     , callHackage "old-locale" "1.0.0.7"
+    , callHackage "old-time" "1.1.0.3"
     , callHackage "optics-core" "0.4.1"
     , callHackage "optics-extra" "0.4.2.1"
     , callHackage "optics-th" "0.4.1"

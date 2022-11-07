@@ -725,6 +725,8 @@ self: with pkgs.haskell.lib; {
 
   old-locale = self.callPackage (./pkgs/old-locale.nix) { };
 
+  old-time = self.callPackage (./pkgs/old-time.nix) { };
+
   optics = self.callPackage (./pkgs/optics.nix) { };
 
   optics-core = self.callPackage (./pkgs/optics-core.nix) { };
