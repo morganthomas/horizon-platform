@@ -725,6 +725,8 @@ self: with pkgs.haskell.lib; {
 
   parallel = self.callPackage (./pkgs/parallel.nix) { };
 
+  parsec = self.callPackage (./pkgs/parsec.nix) { };
+
   parser-combinators = self.callPackage (./pkgs/parser-combinators.nix) { };
 
   parsers = self.callPackage (./pkgs/parsers.nix) { };
