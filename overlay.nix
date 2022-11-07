@@ -883,6 +883,8 @@ self: with pkgs.haskell.lib; {
 
   regex-base = self.callPackage (./pkgs/regex-base.nix) { };
 
+  regex-pcre-builtin = self.callPackage (./pkgs/regex-pcre-builtin.nix) { };
+
   regex-posix = self.callPackage (./pkgs/regex-posix.nix) { };
 
   regex-tdfa = self.callPackage (./pkgs/regex-tdfa.nix) { };
