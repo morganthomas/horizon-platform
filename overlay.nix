@@ -645,6 +645,8 @@ self: with pkgs.haskell.lib; {
 
   js-dgtable = self.callPackage (./pkgs/js-dgtable.nix) { };
 
+  js-flot = self.callPackage (./pkgs/js-flot.nix) { };
+
   js-jquery = self.callPackage (./pkgs/js-jquery.nix) { };
 
   kan-extensions = self.callPackage (./pkgs/kan-extensions.nix) { };
