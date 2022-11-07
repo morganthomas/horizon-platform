@@ -1047,6 +1047,8 @@ self: with pkgs.haskell.lib; {
 
   tagged = self.callPackage (./pkgs/tagged.nix) { };
 
+  tagsoup = self.callPackage (./pkgs/tagsoup.nix) { };
+
   tar = self.callPackage (./pkgs/tar.nix) { };
 
   tasty = self.callPackage (./pkgs/tasty.nix) { };
