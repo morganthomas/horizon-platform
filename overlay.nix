@@ -169,6 +169,8 @@ self: with pkgs.haskell.lib; {
 
   charset = self.callPackage (./pkgs/charset.nix) { };
 
+  checkers = self.callPackage (./pkgs/checkers.nix) { };
+
   citeproc = self.callPackage (./pkgs/citeproc.nix) { };
 
   clock = self.callPackage (./pkgs/clock.nix) { };
