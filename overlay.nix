@@ -483,6 +483,8 @@ self: with pkgs.haskell.lib; {
 
   hpack-dhall = self.callPackage (./pkgs/hpack-dhall.nix) { };
 
+  hscolour = self.callPackage (./pkgs/hscolour.nix) { };
+
   hslua = self.callPackage (./pkgs/hslua.nix) { };
 
   hslua-aeson = self.callPackage (./pkgs/hslua-aeson.nix) { };
