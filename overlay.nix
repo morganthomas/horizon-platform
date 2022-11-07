@@ -291,6 +291,8 @@ self: with pkgs.haskell.lib; {
 
   deriving-aeson = self.callPackage (./pkgs/deriving-aeson.nix) { };
 
+  derp = self.callPackage (./pkgs/derp.nix) { };
+
   dhall = self.callPackage (./pkgs/dhall.nix) { };
 
   dhall-json = self.callPackage (./pkgs/dhall-json.nix) { };
