@@ -633,6 +633,8 @@ self: with pkgs.haskell.lib; {
 
   libyaml = self.callPackage (./pkgs/libyaml.nix) { };
 
+  lift-type = self.callPackage (./pkgs/lift-type.nix) { };
+
   lifted-async = self.callPackage (./pkgs/lifted-async.nix) { };
 
   lifted-base = self.callPackage (./pkgs/lifted-base.nix) { };
