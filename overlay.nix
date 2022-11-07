@@ -767,6 +767,8 @@ self: with pkgs.haskell.lib; {
 
   monad-time = self.callPackage (./pkgs/monad-time.nix) { };
 
+  monads-tf = self.callPackage (./pkgs/monads-tf.nix) { };
+
   mono-traversable = self.callPackage (./pkgs/mono-traversable.nix) { };
 
   monoid-subclasses = self.callPackage (./pkgs/monoid-subclasses.nix) { };
