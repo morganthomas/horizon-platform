@@ -587,6 +587,8 @@ self: with pkgs.haskell.lib; {
 
   hspec-expectations-lifted = self.callPackage (./pkgs/hspec-expectations-lifted.nix) { };
 
+  hspec-hedgehog = self.callPackage (./pkgs/hspec-hedgehog.nix) { };
+
   hspec-megaparsec = self.callPackage (./pkgs/hspec-megaparsec.nix) { };
 
   hspec-meta = self.callPackage (./pkgs/hspec-meta.nix) { };
