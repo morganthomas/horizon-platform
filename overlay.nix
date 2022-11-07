@@ -301,6 +301,8 @@ self: with pkgs.haskell.lib; {
 
   dec = self.callPackage (./pkgs/dec.nix) { };
 
+  deepseq-generics = self.callPackage (./pkgs/deepseq-generics.nix) { };
+
   dense-linear-algebra = self.callPackage (./pkgs/dense-linear-algebra.nix) { };
 
   dependent-map = self.callPackage (./pkgs/dependent-map.nix) { };
