@@ -239,6 +239,8 @@ self: with pkgs.haskell.lib; {
 
   daemons = self.callPackage (./pkgs/daemons.nix) { };
 
+  data-binary-ieee754 = self.callPackage (./pkgs/data-binary-ieee754.nix) { };
+
   data-clist = self.callPackage (./pkgs/data-clist.nix) { };
 
   data-default = self.callPackage (./pkgs/data-default.nix) { };
