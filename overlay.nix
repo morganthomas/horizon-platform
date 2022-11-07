@@ -913,6 +913,8 @@ self: with pkgs.haskell.lib; {
 
   random-shuffle = self.callPackage (./pkgs/random-shuffle.nix) { };
 
+  rdtsc = self.callPackage (./pkgs/rdtsc.nix) { };
+
   rebase = self.callPackage (./pkgs/rebase.nix) { };
 
   reducers = self.callPackage (./pkgs/reducers.nix) { };
