@@ -1107,6 +1107,8 @@ self: with pkgs.haskell.lib; {
 
   string-conv = self.callPackage (./pkgs/string-conv.nix) { };
 
+  string-conversions = self.callPackage (./pkgs/string-conversions.nix) { };
+
   string-interpolate = self.callPackage (./pkgs/string-interpolate.nix) { };
 
   string-qq = self.callPackage (./pkgs/string-qq.nix) { };
