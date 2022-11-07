@@ -739,6 +739,8 @@ self: with pkgs.haskell.lib; {
 
   pointed = self.callPackage (./pkgs/pointed.nix) { };
 
+  polyparse = self.callPackage (./pkgs/polyparse.nix) { };
+
   polysemy = self.callPackage (./pkgs/polysemy.nix) { };
 
   polysemy-extra = self.callPackage (./pkgs/polysemy-extra.nix) { };

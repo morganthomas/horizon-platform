@@ -503,6 +503,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "45730b124c7c21f1dcfd85667fda1c19b8ec9723")
         (None Text)
     , callHackage "pointed" "5.0.4"
+    , callHackage "polyparse" "1.13"
     , callHackage "polysemy-extra" "0.2.1.0"
     , callHackage "polysemy-kvstore" "0.1.3.0"
     , callHackage "polysemy-methodology" "0.2.1.0"
