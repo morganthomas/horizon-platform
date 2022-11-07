@@ -755,6 +755,8 @@ self: with pkgs.haskell.lib; {
 
   nanospec = self.callPackage (./pkgs/nanospec.nix) { };
 
+  nats = self.callPackage (./pkgs/nats.nix) { };
+
   natural-transformation = self.callPackage (./pkgs/natural-transformation.nix) { };
 
   net-mqtt = self.callPackage (./pkgs/net-mqtt.nix) { };
