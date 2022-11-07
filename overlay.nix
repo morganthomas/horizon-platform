@@ -867,6 +867,8 @@ self: with pkgs.haskell.lib; {
 
   postgresql-simple-migration = self.callPackage (./pkgs/postgresql-simple-migration.nix) { };
 
+  pretty-hex = self.callPackage (./pkgs/pretty-hex.nix) { };
+
   pretty-show = self.callPackage (./pkgs/pretty-show.nix) { };
 
   pretty-simple = self.callPackage (./pkgs/pretty-simple.nix) { };
