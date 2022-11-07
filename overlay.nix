@@ -83,6 +83,8 @@ self: with pkgs.haskell.lib; {
 
   attoparsec-iso8601 = self.callPackage (./pkgs/attoparsec-iso8601.nix) { };
 
+  auto-update = self.callPackage (./pkgs/auto-update.nix) { };
+
   autodocodec = self.callPackage (./pkgs/autodocodec.nix) { };
 
   autodocodec-schema = self.callPackage (./pkgs/autodocodec-schema.nix) { };
