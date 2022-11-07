@@ -939,6 +939,8 @@ self: with pkgs.haskell.lib; {
 
   regex-base = self.callPackage (./pkgs/regex-base.nix) { };
 
+  regex-compat = self.callPackage (./pkgs/regex-compat.nix) { };
+
   regex-pcre-builtin = self.callPackage (./pkgs/regex-pcre-builtin.nix) { };
 
   regex-posix = self.callPackage (./pkgs/regex-posix.nix) { };
