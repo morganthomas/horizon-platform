@@ -1177,6 +1177,8 @@ self: with pkgs.haskell.lib; {
 
   tmp-postgres = self.callPackage (./pkgs/tmp-postgres.nix) { };
 
+  torsor = self.callPackage (./pkgs/torsor.nix) { };
+
   transformers-base = self.callPackage (./pkgs/transformers-base.nix) { };
 
   transformers-compat = self.callPackage (./pkgs/transformers-compat.nix) { };
