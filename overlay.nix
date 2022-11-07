@@ -747,6 +747,8 @@ self: with pkgs.haskell.lib; {
 
   monoid-subclasses = self.callPackage (./pkgs/monoid-subclasses.nix) { };
 
+  mtl-compat = self.callPackage (./pkgs/mtl-compat.nix) { };
+
   mwc-random = self.callPackage (./pkgs/mwc-random.nix) { };
 
   nanospec = self.callPackage (./pkgs/nanospec.nix) { };
