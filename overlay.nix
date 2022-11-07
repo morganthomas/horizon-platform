@@ -905,6 +905,8 @@ self: with pkgs.haskell.lib; {
 
   splitmix = self.callPackage (./pkgs/splitmix.nix) { };
 
+  spoon = self.callPackage (./pkgs/spoon.nix) { };
+
   sqlite-simple = self.callPackage (./pkgs/sqlite-simple.nix) { };
 
   statistics = self.callPackage (./pkgs/statistics.nix) { };
