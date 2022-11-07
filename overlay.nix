@@ -237,6 +237,8 @@ self: with pkgs.haskell.lib; {
 
   constraints = self.callPackage (./pkgs/constraints.nix) { };
 
+  constraints-extras = self.callPackage (./pkgs/constraints-extras.nix) { };
+
   contravariant = self.callPackage (./pkgs/contravariant.nix) { };
 
   cookie = self.callPackage (./pkgs/cookie.nix) { };
