@@ -791,6 +791,8 @@ self: with pkgs.haskell.lib; {
 
   monad-par-extras = self.callPackage (./pkgs/monad-par-extras.nix) { };
 
+  monad-parallel = self.callPackage (./pkgs/monad-parallel.nix) { };
+
   monad-peel = self.callPackage (./pkgs/monad-peel.nix) { };
 
   monad-time = self.callPackage (./pkgs/monad-time.nix) { };
