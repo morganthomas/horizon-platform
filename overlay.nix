@@ -683,6 +683,8 @@ self: with pkgs.haskell.lib; {
 
   network-conduit-tls = self.callPackage (./pkgs/network-conduit-tls.nix) { };
 
+  network-run = self.callPackage (./pkgs/network-run.nix) { };
+
   network-uri = self.callPackage (./pkgs/network-uri.nix) { };
 
   newtype-generics = self.callPackage (./pkgs/newtype-generics.nix) { };
