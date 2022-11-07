@@ -1165,6 +1165,8 @@ self: with pkgs.haskell.lib; {
 
   tls-session-manager = self.callPackage (./pkgs/tls-session-manager.nix) { };
 
+  tmp-postgres = self.callPackage (./pkgs/tmp-postgres.nix) { };
+
   transformers-base = self.callPackage (./pkgs/transformers-base.nix) { };
 
   transformers-compat = self.callPackage (./pkgs/transformers-compat.nix) { };
