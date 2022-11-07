@@ -329,6 +329,8 @@ self: with pkgs.haskell.lib; {
 
   enclosed-exceptions = self.callPackage (./pkgs/enclosed-exceptions.nix) { };
 
+  entropy = self.callPackage (./pkgs/entropy.nix) { };
+
   erf = self.callPackage (./pkgs/erf.nix) { };
 
   exact-pi = self.callPackage (./pkgs/exact-pi.nix) { };
