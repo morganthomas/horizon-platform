@@ -875,6 +875,8 @@ self: with pkgs.haskell.lib; {
 
   servant-swagger-ui-core = self.callPackage (./pkgs/servant-swagger-ui-core.nix) { };
 
+  setenv = self.callPackage (./pkgs/setenv.nix) { };
+
   shake = self.callPackage (./pkgs/shake.nix) { };
 
   shakespeare = self.callPackage (./pkgs/shakespeare.nix) { };
