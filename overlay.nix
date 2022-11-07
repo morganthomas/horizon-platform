@@ -1017,6 +1017,8 @@ self: with pkgs.haskell.lib; {
 
   th-abstraction = self.callPackage (./pkgs/th-abstraction.nix) { };
 
+  th-compat = self.callPackage (./pkgs/th-compat.nix) { };
+
   th-env = self.callPackage (./pkgs/th-env.nix) { };
 
   th-expand-syns = self.callPackage (./pkgs/th-expand-syns.nix) { };
