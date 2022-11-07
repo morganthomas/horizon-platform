@@ -295,11 +295,6 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "hlint" "3.5"
     , callHackage "hosc" "0.19.1"
     , callHackage "hourglass" "0.2.12"
-    , callCabal2nix
-        "hnix"
-        "https://github.com/milloni/hnix"
-        (Some "005568ee024eabee129d9cf4ca331c6da260610b")
-        (None Text)
     , callHackage "hpack" "0.35.0"
     , callHackage "hpack-dhall" "0.5.7"
     , callCabal2nix

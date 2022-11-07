@@ -373,8 +373,6 @@ final: prev: with pkgs.haskell.lib; {
 
   hlint = prev.callPackage (./pkgs/hlint.nix) { };
 
-  hnix = prev.callPackage (./pkgs/hnix.nix) { };
-
   horizon-gen-nix = prev.callPackage (./pkgs/horizon-gen-nix.nix) { };
 
   hosc = prev.callPackage (./pkgs/hosc.nix) { };
