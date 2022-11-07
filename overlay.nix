@@ -269,6 +269,8 @@ self: with pkgs.haskell.lib; {
 
   dlist = self.callPackage (./pkgs/dlist.nix) { };
 
+  doclayout = self.callPackage (./pkgs/doclayout.nix) { };
+
   doctemplates = self.callPackage (./pkgs/doctemplates.nix) { };
 
   doctest = self.callPackage (./pkgs/doctest.nix) { };
