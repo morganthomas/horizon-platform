@@ -1427,6 +1427,8 @@ self: with pkgs.haskell.lib; {
 
   vector-instances = self.callPackage (./pkgs/vector-instances.nix) { };
 
+  vector-stream = self.callPackage (./pkgs/vector-stream.nix) { };
+
   vector-th-unbox = self.callPackage (./pkgs/vector-th-unbox.nix) { };
 
   vinyl = self.callPackage (./pkgs/vinyl.nix) { };
