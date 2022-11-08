@@ -485,7 +485,10 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "3502825423aea3a1af9384e9d751feea4599c60b")
         (Some "kvstore-effectful-statemap")
     , callHackage "language-c" "0.9.1"
-    , callHackage "language-haskell-extract" "0.2.4"
+    , callCabal2nix "language-haskell-extract"
+        "https://github.com/chessai/template-helper"
+        (Some "f654f1e7ef47c591bb5ea23f1234289f99d09d05")
+        (None Text)
     , callHackage "language-nix" "2.2.0"
     , callHackage "lens-aeson" "1.2.1"
     , callHackage "lens-family-core" "2.1.2"

@@ -1,10 +1,19 @@
-{ mkDerivation, base, lib, regex-posix, template-haskell }:
+{ mkDerivation
+, base
+, fetchgit
+, lib
+, regex-posix
+, template-haskell
+}:
 mkDerivation {
   pname = "language-haskell-extract";
-  version = "0.2.4";
-  sha256 = "14da16e56665bf971723e0c5fd06dbb7cc30b4918cf8fb5748570785ded1acdb";
-  revision = "1";
-  editedCabalFile = "1chx4g8ngb1hpyh3r9rbl8rkjkm67klms4wmw3p1g2llg47vvqip";
+  version = "0.2.3";
+  src = fetchgit {
+    url = "https://github.com/chessai/template-helper";
+    sha256 = "17n6k5myycklbc2grhz654idwmmzjcw217gy2w1h9jlaqv6c52q7";
+    rev = "f654f1e7ef47c591bb5ea23f1234289f99d09d05";
+    fetchSubmodules = true;
+  };
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;
