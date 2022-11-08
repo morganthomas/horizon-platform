@@ -716,7 +716,6 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/TeofilC/servant"
         (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
         (Some "servant-foreign")
-
     , callHackage "servant-lucid" "0.9.0.5"
     , callHackage "servant-multipart" "0.12.1"
     , callHackage "servant-multipart-api" "0.12.1"
@@ -726,7 +725,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
         "https://github.com/TeofilC/servant"
         (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
         (Some "servant-server")
-    , callHackage "servant-swagger" "1.1.11"  
+    , callHackage "servant-swagger" "1.1.11"
     , callHackage "servant-swagger-ui" "0.3.5.4.5.0"
     , callHackage "servant-swagger-ui-core" "0.3.5"
     , callHackage "servant-static-th" "1.0.0.0"
