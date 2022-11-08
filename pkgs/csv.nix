@@ -1,8 +1,13 @@
-{ mkDerivation, base, filepath, lib, parsec }:
+{ mkDerivation, base, fetchgit, filepath, lib, parsec }:
 mkDerivation {
   pname = "csv";
   version = "0.1.2";
-  sha256 = "8cf43442325faa1368f9b55ad952beccf677d9980cdffa3d70a7f204a23ae600";
+  src = fetchgit {
+    url = "https://gitlab.homotopic.tech/horizon/adopted/csv";
+    sha256 = "1idv0500imfvi6wzz3g7v89irz9g20plsphp51aa0xksz7ifj34b";
+    rev = "d02b89bbad79136b52fd1197f087466cf51573dd";
+    fetchSubmodules = true;
+  };
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

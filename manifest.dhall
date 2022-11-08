@@ -196,7 +196,7 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "cpphs" "1.20.9.1"
     , callHackage "criterion-measurement" "0.2.0.0"
     , callHackage "criterion" "1.5.13.0"
-    , callHackage "csv" "0.1.2"
+    , callHorizonAdopted "csv" "d02b89bbad79136b52fd1197f087466cf51573dd"
     , callHackage "cursor-brick" "0.1.0.1"
     , callCabal2nix
         "cursor-dirforest"
