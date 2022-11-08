@@ -30,7 +30,6 @@ self: super: {
   integer-gmp = null;
   libiserv = null;
   mtl = null;
-  parsec = null;
   pretty = null;
   process = null;
   rts = null;
