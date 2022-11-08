@@ -1,5 +1,6 @@
 stages:
 - generate
+- eval
 - check
 
 generate-flake-ci:
@@ -8,6 +9,10 @@ generate-flake-ci:
   artifacts:
     paths:
       - flake-ci.yml
+
+eval-flake:
+  stage: eval
+  script: nix flake show
 
 flake-ci:
   stage: check

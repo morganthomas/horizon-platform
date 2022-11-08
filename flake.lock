@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "all-cabal-hashes": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1667742759,
+        "narHash": "sha256-PniFwhuGiX32rPHNyqgx8nn1No39SP89CHSoBuJOXlE=",
+        "owner": "commercialhaskell",
+        "repo": "all-cabal-hashes",
+        "rev": "eaf3b72978447f236e82c0de1d6f770e3dec00a7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "commercialhaskell",
+        "ref": "hackage",
+        "repo": "all-cabal-hashes",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1659877975,
@@ -47,11 +64,11 @@
     "horizon-gen-nix": {
       "flake": false,
       "locked": {
-        "lastModified": 1667577671,
-        "narHash": "sha256-rDbpc4sbCmcT7oP+eD557zrlCYCrYumyiDJucOTNsTs=",
+        "lastModified": 1667926671,
+        "narHash": "sha256-TWD8yl8GSasvcFzn1ytS6/riemJ9zLi9xvc2Uhqi8QQ=",
         "ref": "refs/heads/master",
-        "rev": "9d3a1f027f2852dbc896d06c089556134035ddba",
-        "revCount": 31,
+        "rev": "0b00a1c2c4e8f8ed169bb732ea35c4da4ea3e387",
+        "revCount": 39,
         "type": "git",
         "url": "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
       },
@@ -113,6 +130,7 @@
     },
     "root": {
       "inputs": {
+        "all-cabal-hashes": "all-cabal-hashes",
         "flake-utils": "flake-utils",
         "get-flake": "get-flake",
         "horizon-gen-nix": "horizon-gen-nix",

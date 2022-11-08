@@ -1,64 +1,59 @@
 { mkDerivation
-, algebraic-graphs
-, ansi-terminal
 , array
 , base
+, binary
 , bytestring
 , containers
+, digest
 , directory
-, extra
 , filepath
-, ghc
-, ghc-paths
-, hie-compat
-, hspec
+, HUnit
 , lib
-, lucid
 , mtl
-, optparse-applicative
+, pretty
 , process
-, sqlite-simple
 , temporary
-, terminal-size
 , text
+, time
+, unix
+, which
+, zlib
 }:
 mkDerivation {
-  pname = "hiedb";
-  version = "0.4.2.0";
-  sha256 = "9cca518eaa6a5d747c32ca7f50c7ba3c7454fb96239796bbbd6d2cc7cb61b908";
+  pname = "zip-archive";
+  version = "0.4.2.2";
+  sha256 = "a4016b404356e5fe38a89fceb8c88b01251f7e3fe7832323a50a3f732a346709";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = false;
   libraryHaskellDepends = [
-    algebraic-graphs
-    ansi-terminal
     array
     base
+    binary
     bytestring
     containers
+    digest
     directory
-    extra
     filepath
-    ghc
-    hie-compat
-    lucid
     mtl
-    optparse-applicative
-    sqlite-simple
-    terminal-size
+    pretty
     text
+    time
+    unix
+    zlib
   ];
-  executableHaskellDepends = [ base ghc-paths ];
   testHaskellDepends = [
     base
+    bytestring
     directory
     filepath
-    ghc
-    ghc-paths
-    hspec
+    HUnit
     process
     temporary
+    time
+    unix
   ];
+  testToolDepends = [ which ];
   enableLibraryProfiling = false;
   enableExecutableProfiling = false;
   doHaddock = false;
@@ -66,8 +61,8 @@ mkDerivation {
   doCheck = false;
   doBenchmark = false;
   hyperlinkSource = false;
-  description = "Generates a references DB from .hie files";
+  homepage = "http://github.com/jgm/zip-archive";
+  description = "Library for creating and modifying zip archives";
   license = lib.licenses.bsd3;
-  mainProgram = "hiedb";
   broken = false;
 }
