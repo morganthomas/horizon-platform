@@ -1,8 +1,13 @@
-{ mkDerivation, base, fingertree, lib }:
+{ mkDerivation, base, fetchgit, fingertree, lib }:
 mkDerivation {
   pname = "fingertree-psqueue";
   version = "0.3";
-  sha256 = "9f8c2f1965ea7a618d969db6506c8f373c95e09072b2182de40713d265046c92";
+  src = fetchgit {
+    url = "https://gitlab.homotopic.tech/horizon/adopted/fingertree-psqueue";
+    sha256 = "1h13yz23i3flx4mg8czk4k5ypx78q2lwfmmaljm54z3an1p4lv60";
+    rev = "d466b18e18d706dc1373ed2894c1e20ea2826329";
+    fetchSubmodules = true;
+  };
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

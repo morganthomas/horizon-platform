@@ -306,7 +306,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "filemanip" "0.3.6.3"
     , callHackage "filepattern" "0.1.3"
     , callHackage "filtrable" "0.1.6.0"
-    , callHackage "fingertree-psqueue" "0.3"
+    , callCabal2nix
+        "fingertree-psqueue"
+        "https://gitlab.homotopic.tech/horizon/adopted/fingertree-psqueue"
+        (Some "d466b18e18d706dc1373ed2894c1e20ea2826329")
+        (None Text)
     , callHackage "fingertree" "0.1.5.0"
     , callHackage "finite-field" "0.10.0"
     , callHackage "first-class-families" "0.8.0.1"
