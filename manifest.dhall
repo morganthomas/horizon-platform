@@ -38,6 +38,15 @@ let callCabal2nix
         , mapValue = HsPkg::{ source = HsSrc.FromGit { url, revision, subdir } }
         }
 
+let callHorizonAdopted
+    : ∀(name : Text) → ∀(revision : Text) → Attr HsPkg.Type
+    = λ(name : Text) → \(revision : Text) ->
+        callCabal2nix
+          name
+          ("https://gitlab.homotopic.tech/horizon/adopted/" ++ name)
+          (Some revision)
+          (None Text)
+
 in  [ callHackage "Cabal" "3.8.1.0"
     , callCabal2nix
         "Cabal-QuickCheck"
