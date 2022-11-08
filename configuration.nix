@@ -6,6 +6,8 @@ final: prev: {
 
   digest = addExtraLibrary prev.digest pkgs.zlib;
 
+  hopenssl = prev.hopenssl.override { openssl = pkgs.openssl_1_1; };
+
   libsodium = prev.callPackage ./pkgs/libsodium.nix { inherit (pkgs) libsodium; };
 
   saltine = addPkgconfigDepend prev.saltine pkgs.libsodium;
