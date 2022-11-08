@@ -565,8 +565,6 @@ self: with pkgs.haskell.lib; {
 
   hie-compat = self.callPackage (./pkgs/hie-compat.nix) { };
 
-  hiedb = self.callPackage (./pkgs/hiedb.nix) { };
-
   hinotify = self.callPackage (./pkgs/hinotify.nix) { };
 
   hledger = self.callPackage (./pkgs/hledger.nix) { };
