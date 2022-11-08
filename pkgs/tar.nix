@@ -2,24 +2,27 @@
 , array
 , base
 , bytestring
-, bytestring-handle
 , containers
-, criterion
 , deepseq
 , directory
+, fetchgit
 , filepath
 , lib
 , QuickCheck
 , tasty
+, tasty-bench
 , tasty-quickcheck
 , time
 }:
 mkDerivation {
   pname = "tar";
-  version = "0.5.1.1";
-  sha256 = "b384449f62b2b0aa3e6d2cb1004b8060b01f21ec93e7b63e7af6d8fad8a9f1de";
-  revision = "5";
-  editedCabalFile = "15dqywn1lsyqb0nq1amj70mh1i079b7xwr02wbpcdzmdljg9c55w";
+  version = "0.6.0.0";
+  src = fetchgit {
+    url = "https://github.com/locallycompact/tar";
+    sha256 = "1602fyzgsf5i6lrl6jv8x00qdbm37025ms87ncl7b30dcj2dvqh7";
+    rev = "107c0b78524acfd0e77e767b83073492008bea0c";
+    fetchSubmodules = true;
+  };
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;
@@ -37,7 +40,6 @@ mkDerivation {
     array
     base
     bytestring
-    bytestring-handle
     containers
     deepseq
     directory
@@ -52,10 +54,10 @@ mkDerivation {
     base
     bytestring
     containers
-    criterion
     deepseq
     directory
     filepath
+    tasty-bench
     time
   ];
   enableLibraryProfiling = false;

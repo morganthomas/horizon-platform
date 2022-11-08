@@ -794,7 +794,11 @@ in  [ callHackage "Cabal" "3.8.1.0"
     , callHackage "tabular" "0.2.2.8"
     , callHackage "tagged" "0.8.6.1"
     , callHackage "tagsoup" "0.14.8"
-    , callHackage "tar" "0.5.1.1"
+    , callCabal2nix
+        "tar"
+        "https://github.com/locallycompact/tar"
+        (Some "107c0b78524acfd0e77e767b83073492008bea0c")
+        (None Text)
     , callCabal2nix
         "tasty"
         "https://github.com/UnkindPartition/tasty"
