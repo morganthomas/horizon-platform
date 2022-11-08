@@ -40,7 +40,8 @@ let callCabal2nix
 
 let callHorizonAdopted
     : ∀(name : Text) → ∀(revision : Text) → Attr HsPkg.Type
-    = λ(name : Text) → \(revision : Text) ->
+    = λ(name : Text) →
+      λ(revision : Text) →
         callCabal2nix
           name
           ("https://gitlab.homotopic.tech/horizon/adopted/" ++ name)
@@ -484,7 +485,8 @@ in  [ callHackage "Cabal" "3.8.1.0"
         (Some "3502825423aea3a1af9384e9d751feea4599c60b")
         (Some "kvstore-effectful-statemap")
     , callHackage "language-c" "0.9.1"
-    , callCabal2nix "language-haskell-extract"
+    , callCabal2nix
+        "language-haskell-extract"
         "https://github.com/chessai/template-helper"
         (Some "f654f1e7ef47c591bb5ea23f1234289f99d09d05")
         (None Text)
