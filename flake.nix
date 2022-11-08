@@ -8,7 +8,7 @@
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     horizon-gen-nix = {
       flake = false;
-      url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix?ref=make-package-set";
+      url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix";
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
