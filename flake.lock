@@ -64,11 +64,11 @@
     "horizon-gen-nix": {
       "flake": false,
       "locked": {
-        "lastModified": 1667926671,
-        "narHash": "sha256-TWD8yl8GSasvcFzn1ytS6/riemJ9zLi9xvc2Uhqi8QQ=",
+        "lastModified": 1667975665,
+        "narHash": "sha256-XQ6ZsZKa77M2Z0GtFsDhqhrR1HRe6R58xut2KfJmlCY=",
         "ref": "refs/heads/master",
-        "rev": "0b00a1c2c4e8f8ed169bb732ea35c4da4ea3e387",
-        "revCount": 39,
+        "rev": "29d95902966aa28ba09bed2d6e5edbabb0a153b5",
+        "revCount": 41,
         "type": "git",
         "url": "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
       },
