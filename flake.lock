@@ -1,22 +1,5 @@
 {
   "nodes": {
-    "all-cabal-hashes": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1667742759,
-        "narHash": "sha256-PniFwhuGiX32rPHNyqgx8nn1No39SP89CHSoBuJOXlE=",
-        "owner": "commercialhaskell",
-        "repo": "all-cabal-hashes",
-        "rev": "eaf3b72978447f236e82c0de1d6f770e3dec00a7",
-        "type": "github"
-      },
-      "original": {
-        "owner": "commercialhaskell",
-        "ref": "hackage",
-        "repo": "all-cabal-hashes",
-        "type": "github"
-      }
-    },
     "flake-utils": {
       "locked": {
         "lastModified": 1659877975,
@@ -130,7 +113,6 @@
     },
     "root": {
       "inputs": {
-        "all-cabal-hashes": "all-cabal-hashes",
         "flake-utils": "flake-utils",
         "get-flake": "get-flake",
         "horizon-gen-nix": "horizon-gen-nix",

@@ -1,9 +1,5 @@
 {
   inputs = {
-    all-cabal-hashes = {
-      url = "github:commercialhaskell/all-cabal-hashes/hackage";
-      flake = false;
-    };
     get-flake.url = "github:ursi/get-flake";
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     horizon-gen-nix = {
@@ -12,7 +8,7 @@
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
-  outputs = inputs@{ self, all-cabal-hashes, nixpkgs, flake-utils, get-flake, horizon-gen-nix, lint-utils, ... }:
+  outputs = inputs@{ self, nixpkgs, flake-utils, get-flake, horizon-gen-nix, lint-utils, ... }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
         pkgs = import nixpkgs { inherit system; };
