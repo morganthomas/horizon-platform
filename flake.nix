@@ -1,9 +1,5 @@
 {
   inputs = {
-    all-cabal-hashes = {
-      url = "github:commercialhaskell/all-cabal-hashes/hackage";
-      flake = false;
-    };
     get-flake.url = "github:ursi/get-flake";
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     horizon-gen-nix = {
@@ -12,22 +8,21 @@
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
-  outputs = inputs@{ self, all-cabal-hashes, nixpkgs, flake-utils, get-flake, horizon-gen-nix, lint-utils, ... }:
+  outputs = inputs@{ self, nixpkgs, flake-utils, get-flake, horizon-gen-nix, lint-utils, ... }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
         pkgs = import nixpkgs { inherit system; };
         horizon-gen-nix-app = get-flake horizon-gen-nix;
-        configuration = import ./configuration.nix { inherit inputs pkgs; };
         haskellLib = pkgs.haskell.lib.compose;
         hsPkgs = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
           buildHaskellPackages = pkgs.haskell.packages.ghc942;
+          compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { inherit haskellLib; };
           configurationCommon = import ./configuration.nix;
           configurationNix = { pkgs, haskellLib }: self: super: { };
           ghc = pkgs.haskell.compiler.ghc942;
-          haskellLib = pkgs.haskell.lib.compose;
+          inherit haskellLib;
           initialPackages = import ./overlay.nix;
           nonHackagePackages = self: super: { };
-          compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { haskellLib = haskellLib; };
         };
         hp' = pkgs.lib.filterAttrs
           (n: v: v != null
