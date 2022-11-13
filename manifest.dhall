@@ -1,7 +1,7 @@
 let H = ./horizon.dhall
 
 let callHorizonAdopted
-    : ∀(name : Text) → ∀(revision : Text) → H.Attr H.HsPkg.Type
+    : Text → Text → H.Attr H.HsPkg.Type
     = λ(name : Text) →
       λ(revision : Text) →
         H.callCabal2nix
