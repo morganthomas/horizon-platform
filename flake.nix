@@ -24,7 +24,7 @@
           initialPackages = import ./overlay.nix;
           nonHackagePackages = self: super: { };
         };
-        hp' = pkgs.lib.filterAttrs
+        packages = pkgs.lib.filterAttrs
           (n: v: v != null
             && builtins.typeOf v == "set"
             && pkgs.lib.hasAttr "type" v
@@ -45,6 +45,7 @@
           dhall-format = lint-utils.outputs.linters.x86_64-linux.dhall-format ./.;
           nixpkgs-fmt = lint-utils.outputs.linters.x86_64-linux.nixpkgs-fmt ./.;
         };
-        packages = hp';
+        legacyPackages = hsPkgs;
+        inherit packages;
       });
 }
