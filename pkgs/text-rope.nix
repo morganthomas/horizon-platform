@@ -19,8 +19,8 @@ mkDerivation {
   libraryHaskellDepends = [ base deepseq text vector ];
   testHaskellDepends = [ base tasty tasty-quickcheck text ];
   benchmarkHaskellDepends = [ base random tasty-bench text ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

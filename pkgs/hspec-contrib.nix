@@ -17,8 +17,8 @@ mkDerivation {
   libraryHaskellDepends = [ base hspec-core HUnit ];
   testHaskellDepends = [ base hspec hspec-core HUnit QuickCheck ];
   testToolDepends = [ hspec-discover ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

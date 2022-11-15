@@ -17,8 +17,8 @@ mkDerivation {
   executableHaskellDepends = [ array base containers directory ];
   executableToolDepends = [ happy ];
   testHaskellDepends = [ base process ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

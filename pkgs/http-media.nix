@@ -35,8 +35,8 @@ mkDerivation {
     test-framework-quickcheck2
     utf8-string
   ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

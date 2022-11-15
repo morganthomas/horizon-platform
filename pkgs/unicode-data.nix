@@ -18,8 +18,8 @@ mkDerivation {
   testHaskellDepends = [ base hspec ];
   testToolDepends = [ hspec-discover ];
   benchmarkHaskellDepends = [ base deepseq tasty tasty-bench ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

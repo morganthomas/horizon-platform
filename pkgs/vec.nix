@@ -47,8 +47,8 @@ mkDerivation {
     tagged
   ];
   benchmarkHaskellDepends = [ base criterion fin vector ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

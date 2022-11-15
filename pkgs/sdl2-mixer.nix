@@ -32,8 +32,8 @@ mkDerivation {
   executableHaskellDepends = [ base data-default-class sdl2 vector ];
   executableSystemDepends = [ SDL2_mixer ];
   executablePkgconfigDepends = [ SDL2_mixer ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

@@ -22,8 +22,8 @@ mkDerivation {
   libraryHaskellDepends = [ base containers text vector ];
   testHaskellDepends = [ base hspec QuickCheck text ];
   benchmarkHaskellDepends = [ base criterion deepseq text weigh ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

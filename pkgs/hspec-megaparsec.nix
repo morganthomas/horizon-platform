@@ -20,8 +20,8 @@ mkDerivation {
     megaparsec
   ];
   testHaskellDepends = [ base hspec hspec-expectations megaparsec ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

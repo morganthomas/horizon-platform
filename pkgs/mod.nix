@@ -38,8 +38,8 @@ mkDerivation {
     vector
   ];
   benchmarkHaskellDepends = [ base tasty-bench ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

@@ -81,8 +81,8 @@ mkDerivation {
     trifecta
   ];
   benchmarkHaskellDepends = [ base criterion deepseq Diff ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

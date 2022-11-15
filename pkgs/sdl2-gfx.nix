@@ -29,8 +29,8 @@ mkDerivation {
   executableHaskellDepends = [ base sdl2 vector ];
   executableSystemDepends = [ SDL2_gfx ];
   executablePkgconfigDepends = [ SDL2 SDL2_gfx ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
