@@ -1,35 +1,35 @@
 let H = ./horizon.dhall
 
 let callHorizonAdopted
-    : Text → Text → H.Attr H.HsPkg.Type
-    = λ(name : Text) →
-      λ(revision : Text) →
+    : H.Name → H.Revision → H.Attr H.HaskellPackage.Type
+    = λ(name : H.Name) →
+      λ(revision : H.Revision) →
         H.callCabal2nix
           name
           ("https://gitlab.homotopic.tech/horizon/adopted/" ++ name)
-          (Some revision)
+          revision
           (None Text)
 
 in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "Cabal-QuickCheck"
         "https://gitlab.haskell.org/ghc/packages/Cabal"
-        (None Text)
+        "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
         (Some "Cabal-QuickCheck")
     , H.callCabal2nix
         "Cabal-described"
         "https://gitlab.haskell.org/ghc/packages/Cabal"
-        (None Text)
+        "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
         (Some "Cabal-described")
     , H.callCabal2nix
         "Cabal-syntax"
         "https://gitlab.haskell.org/ghc/packages/Cabal"
-        (None Text)
+        "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
         (Some "Cabal-syntax")
     , H.callCabal2nix
         "Cabal-tree-diff"
         "https://gitlab.haskell.org/ghc/packages/Cabal"
-        (None Text)
+        "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
         (Some "Cabal-tree-diff")
     , H.callHackage "ChasingBottoms" "1.3.1.12"
     , H.callHackage "Decimal" "0.5.2"
@@ -107,7 +107,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "cabal2nix"
         "https://github.com/NixOS/cabal2nix"
-        (None Text)
+        "8e97f51e4bd4e5b9ff79391aa599ed8547771954"
         (Some "cabal2nix")
     , H.callHackage "cache" "0.1.3.0"
     , H.callHackage "call-stack" "0.4.0"
@@ -137,7 +137,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "compactable"
         "https://gitlab.com/fresheyeball/Compactable"
-        (Some "f63927b1e438c267f0d12f36e5b3735cfaebeeb4")
+        "f63927b1e438c267f0d12f36e5b3735cfaebeeb4"
         (None Text)
     , H.callHackage "compact" "0.2.0.0"
     , H.callHackage "composite-base" "0.8.1.0"
@@ -163,17 +163,17 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "cursor-dirforest"
         "https://github.com/NorfairKing/cursor-dirforest"
-        (Some "6ad5b168e26eb4e647df9f007d812aaf59338d40")
+        "6ad5b168e26eb4e647df9f007d812aaf59338d40"
         (Some "cursor-dirforest")
     , H.callCabal2nix
         "cursor-dirforest-brick"
         "https://github.com/NorfairKing/cursor-dirforest"
-        (Some "6ad5b168e26eb4e647df9f007d812aaf59338d40")
+        "6ad5b168e26eb4e647df9f007d812aaf59338d40"
         (Some "cursor-dirforest-brick")
     , H.callCabal2nix
         "cursor-dirforest-gen"
         "https://github.com/NorfairKing/cursor-dirforest"
-        (Some "6ad5b168e26eb4e647df9f007d812aaf59338d40")
+        "6ad5b168e26eb4e647df9f007d812aaf59338d40"
         (Some "cursor-dirforest-gen")
     , H.callHackage "cursor-gen" "0.4.0.0"
     , H.callHackage "cursor" "0.3.2.0"
@@ -210,7 +210,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "dirforest"
         "https://github.com/NorfairKing/dirforest"
-        (Some "69e8ae036b047fae105c1fe990e175a7572a3eba")
+        "69e8ae036b047fae105c1fe990e175a7572a3eba"
         (Some "dirforest")
     , H.callHackage "distribution-nixpkgs" "1.7.0"
     , H.callHackage "distributive" "0.6.2.1"
@@ -221,7 +221,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "doctest"
         "https://github.com/sol/doctest"
-        (Some "4eb97c213acf7abe965a3a1b67397199ed155f3c")
+        "4eb97c213acf7abe965a3a1b67397199ed155f3c"
         (None Text)
     , H.callHackage "doctemplates" "0.10.0.2"
     , H.callHackage "doctest-parallel" "0.2.5"
@@ -229,14 +229,14 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "double-conversion"
         "https://github.com/haskell/double-conversion"
-        (None Text)
+        "5d092e0664442eaac8ae1d101dba57ce9b1c9b03"
         (None Text)
     , H.callHackage "easy-file" "0.2.2"
     , H.callHackage "echo" "0.1.4"
     , H.callCabal2nix
         "ed25519"
         "https://gitlab.homotopic.tech/horizon/adopted/ed25519"
-        (None Text)
+        "faf8fe90aa1cd2492ea1e64c55f5c59fc0322210"
         (None Text)
     , H.callHackage "edit-distance" "0.2.2.1"
     , H.callHackage "either" "5.0.2"
@@ -244,7 +244,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "effectful-cache"
         "https://github.com/haskell-effectful/cache-effectful"
-        (None Text)
+        "0a5581da7c21a05a9ab1762a6da6997090fe311d"
         (None Text)
     , H.callHackage "effectful-core" "2.1.0.0"
     , H.callHackage "effectful-th" "1.0.0.0"
@@ -270,7 +270,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "fingertree-psqueue"
         "https://gitlab.homotopic.tech/horizon/adopted/fingertree-psqueue"
-        (Some "d466b18e18d706dc1373ed2894c1e20ea2826329")
+        "d466b18e18d706dc1373ed2894c1e20ea2826329"
         (None Text)
     , H.callHackage "fingertree" "0.1.5.0"
     , H.callHackage "finite-field" "0.10.0"
@@ -305,7 +305,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "genvalidity-dirforest"
         "https://github.com/NorfairKing/dirforest"
-        (Some "69e8ae036b047fae105c1fe990e175a7572a3eba")
+        "69e8ae036b047fae105c1fe990e175a7572a3eba"
         (Some "genvalidity-dirforest")
     , H.callHackage "genvalidity-hspec" "1.0.0.2"
     , H.callHackage "genvalidity-hspec-aeson" "1.0.0.0"
@@ -354,7 +354,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "hedgehog-golden"
         "https://github.com/maybe-hedgehog-later/hedgehog-golden"
-        (None Text)
+        "4ab2906b3f0be5e31ee5a8585e45d43392694246"
         (None Text)
     , H.callHackage "hedgehog" "1.2"
     , H.callHackage "hie-bios" "0.11.0"
@@ -372,7 +372,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "horizon-gen-nix"
         "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
-        (Some "918df757ce5c9244232c1e3a1e05e9d9e3ab4f09")
+        "918df757ce5c9244232c1e3a1e05e9d9e3ab4f09"
         (None Text)
     , H.callHackage "hscolour" "1.24.4"
     , H.callHackage "hslua-aeson" "2.2.1"
@@ -432,28 +432,28 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "kvstore-effectful"
         "https://github.com/haskell-effectful/kvstore-effectful"
-        (Some "3502825423aea3a1af9384e9d751feea4599c60b")
+        "3502825423aea3a1af9384e9d751feea4599c60b"
         (Some "kvstore-effectful")
     , H.callCabal2nix
         "kvstore-effectful-cache"
         "https://github.com/haskell-effectful/kvstore-effectful"
-        (Some "3502825423aea3a1af9384e9d751feea4599c60b")
+        "3502825423aea3a1af9384e9d751feea4599c60b"
         (Some "kvstore-effectful-cache")
     , H.callCabal2nix
         "kvstore-effectful-spec"
         "https://github.com/haskell-effectful/kvstore-effectful"
-        (Some "3502825423aea3a1af9384e9d751feea4599c60b")
+        "3502825423aea3a1af9384e9d751feea4599c60b"
         (Some "kvstore-effectful-spec")
     , H.callCabal2nix
         "kvstore-effectful-statemap"
         "https://github.com/haskell-effectful/kvstore-effectful"
-        (Some "3502825423aea3a1af9384e9d751feea4599c60b")
+        "3502825423aea3a1af9384e9d751feea4599c60b"
         (Some "kvstore-effectful-statemap")
     , H.callHackage "language-c" "0.9.1"
     , H.callCabal2nix
         "language-haskell-extract"
         "https://github.com/chessai/template-helper"
-        (Some "f654f1e7ef47c591bb5ea23f1234289f99d09d05")
+        "f654f1e7ef47c591bb5ea23f1234289f99d09d05"
         (None Text)
     , H.callHackage "language-nix" "2.2.0"
     , H.callHackage "lens-aeson" "1.2.1"
@@ -473,7 +473,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "log-effectful"
         "https://github.com/haskell-effectful/log-effectful/"
-        (Some "910c79e10d5ac3353f2a1551103a2b63229c3f57")
+        "910c79e10d5ac3353f2a1551103a2b63229c3f57"
         (None Text)
     , H.callHackage "lpeg" "1.0.3"
     , H.callHackage "lsp-types" "1.6.0.0"
@@ -535,7 +535,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "odd-jobs"
         "https://github.com/saurabhnanda/odd-jobs"
-        (Some "f6c7bbbcdb383d2eb487ad7fe427ec05a747c14f")
+        "f6c7bbbcdb383d2eb487ad7fe427ec05a747c14f"
         (None Text)
     , H.callHackage "old-locale" "1.0.0.7"
     , H.callHackage "old-time" "1.1.0.3"
@@ -575,7 +575,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "pg-transact-effectful"
         "https://github.com/Kleidukos/pg-transact-effectful"
-        (Some "45730b124c7c21f1dcfd85667fda1c19b8ec9723")
+        "45730b124c7c21f1dcfd85667fda1c19b8ec9723"
         (None Text)
     , H.callHackage "pgp-wordlist" "0.1.0.3"
     , H.callHackage "pointed" "5.0.4"
@@ -587,7 +587,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "polysemy-plugin"
         "https://github.com/locallycompact/polysemy"
-        (Some "bd944ca000c1ca69602d4723e3859af431b9d0c4")
+        "bd944ca000c1ca69602d4723e3859af431b9d0c4"
         (Some "polysemy-plugin")
     , H.callHackage "polysemy-several" "0.1.1.0"
     , H.callHackage "polysemy-test" "0.6.0.0"
@@ -671,29 +671,29 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "servant"
         "https://github.com/TeofilC/servant"
-        (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
+        "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
         (Some "servant")
     , H.callHackage "servant-blaze" "0.9.1"
     , H.callCabal2nix
         "servant-client-core"
         "https://github.com/TeofilC/servant"
-        (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
+        "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
         (Some "servant-client-core")
     , H.callCabal2nix
         "servant-client"
         "https://github.com/TeofilC/servant"
-        (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
+        "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
         (Some "servant-client")
     , H.callHackage "servant-docs" "0.12"
     , H.callCabal2nix
         "servant-effectful"
         "https://github.com/kleidukos/servant-effectful"
-        (Some "65e3041c6cfbc315b20ad22ca18f61dda104eec8")
+        "65e3041c6cfbc315b20ad22ca18f61dda104eec8"
         (None Text)
     , H.callCabal2nix
         "servant-foreign"
         "https://github.com/TeofilC/servant"
-        (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
+        "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
         (Some "servant-foreign")
     , H.callHackage "servant-lucid" "0.9.0.5"
     , H.callHackage "servant-multipart" "0.12.1"
@@ -702,7 +702,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "servant-server"
         "https://github.com/TeofilC/servant"
-        (Some "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc")
+        "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
         (Some "servant-server")
     , H.callHackage "servant-swagger" "1.1.11"
     , H.callHackage "servant-swagger-ui" "0.3.5.4.5.0"
@@ -758,12 +758,12 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "tar"
         "https://github.com/locallycompact/tar"
-        (Some "107c0b78524acfd0e77e767b83073492008bea0c")
+        "107c0b78524acfd0e77e767b83073492008bea0c"
         (None Text)
     , H.callCabal2nix
         "tasty"
         "https://github.com/UnkindPartition/tasty"
-        (None Text)
+        "207d3453a64b414593512c1e968171d64a8dbe61"
         (Some "core")
     , H.callHackage "tasty-bench" "0.3.2"
     , H.callHackage "tasty-discover" "5.0.0"
@@ -772,14 +772,14 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "tasty-hedgehog"
         "https://github.com/locallycompact/tasty-hedgehog"
-        (None Text)
+        "4a3477578ed21aa82e5b74f387d08e5d750635d6"
         (None Text)
     , H.callHackage "tasty-hslua" "1.0.2"
     , H.callHackage "tasty-hspec" "1.2.0.1"
     , H.callCabal2nix
         "tasty-hunit"
         "https://github.com/UnkindPartition/tasty"
-        (None Text)
+        "207d3453a64b414593512c1e968171d64a8dbe61"
         (Some "hunit")
     , H.callHackage "tasty-inspection-testing" "0.2"
     , H.callHackage "tasty-kat" "0.0.3"
@@ -826,7 +826,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "time-effectful"
         "https://github.com/haskell-effectful/time-effectful"
-        (Some "e212239b685e1ecf7ee95dd1e944cc563351907f")
+        "e212239b685e1ecf7ee95dd1e944cc563351907f"
         (None Text)
     , H.callHackage "time-manager" "0.0.0"
     , H.callHackage "tls-session-manager" "0.0.4"
@@ -846,7 +846,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "typerep-map"
         "https://github.com/parsonsmatt/typerep-map"
-        (Some "75b7cd5d45986be07420a6821d352ad2adc0b697")
+        "75b7cd5d45986be07420a6821d352ad2adc0b697"
         (None Text)
     , H.callHackage "uglymemo" "0.1.0.1"
     , H.callHackage "unagi-chan" "0.4.1.4"
@@ -898,7 +898,7 @@ in  [ H.callHackage "Cabal" "3.8.1.0"
     , H.callCabal2nix
         "wai-middleware-heartbeat"
         "https://github.com/flora-pm/wai-middleware-heartbeat"
-        (Some "bd7dbbe83d25c00fcd2cf5c77736af904910c596")
+        "bd7dbbe83d25c00fcd2cf5c77736af904910c596"
         (None Text)
     , H.callHackage "wai-logger" "2.4.0"
     , H.callHackage "wai-middleware-static" "0.9.2"

@@ -9,8 +9,8 @@ mkDerivation {
   libraryHaskellDepends = [ base lucid text ];
   executableHaskellDepends = [ base lucid text ];
   testHaskellDepends = [ base lucid text ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

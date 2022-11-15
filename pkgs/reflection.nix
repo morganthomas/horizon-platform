@@ -19,8 +19,8 @@ mkDerivation {
   libraryHaskellDepends = [ base template-haskell ];
   testHaskellDepends = [ base containers hspec QuickCheck ];
   testToolDepends = [ hspec-discover ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

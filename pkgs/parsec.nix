@@ -16,8 +16,8 @@ mkDerivation {
   enableSeparateDataOutput = false;
   libraryHaskellDepends = [ base bytestring mtl text ];
   testHaskellDepends = [ base mtl tasty tasty-hunit ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

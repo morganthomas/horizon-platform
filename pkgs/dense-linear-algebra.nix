@@ -29,8 +29,8 @@ mkDerivation {
     vector-th-unbox
   ];
   testHaskellDepends = [ base hspec QuickCheck ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

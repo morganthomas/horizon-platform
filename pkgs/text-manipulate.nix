@@ -9,8 +9,8 @@ mkDerivation {
   libraryHaskellDepends = [ base text ];
   testHaskellDepends = [ base tasty tasty-hunit text ];
   benchmarkHaskellDepends = [ base criterion text ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

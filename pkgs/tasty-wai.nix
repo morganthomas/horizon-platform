@@ -25,8 +25,8 @@ mkDerivation {
     wai-extra
   ];
   testHaskellDepends = [ base http-types tasty wai ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

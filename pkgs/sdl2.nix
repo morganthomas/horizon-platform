@@ -32,8 +32,8 @@ mkDerivation {
   librarySystemDepends = [ SDL2 ];
   libraryPkgconfigDepends = [ SDL2 ];
   testHaskellDepends = [ base deepseq linear vector weigh ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

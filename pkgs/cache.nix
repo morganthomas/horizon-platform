@@ -24,8 +24,8 @@ mkDerivation {
     unordered-containers
   ];
   testHaskellDepends = [ base clock hspec stm transformers ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

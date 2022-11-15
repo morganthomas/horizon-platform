@@ -23,8 +23,8 @@ mkDerivation {
     th-expand-syns
   ];
   testHaskellDepends = [ base template-haskell ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

@@ -10,8 +10,8 @@ mkDerivation {
   enableSeparateDataOutput = true;
   executableHaskellDepends = [ array base containers mtl ];
   testHaskellDepends = [ base process ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

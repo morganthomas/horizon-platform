@@ -20,8 +20,8 @@ mkDerivation {
     data-default-instances-dlist
     data-default-instances-old-locale
   ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

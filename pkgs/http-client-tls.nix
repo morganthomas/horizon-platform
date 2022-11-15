@@ -52,8 +52,8 @@ mkDerivation {
     http-types
   ];
   benchmarkHaskellDepends = [ base gauge http-client ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

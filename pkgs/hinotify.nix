@@ -16,8 +16,8 @@ mkDerivation {
   enableSeparateDataOutput = false;
   libraryHaskellDepends = [ async base bytestring containers unix ];
   testHaskellDepends = [ base bytestring directory unix ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

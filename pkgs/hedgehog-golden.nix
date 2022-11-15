@@ -38,8 +38,8 @@ mkDerivation {
     text
   ];
   testHaskellDepends = [ aeson base hedgehog with-utf8 ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

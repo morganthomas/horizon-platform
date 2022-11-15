@@ -34,8 +34,8 @@ mkDerivation {
   ];
   libraryToolDepends = [ alex happy ];
   testHaskellDepends = [ base directory filepath process ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

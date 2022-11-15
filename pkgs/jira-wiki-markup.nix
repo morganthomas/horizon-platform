@@ -11,8 +11,8 @@ mkDerivation {
   libraryHaskellDepends = [ base mtl parsec text ];
   executableHaskellDepends = [ base text ];
   testHaskellDepends = [ base parsec tasty tasty-hunit text ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

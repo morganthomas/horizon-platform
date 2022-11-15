@@ -33,8 +33,8 @@ mkDerivation {
     transformers
   ];
   testHaskellDepends = [ base containers tasty tasty-hunit ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

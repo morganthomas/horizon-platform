@@ -11,8 +11,8 @@ mkDerivation {
   libraryHaskellDepends = [ base bytestring ];
   librarySystemDepends = [ openssl ];
   testHaskellDepends = [ base bytestring HUnit ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

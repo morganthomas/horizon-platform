@@ -35,8 +35,8 @@ mkDerivation {
     x509
   ];
   testHaskellDepends = [ base bytestring tasty tasty-hunit x509 ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

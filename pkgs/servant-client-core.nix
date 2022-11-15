@@ -60,8 +60,8 @@ mkDerivation {
   ];
   testHaskellDepends = [ base base-compat deepseq hspec QuickCheck ];
   testToolDepends = [ hspec-discover ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

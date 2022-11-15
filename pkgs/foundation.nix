@@ -9,8 +9,8 @@ mkDerivation {
   libraryHaskellDepends = [ base basement ghc-prim ];
   testHaskellDepends = [ base basement ];
   benchmarkHaskellDepends = [ base basement gauge ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

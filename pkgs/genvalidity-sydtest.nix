@@ -25,8 +25,8 @@ mkDerivation {
   ];
   testHaskellDepends = [ base genvalidity QuickCheck sydtest ];
   testToolDepends = [ sydtest-discover ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

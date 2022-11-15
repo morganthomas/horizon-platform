@@ -29,8 +29,8 @@ mkDerivation {
     tasty-quickcheck
   ];
   benchmarkHaskellDepends = [ base bytestring criterion ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

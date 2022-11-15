@@ -15,8 +15,8 @@ mkDerivation {
   libraryHaskellDepends = [ base template-haskell th-compat ];
   testHaskellDepends = [ base markdown-unlit ];
   testToolDepends = [ markdown-unlit ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;

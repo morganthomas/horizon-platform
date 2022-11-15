@@ -42,8 +42,8 @@ mkDerivation {
     test-framework-quickcheck2
     text
   ];
-  enableLibraryProfiling = false;
-  enableExecutableProfiling = false;
+  enableLibraryProfiling = true;
+  enableExecutableProfiling = true;
   doHaddock = false;
   jailbreak = true;
   doCheck = false;
