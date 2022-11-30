@@ -25,6 +25,7 @@
     in
     with pkgs.lib;
     with pkgs.writers;
+    with lint-utils.writers.${system};
     let
 
       horizon-gen-nix-app = get-flake horizon-gen-nix;
@@ -52,6 +53,23 @@
 
       horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
 
+      run-impure-tests = writePorcelainOrDieBin {
+        name = "run-impure-tests";
+        src = ./.;
+        command = ''
+          export PATH=$PATH:${pkgs.nix-prefetch-git}/bin:${pkgs.cabal-install}/bin
+          cabal update
+          rm pkgs -rf && nix run .#horizon-gen-nix make-package-set;
+          nixpkgs-fmt pkgs/*
+        '';
+        advice = "Try removing the offending packages from pkgs/ and running nix run .#horizon-gen-nix make-package-set";
+      };
+
+      run-impure-tests-app = {
+        type = "app";
+        program = "${run-impure-tests}/bin/run-impure-tests";
+      };
+
     in
     {
 
@@ -64,11 +82,12 @@
           program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
         };
 
+        run-impure-tests = run-impure-tests-app;
       };
 
       checks = {
-        dhall-format = lint-utils.outputs.linters.${system}.dhall-format ./.;
-        nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt ./.;
+        dhall-format = lint-utils.outputs.linters.${system}.dhall-format { src = ./. };
+        nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt { src = ./. };
       };
 
       inherit legacyPackages;
