@@ -3,62 +3,77 @@
     get-flake.url = "github:ursi/get-flake";
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     horizon-gen-nix = {
+      url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix?rev=066b21b5b0c3b7b2bee1b5954f89ae0b7845ade9";
       flake = false;
-      url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix";
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
 
-  outputs = inputs@{ self, nixpkgs, flake-utils, get-flake, horizon-gen-nix, lint-utils, ... }:
+  outputs =
+    inputs@
+    { self
+    , get-flake
+    , flake-utils
+    , horizon-gen-nix
+    , lint-utils
+    , nixpkgs
+    , ...
+    }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
-      let
+    let
+      pkgs = nixpkgs.legacyPackages.${system};
+    in
+    with pkgs.lib;
+    with pkgs.writers;
+    let
 
-        pkgs = nixpkgs.legacyPackages.${system};
+      horizon-gen-nix-app = get-flake horizon-gen-nix;
 
-        horizon-gen-nix-app = get-flake horizon-gen-nix;
+      haskellLib = pkgs.haskell.lib.compose;
 
-        haskellLib = pkgs.haskell.lib.compose;
+      legacyPackages = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
+        buildHaskellPackages = pkgs.haskell.packages.ghc942;
+        compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { inherit haskellLib; };
+        configurationCommon = import ./configuration.nix;
+        configurationNix = { pkgs, haskellLib }: self: super: { };
+        ghc = pkgs.haskell.compiler.ghc942;
+        inherit haskellLib;
+        initialPackages = import ./initial-packages.nix;
+        nonHackagePackages = self: super: { };
+      };
 
-        legacyPackages = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
-          buildHaskellPackages = pkgs.haskell.packages.ghc942;
-          compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { inherit haskellLib; };
-          configurationCommon = import ./configuration.nix;
-          configurationNix = { pkgs, haskellLib }: self: super: { };
-          ghc = pkgs.haskell.compiler.ghc942;
-          inherit haskellLib;
-          initialPackages = import ./overlay.nix;
-          nonHackagePackages = self: super: { };
+      packages = filterAttrs
+        (n: v: v != null
+          && builtins.typeOf v == "set"
+          && pkgs.lib.hasAttr "type" v
+          && v.type == "derivation"
+          && v.meta.broken == false)
+        legacyPackages;
+
+      horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
+
+    in
+    {
+
+      apps = {
+
+        horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.horizon-gen-nix;
+
+        horizon-gen-gitlab-ci = {
+          type = "app";
+          program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
         };
 
-        packages = pkgs.lib.filterAttrs
-          (n: v: v != null
-            && builtins.typeOf v == "set"
-            && pkgs.lib.hasAttr "type" v
-            && v.type == "derivation"
-            && v.meta.broken == false)
-          legacyPackages;
+      };
 
-        horizon-gen-gitlab-ci = pkgs.writers.writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
+      checks = {
+        dhall-format = lint-utils.outputs.linters.${system}.dhall-format ./.;
+        nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt ./.;
+      };
 
-      in
-      {
+      inherit legacyPackages;
 
-        apps = {
-          horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.horizon-gen-nix;
-          horizon-gen-gitlab-ci = {
-            type = "app";
-            program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
-          };
-        };
+      inherit packages;
 
-        checks = {
-          dhall-format = lint-utils.outputs.linters.x86_64-linux.dhall-format ./.;
-          nixpkgs-fmt = lint-utils.outputs.linters.x86_64-linux.nixpkgs-fmt ./.;
-        };
-
-        inherit legacyPackages;
-
-        inherit packages;
-
-      });
+    });
 }

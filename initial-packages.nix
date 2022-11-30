@@ -1,4 +1,4 @@
-{pkgs, lib, callPackage, ...}:
+{ pkgs, lib, callPackage, ... }:
 
 self: with pkgs.haskell.lib; {
   Cabal = self.callPackage (./pkgs/Cabal.nix) { };
@@ -392,6 +392,8 @@ self: with pkgs.haskell.lib; {
   fast-logger = self.callPackage (./pkgs/fast-logger.nix) { };
 
   fcf-containers = self.callPackage (./pkgs/fcf-containers.nix) { };
+
+  feedback = self.callPackage (./pkgs/feedback.nix) { };
 
   file-embed = self.callPackage (./pkgs/file-embed.nix) { };
 
@@ -1066,6 +1068,8 @@ self: with pkgs.haskell.lib; {
   safe = self.callPackage (./pkgs/safe.nix) { };
 
   safe-coloured-text = self.callPackage (./pkgs/safe-coloured-text.nix) { };
+
+  safe-coloured-text-layout = self.callPackage (./pkgs/safe-coloured-text-layout.nix) { };
 
   safe-coloured-text-terminfo = self.callPackage (./pkgs/safe-coloured-text-terminfo.nix) { };
 
