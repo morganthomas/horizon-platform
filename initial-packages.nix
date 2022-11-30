@@ -393,6 +393,8 @@ self: with pkgs.haskell.lib; {
 
   fcf-containers = self.callPackage (./pkgs/fcf-containers.nix) { };
 
+  feedback = self.callPackage (./pkgs/feedback.nix) { };
+
   file-embed = self.callPackage (./pkgs/file-embed.nix) { };
 
   file-embed-lzma = self.callPackage (./pkgs/file-embed-lzma.nix) { };
