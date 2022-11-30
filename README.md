@@ -19,4 +19,4 @@ folder.
 
 If you need to do additional manual overrides to the nix code, such as
 `addPkgconfigDepends`, edit the `configuration.nix` overlay, which is applied
-after `overlay.nix`.
+afterwards.
