@@ -1069,6 +1069,8 @@ self: with pkgs.haskell.lib; {
 
   safe-coloured-text = self.callPackage (./pkgs/safe-coloured-text.nix) { };
 
+  safe-coloured-text-layout = self.callPackage (./pkgs/safe-coloured-text-layout.nix) { };
+
   safe-coloured-text-terminfo = self.callPackage (./pkgs/safe-coloured-text-terminfo.nix) { };
 
   safe-exceptions = self.callPackage (./pkgs/safe-exceptions.nix) { };
