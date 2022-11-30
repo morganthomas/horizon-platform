@@ -1,4 +1,4 @@
-{pkgs, lib, callPackage, ...}:
+{ pkgs, lib, callPackage, ... }:
 
 self: with pkgs.haskell.lib; {
   Cabal = self.callPackage (./pkgs/Cabal.nix) { };

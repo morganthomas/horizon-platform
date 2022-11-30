@@ -12,19 +12,15 @@ let toStep
     = λ(id : Text) →
       λ(prefix : Text) →
       λ(x : Text) →
-        { mapKey = id
-        , mapValue.script = [ "nix build -L .#${prefix}.${x}" ]
-        }
+        { mapKey = id, mapValue.script = [ "nix build -L .#${prefix}.${x}" ] }
 
 let input = Prelude.Map.keys Text H.HaskellPackage.Type ./manifest.dhall
 
 let packages =
       Prelude.List.map
-        (Text)
+        Text
         (H.Attr Step)
-        ( λ(x : Text) →
-            toStep "Package ${x}" "packages.x86_64-linux" x
-        )
+        (λ(x : Text) → toStep "Package ${x}" "packages.x86_64-linux" x)
         (input : List Text)
 
 in  packages

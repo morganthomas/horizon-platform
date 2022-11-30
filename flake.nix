@@ -20,60 +20,60 @@
     , ...
     }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
-      let
-        pkgs = nixpkgs.legacyPackages.${system};
-      in
-      with pkgs.lib;
-      with pkgs.writers;
-      let
+    let
+      pkgs = nixpkgs.legacyPackages.${system};
+    in
+    with pkgs.lib;
+    with pkgs.writers;
+    let
 
-        horizon-gen-nix-app = get-flake horizon-gen-nix;
+      horizon-gen-nix-app = get-flake horizon-gen-nix;
 
-        haskellLib = pkgs.haskell.lib.compose;
+      haskellLib = pkgs.haskell.lib.compose;
 
-        legacyPackages = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
-          buildHaskellPackages = pkgs.haskell.packages.ghc942;
-          compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { inherit haskellLib; };
-          configurationCommon = import ./configuration.nix;
-          configurationNix = { pkgs, haskellLib }: self: super: { };
-          ghc = pkgs.haskell.compiler.ghc942;
-          inherit haskellLib;
-          initialPackages = import ./overlay.nix;
-          nonHackagePackages = self: super: { };
+      legacyPackages = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
+        buildHaskellPackages = pkgs.haskell.packages.ghc942;
+        compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { inherit haskellLib; };
+        configurationCommon = import ./configuration.nix;
+        configurationNix = { pkgs, haskellLib }: self: super: { };
+        ghc = pkgs.haskell.compiler.ghc942;
+        inherit haskellLib;
+        initialPackages = import ./overlay.nix;
+        nonHackagePackages = self: super: { };
+      };
+
+      packages = filterAttrs
+        (n: v: v != null
+          && builtins.typeOf v == "set"
+          && pkgs.lib.hasAttr "type" v
+          && v.type == "derivation"
+          && v.meta.broken == false)
+        legacyPackages;
+
+      horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
+
+    in
+    {
+
+      apps = {
+
+        horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.horizon-gen-nix;
+
+        horizon-gen-gitlab-ci = {
+          type = "app";
+          program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
         };
 
-        packages = filterAttrs
-          (n: v: v != null
-            && builtins.typeOf v == "set"
-            && pkgs.lib.hasAttr "type" v
-            && v.type == "derivation"
-            && v.meta.broken == false)
-          legacyPackages;
+      };
 
-        horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
+      checks = {
+        dhall-format = lint-utils.outputs.linters.${system}.dhall-format ./.;
+        nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt ./.;
+      };
 
-      in
-      {
+      inherit legacyPackages;
 
-        apps = {
+      inherit packages;
 
-          horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.horizon-gen-nix;
-
-          horizon-gen-gitlab-ci = {
-            type = "app";
-            program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
-          };
-
-        };
-
-        checks = {
-          dhall-format = lint-utils.outputs.linters.${system}.dhall-format ./.;
-          nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt ./.;
-        };
-
-        inherit legacyPackages;
-
-        inherit packages;
-
-      });
+    });
 }
