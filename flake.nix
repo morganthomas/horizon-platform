@@ -9,11 +9,23 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
 
-  outputs = inputs@{ self, nixpkgs, flake-utils, get-flake, horizon-gen-nix, lint-utils, ... }:
+  outputs =
+    inputs@
+    { self
+    , get-flake
+    , flake-utils
+    , horizon-gen-nix
+    , lint-utils
+    , nixpkgs
+    , ...
+    }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
-
         pkgs = nixpkgs.legacyPackages.${system};
+      in
+      with pkgs.lib;
+      with pkgs.writers;
+      let
 
         horizon-gen-nix-app = get-flake horizon-gen-nix;
 
@@ -30,7 +42,7 @@
           nonHackagePackages = self: super: { };
         };
 
-        packages = pkgs.lib.filterAttrs
+        packages = filterAttrs
           (n: v: v != null
             && builtins.typeOf v == "set"
             && pkgs.lib.hasAttr "type" v
@@ -38,22 +50,25 @@
             && v.meta.broken == false)
           legacyPackages;
 
-        horizon-gen-gitlab-ci = pkgs.writers.writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
+        horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
 
       in
       {
 
         apps = {
+
           horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.horizon-gen-nix;
+
           horizon-gen-gitlab-ci = {
             type = "app";
             program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
           };
+
         };
 
         checks = {
-          dhall-format = lint-utils.outputs.linters.x86_64-linux.dhall-format ./.;
-          nixpkgs-fmt = lint-utils.outputs.linters.x86_64-linux.nixpkgs-fmt ./.;
+          dhall-format = lint-utils.outputs.linters.${system}.dhall-format ./.;
+          nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt ./.;
         };
 
         inherit legacyPackages;
