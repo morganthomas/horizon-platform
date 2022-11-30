@@ -67,11 +67,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1655192403,
-        "narHash": "sha256-XyKDvRGDh8VXA6zN8DUTnDaTMrk0MxMKg70MaAX1A2Y=",
+        "lastModified": 1669815989,
+        "narHash": "sha256-yDE8uxa/O633VeRBlJKSY5q9JtzoBoMANvgupdI42YI=",
         "ref": "refs/heads/master",
-        "rev": "a7ae54afdc4c05a5aabf202d5a76d02705eb6147",
-        "revCount": 28,
+        "rev": "5b97bd76dd6756dfc29a32d25a5c78c0522bac10",
+        "revCount": 39,
         "type": "git",
         "url": "https://gitlab.homotopic.tech/nix/lint-utils"
       },

@@ -1,18 +1,14 @@
 stages:
 - generate
-- eval
 - check
+- impure
 
 generate-flake-ci:
   stage: generate
-  script: nix run ".#horizon-gen-gitlab-ci" > flake-ci.yml
+  script: nix run "git+https://gitlab.homotopic.tech/haskell/flake-to-gitlab-ci" > flake-ci.yml
   artifacts:
     paths:
       - flake-ci.yml
-
-eval-flake:
-  stage: eval
-  script: nix flake show
 
 flake-ci:
   stage: check
@@ -21,3 +17,8 @@ flake-ci:
       - artifact: flake-ci.yml
         job: generate-flake-ci
     strategy: depend
+
+impure-tests:
+  stage: impure
+  script:
+  - nix run .#run-impure-tests
