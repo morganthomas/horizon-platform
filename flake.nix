@@ -52,6 +52,23 @@
 
       horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
 
+      run-impure-tests = lint-utils.writers.writePorcelainOrDieBin {
+        name = "run-impure-tests";
+        src = ./.;
+        command = ''
+          cabal update
+          export PATH=$PATH:${pkgs.nix-prefetch-git}/bin
+          rm pkgs -rf && nix run .#horizon-gen-nix make-package-set;
+          nixpkgs-fmt pkgs/*
+        '';
+        advice = "Try removing the offending packages from pkgs/ and running nix run .#horizon-gen-nix make-package-set";
+      };
+
+      run-impure-tests-app = {
+        type = "app";
+        program = "${run-impure-tests}/bin/run-impure-tests";
+      };
+
     in
     {
 
