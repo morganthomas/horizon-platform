@@ -20,5 +20,9 @@ flake-ci:
 
 impure-tests:
   stage: impure
+  rules:
+  - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    when: manual
+    allow_failure: true
   script:
   - nix run .#run-impure-tests
