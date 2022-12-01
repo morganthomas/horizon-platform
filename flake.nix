@@ -86,8 +86,8 @@
       };
 
       checks = {
-        dhall-format = lint-utils.outputs.linters.${system}.dhall-format { src = ./. };
-        nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt { src = ./. };
+        dhall-format = lint-utils.outputs.linters.${system}.dhall-format { src = ./.; };
+        nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt { src = ./.; };
       };
 
       inherit legacyPackages;
