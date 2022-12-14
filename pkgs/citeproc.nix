@@ -1,4 +1,5 @@
 { mkDerivation
+, Diff
 , aeson
 , attoparsec
 , base
@@ -6,7 +7,6 @@
 , case-insensitive
 , containers
 , data-default
-, Diff
 , directory
 , file-embed
 , filepath

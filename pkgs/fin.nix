@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , boring
 , dec
@@ -6,7 +7,6 @@
 , hashable
 , inspection-testing
 , lib
-, QuickCheck
 , some
 , tagged
 , universe-base

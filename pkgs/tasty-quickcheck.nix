@@ -1,9 +1,9 @@
 { mkDerivation
+, QuickCheck
 , base
 , lib
 , optparse-applicative
 , pcre-light
-, QuickCheck
 , random
 , tagged
 , tasty

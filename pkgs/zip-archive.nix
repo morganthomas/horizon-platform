@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , array
 , base
 , binary
@@ -7,7 +8,6 @@
 , digest
 , directory
 , filepath
-, HUnit
 , lib
 , mtl
 , pretty

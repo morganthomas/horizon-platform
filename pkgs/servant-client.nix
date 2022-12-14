@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , aeson
 , base
 , base-compat
@@ -14,14 +16,12 @@
 , http-client
 , http-media
 , http-types
-, HUnit
 , kan-extensions
 , lib
 , markdown-unlit
 , monad-control
 , mtl
 , network
-, QuickCheck
 , semigroupoids
 , servant
 , servant-client-core

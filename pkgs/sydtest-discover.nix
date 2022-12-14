@@ -31,6 +31,5 @@ mkDerivation {
   homepage = "https://github.com/NorfairKing/sydtest#readme";
   description = "Automatic test suite discovery for sydtest";
   license = "unknown";
-  mainProgram = "sydtest-discover";
   broken = false;
 }

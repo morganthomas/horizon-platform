@@ -1,4 +1,5 @@
 { mkDerivation
+, Glob
 , base
 , blaze-html
 , bytestring
@@ -6,7 +7,6 @@
 , directory
 , doctest
 , filepath
-, Glob
 , hspec-wai
 , http-media
 , lib

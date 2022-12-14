@@ -1,4 +1,4 @@
-{ mkDerivation, base, lib, QuickCheck, time }:
+{ mkDerivation, QuickCheck, base, lib, time }:
 mkDerivation {
   pname = "microspec";
   version = "0.2.1.3";

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , binary
 , bytestring
@@ -7,7 +8,6 @@
 , entropy
 , lib
 , network-info
-, QuickCheck
 , random
 , tasty
 , tasty-hunit

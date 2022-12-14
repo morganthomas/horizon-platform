@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , criterion
@@ -13,7 +14,6 @@
 , lib
 , microlens
 , pretty-show
-, QuickCheck
 , text
 }:
 mkDerivation {

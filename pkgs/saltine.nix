@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , criterion
@@ -7,7 +8,6 @@
 , lib
 , libsodium
 , profunctors
-, QuickCheck
 , semigroups
 , test-framework
 , test-framework-quickcheck2

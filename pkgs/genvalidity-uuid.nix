@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , criterion
 , genvalidity
@@ -6,7 +7,6 @@
 , genvalidity-hspec
 , hspec
 , lib
-, QuickCheck
 , uuid
 , validity
 , validity-uuid

@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , binary
 , bytestring
 , containers
 , lib
 , parsec
-, QuickCheck
 , quickcheck-instances
 , tasty
 , tasty-bench

@@ -1,11 +1,11 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , bytestring
 , data-default-class
 , deepseq
-, HUnit
 , lib
-, QuickCheck
 , tasty
 , tasty-hunit
 , tasty-quickcheck

@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , directory
 , lib
 , pretty
 , process
-, QuickCheck
 , test-framework
 , test-framework-quickcheck2
 }:

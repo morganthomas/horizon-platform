@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , bytestring
@@ -11,7 +12,6 @@
 , optics-core
 , optics-extra
 , optics-th
-, QuickCheck
 , random
 , tasty
 , tasty-bench

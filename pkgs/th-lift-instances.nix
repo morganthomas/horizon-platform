@@ -1,9 +1,9 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , containers
 , lib
-, QuickCheck
 , template-haskell
 , text
 , th-lift

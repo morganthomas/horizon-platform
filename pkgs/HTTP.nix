@@ -1,10 +1,10 @@
 { mkDerivation
+, HUnit
 , array
 , base
 , bytestring
 , deepseq
 , httpd-shed
-, HUnit
 , lib
 , mtl
 , network

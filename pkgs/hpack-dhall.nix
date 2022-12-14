@@ -1,12 +1,12 @@
 { mkDerivation
+, Cabal
+, Diff
 , aeson
 , aeson-pretty
 , base
 , bytestring
-, Cabal
 , dhall
 , dhall-json
-, Diff
 , directory
 , filepath
 , hpack

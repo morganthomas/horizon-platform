@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , containers
@@ -6,7 +7,6 @@
 , deepseq
 , lib
 , process
-, QuickCheck
 , random
 , test-framework
 , test-framework-quickcheck2

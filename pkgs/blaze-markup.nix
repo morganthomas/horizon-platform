@@ -1,11 +1,11 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , blaze-builder
 , bytestring
 , containers
-, HUnit
 , lib
-, QuickCheck
 , tasty
 , tasty-hunit
 , tasty-quickcheck

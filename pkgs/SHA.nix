@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , binary
 , bytestring
 , lib
-, QuickCheck
 , test-framework
 , test-framework-quickcheck2
 }:

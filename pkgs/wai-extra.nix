@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , aeson
 , ansi-terminal
 , base
@@ -14,7 +15,6 @@
 , hspec
 , hspec-discover
 , http-types
-, HUnit
 , iproute
 , lib
 , network

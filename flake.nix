@@ -3,7 +3,7 @@
     get-flake.url = "github:ursi/get-flake";
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     horizon-gen-nix = {
-      url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix?rev=066b21b5b0c3b7b2bee1b5954f89ae0b7845ade9";
+      url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix?rev=8eb5ffc81cd8331f340546d746a786c7b2f021a6";
       flake = false;
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -59,10 +59,10 @@
         command = ''
           export PATH=$PATH:${pkgs.nix-prefetch-git}/bin:${pkgs.cabal-install}/bin
           cabal update
-          rm pkgs -rf && nix run .#horizon-gen-nix make-package-set;
+          rm pkgs -rf && nix run .#horizon-gen-nix;
           nixpkgs-fmt pkgs/*
         '';
-        advice = "Try removing the offending packages from pkgs/ and running nix run .#horizon-gen-nix make-package-set";
+        advice = "Try removing the offending packages from pkgs/ and running nix run .#horizon-gen-nix";
       };
 
       run-impure-tests-app = {

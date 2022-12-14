@@ -1,8 +1,8 @@
 { mkDerivation
+, Cabal
 , base
 , byteorder
 , bytestring
-, Cabal
 , cabal-doctest
 , doctest
 , fast-logger

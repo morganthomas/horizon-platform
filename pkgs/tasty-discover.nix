@@ -1,10 +1,10 @@
 { mkDerivation
+, Glob
 , base
 , bytestring
 , containers
 , directory
 , filepath
-, Glob
 , hedgehog
 , hspec
 , hspec-core
@@ -69,6 +69,5 @@ mkDerivation {
   homepage = "https://github.com/haskell-works/tasty-discover";
   description = "Test discovery for the tasty framework";
   license = lib.licenses.mit;
-  mainProgram = "tasty-discover";
   broken = false;
 }

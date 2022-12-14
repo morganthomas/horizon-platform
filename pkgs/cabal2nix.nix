@@ -1,9 +1,9 @@
 { mkDerivation
+, Cabal
 , aeson
 , ansi-wl-pprint
 , base
 , bytestring
-, Cabal
 , containers
 , deepseq
 , directory

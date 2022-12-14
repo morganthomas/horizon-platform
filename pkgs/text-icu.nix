@@ -1,15 +1,15 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , array
 , base
 , bytestring
 , deepseq
 , directory
 , ghc-prim
-, HUnit
 , icu
 , icu-i18n
 , lib
-, QuickCheck
 , random
 , test-framework
 , test-framework-hunit

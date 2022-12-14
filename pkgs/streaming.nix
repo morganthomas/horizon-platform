@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , ghc-prim
@@ -6,7 +7,6 @@
 , lib
 , mmorph
 , mtl
-, QuickCheck
 , transformers
 , transformers-base
 }:

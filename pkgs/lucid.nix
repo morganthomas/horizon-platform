@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , base
 , bifunctors
 , blaze-builder
@@ -8,7 +9,6 @@
 , deepseq
 , hashable
 , hspec
-, HUnit
 , lib
 , mmorph
 , mtl

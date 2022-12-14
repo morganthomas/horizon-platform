@@ -1,9 +1,9 @@
 { mkDerivation
+, QuickCheck
 , base
 , deepseq
 , hspec
 , lib
-, QuickCheck
 , text
 , vector
 }:

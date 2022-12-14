@@ -1,11 +1,11 @@
 { mkDerivation
+, HUnit
 , base
 , bytestring
 , conduit
 , conduit-extra
 , directory
 , hspec
-, HUnit
 , lib
 , network
 , process

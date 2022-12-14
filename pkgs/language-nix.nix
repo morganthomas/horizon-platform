@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , deepseq
 , lens
 , lib
 , parsec-class
 , pretty
-, QuickCheck
 }:
 mkDerivation {
   pname = "language-nix";

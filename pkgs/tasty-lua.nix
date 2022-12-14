@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , directory
@@ -8,7 +9,6 @@
 , hslua-marshalling
 , lib
 , lua-arbitrary
-, QuickCheck
 , tasty
 , tasty-hunit
 , text

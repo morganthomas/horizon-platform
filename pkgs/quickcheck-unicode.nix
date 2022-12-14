@@ -1,4 +1,4 @@
-{ mkDerivation, base, lib, QuickCheck }:
+{ mkDerivation, QuickCheck, base, lib }:
 mkDerivation {
   pname = "quickcheck-unicode";
   version = "1.0.1.0";

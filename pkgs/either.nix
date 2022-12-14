@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , bifunctors
 , lib
 , mtl
 , profunctors
-, QuickCheck
 , semigroupoids
 , test-framework
 , test-framework-quickcheck2

@@ -1,4 +1,4 @@
-{ mkDerivation, base, lib, StateVar, transformers }:
+{ mkDerivation, StateVar, base, lib, transformers }:
 mkDerivation {
   pname = "contravariant";
   version = "1.5.5";

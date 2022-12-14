@@ -1,12 +1,12 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , blaze-builder
 , blaze-markup
 , bytestring
 , containers
-, HUnit
 , lib
-, QuickCheck
 , test-framework
 , test-framework-hunit
 , test-framework-quickcheck2

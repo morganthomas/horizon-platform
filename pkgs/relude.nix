@@ -1,11 +1,11 @@
 { mkDerivation
+, Glob
 , base
 , bytestring
 , containers
 , deepseq
 , doctest
 , ghc-prim
-, Glob
 , hashable
 , hedgehog
 , lib

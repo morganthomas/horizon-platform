@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , base-compat
@@ -9,7 +10,6 @@
 , lib
 , optics-core
 , optics-extra
-, QuickCheck
 , semigroupoids
 , tasty
 , tasty-quickcheck

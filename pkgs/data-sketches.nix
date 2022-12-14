@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , criterion
 , data-sketches-core
@@ -10,7 +11,6 @@
 , mwc-random
 , pretty-show
 , primitive
-, QuickCheck
 , statistics
 , vector
 , vector-algorithms

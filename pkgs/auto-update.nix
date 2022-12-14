@@ -1,4 +1,4 @@
-{ mkDerivation, base, exceptions, hspec, HUnit, lib, retry }:
+{ mkDerivation, HUnit, base, exceptions, hspec, lib, retry }:
 mkDerivation {
   pname = "auto-update";
   version = "0.1.6";

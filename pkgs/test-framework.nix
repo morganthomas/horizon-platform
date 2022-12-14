@@ -1,15 +1,15 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , ansi-terminal
 , ansi-wl-pprint
 , base
 , bytestring
 , containers
 , hostname
-, HUnit
 , lib
 , libxml
 , old-locale
-, QuickCheck
 , random
 , regex-posix
 , semigroups

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , attoparsec
 , base
@@ -18,7 +19,6 @@
 , mmorph
 , mtl
 , network-uri
-, QuickCheck
 , quickcheck-instances
 , singleton-bool
 , sop-core

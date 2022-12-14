@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , genvalidity
 , genvalidity-hspec
@@ -6,7 +7,6 @@
 , hspec
 , lib
 , microlens
-, QuickCheck
 , validity
 }:
 mkDerivation {

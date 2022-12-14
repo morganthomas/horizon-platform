@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , genvalidity
 , genvalidity-sydtest
 , hashable
 , lib
-, QuickCheck
 , sydtest
 , sydtest-discover
 , validity

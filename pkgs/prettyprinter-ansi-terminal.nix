@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , ansi-terminal
 , base
 , base-compat
@@ -8,7 +9,6 @@
 , gauge
 , lib
 , prettyprinter
-, QuickCheck
 , text
 }:
 mkDerivation {

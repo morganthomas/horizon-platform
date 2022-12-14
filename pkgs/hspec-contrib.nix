@@ -1,11 +1,11 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , hspec
 , hspec-core
 , hspec-discover
-, HUnit
 , lib
-, QuickCheck
 }:
 mkDerivation {
   pname = "hspec-contrib";

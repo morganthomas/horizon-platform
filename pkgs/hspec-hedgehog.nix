@@ -1,11 +1,11 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , hedgehog
 , hspec
 , hspec-core
-, HUnit
 , lib
-, QuickCheck
 , splitmix
 }:
 mkDerivation {

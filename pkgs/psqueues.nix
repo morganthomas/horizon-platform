@@ -1,4 +1,7 @@
 { mkDerivation
+, HUnit
+, PSQueue
+, QuickCheck
 , array
 , base
 , containers
@@ -7,11 +10,8 @@
 , fingertree-psqueue
 , ghc-prim
 , hashable
-, HUnit
 , lib
 , mtl
-, PSQueue
-, QuickCheck
 , random
 , tagged
 , tasty

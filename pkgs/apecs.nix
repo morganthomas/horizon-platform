@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , containers
@@ -7,7 +8,6 @@
 , lib
 , linear
 , mtl
-, QuickCheck
 , template-haskell
 , vector
 }:

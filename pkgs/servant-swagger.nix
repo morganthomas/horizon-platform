@@ -1,10 +1,11 @@
 { mkDerivation
+, Cabal
+, QuickCheck
 , aeson
 , aeson-pretty
 , base
 , base-compat
 , bytestring
-, Cabal
 , cabal-doctest
 , directory
 , doctest
@@ -16,7 +17,6 @@
 , lens
 , lens-aeson
 , lib
-, QuickCheck
 , servant
 , singleton-bool
 , swagger2

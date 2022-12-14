@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , criterion
@@ -17,7 +18,6 @@
 , hspec
 , lib
 , path
-, QuickCheck
 }:
 mkDerivation {
   pname = "cursor-dirforest-gen";

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , base-compat
@@ -16,7 +17,6 @@
 , http-types
 , lib
 , network-uri
-, QuickCheck
 , safe
 , servant
 , sop-core

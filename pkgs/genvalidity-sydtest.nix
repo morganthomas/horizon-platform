@@ -1,9 +1,9 @@
 { mkDerivation
+, QuickCheck
 , base
 , genvalidity
 , lib
 , pretty-show
-, QuickCheck
 , sydtest
 , sydtest-discover
 , validity

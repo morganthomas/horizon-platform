@@ -1,4 +1,4 @@
-{ mkDerivation, base, lib, QuickCheck }:
+{ mkDerivation, QuickCheck, base, lib }:
 mkDerivation {
   pname = "PSQueue";
   version = "1.1.1";

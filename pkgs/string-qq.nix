@@ -1,4 +1,4 @@
-{ mkDerivation, base, HUnit, lib, template-haskell, text }:
+{ mkDerivation, HUnit, base, lib, template-haskell, text }:
 mkDerivation {
   pname = "string-qq";
   version = "0.0.4";

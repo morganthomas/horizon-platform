@@ -47,6 +47,5 @@ mkDerivation {
   homepage = "http://github.com/informatikr/aeson-pretty";
   description = "JSON pretty-printing library and command-line tool";
   license = lib.licenses.bsd3;
-  mainProgram = "aeson-pretty";
   broken = false;
 }

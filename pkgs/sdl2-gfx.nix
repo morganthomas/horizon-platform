@@ -1,11 +1,11 @@
 { mkDerivation
+, SDL2
+, SDL2_gfx
 , base
 , lib
 , lifted-base
 , monad-control
-, SDL2
 , sdl2
-, SDL2_gfx
 , template-haskell
 , vector
 }:
@@ -38,6 +38,5 @@ mkDerivation {
   hyperlinkSource = false;
   description = "Haskell bindings to SDL2_gfx";
   license = lib.licenses.mit;
-  mainProgram = "sdl2-gfx-example";
   broken = false;
 }

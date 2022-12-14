@@ -1,11 +1,12 @@
 { mkDerivation
+, Cabal
+, Cabal-syntax
+, QuickCheck
 , aeson
 , base
 , base16-bytestring
 , base64-bytestring
 , bytestring
-, Cabal
-, Cabal-syntax
 , containers
 , cryptohash-sha256
 , directory
@@ -19,7 +20,6 @@
 , network-uri
 , parsec
 , pretty
-, QuickCheck
 , tar
 , tasty
 , tasty-hunit
@@ -37,8 +37,8 @@ mkDerivation {
   pname = "hackage-security";
   version = "0.6.2.2";
   sha256 = "a833a31610220506557e96fb6e3e8b05a2e1db8e7ebc06e91bbb699ddde0b276";
-  revision = "1";
-  editedCabalFile = "01fhp3kzc1wfvixzgnz4y52bzm4sickk1cj7pksrwmbi90dghv0s";
+  revision = "2";
+  editedCabalFile = "12mrnjyl5z5ng1w4748xi6l8iyq3wcs94qq42kx9hx09d4qklsq0";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

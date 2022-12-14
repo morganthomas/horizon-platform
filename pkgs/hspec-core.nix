@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , ansi-terminal
 , array
 , base
@@ -12,10 +14,8 @@
 , ghc-boot-th
 , hspec-expectations
 , hspec-meta
-, HUnit
 , lib
 , process
-, QuickCheck
 , quickcheck-io
 , random
 , setenv

@@ -1,10 +1,10 @@
 { mkDerivation
+, HUnit
 , base
 , deepseq
 , directory
 , filepath
 , hedgehog
-, HUnit
 , lib
 , process
 , safe-exceptions
@@ -58,6 +58,5 @@ mkDerivation {
   homepage = "https://github.com/serokell/haskell-with-utf8#readme";
   description = "Get your IO right on the first try";
   license = lib.licenses.mpl20;
-  mainProgram = "utf8-troubleshoot";
   broken = false;
 }

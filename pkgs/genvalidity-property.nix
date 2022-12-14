@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , genvalidity
 , hspec
 , lib
 , pretty-show
-, QuickCheck
 , validity
 }:
 mkDerivation {

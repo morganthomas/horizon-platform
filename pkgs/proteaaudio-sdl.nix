@@ -1,4 +1,4 @@
-{ mkDerivation, base, bytestring, c2hs, lib, SDL2 }:
+{ mkDerivation, SDL2, base, bytestring, c2hs, lib }:
 mkDerivation {
   pname = "proteaaudio-sdl";
   version = "0.9.2";

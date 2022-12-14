@@ -1,8 +1,8 @@
 { mkDerivation
-, base
 , HUnit
-, lib
 , QuickCheck
+, base
+, lib
 , test-framework
 , test-framework-hunit
 , test-framework-quickcheck2

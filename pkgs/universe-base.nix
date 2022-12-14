@@ -1,8 +1,8 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , lib
-, QuickCheck
 , tagged
 , transformers
 }:

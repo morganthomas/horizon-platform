@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , binary
 , bytestring
@@ -7,7 +8,6 @@
 , crypto-api-tests
 , lib
 , pretty-hex
-, QuickCheck
 , tagged
 , test-framework
 , test-framework-quickcheck2

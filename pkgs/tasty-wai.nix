@@ -1,8 +1,8 @@
 { mkDerivation
+, HUnit
 , base
 , bytestring
 , http-types
-, HUnit
 , lib
 , tasty
 , wai

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , containers
@@ -14,7 +15,6 @@
 , mtl
 , mwc-random
 , primitive
-, QuickCheck
 , resourcet
 , safe
 , silently

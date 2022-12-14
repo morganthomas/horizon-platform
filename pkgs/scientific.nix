@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , binary
 , bytestring
@@ -9,7 +10,6 @@
 , integer-logarithms
 , lib
 , primitive
-, QuickCheck
 , smallcheck
 , tasty
 , tasty-hunit

@@ -1,8 +1,8 @@
 { mkDerivation
+, QuickCheck
 , base
 , lib
 , numtype-dk
-, QuickCheck
 , tasty
 , tasty-hunit
 , tasty-quickcheck

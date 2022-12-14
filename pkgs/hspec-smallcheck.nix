@@ -1,13 +1,13 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , base-orphans
 , call-stack
 , hspec
 , hspec-core
 , hspec-discover
-, HUnit
 , lib
-, QuickCheck
 , smallcheck
 }:
 mkDerivation {

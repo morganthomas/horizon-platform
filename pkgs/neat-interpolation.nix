@@ -1,8 +1,8 @@
 { mkDerivation
+, QuickCheck
 , base
 , lib
 , megaparsec
-, QuickCheck
 , quickcheck-instances
 , rerebase
 , tasty

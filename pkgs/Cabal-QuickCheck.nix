@@ -1,11 +1,11 @@
 { mkDerivation
-, base
-, bytestring
 , Cabal
 , Cabal-syntax
+, QuickCheck
+, base
+, bytestring
 , fetchgit
 , lib
-, QuickCheck
 }:
 mkDerivation {
   pname = "Cabal-QuickCheck";

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , containers
@@ -19,7 +20,6 @@
 , path
 , path-io
 , pretty-show
-, QuickCheck
 }:
 mkDerivation {
   pname = "genvalidity-dirforest";

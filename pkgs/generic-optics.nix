@@ -1,8 +1,8 @@
 { mkDerivation
+, HUnit
 , base
 , doctest
 , generic-lens-core
-, HUnit
 , inspection-testing
 , lib
 , optics-core

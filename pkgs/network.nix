@@ -1,13 +1,13 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , bytestring
 , deepseq
 , directory
 , hspec
 , hspec-discover
-, HUnit
 , lib
-, QuickCheck
 , temporary
 }:
 mkDerivation {

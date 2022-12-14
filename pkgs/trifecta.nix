@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , ansi-terminal
 , array
 , base
@@ -21,7 +22,6 @@
 , prettyprinter
 , prettyprinter-ansi-terminal
 , profunctors
-, QuickCheck
 , reducers
 , transformers
 , unordered-containers

@@ -1,10 +1,10 @@
 { mkDerivation
+, OneTuple
+, QuickCheck
 , base
 , containers
 , indexed-traversable
 , lib
-, OneTuple
-, QuickCheck
 , quickcheck-instances
 , tagged
 , tasty

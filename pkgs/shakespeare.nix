@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , aeson
 , base
 , blaze-html
@@ -10,7 +11,6 @@
 , file-embed
 , ghc-prim
 , hspec
-, HUnit
 , lib
 , parsec
 , process

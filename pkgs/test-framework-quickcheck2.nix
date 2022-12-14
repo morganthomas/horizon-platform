@@ -1,8 +1,8 @@
 { mkDerivation
+, QuickCheck
 , base
 , extensible-exceptions
 , lib
-, QuickCheck
 , random
 , test-framework
 }:

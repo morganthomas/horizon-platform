@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , criterion
 , deepseq
 , hspec
 , lib
-, QuickCheck
 , text
 , vector
 , weigh

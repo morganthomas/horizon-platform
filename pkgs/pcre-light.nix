@@ -1,8 +1,8 @@
 { mkDerivation
+, HUnit
 , base
 , bytestring
 , containers
-, HUnit
 , lib
 , mtl
 , pcre

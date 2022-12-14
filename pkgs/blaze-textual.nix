@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , blaze-builder
 , bytestring
@@ -7,7 +8,6 @@
 , integer-gmp
 , lib
 , old-locale
-, QuickCheck
 , test-framework
 , test-framework-quickcheck2
 , text

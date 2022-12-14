@@ -1,13 +1,13 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , bytestring
 , containers
 , deepseq
 , ghc-bignum
 , ghc-prim
-, HUnit
 , lib
-, QuickCheck
 , random
 , test-framework
 , test-framework-hunit

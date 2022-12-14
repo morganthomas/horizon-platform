@@ -1,12 +1,12 @@
 { mkDerivation
-, base
 , Cabal
 , Cabal-syntax
+, QuickCheck
+, base
 , containers
 , fetchgit
 , lib
 , pretty
-, QuickCheck
 , rere
 , tasty
 , tasty-quickcheck

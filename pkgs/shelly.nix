@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , async
 , base
 , bytestring
@@ -9,7 +10,6 @@
 , filepath
 , hspec
 , hspec-contrib
-, HUnit
 , lib
 , lifted-async
 , lifted-base

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , asn1-encoding
 , asn1-types
 , async
@@ -13,7 +14,6 @@
 , memory
 , mtl
 , network
-, QuickCheck
 , tasty
 , tasty-quickcheck
 , transformers

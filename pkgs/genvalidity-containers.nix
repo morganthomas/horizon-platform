@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , criterion
@@ -8,7 +9,6 @@
 , genvalidity-property
 , hspec
 , lib
-, QuickCheck
 , validity
 , validity-containers
 }:

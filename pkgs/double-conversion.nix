@@ -1,9 +1,9 @@
 { mkDerivation
+, HUnit
 , base
 , bytestring
 , fetchgit
 , ghc-prim
-, HUnit
 , lib
 , system-cxx-std-lib
 , test-framework

@@ -1,10 +1,11 @@
 { mkDerivation
+, Cabal-syntax
+, Diff
+, HUnit
 , base
 , bytestring
-, Cabal-syntax
 , containers
 , data-default
-, Diff
 , directory
 , fail
 , filemanip
@@ -13,7 +14,6 @@
 , ghc
 , ghc-boot
 , ghc-paths
-, HUnit
 , lib
 , mtl
 , ordered-containers

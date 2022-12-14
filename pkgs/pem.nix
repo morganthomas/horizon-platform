@@ -1,11 +1,11 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , basement
 , bytestring
-, HUnit
 , lib
 , memory
-, QuickCheck
 , test-framework
 , test-framework-hunit
 , test-framework-quickcheck2

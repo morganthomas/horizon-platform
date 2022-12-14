@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , bytestring
 , containers
 , ghc-prim
 , lib
-, QuickCheck
 , test-framework
 , test-framework-quickcheck2
 }:

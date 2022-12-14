@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , atomic-primops
 , base
 , bytestring
@@ -13,7 +14,6 @@
 , lib
 , mtl
 , primitive
-, QuickCheck
 , random
 , random-shuffle
 , stm

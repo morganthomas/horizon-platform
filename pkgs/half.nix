@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , binary
 , bytestring
 , deepseq
 , lib
-, QuickCheck
 , template-haskell
 , test-framework
 , test-framework-quickcheck2

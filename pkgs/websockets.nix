@@ -1,4 +1,7 @@
 { mkDerivation
+, HUnit
+, QuickCheck
+, SHA
 , async
 , attoparsec
 , base
@@ -11,12 +14,9 @@
 , containers
 , criterion
 , entropy
-, HUnit
 , lib
 , network
-, QuickCheck
 , random
-, SHA
 , streaming-commons
 , test-framework
 , test-framework-hunit

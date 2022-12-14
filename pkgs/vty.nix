@@ -1,16 +1,17 @@
 { mkDerivation
+, Cabal
+, HUnit
+, QuickCheck
 , ansi-terminal
 , base
 , binary
 , blaze-builder
 , bytestring
-, Cabal
 , containers
 , deepseq
 , directory
 , filepath
 , hashable
-, HUnit
 , lib
 , microlens
 , microlens-mtl
@@ -18,7 +19,6 @@
 , mtl
 , parallel
 , parsec
-, QuickCheck
 , quickcheck-assertions
 , random
 , smallcheck

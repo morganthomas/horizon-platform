@@ -1,11 +1,12 @@
 { mkDerivation
+, Diff
+, QuickCheck
 , aeson
 , base
 , binary
 , containers
 , data-default
 , deepseq
-, Diff
 , dlist
 , exceptions
 , filepath
@@ -17,7 +18,6 @@
 , mod
 , mtl
 , network-uri
-, QuickCheck
 , quickcheck-instances
 , safe
 , scientific

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bitvec
 , bytestring
@@ -6,7 +7,6 @@
 , lib
 , mwc-random
 , primitive
-, QuickCheck
 , vector
 }:
 mkDerivation {

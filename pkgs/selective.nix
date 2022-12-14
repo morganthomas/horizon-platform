@@ -1,4 +1,4 @@
-{ mkDerivation, base, containers, lib, QuickCheck, transformers }:
+{ mkDerivation, QuickCheck, base, containers, lib, transformers }:
 mkDerivation {
   pname = "selective";
   version = "0.5";

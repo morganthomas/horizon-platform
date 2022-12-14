@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , async
 , base
@@ -13,7 +14,6 @@
 , mwc-random
 , parallel
 , primitive
-, QuickCheck
 , random
 , tasty
 , tasty-expected-failure

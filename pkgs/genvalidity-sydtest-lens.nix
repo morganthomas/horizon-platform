@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , genvalidity
 , genvalidity-sydtest
 , lib
 , microlens
-, QuickCheck
 , sydtest
 , sydtest-discover
 , validity

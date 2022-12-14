@@ -1,13 +1,13 @@
 { mkDerivation
+, Cabal
+, QuickCheck
 , base
 , base-compat
 , bytestring
-, Cabal
 , cabal-doctest
 , doctest
 , lib
 , memory
-, QuickCheck
 , quickcheck-instances
 , tasty
 , tasty-quickcheck

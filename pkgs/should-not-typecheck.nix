@@ -1,9 +1,9 @@
 { mkDerivation
+, HUnit
 , base
 , deepseq
 , hspec
 , hspec-expectations
-, HUnit
 , lib
 }:
 mkDerivation {

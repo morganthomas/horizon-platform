@@ -1,4 +1,4 @@
-{ mkDerivation, base, lib, QuickCheck }:
+{ mkDerivation, QuickCheck, base, lib }:
 mkDerivation {
   pname = "split";
   version = "0.2.3.3";

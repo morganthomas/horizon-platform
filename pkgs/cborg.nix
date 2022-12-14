@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , array
 , base
@@ -13,7 +14,6 @@
 , half
 , lib
 , primitive
-, QuickCheck
 , random
 , scientific
 , tasty

@@ -1,8 +1,8 @@
 { mkDerivation
+, Cabal
 , aeson
 , base
 , bytestring
-, Cabal
 , containers
 , deepseq
 , directory

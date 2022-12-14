@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , attoparsec
 , base
 , bytestring
 , doctest
 , hspec
 , lib
-, QuickCheck
 , template-haskell
 }:
 mkDerivation {

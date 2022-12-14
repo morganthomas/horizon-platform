@@ -1,9 +1,9 @@
 { mkDerivation
+, HUnit
 , base
 , directory
 , extra
 , hspec
-, HUnit
 , lib
 , monad-parallel
 , temporary

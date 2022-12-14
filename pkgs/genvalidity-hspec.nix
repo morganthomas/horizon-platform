@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , genvalidity
 , genvalidity-property
 , hspec
 , hspec-core
 , lib
-, QuickCheck
 , transformers
 , validity
 }:

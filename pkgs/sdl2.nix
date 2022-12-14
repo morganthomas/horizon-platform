@@ -1,12 +1,12 @@
 { mkDerivation
+, SDL2
+, StateVar
 , base
 , bytestring
 , deepseq
 , exceptions
 , lib
 , linear
-, SDL2
-, StateVar
 , text
 , transformers
 , vector

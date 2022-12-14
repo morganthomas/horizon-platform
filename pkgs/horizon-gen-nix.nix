@@ -1,6 +1,6 @@
 { mkDerivation
-, base
 , Cabal-syntax
+, base
 , cabal2nix
 , containers
 , data-fix
@@ -54,6 +54,5 @@ mkDerivation {
   hyperlinkSource = false;
   description = "Short description of your package";
   license = lib.licenses.bsd3;
-  mainProgram = "horizon-gen-nix";
   broken = false;
 }

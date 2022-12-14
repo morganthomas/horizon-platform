@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , bytestring
@@ -10,7 +11,6 @@
 , genvalidity-text
 , hspec
 , lib
-, QuickCheck
 , text
 , validity
 }:

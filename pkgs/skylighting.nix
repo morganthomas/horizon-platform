@@ -47,6 +47,5 @@ mkDerivation {
   homepage = "https://github.com/jgm/skylighting";
   description = "syntax highlighting library";
   license = lib.licenses.gpl2Only;
-  mainProgram = "skylighting";
   broken = false;
 }

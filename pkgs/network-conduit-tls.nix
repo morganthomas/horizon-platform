@@ -1,11 +1,11 @@
 { mkDerivation
+, HUnit
 , base
 , bytestring
 , conduit
 , conduit-extra
 , connection
 , data-default-class
-, HUnit
 , lib
 , mtl
 , network

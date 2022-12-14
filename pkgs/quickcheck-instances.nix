@@ -1,4 +1,6 @@
 { mkDerivation
+, OneTuple
+, QuickCheck
 , array
 , base
 , bytestring
@@ -9,9 +11,7 @@
 , integer-logarithms
 , lib
 , old-time
-, OneTuple
 , primitive
-, QuickCheck
 , scientific
 , splitmix
 , strict

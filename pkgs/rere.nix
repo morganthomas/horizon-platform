@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , attoparsec
 , base
@@ -10,7 +11,6 @@
 , fin
 , lib
 , parsec
-, QuickCheck
 , quickcheck-instances
 , tasty
 , tasty-quickcheck

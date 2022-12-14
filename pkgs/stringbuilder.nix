@@ -1,4 +1,4 @@
-{ mkDerivation, base, hspec, lib, QuickCheck }:
+{ mkDerivation, QuickCheck, base, hspec, lib }:
 mkDerivation {
   pname = "stringbuilder";
   version = "0.5.1";

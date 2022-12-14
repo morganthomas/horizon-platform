@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , async
 , base
 , bytestring
@@ -10,7 +11,6 @@
 , hspec
 , lib
 , process
-, QuickCheck
 , safe-exceptions
 , stm
 , time

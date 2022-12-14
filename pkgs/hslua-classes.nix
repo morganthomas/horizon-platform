@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , containers
@@ -7,7 +8,6 @@
 , hslua-marshalling
 , lib
 , lua-arbitrary
-, QuickCheck
 , quickcheck-instances
 , tasty
 , tasty-hslua

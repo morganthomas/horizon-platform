@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , base-compat
 , ghc-prim
 , hspec
 , hspec-discover
 , lib
-, QuickCheck
 }:
 mkDerivation {
   pname = "base-compat-batteries";

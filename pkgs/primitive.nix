@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , base-orphans
 , deepseq
 , ghc-prim
 , lib
-, QuickCheck
 , quickcheck-classes-base
 , tagged
 , tasty

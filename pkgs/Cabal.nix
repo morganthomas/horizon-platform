@@ -1,8 +1,8 @@
 { mkDerivation
+, Cabal-syntax
 , array
 , base
 , bytestring
-, Cabal-syntax
 , containers
 , deepseq
 , directory

@@ -1,4 +1,4 @@
-{ mkDerivation, base, deepseq, lib, QuickCheck }:
+{ mkDerivation, QuickCheck, base, deepseq, lib }:
 mkDerivation {
   pname = "generic-random";
   version = "1.5.0.1";

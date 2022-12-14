@@ -1,17 +1,17 @@
 { mkDerivation
-, base
 , Cabal
+, Glob
+, QuickCheck
+, base
 , cabal-doctest
 , containers
 , criterion
 , doctest
-, Glob
 , lib
 , mtl
 , optparse-applicative
 , prettyprinter
 , prettyprinter-ansi-terminal
-, QuickCheck
 , template-haskell
 , text
 , transformers
@@ -52,6 +52,5 @@ mkDerivation {
   homepage = "https://github.com/cdepillabout/pretty-simple";
   description = "pretty printer for data types with a 'Show' instance";
   license = lib.licenses.bsd3;
-  mainProgram = "pretty-simple";
   broken = false;
 }

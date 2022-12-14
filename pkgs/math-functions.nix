@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , data-default-class
 , deepseq
@@ -6,7 +7,6 @@
 , gauge
 , lib
 , primitive
-, QuickCheck
 , random
 , tasty
 , tasty-hunit

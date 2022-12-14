@@ -1,12 +1,12 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , ghc-prim
 , hashable
-, HUnit
 , lib
 , mwc-random
 , primitive
-, QuickCheck
 , test-framework
 , test-framework-hunit
 , test-framework-quickcheck2

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bimap
 , bytestring
@@ -15,7 +16,6 @@
 , microlens-mtl
 , microlens-th
 , mtl
-, QuickCheck
 , stm
 , template-haskell
 , text

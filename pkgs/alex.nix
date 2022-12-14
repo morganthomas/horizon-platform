@@ -27,6 +27,5 @@ mkDerivation {
   homepage = "http://www.haskell.org/alex/";
   description = "Alex is a tool for generating lexical analysers in Haskell";
   license = lib.licenses.bsd3;
-  mainProgram = "alex";
   broken = false;
 }

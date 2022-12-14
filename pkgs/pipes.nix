@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , criterion
 , exceptions
@@ -6,7 +7,6 @@
 , mmorph
 , mtl
 , optparse-applicative
-, QuickCheck
 , test-framework
 , test-framework-quickcheck2
 , transformers

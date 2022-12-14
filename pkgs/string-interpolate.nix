@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , criterion
@@ -11,7 +12,6 @@
 , interpolate
 , lib
 , neat-interpolation
-, QuickCheck
 , quickcheck-instances
 , quickcheck-text
 , quickcheck-unicode

@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , base-compat
 , directory
 , hspec
 , hspec-discover
 , lib
-, QuickCheck
 , silently
 , stringbuilder
 , temporary
@@ -40,6 +40,5 @@ mkDerivation {
   homepage = "https://github.com/sol/markdown-unlit#readme";
   description = "Literate Haskell support for Markdown";
   license = lib.licenses.mit;
-  mainProgram = "markdown-unlit";
   broken = false;
 }

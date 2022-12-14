@@ -1,9 +1,9 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , bytestring
-, HUnit
 , lib
-, QuickCheck
 , tasty
 , tasty-hunit
 , tasty-quickcheck

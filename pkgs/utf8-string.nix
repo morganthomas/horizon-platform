@@ -1,4 +1,4 @@
-{ mkDerivation, base, bytestring, HUnit, lib }:
+{ mkDerivation, HUnit, base, bytestring, lib }:
 mkDerivation {
   pname = "utf8-string";
   version = "1.0.2";

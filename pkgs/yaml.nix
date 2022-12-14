@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , aeson
 , attoparsec
 , base
@@ -9,7 +10,6 @@
 , directory
 , filepath
 , hspec
-, HUnit
 , lib
 , libyaml
 , mockery

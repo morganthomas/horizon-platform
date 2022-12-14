@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , base-orphans
@@ -6,7 +7,6 @@
 , lib
 , primitive
 , primitive-addr
-, QuickCheck
 , quickcheck-classes-base
 , semigroupoids
 , semirings

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , containers
@@ -6,7 +7,6 @@
 , extra
 , inspection-testing
 , lib
-, QuickCheck
 , transformers
 }:
 mkDerivation {

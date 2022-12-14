@@ -1,7 +1,10 @@
 { mkDerivation
+, Cabal
+, Glob
+, HUnit
+, QuickCheck
 , base
 , base-compat
-, Cabal
 , code-page
 , containers
 , deepseq
@@ -11,16 +14,13 @@
 , filepath
 , ghc
 , ghc-paths
-, Glob
 , hspec
 , hspec-core
 , hspec-discover
-, HUnit
 , lib
 , mockery
 , pretty
 , process
-, QuickCheck
 , random
 , setenv
 , silently
@@ -34,6 +34,8 @@ mkDerivation {
   pname = "doctest-parallel";
   version = "0.2.5";
   sha256 = "ec63fdcb9b26084a52d8603d39745abfcfa621b6c99be66803d8bd4ba927be1c";
+  revision = "1";
+  editedCabalFile = "1q81qjz9af9a57xyxz6kci28shl4r9y3lrl3rckknhqwcy1ahqz4";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

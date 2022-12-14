@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , deepseq
 , hspec
 , lib
 , math-functions
 , primitive
-, QuickCheck
 , vector
 , vector-algorithms
 , vector-binary-instances

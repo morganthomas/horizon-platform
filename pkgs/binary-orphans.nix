@@ -1,9 +1,9 @@
 { mkDerivation
+, OneTuple
+, QuickCheck
 , base
 , binary
 , lib
-, OneTuple
-, QuickCheck
 , quickcheck-instances
 , tagged
 , tasty

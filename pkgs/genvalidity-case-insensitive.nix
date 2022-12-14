@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , case-insensitive
 , criterion
@@ -7,7 +8,6 @@
 , genvalidity-hspec
 , hspec
 , lib
-, QuickCheck
 , validity-case-insensitive
 }:
 mkDerivation {

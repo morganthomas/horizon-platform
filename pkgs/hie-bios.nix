@@ -36,6 +36,8 @@ mkDerivation {
   pname = "hie-bios";
   version = "0.11.0";
   sha256 = "9708bf4309e904771bf590dd4e683e0b5c18e486ed499be8ceff5119a25f0eef";
+  revision = "1";
+  editedCabalFile = "041zzf7m2xmg8l5ywrr62c0gxx3q0211yrsz8sg7c4s2456aghk0";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = false;
@@ -103,6 +105,5 @@ mkDerivation {
   homepage = "https://github.com/mpickering/hie-bios";
   description = "Set up a GHC API session";
   license = lib.licenses.bsd3;
-  mainProgram = "hie-bios";
   broken = false;
 }

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , criterion
@@ -12,7 +13,6 @@
 , genvalidity-vector
 , hspec
 , lib
-, QuickCheck
 , validity
 , validity-aeson
 }:

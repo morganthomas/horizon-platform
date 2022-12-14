@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , ghc-bignum
 , ghc-prim
 , lib
-, QuickCheck
 , smallcheck
 , tasty
 , tasty-hunit

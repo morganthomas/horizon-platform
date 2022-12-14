@@ -1,4 +1,6 @@
 { mkDerivation
+, QuickCheck
+, StateVar
 , array
 , base
 , bifunctors
@@ -10,8 +12,6 @@
 , hspec-discover
 , lib
 , profunctors
-, QuickCheck
-, StateVar
 , stm
 , tagged
 , template-haskell

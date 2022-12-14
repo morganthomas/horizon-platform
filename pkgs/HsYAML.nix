@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , containers
@@ -6,7 +7,6 @@
 , lib
 , mtl
 , parsec
-, QuickCheck
 , tasty
 , tasty-quickcheck
 , text

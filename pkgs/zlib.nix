@@ -1,8 +1,8 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , lib
-, QuickCheck
 , tasty
 , tasty-quickcheck
 , zlib

@@ -1,4 +1,7 @@
 { mkDerivation
+, Glob
+, HUnit
+, QuickCheck
 , aeson
 , ansi-wl-pprint
 , base
@@ -15,8 +18,6 @@
 , directory
 , exceptions
 , filepath
-, Glob
-, HUnit
 , js-chart
 , lib
 , microstache
@@ -24,7 +25,6 @@
 , mwc-random
 , optparse-applicative
 , parsec
-, QuickCheck
 , statistics
 , tasty
 , tasty-hunit
@@ -107,6 +107,5 @@ mkDerivation {
   homepage = "http://www.serpentine.com/criterion";
   description = "Robust, reliable performance measurement and analysis";
   license = lib.licenses.bsd3;
-  mainProgram = "criterion-report";
   broken = false;
 }

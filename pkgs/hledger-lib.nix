@@ -1,4 +1,6 @@
 { mkDerivation
+, Decimal
+, Glob
 , aeson
 , aeson-pretty
 , ansi-terminal
@@ -13,7 +15,6 @@
 , cmdargs
 , containers
 , data-default
-, Decimal
 , deepseq
 , directory
 , doclayout
@@ -21,7 +22,6 @@
 , extra
 , file-embed
 , filepath
-, Glob
 , hashtables
 , lib
 , megaparsec

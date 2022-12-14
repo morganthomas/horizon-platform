@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , array
 , assoc
 , base
@@ -19,7 +21,6 @@
 , generic-deriving
 , ghc-prim
 , hashable
-, HUnit
 , indexed-traversable
 , indexed-traversable-instances
 , kan-extensions
@@ -27,7 +28,6 @@
 , mtl
 , parallel
 , profunctors
-, QuickCheck
 , reflection
 , semigroupoids
 , simple-reflect

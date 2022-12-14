@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , async
 , attoparsec
 , base
@@ -14,7 +15,6 @@
 , network
 , primitive
 , process
-, QuickCheck
 , resourcet
 , stm
 , streaming-commons

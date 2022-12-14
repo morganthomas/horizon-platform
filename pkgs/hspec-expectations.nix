@@ -1,4 +1,4 @@
-{ mkDerivation, base, call-stack, HUnit, lib, nanospec }:
+{ mkDerivation, HUnit, base, call-stack, lib, nanospec }:
 mkDerivation {
   pname = "hspec-expectations";
   version = "0.8.2";

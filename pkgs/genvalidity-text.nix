@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , criterion
@@ -7,7 +8,6 @@
 , genvalidity-hspec
 , hspec
 , lib
-, QuickCheck
 , random
 , text
 , validity

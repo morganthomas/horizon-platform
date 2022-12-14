@@ -1,8 +1,8 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , lib
-, QuickCheck
 , random
 , semigroupoids
 }:

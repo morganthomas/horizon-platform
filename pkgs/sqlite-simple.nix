@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, Only
 , attoparsec
 , base
 , base16-bytestring
@@ -7,9 +9,7 @@
 , bytestring
 , containers
 , direct-sqlite
-, HUnit
 , lib
-, Only
 , template-haskell
 , text
 , time

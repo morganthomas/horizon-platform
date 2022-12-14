@@ -1,10 +1,10 @@
 { mkDerivation
+, SDL2
+, SDL2_image
 , base
 , bytestring
 , lib
-, SDL2
 , sdl2
-, SDL2_image
 , template-haskell
 , text
 }:
@@ -36,6 +36,5 @@ mkDerivation {
   hyperlinkSource = false;
   description = "Haskell bindings to SDL2_image";
   license = lib.licenses.mit;
-  mainProgram = "sdl2-image-example";
   broken = false;
 }

@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , case-insensitive
 , containers
 , lib
-, QuickCheck
 , test-framework
 , test-framework-quickcheck2
 , utf8-string

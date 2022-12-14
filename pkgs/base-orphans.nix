@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , ghc-prim
 , hspec
 , hspec-discover
 , lib
-, QuickCheck
 }:
 mkDerivation {
   pname = "base-orphans";

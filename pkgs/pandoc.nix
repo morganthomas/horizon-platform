@@ -1,4 +1,8 @@
 { mkDerivation
+, Diff
+, Glob
+, JuicyPixels
+, SHA
 , aeson
 , aeson-pretty
 , array
@@ -18,7 +22,6 @@
 , containers
 , data-default
 , deepseq
-, Diff
 , directory
 , doclayout
 , doctemplates
@@ -26,7 +29,6 @@
 , exceptions
 , file-embed
 , filepath
-, Glob
 , gridtables
 , haddock-library
 , hslua
@@ -41,7 +43,6 @@
 , http-types
 , ipynb
 , jira-wiki-markup
-, JuicyPixels
 , lib
 , lpeg
 , mtl
@@ -57,7 +58,6 @@
 , safe
 , scientific
 , servant-server
-, SHA
 , skylighting
 , skylighting-core
 , split
@@ -221,6 +221,5 @@ mkDerivation {
   homepage = "https://pandoc.org";
   description = "Conversion between markup formats";
   license = lib.licenses.gpl2Plus;
-  mainProgram = "pandoc";
   broken = false;
 }

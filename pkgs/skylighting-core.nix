@@ -1,4 +1,6 @@
 { mkDerivation
+, Diff
+, QuickCheck
 , aeson
 , attoparsec
 , base
@@ -9,13 +11,11 @@
 , colour
 , containers
 , criterion
-, Diff
 , directory
 , filepath
 , lib
 , mtl
 , pretty-show
-, QuickCheck
 , safe
 , tasty
 , tasty-golden

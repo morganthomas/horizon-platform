@@ -1,4 +1,6 @@
 { mkDerivation
+, Decimal
+, Diff
 , aeson
 , ansi-terminal
 , base
@@ -7,8 +9,6 @@
 , cmdargs
 , containers
 , data-default
-, Decimal
-, Diff
 , directory
 , extra
 , filepath
@@ -174,6 +174,5 @@ mkDerivation {
   homepage = "http://hledger.org";
   description = "Command-line interface for the hledger accounting system";
   license = lib.licenses.gpl3Only;
-  mainProgram = "hledger";
   broken = false;
 }
