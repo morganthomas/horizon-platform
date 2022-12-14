@@ -1,11 +1,11 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , criterion
 , deepseq
-, HUnit
 , lib
 , parsec
-, QuickCheck
 , tasty
 , tasty-hunit
 , tasty-quickcheck

@@ -73,6 +73,5 @@ mkDerivation {
   homepage = "https://github.com/ndmitchell/hlint#readme";
   description = "Source code suggestions";
   license = lib.licenses.bsd3;
-  mainProgram = "hlint";
   broken = false;
 }

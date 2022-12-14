@@ -1,14 +1,14 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , byteable
 , bytestring
 , criterion
 , cryptonite
 , ghc-prim
-, HUnit
 , lib
 , memory
-, QuickCheck
 , tasty
 , tasty-hunit
 , tasty-quickcheck

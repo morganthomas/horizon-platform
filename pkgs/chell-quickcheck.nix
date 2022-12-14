@@ -1,4 +1,4 @@
-{ mkDerivation, base, chell, lib, QuickCheck, random }:
+{ mkDerivation, QuickCheck, base, chell, lib, random }:
 mkDerivation {
   pname = "chell-quickcheck";
   version = "0.2.5.3";

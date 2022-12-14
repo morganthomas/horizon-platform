@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , containers
 , lib
 , primes
-, QuickCheck
 , quickcheck-instances
 , tasty
 , tasty-quickcheck

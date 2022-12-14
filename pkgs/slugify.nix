@@ -1,9 +1,9 @@
 { mkDerivation
+, QuickCheck
 , base
 , hspec
 , hspec-discover
 , lib
-, QuickCheck
 , text
 , unicode-transforms
 }:

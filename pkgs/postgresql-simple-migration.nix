@@ -49,6 +49,5 @@ mkDerivation {
   homepage = "https://github.com/ameingast/postgresql-simple-migration";
   description = "PostgreSQL Schema Migrations";
   license = lib.licenses.bsd3;
-  mainProgram = "migrate";
   broken = false;
 }

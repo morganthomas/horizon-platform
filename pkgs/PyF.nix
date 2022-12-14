@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , base
 , bytestring
 , deepseq
@@ -6,7 +7,6 @@
 , ghc
 , ghc-boot
 , hspec
-, HUnit
 , lib
 , mtl
 , parsec

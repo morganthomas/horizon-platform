@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, Only
 , aeson
 , attoparsec
 , base
@@ -10,10 +12,8 @@
 , cryptohash-md5
 , filepath
 , hashable
-, HUnit
 , inspection-testing
 , lib
-, Only
 , postgresql-libpq
 , scientific
 , tasty

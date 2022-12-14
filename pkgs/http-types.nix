@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , bytestring
@@ -6,7 +7,6 @@
 , doctest
 , hspec
 , lib
-, QuickCheck
 , quickcheck-instances
 , text
 }:

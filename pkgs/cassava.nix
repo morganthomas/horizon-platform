@@ -1,4 +1,7 @@
 { mkDerivation
+, HUnit
+, Only
+, QuickCheck
 , array
 , attoparsec
 , base
@@ -6,10 +9,7 @@
 , containers
 , deepseq
 , hashable
-, HUnit
 , lib
-, Only
-, QuickCheck
 , quickcheck-instances
 , scientific
 , test-framework

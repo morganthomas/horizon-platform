@@ -1,4 +1,4 @@
-{ mkDerivation, base, Cabal, directory, filepath, lib }:
+{ mkDerivation, Cabal, base, directory, filepath, lib }:
 mkDerivation {
   pname = "cabal-doctest";
   version = "1.0.9";

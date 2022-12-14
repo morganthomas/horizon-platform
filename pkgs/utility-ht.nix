@@ -1,9 +1,9 @@
 { mkDerivation
+, QuickCheck
 , base
 , doctest-exitcode-stdio
 , doctest-lib
 , lib
-, QuickCheck
 }:
 mkDerivation {
   pname = "utility-ht";

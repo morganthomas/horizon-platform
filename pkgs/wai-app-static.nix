@@ -102,6 +102,5 @@ mkDerivation {
   homepage = "http://www.yesodweb.com/book/web-application-interface";
   description = "WAI application for static serving";
   license = lib.licenses.mit;
-  mainProgram = "warp";
   broken = false;
 }

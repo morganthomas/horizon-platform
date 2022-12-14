@@ -1,10 +1,10 @@
 { mkDerivation
+, Diff
 , aeson
 , aeson-pretty
 , base
 , bytestring
 , containers
-, Diff
 , directory
 , extra
 , fetchgit

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , ansi-terminal
 , array
 , base
@@ -10,7 +11,6 @@
 , ghc
 , ghc-boot-th
 , lib
-, QuickCheck
 , quickcheck-io
 , random
 , setenv
@@ -72,6 +72,5 @@ mkDerivation {
   homepage = "http://hspec.github.io/";
   description = "A version of Hspec which is used to test Hspec itself";
   license = lib.licenses.mit;
-  mainProgram = "hspec-meta-discover";
   broken = false;
 }

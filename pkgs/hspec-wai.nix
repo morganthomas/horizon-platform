@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , base-compat
 , bytestring
@@ -8,7 +9,6 @@
 , hspec-expectations
 , http-types
 , lib
-, QuickCheck
 , text
 , transformers
 , wai

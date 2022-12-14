@@ -1,4 +1,4 @@
-{ mkDerivation, base, HTTP, lib }:
+{ mkDerivation, HTTP, base, lib }:
 mkDerivation {
   pname = "js-flot";
   version = "0.8.3";

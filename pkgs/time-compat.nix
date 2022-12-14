@@ -1,12 +1,12 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , base-compat
 , base-orphans
 , deepseq
 , hashable
-, HUnit
 , lib
-, QuickCheck
 , tagged
 , tasty
 , tasty-hunit

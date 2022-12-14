@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , base-orphans
 , comonad
@@ -6,7 +7,6 @@
 , hspec
 , hspec-discover
 , lib
-, QuickCheck
 , tagged
 , template-haskell
 , th-abstraction

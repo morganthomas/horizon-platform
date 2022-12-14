@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , base
 , bytestring
 , cereal
@@ -7,7 +8,6 @@
 , directory
 , filepath
 , ghc-prim
-, HUnit
 , lib
 , network
 , pipes

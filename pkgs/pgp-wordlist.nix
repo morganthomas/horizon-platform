@@ -1,10 +1,10 @@
 { mkDerivation
+, HUnit
 , base
 , bytestring
 , containers
 , deepseq
 , doctest
-, HUnit
 , lib
 , tasty
 , tasty-hunit

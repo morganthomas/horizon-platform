@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , array
 , async
 , base
@@ -10,7 +11,6 @@
 , lib
 , network
 , process
-, QuickCheck
 , random
 , stm
 , text

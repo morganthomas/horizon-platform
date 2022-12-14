@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , attoparsec
 , base
 , base-orphans
@@ -9,7 +10,6 @@
 , lib
 , mtl
 , parsec
-, QuickCheck
 , quickcheck-instances
 , scientific
 , text

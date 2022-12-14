@@ -1,16 +1,18 @@
 { mkDerivation
+, Cabal
+, Cabal-QuickCheck
+, Cabal-described
+, Cabal-syntax
+, Cabal-tree-diff
+, HTTP
+, QuickCheck
 , array
 , async
 , base
 , base16-bytestring
 , binary
 , bytestring
-, Cabal
-, Cabal-described
 , cabal-install-solver
-, Cabal-QuickCheck
-, Cabal-syntax
-, Cabal-tree-diff
 , containers
 , cryptohash-sha256
 , directory
@@ -20,7 +22,6 @@
 , filepath
 , hackage-security
 , hashable
-, HTTP
 , lib
 , lukko
 , mtl
@@ -29,7 +30,6 @@
 , pretty
 , pretty-show
 , process
-, QuickCheck
 , random
 , regex-base
 , regex-posix
@@ -147,6 +147,5 @@ mkDerivation {
   homepage = "http://www.haskell.org/cabal/";
   description = "The command-line interface for Cabal and Hackage";
   license = lib.licenses.bsd3;
-  mainProgram = "cabal";
   broken = false;
 }

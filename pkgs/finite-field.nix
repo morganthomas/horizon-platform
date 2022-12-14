@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , deepseq
 , hashable
 , lib
 , primes
-, QuickCheck
 , singletons
 , tasty
 , tasty-hunit

@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , genvalidity
 , genvalidity-hspec
 , hspec
 , lib
-, QuickCheck
 , validity
 , validity-vector
 , vector

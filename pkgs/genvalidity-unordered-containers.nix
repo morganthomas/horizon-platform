@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , genvalidity
 , genvalidity-hspec
 , hashable
 , hspec
 , lib
-, QuickCheck
 , unordered-containers
 , validity
 , validity-unordered-containers

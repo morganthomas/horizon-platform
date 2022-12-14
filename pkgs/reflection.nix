@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , hspec
 , hspec-discover
 , lib
-, QuickCheck
 , template-haskell
 }:
 mkDerivation {

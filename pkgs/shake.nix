@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , binary
 , bytestring
@@ -15,7 +16,6 @@
 , lib
 , primitive
 , process
-, QuickCheck
 , random
 , time
 , transformers
@@ -110,6 +110,5 @@ mkDerivation {
   homepage = "https://shakebuild.com";
   description = "Build system library, like Make, but more accurate dependencies";
   license = lib.licenses.bsd3;
-  mainProgram = "shake";
   broken = false;
 }

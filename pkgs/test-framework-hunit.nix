@@ -1,7 +1,7 @@
 { mkDerivation
+, HUnit
 , base
 , extensible-exceptions
-, HUnit
 , lib
 , test-framework
 }:

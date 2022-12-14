@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , bytestring
@@ -8,7 +9,6 @@
 , fetchgit
 , filepath
 , lib
-, QuickCheck
 , tasty
 , tasty-bench
 , tasty-quickcheck

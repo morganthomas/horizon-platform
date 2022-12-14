@@ -1,9 +1,9 @@
 { mkDerivation
+, QuickCheck
 , ansi-wl-pprint
 , base
 , lib
 , process
-, QuickCheck
 , transformers
 , transformers-compat
 }:

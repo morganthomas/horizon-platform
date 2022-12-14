@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , base-orphans
 , containers
@@ -6,7 +7,6 @@
 , indexed-traversable
 , indexed-traversable-instances
 , lib
-, QuickCheck
 , quickcheck-instances
 , tasty
 , tasty-quickcheck

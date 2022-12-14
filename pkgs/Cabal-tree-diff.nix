@@ -1,7 +1,7 @@
 { mkDerivation
-, base
 , Cabal
 , Cabal-syntax
+, base
 , fetchgit
 , lib
 , tree-diff

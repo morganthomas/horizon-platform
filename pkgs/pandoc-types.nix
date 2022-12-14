@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , aeson
 , base
 , bytestring
@@ -6,9 +8,7 @@
 , criterion
 , deepseq
 , ghc-prim
-, HUnit
 , lib
-, QuickCheck
 , string-qq
 , syb
 , test-framework

@@ -1,4 +1,4 @@
-{ mkDerivation, base, Cabal, directory, lib }:
+{ mkDerivation, Cabal, base, directory, lib }:
 mkDerivation {
   pname = "ghc-paths";
   version = "0.1.0.12";

@@ -1,4 +1,4 @@
-{ mkDerivation, base, hspec, HUnit, lib, QuickCheck, text, time }:
+{ mkDerivation, HUnit, QuickCheck, base, hspec, lib, text, time }:
 mkDerivation {
   pname = "path-pieces";
   version = "0.2.1";

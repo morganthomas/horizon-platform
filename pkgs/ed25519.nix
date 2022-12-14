@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , criterion
@@ -10,7 +11,6 @@
 , ghc-prim
 , hlint
 , lib
-, QuickCheck
 }:
 mkDerivation {
   pname = "ed25519";

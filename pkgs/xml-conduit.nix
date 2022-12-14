@@ -1,10 +1,11 @@
 { mkDerivation
+, Cabal
+, HUnit
 , attoparsec
 , base
 , blaze-html
 , blaze-markup
 , bytestring
-, Cabal
 , cabal-doctest
 , conduit
 , conduit-extra
@@ -13,7 +14,6 @@
 , deepseq
 , doctest
 , hspec
-, HUnit
 , lib
 , resourcet
 , text

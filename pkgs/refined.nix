@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , bytestring
@@ -7,7 +8,6 @@
 , hashable
 , lib
 , mtl
-, QuickCheck
 , template-haskell
 , text
 , these-skinny

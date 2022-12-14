@@ -13,8 +13,8 @@ mkDerivation {
   pname = "vector-binary-instances";
   version = "0.2.5.2";
   sha256 = "b72e3b2109a02c75cb8f07ef0aabba0dba6ec0148e21321a0a2b2197c9a2f54d";
-  revision = "2";
-  editedCabalFile = "149gn5n722r2skj5w46av3944fbw3882qkaydq7asm6zx5kc0nj6";
+  revision = "3";
+  editedCabalFile = "0av0k2gn90mf5ai74575bd368x73ljnr7xlkwsqmrs6zdzkw0i83";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , containers
 , lib
 , mtl
-, QuickCheck
 , random
 , syb
 }:

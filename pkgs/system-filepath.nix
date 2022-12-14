@@ -1,12 +1,12 @@
 { mkDerivation
+, Cabal
+, QuickCheck
 , base
 , bytestring
-, Cabal
 , chell
 , chell-quickcheck
 , deepseq
 , lib
-, QuickCheck
 , text
 }:
 mkDerivation {

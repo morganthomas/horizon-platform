@@ -1,7 +1,7 @@
 { mkDerivation
+, QuickCheck
 , base
 , lib
-, QuickCheck
 , random
 , test-framework
 , test-framework-quickcheck2

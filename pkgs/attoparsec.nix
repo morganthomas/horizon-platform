@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , bytestring
@@ -11,7 +12,6 @@
 , http-types
 , lib
 , parsec
-, QuickCheck
 , quickcheck-unicode
 , scientific
 , tasty

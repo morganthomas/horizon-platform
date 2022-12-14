@@ -1,6 +1,6 @@
 { mkDerivation
-, base
 , Cabal
+, base
 , cabal-doctest
 , containers
 , doctest

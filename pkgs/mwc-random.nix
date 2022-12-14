@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , doctest
@@ -7,7 +8,6 @@
 , math-functions
 , mersenne-random
 , primitive
-, QuickCheck
 , random
 , tasty
 , tasty-hunit

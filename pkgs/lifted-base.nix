@@ -1,7 +1,7 @@
 { mkDerivation
+, HUnit
 , base
 , criterion
-, HUnit
 , lib
 , monad-control
 , monad-peel

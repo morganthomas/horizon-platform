@@ -21,6 +21,5 @@ mkDerivation {
   homepage = "https://github.com/tarleb/jira-wiki-markup";
   description = "Handle Jira wiki markup";
   license = lib.licenses.mit;
-  mainProgram = "jira-wiki-markup";
   broken = false;
 }

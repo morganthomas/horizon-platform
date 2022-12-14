@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , deepseq
 , exceptions
@@ -8,7 +9,6 @@
 , monad-control
 , mtl
 , profunctors
-, QuickCheck
 , template-haskell
 , text
 , transformers

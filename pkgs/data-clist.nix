@@ -1,4 +1,4 @@
-{ mkDerivation, base, deepseq, lib, QuickCheck }:
+{ mkDerivation, QuickCheck, base, deepseq, lib }:
 mkDerivation {
   pname = "data-clist";
   version = "0.2";

@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , deepseq
 , hspec
 , lib
-, QuickCheck
 , quickcheck-instances
 , text
 , utf8-string

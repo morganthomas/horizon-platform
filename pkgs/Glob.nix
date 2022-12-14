@@ -1,12 +1,12 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , containers
 , directory
 , dlist
 , filepath
-, HUnit
 , lib
-, QuickCheck
 , test-framework
 , test-framework-hunit
 , test-framework-quickcheck2

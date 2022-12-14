@@ -18,6 +18,5 @@ mkDerivation {
   homepage = "https://github.com/co-log/co-log-polysemy";
   description = "Composable Contravariant Comonadic Logging Library";
   license = lib.licenses.mpl20;
-  mainProgram = "play-colog-poly";
   broken = false;
 }

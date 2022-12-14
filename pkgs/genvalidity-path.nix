@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , criterion
 , genvalidity
@@ -7,7 +8,6 @@
 , hspec
 , lib
 , path
-, QuickCheck
 , validity-path
 }:
 mkDerivation {

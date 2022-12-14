@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , clock
 , criterion
@@ -7,7 +8,6 @@
 , hspec
 , lib
 , old-locale
-, QuickCheck
 , scientific
 , text
 , time

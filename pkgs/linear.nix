@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , adjunctions
 , base
 , base-orphans
@@ -11,7 +12,6 @@
 , distributive
 , ghc-prim
 , hashable
-, HUnit
 , indexed-traversable
 , lens
 , lib

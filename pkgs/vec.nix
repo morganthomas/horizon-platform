@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , adjunctions
 , base
 , base-compat
@@ -11,7 +12,6 @@
 , indexed-traversable
 , inspection-testing
 , lib
-, QuickCheck
 , semigroupoids
 , tagged
 , transformers

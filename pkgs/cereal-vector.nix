@@ -1,9 +1,9 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , cereal
 , lib
-, QuickCheck
 , vector
 }:
 mkDerivation {

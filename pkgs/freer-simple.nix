@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , criterion
 , extensible-effects
@@ -6,7 +7,6 @@
 , lib
 , mtl
 , natural-transformation
-, QuickCheck
 , tasty
 , tasty-hunit
 , tasty-quickcheck
@@ -51,6 +51,5 @@ mkDerivation {
   homepage = "https://github.com/lexi-lambda/freer-simple";
   description = "A friendly effect system for Haskell";
   license = lib.licenses.bsd3;
-  mainProgram = "freer-simple-examples";
   broken = false;
 }

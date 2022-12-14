@@ -1,16 +1,16 @@
 { mkDerivation
+, Glob
+, QuickCheck
 , base
 , criterion
 , deepseq
 , doctest
 , exact-pi
-, Glob
 , hspec
 , hspec-discover
 , ieee754
 , lib
 , numtype-dk
-, QuickCheck
 , template-haskell
 , vector
 }:

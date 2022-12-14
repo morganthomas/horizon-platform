@@ -1,9 +1,9 @@
 { mkDerivation
+, QuickCheck
 , base
 , hspec
 , hspec-core
 , lib
-, QuickCheck
 , tasty
 , tasty-quickcheck
 , tasty-smallcheck

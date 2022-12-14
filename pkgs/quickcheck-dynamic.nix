@@ -1,4 +1,4 @@
-{ mkDerivation, base, lib, mtl, QuickCheck, random }:
+{ mkDerivation, QuickCheck, base, lib, mtl, random }:
 mkDerivation {
   pname = "quickcheck-dynamic";
   version = "2.0.0";

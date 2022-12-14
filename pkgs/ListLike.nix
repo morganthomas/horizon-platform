@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , array
 , base
 , bytestring
@@ -6,9 +8,7 @@
 , deepseq
 , dlist
 , fmlist
-, HUnit
 , lib
-, QuickCheck
 , random
 , text
 , utf8-string

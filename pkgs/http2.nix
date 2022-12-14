@@ -1,4 +1,5 @@
 { mkDerivation
+, Glob
 , aeson
 , aeson-pretty
 , array
@@ -12,7 +13,6 @@
 , directory
 , filepath
 , gauge
-, Glob
 , heaps
 , hspec
 , hspec-discover

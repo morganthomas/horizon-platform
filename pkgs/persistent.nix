@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , attoparsec
 , base
@@ -18,7 +19,6 @@
 , monad-logger
 , mtl
 , path-pieces
-, QuickCheck
 , quickcheck-instances
 , resource-pool
 , resourcet
@@ -40,8 +40,8 @@ mkDerivation {
   pname = "persistent";
   version = "2.14.3.0";
   sha256 = "1288244f62d334dbe65cae6157098de38419b8445d5cc227281e688310189a19";
-  revision = "1";
-  editedCabalFile = "1qbi74kmjk07wgib2y6pscjbr8mazlj490928h5bvahw10jx3611";
+  revision = "2";
+  editedCabalFile = "0mv747s5g64jir461i3say83d9bfh0wl05qfwllpgq3g2nxc35p7";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

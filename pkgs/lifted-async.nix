@@ -1,9 +1,9 @@
 { mkDerivation
+, HUnit
 , async
 , base
 , constraints
 , deepseq
-, HUnit
 , lib
 , lifted-base
 , monad-control

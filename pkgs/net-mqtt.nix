@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , async
 , attoparsec
 , attoparsec-binary
@@ -11,12 +13,10 @@
 , connection
 , containers
 , deepseq
-, HUnit
 , lib
 , network-conduit-tls
 , network-uri
 , optparse-applicative
-, QuickCheck
 , stm
 , tasty
 , tasty-hunit

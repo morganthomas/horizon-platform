@@ -19,6 +19,5 @@ mkDerivation {
   homepage = "https://github.com/MonadicSystems/lucid-alpine#readme";
   description = "Use Alpine.js in your lucid templates";
   license = lib.licenses.bsd3;
-  mainProgram = "lucid-alpine-exe";
   broken = false;
 }

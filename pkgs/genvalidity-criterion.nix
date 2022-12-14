@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , criterion
 , deepseq
 , genvalidity
 , lib
-, QuickCheck
 , vector
 }:
 mkDerivation {

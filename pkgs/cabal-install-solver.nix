@@ -1,9 +1,9 @@
 { mkDerivation
+, Cabal
+, Cabal-syntax
 , array
 , base
 , bytestring
-, Cabal
-, Cabal-syntax
 , containers
 , edit-distance
 , filepath

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , base-compat
@@ -21,7 +22,6 @@
 , mtl
 , network
 , network-uri
-, QuickCheck
 , resourcet
 , safe
 , servant
@@ -126,6 +126,5 @@ mkDerivation {
   homepage = "http://docs.servant.dev/";
   description = "A family of combinators for defining webservices APIs and serving them";
   license = lib.licenses.bsd3;
-  mainProgram = "greet";
   broken = false;
 }

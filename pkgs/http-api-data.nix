@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , attoparsec
 , attoparsec-iso8601
 , base
@@ -10,9 +12,7 @@
 , hspec
 , hspec-discover
 , http-types
-, HUnit
 , lib
-, QuickCheck
 , quickcheck-instances
 , tagged
 , text

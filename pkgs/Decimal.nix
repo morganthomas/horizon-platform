@@ -1,9 +1,9 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , deepseq
-, HUnit
 , lib
-, QuickCheck
 , test-framework
 , test-framework-hunit
 , test-framework-quickcheck2

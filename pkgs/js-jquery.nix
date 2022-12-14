@@ -1,4 +1,4 @@
-{ mkDerivation, base, HTTP, lib }:
+{ mkDerivation, HTTP, base, lib }:
 mkDerivation {
   pname = "js-jquery";
   version = "3.3.1";

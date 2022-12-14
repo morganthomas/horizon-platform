@@ -1,4 +1,5 @@
 { mkDerivation
+, SDL2_mixer
 , base
 , bytestring
 , data-default-class
@@ -6,7 +7,6 @@
 , lifted-base
 , monad-control
 , sdl2
-, SDL2_mixer
 , template-haskell
 , vector
 }:

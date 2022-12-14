@@ -1,4 +1,4 @@
-{ mkDerivation, base, bytestring, Cabal, lib, postgresql, unix }:
+{ mkDerivation, Cabal, base, bytestring, lib, postgresql, unix }:
 mkDerivation {
   pname = "postgresql-libpq";
   version = "0.9.4.3";

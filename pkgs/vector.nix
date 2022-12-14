@@ -1,12 +1,12 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , base-orphans
 , deepseq
 , doctest
-, HUnit
 , lib
 , primitive
-, QuickCheck
 , random
 , tasty
 , tasty-bench

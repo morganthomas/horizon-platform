@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , bytestring
 , containers
@@ -6,10 +8,8 @@
 , gauge
 , hashable
 , hspec
-, HUnit
 , lib
 , mwc-random
-, QuickCheck
 , split
 , text
 , transformers

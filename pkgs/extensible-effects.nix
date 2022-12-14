@@ -1,12 +1,12 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , criterion
 , doctest
-, HUnit
 , lib
 , monad-control
 , mtl
-, QuickCheck
 , silently
 , test-framework
 , test-framework-hunit

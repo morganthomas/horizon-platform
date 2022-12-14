@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , array
 , async
 , auto-update
@@ -17,12 +19,10 @@
 , http-date
 , http-types
 , http2
-, HUnit
 , iproute
 , lib
 , network
 , process
-, QuickCheck
 , simple-sendfile
 , stm
 , streaming-commons

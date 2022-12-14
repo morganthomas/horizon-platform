@@ -1,13 +1,13 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , bytestring
 , cereal
 , crypto-api
 , directory
 , filepath
-, HUnit
 , lib
-, QuickCheck
 , test-framework
 , test-framework-hunit
 , test-framework-quickcheck2

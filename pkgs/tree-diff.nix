@@ -1,4 +1,6 @@
 { mkDerivation
+, Diff
+, QuickCheck
 , aeson
 , ansi-terminal
 , ansi-wl-pprint
@@ -9,14 +11,12 @@
 , containers
 , criterion
 , deepseq
-, Diff
 , hashable
 , lib
 , parsec
 , parsers
 , pretty
 , primitive
-, QuickCheck
 , scientific
 , semialign
 , strict

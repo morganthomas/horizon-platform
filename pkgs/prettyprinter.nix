@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , ansi-wl-pprint
 , base
 , base-compat
@@ -10,7 +11,6 @@
 , lib
 , mtl
 , pgp-wordlist
-, QuickCheck
 , quickcheck-instances
 , random
 , tasty

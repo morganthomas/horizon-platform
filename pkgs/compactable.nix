@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , base-compat
@@ -12,7 +13,6 @@
 , keys
 , lens
 , lib
-, QuickCheck
 , semigroupoids
 , sydtest
 , sydtest-discover

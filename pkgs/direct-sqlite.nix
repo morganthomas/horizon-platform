@@ -1,9 +1,9 @@
 { mkDerivation
+, HUnit
 , base
 , base16-bytestring
 , bytestring
 , directory
-, HUnit
 , lib
 , temporary
 , text

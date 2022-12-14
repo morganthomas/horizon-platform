@@ -1,4 +1,4 @@
-{ mkDerivation, base, containers, HUnit, lib, text }:
+{ mkDerivation, HUnit, base, containers, lib, text }:
 mkDerivation {
   pname = "emojis";
   version = "0.1.2";

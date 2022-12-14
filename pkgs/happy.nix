@@ -20,6 +20,5 @@ mkDerivation {
   homepage = "https://www.haskell.org/happy/";
   description = "Happy is a parser generator for Haskell";
   license = lib.licenses.bsd2;
-  mainProgram = "happy";
   broken = false;
 }

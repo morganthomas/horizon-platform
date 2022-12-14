@@ -1,10 +1,10 @@
 { mkDerivation
+, SDL2
+, SDL2_ttf
 , base
 , bytestring
 , lib
-, SDL2
 , sdl2
-, SDL2_ttf
 , template-haskell
 , text
 , th-abstraction

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , async
 , base
 , deepseq
@@ -6,7 +7,6 @@
 , lib
 , lifted-base
 , monad-control
-, QuickCheck
 , stm
 , transformers
 , transformers-base

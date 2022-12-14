@@ -1,10 +1,10 @@
 { mkDerivation
+, SHA
 , base
 , base16-bytestring
 , bytestring
 , criterion
 , lib
-, SHA
 , tasty
 , tasty-hunit
 , tasty-quickcheck

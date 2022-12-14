@@ -76,6 +76,5 @@ mkDerivation {
   homepage = "http://docs.servant.dev/";
   description = "generate API docs for your servant webservice";
   license = lib.licenses.bsd3;
-  mainProgram = "greet-docs";
   broken = false;
 }

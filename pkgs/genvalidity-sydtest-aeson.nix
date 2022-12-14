@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , bytestring
@@ -8,7 +9,6 @@
 , genvalidity-sydtest
 , genvalidity-text
 , lib
-, QuickCheck
 , sydtest
 , sydtest-discover
 , text

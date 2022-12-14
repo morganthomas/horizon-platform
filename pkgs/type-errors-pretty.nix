@@ -1,4 +1,4 @@
-{ mkDerivation, base, doctest, Glob, lib }:
+{ mkDerivation, Glob, base, doctest, lib }:
 mkDerivation {
   pname = "type-errors-pretty";
   version = "0.0.1.2";

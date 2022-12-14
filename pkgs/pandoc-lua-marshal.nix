@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , containers
@@ -8,7 +9,6 @@
 , lib
 , lua
 , pandoc-types
-, QuickCheck
 , safe
 , tasty
 , tasty-hunit

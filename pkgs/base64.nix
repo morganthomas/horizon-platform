@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , base64-bytestring
 , bytestring
 , criterion
 , deepseq
 , lib
-, QuickCheck
 , random-bytestring
 , tasty
 , tasty-hunit

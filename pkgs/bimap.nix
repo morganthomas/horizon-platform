@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , deepseq
 , exceptions
 , lib
-, QuickCheck
 , template-haskell
 }:
 mkDerivation {

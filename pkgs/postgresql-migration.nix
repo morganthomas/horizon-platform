@@ -50,6 +50,5 @@ mkDerivation {
   homepage = "https://github.com/andrevdm/postgresql-migration";
   description = "PostgreSQL Schema Migrations";
   license = lib.licenses.bsd3;
-  mainProgram = "migrate";
   broken = false;
 }

@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , async
 , base
 , base-compat
@@ -8,7 +9,6 @@
 , containers
 , criterion
 , deepseq
-, HUnit
 , lib
 , math-functions
 , process

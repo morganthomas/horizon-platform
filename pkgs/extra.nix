@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , clock
 , directory
 , filepath
 , lib
 , process
-, QuickCheck
 , quickcheck-instances
 , time
 , unix

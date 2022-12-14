@@ -1,7 +1,7 @@
 { mkDerivation
+, QuickCheck
 , base
 , lib
-, QuickCheck
 , tasty
 , tasty-hunit
 , tasty-quickcheck

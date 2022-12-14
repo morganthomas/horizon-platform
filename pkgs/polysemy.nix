@@ -1,7 +1,8 @@
 { mkDerivation
+, Cabal
+, QuickCheck
 , async
 , base
-, Cabal
 , cabal-doctest
 , containers
 , criterion
@@ -14,7 +15,6 @@
 , inspection-testing
 , lib
 , mtl
-, QuickCheck
 , stm
 , syb
 , template-haskell

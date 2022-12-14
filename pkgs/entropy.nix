@@ -1,7 +1,7 @@
 { mkDerivation
+, Cabal
 , base
 , bytestring
-, Cabal
 , directory
 , filepath
 , lib

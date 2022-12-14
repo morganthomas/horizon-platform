@@ -1,4 +1,5 @@
 { mkDerivation
+, HUnit
 , attoparsec
 , base
 , base-compat
@@ -9,7 +10,6 @@
 , deepseq
 , deepseq-generics
 , hedgehog
-, HUnit
 , lib
 , network-uri
 , safe

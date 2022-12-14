@@ -1,4 +1,6 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , base-compat
 , code-page
@@ -12,11 +14,9 @@
 , hspec
 , hspec-core
 , hspec-discover
-, HUnit
 , lib
 , mockery
 , process
-, QuickCheck
 , setenv
 , silently
 , stringbuilder
@@ -96,6 +96,5 @@ mkDerivation {
   homepage = "https://github.com/sol/doctest#readme";
   description = "Test interactive Haskell examples";
   license = lib.licenses.mit;
-  mainProgram = "doctest";
   broken = false;
 }

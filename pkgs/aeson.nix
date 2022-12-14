@@ -1,4 +1,7 @@
 { mkDerivation
+, Diff
+, OneTuple
+, QuickCheck
 , attoparsec
 , base
 , base-compat
@@ -9,7 +12,6 @@
 , containers
 , data-fix
 , deepseq
-, Diff
 , directory
 , dlist
 , filepath
@@ -20,9 +22,7 @@
 , indexed-traversable
 , integer-logarithms
 , lib
-, OneTuple
 , primitive
-, QuickCheck
 , quickcheck-instances
 , scientific
 , semialign

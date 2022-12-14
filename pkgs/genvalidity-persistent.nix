@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , containers
 , criterion
@@ -11,7 +12,6 @@
 , lib
 , persistent
 , persistent-template
-, QuickCheck
 , validity-containers
 , validity-persistent
 }:

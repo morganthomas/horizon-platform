@@ -1,8 +1,8 @@
 { mkDerivation
+, QuickCheck
 , base
 , doctest-lib
 , lib
-, QuickCheck
 , semigroups
 , transformers
 }:

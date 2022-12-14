@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , appar
 , base
 , byteorder
@@ -8,7 +9,6 @@
 , hspec
 , lib
 , network
-, QuickCheck
 , safe
 }:
 mkDerivation {

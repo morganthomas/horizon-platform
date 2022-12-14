@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , directory
 , filepath
 , hspec-meta
 , lib
 , mockery
-, QuickCheck
 }:
 mkDerivation {
   pname = "hspec-discover";
@@ -35,6 +35,5 @@ mkDerivation {
   homepage = "http://hspec.github.io/";
   description = "Automatically discover and run Hspec tests";
   license = lib.licenses.mit;
-  mainProgram = "hspec-discover";
   broken = false;
 }

@@ -1,4 +1,6 @@
 { mkDerivation
+, Diff
+, QuickCheck
 , aeson
 , aeson-pretty
 , ansi-terminal
@@ -14,7 +16,6 @@
 , cryptohash-sha256
 , data-fix
 , deepseq
-, Diff
 , directory
 , doctest
 , dotgen
@@ -45,7 +46,6 @@
 , prettyprinter
 , prettyprinter-ansi-terminal
 , profunctors
-, QuickCheck
 , quickcheck-instances
 , repline
 , scientific
@@ -75,8 +75,8 @@ mkDerivation {
   pname = "dhall";
   version = "1.41.2";
   sha256 = "6a9a026e698e5c1a1e103fcb376e8494615b03ef2450f0b6c5e6b43877cea592";
-  revision = "2";
-  editedCabalFile = "18jh1c2zinwglih5gc8av2szicyywq5q0kl2h5200sm67nxmask9";
+  revision = "4";
+  editedCabalFile = "0innb3cn98ynb8bd83jdyrm64ij7wcvajg5qcwzdwbyzpr62anfx";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = true;
@@ -316,6 +316,5 @@ mkDerivation {
   hyperlinkSource = false;
   description = "A configuration language guaranteed to terminate";
   license = lib.licenses.bsd3;
-  mainProgram = "dhall";
   broken = false;
 }

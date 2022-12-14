@@ -1,4 +1,4 @@
-{ mkDerivation, base, lib, MonadRandom, random }:
+{ mkDerivation, MonadRandom, base, lib, random }:
 mkDerivation {
   pname = "random-shuffle";
   version = "0.0.4";

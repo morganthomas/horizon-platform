@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , bytestring
@@ -8,7 +9,6 @@
 , hslua-marshalling
 , lib
 , mtl
-, QuickCheck
 , quickcheck-instances
 , scientific
 , tasty

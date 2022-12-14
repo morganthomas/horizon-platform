@@ -1,11 +1,11 @@
 { mkDerivation
+, HUnit
+, QuickCheck
 , base
 , bytestring
 , deepseq
 , ghc-prim
-, HUnit
 , lib
-, QuickCheck
 , test-framework
 , test-framework-hunit
 , test-framework-quickcheck2

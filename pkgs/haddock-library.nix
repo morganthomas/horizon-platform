@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , base-compat
 , containers
@@ -10,7 +11,6 @@
 , lib
 , optparse-applicative
 , parsec
-, QuickCheck
 , text
 , tree-diff
 }:

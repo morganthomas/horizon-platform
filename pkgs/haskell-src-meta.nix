@@ -1,8 +1,8 @@
 { mkDerivation
+, HUnit
 , base
 , containers
 , haskell-src-exts
-, HUnit
 , lib
 , pretty
 , syb

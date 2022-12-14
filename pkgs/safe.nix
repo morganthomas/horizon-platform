@@ -1,4 +1,4 @@
-{ mkDerivation, base, deepseq, lib, QuickCheck }:
+{ mkDerivation, QuickCheck, base, deepseq, lib }:
 mkDerivation {
   pname = "safe";
   version = "0.3.19";

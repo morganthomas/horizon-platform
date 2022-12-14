@@ -1,4 +1,4 @@
-{ mkDerivation, base, binary, bytestring, lib, QuickCheck, text }:
+{ mkDerivation, QuickCheck, base, binary, bytestring, lib, text }:
 mkDerivation {
   pname = "quickcheck-text";
   version = "0.1.2.1";

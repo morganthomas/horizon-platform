@@ -1,4 +1,4 @@
-{ mkDerivation, base, containers, lib, QuickCheck, transformers }:
+{ mkDerivation, QuickCheck, base, containers, lib, transformers }:
 mkDerivation {
   pname = "quickcheck-classes-base";
   version = "0.6.2.0";

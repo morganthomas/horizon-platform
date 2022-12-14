@@ -1,8 +1,8 @@
 { mkDerivation
+, HUnit
 , base
 , deepseq
 , ghc-prim
-, HUnit
 , lib
 , test-framework
 , test-framework-hunit

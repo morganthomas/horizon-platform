@@ -20,6 +20,5 @@ mkDerivation {
   homepage = "https://github.com/obsidiansystems/constraints-extras";
   description = "Utility package for constraints";
   license = lib.licenses.bsd3;
-  mainProgram = "readme";
   broken = false;
 }

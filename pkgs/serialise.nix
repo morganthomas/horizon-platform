@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , array
 , base
@@ -19,7 +20,6 @@
 , lib
 , pretty
 , primitive
-, QuickCheck
 , quickcheck-instances
 , semigroups
 , store

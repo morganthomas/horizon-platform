@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , bytestring
 , deepseq
@@ -8,7 +9,6 @@
 , lib
 , path
 , path-io
-, QuickCheck
 , split
 , tasty-bench
 , text

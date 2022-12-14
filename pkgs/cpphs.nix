@@ -20,6 +20,5 @@ mkDerivation {
   homepage = "http://projects.haskell.org/cpphs/";
   description = "A liberalised re-implementation of cpp, the C pre-processor";
   license = "LGPL";
-  mainProgram = "cpphs";
   broken = false;
 }

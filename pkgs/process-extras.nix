@@ -1,12 +1,12 @@
 { mkDerivation
+, HUnit
+, ListLike
 , base
 , bytestring
 , data-default
 , deepseq
 , generic-deriving
-, HUnit
 , lib
-, ListLike
 , mtl
 , process
 , text

@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , aeson
 , base
 , bytestring
@@ -12,7 +13,6 @@
 , hspec
 , lib
 , mtl
-, QuickCheck
 , template-haskell
 , text
 , validity

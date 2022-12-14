@@ -18,6 +18,5 @@ mkDerivation {
   homepage = "http://code.haskell.org/~malcolm/hscolour/";
   description = "Colourise Haskell code";
   license = "LGPL";
-  mainProgram = "HsColour";
   broken = false;
 }

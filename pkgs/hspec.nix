@@ -1,10 +1,10 @@
 { mkDerivation
+, QuickCheck
 , base
 , hspec-core
 , hspec-discover
 , hspec-expectations
 , lib
-, QuickCheck
 }:
 mkDerivation {
   pname = "hspec";

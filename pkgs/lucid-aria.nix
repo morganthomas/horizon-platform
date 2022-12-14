@@ -1,4 +1,4 @@
-{ mkDerivation, base, hspec, HUnit, lib, lucid, text }:
+{ mkDerivation, HUnit, base, hspec, lib, lucid, text }:
 mkDerivation {
   pname = "lucid-aria";
   version = "0.1.0.1";

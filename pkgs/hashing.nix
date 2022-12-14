@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , array
 , base
 , bytestring
 , cryptonite
 , lib
 , mtl
-, QuickCheck
 , template-haskell
 }:
 mkDerivation {
@@ -44,6 +44,5 @@ mkDerivation {
   homepage = "https://github.com/wangbj/hashing";
   description = "A pure haskell library implements several hash algorithms";
   license = lib.licenses.mit;
-  mainProgram = "hashing-exe";
   broken = false;
 }

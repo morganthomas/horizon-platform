@@ -1,27 +1,27 @@
 { mkDerivation
+, Cabal
+, Glob
+, HUnit
+, QuickCheck
 , aeson
 , base
 , bifunctors
 , bytestring
-, Cabal
 , containers
 , cryptonite
 , deepseq
 , directory
 , filepath
-, Glob
 , hspec
 , hspec-discover
 , http-client
 , http-client-tls
 , http-types
-, HUnit
 , infer-license
 , interpolate
 , lib
 , mockery
 , pretty
-, QuickCheck
 , scientific
 , template-haskell
 , temporary
@@ -130,6 +130,5 @@ mkDerivation {
   homepage = "https://github.com/sol/hpack#readme";
   description = "A modern format for Haskell packages";
   license = lib.licenses.mit;
-  mainProgram = "hpack";
   broken = false;
 }

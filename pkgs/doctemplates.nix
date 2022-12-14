@@ -1,4 +1,6 @@
 { mkDerivation
+, Glob
+, HsYAML
 , aeson
 , base
 , bytestring
@@ -6,8 +8,6 @@
 , criterion
 , doclayout
 , filepath
-, Glob
-, HsYAML
 , lib
 , mtl
 , parsec

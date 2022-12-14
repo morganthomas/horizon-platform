@@ -1,4 +1,4 @@
-{ mkDerivation, base, doctest, Glob, lib }:
+{ mkDerivation, Glob, base, doctest, lib }:
 mkDerivation {
   pname = "co-log-core";
   version = "0.3.1.0";

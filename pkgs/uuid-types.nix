@@ -1,4 +1,5 @@
 { mkDerivation
+, QuickCheck
 , base
 , binary
 , bytestring
@@ -6,7 +7,6 @@
 , ghc-byteorder
 , hashable
 , lib
-, QuickCheck
 , random
 , tasty
 , tasty-hunit

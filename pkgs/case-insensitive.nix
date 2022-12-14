@@ -1,10 +1,10 @@
 { mkDerivation
+, HUnit
 , base
 , bytestring
 , criterion
 , deepseq
 , hashable
-, HUnit
 , lib
 , test-framework
 , test-framework-hunit

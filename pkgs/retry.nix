@@ -1,9 +1,9 @@
 { mkDerivation
+, HUnit
 , base
 , exceptions
 , ghc-prim
 , hedgehog
-, HUnit
 , lib
 , mtl
 , mtl-compat

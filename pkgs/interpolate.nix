@@ -1,11 +1,11 @@
 { mkDerivation
+, QuickCheck
 , base
 , base-compat
 , bytestring
 , haskell-src-meta
 , hspec
 , lib
-, QuickCheck
 , quickcheck-instances
 , template-haskell
 , text

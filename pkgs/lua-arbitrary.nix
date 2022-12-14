@@ -1,4 +1,4 @@
-{ mkDerivation, base, lib, lua, QuickCheck }:
+{ mkDerivation, QuickCheck, base, lib, lua }:
 mkDerivation {
   pname = "lua-arbitrary";
   version = "1.0.1";

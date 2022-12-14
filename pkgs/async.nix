@@ -1,7 +1,7 @@
 { mkDerivation
+, HUnit
 , base
 , hashable
-, HUnit
 , lib
 , stm
 , test-framework
