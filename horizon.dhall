@@ -757,6 +757,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "string-interpolate" "0.3.1.2"
           , H.callHackage "string-qq" "0.0.4"
           , H.callHackage "stringbuilder" "0.5.1"
+          , H.callHackage "stringsearch" "0.3.6.6"
           , H.callHackage "swagger2" "2.8.5"
           , H.callHackage "syb" "0.7.2.1"
           , H.callHackage "sydtest" "0.13.0.0"
