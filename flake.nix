@@ -19,80 +19,92 @@
     , nixpkgs
     , ...
     }:
-    flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
-    let
-      pkgs = nixpkgs.legacyPackages.${system};
-    in
-    with pkgs.lib;
-    with pkgs.writers;
-    with lint-utils.writers.${system};
-    let
+    flake-utils.lib.eachSystem [ "x86_64-linux" ]
+      (system:
+      let
+        pkgs = nixpkgs.legacyPackages.${system};
+      in
+      with pkgs.lib;
+      with pkgs.writers;
+      with lint-utils.writers.${system};
+      let
 
-      horizon-gen-nix-app = get-flake horizon-gen-nix;
+        horizon-gen-nix-app = get-flake horizon-gen-nix;
 
-      haskellLib = pkgs.haskell.lib.compose;
+        haskellLib = pkgs.haskell.lib.compose;
 
-      legacyPackages = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
-        buildHaskellPackages = pkgs.haskell.packages.ghc942;
-        compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { inherit haskellLib; };
-        configurationCommon = import ./configuration.nix;
-        configurationNix = { pkgs, haskellLib }: self: super: { };
-        ghc = pkgs.haskell.compiler.ghc942;
-        inherit haskellLib;
-        initialPackages = import ./initial-packages.nix;
-        nonHackagePackages = self: super: { };
-      };
+        legacyPackages = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
+          buildHaskellPackages = pkgs.haskell.packages.ghc942;
+          compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { inherit haskellLib; };
+          configurationCommon = import ./configuration.nix;
+          configurationNix = { pkgs, haskellLib }: self: super: { };
+          ghc = pkgs.haskell.compiler.ghc942;
+          inherit haskellLib;
+          initialPackages = import ./initial-packages.nix;
+          nonHackagePackages = self: super: { };
+        };
 
-      packages = filterAttrs
-        (n: v: v != null
+        packages = filterAttrs
+          (n: v: v != null
           && builtins.typeOf v == "set"
           && pkgs.lib.hasAttr "type" v
           && v.type == "derivation"
           && v.meta.broken == false)
-        legacyPackages;
+          legacyPackages;
 
-      horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
+        horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
 
-      run-impure-tests = writePorcelainOrDieBin {
-        name = "run-impure-tests";
-        src = ./.;
-        command = ''
-          export PATH=$PATH:${pkgs.nix-prefetch-git}/bin:${pkgs.cabal-install}/bin
-          cabal update
-          rm pkgs -rf && nix run .#horizon-gen-nix;
-          nixpkgs-fmt pkgs/*
-        '';
-        advice = "Try removing the offending packages from pkgs/ and running nix run .#horizon-gen-nix";
-      };
-
-      run-impure-tests-app = {
-        type = "app";
-        program = "${run-impure-tests}/bin/run-impure-tests";
-      };
-
-    in
-    {
-
-      apps = {
-
-        horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.horizon-gen-nix;
-
-        horizon-gen-gitlab-ci = {
-          type = "app";
-          program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
+        run-impure-tests = writePorcelainOrDieBin {
+          name = "run-impure-tests";
+          src = ./.;
+          command = ''
+            export PATH=$PATH:${pkgs.nix-prefetch-git}/bin:${pkgs.cabal-install}/bin
+            cabal update
+            rm pkgs -rf && nix run .#horizon-gen-nix;
+            nixpkgs-fmt pkgs/*
+          '';
+          advice = "Try removing the offending packages from pkgs/ and running nix run .#horizon-gen-nix";
         };
 
-        run-impure-tests = run-impure-tests-app;
+        run-impure-tests-app = {
+          type = "app";
+          program = "${run-impure-tests}/bin/run-impure-tests";
+        };
+
+      in
+      {
+
+        apps = {
+
+          horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.horizon-gen-nix;
+
+          horizon-gen-gitlab-ci = {
+            type = "app";
+            program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
+          };
+
+          run-impure-tests = run-impure-tests-app;
+        };
+
+        checks = {
+          dhall-format = lint-utils.outputs.linters.${system}.dhall-format { src = ./.; };
+          nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt { src = ./.; };
+        };
+
+        inherit legacyPackages;
+
+        inherit packages;
+
+      }) // {
+      templates = rec {
+
+        default = minimal;
+
+        minimal = {
+          description = "horizon-platform minimal template";
+          path = ./templates/minimal;
+        };
+
       };
-
-      checks = {
-        dhall-format = lint-utils.outputs.linters.${system}.dhall-format { src = ./.; };
-        nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt { src = ./.; };
-      };
-
-      inherit legacyPackages;
-
-      inherit packages;
-
-    });
+    };
 }

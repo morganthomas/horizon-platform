@@ -1,0 +1,177 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-utils",
+        "type": "indirect"
+      }
+    },
+    "flake-utils_3": {
+      "locked": {
+        "lastModified": 1644229661,
+        "narHash": "sha256-1YdnJAsNy69bpcjuoKdOYQX0YxZBiCYZo4Twxerqv7k=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "3cecb5b042f7f209c56ffd8371b2711a290ec797",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "get-flake": {
+      "locked": {
+        "lastModified": 1644686428,
+        "narHash": "sha256-zkhYsURWFrvEZLkIoBeqFBzSu+cA2u5mo6M8vq9LN7M=",
+        "owner": "ursi",
+        "repo": "get-flake",
+        "rev": "703f15558daa56dfae19d1858bb3046afe68831a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ursi",
+        "repo": "get-flake",
+        "type": "github"
+      }
+    },
+    "horizon-gen-nix": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1670944091,
+        "narHash": "sha256-WFj0uQqaEIURuZpfsb8yy/iqyzN8Lrc9BpWloL5a4R0=",
+        "rev": "8eb5ffc81cd8331f340546d746a786c7b2f021a6",
+        "revCount": 109,
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
+      },
+      "original": {
+        "rev": "8eb5ffc81cd8331f340546d746a786c7b2f021a6",
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
+      }
+    },
+    "horizon-platform": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "get-flake": "get-flake",
+        "horizon-gen-nix": "horizon-gen-nix",
+        "lint-utils": "lint-utils",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1671046351,
+        "narHash": "sha256-P80LAEx8E0bE1X3J23PUlnE/kkvK9txAe82iuWCxC9g=",
+        "ref": "refs/heads/master",
+        "rev": "eba696abb902fd5538dd006a297e699c7b2cee80",
+        "revCount": 762,
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/horizon/horizon-platform"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/horizon/horizon-platform"
+      }
+    },
+    "lint-utils": {
+      "inputs": {
+        "flake-utils": "flake-utils_3",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1669815989,
+        "narHash": "sha256-yDE8uxa/O633VeRBlJKSY5q9JtzoBoMANvgupdI42YI=",
+        "ref": "refs/heads/master",
+        "rev": "5b97bd76dd6756dfc29a32d25a5c78c0522bac10",
+        "revCount": 39,
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/nix/lint-utils"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://gitlab.homotopic.tech/nix/lint-utils"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1644525281,
+        "narHash": "sha256-D3VuWLdnLmAXIkooWAtbTGSQI9Fc1lkvAr94wTxhnTU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "48d63e924a2666baf37f4f14a18f19347fbd54a2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1665830552,
+        "narHash": "sha256-qel2bZ9TqfW8WzWCWdjuCy4bVFhhGsEeqFv/bj1ka2s=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "26b7e6ab6a864c3e7e077bcb27a49f0480b9894a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1671095104,
+        "narHash": "sha256-BgI8tDJgORrKX9lF93enEDKP5WxIoVBt9+1zoGIfx7k=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "7634c3250b6870e76f2e611cb95b72392add9aef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "horizon-platform": "horizon-platform",
+        "nixpkgs": "nixpkgs_3"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,11 +1,10 @@
 stages:
 - generate
 - check
-- impure
 
 generate-flake-ci:
   stage: generate
-  script: nix run "git+https://gitlab.homotopic.tech/haskell/flake-to-gitlab-ci" > flake-ci.yml
+  script: nix run "git+https://gitlab.homotopic.tech/haskell/flake-to-gitlab-ci?ref=refs/tags/0.2.1.0" > flake-ci.yml
   artifacts:
     paths:
       - flake-ci.yml
@@ -17,12 +16,3 @@ flake-ci:
       - artifact: flake-ci.yml
         job: generate-flake-ci
     strategy: depend
-
-impure-tests:
-  stage: impure
-  rules:
-  - if: $CI_PIPELINE_SOURCE == "merge_request_event"
-    when: manual
-    allow_failure: true
-  script:
-  - nix run .#run-impure-tests
