@@ -1145,6 +1145,8 @@ self: with pkgs.haskell.lib; {
 
   shelly = self.callPackage (./pkgs/shelly.nix) { };
 
+  shh = self.callPackage (./pkgs/shh.nix) { };
+
   should-not-typecheck = self.callPackage (./pkgs/should-not-typecheck.nix) { };
 
   silently = self.callPackage (./pkgs/silently.nix) { };
@@ -1214,6 +1216,8 @@ self: with pkgs.haskell.lib; {
   string-qq = self.callPackage (./pkgs/string-qq.nix) { };
 
   stringbuilder = self.callPackage (./pkgs/stringbuilder.nix) { };
+
+  stringsearch = self.callPackage (./pkgs/stringsearch.nix) { };
 
   swagger2 = self.callPackage (./pkgs/swagger2.nix) { };
 
