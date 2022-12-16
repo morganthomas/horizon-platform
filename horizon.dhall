@@ -722,6 +722,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "shakespeare" "2.0.30"
           , H.callHackage "shake" "0.19.6"
           , H.callHackage "shelly" "1.10.0"
+          , H.callHackage "shh" "0.7.2.0"
           , H.callHackage "should-not-typecheck" "2.1.0"
           , H.callHackage "silently" "1.2.5.3"
           , H.callHackage "simple-reflect" "0.3.3"
