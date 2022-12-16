@@ -4,6 +4,18 @@
 
 Horizon is a haskell package set targetting new builds of GHC.
 
+## Getting started
+
+You an can use this package set instead of your haskell packages set in
+nixpkgs. To see an example you can use the template supplied with this
+repository.
+
+```
+mkdir myProject
+cd myProject
+nix flake init -t 'git+https://gitlab.homotopic.tech/horizon/horizon-platform'
+```
+
 ## Updating the package set
 
 The package set is generated from the `horizon.dhall` using the following command:
