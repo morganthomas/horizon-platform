@@ -987,6 +987,8 @@ self: with pkgs.haskell.lib; {
 
   process-extras = self.callPackage (./pkgs/process-extras.nix) { };
 
+  procex = self.callPackage (./pkgs/procex.nix) { };
+
   profunctors = self.callPackage (./pkgs/profunctors.nix) { };
 
   prometheus-client = self.callPackage (./pkgs/prometheus-client.nix) { };

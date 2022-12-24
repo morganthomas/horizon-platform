@@ -618,6 +618,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "primes" "0.2.1.0"
           , H.callHackage "primitive" "0.7.4.0"
           , H.callHackage "primitive-addr" "0.1.0.2"
+          , H.callHackage "procex" "0.3.3"
           , H.callHackage "profunctors" "5.6.2"
           , H.callHackage "prometheus-client" "1.1.0"
           , H.callHackage "prometheus-proc" "0.1.4.0"
