@@ -1051,6 +1051,8 @@ self: with pkgs.haskell.lib; {
 
   relude = self.callPackage (./pkgs/relude.nix) { };
 
+  replace-megaparsec = self.callPackage (./pkgs/replace-megaparsec.nix) { };
+
   repline = self.callPackage (./pkgs/repline.nix) { };
 
   rere = self.callPackage (./pkgs/rere.nix) { };

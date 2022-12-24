@@ -651,6 +651,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "refined" "0.8"
           , H.callHackage "reflection" "2.1.6"
           , H.callHackage "relude" "1.1.0.0"
+          , H.callHackage "replace-megaparsec" "1.4.5.0"
           , H.callHackage "repline" "0.4.2.0"
           , H.callHackage "rerebase" "1.15.0.3"
           , H.callHackage "rere" "0.2"
