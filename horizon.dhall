@@ -44,6 +44,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "Diff" "0.4.1"
           , H.callHackage "Glob" "0.10.2"
           , H.callHackage "HTTP" "4000.4.1"
+          , H.callHackage "Hclip" "3.0.0.4"
           , H.callHackage "HsYAML" "0.2.1.1"
           , H.callHackage "HUnit" "1.6.2.0"
           , H.callHackage "ListLike" "4.7.7"

@@ -23,6 +23,8 @@ self: with pkgs.haskell.lib; {
 
   HUnit = self.callPackage (./pkgs/HUnit.nix) { };
 
+  Hclip = self.callPackage (./pkgs/Hclip.nix) { };
+
   HsYAML = self.callPackage (./pkgs/HsYAML.nix) { };
 
   JuicyPixels = self.callPackage (./pkgs/JuicyPixels.nix) { };
