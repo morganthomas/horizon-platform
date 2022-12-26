@@ -412,6 +412,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "http-api-data" "0.5"
           , H.callHackage "http-client-tls" "0.3.6.1"
           , H.callHackage "http-client" "0.7.13.1"
+          , H.callHackage "http-conduit" "2.3.8"
           , H.callHackage "http-date" "0.0.11"
           , H.callHackage "http-media" "0.8.0.0"
           , H.callHackage "http-types" "0.12.3"

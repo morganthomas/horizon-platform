@@ -643,6 +643,8 @@ self: with pkgs.haskell.lib; {
 
   http-client-tls = self.callPackage (./pkgs/http-client-tls.nix) { };
 
+  http-conduit = self.callPackage (./pkgs/http-conduit.nix) { };
+
   http-date = self.callPackage (./pkgs/http-date.nix) { };
 
   http-media = self.callPackage (./pkgs/http-media.nix) { };
