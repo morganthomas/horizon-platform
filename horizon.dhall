@@ -908,6 +908,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "void" "0.7.3"
           , H.callHackage "vty" "5.37"
           , H.callHackage "wai-app-static" "3.1.7.4"
+          , H.callHackage "wai-conduit" "3.0.0.4"
           , H.callHackage "wai-extra" "3.1.13.0"
           , H.callGit
               "wai-middleware-heartbeat"

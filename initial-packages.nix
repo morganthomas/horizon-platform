@@ -1471,6 +1471,8 @@ self: with pkgs.haskell.lib; {
 
   wai-app-static = self.callPackage (./pkgs/wai-app-static.nix) { };
 
+  wai-conduit = self.callPackage (./pkgs/wai-conduit.nix) { };
+
   wai-extra = self.callPackage (./pkgs/wai-extra.nix) { };
 
   wai-logger = self.callPackage (./pkgs/wai-logger.nix) { };
