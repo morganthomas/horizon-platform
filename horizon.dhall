@@ -939,6 +939,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "xml-conduit" "1.9.1.1"
           , H.callHackage "xml-types" "0.3.8"
           , H.callHackage "xml" "1.3.14"
+          , H.callHackage "xmonad" "0.17.1"
           , H.callHackage "yaml" "0.11.8.0"
           , H.callHackage "zip-archive" "0.4.2.2"
           , H.callHackage "zlib" "0.6.3.0"

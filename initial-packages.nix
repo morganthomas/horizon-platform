@@ -1523,6 +1523,8 @@ self: with pkgs.haskell.lib; {
 
   xml-types = self.callPackage (./pkgs/xml-types.nix) { };
 
+  xmonad = self.callPackage (./pkgs/xmonad.nix) { };
+
   yaml = self.callPackage (./pkgs/yaml.nix) { };
 
   zip-archive = self.callPackage (./pkgs/zip-archive.nix) { };
