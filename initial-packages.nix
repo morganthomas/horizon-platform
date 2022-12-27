@@ -49,6 +49,8 @@ self: with pkgs.haskell.lib; {
 
   StateVar = self.callPackage (./pkgs/StateVar.nix) { };
 
+  X11 = self.callPackage (./pkgs/X11.nix) { };
+
   abstract-deque = self.callPackage (./pkgs/abstract-deque.nix) { };
 
   abstract-par = self.callPackage (./pkgs/abstract-par.nix) { };
