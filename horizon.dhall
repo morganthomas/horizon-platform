@@ -723,6 +723,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "servant-swagger-ui-core" "0.3.5"
           , H.callHackage "servant-static-th" "1.0.0.0"
           , H.callHackage "setenv" "0.1.1.3"
+          , H.callHackage "setlocale" "1.0.0.10"
           , H.callHackage "shakespeare" "2.0.30"
           , H.callHackage "shake" "0.19.6"
           , H.callHackage "shelly" "1.10.0"

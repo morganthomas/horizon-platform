@@ -1147,6 +1147,8 @@ self: with pkgs.haskell.lib; {
 
   setenv = self.callPackage (./pkgs/setenv.nix) { };
 
+  setlocale = self.callPackage (./pkgs/setlocale.nix) { };
+
   shake = self.callPackage (./pkgs/shake.nix) { };
 
   shakespeare = self.callPackage (./pkgs/shakespeare.nix) { };
