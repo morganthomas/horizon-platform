@@ -51,6 +51,8 @@ self: with pkgs.haskell.lib; {
 
   X11 = self.callPackage (./pkgs/X11.nix) { };
 
+  X11-xft = self.callPackage (./pkgs/X11-xft.nix) { };
+
   abstract-deque = self.callPackage (./pkgs/abstract-deque.nix) { };
 
   abstract-par = self.callPackage (./pkgs/abstract-par.nix) { };

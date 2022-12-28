@@ -16,5 +16,7 @@ final: prev: {
 
   text-icu = prev.callPackage ./pkgs/text-icu.nix { icu-i18n = pkgs.icu; };
 
+  X11-xft = addPkgconfigDepends prev.X11-xft [ pkgs.expat pkgs.xorg.libXau pkgs.xorg.libXdmcp ];
+
   zlib = prev.callPackage ./pkgs/zlib.nix { inherit (pkgs) zlib; };
 }

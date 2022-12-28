@@ -58,6 +58,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "QuickCheck" "2.14.2"
           , H.callHackage "SHA" "1.6.4.4"
           , H.callHackage "StateVar" "1.2.2"
+          , H.callHackage "X11-xft" "0.3.4"
           , H.callHackage "X11" "1.10.3"
           , H.callHackage "abstract-deque" "0.3"
           , H.callHackage "abstract-par" "0.3.3"
