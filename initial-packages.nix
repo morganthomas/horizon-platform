@@ -1527,6 +1527,8 @@ self: with pkgs.haskell.lib; {
 
   xmonad = self.callPackage (./pkgs/xmonad.nix) { };
 
+  xmonad-contrib = self.callPackage (./pkgs/xmonad-contrib.nix) { };
+
   yaml = self.callPackage (./pkgs/yaml.nix) { };
 
   zip-archive = self.callPackage (./pkgs/zip-archive.nix) { };
