@@ -49,6 +49,10 @@ self: with pkgs.haskell.lib; {
 
   StateVar = self.callPackage (./pkgs/StateVar.nix) { };
 
+  X11 = self.callPackage (./pkgs/X11.nix) { };
+
+  X11-xft = self.callPackage (./pkgs/X11-xft.nix) { };
+
   abstract-deque = self.callPackage (./pkgs/abstract-deque.nix) { };
 
   abstract-par = self.callPackage (./pkgs/abstract-par.nix) { };
@@ -64,6 +68,10 @@ self: with pkgs.haskell.lib; {
   alex = self.callPackage (./pkgs/alex.nix) { };
 
   algebraic-graphs = self.callPackage (./pkgs/algebraic-graphs.nix) { };
+
+  alsa-core = self.callPackage (./pkgs/alsa-core.nix) { };
+
+  alsa-mixer = self.callPackage (./pkgs/alsa-mixer.nix) { };
 
   ansi-terminal = self.callPackage (./pkgs/ansi-terminal.nix) { };
 
@@ -1147,6 +1155,8 @@ self: with pkgs.haskell.lib; {
 
   setenv = self.callPackage (./pkgs/setenv.nix) { };
 
+  setlocale = self.callPackage (./pkgs/setlocale.nix) { };
+
   shake = self.callPackage (./pkgs/shake.nix) { };
 
   shakespeare = self.callPackage (./pkgs/shakespeare.nix) { };
@@ -1518,6 +1528,10 @@ self: with pkgs.haskell.lib; {
   xml-conduit = self.callPackage (./pkgs/xml-conduit.nix) { };
 
   xml-types = self.callPackage (./pkgs/xml-types.nix) { };
+
+  xmonad = self.callPackage (./pkgs/xmonad.nix) { };
+
+  xmonad-contrib = self.callPackage (./pkgs/xmonad-contrib.nix) { };
 
   yaml = self.callPackage (./pkgs/yaml.nix) { };
 
