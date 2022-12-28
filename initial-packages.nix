@@ -71,6 +71,8 @@ self: with pkgs.haskell.lib; {
 
   alsa-core = self.callPackage (./pkgs/alsa-core.nix) { };
 
+  alsa-mixer = self.callPackage (./pkgs/alsa-mixer.nix) { };
+
   ansi-terminal = self.callPackage (./pkgs/ansi-terminal.nix) { };
 
   ansi-wl-pprint = self.callPackage (./pkgs/ansi-wl-pprint.nix) { };
