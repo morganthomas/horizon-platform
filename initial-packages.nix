@@ -69,6 +69,8 @@ self: with pkgs.haskell.lib; {
 
   algebraic-graphs = self.callPackage (./pkgs/algebraic-graphs.nix) { };
 
+  alsa-core = self.callPackage (./pkgs/alsa-core.nix) { };
+
   ansi-terminal = self.callPackage (./pkgs/ansi-terminal.nix) { };
 
   ansi-wl-pprint = self.callPackage (./pkgs/ansi-wl-pprint.nix) { };

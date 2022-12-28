@@ -68,6 +68,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "aeson-yaml" "1.1.0.1"
           , H.callHackage "alex" "3.2.7.1"
           , H.callHackage "algebraic-graphs" "0.7"
+          , H.callHackage "alsa-core" "0.5.0.1"
           , H.callHackage "ansi-terminal" "0.11.3"
           , H.callHackage "ansi-wl-pprint" "0.6.9"
           , H.callHackage "appar" "0.1.8"
