@@ -96,6 +96,7 @@
         checks = with lint-utils.linters.${system}; {
           dhall-format = dhall-format { src = self; };
           nixpkgs-fmt = nixpkgs-fmt { src = self; };
+          stylish-haskell = stylish-haskell { src = self; };
         };
 
         inherit legacyPackages;
