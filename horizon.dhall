@@ -820,8 +820,8 @@ let packages =
       , tasty-hspec = H.callHackage "tasty-hspec" "1.2.0.1"
       , tasty-hunit =
           H.callGit
-            "https://github.com/UnkindPartition/tasty-hunit"
-            "207d3453a64b414593512c1e968171d64a8dbe61"
+            "https://github.com/UnkindPartition/tasty"
+            "226c35f468be389536fbb9471904a113d1586da6"
             (Some "hunit")
       , tasty-inspection-testing =
           H.callHackage "tasty-inspection-testing" "0.2"
