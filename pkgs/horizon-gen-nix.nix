@@ -3,28 +3,26 @@
 , base
 , cabal2nix
 , containers
-, data-fix
 , dhall
 , directory
-, fetchgit
+, distribution-nixpkgs
+, either
+, horizon-spec
 , language-nix
 , lens
 , lib
-, megaparsec
+, optparse-applicative
 , path
 , path-dhall-instance
 , pretty
+, silently
+, sydtest
 , text
 }:
 mkDerivation {
   pname = "horizon-gen-nix";
-  version = "0.1.0.0";
-  src = fetchgit {
-    url = "https://gitlab.homotopic.tech/horizon/horizon-gen-nix";
-    sha256 = "0x10wdjqs411l902i0b5vlr7rw30al2sd6r614yi5g63zrylahs3";
-    rev = "918df757ce5c9244232c1e3a1e05e9d9e3ab4f09";
-    fetchSubmodules = true;
-  };
+  version = "0.4.0";
+  sha256 = "c27e7ee4e02876e8814d4e047baadfd6ebcec7f18953678f0f90176233531568";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = false;
@@ -33,18 +31,21 @@ mkDerivation {
     Cabal-syntax
     cabal2nix
     containers
-    data-fix
     dhall
     directory
+    distribution-nixpkgs
+    either
+    horizon-spec
     language-nix
     lens
-    megaparsec
+    optparse-applicative
     path
     path-dhall-instance
     pretty
+    silently
     text
   ];
-  executableHaskellDepends = [ base ];
+  executableHaskellDepends = [ base directory path sydtest ];
   enableLibraryProfiling = true;
   enableExecutableProfiling = true;
   doHaddock = false;
@@ -52,7 +53,7 @@ mkDerivation {
   doCheck = false;
   doBenchmark = false;
   hyperlinkSource = false;
-  description = "Short description of your package";
-  license = lib.licenses.bsd3;
+  description = "Generate nix expressions from horizon-spec definitions";
+  license = lib.licenses.mit;
   broken = false;
 }

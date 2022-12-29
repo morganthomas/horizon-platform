@@ -378,17 +378,13 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "hledger" "1.27.1"
           , H.callHackage "hlint" "3.5"
           , H.callHackage "hopenssl" "2.2.4"
+          , H.callHackage "horizon-gen-nix" "0.4.0"
           , H.callHackage "horizon-spec" "0.4.1"
           , H.callHackage "hosc" "0.19.1"
           , H.callHackage "hostname" "1.0"
           , H.callHackage "hourglass" "0.2.12"
           , H.callHackage "hpack-dhall" "0.5.7"
           , H.callHackage "hpack" "0.35.0"
-          , H.callGit
-              "horizon-gen-nix"
-              "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
-              "918df757ce5c9244232c1e3a1e05e9d9e3ab4f09"
-              (None Text)
           , H.callHackage "hscolour" "1.24.4"
           , H.callHackage "hslua-aeson" "2.2.1"
           , H.callHackage "hslua-core" "2.2.1"
