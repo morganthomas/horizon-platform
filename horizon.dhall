@@ -378,6 +378,7 @@ in  H.HorizonExport.MakePackageSet
           , H.callHackage "hledger" "1.27.1"
           , H.callHackage "hlint" "3.5"
           , H.callHackage "hopenssl" "2.2.4"
+          , H.callHackage "horizon-spec" "0.4.1"
           , H.callHackage "hosc" "0.19.1"
           , H.callHackage "hostname" "1.0"
           , H.callHackage "hourglass" "0.2.12"
