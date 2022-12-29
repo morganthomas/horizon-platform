@@ -93,9 +93,9 @@
           run-impure-tests = run-impure-tests-app;
         };
 
-        checks = {
-          dhall-format = lint-utils.outputs.linters.${system}.dhall-format { src = ./.; };
-          nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt { src = ./.; };
+        checks = with lint-utils.linters.${system}; {
+          dhall-format = dhall-format { src = self; };
+          nixpkgs-fmt = nixpkgs-fmt { src = self; };
         };
 
         inherit legacyPackages;
