@@ -78,6 +78,7 @@
           program = "${run-impure-tests}/bin/run-impure-tests";
         };
 
+        procex = import ./shell/default.nix { haskellPackages = horizon-platform-prev.legacyPackages.${system}; inherit (pkgs) runCommand writeShellScriptBin; };
       in
       {
 
@@ -88,6 +89,11 @@
           horizon-gen-gitlab-ci = {
             type = "app";
             program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
+          };
+
+          procex = {
+            type = "app";
+            program = "${procex}/bin/procex-shell";
           };
 
           run-impure-tests = run-impure-tests-app;
