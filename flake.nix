@@ -6,6 +6,10 @@
       url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix?rev=8eb5ffc81cd8331f340546d746a786c7b2f021a6";
       flake = false;
     };
+    horizon-platform = {
+      url = "git+https://gitlab.homotopic.tech/horizon/horizon-platform";
+      flake = false;
+    };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
 
@@ -15,6 +19,7 @@
     , get-flake
     , flake-utils
     , horizon-gen-nix
+    , horizon-platform
     , lint-utils
     , nixpkgs
     , ...
@@ -30,6 +35,8 @@
       let
 
         horizon-gen-nix-app = get-flake horizon-gen-nix;
+
+        horizon-platform-prev = get-flake horizon-platform;
 
         haskellLib = pkgs.haskell.lib.compose;
 
