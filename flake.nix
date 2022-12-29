@@ -109,16 +109,5 @@
 
         inherit packages;
 
-      }) // {
-      templates = rec {
-
-        default = minimal;
-
-        minimal = {
-          description = "horizon-platform minimal template";
-          path = ./templates/minimal;
-        };
-
-      };
-    };
+      });
 }
