@@ -53,10 +53,10 @@
 
         packages = filterAttrs
           (n: v: v != null
-          && builtins.typeOf v == "set"
-          && pkgs.lib.hasAttr "type" v
-          && v.type == "derivation"
-          && v.meta.broken == false)
+            && builtins.typeOf v == "set"
+            && pkgs.lib.hasAttr "type" v
+            && v.type == "derivation"
+            && v.meta.broken == false)
           legacyPackages;
 
         horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
