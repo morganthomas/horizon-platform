@@ -9,6 +9,8 @@ mkDerivation {
   pname = "dependent-map";
   version = "0.4.0.0";
   sha256 = "53ce0b52d8be1b85fc6489fb27656f16d837bee4fbe0ddf39c844e3ea8871f2c";
+  revision = "1";
+  editedCabalFile = "160p9crvlx1sn60inkwxa6mv1h2d4fgqnpsb2km67zrkpdfyd2s2";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

@@ -24,8 +24,8 @@ mkDerivation {
   pname = "monad-logger";
   version = "0.3.37";
   sha256 = "0604d581a039c5d1d61c9dce7331c63cf2a68482ee32f0ff38927d24882a47fc";
-  revision = "2";
-  editedCabalFile = "1kkw07kk8gv7d9iarradqcqzjpdfh5shjlhfbf2v25mmcpchp6hd";
+  revision = "3";
+  editedCabalFile = "1dzkw08b4ijacdw0vcfxlr13rd819x2yj7b6sr9jrrwicd45zm1z";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

@@ -13,8 +13,8 @@ mkDerivation {
   pname = "servant-swagger-ui";
   version = "0.3.5.4.5.0";
   sha256 = "efa528edc055dc6c9e83dfdfe4b892be439bbcfb83a73847f6cfdb35c42f878b";
-  revision = "2";
-  editedCabalFile = "05g4gnvr8ljg5mszan5cr9zzi40p6d8sr7343mm2yc3ps45vy9g1";
+  revision = "3";
+  editedCabalFile = "0qspb55lvavfsyqjjjyyax9gqzp8yq9r13nvzj3qnsipjgw2irln";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;
