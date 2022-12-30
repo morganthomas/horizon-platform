@@ -522,6 +522,7 @@ let packages =
       , net-mqtt = H.callHackage "net-mqtt" "0.8.2.2"
       , managed = H.callHackage "managed" "1.0.9"
       , markdown-unlit = H.callHackage "markdown-unlit" "0.5.1"
+      , markdown = H.callHackage "markdown" "0.1.17.5"
       , math-functions = H.callHackage "math-functions" "0.3.4.2"
       , megaparsec = H.callHackage "megaparsec" "9.2.2"
       , memory = H.callHackage "memory" "0.18.0"
