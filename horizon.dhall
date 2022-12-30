@@ -19,6 +19,14 @@ let callGitCabal
           "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
           (Some subdir)
 
+let callGitCursorDirforest
+    : H.Subdir → H.HaskellPackage.Type
+    = λ(subdir : H.Subdir) →
+        H.callGit
+          "https://github.com/NorfairKing/cursor-dirforest"
+          "6ad5b168e26eb4e647df9f007d812aaf59338d40"
+          (Some subdir)
+
 let callGitServant
     : H.Subdir → H.HaskellPackage.Type
     = λ(subdir : H.Subdir) →
@@ -169,21 +177,9 @@ let packages =
       , csv =
           callHorizonAdopted "csv" "d02b89bbad79136b52fd1197f087466cf51573dd"
       , cursor-brick = H.callHackage "cursor-brick" "0.1.0.1"
-      , cursor-dirforest =
-          H.callGit
-            "https://github.com/NorfairKing/cursor-dirforest"
-            "6ad5b168e26eb4e647df9f007d812aaf59338d40"
-            (Some "cursor-dirforest")
-      , cursor-dirforest-brick =
-          H.callGit
-            "https://github.com/NorfairKing/cursor-dirforest"
-            "6ad5b168e26eb4e647df9f007d812aaf59338d40"
-            (Some "cursor-dirforest-brick")
-      , cursor-dirforest-gen =
-          H.callGit
-            "https://github.com/NorfairKing/cursor-dirforest"
-            "6ad5b168e26eb4e647df9f007d812aaf59338d40"
-            (Some "cursor-dirforest-gen")
+      , cursor-dirforest = callGitCursorDirforest "cursor-dirforest"
+      , cursor-dirforest-brick = callGitCursorDirforest "cursor-dirforest-brick"
+      , cursor-dirforest-gen = callGitCursorDirforest "cursor-dirforest-gen"
       , cursor-gen = H.callHackage "cursor-gen" "0.4.0.0"
       , cursor = H.callHackage "cursor" "0.3.2.0"
       , cryptonite = H.callHackage "cryptonite" "0.30"
