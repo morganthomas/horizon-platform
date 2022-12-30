@@ -645,6 +645,8 @@ let packages =
       , procex = H.callHackage "procex" "0.3.3"
       , profunctors = H.callHackage "profunctors" "5.6.2"
       , prometheus-client = H.callHackage "prometheus-client" "1.1.0"
+      , prometheus-metrics-ghc =
+          H.callHackage "prometheus-metrics-ghc" "1.0.1.2"
       , prometheus-proc = H.callHackage "prometheus-proc" "0.1.4.0"
       , process-extras = H.callHackage "process-extras" "0.7.4"
       , proteaaudio-sdl = H.callHackage "proteaaudio-sdl" "0.9.2"

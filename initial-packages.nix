@@ -1031,6 +1031,8 @@ self: with pkgs.haskell.lib; {
 
   prometheus-client = self.callPackage (./pkgs/prometheus-client.nix) { };
 
+  prometheus-metrics-ghc = self.callPackage (./pkgs/prometheus-metrics-ghc.nix) { };
+
   prometheus-proc = self.callPackage (./pkgs/prometheus-proc.nix) { };
 
   proteaaudio-sdl = self.callPackage (./pkgs/proteaaudio-sdl.nix) { };
