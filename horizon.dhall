@@ -944,6 +944,7 @@ let packages =
       , wai-middleware-prometheus =
           H.callHackage "wai-middleware-prometheus" "1.0.0.1"
       , wai-middleware-static = H.callHackage "wai-middleware-static" "0.9.2"
+      , wai-websockets = H.callHackage "wai-websockets" "3.0.1.2"
       , wai = H.callHackage "wai" "3.2.3"
       , warp = H.callHackage "warp" "3.3.22"
       , warp-tls = H.callHackage "warp-tls" "3.3.3"

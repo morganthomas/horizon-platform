@@ -1537,6 +1537,8 @@ self: with pkgs.haskell.lib; {
 
   wai-middleware-static = self.callPackage (./pkgs/wai-middleware-static.nix) { };
 
+  wai-websockets = self.callPackage (./pkgs/wai-websockets.nix) { };
+
   warp = self.callPackage (./pkgs/warp.nix) { };
 
   warp-tls = self.callPackage (./pkgs/warp-tls.nix) { };
