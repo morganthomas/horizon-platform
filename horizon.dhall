@@ -949,6 +949,7 @@ let packages =
       , x509-system = H.callHackage "x509-system" "1.6.7"
       , x509-validation = H.callHackage "x509-validation" "1.6.12"
       , x509 = H.callHackage "x509" "1.7.7"
+      , xml-conduit-writer = H.callHackage "xml-conduit-writer" "0.1.1.2"
       , xml-conduit = H.callHackage "xml-conduit" "1.9.1.1"
       , xml-types = H.callHackage "xml-types" "0.3.8"
       , xml = H.callHackage "xml" "1.3.14"

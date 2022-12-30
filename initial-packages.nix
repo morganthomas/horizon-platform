@@ -1553,6 +1553,8 @@ self: with pkgs.haskell.lib; {
 
   xml-conduit = self.callPackage (./pkgs/xml-conduit.nix) { };
 
+  xml-conduit-writer = self.callPackage (./pkgs/xml-conduit-writer.nix) { };
+
   xml-types = self.callPackage (./pkgs/xml-types.nix) { };
 
   xmonad = self.callPackage (./pkgs/xmonad.nix) { };
