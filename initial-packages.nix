@@ -1531,6 +1531,8 @@ self: with pkgs.haskell.lib; {
 
   wai-extra = self.callPackage (./pkgs/wai-extra.nix) { };
 
+  wai-log = self.callPackage (./pkgs/wai-log.nix) { };
+
   wai-logger = self.callPackage (./pkgs/wai-logger.nix) { };
 
   wai-middleware-heartbeat = self.callPackage (./pkgs/wai-middleware-heartbeat.nix) { };

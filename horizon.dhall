@@ -941,6 +941,7 @@ let packages =
             "https://github.com/flora-pm/wai-middleware-heartbeat"
             "bd7dbbe83d25c00fcd2cf5c77736af904910c596"
             (None Text)
+      , wai-log = H.callHackage "wai-log" "0.4.0.1"
       , wai-logger = H.callHackage "wai-logger" "2.4.0"
       , wai-middleware-prometheus =
           H.callHackage "wai-middleware-prometheus" "1.0.0.1"
