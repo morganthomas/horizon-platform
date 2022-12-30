@@ -763,6 +763,7 @@ let packages =
       , stm-chans = H.callHackage "stm-chans" "3.0.0.6"
       , streaming-commons = H.callHackage "streaming-commons" "0.2.2.4"
       , streaming = H.callHackage "streaming" "0.2.3.1"
+      , streamly = H.callHackage "streamly" "0.8.3"
       , store-core = H.callHackage "store-core" "0.4.4.4"
       , store = H.callHackage "store" "0.7.16"
       , strict = H.callHackage "strict" "0.4.0.1"

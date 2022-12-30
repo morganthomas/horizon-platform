@@ -1249,6 +1249,8 @@ self: with pkgs.haskell.lib; {
 
   streaming-commons = self.callPackage (./pkgs/streaming-commons.nix) { };
 
+  streamly = self.callPackage (./pkgs/streamly.nix) { };
+
   strict = self.callPackage (./pkgs/strict.nix) { };
 
   string-conv = self.callPackage (./pkgs/string-conv.nix) { };
