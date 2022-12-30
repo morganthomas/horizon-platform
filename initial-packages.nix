@@ -761,6 +761,8 @@ self: with pkgs.haskell.lib; {
 
   linear = self.callPackage (./pkgs/linear.nix) { };
 
+  lockfree-queue = self.callPackage (./pkgs/lockfree-queue.nix) { };
+
   log-base = self.callPackage (./pkgs/log-base.nix) { };
 
   log-effectful = self.callPackage (./pkgs/log-effectful.nix) { };

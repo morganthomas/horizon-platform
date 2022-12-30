@@ -493,6 +493,7 @@ let packages =
       , lifted-async = H.callHackage "lifted-async" "0.10.2.1"
       , lifted-base = H.callHackage "lifted-base" "0.2.3.12"
       , linear = H.callHackage "linear" "1.21.10"
+      , lockfree-queue = H.callHackage "lockfree-queue" "0.2.4"
       , logging-facade = H.callHackage "logging-facade" "0.3.1"
       , logict = H.callHackage "logict" "0.8.0.0"
       , log-base = H.callHackage "log-base" "0.12.0.0"
