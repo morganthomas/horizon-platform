@@ -151,6 +151,7 @@ let packages =
       , chell = H.callHackage "chell" "0.5.0.1"
       , citeproc = H.callHackage "citeproc" "0.8.0.1"
       , clock = H.callHackage "clock" "0.8.3"
+      , cmark-gfm = H.callHackage "cmark-gfm" "0.2.5"
       , cmdargs = H.callHackage "cmdargs" "0.10.21"
       , co-log-core = H.callHackage "co-log-core" "0.3.1.0"
       , co-log-polysemy = H.callHackage "co-log-polysemy" "0.0.1.3"

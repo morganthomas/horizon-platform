@@ -205,6 +205,8 @@ self: with pkgs.haskell.lib; {
 
   clock = self.callPackage (./pkgs/clock.nix) { };
 
+  cmark-gfm = self.callPackage (./pkgs/cmark-gfm.nix) { };
+
   cmdargs = self.callPackage (./pkgs/cmdargs.nix) { };
 
   co-log-core = self.callPackage (./pkgs/co-log-core.nix) { };
