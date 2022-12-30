@@ -27,6 +27,14 @@ let callGitCursorDirforest
           "6ad5b168e26eb4e647df9f007d812aaf59338d40"
           (Some subdir)
 
+let callGitKvStoreEffectful
+    : H.Subdir → H.HaskellPackage.Type
+    = λ(subdir : H.Subdir) →
+        H.callGit
+          "https://github.com/TeofilC/servant"
+          "3502825423aea3a1af9384e9d751feea4599c60b"
+          (Some subdir)
+
 let callGitServant
     : H.Subdir → H.HaskellPackage.Type
     = λ(subdir : H.Subdir) →
@@ -453,26 +461,13 @@ let packages =
       , js-jquery = H.callHackage "js-jquery" "3.3.1"
       , kan-extensions = H.callHackage "kan-extensions" "5.2.5"
       , keys = H.callHackage "keys" "3.12.3"
-      , kvstore-effectful =
-          H.callGit
-            "https://github.com/haskell-effectful/kvstore-effectful"
-            "3502825423aea3a1af9384e9d751feea4599c60b"
-            (Some "kvstore-effectful")
+      , kvstore-effectful = callGitKvStoreEffectful "kvstore-effectful"
       , kvstore-effectful-cache =
-          H.callGit
-            "https://github.com/haskell-effectful/kvstore-effectful"
-            "3502825423aea3a1af9384e9d751feea4599c60b"
-            (Some "kvstore-effectful-cache")
+          callGitKvStoreEffectful "kvstore-effectful-cache"
       , kvstore-effectful-spec =
-          H.callGit
-            "https://github.com/haskell-effectful/kvstore-effectful"
-            "3502825423aea3a1af9384e9d751feea4599c60b"
-            (Some "kvstore-effectful-spec")
+          callGitKvStoreEffectful "kvstore-effectful-spec"
       , kvstore-effectful-statemap =
-          H.callGit
-            "https://github.com/haskell-effectful/kvstore-effectful"
-            "3502825423aea3a1af9384e9d751feea4599c60b"
-            (Some "kvstore-effectful-statemap")
+          callGitKvStoreEffectful "kvstore-effectful-statemap"
       , language-c = H.callHackage "language-c" "0.9.1"
       , language-haskell-extract =
           H.callGit
