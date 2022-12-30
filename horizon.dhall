@@ -694,6 +694,7 @@ let packages =
       , semigroups = H.callHackage "semigroups" "0.20"
       , semigroupoids = H.callHackage "semigroupoids" "5.3.7"
       , semirings = H.callHackage "semirings" "0.6"
+      , semver = H.callHackage "semver" "0.4.0.1"
       , serialise = H.callHackage "serialise" "0.2.6.0"
       , servant = callGitServant "servant"
       , servant-blaze = H.callHackage "servant-blaze" "0.9.1"

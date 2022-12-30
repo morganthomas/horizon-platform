@@ -1121,6 +1121,8 @@ self: with pkgs.haskell.lib; {
 
   semirings = self.callPackage (./pkgs/semirings.nix) { };
 
+  semver = self.callPackage (./pkgs/semver.nix) { };
+
   serialise = self.callPackage (./pkgs/serialise.nix) { };
 
   servant = self.callPackage (./pkgs/servant.nix) { };
