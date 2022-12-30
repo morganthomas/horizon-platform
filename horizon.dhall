@@ -499,6 +499,7 @@ let packages =
             "910c79e10d5ac3353f2a1551103a2b63229c3f57"
             (None Text)
       , lpeg = H.callHackage "lpeg" "1.0.3"
+      , lrucache = H.callHackage "lrucache" "1.2.0.1"
       , lsp-types = H.callHackage "lsp-types" "1.6.0.0"
       , lsp = H.callHackage "lsp" "1.6.0.0"
       , lua-arbitrary = H.callHackage "lua-arbitrary" "1.0.1"

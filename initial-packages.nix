@@ -765,6 +765,8 @@ self: with pkgs.haskell.lib; {
 
   lpeg = self.callPackage (./pkgs/lpeg.nix) { };
 
+  lrucache = self.callPackage (./pkgs/lrucache.nix) { };
+
   lsp = self.callPackage (./pkgs/lsp.nix) { };
 
   lsp-types = self.callPackage (./pkgs/lsp-types.nix) { };
