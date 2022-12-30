@@ -11,6 +11,14 @@ let callHorizonAdopted
           revision
           (None Text)
 
+let callGitCabal
+    : H.Subdir → H.HaskellPackage.Type
+    = λ(subdir : H.Subdir) →
+        H.callGit
+          "https://gitlab.haskell.org/ghc/packages/Cabal"
+          "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
+          (Some subdir)
+
 let callGitServant
     : H.Subdir → H.HaskellPackage.Type
     = λ(subdir : H.Subdir) →
@@ -21,26 +29,10 @@ let callGitServant
 
 let packages =
       { Cabal = H.callHackage "Cabal" "3.8.1.0"
-      , Cabal-QuickCheck =
-          H.callGit
-            "https://gitlab.haskell.org/ghc/packages/Cabal"
-            "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
-            (Some "Cabal-QuickCheck")
-      , Cabal-described =
-          H.callGit
-            "https://gitlab.haskell.org/ghc/packages/Cabal"
-            "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
-            (Some "Cabal-described")
-      , Cabal-syntax =
-          H.callGit
-            "https://gitlab.haskell.org/ghc/packages/Cabal"
-            "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
-            (Some "Cabal-syntax")
-      , Cabal-tree-diff =
-          H.callGit
-            "https://gitlab.haskell.org/ghc/packages/Cabal"
-            "e9fdb85427ad1ef11a25c8b1f2286614c86a65ff"
-            (Some "Cabal-tree-diff")
+      , Cabal-QuickCheck = callGitCabal "Cabal-QuickCheck"
+      , Cabal-described = callGitCabal "Cabal-described"
+      , Cabal-syntax = callGitCabal "Cabal-syntax"
+      , Cabal-tree-diff = callGitCabal "Cabal-tree-diff"
       , ChasingBottoms = H.callHackage "ChasingBottoms" "1.3.1.12"
       , Decimal = H.callHackage "Decimal" "0.5.2"
       , Diff = H.callHackage "Diff" "0.4.1"
