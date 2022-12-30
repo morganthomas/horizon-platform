@@ -555,6 +555,8 @@ self: with pkgs.haskell.lib; {
 
   haddock-library = self.callPackage (./pkgs/haddock-library.nix) { };
 
+  hakyll = self.callPackage (./pkgs/hakyll.nix) { };
+
   half = self.callPackage (./pkgs/half.nix) { };
 
   happy = self.callPackage (./pkgs/happy.nix) { };
@@ -764,6 +766,8 @@ self: with pkgs.haskell.lib; {
   logict = self.callPackage (./pkgs/logict.nix) { };
 
   lpeg = self.callPackage (./pkgs/lpeg.nix) { };
+
+  lrucache = self.callPackage (./pkgs/lrucache.nix) { };
 
   lsp = self.callPackage (./pkgs/lsp.nix) { };
 
@@ -1368,6 +1372,8 @@ self: with pkgs.haskell.lib; {
   time-compat = self.callPackage (./pkgs/time-compat.nix) { };
 
   time-effectful = self.callPackage (./pkgs/time-effectful.nix) { };
+
+  time-locale-compat = self.callPackage (./pkgs/time-locale-compat.nix) { };
 
   time-manager = self.callPackage (./pkgs/time-manager.nix) { };
 

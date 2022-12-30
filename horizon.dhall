@@ -375,6 +375,7 @@ let packages =
       , hackage-db = H.callHackage "hackage-db" "2.1.2"
       , hackage-security = H.callHackage "hackage-security" "0.6.2.2"
       , haddock-library = H.callHackage "haddock-library" "1.11.0"
+      , hakyll = H.callHackage "hakyll" "4.15.1.1"
       , half = H.callHackage "half" "0.3.1"
       , happy = H.callHackage "happy" "1.20.0"
       , hashable = H.callHackage "hashable" "1.4.1.0"
@@ -499,6 +500,7 @@ let packages =
             "910c79e10d5ac3353f2a1551103a2b63229c3f57"
             (None Text)
       , lpeg = H.callHackage "lpeg" "1.0.3"
+      , lrucache = H.callHackage "lrucache" "1.2.0.1"
       , lsp-types = H.callHackage "lsp-types" "1.6.0.0"
       , lsp = H.callHackage "lsp" "1.6.0.0"
       , lua-arbitrary = H.callHackage "lua-arbitrary" "1.0.1"
@@ -850,6 +852,7 @@ let packages =
             "https://github.com/haskell-effectful/time-effectful"
             "e212239b685e1ecf7ee95dd1e944cc563351907f"
             (None Text)
+      , time-locale-compat = H.callHackage "time-locale-compat" "0.1.1.5"
       , time-manager = H.callHackage "time-manager" "0.0.0"
       , tls-session-manager = H.callHackage "tls-session-manager" "0.0.4"
       , tls = H.callHackage "tls" "1.6.0"
