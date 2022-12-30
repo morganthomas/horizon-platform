@@ -938,6 +938,8 @@ let packages =
             "bd7dbbe83d25c00fcd2cf5c77736af904910c596"
             (None Text)
       , wai-logger = H.callHackage "wai-logger" "2.4.0"
+      , wai-middleware-prometheus =
+          H.callHackage "wai-middleware-prometheus" "1.0.0.1"
       , wai-middleware-static = H.callHackage "wai-middleware-static" "0.9.2"
       , wai = H.callHackage "wai" "3.2.3"
       , warp = H.callHackage "warp" "3.3.22"

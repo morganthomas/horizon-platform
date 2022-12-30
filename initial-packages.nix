@@ -1527,6 +1527,8 @@ self: with pkgs.haskell.lib; {
 
   wai-middleware-heartbeat = self.callPackage (./pkgs/wai-middleware-heartbeat.nix) { };
 
+  wai-middleware-prometheus = self.callPackage (./pkgs/wai-middleware-prometheus.nix) { };
+
   wai-middleware-static = self.callPackage (./pkgs/wai-middleware-static.nix) { };
 
   warp = self.callPackage (./pkgs/warp.nix) { };
