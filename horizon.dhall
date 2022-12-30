@@ -625,6 +625,7 @@ let packages =
           H.callHackage "postgresql-simple-migration" "0.1.15.0"
       , postgres-options = H.callHackage "postgres-options" "0.2.0.0"
       , pretty-hex = H.callHackage "pretty-hex" "1.1"
+      , pretty-relative-time = H.callHackage "pretty-relative-time" "0.3.0.0"
       , pretty-show = H.callHackage "pretty-show" "1.10"
       , pretty-simple = H.callHackage "pretty-simple" "4.1.1.0"
       , prettyprinter-ansi-terminal =

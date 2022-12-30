@@ -991,6 +991,8 @@ self: with pkgs.haskell.lib; {
 
   pretty-hex = self.callPackage (./pkgs/pretty-hex.nix) { };
 
+  pretty-relative-time = self.callPackage (./pkgs/pretty-relative-time.nix) { };
+
   pretty-show = self.callPackage (./pkgs/pretty-show.nix) { };
 
   pretty-simple = self.callPackage (./pkgs/pretty-simple.nix) { };
