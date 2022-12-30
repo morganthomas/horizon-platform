@@ -455,6 +455,8 @@ self: with pkgs.haskell.lib; {
 
   fsnotify = self.callPackage (./pkgs/fsnotify.nix) { };
 
+  fusion-plugin-types = self.callPackage (./pkgs/fusion-plugin-types.nix) { };
+
   fuzzy-time = self.callPackage (./pkgs/fuzzy-time.nix) { };
 
   fuzzy-time-gen = self.callPackage (./pkgs/fuzzy-time-gen.nix) { };

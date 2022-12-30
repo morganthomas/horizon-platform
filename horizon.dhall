@@ -308,6 +308,7 @@ let packages =
       , freer-simple = H.callHackage "freer-simple" "1.2.1.2"
       , friendly-time = H.callHackage "friendly-time" "0.4.1"
       , fsnotify = H.callHackage "fsnotify" "0.4.1.0"
+      , fusion-plugin-types = H.callHackage "fusion-plugin-types" "0.1.0"
       , fuzzy-time-gen = H.callHackage "fuzzy-time-gen" "0.2.0.1"
       , fuzzy-time = H.callHackage "fuzzy-time" "0.2.0.3"
       , generically = H.callHackage "generically" "0.1"
