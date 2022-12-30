@@ -734,6 +734,7 @@ let packages =
       , servant-swagger-ui-core =
           H.callHackage "servant-swagger-ui-core" "0.3.5"
       , servant-static-th = H.callHackage "servant-static-th" "1.0.0.0"
+      , servant-websockets = H.callHackage "servant-websockets" "2.0.0"
       , setenv = H.callHackage "setenv" "0.1.1.3"
       , setlocale = H.callHackage "setlocale" "1.0.0.10"
       , shakespeare = H.callHackage "shakespeare" "2.0.30"

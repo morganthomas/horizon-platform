@@ -1189,6 +1189,8 @@ self: with pkgs.haskell.lib; {
 
   servant-swagger-ui-core = self.callPackage (./pkgs/servant-swagger-ui-core.nix) { };
 
+  servant-websockets = self.callPackage (./pkgs/servant-websockets.nix) { };
+
   setenv = self.callPackage (./pkgs/setenv.nix) { };
 
   setlocale = self.callPackage (./pkgs/setlocale.nix) { };
