@@ -1067,6 +1067,8 @@ self: with pkgs.haskell.lib; {
 
   random-shuffle = self.callPackage (./pkgs/random-shuffle.nix) { };
 
+  raven-haskell = self.callPackage (./pkgs/raven-haskell.nix) { };
+
   raw-strings-qq = self.callPackage (./pkgs/raw-strings-qq.nix) { };
 
   rdtsc = self.callPackage (./pkgs/rdtsc.nix) { };

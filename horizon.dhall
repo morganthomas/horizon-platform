@@ -666,6 +666,7 @@ let packages =
       , random-bytestring = H.callHackage "random-bytestring" "0.1.4"
       , random-shuffle = H.callHackage "random-shuffle" "0.0.4"
       , random = H.callHackage "random" "1.2.1.1"
+      , raven-haskell = H.callHackage "raven-haskell" "0.1.4.1"
       , raw-strings-qq = H.callHackage "raw-strings-qq" "1.1"
       , rdtsc = H.callHackage "rdtsc" "1.3.0.1"
       , rebase = H.callHackage "rebase" "1.16"
