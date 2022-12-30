@@ -285,6 +285,8 @@ self: with pkgs.haskell.lib; {
 
   cursor-dirforest-gen = self.callPackage (./pkgs/cursor-dirforest-gen.nix) { };
 
+  cursor-fuzzy-time = self.callPackage (./pkgs/cursor-fuzzy-time.nix) { };
+
   cursor-gen = self.callPackage (./pkgs/cursor-gen.nix) { };
 
   daemons = self.callPackage (./pkgs/daemons.nix) { };

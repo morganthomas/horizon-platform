@@ -188,6 +188,7 @@ let packages =
       , cursor-dirforest = callGitCursorDirforest "cursor-dirforest"
       , cursor-dirforest-brick = callGitCursorDirforest "cursor-dirforest-brick"
       , cursor-dirforest-gen = callGitCursorDirforest "cursor-dirforest-gen"
+      , cursor-fuzzy-time = H.callHackage "cursor-fuzzy-time" "0.0.0.0"
       , cursor-gen = H.callHackage "cursor-gen" "0.4.0.0"
       , cursor = H.callHackage "cursor" "0.3.2.0"
       , cryptonite = H.callHackage "cryptonite" "0.30"
