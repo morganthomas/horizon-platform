@@ -196,6 +196,7 @@ let packages =
       , cursor-gen = H.callHackage "cursor-gen" "0.4.0.0"
       , cursor = H.callHackage "cursor" "0.3.2.0"
       , cryptonite = H.callHackage "cryptonite" "0.30"
+      , cryptonite-conduit = H.callHackage "cryptonite-conduit" "0.2.2"
       , cryptohash-md5 = H.callHackage "cryptohash-md5" "0.11.101.0"
       , cryptohash-sha1 = H.callHackage "cryptohash-sha1" "0.11.101.0"
       , cryptohash-sha256 = H.callHackage "cryptohash-sha256" "0.11.102.1"
