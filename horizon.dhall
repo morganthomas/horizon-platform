@@ -281,6 +281,7 @@ let packages =
       , feedback = H.callHackage "feedback" "0.1.0.1"
       , file-embed-lzma = H.callHackage "file-embed-lzma" "0.0.1"
       , file-embed = H.callHackage "file-embed" "0.0.15.0"
+      , filelock = H.callHackage "filelock" "0.1.1.5"
       , filemanip = H.callHackage "filemanip" "0.3.6.3"
       , filepattern = H.callHackage "filepattern" "0.1.3"
       , filtrable = H.callHackage "filtrable" "0.1.6.0"
