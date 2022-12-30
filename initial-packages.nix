@@ -1,6 +1,8 @@
 { pkgs, lib, callPackage, ... }:
 
 self: with pkgs.haskell.lib; {
+  BNFC = self.callPackage (./pkgs/BNFC.nix) { };
+
   Cabal = self.callPackage (./pkgs/Cabal.nix) { };
 
   Cabal-QuickCheck = self.callPackage (./pkgs/Cabal-QuickCheck.nix) { };
