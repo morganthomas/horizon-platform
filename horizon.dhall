@@ -100,6 +100,7 @@ let packages =
       , autodocodec-servant-multipart =
           H.callHackage "autodocodec-servant-multipart" "0.0.0.0"
       , autodocodec-yaml = H.callHackage "autodocodec-yaml" "0.2.0.2"
+      , autoexporter = H.callHackage "autoexporter" "2.0.0.2"
       , barbies = H.callHackage "barbies" "2.0.3.1"
       , base-orphans = H.callHackage "base-orphans" "0.8.7"
       , basement = H.callHackage "basement" "0.0.15"

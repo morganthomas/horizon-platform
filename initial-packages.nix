@@ -111,6 +111,8 @@ self: with pkgs.haskell.lib; {
 
   autodocodec-yaml = self.callPackage (./pkgs/autodocodec-yaml.nix) { };
 
+  autoexporter = self.callPackage (./pkgs/autoexporter.nix) { };
+
   barbies = self.callPackage (./pkgs/barbies.nix) { };
 
   base-compat = self.callPackage (./pkgs/base-compat.nix) { };
