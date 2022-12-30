@@ -44,7 +44,8 @@ let callGitServant
           (Some subdir)
 
 let packages =
-      { Cabal = H.callHackage "Cabal" "3.8.1.0"
+      { BNFC = H.callHackage "BNFC" "2.9.4.1"
+      , Cabal = H.callHackage "Cabal" "3.8.1.0"
       , Cabal-QuickCheck = callGitCabal "Cabal-QuickCheck"
       , Cabal-described = callGitCabal "Cabal-described"
       , Cabal-syntax = callGitCabal "Cabal-syntax"
