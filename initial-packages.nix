@@ -195,6 +195,8 @@ self: with pkgs.haskell.lib; {
 
   charset = self.callPackage (./pkgs/charset.nix) { };
 
+  cheapskate = self.callPackage (./pkgs/cheapskate.nix) { };
+
   checkers = self.callPackage (./pkgs/checkers.nix) { };
 
   chell = self.callPackage (./pkgs/chell.nix) { };

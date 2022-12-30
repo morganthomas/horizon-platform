@@ -146,6 +146,7 @@ let packages =
       , cereal-vector = H.callHackage "cereal-vector" "0.2.0.1"
       , cereal = H.callHackage "cereal" "0.5.8.3"
       , charset = H.callHackage "charset" "0.3.9"
+      , cheapskate = H.callHackage "cheapskate" "0.1.1.2"
       , checkers = H.callHackage "checkers" "0.6.0"
       , chell-quickcheck = H.callHackage "chell-quickcheck" "0.2.5.3"
       , chell = H.callHackage "chell" "0.5.0.1"
