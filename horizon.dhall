@@ -173,6 +173,7 @@ let packages =
       , composite-lens-extra = H.callHackage "composite-lens-extra" "0.1.0.0"
       , composite-tuple = H.callHackage "composite-tuple" "0.1.2.0"
       , concurrent-output = H.callHackage "concurrent-output" "1.10.16"
+      , conduit-combinators = H.callHackage "conduit-combinators" "1.3.0"
       , conduit = H.callHackage "conduit" "1.3.4.2"
       , conduit-extra = H.callHackage "conduit-extra" "1.3.6"
       , config-ini = H.callHackage "config-ini" "0.2.5.0"

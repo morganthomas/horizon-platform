@@ -243,6 +243,8 @@ self: with pkgs.haskell.lib; {
 
   conduit = self.callPackage (./pkgs/conduit.nix) { };
 
+  conduit-combinators = self.callPackage (./pkgs/conduit-combinators.nix) { };
+
   conduit-extra = self.callPackage (./pkgs/conduit-extra.nix) { };
 
   config-ini = self.callPackage (./pkgs/config-ini.nix) { };
