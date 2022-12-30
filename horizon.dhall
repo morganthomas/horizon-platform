@@ -850,6 +850,7 @@ let packages =
             "https://github.com/haskell-effectful/time-effectful"
             "e212239b685e1ecf7ee95dd1e944cc563351907f"
             (None Text)
+      , time-locale-compat = H.callHackage "time-locale-compat" "0.1.1.5"
       , time-manager = H.callHackage "time-manager" "0.0.0"
       , tls-session-manager = H.callHackage "tls-session-manager" "0.0.4"
       , tls = H.callHackage "tls" "1.6.0"

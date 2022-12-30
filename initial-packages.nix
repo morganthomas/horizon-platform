@@ -1369,6 +1369,8 @@ self: with pkgs.haskell.lib; {
 
   time-effectful = self.callPackage (./pkgs/time-effectful.nix) { };
 
+  time-locale-compat = self.callPackage (./pkgs/time-locale-compat.nix) { };
+
   time-manager = self.callPackage (./pkgs/time-manager.nix) { };
 
   timeit = self.callPackage (./pkgs/timeit.nix) { };
