@@ -555,6 +555,8 @@ self: with pkgs.haskell.lib; {
 
   haddock-library = self.callPackage (./pkgs/haddock-library.nix) { };
 
+  hakyll = self.callPackage (./pkgs/hakyll.nix) { };
+
   half = self.callPackage (./pkgs/half.nix) { };
 
   happy = self.callPackage (./pkgs/happy.nix) { };

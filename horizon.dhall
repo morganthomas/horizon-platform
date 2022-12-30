@@ -375,6 +375,7 @@ let packages =
       , hackage-db = H.callHackage "hackage-db" "2.1.2"
       , hackage-security = H.callHackage "hackage-security" "0.6.2.2"
       , haddock-library = H.callHackage "haddock-library" "1.11.0"
+      , hakyll = H.callHackage "hakyll" "4.15.1.1"
       , half = H.callHackage "half" "0.3.1"
       , happy = H.callHackage "happy" "1.20.0"
       , hashable = H.callHackage "hashable" "1.4.1.0"
