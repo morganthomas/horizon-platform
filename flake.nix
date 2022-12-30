@@ -2,10 +2,6 @@
   inputs = {
     get-flake.url = "github:ursi/get-flake";
     lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
-    horizon-gen-nix = {
-      url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix?rev=8eb5ffc81cd8331f340546d746a786c7b2f021a6";
-      flake = false;
-    };
     horizon-platform = {
       url = "git+https://gitlab.homotopic.tech/horizon/horizon-platform";
       flake = false;
@@ -18,7 +14,6 @@
     { self
     , get-flake
     , flake-utils
-    , horizon-gen-nix
     , horizon-platform
     , lint-utils
     , nixpkgs
@@ -34,9 +29,9 @@
       with lint-utils.writers.${system};
       let
 
-        horizon-gen-nix-app = get-flake horizon-gen-nix;
-
         horizon-platform-prev = get-flake horizon-platform;
+
+        horizon-gen-nix = horizon-platform-prev.legacyPackages.${system}.horizon-gen-nix;
 
         haskellLib = pkgs.haskell.lib.compose;
 
@@ -84,7 +79,10 @@
 
         apps = {
 
-          horizon-gen-nix = horizon-gen-nix-app.outputs.apps.${system}.horizon-gen-nix;
+          horizon-gen-nix = {
+            type = "app";
+            program = "${horizon-gen-nix}/bin/horizon-gen-nix";
+          };
 
           horizon-gen-gitlab-ci = {
             type = "app";

@@ -44,22 +44,6 @@
         "type": "github"
       }
     },
-    "horizon-gen-nix": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1670944091,
-        "narHash": "sha256-WFj0uQqaEIURuZpfsb8yy/iqyzN8Lrc9BpWloL5a4R0=",
-        "rev": "8eb5ffc81cd8331f340546d746a786c7b2f021a6",
-        "revCount": 109,
-        "type": "git",
-        "url": "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
-      },
-      "original": {
-        "rev": "8eb5ffc81cd8331f340546d746a786c7b2f021a6",
-        "type": "git",
-        "url": "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
-      }
-    },
     "horizon-platform": {
       "flake": false,
       "locked": {
@@ -131,7 +115,6 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "get-flake": "get-flake",
-        "horizon-gen-nix": "horizon-gen-nix",
         "horizon-platform": "horizon-platform",
         "lint-utils": "lint-utils",
         "nixpkgs": "nixpkgs_2"
