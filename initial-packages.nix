@@ -713,6 +713,8 @@ self: with pkgs.haskell.lib; {
 
   ipynb = self.callPackage (./pkgs/ipynb.nix) { };
 
+  iso8601-time = self.callPackage (./pkgs/iso8601-time.nix) { };
+
   jira-wiki-markup = self.callPackage (./pkgs/jira-wiki-markup.nix) { };
 
   js-chart = self.callPackage (./pkgs/js-chart.nix) { };
