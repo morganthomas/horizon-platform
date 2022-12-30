@@ -1589,6 +1589,8 @@ self: with pkgs.haskell.lib; {
 
   xmonad-contrib = self.callPackage (./pkgs/xmonad-contrib.nix) { };
 
+  xss-sanitize = self.callPackage (./pkgs/xss-sanitize.nix) { };
+
   yaml = self.callPackage (./pkgs/yaml.nix) { };
 
   zip-archive = self.callPackage (./pkgs/zip-archive.nix) { };

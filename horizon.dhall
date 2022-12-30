@@ -971,6 +971,7 @@ let packages =
       , xml = H.callHackage "xml" "1.3.14"
       , xmonad-contrib = H.callHackage "xmonad-contrib" "0.17.1"
       , xmonad = H.callHackage "xmonad" "0.17.1"
+      , xss-sanitize = H.callHackage "xss-sanitize" "0.3.7.1"
       , yaml = H.callHackage "yaml" "0.11.8.0"
       , zip-archive = H.callHackage "zip-archive" "0.4.2.2"
       , zlib = H.callHackage "zlib" "0.6.3.0"
