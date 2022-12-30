@@ -44,30 +44,14 @@
         "type": "github"
       }
     },
-    "horizon-gen-nix": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1670944091,
-        "narHash": "sha256-WFj0uQqaEIURuZpfsb8yy/iqyzN8Lrc9BpWloL5a4R0=",
-        "rev": "8eb5ffc81cd8331f340546d746a786c7b2f021a6",
-        "revCount": 109,
-        "type": "git",
-        "url": "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
-      },
-      "original": {
-        "rev": "8eb5ffc81cd8331f340546d746a786c7b2f021a6",
-        "type": "git",
-        "url": "https://gitlab.homotopic.tech/horizon/horizon-gen-nix"
-      }
-    },
     "horizon-platform": {
       "flake": false,
       "locked": {
-        "lastModified": 1672214025,
-        "narHash": "sha256-nGVh2FVHzFT2AFzrwKiiMiIm/0moyk7XBJWS5AWPyTE=",
+        "lastModified": 1672428555,
+        "narHash": "sha256-+Aui0RtWnkWjSSbOrcg1zcnETuyD44YBj0WJ9fZsogI=",
         "ref": "refs/heads/master",
-        "rev": "4b8c268525ba482e4bfd3c181aa8b222e1221d15",
-        "revCount": 786,
+        "rev": "e187fb1aff7b3aad3cd81f11c5df6963d65b67ed",
+        "revCount": 804,
         "type": "git",
         "url": "https://gitlab.homotopic.tech/horizon/horizon-platform"
       },
@@ -113,11 +97,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1665830552,
-        "narHash": "sha256-qel2bZ9TqfW8WzWCWdjuCy4bVFhhGsEeqFv/bj1ka2s=",
+        "lastModified": 1672397839,
+        "narHash": "sha256-o+TBFFNSdOu5L1CUetXGMSinghqqlWcI2Sj9GVoJmUY=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "26b7e6ab6a864c3e7e077bcb27a49f0480b9894a",
+        "rev": "a3f612564c15e8471dd17c15efaf7ede83c57763",
         "type": "github"
       },
       "original": {
@@ -131,7 +115,6 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "get-flake": "get-flake",
-        "horizon-gen-nix": "horizon-gen-nix",
         "horizon-platform": "horizon-platform",
         "lint-utils": "lint-utils",
         "nixpkgs": "nixpkgs_2"

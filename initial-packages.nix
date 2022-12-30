@@ -111,6 +111,8 @@ self: with pkgs.haskell.lib; {
 
   autodocodec-yaml = self.callPackage (./pkgs/autodocodec-yaml.nix) { };
 
+  autoexporter = self.callPackage (./pkgs/autoexporter.nix) { };
+
   barbies = self.callPackage (./pkgs/barbies.nix) { };
 
   base-compat = self.callPackage (./pkgs/base-compat.nix) { };
@@ -285,6 +287,8 @@ self: with pkgs.haskell.lib; {
 
   cursor-dirforest-gen = self.callPackage (./pkgs/cursor-dirforest-gen.nix) { };
 
+  cursor-fuzzy-time = self.callPackage (./pkgs/cursor-fuzzy-time.nix) { };
+
   cursor-gen = self.callPackage (./pkgs/cursor-gen.nix) { };
 
   daemons = self.callPackage (./pkgs/daemons.nix) { };
@@ -409,6 +413,8 @@ self: with pkgs.haskell.lib; {
 
   file-embed-lzma = self.callPackage (./pkgs/file-embed-lzma.nix) { };
 
+  filelock = self.callPackage (./pkgs/filelock.nix) { };
+
   filemanip = self.callPackage (./pkgs/filemanip.nix) { };
 
   filepattern = self.callPackage (./pkgs/filepattern.nix) { };
@@ -446,6 +452,8 @@ self: with pkgs.haskell.lib; {
   fsnotify = self.callPackage (./pkgs/fsnotify.nix) { };
 
   fuzzy-time = self.callPackage (./pkgs/fuzzy-time.nix) { };
+
+  fuzzy-time-gen = self.callPackage (./pkgs/fuzzy-time-gen.nix) { };
 
   generic-deriving = self.callPackage (./pkgs/generic-deriving.nix) { };
 
@@ -985,6 +993,8 @@ self: with pkgs.haskell.lib; {
 
   pretty-hex = self.callPackage (./pkgs/pretty-hex.nix) { };
 
+  pretty-relative-time = self.callPackage (./pkgs/pretty-relative-time.nix) { };
+
   pretty-show = self.callPackage (./pkgs/pretty-show.nix) { };
 
   pretty-simple = self.callPackage (./pkgs/pretty-simple.nix) { };
@@ -1120,6 +1130,8 @@ self: with pkgs.haskell.lib; {
   semigroups = self.callPackage (./pkgs/semigroups.nix) { };
 
   semirings = self.callPackage (./pkgs/semirings.nix) { };
+
+  semver = self.callPackage (./pkgs/semver.nix) { };
 
   serialise = self.callPackage (./pkgs/serialise.nix) { };
 

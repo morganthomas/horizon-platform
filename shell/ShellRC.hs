@@ -18,6 +18,7 @@ import qualified Data.Text                 as T
 import qualified Data.Text.Encoding        as T
 import qualified Data.Yaml                 as Y
 import qualified Data.Yaml.Pretty          as Y
+import           Horizon.Spec
 import           Network.HTTP.Simple
 import           Path
 import           Procex.Prelude

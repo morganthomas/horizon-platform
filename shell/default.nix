@@ -13,6 +13,8 @@ let
     containers
     dhall
     http-conduit
+    horizon-gen-nix
+    horizon-spec
     lens
     lens-aeson
     path
