@@ -40,6 +40,7 @@
           compilerConfig = pkgs.callPackage ./configuration-ghc-9.4.x.nix { inherit haskellLib; };
           configurationArm = { pkgs, haskellLib }: self: super: { };
           configurationCommon = import ./configuration.nix;
+          configurationDarwin = { pkgs, haskellLib }: self: super: { };
           configurationNix = { pkgs, haskellLib }: self: super: { };
           ghc = pkgs.haskell.compiler.ghc942;
           inherit haskellLib;
