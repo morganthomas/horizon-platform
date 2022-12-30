@@ -285,6 +285,8 @@ self: with pkgs.haskell.lib; {
 
   cryptonite-conduit = self.callPackage (./pkgs/cryptonite-conduit.nix) { };
 
+  css-text = self.callPackage (./pkgs/css-text.nix) { };
+
   csv = self.callPackage (./pkgs/csv.nix) { };
 
   cursor = self.callPackage (./pkgs/cursor.nix) { };

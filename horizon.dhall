@@ -187,6 +187,7 @@ let packages =
       , cpphs = H.callHackage "cpphs" "1.20.9.1"
       , criterion-measurement = H.callHackage "criterion-measurement" "0.2.0.0"
       , criterion = H.callHackage "criterion" "1.5.13.0"
+      , css-text = H.callHackage "css-text" "0.1.3.0"
       , csv =
           callHorizonAdopted "csv" "d02b89bbad79136b52fd1197f087466cf51573dd"
       , cursor-brick = H.callHackage "cursor-brick" "0.1.0.1"
