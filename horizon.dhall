@@ -784,6 +784,7 @@ let packages =
       , string-qq = H.callHackage "string-qq" "0.0.4"
       , stringbuilder = H.callHackage "stringbuilder" "0.5.1"
       , stringsearch = H.callHackage "stringsearch" "0.3.6.6"
+      , sundown = H.callHackage "sundown" "0.6"
       , swagger2 = H.callHackage "swagger2" "2.8.5"
       , syb = H.callHackage "syb" "0.7.2.1"
       , sydtest = H.callHackage "sydtest" "0.13.0.0"
