@@ -71,6 +71,7 @@ let packages =
       , StateVar = H.callHackage "StateVar" "1.2.2"
       , X11-xft = H.callHackage "X11-xft" "0.3.4"
       , X11 = H.callHackage "X11" "1.10.3"
+      , abstract-deque-tests = H.callHackage "abstract-deque-tests" "0.3"
       , abstract-deque = H.callHackage "abstract-deque" "0.3"
       , abstract-par = H.callHackage "abstract-par" "0.3.3"
       , adjunctions = H.callHackage "adjunctions" "4.4.2"

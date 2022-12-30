@@ -57,6 +57,8 @@ self: with pkgs.haskell.lib; {
 
   abstract-deque = self.callPackage (./pkgs/abstract-deque.nix) { };
 
+  abstract-deque-tests = self.callPackage (./pkgs/abstract-deque-tests.nix) { };
+
   abstract-par = self.callPackage (./pkgs/abstract-par.nix) { };
 
   adjunctions = self.callPackage (./pkgs/adjunctions.nix) { };
