@@ -4,8 +4,8 @@ mkDerivation {
   version = "0.10.0.2";
   src = fetchgit {
     url = "https://github.com/UnkindPartition/tasty";
-    sha256 = "0mbzw9plh5gffpdzbnw6749b45dpal29wdak2y04qlmjs42wxcv1";
-    rev = "207d3453a64b414593512c1e968171d64a8dbe61";
+    sha256 = "0xx85l6g6xxxyfjmlxz5mfli75v77js55a9hr0n7ghrypg2lpj55";
+    rev = "226c35f468be389536fbb9471904a113d1586da6";
     fetchSubmodules = true;
   };
   postUnpack = "sourceRoot+=/hunit/; echo source root reset to $sourceRoot";

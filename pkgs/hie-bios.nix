@@ -36,8 +36,8 @@ mkDerivation {
   pname = "hie-bios";
   version = "0.11.0";
   sha256 = "9708bf4309e904771bf590dd4e683e0b5c18e486ed499be8ceff5119a25f0eef";
-  revision = "1";
-  editedCabalFile = "041zzf7m2xmg8l5ywrr62c0gxx3q0211yrsz8sg7c4s2456aghk0";
+  revision = "3";
+  editedCabalFile = "0axmy522cfk92c5hwrqhkqswlxlm26m821b64rnh32666sxfdhy1";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = false;

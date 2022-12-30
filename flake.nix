@@ -6,6 +6,10 @@
       url = "git+https://gitlab.homotopic.tech/horizon/horizon-gen-nix?rev=8eb5ffc81cd8331f340546d746a786c7b2f021a6";
       flake = false;
     };
+    horizon-platform = {
+      url = "git+https://gitlab.homotopic.tech/horizon/horizon-platform";
+      flake = false;
+    };
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
 
@@ -15,6 +19,7 @@
     , get-flake
     , flake-utils
     , horizon-gen-nix
+    , horizon-platform
     , lint-utils
     , nixpkgs
     , ...
@@ -31,6 +36,8 @@
 
         horizon-gen-nix-app = get-flake horizon-gen-nix;
 
+        horizon-platform-prev = get-flake horizon-platform;
+
         haskellLib = pkgs.haskell.lib.compose;
 
         legacyPackages = pkgs.callPackage (nixpkgs + /pkgs/development/haskell-modules) {
@@ -46,10 +53,10 @@
 
         packages = filterAttrs
           (n: v: v != null
-          && builtins.typeOf v == "set"
-          && pkgs.lib.hasAttr "type" v
-          && v.type == "derivation"
-          && v.meta.broken == false)
+            && builtins.typeOf v == "set"
+            && pkgs.lib.hasAttr "type" v
+            && v.type == "derivation"
+            && v.meta.broken == false)
           legacyPackages;
 
         horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
@@ -71,6 +78,7 @@
           program = "${run-impure-tests}/bin/run-impure-tests";
         };
 
+        procex = import ./shell/default.nix { haskellPackages = horizon-platform-prev.legacyPackages.${system}; inherit (pkgs) runCommand writeShellScriptBin; };
       in
       {
 
@@ -83,28 +91,23 @@
             program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
           };
 
+          procex = {
+            type = "app";
+            program = "${procex}/bin/procex-shell";
+          };
+
           run-impure-tests = run-impure-tests-app;
         };
 
-        checks = {
-          dhall-format = lint-utils.outputs.linters.${system}.dhall-format { src = ./.; };
-          nixpkgs-fmt = lint-utils.outputs.linters.${system}.nixpkgs-fmt { src = ./.; };
+        checks = with lint-utils.linters.${system}; {
+          dhall-format = dhall-format { src = self; };
+          nixpkgs-fmt = nixpkgs-fmt { src = self; };
+          stylish-haskell = stylish-haskell { src = self; };
         };
 
         inherit legacyPackages;
 
         inherit packages;
 
-      }) // {
-      templates = rec {
-
-        default = minimal;
-
-        minimal = {
-          description = "horizon-platform minimal template";
-          path = ./templates/minimal;
-        };
-
-      };
-    };
+      });
 }

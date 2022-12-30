@@ -17,8 +17,8 @@ mkDerivation {
   pname = "servant-swagger-ui-core";
   version = "0.3.5";
   sha256 = "ed0bf0b2fbdb1751350df6780335de00ae08dd90ac4728a88369f4b132cf7b32";
-  revision = "4";
-  editedCabalFile = "16183mrmxipa3l3ffpibsrr41mbi2iikw66y80hplmnl6jjhnyzd";
+  revision = "5";
+  editedCabalFile = "1v80wydj605b1la1pa5b4l6c3ba86x2dlpnravvhmx32mkkxk7v2";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

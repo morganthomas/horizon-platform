@@ -13,7 +13,7 @@ repository.
 ```
 mkdir myProject
 cd myProject
-nix flake init -t 'git+https://gitlab.homotopic.tech/horizon/horizon-platform'
+nix flake init -t 'git+https://gitlab.homotopic.tech/horizon/horizon-templates'
 ```
 
 ## Updating the package set

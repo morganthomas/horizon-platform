@@ -587,6 +587,8 @@ self: with pkgs.haskell.lib; {
 
   horizon-gen-nix = self.callPackage (./pkgs/horizon-gen-nix.nix) { };
 
+  horizon-spec = self.callPackage (./pkgs/horizon-spec.nix) { };
+
   hosc = self.callPackage (./pkgs/hosc.nix) { };
 
   hostname = self.callPackage (./pkgs/hostname.nix) { };
