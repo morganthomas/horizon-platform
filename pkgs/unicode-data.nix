@@ -9,8 +9,8 @@
 }:
 mkDerivation {
   pname = "unicode-data";
-  version = "0.4.0";
-  sha256 = "4890d5a26cae879ea573dc07408e833ad49937a9a551a3bbdc4fa77718644127";
+  version = "0.3.1";
+  sha256 = "be1f815497a7c4d46395ba6dfc49f811a9716a670381f89f102b7df0f0f35c60";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = false;
