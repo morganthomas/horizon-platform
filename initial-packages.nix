@@ -57,6 +57,8 @@ self: with pkgs.haskell.lib; {
 
   abstract-deque = self.callPackage (./pkgs/abstract-deque.nix) { };
 
+  abstract-deque-tests = self.callPackage (./pkgs/abstract-deque-tests.nix) { };
+
   abstract-par = self.callPackage (./pkgs/abstract-par.nix) { };
 
   adjunctions = self.callPackage (./pkgs/adjunctions.nix) { };
@@ -193,6 +195,8 @@ self: with pkgs.haskell.lib; {
 
   charset = self.callPackage (./pkgs/charset.nix) { };
 
+  cheapskate = self.callPackage (./pkgs/cheapskate.nix) { };
+
   checkers = self.callPackage (./pkgs/checkers.nix) { };
 
   chell = self.callPackage (./pkgs/chell.nix) { };
@@ -202,6 +206,8 @@ self: with pkgs.haskell.lib; {
   citeproc = self.callPackage (./pkgs/citeproc.nix) { };
 
   clock = self.callPackage (./pkgs/clock.nix) { };
+
+  cmark-gfm = self.callPackage (./pkgs/cmark-gfm.nix) { };
 
   cmdargs = self.callPackage (./pkgs/cmdargs.nix) { };
 
@@ -241,6 +247,8 @@ self: with pkgs.haskell.lib; {
 
   conduit = self.callPackage (./pkgs/conduit.nix) { };
 
+  conduit-combinators = self.callPackage (./pkgs/conduit-combinators.nix) { };
+
   conduit-extra = self.callPackage (./pkgs/conduit-extra.nix) { };
 
   config-ini = self.callPackage (./pkgs/config-ini.nix) { };
@@ -276,6 +284,10 @@ self: with pkgs.haskell.lib; {
   cryptohash-sha256 = self.callPackage (./pkgs/cryptohash-sha256.nix) { };
 
   cryptonite = self.callPackage (./pkgs/cryptonite.nix) { };
+
+  cryptonite-conduit = self.callPackage (./pkgs/cryptonite-conduit.nix) { };
+
+  css-text = self.callPackage (./pkgs/css-text.nix) { };
 
   csv = self.callPackage (./pkgs/csv.nix) { };
 
@@ -452,6 +464,8 @@ self: with pkgs.haskell.lib; {
   friendly-time = self.callPackage (./pkgs/friendly-time.nix) { };
 
   fsnotify = self.callPackage (./pkgs/fsnotify.nix) { };
+
+  fusion-plugin-types = self.callPackage (./pkgs/fusion-plugin-types.nix) { };
 
   fuzzy-time = self.callPackage (./pkgs/fuzzy-time.nix) { };
 
@@ -709,6 +723,8 @@ self: with pkgs.haskell.lib; {
 
   ipynb = self.callPackage (./pkgs/ipynb.nix) { };
 
+  iso8601-time = self.callPackage (./pkgs/iso8601-time.nix) { };
+
   jira-wiki-markup = self.callPackage (./pkgs/jira-wiki-markup.nix) { };
 
   js-chart = self.callPackage (./pkgs/js-chart.nix) { };
@@ -759,6 +775,8 @@ self: with pkgs.haskell.lib; {
 
   linear = self.callPackage (./pkgs/linear.nix) { };
 
+  lockfree-queue = self.callPackage (./pkgs/lockfree-queue.nix) { };
+
   log-base = self.callPackage (./pkgs/log-base.nix) { };
 
   log-effectful = self.callPackage (./pkgs/log-effectful.nix) { };
@@ -792,6 +810,8 @@ self: with pkgs.haskell.lib; {
   lzma = self.callPackage (./pkgs/lzma.nix) { };
 
   managed = self.callPackage (./pkgs/managed.nix) { };
+
+  markdown = self.callPackage (./pkgs/markdown.nix) { };
 
   markdown-unlit = self.callPackage (./pkgs/markdown-unlit.nix) { };
 
@@ -1023,6 +1043,8 @@ self: with pkgs.haskell.lib; {
 
   prometheus-client = self.callPackage (./pkgs/prometheus-client.nix) { };
 
+  prometheus-metrics-ghc = self.callPackage (./pkgs/prometheus-metrics-ghc.nix) { };
+
   prometheus-proc = self.callPackage (./pkgs/prometheus-proc.nix) { };
 
   proteaaudio-sdl = self.callPackage (./pkgs/proteaaudio-sdl.nix) { };
@@ -1052,6 +1074,8 @@ self: with pkgs.haskell.lib; {
   random-bytestring = self.callPackage (./pkgs/random-bytestring.nix) { };
 
   random-shuffle = self.callPackage (./pkgs/random-shuffle.nix) { };
+
+  raven-haskell = self.callPackage (./pkgs/raven-haskell.nix) { };
 
   raw-strings-qq = self.callPackage (./pkgs/raw-strings-qq.nix) { };
 
@@ -1173,6 +1197,8 @@ self: with pkgs.haskell.lib; {
 
   servant-swagger-ui-core = self.callPackage (./pkgs/servant-swagger-ui-core.nix) { };
 
+  servant-websockets = self.callPackage (./pkgs/servant-websockets.nix) { };
+
   setenv = self.callPackage (./pkgs/setenv.nix) { };
 
   setlocale = self.callPackage (./pkgs/setlocale.nix) { };
@@ -1243,6 +1269,8 @@ self: with pkgs.haskell.lib; {
 
   streaming-commons = self.callPackage (./pkgs/streaming-commons.nix) { };
 
+  streamly = self.callPackage (./pkgs/streamly.nix) { };
+
   strict = self.callPackage (./pkgs/strict.nix) { };
 
   string-conv = self.callPackage (./pkgs/string-conv.nix) { };
@@ -1256,6 +1284,8 @@ self: with pkgs.haskell.lib; {
   stringbuilder = self.callPackage (./pkgs/stringbuilder.nix) { };
 
   stringsearch = self.callPackage (./pkgs/stringsearch.nix) { };
+
+  sundown = self.callPackage (./pkgs/sundown.nix) { };
 
   swagger2 = self.callPackage (./pkgs/swagger2.nix) { };
 
@@ -1511,11 +1541,17 @@ self: with pkgs.haskell.lib; {
 
   wai-extra = self.callPackage (./pkgs/wai-extra.nix) { };
 
+  wai-log = self.callPackage (./pkgs/wai-log.nix) { };
+
   wai-logger = self.callPackage (./pkgs/wai-logger.nix) { };
 
   wai-middleware-heartbeat = self.callPackage (./pkgs/wai-middleware-heartbeat.nix) { };
 
+  wai-middleware-prometheus = self.callPackage (./pkgs/wai-middleware-prometheus.nix) { };
+
   wai-middleware-static = self.callPackage (./pkgs/wai-middleware-static.nix) { };
+
+  wai-websockets = self.callPackage (./pkgs/wai-websockets.nix) { };
 
   warp = self.callPackage (./pkgs/warp.nix) { };
 
@@ -1549,11 +1585,15 @@ self: with pkgs.haskell.lib; {
 
   xml-conduit = self.callPackage (./pkgs/xml-conduit.nix) { };
 
+  xml-conduit-writer = self.callPackage (./pkgs/xml-conduit-writer.nix) { };
+
   xml-types = self.callPackage (./pkgs/xml-types.nix) { };
 
   xmonad = self.callPackage (./pkgs/xmonad.nix) { };
 
   xmonad-contrib = self.callPackage (./pkgs/xmonad-contrib.nix) { };
+
+  xss-sanitize = self.callPackage (./pkgs/xss-sanitize.nix) { };
 
   yaml = self.callPackage (./pkgs/yaml.nix) { };
 
