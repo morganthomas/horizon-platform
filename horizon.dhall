@@ -11,6 +11,14 @@ let callHorizonAdopted
           revision
           (None Text)
 
+let callGitServant
+    : H.Subdir → H.HaskellPackage.Type
+    = λ(subdir : H.Subdir) →
+        H.callGit
+          "https://github.com/TeofilC/servant"
+          "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
+          (Some subdir)
+
 let packages =
       { Cabal = H.callHackage "Cabal" "3.8.1.0"
       , Cabal-QuickCheck =
@@ -704,42 +712,22 @@ let packages =
       , semigroupoids = H.callHackage "semigroupoids" "5.3.7"
       , semirings = H.callHackage "semirings" "0.6"
       , serialise = H.callHackage "serialise" "0.2.6.0"
-      , servant =
-          H.callGit
-            "https://github.com/TeofilC/servant"
-            "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
-            (Some "servant")
+      , servant = callGitServant "servant"
       , servant-blaze = H.callHackage "servant-blaze" "0.9.1"
-      , servant-client-core =
-          H.callGit
-            "https://github.com/TeofilC/servant"
-            "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
-            (Some "servant-client-core")
-      , servant-client =
-          H.callGit
-            "https://github.com/TeofilC/servant"
-            "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
-            (Some "servant-client")
+      , servant-client-core = callGitServant "servant-client-core"
+      , servant-client = callGitServant "servant-client"
       , servant-docs = H.callHackage "servant-docs" "0.12"
       , servant-effectful =
           H.callGit
             "https://github.com/kleidukos/servant-effectful"
             "65e3041c6cfbc315b20ad22ca18f61dda104eec8"
             (None Text)
-      , servant-foreign =
-          H.callGit
-            "https://github.com/TeofilC/servant"
-            "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
-            (Some "servant-foreign")
+      , servant-foreign = callGitServant "servant-foreign"
       , servant-lucid = H.callHackage "servant-lucid" "0.9.0.5"
       , servant-multipart = H.callHackage "servant-multipart" "0.12.1"
       , servant-multipart-api = H.callHackage "servant-multipart-api" "0.12.1"
       , servant-polysemy = H.callHackage "servant-polysemy" "0.1.3"
-      , servant-server =
-          H.callGit
-            "https://github.com/TeofilC/servant"
-            "76fc90a51f915230bbe1e0d1dbe9727fcdc7a0fc"
-            (Some "servant-server")
+      , servant-server = callGitServant "servant-server"
       , servant-swagger = H.callHackage "servant-swagger" "1.1.11"
       , servant-swagger-ui = H.callHackage "servant-swagger-ui" "0.3.5.4.5.0"
       , servant-swagger-ui-core =
