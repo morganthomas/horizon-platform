@@ -1,11 +1,11 @@
 {
   inputs = {
     get-flake.url = "github:ursi/get-flake";
-    lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     horizon-platform = {
       url = "git+https://gitlab.homotopic.tech/horizon/horizon-platform";
       flake = false;
     };
+    lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
 
