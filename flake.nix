@@ -1,11 +1,11 @@
 {
   inputs = {
     get-flake.url = "github:ursi/get-flake";
-    lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     horizon-platform = {
       url = "git+https://gitlab.homotopic.tech/horizon/horizon-platform";
       flake = false;
     };
+    lint-utils.url = "git+https://gitlab.homotopic.tech/nix/lint-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
 
@@ -56,8 +56,6 @@
             && v.meta.broken == false)
           legacyPackages;
 
-        horizon-gen-gitlab-ci = writeBashBin "gen-gitlab-ci" "${pkgs.dhall-json}/bin/dhall-to-yaml --file .gitlab-ci.dhall";
-
         run-impure-tests = writePorcelainOrDieBin {
           name = "run-impure-tests";
           src = ./.;
@@ -84,11 +82,6 @@
           horizon-gen-nix = {
             type = "app";
             program = "${horizon-gen-nix}/bin/horizon-gen-nix";
-          };
-
-          horizon-gen-gitlab-ci = {
-            type = "app";
-            program = "${horizon-gen-gitlab-ci}/bin/gen-gitlab-ci";
           };
 
           procex = {
