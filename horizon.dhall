@@ -587,6 +587,7 @@ let packages =
       , pandoc-types = H.callHackage "pandoc-types" "1.22.2.1"
       , pandoc = H.callHackage "pandoc" "2.19.2"
       , parallel = H.callHackage "parallel" "3.2.2.0"
+      , parsec1 = H.callHackage "parsec1" "1.0.0.8"
       , parsec-class = H.callHackage "parsec-class" "1.0.0.0"
       , parsec = H.callHackage "parsec" "3.1.15.1"
       , parsers-megaparsec = H.callHackage "parsers-megaparsec" "0.1.0.1"
