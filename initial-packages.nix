@@ -157,6 +157,8 @@ self: with pkgs.haskell.lib; {
 
   bsb-http-chunked = self.callPackage (./pkgs/bsb-http-chunked.nix) { };
 
+  bsd-sysctl = self.callPackage (./pkgs/bsd-sysctl.nix) { };
+
   byteable = self.callPackage (./pkgs/byteable.nix) { };
 
   byteorder = self.callPackage (./pkgs/byteorder.nix) { };
