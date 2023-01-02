@@ -965,6 +965,7 @@ let packages =
       , wl-pprint-annotated = H.callHackage "wl-pprint-annotated" "0.1.0.1"
       , word-wrap = H.callHackage "word-wrap" "0.5"
       , word8 = H.callHackage "word8" "0.1.3"
+      , wuss = H.callHackage "wuss" "2.0.0.2"
       , x509-store = H.callHackage "x509-store" "1.6.9"
       , x509-system = H.callHackage "x509-system" "1.6.7"
       , x509-validation = H.callHackage "x509-validation" "1.6.12"

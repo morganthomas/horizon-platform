@@ -1577,6 +1577,8 @@ self: with pkgs.haskell.lib; {
 
   word8 = self.callPackage (./pkgs/word8.nix) { };
 
+  wuss = self.callPackage (./pkgs/wuss.nix) { };
+
   x509 = self.callPackage (./pkgs/x509.nix) { };
 
   x509-store = self.callPackage (./pkgs/x509-store.nix) { };
