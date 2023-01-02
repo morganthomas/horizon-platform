@@ -469,6 +469,7 @@ let packages =
       , ipynb = H.callHackage "ipynb" "0.2"
       , iproute = H.callHackage "iproute" "1.7.12"
       , iso8601-time = H.callHackage "iso8601-time" "0.1.5"
+      , iwlib = H.callHackage "iwlib" "0.1.2"
       , jira-wiki-markup = H.callHackage "jira-wiki-markup" "1.4.0"
       , js-chart = H.callHackage "js-chart" "2.9.4.1"
       , js-dgtable = H.callHackage "js-dgtable" "0.5.2"
