@@ -221,6 +221,7 @@ let packages =
       , data-fix = H.callHackage "data-fix" "0.3.2"
       , data-sketches = H.callHackage "data-sketches" "0.3.1.0"
       , data-sketches-core = H.callHackage "data-sketches-core" "0.1.0.0"
+      , dbus = H.callHackage "dbus" "1.2.27"
       , dec = H.callHackage "dec" "0.0.5"
       , deepseq-generics = H.callHackage "deepseq-generics" "0.2.0.0"
       , dense-linear-algebra = H.callHackage "dense-linear-algebra" "0.1.0.0"

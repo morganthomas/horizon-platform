@@ -329,6 +329,8 @@ self: with pkgs.haskell.lib; {
 
   data-sketches-core = self.callPackage (./pkgs/data-sketches-core.nix) { };
 
+  dbus = self.callPackage (./pkgs/dbus.nix) { };
+
   dec = self.callPackage (./pkgs/dec.nix) { };
 
   deepseq-generics = self.callPackage (./pkgs/deepseq-generics.nix) { };
