@@ -589,6 +589,7 @@ let packages =
       , parallel = H.callHackage "parallel" "3.2.2.0"
       , parsec1 = H.callHackage "parsec1" "1.0.0.8"
       , parsec-class = H.callHackage "parsec-class" "1.0.0.0"
+      , parsec-numbers = H.callHackage "parsec-numbers" "0.1.0"
       , parsec = H.callHackage "parsec" "3.1.15.1"
       , parsers-megaparsec = H.callHackage "parsers-megaparsec" "0.1.0.1"
       , parsers = H.callHackage "parsers" "0.12.11"
