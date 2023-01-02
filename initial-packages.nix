@@ -569,6 +569,8 @@ self: with pkgs.haskell.lib; {
 
   groups = self.callPackage (./pkgs/groups.nix) { };
 
+  gtk2hs-buildtools = self.callPackage (./pkgs/gtk2hs-buildtools.nix) { };
+
   hackage-db = self.callPackage (./pkgs/hackage-db.nix) { };
 
   hackage-security = self.callPackage (./pkgs/hackage-security.nix) { };

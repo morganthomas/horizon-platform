@@ -382,6 +382,7 @@ let packages =
       , gitrev = H.callHackage "gitrev" "1.3.1"
       , gridtables = H.callHackage "gridtables" "0.1.0.0"
       , groups = H.callHackage "groups" "0.5.3"
+      , gtk2hs-buildtools = H.callHackage "gtk2hs-buildtools" "0.13.8.3"
       , hackage-db = H.callHackage "hackage-db" "2.1.2"
       , hackage-security = H.callHackage "hackage-security" "0.6.2.2"
       , haddock-library = H.callHackage "haddock-library" "1.11.0"
