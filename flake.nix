@@ -31,7 +31,11 @@
 
         horizon-platform-prev = get-flake horizon-platform;
 
-        horizon-gen-nix = horizon-platform-prev.legacyPackages.${system}.horizon-gen-nix;
+        horizon-gen-nix = writeBashBin "horizon-gen-nix" ''
+          ${horizon-platform-prev.legacyPackages.${system}.horizon-gen-nix}/bin/horizon-gen-nix;
+          ${pkgs.nixpkgs-fmt}/bin/nixpkgs-fmt pkgs/*
+          ${pkgs.nixpkgs-fmt}/bin/nixpkgs-fmt initial-packages.nix
+        '';
 
         haskellLib = pkgs.haskell.lib.compose;
 
