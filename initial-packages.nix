@@ -159,6 +159,8 @@ self: with pkgs.haskell.lib; {
 
   beam-migrate = self.callPackage (./pkgs/beam-migrate.nix) { };
 
+  beam-postgres = self.callPackage (./pkgs/beam-postgres.nix) { };
+
   bech32 = self.callPackage (./pkgs/bech32.nix) { };
 
   bech32-th = self.callPackage (./pkgs/bech32-th.nix) { };
