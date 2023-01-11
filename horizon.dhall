@@ -685,6 +685,7 @@ let packages =
       , raven-haskell = H.callHackage "raven-haskell" "0.1.4.1"
       , raw-strings-qq = H.callHackage "raw-strings-qq" "1.1"
       , rdtsc = H.callHackage "rdtsc" "1.3.0.1"
+      , readable = H.callHackage "readable" "0.3.1"
       , rebase = H.callHackage "rebase" "1.16"
       , reducers = H.callHackage "reducers" "3.12.4"
       , refact = H.callHackage "refact" "0.3.0.2"

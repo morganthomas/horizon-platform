@@ -1097,6 +1097,8 @@ self: with pkgs.haskell.lib; {
 
   rdtsc = self.callPackage (./pkgs/rdtsc.nix) { };
 
+  readable = self.callPackage (./pkgs/readable.nix) { };
+
   rebase = self.callPackage (./pkgs/rebase.nix) { };
 
   reducers = self.callPackage (./pkgs/reducers.nix) { };
