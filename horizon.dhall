@@ -133,6 +133,7 @@ let packages =
       , beam-core = callGitBeam "beam-core"
       , beam-migrate = callGitBeam "beam-migrate"
       , beam-postgres = callGitBeam "beam-postgres"
+      , beam-sqlite = callGitBeam "beam-sqlite"
       , bech32 = H.callHackage "bech32" "1.1.2"
       , bech32-th = H.callHackage "bech32-th" "1.1.1"
       , bifunctors = H.callHackage "bifunctors" "5.5.13"

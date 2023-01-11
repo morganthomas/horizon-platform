@@ -161,6 +161,8 @@ self: with pkgs.haskell.lib; {
 
   beam-postgres = self.callPackage (./pkgs/beam-postgres.nix) { };
 
+  beam-sqlite = self.callPackage (./pkgs/beam-sqlite.nix) { };
+
   bech32 = self.callPackage (./pkgs/bech32.nix) { };
 
   bech32-th = self.callPackage (./pkgs/bech32-th.nix) { };
