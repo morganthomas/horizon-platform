@@ -302,6 +302,7 @@ let packages =
       , effectful-core = H.callHackage "effectful-core" "2.1.0.0"
       , effectful-th = H.callHackage "effectful-th" "1.0.0.0"
       , effectful = H.callHackage "effectful" "2.1.0.0"
+      , ekg = H.callHackage "ekg" "0.4.0.15"
       , ekg-core = H.callHackage "ekg-core" "0.1.1.7"
       , ekg-json =
           H.callGit
