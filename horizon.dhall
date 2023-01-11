@@ -524,6 +524,7 @@ let packages =
       , infer-license = H.callHackage "infer-license" "0.2.0"
       , ini = H.callHackage "ini" "0.4.2"
       , inline-c = H.callHackage "inline-c" "0.9.1.6"
+      , inline-r = H.callHackage "inline-r" "1.0.0"
       , insert-ordered-containers =
           H.callHackage "insert-ordered-containers" "0.2.5.1"
       , inspection-testing = H.callHackage "inspection-testing" "0.5"

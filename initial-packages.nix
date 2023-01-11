@@ -829,6 +829,8 @@ self: with pkgs.haskell.lib; {
 
   inline-c = self.callPackage (./pkgs/inline-c.nix) { };
 
+  inline-r = self.callPackage (./pkgs/inline-r.nix) { };
+
   insert-ordered-containers = self.callPackage (./pkgs/insert-ordered-containers.nix) { };
 
   inspection-testing = self.callPackage (./pkgs/inspection-testing.nix) { };
