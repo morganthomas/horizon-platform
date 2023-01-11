@@ -1485,6 +1485,8 @@ self: with pkgs.haskell.lib; {
 
   statistics = self.callPackage (./pkgs/statistics.nix) { };
 
+  statistics-linreg = self.callPackage (./pkgs/statistics-linreg.nix) { };
+
   stm-chans = self.callPackage (./pkgs/stm-chans.nix) { };
 
   storable-record = self.callPackage (./pkgs/storable-record.nix) { };
