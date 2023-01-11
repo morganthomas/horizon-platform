@@ -729,6 +729,8 @@ self: with pkgs.haskell.lib; {
 
   invariant = self.callPackage (./pkgs/invariant.nix) { };
 
+  io-streams = self.callPackage (./pkgs/io-streams.nix) { };
+
   iproute = self.callPackage (./pkgs/iproute.nix) { };
 
   ipynb = self.callPackage (./pkgs/ipynb.nix) { };
