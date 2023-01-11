@@ -1257,6 +1257,8 @@ self: with pkgs.haskell.lib; {
 
   smallcheck = self.callPackage (./pkgs/smallcheck.nix) { };
 
+  snap-core = self.callPackage (./pkgs/snap-core.nix) { };
+
   socks = self.callPackage (./pkgs/socks.nix) { };
 
   some = self.callPackage (./pkgs/some.nix) { };

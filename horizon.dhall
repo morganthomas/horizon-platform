@@ -774,6 +774,7 @@ let packages =
       , skylighting-format-latex =
           H.callHackage "skylighting-format-latex" "0.1"
       , smallcheck = H.callHackage "smallcheck" "1.2.1"
+      , snap-core = H.callHackage "snap-core" "1.0.5.0"
       , socks = H.callHackage "socks" "0.6.1"
       , some = H.callHackage "some" "1.0.4"
       , sop-core = H.callHackage "sop-core" "0.5.0.1"
