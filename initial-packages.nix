@@ -397,6 +397,8 @@ self: with pkgs.haskell.lib; {
 
   either = self.callPackage (./pkgs/either.nix) { };
 
+  ekg-core = self.callPackage (./pkgs/ekg-core.nix) { };
+
   email-validate = self.callPackage (./pkgs/email-validate.nix) { };
 
   emojis = self.callPackage (./pkgs/emojis.nix) { };
