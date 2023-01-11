@@ -441,6 +441,7 @@ let packages =
       , haskell-src-exts = H.callHackage "haskell-src-exts" "1.23.1"
       , haskell-src-meta = H.callHackage "haskell-src-meta" "0.8.11"
       , heaps = H.callHackage "heaps" "0.4"
+      , hedgehog-extras = H.callHackage "hedgehog-extras" "0.3.0.3"
       , hedgehog-fn = H.callHackage "hedgehog-fn" "1.0"
       , hedgehog-golden =
           H.callGit

@@ -679,6 +679,8 @@ self: with pkgs.haskell.lib; {
 
   hedgehog = self.callPackage (./pkgs/hedgehog.nix) { };
 
+  hedgehog-extras = self.callPackage (./pkgs/hedgehog-extras.nix) { };
+
   hedgehog-fn = self.callPackage (./pkgs/hedgehog-fn.nix) { };
 
   hedgehog-golden = self.callPackage (./pkgs/hedgehog-golden.nix) { };
