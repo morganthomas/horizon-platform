@@ -3,6 +3,8 @@
 self: with pkgs.haskell.lib; {
   BNFC = self.callPackage (./pkgs/BNFC.nix) { };
 
+  Boolean = self.callPackage (./pkgs/Boolean.nix) { };
+
   Cabal = self.callPackage (./pkgs/Cabal.nix) { };
 
   Cabal-QuickCheck = self.callPackage (./pkgs/Cabal-QuickCheck.nix) { };
@@ -21,11 +23,15 @@ self: with pkgs.haskell.lib; {
 
   Glob = self.callPackage (./pkgs/Glob.nix) { };
 
+  HTF = self.callPackage (./pkgs/HTF.nix) { };
+
   HTTP = self.callPackage (./pkgs/HTTP.nix) { };
 
   HUnit = self.callPackage (./pkgs/HUnit.nix) { };
 
   Hclip = self.callPackage (./pkgs/Hclip.nix) { };
+
+  HsOpenSSL = self.callPackage (./pkgs/HsOpenSSL.nix) { };
 
   HsYAML = self.callPackage (./pkgs/HsYAML.nix) { };
 
@@ -51,6 +57,10 @@ self: with pkgs.haskell.lib; {
 
   StateVar = self.callPackage (./pkgs/StateVar.nix) { };
 
+  Stream = self.callPackage (./pkgs/Stream.nix) { };
+
+  Unique = self.callPackage (./pkgs/Unique.nix) { };
+
   X11 = self.callPackage (./pkgs/X11.nix) { };
 
   X11-xft = self.callPackage (./pkgs/X11-xft.nix) { };
@@ -67,6 +77,8 @@ self: with pkgs.haskell.lib; {
 
   aeson-pretty = self.callPackage (./pkgs/aeson-pretty.nix) { };
 
+  aeson-qq = self.callPackage (./pkgs/aeson-qq.nix) { };
+
   aeson-yaml = self.callPackage (./pkgs/aeson-yaml.nix) { };
 
   alex = self.callPackage (./pkgs/alex.nix) { };
@@ -81,6 +93,8 @@ self: with pkgs.haskell.lib; {
 
   ansi-wl-pprint = self.callPackage (./pkgs/ansi-wl-pprint.nix) { };
 
+  ap-normalize = self.callPackage (./pkgs/ap-normalize.nix) { };
+
   apecs = self.callPackage (./pkgs/apecs.nix) { };
 
   appar = self.callPackage (./pkgs/appar.nix) { };
@@ -94,6 +108,8 @@ self: with pkgs.haskell.lib; {
   assoc = self.callPackage (./pkgs/assoc.nix) { };
 
   async = self.callPackage (./pkgs/async.nix) { };
+
+  async-timer = self.callPackage (./pkgs/async-timer.nix) { };
 
   atomic-primops = self.callPackage (./pkgs/atomic-primops.nix) { };
 
@@ -125,17 +141,29 @@ self: with pkgs.haskell.lib; {
 
   base-orphans = self.callPackage (./pkgs/base-orphans.nix) { };
 
+  base-prelude = self.callPackage (./pkgs/base-prelude.nix) { };
+
   base16-bytestring = self.callPackage (./pkgs/base16-bytestring.nix) { };
+
+  base58-bytestring = self.callPackage (./pkgs/base58-bytestring.nix) { };
 
   base64 = self.callPackage (./pkgs/base64.nix) { };
 
   base64-bytestring = self.callPackage (./pkgs/base64-bytestring.nix) { };
 
+  base64-bytestring-type = self.callPackage (./pkgs/base64-bytestring-type.nix) { };
+
   basement = self.callPackage (./pkgs/basement.nix) { };
+
+  bech32 = self.callPackage (./pkgs/bech32.nix) { };
+
+  bech32-th = self.callPackage (./pkgs/bech32-th.nix) { };
 
   bifunctors = self.callPackage (./pkgs/bifunctors.nix) { };
 
   bimap = self.callPackage (./pkgs/bimap.nix) { };
+
+  bin = self.callPackage (./pkgs/bin.nix) { };
 
   binary-orphans = self.callPackage (./pkgs/binary-orphans.nix) { };
 
@@ -181,7 +209,11 @@ self: with pkgs.haskell.lib; {
 
   call-stack = self.callPackage (./pkgs/call-stack.nix) { };
 
+  canonical-json = self.callPackage (./pkgs/canonical-json.nix) { };
+
   case-insensitive = self.callPackage (./pkgs/case-insensitive.nix) { };
+
+  casing = self.callPackage (./pkgs/casing.nix) { };
 
   cassava = self.callPackage (./pkgs/cassava.nix) { };
 
@@ -244,6 +276,10 @@ self: with pkgs.haskell.lib; {
   composite-lens-extra = self.callPackage (./pkgs/composite-lens-extra.nix) { };
 
   composite-tuple = self.callPackage (./pkgs/composite-tuple.nix) { };
+
+  composition-prelude = self.callPackage (./pkgs/composition-prelude.nix) { };
+
+  concurrent-extra = self.callPackage (./pkgs/concurrent-extra.nix) { };
 
   concurrent-output = self.callPackage (./pkgs/concurrent-output.nix) { };
 
@@ -325,6 +361,8 @@ self: with pkgs.haskell.lib; {
 
   data-fix = self.callPackage (./pkgs/data-fix.nix) { };
 
+  data-ordlist = self.callPackage (./pkgs/data-ordlist.nix) { };
+
   data-sketches = self.callPackage (./pkgs/data-sketches.nix) { };
 
   data-sketches-core = self.callPackage (./pkgs/data-sketches-core.nix) { };
@@ -341,13 +379,21 @@ self: with pkgs.haskell.lib; {
 
   dependent-sum = self.callPackage (./pkgs/dependent-sum.nix) { };
 
+  dependent-sum-template = self.callPackage (./pkgs/dependent-sum-template.nix) { };
+
+  deque = self.callPackage (./pkgs/deque.nix) { };
+
   deriving-aeson = self.callPackage (./pkgs/deriving-aeson.nix) { };
+
+  deriving-compat = self.callPackage (./pkgs/deriving-compat.nix) { };
 
   derp = self.callPackage (./pkgs/derp.nix) { };
 
   dhall = self.callPackage (./pkgs/dhall.nix) { };
 
   dhall-json = self.callPackage (./pkgs/dhall-json.nix) { };
+
+  dictionary-sharing = self.callPackage (./pkgs/dictionary-sharing.nix) { };
 
   digest = self.callPackage (./pkgs/digest.nix) { };
 
@@ -363,17 +409,23 @@ self: with pkgs.haskell.lib; {
 
   dlist = self.callPackage (./pkgs/dlist.nix) { };
 
+  dns = self.callPackage (./pkgs/dns.nix) { };
+
   doclayout = self.callPackage (./pkgs/doclayout.nix) { };
 
   doctemplates = self.callPackage (./pkgs/doctemplates.nix) { };
 
   doctest = self.callPackage (./pkgs/doctest.nix) { };
 
+  doctest-discover = self.callPackage (./pkgs/doctest-discover.nix) { };
+
   doctest-exitcode-stdio = self.callPackage (./pkgs/doctest-exitcode-stdio.nix) { };
 
   doctest-lib = self.callPackage (./pkgs/doctest-lib.nix) { };
 
   doctest-parallel = self.callPackage (./pkgs/doctest-parallel.nix) { };
+
+  dom-lt = self.callPackage (./pkgs/dom-lt.nix) { };
 
   dotgen = self.callPackage (./pkgs/dotgen.nix) { };
 
@@ -413,9 +465,15 @@ self: with pkgs.haskell.lib; {
 
   erf = self.callPackage (./pkgs/erf.nix) { };
 
+  errors = self.callPackage (./pkgs/errors.nix) { };
+
+  exact-combinatorics = self.callPackage (./pkgs/exact-combinatorics.nix) { };
+
   exact-pi = self.callPackage (./pkgs/exact-pi.nix) { };
 
   expiring-cache-map = self.callPackage (./pkgs/expiring-cache-map.nix) { };
+
+  extended-reals = self.callPackage (./pkgs/extended-reals.nix) { };
 
   extensible-effects = self.callPackage (./pkgs/extensible-effects.nix) { };
 
@@ -451,11 +509,15 @@ self: with pkgs.haskell.lib; {
 
   finite-field = self.callPackage (./pkgs/finite-field.nix) { };
 
+  finite-typelits = self.callPackage (./pkgs/finite-typelits.nix) { };
+
   first-class-families = self.callPackage (./pkgs/first-class-families.nix) { };
 
   fixed = self.callPackage (./pkgs/fixed.nix) { };
 
   fmlist = self.callPackage (./pkgs/fmlist.nix) { };
+
+  fmt = self.callPackage (./pkgs/fmt.nix) { };
 
   foldl = self.callPackage (./pkgs/foldl.nix) { };
 
@@ -479,7 +541,13 @@ self: with pkgs.haskell.lib; {
 
   fuzzy-time-gen = self.callPackage (./pkgs/fuzzy-time-gen.nix) { };
 
+  generic-arbitrary = self.callPackage (./pkgs/generic-arbitrary.nix) { };
+
+  generic-data = self.callPackage (./pkgs/generic-data.nix) { };
+
   generic-deriving = self.callPackage (./pkgs/generic-deriving.nix) { };
+
+  generic-lens = self.callPackage (./pkgs/generic-lens.nix) { };
 
   generic-lens-core = self.callPackage (./pkgs/generic-lens-core.nix) { };
 
@@ -597,6 +665,8 @@ self: with pkgs.haskell.lib; {
 
   haskell-lexer = self.callPackage (./pkgs/haskell-lexer.nix) { };
 
+  haskell-src = self.callPackage (./pkgs/haskell-src.nix) { };
+
   haskell-src-exts = self.callPackage (./pkgs/haskell-src-exts.nix) { };
 
   haskell-src-meta = self.callPackage (./pkgs/haskell-src-meta.nix) { };
@@ -605,7 +675,15 @@ self: with pkgs.haskell.lib; {
 
   hedgehog = self.callPackage (./pkgs/hedgehog.nix) { };
 
+  hedgehog-fn = self.callPackage (./pkgs/hedgehog-fn.nix) { };
+
   hedgehog-golden = self.callPackage (./pkgs/hedgehog-golden.nix) { };
+
+  hedgehog-quickcheck = self.callPackage (./pkgs/hedgehog-quickcheck.nix) { };
+
+  heredoc = self.callPackage (./pkgs/heredoc.nix) { };
+
+  hex-text = self.callPackage (./pkgs/hex-text.nix) { };
 
   hie-bios = self.callPackage (./pkgs/hie-bios.nix) { };
 
@@ -673,6 +751,10 @@ self: with pkgs.haskell.lib; {
 
   hspec-expectations-lifted = self.callPackage (./pkgs/hspec-expectations-lifted.nix) { };
 
+  hspec-golden = self.callPackage (./pkgs/hspec-golden.nix) { };
+
+  hspec-golden-aeson = self.callPackage (./pkgs/hspec-golden-aeson.nix) { };
+
   hspec-hedgehog = self.callPackage (./pkgs/hspec-hedgehog.nix) { };
 
   hspec-megaparsec = self.callPackage (./pkgs/hspec-megaparsec.nix) { };
@@ -683,7 +765,11 @@ self: with pkgs.haskell.lib; {
 
   hspec-wai = self.callPackage (./pkgs/hspec-wai.nix) { };
 
+  hsyslog = self.callPackage (./pkgs/hsyslog.nix) { };
+
   html = self.callPackage (./pkgs/html.nix) { };
+
+  html-entities = self.callPackage (./pkgs/html-entities.nix) { };
 
   http-api-data = self.callPackage (./pkgs/http-api-data.nix) { };
 
@@ -691,11 +777,15 @@ self: with pkgs.haskell.lib; {
 
   http-client-tls = self.callPackage (./pkgs/http-client-tls.nix) { };
 
+  http-common = self.callPackage (./pkgs/http-common.nix) { };
+
   http-conduit = self.callPackage (./pkgs/http-conduit.nix) { };
 
   http-date = self.callPackage (./pkgs/http-date.nix) { };
 
   http-media = self.callPackage (./pkgs/http-media.nix) { };
+
+  http-streams = self.callPackage (./pkgs/http-streams.nix) { };
 
   http-types = self.callPackage (./pkgs/http-types.nix) { };
 
@@ -703,11 +793,23 @@ self: with pkgs.haskell.lib; {
 
   httpd-shed = self.callPackage (./pkgs/httpd-shed.nix) { };
 
+  hw-aeson = self.callPackage (./pkgs/hw-aeson.nix) { };
+
+  hxt = self.callPackage (./pkgs/hxt.nix) { };
+
+  hxt-charproperties = self.callPackage (./pkgs/hxt-charproperties.nix) { };
+
+  hxt-regex-xmlschema = self.callPackage (./pkgs/hxt-regex-xmlschema.nix) { };
+
+  hxt-unicode = self.callPackage (./pkgs/hxt-unicode.nix) { };
+
   ieee754 = self.callPackage (./pkgs/ieee754.nix) { };
 
   incipit-base = self.callPackage (./pkgs/incipit-base.nix) { };
 
   incipit-core = self.callPackage (./pkgs/incipit-core.nix) { };
+
+  indexed-list-literals = self.callPackage (./pkgs/indexed-list-literals.nix) { };
 
   indexed-profunctors = self.callPackage (./pkgs/indexed-profunctors.nix) { };
 
@@ -719,9 +821,13 @@ self: with pkgs.haskell.lib; {
 
   ini = self.callPackage (./pkgs/ini.nix) { };
 
+  inline-c = self.callPackage (./pkgs/inline-c.nix) { };
+
   insert-ordered-containers = self.callPackage (./pkgs/insert-ordered-containers.nix) { };
 
   inspection-testing = self.callPackage (./pkgs/inspection-testing.nix) { };
+
+  int-cast = self.callPackage (./pkgs/int-cast.nix) { };
 
   integer-logarithms = self.callPackage (./pkgs/integer-logarithms.nix) { };
 
@@ -753,6 +859,8 @@ self: with pkgs.haskell.lib; {
 
   kan-extensions = self.callPackage (./pkgs/kan-extensions.nix) { };
 
+  katip = self.callPackage (./pkgs/katip.nix) { };
+
   keys = self.callPackage (./pkgs/keys.nix) { };
 
   kvstore-effectful = self.callPackage (./pkgs/kvstore-effectful.nix) { };
@@ -769,6 +877,10 @@ self: with pkgs.haskell.lib; {
 
   language-nix = self.callPackage (./pkgs/language-nix.nix) { };
 
+  lazy-search = self.callPackage (./pkgs/lazy-search.nix) { };
+
+  lazysmallcheck = self.callPackage (./pkgs/lazysmallcheck.nix) { };
+
   lens = self.callPackage (./pkgs/lens.nix) { };
 
   lens-aeson = self.callPackage (./pkgs/lens-aeson.nix) { };
@@ -778,6 +890,8 @@ self: with pkgs.haskell.lib; {
   lens-family-th = self.callPackage (./pkgs/lens-family-th.nix) { };
 
   libsodium = self.callPackage (./pkgs/libsodium.nix) { };
+
+  libsystemd-journal = self.callPackage (./pkgs/libsystemd-journal.nix) { };
 
   libxml = self.callPackage (./pkgs/libxml.nix) { };
 
@@ -791,6 +905,14 @@ self: with pkgs.haskell.lib; {
 
   linear = self.callPackage (./pkgs/linear.nix) { };
 
+  linear-base = self.callPackage (./pkgs/linear-base.nix) { };
+
+  linear-generics = self.callPackage (./pkgs/linear-generics.nix) { };
+
+  list-t = self.callPackage (./pkgs/list-t.nix) { };
+
+  list-transformer = self.callPackage (./pkgs/list-transformer.nix) { };
+
   lockfree-queue = self.callPackage (./pkgs/lockfree-queue.nix) { };
 
   log-base = self.callPackage (./pkgs/log-base.nix) { };
@@ -800,6 +922,8 @@ self: with pkgs.haskell.lib; {
   logging-facade = self.callPackage (./pkgs/logging-facade.nix) { };
 
   logict = self.callPackage (./pkgs/logict.nix) { };
+
+  loop = self.callPackage (./pkgs/loop.nix) { };
 
   lpeg = self.callPackage (./pkgs/lpeg.nix) { };
 
@@ -831,13 +955,19 @@ self: with pkgs.haskell.lib; {
 
   markdown-unlit = self.callPackage (./pkgs/markdown-unlit.nix) { };
 
+  markov-chain-usage-model = self.callPackage (./pkgs/markov-chain-usage-model.nix) { };
+
   math-functions = self.callPackage (./pkgs/math-functions.nix) { };
+
+  matrix = self.callPackage (./pkgs/matrix.nix) { };
 
   megaparsec = self.callPackage (./pkgs/megaparsec.nix) { };
 
   memory = self.callPackage (./pkgs/memory.nix) { };
 
   mersenne-random = self.callPackage (./pkgs/mersenne-random.nix) { };
+
+  mersenne-random-pure64 = self.callPackage (./pkgs/mersenne-random-pure64.nix) { };
 
   microlens = self.callPackage (./pkgs/microlens.nix) { };
 
@@ -885,13 +1015,21 @@ self: with pkgs.haskell.lib; {
 
   monoid-subclasses = self.callPackage (./pkgs/monoid-subclasses.nix) { };
 
+  monoidal-containers = self.callPackage (./pkgs/monoidal-containers.nix) { };
+
   mtl-compat = self.callPackage (./pkgs/mtl-compat.nix) { };
+
+  mtl-prelude = self.callPackage (./pkgs/mtl-prelude.nix) { };
+
+  multiset = self.callPackage (./pkgs/multiset.nix) { };
 
   mwc-random = self.callPackage (./pkgs/mwc-random.nix) { };
 
   nanospec = self.callPackage (./pkgs/nanospec.nix) { };
 
   nats = self.callPackage (./pkgs/nats.nix) { };
+
+  natural-arithmetic = self.callPackage (./pkgs/natural-arithmetic.nix) { };
 
   natural-transformation = self.callPackage (./pkgs/natural-transformation.nix) { };
 
@@ -913,7 +1051,11 @@ self: with pkgs.haskell.lib; {
 
   network-uri = self.callPackage (./pkgs/network-uri.nix) { };
 
+  newtype = self.callPackage (./pkgs/newtype.nix) { };
+
   newtype-generics = self.callPackage (./pkgs/newtype-generics.nix) { };
+
+  nonempty-vector = self.callPackage (./pkgs/nonempty-vector.nix) { };
 
   nothunks = self.callPackage (./pkgs/nothunks.nix) { };
 
@@ -924,6 +1066,12 @@ self: with pkgs.haskell.lib; {
   old-locale = self.callPackage (./pkgs/old-locale.nix) { };
 
   old-time = self.callPackage (./pkgs/old-time.nix) { };
+
+  one-liner = self.callPackage (./pkgs/one-liner.nix) { };
+
+  openapi3 = self.callPackage (./pkgs/openapi3.nix) { };
+
+  openssl-streams = self.callPackage (./pkgs/openssl-streams.nix) { };
 
   optics = self.callPackage (./pkgs/optics.nix) { };
 
@@ -938,6 +1086,8 @@ self: with pkgs.haskell.lib; {
   options = self.callPackage (./pkgs/options.nix) { };
 
   optparse-applicative = self.callPackage (./pkgs/optparse-applicative.nix) { };
+
+  optparse-generic = self.callPackage (./pkgs/optparse-generic.nix) { };
 
   ordered-containers = self.callPackage (./pkgs/ordered-containers.nix) { };
 
@@ -963,6 +1113,8 @@ self: with pkgs.haskell.lib; {
 
   parsers-megaparsec = self.callPackage (./pkgs/parsers-megaparsec.nix) { };
 
+  partial-order = self.callPackage (./pkgs/partial-order.nix) { };
+
   password = self.callPackage (./pkgs/password.nix) { };
 
   password-types = self.callPackage (./pkgs/password-types.nix) { };
@@ -979,6 +1131,8 @@ self: with pkgs.haskell.lib; {
 
   pcg-random = self.callPackage (./pkgs/pcg-random.nix) { };
 
+  pcre-heavy = self.callPackage (./pkgs/pcre-heavy.nix) { };
+
   pcre-light = self.callPackage (./pkgs/pcre-light.nix) { };
 
   pcre2 = self.callPackage (./pkgs/pcre2.nix) { };
@@ -987,7 +1141,15 @@ self: with pkgs.haskell.lib; {
 
   persistent = self.callPackage (./pkgs/persistent.nix) { };
 
+  persistent-postgresql = self.callPackage (./pkgs/persistent-postgresql.nix) { };
+
+  persistent-qq = self.callPackage (./pkgs/persistent-qq.nix) { };
+
+  persistent-sqlite = self.callPackage (./pkgs/persistent-sqlite.nix) { };
+
   persistent-template = self.callPackage (./pkgs/persistent-template.nix) { };
+
+  persistent-test = self.callPackage (./pkgs/persistent-test.nix) { };
 
   pg-entity = self.callPackage (./pkgs/pg-entity.nix) { };
 
@@ -998,6 +1160,8 @@ self: with pkgs.haskell.lib; {
   pgp-wordlist = self.callPackage (./pkgs/pgp-wordlist.nix) { };
 
   pipes = self.callPackage (./pkgs/pipes.nix) { };
+
+  pipes-safe = self.callPackage (./pkgs/pipes-safe.nix) { };
 
   pointed = self.callPackage (./pkgs/pointed.nix) { };
 
@@ -1037,6 +1201,8 @@ self: with pkgs.haskell.lib; {
 
   postgresql-simple-migration = self.callPackage (./pkgs/postgresql-simple-migration.nix) { };
 
+  pqueue = self.callPackage (./pkgs/pqueue.nix) { };
+
   pretty-hex = self.callPackage (./pkgs/pretty-hex.nix) { };
 
   pretty-relative-time = self.callPackage (./pkgs/pretty-relative-time.nix) { };
@@ -1055,6 +1221,8 @@ self: with pkgs.haskell.lib; {
 
   primitive-addr = self.callPackage (./pkgs/primitive-addr.nix) { };
 
+  primitive-offset = self.callPackage (./pkgs/primitive-offset.nix) { };
+
   process-extras = self.callPackage (./pkgs/process-extras.nix) { };
 
   procex = self.callPackage (./pkgs/procex.nix) { };
@@ -1069,9 +1237,13 @@ self: with pkgs.haskell.lib; {
 
   proteaaudio-sdl = self.callPackage (./pkgs/proteaaudio-sdl.nix) { };
 
+  protolude = self.callPackage (./pkgs/protolude.nix) { };
+
   psqueues = self.callPackage (./pkgs/psqueues.nix) { };
 
   pureMD5 = self.callPackage (./pkgs/pureMD5.nix) { };
+
+  quickcheck-arbitrary-adt = self.callPackage (./pkgs/quickcheck-arbitrary-adt.nix) { };
 
   quickcheck-assertions = self.callPackage (./pkgs/quickcheck-assertions.nix) { };
 
@@ -1089,6 +1261,10 @@ self: with pkgs.haskell.lib; {
 
   quickcheck-unicode = self.callPackage (./pkgs/quickcheck-unicode.nix) { };
 
+  quiet = self.callPackage (./pkgs/quiet.nix) { };
+
+  ral = self.callPackage (./pkgs/ral.nix) { };
+
   random = self.callPackage (./pkgs/random.nix) { };
 
   random-bytestring = self.callPackage (./pkgs/random-bytestring.nix) { };
@@ -1105,7 +1281,11 @@ self: with pkgs.haskell.lib; {
 
   rebase = self.callPackage (./pkgs/rebase.nix) { };
 
+  recursion-schemes = self.callPackage (./pkgs/recursion-schemes.nix) { };
+
   reducers = self.callPackage (./pkgs/reducers.nix) { };
+
+  ref-tf = self.callPackage (./pkgs/ref-tf.nix) { };
 
   refact = self.callPackage (./pkgs/refact.nix) { };
 
@@ -1145,6 +1325,8 @@ self: with pkgs.haskell.lib; {
 
   rope-utf16-splay = self.callPackage (./pkgs/rope-utf16-splay.nix) { };
 
+  row-types = self.callPackage (./pkgs/row-types.nix) { };
+
   safe = self.callPackage (./pkgs/safe.nix) { };
 
   safe-coloured-text = self.callPackage (./pkgs/safe-coloured-text.nix) { };
@@ -1158,6 +1340,8 @@ self: with pkgs.haskell.lib; {
   saltine = self.callPackage (./pkgs/saltine.nix) { };
 
   sandwich = self.callPackage (./pkgs/sandwich.nix) { };
+
+  say = self.callPackage (./pkgs/say.nix) { };
 
   scientific = self.callPackage (./pkgs/scientific.nix) { };
 
@@ -1207,6 +1391,8 @@ self: with pkgs.haskell.lib; {
 
   servant-multipart-api = self.callPackage (./pkgs/servant-multipart-api.nix) { };
 
+  servant-openapi3 = self.callPackage (./pkgs/servant-openapi3.nix) { };
+
   servant-polysemy = self.callPackage (./pkgs/servant-polysemy.nix) { };
 
   servant-server = self.callPackage (./pkgs/servant-server.nix) { };
@@ -1235,6 +1421,8 @@ self: with pkgs.haskell.lib; {
 
   should-not-typecheck = self.callPackage (./pkgs/should-not-typecheck.nix) { };
 
+  show-combinators = self.callPackage (./pkgs/show-combinators.nix) { };
+
   silently = self.callPackage (./pkgs/silently.nix) { };
 
   simple-reflect = self.callPackage (./pkgs/simple-reflect.nix) { };
@@ -1244,6 +1432,10 @@ self: with pkgs.haskell.lib; {
   singleton-bool = self.callPackage (./pkgs/singleton-bool.nix) { };
 
   singletons = self.callPackage (./pkgs/singletons.nix) { };
+
+  singletons-th = self.callPackage (./pkgs/singletons-th.nix) { };
+
+  size-based = self.callPackage (./pkgs/size-based.nix) { };
 
   skylighting = self.callPackage (./pkgs/skylighting.nix) { };
 
@@ -1260,6 +1452,8 @@ self: with pkgs.haskell.lib; {
   smallcheck = self.callPackage (./pkgs/smallcheck.nix) { };
 
   snap-core = self.callPackage (./pkgs/snap-core.nix) { };
+
+  snap-server = self.callPackage (./pkgs/snap-server.nix) { };
 
   socks = self.callPackage (./pkgs/socks.nix) { };
 
@@ -1285,17 +1479,27 @@ self: with pkgs.haskell.lib; {
 
   stm-chans = self.callPackage (./pkgs/stm-chans.nix) { };
 
+  storable-record = self.callPackage (./pkgs/storable-record.nix) { };
+
+  storable-tuple = self.callPackage (./pkgs/storable-tuple.nix) { };
+
   store = self.callPackage (./pkgs/store.nix) { };
 
   store-core = self.callPackage (./pkgs/store-core.nix) { };
 
   streaming = self.callPackage (./pkgs/streaming.nix) { };
 
+  streaming-binary = self.callPackage (./pkgs/streaming-binary.nix) { };
+
+  streaming-bytestring = self.callPackage (./pkgs/streaming-bytestring.nix) { };
+
   streaming-commons = self.callPackage (./pkgs/streaming-commons.nix) { };
 
   streamly = self.callPackage (./pkgs/streamly.nix) { };
 
   strict = self.callPackage (./pkgs/strict.nix) { };
+
+  strict-list = self.callPackage (./pkgs/strict-list.nix) { };
 
   string-conv = self.callPackage (./pkgs/string-conv.nix) { };
 
@@ -1318,6 +1522,8 @@ self: with pkgs.haskell.lib; {
   sydtest = self.callPackage (./pkgs/sydtest.nix) { };
 
   sydtest-discover = self.callPackage (./pkgs/sydtest-discover.nix) { };
+
+  system-fileio = self.callPackage (./pkgs/system-fileio.nix) { };
 
   system-filepath = self.callPackage (./pkgs/system-filepath.nix) { };
 
@@ -1379,6 +1585,8 @@ self: with pkgs.haskell.lib; {
 
   test-framework-th = self.callPackage (./pkgs/test-framework-th.nix) { };
 
+  testing-type-modifiers = self.callPackage (./pkgs/testing-type-modifiers.nix) { };
+
   texmath = self.callPackage (./pkgs/texmath.nix) { };
 
   text-conversions = self.callPackage (./pkgs/text-conversions.nix) { };
@@ -1403,6 +1611,8 @@ self: with pkgs.haskell.lib; {
 
   th-compat = self.callPackage (./pkgs/th-compat.nix) { };
 
+  th-desugar = self.callPackage (./pkgs/th-desugar.nix) { };
+
   th-env = self.callPackage (./pkgs/th-env.nix) { };
 
   th-expand-syns = self.callPackage (./pkgs/th-expand-syns.nix) { };
@@ -1423,6 +1633,8 @@ self: with pkgs.haskell.lib; {
 
   these-skinny = self.callPackage (./pkgs/these-skinny.nix) { };
 
+  threads = self.callPackage (./pkgs/threads.nix) { };
+
   tidal = self.callPackage (./pkgs/tidal.nix) { };
 
   time-compat = self.callPackage (./pkgs/time-compat.nix) { };
@@ -1432,6 +1644,8 @@ self: with pkgs.haskell.lib; {
   time-locale-compat = self.callPackage (./pkgs/time-locale-compat.nix) { };
 
   time-manager = self.callPackage (./pkgs/time-manager.nix) { };
+
+  time-units = self.callPackage (./pkgs/time-units.nix) { };
 
   timeit = self.callPackage (./pkgs/timeit.nix) { };
 
@@ -1448,6 +1662,8 @@ self: with pkgs.haskell.lib; {
   transformers-base = self.callPackage (./pkgs/transformers-base.nix) { };
 
   transformers-compat = self.callPackage (./pkgs/transformers-compat.nix) { };
+
+  transformers-except = self.callPackage (./pkgs/transformers-except.nix) { };
 
   tree-diff = self.callPackage (./pkgs/tree-diff.nix) { };
 
@@ -1483,6 +1699,10 @@ self: with pkgs.haskell.lib; {
 
   universe-base = self.callPackage (./pkgs/universe-base.nix) { };
 
+  universe-reverse-instances = self.callPackage (./pkgs/universe-reverse-instances.nix) { };
+
+  unix-bytestring = self.callPackage (./pkgs/unix-bytestring.nix) { };
+
   unix-compat = self.callPackage (./pkgs/unix-compat.nix) { };
 
   unix-memory = self.callPackage (./pkgs/unix-memory.nix) { };
@@ -1506,6 +1726,8 @@ self: with pkgs.haskell.lib; {
   uuid = self.callPackage (./pkgs/uuid.nix) { };
 
   uuid-types = self.callPackage (./pkgs/uuid-types.nix) { };
+
+  validation-selective = self.callPackage (./pkgs/validation-selective.nix) { };
 
   validity = self.callPackage (./pkgs/validity.nix) { };
 
@@ -1547,6 +1769,8 @@ self: with pkgs.haskell.lib; {
 
   vector-instances = self.callPackage (./pkgs/vector-instances.nix) { };
 
+  vector-sized = self.callPackage (./pkgs/vector-sized.nix) { };
+
   vector-stream = self.callPackage (./pkgs/vector-stream.nix) { };
 
   vector-th-unbox = self.callPackage (./pkgs/vector-th-unbox.nix) { };
@@ -1585,6 +1809,8 @@ self: with pkgs.haskell.lib; {
 
   weigh = self.callPackage (./pkgs/weigh.nix) { };
 
+  wide-word = self.callPackage (./pkgs/wide-word.nix) { };
+
   with-utf8 = self.callPackage (./pkgs/with-utf8.nix) { };
 
   witherable = self.callPackage (./pkgs/witherable.nix) { };
@@ -1592,6 +1818,8 @@ self: with pkgs.haskell.lib; {
   wizards = self.callPackage (./pkgs/wizards.nix) { };
 
   wl-pprint-annotated = self.callPackage (./pkgs/wl-pprint-annotated.nix) { };
+
+  word-compat = self.callPackage (./pkgs/word-compat.nix) { };
 
   word-wrap = self.callPackage (./pkgs/word-wrap.nix) { };
 
@@ -1614,6 +1842,8 @@ self: with pkgs.haskell.lib; {
   xml-conduit-writer = self.callPackage (./pkgs/xml-conduit-writer.nix) { };
 
   xml-types = self.callPackage (./pkgs/xml-types.nix) { };
+
+  xmlgen = self.callPackage (./pkgs/xmlgen.nix) { };
 
   xmonad = self.callPackage (./pkgs/xmonad.nix) { };
 
