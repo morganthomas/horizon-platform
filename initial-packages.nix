@@ -155,6 +155,8 @@ self: with pkgs.haskell.lib; {
 
   basement = self.callPackage (./pkgs/basement.nix) { };
 
+  beam-core = self.callPackage (./pkgs/beam-core.nix) { };
+
   bech32 = self.callPackage (./pkgs/bech32.nix) { };
 
   bech32-th = self.callPackage (./pkgs/bech32-th.nix) { };
