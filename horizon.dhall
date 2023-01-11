@@ -1016,11 +1016,7 @@ let packages =
       , type-errors-pretty = H.callHackage "type-errors-pretty" "0.0.1.2"
       , type-errors = H.callHackage "type-errors" "0.2.0.0"
       , type-equality = H.callHackage "type-equality" "1"
-      , typerep-map =
-          H.callGit
-            "https://github.com/parsonsmatt/typerep-map"
-            "75b7cd5d45986be07420a6821d352ad2adc0b697"
-            (None Text)
+      , typerep-map = H.callHackage "typerep-map" "0.6.0.0"
       , uglymemo = H.callHackage "uglymemo" "0.1.0.1"
       , unagi-chan = H.callHackage "unagi-chan" "0.4.1.4"
       , unbounded-delays = H.callHackage "unbounded-delays" "0.1.1.1"
