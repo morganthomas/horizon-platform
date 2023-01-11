@@ -11,6 +11,14 @@ let callHorizonAdopted
           revision
           (None Text)
 
+let callGitBeam
+    : H.Subdir → H.HaskellPackage.Type
+    = λ(subdir : H.Subdir) →
+        H.callGit
+          "https://github.com/haskell-beam/beam"
+          "94461937c5ca8b89f1ff1a60bde5bffe207315b4"
+          (Some subdir)
+
 let callGitCabal
     : H.Subdir → H.HaskellPackage.Type
     = λ(subdir : H.Subdir) →
