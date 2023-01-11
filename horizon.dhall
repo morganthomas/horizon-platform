@@ -891,6 +891,7 @@ let packages =
       , split = H.callHackage "split" "0.2.3.3"
       , spoon = H.callHackage "spoon" "0.3.1"
       , sqlite-simple = H.callHackage "sqlite-simple" "0.4.18.2"
+      , statistics-linreg = H.callHackage "statistics-linreg" "0.3"
       , statistics = H.callHackage "statistics" "0.16.1.0"
       , stm-chans = H.callHackage "stm-chans" "3.0.0.6"
       , streaming-commons = H.callHackage "streaming-commons" "0.2.2.4"
