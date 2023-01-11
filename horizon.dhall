@@ -302,12 +302,15 @@ let packages =
       , effectful-core = H.callHackage "effectful-core" "2.1.0.0"
       , effectful-th = H.callHackage "effectful-th" "1.0.0.0"
       , effectful = H.callHackage "effectful" "2.1.0.0"
+      , ekg = H.callHackage "ekg" "0.4.0.15"
       , ekg-core = H.callHackage "ekg-core" "0.1.1.7"
       , ekg-json =
           H.callGit
             "https://github.com/vshabanov/ekg-json"
             "00ebe7211c981686e65730b7144fbf5350462608"
             (None H.Subdir)
+      , ekg-statsd = H.callHackage "ekg-statsd" "0.2.5.0"
+      , ekg-wai = H.callHackage "ekg-wai" "0.1.1.0"
       , emojis = H.callHackage "emojis" "0.1.2"
       , enclosed-exceptions = H.callHackage "enclosed-exceptions" "1.0.3"
       , entropy = H.callHackage "entropy" "0.4.1.10"

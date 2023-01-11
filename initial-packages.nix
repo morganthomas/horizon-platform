@@ -447,9 +447,15 @@ self: with pkgs.haskell.lib; {
 
   either = self.callPackage (./pkgs/either.nix) { };
 
+  ekg = self.callPackage (./pkgs/ekg.nix) { };
+
   ekg-core = self.callPackage (./pkgs/ekg-core.nix) { };
 
   ekg-json = self.callPackage (./pkgs/ekg-json.nix) { };
+
+  ekg-statsd = self.callPackage (./pkgs/ekg-statsd.nix) { };
+
+  ekg-wai = self.callPackage (./pkgs/ekg-wai.nix) { };
 
   email-validate = self.callPackage (./pkgs/email-validate.nix) { };
 
