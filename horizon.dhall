@@ -474,6 +474,7 @@ let packages =
       , integer-logarithms = H.callHackage "integer-logarithms" "1.0.3.1"
       , interpolate = H.callHackage "interpolate" "0.2.1"
       , invariant = H.callHackage "invariant" "0.6"
+      , io-streams-haproxy = H.callHackage "io-streams-haproxy" "1.0.1.0"
       , io-streams = H.callHackage "io-streams" "1.5.2.2"
       , ipynb = H.callHackage "ipynb" "0.2"
       , iproute = H.callHackage "iproute" "1.7.12"

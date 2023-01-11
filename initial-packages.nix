@@ -731,6 +731,8 @@ self: with pkgs.haskell.lib; {
 
   io-streams = self.callPackage (./pkgs/io-streams.nix) { };
 
+  io-streams-haproxy = self.callPackage (./pkgs/io-streams-haproxy.nix) { };
+
   iproute = self.callPackage (./pkgs/iproute.nix) { };
 
   ipynb = self.callPackage (./pkgs/ipynb.nix) { };
