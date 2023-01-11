@@ -155,6 +155,14 @@ self: with pkgs.haskell.lib; {
 
   basement = self.callPackage (./pkgs/basement.nix) { };
 
+  beam-core = self.callPackage (./pkgs/beam-core.nix) { };
+
+  beam-migrate = self.callPackage (./pkgs/beam-migrate.nix) { };
+
+  beam-postgres = self.callPackage (./pkgs/beam-postgres.nix) { };
+
+  beam-sqlite = self.callPackage (./pkgs/beam-sqlite.nix) { };
+
   bech32 = self.callPackage (./pkgs/bech32.nix) { };
 
   bech32-th = self.callPackage (./pkgs/bech32-th.nix) { };

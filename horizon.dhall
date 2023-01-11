@@ -11,6 +11,14 @@ let callHorizonAdopted
           revision
           (None Text)
 
+let callGitBeam
+    : H.Subdir → H.HaskellPackage.Type
+    = λ(subdir : H.Subdir) →
+        H.callGit
+          "https://github.com/haskell-beam/beam"
+          "94461937c5ca8b89f1ff1a60bde5bffe207315b4"
+          (Some subdir)
+
 let callGitCabal
     : H.Subdir → H.HaskellPackage.Type
     = λ(subdir : H.Subdir) →
@@ -122,6 +130,10 @@ let packages =
       , base64 = H.callHackage "base64" "0.4.2.4"
       , base-compat = H.callHackage "base-compat" "0.12.2"
       , base-compat-batteries = H.callHackage "base-compat-batteries" "0.12.2"
+      , beam-core = callGitBeam "beam-core"
+      , beam-migrate = callGitBeam "beam-migrate"
+      , beam-postgres = callGitBeam "beam-postgres"
+      , beam-sqlite = callGitBeam "beam-sqlite"
       , bech32 = H.callHackage "bech32" "1.1.2"
       , bech32-th = H.callHackage "bech32-th" "1.1.1"
       , bifunctors = H.callHackage "bifunctors" "5.5.13"
