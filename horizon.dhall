@@ -137,7 +137,6 @@ let packages =
       , breakpoint = H.callHackage "breakpoint" "0.1.1.1"
       , brick = H.callHackage "brick" "1.3"
       , bsb-http-chunked = H.callHackage "bsb-http-chunked" "0.0.0.4"
-      , bsd-sysctl = H.callHackage "bsd-sysctl" "1.0.8.0"
       , byteable = H.callHackage "byteable" "0.1.1"
       , byteorder = H.callHackage "byteorder" "1.0.4"
       , bytestring-builder = H.callHackage "bytestring-builder" "0.10.8.2.0"
