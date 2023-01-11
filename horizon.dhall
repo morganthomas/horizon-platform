@@ -131,6 +131,7 @@ let packages =
       , base-compat = H.callHackage "base-compat" "0.12.2"
       , base-compat-batteries = H.callHackage "base-compat-batteries" "0.12.2"
       , beam-core = callGitBeam "beam-core"
+      , beam-migrate = callGitBeam "beam-migrate"
       , bech32 = H.callHackage "bech32" "1.1.2"
       , bech32-th = H.callHackage "bech32-th" "1.1.1"
       , bifunctors = H.callHackage "bifunctors" "5.5.13"
