@@ -5,7 +5,6 @@
 , deepseq
 , dependent-map
 , dependent-sum
-, fetchgit
 , ghc-prim
 , ghc-typelits-knownnat
 , hedgehog
@@ -17,13 +16,8 @@
 }:
 mkDerivation {
   pname = "typerep-map";
-  version = "0.5.0.0";
-  src = fetchgit {
-    url = "https://github.com/parsonsmatt/typerep-map";
-    sha256 = "023f2rrak7kmpfxxpfcdv5bb1llksk2cxmdgvs08qx3l821d016w";
-    rev = "75b7cd5d45986be07420a6821d352ad2adc0b697";
-    fetchSubmodules = true;
-  };
+  version = "0.6.0.0";
+  sha256 = "e36fab025872dec241e02e2d7408633fd167dfea78be8a0c97a784c4ea823c04";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

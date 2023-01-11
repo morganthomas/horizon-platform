@@ -679,6 +679,8 @@ self: with pkgs.haskell.lib; {
 
   hedgehog = self.callPackage (./pkgs/hedgehog.nix) { };
 
+  hedgehog-extras = self.callPackage (./pkgs/hedgehog-extras.nix) { };
+
   hedgehog-fn = self.callPackage (./pkgs/hedgehog-fn.nix) { };
 
   hedgehog-golden = self.callPackage (./pkgs/hedgehog-golden.nix) { };
@@ -826,6 +828,8 @@ self: with pkgs.haskell.lib; {
   ini = self.callPackage (./pkgs/ini.nix) { };
 
   inline-c = self.callPackage (./pkgs/inline-c.nix) { };
+
+  inline-r = self.callPackage (./pkgs/inline-r.nix) { };
 
   insert-ordered-containers = self.callPackage (./pkgs/insert-ordered-containers.nix) { };
 

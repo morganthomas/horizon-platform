@@ -441,6 +441,7 @@ let packages =
       , haskell-src-exts = H.callHackage "haskell-src-exts" "1.23.1"
       , haskell-src-meta = H.callHackage "haskell-src-meta" "0.8.11"
       , heaps = H.callHackage "heaps" "0.4"
+      , hedgehog-extras = H.callHackage "hedgehog-extras" "0.3.0.3"
       , hedgehog-fn = H.callHackage "hedgehog-fn" "1.0"
       , hedgehog-golden =
           H.callGit
@@ -523,6 +524,7 @@ let packages =
       , infer-license = H.callHackage "infer-license" "0.2.0"
       , ini = H.callHackage "ini" "0.4.2"
       , inline-c = H.callHackage "inline-c" "0.9.1.6"
+      , inline-r = H.callHackage "inline-r" "1.0.0"
       , insert-ordered-containers =
           H.callHackage "insert-ordered-containers" "0.2.5.1"
       , inspection-testing = H.callHackage "inspection-testing" "0.5"
@@ -1016,11 +1018,7 @@ let packages =
       , type-errors-pretty = H.callHackage "type-errors-pretty" "0.0.1.2"
       , type-errors = H.callHackage "type-errors" "0.2.0.0"
       , type-equality = H.callHackage "type-equality" "1"
-      , typerep-map =
-          H.callGit
-            "https://github.com/parsonsmatt/typerep-map"
-            "75b7cd5d45986be07420a6821d352ad2adc0b697"
-            (None Text)
+      , typerep-map = H.callHackage "typerep-map" "0.6.0.0"
       , uglymemo = H.callHackage "uglymemo" "0.1.0.1"
       , unagi-chan = H.callHackage "unagi-chan" "0.4.1.4"
       , unbounded-delays = H.callHackage "unbounded-delays" "0.1.1.1"
