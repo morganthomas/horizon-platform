@@ -991,6 +991,7 @@ let packages =
       , xss-sanitize = H.callHackage "xss-sanitize" "0.3.7.1"
       , yaml = H.callHackage "yaml" "0.11.8.0"
       , zip-archive = H.callHackage "zip-archive" "0.4.2.2"
+      , zlib-bindings = H.callHackage "zlib-bindings" "0.1.1.5"
       , zlib = H.callHackage "zlib" "0.6.3.0"
       }
 

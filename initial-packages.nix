@@ -1623,4 +1623,6 @@ self: with pkgs.haskell.lib; {
 
   zlib = self.callPackage (./pkgs/zlib.nix) { };
 
+  zlib-bindings = self.callPackage (./pkgs/zlib-bindings.nix) { };
+
 }
