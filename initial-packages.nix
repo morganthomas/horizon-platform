@@ -453,6 +453,8 @@ self: with pkgs.haskell.lib; {
 
   ekg-json = self.callPackage (./pkgs/ekg-json.nix) { };
 
+  ekg-statsd = self.callPackage (./pkgs/ekg-statsd.nix) { };
+
   email-validate = self.callPackage (./pkgs/email-validate.nix) { };
 
   emojis = self.callPackage (./pkgs/emojis.nix) { };
