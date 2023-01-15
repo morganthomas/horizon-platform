@@ -30,8 +30,8 @@
 }:
 mkDerivation {
   pname = "sydtest";
-  version = "0.13.0.0";
-  sha256 = "856583d832d8b9e52a4d0ba6290b70e984ad1663cb300464961800ea8c2f4a57";
+  version = "0.14.0.0";
+  sha256 = "1lfg04b2fi1hn6h3bwgjmjaabgnw3m71k10h34pcvfn0lmzwqqq3";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;
