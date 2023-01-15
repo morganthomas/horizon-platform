@@ -926,7 +926,11 @@ let packages =
       , sundown = H.callHackage "sundown" "0.6"
       , swagger2 = H.callHackage "swagger2" "2.8.5"
       , syb = H.callHackage "syb" "0.7.2.1"
-      , sydtest = H.callHackage "sydtest" "0.13.0.0"
+      , sydtest =
+          H.callGit
+            "https://github.com/morganthomas/horizon-platform"
+            "39f66e45511a40e52af87e32774598e51bd3cf1a"
+            (None Text)
       , sydtest-discover = H.callHackage "sydtest-discover" "0.0.0.2"
       , system-fileio = H.callHackage "system-fileio" "0.3.16.4"
       , system-filepath = H.callHackage "system-filepath" "0.4.14"
